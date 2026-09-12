@@ -1,6 +1,7 @@
 import { hotels, places, restaurants } from '../data/tourismData.js'
 
-const API_BASE_URL = (import.meta.env?.VITE_API_URL || 'http://localhost:5000/api').replace(/\/$/, '')
+const configuredApiUrl = import.meta.env?.VITE_API_URL?.trim()
+const API_BASE_URL = (configuredApiUrl || (import.meta.env?.DEV ? 'http://localhost:5000/api' : '')).replace(/\/$/, '')
 
 async function request(path, options = {}) {
   const response = await fetch(`${API_BASE_URL}${path}`, {
