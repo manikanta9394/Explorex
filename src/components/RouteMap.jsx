@@ -1,6 +1,7 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { MapContainer, Marker, Polyline, TileLayer, useMap } from 'react-leaflet'
 import L from 'leaflet'
+import { MapErrorBoundary } from './ErrorBoundary'
 import 'leaflet/dist/leaflet.css'
 
 // Custom Start Location Marker (Green Frosted Pin with Pulsing Dot)
@@ -26,43 +27,86 @@ const destIcon = L.divIcon({
 
 function MapBoundsFitter({ points }) {
   const map = useMap()
+  const lastKeyRef = useRef('')
 
   useEffect(() => {
     if (!points || points.length === 0) return
 
-    // Convert coordinates from [lng, lat] to Leaflet [lat, lng]
-    const leafletCoords = points.map((pt) => {
-      if (Array.isArray(pt)) {
-        return [pt[1], pt[0]]
-      }
-      if (pt.lat !== undefined && pt.lng !== undefined) {
-        return [pt.lat, pt.lng]
-      }
-      return pt
-    })
+    // Convert coordinates to Leaflet [lat, lng]
+    const leafletCoords = points
+      .map((pt) => {
+        if (Array.isArray(pt) && pt.length >= 2) {
+          const lat = Number(pt[0])
+          const lng = Number(pt[1])
+          if (!isNaN(lat) && !isNaN(lng)) return [lat, lng]
+        }
+        return null
+      })
+      .filter(Boolean)
 
-    if (leafletCoords.length > 0) {
+    if (leafletCoords.length === 0) return
+
+    const key = leafletCoords
+      .slice(0, 5)
+      .concat(leafletCoords.slice(-5))
+      .map((pt) => `${pt[0].toFixed(3)},${pt[1].toFixed(3)}`)
+      .join(';')
+
+    if (lastKeyRef.current === key) return
+    lastKeyRef.current = key
+
+    try {
       const bounds = L.latLngBounds(leafletCoords)
       if (bounds.isValid()) {
         map.fitBounds(bounds, { padding: [45, 45], maxZoom: 16 })
       }
+    } catch {
+      // ignore fitBounds failure
     }
   }, [map, points])
 
   return null
 }
 
-export default function RouteMap({ startCoords, destCoords, routeCoordinates = [] }) {
-  // Convert GeoJSON [lng, lat] coordinates to Leaflet [lat, lng] array
-  const linePoints = routeCoordinates.length > 0
-    ? routeCoordinates.map((pt) => [pt[1], pt[0]])
-    : [
-        [startCoords[1], startCoords[0]],
-        [destCoords[1], destCoords[0]],
-      ]
+function RouteMapInner({ startCoords, destCoords, routeCoordinates = [] }) {
+  const validStart =
+    Array.isArray(startCoords) &&
+    startCoords.length >= 2 &&
+    !isNaN(Number(startCoords[0])) &&
+    !isNaN(Number(startCoords[1]))
 
-  const startLeaflet = [startCoords[1], startCoords[0]]
-  const destLeaflet = [destCoords[1], destCoords[0]]
+  const validDest =
+    Array.isArray(destCoords) &&
+    destCoords.length >= 2 &&
+    !isNaN(Number(destCoords[0])) &&
+    !isNaN(Number(destCoords[1]))
+
+  if (!validStart || !validDest) {
+    return (
+      <div className="route-map-placeholder" style={{ padding: '40px', textAlign: 'center', color: '#666' }}>
+        Route coordinates unavailable
+      </div>
+    )
+  }
+
+  const startLeaflet = [Number(startCoords[1]), Number(startCoords[0])]
+  const destLeaflet = [Number(destCoords[1]), Number(destCoords[0])]
+
+  // Convert GeoJSON [lng, lat] coordinates to Leaflet [lat, lng] array
+  const linePoints =
+    Array.isArray(routeCoordinates) && routeCoordinates.length >= 2
+      ? routeCoordinates
+          .map((pt) => {
+            if (Array.isArray(pt) && pt.length >= 2) {
+              const lat = Number(pt[1])
+              const lng = Number(pt[0])
+              if (!isNaN(lat) && !isNaN(lng)) return [lat, lng]
+            }
+            return null
+          })
+          .filter(Boolean)
+      : [startLeaflet, destLeaflet]
+
   const allPoints = [startLeaflet, destLeaflet, ...linePoints]
 
   return (
@@ -101,5 +145,13 @@ export default function RouteMap({ startCoords, destCoords, routeCoordinates = [
         <MapBoundsFitter points={allPoints} />
       </MapContainer>
     </div>
+  )
+}
+
+export default function RouteMap(props) {
+  return (
+    <MapErrorBoundary minHeight="300px">
+      <RouteMapInner {...props} />
+    </MapErrorBoundary>
   )
 }

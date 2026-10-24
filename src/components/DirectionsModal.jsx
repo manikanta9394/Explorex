@@ -1,9 +1,12 @@
 import { useEffect, useMemo, useState } from 'react'
 import { ChevronDown, ChevronUp, Compass, Footprints, Locate, MapPin, Navigation, RotateCcw, Search, X } from 'lucide-react'
 import RouteMap from './RouteMap'
-import { fetchRoute, geocodeAddress } from '../services/api'
+import { fetchRoute, geocodeAddress, getRouteCache } from '../services/api'
+import { openGoogleMapsDirections } from '../utils/googleMaps'
+import { DirectionsErrorBoundary } from './ErrorBoundary'
 
 import { useTravelMode } from '../context/useTravelMode'
+import { useUserLocation } from '../context/useUserLocation'
 import TravelModeSegmentedControl from './TravelModeSegmentedControl'
 
 const DEFAULT_START = {
@@ -12,8 +15,11 @@ const DEFAULT_START = {
 }
 
 export default function DirectionsModal({ isOpen, onClose, destination }) {
-  const [startPoint, setStartPoint] = useState(DEFAULT_START)
-  const [geoStatus, setGeoStatus] = useState('idle') // 'detecting' | 'success' | 'denied' | 'idle'
+  const { userCoords, requestLocation } = useUserLocation()
+  const [startPoint, setStartPoint] = useState(() => (
+    userCoords ? { name: 'My Current Location', coordinates: userCoords } : DEFAULT_START
+  ))
+  const [geoStatus, setGeoStatus] = useState(() => (userCoords ? 'success' : 'idle'))
   const { travelMode, setTravelMode } = useTravelMode()
   const [routeData, setRouteData] = useState(null)
   const [loadingRoute, setLoadingRoute] = useState(false)
@@ -34,60 +40,39 @@ export default function DirectionsModal({ isOpen, onClose, destination }) {
   const destName = destination?.name || 'Destination'
   const destAddress = destination?.location?.address || destination?.detail || 'Hyderabad, Telangana'
 
-  // Request user current location on modal open
-  useEffect(() => {
-    if (!isOpen) return
-
-    let isMounted = true
-    if ('geolocation' in navigator) {
-      navigator.geolocation.getCurrentPosition(
-        (pos) => {
-          if (!isMounted) return
-          const coords = [pos.coords.longitude, pos.coords.latitude]
-          setStartPoint({
-            name: 'My Current Location',
-            coordinates: coords,
-          })
-          setGeoStatus('success')
-        },
-        (err) => {
-          if (!isMounted) return
-          console.warn('Geolocation error or permission denied:', err.message)
-          setGeoStatus('denied')
-          setStartPoint(DEFAULT_START)
-        },
-        { timeout: 8000, enableHighAccuracy: true }
-      )
-    } else {
-      queueMicrotask(() => {
-        if (isMounted) setGeoStatus('denied')
-      })
-    }
-
-    return () => {
-      isMounted = false
-    }
-  }, [isOpen])
-
   // Re-fetch route whenever startPoint, destCoords, or travelMode changes
   useEffect(() => {
     if (!isOpen || !startPoint?.coordinates) return
 
     let cancelled = false
+
     const loadRoute = async () => {
+      const cached = getRouteCache(startPoint.coordinates, destCoords, travelMode, destination?.id)
+      if (cached) {
+        if (cached.error) {
+          setRouteError(cached.message || 'Distance unavailable')
+          setRouteData(null)
+        } else {
+          setRouteData(cached)
+          setRouteError(null)
+        }
+        setLoadingRoute(false)
+        return
+      }
+
       setLoadingRoute(true)
       setRouteError(null)
       try {
-        const data = await fetchRoute(startPoint.coordinates, destCoords, travelMode)
+        const data = await fetchRoute(startPoint.coordinates, destCoords, travelMode, destination?.id)
         if (cancelled) return
         if (data?.error) {
-          setRouteError(data.error)
+          setRouteError(data.message || data.error || 'Distance unavailable')
           setRouteData(null)
         } else {
           setRouteData(data)
         }
       } catch (err) {
-        if (!cancelled) setRouteError(err.message || 'Failed to fetch directions')
+        if (!cancelled) setRouteError(err.message || 'Distance unavailable')
       } finally {
         if (!cancelled) setLoadingRoute(false)
       }
@@ -98,7 +83,7 @@ export default function DirectionsModal({ isOpen, onClose, destination }) {
     return () => {
       cancelled = true
     }
-  }, [isOpen, startPoint, destCoords, travelMode])
+  }, [isOpen, startPoint, destCoords, travelMode, destination?.id])
 
   if (!isOpen) return null
 
@@ -128,20 +113,18 @@ export default function DirectionsModal({ isOpen, onClose, destination }) {
     setSearchQuery('')
   }
 
-  function useCurrentLocationAgain() {
+  async function useCurrentLocationAgain() {
     setGeoStatus('detecting')
-    navigator.geolocation.getCurrentPosition(
-      (pos) => {
-        setStartPoint({
-          name: 'My Current Location',
-          coordinates: [pos.coords.longitude, pos.coords.latitude],
-        })
-        setGeoStatus('success')
-      },
-      () => {
-        setGeoStatus('denied')
-      }
-    )
+    try {
+      const coords = await requestLocation()
+      setStartPoint({
+        name: 'My Current Location',
+        coordinates: coords,
+      })
+      setGeoStatus('success')
+    } catch {
+      setGeoStatus('denied')
+    }
   }
 
   // Format distance & duration displays
@@ -290,11 +273,13 @@ export default function DirectionsModal({ isOpen, onClose, destination }) {
           {/* Right Column: Responsive Interactive Map Panel */}
           <div className="directions-right-col">
             <div className="directions-map-container">
-              <RouteMap
-                startCoords={startPoint.coordinates}
-                destCoords={destCoords}
-                routeCoordinates={routeCoordinates}
-              />
+              <DirectionsErrorBoundary onOpenGoogleMaps={() => openGoogleMapsDirections(destination, travelMode)}>
+                <RouteMap
+                  startCoords={startPoint.coordinates}
+                  destCoords={destCoords}
+                  routeCoordinates={routeCoordinates}
+                />
+              </DirectionsErrorBoundary>
             </div>
           </div>
         </div>

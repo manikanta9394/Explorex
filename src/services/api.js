@@ -1,29 +1,142 @@
-import { hotels, places, restaurants } from '../data/tourismData.js'
+import { enrichedHotels as hotels, enrichedPlaces as places, enrichedRestaurants as restaurants } from '../data/tourismData.js'
 
-const configuredApiUrl = import.meta.env?.VITE_API_URL?.trim()
-const API_BASE_URL = (configuredApiUrl || (import.meta.env?.DEV ? 'http://localhost:5000/api' : '')).replace(/\/$/, '')
+const configuredApiUrl = typeof import.meta !== 'undefined' && import.meta.env?.VITE_API_URL ? import.meta.env.VITE_API_URL.trim() : ''
+const API_BASE_URL = (configuredApiUrl || '').replace(/\/$/, '')
+
+// Persistent in-memory and localStorage cache for routing & distance results: per place/coordinates + travel mode
+const routeCache = new Map()
+const geocodeCache = new Map()
+const STORAGE_ROUTE_PREFIX = 'explorex_route_cache_v2_'
+const STORAGE_GEOCODE_PREFIX = 'explorex_geocode_cache_v2_'
+
+// Circuit breaker to avoid spamming network when backend server is unavailable
+let backendUnavailableUntil = 0
+
+function formatCoord(coord) {
+  if (!coord) return '0,0'
+  if (Array.isArray(coord) && coord.length >= 2) {
+    const c0 = Number(coord[0])
+    const c1 = Number(coord[1])
+    return `${isNaN(c0) ? 0 : c0.toFixed(4)},${isNaN(c1) ? 0 : c1.toFixed(4)}`
+  }
+  return String(coord)
+}
+
+export function getRouteCacheKey(start, end, profile = 'driving-car', placeId = null) {
+  if (placeId) {
+    return `${placeId}:${profile}`
+  }
+  return `${formatCoord(start)}->${formatCoord(end)}:${profile}`
+}
+
+export function getRouteCache(start, end, profile = 'driving-car', placeId = null) {
+  const key = getRouteCacheKey(start, end, profile, placeId)
+  if (routeCache.has(key)) {
+    return routeCache.get(key)
+  }
+  try {
+    const raw = localStorage.getItem(`${STORAGE_ROUTE_PREFIX}${key}`)
+    if (raw) {
+      const parsed = JSON.parse(raw)
+      routeCache.set(key, parsed)
+      return parsed
+    }
+  } catch {}
+  return null
+}
+
+export function setRouteCache(start, end, profile = 'driving-car', data = null, placeId = null) {
+  if (!data) return
+  const key = getRouteCacheKey(start, end, profile, placeId)
+  routeCache.set(key, data)
+  try {
+    localStorage.setItem(`${STORAGE_ROUTE_PREFIX}${key}`, JSON.stringify(data))
+  } catch {}
+  if (placeId) {
+    // Also store by coordinates for spatial lookups
+    const coordKey = `${formatCoord(start)}->${formatCoord(end)}:${profile}`
+    routeCache.set(coordKey, data)
+    try {
+      localStorage.setItem(`${STORAGE_ROUTE_PREFIX}${coordKey}`, JSON.stringify(data))
+    } catch {}
+  }
+}
+
+export function getGeocodeCache(text) {
+  const key = (text || '').toLowerCase().trim()
+  if (!key) return null
+  if (geocodeCache.has(key)) return geocodeCache.get(key)
+  try {
+    const raw = localStorage.getItem(`${STORAGE_GEOCODE_PREFIX}${key}`)
+    if (raw) {
+      const parsed = JSON.parse(raw)
+      geocodeCache.set(key, parsed)
+      return parsed
+    }
+  } catch {}
+  return null
+}
+
+export function setGeocodeCache(text, data) {
+  const key = (text || '').toLowerCase().trim()
+  if (!key || !data) return
+  geocodeCache.set(key, data)
+  try {
+    localStorage.setItem(`${STORAGE_GEOCODE_PREFIX}${key}`, JSON.stringify(data))
+  } catch {}
+}
 
 async function request(path, options = {}) {
-  const response = await fetch(`${API_BASE_URL}${path}`, {
-    ...options,
-    headers: { 'Content-Type': 'application/json', ...options.headers },
-  })
-  if (!response.ok) {
-    const errorBody = await response.json().catch(() => ({}))
-    throw new Error(errorBody.error || `API request failed with status ${response.status}`)
+  if (!API_BASE_URL) {
+    throw new Error('API server not configured; using offline fallback')
   }
-  const payload = await response.json()
-  return payload.data ?? payload
+  if (Date.now() < backendUnavailableUntil) {
+    throw new Error('Backend temporarily marked unavailable; using offline fallback')
+  }
+
+  const controller = new AbortController()
+  const timeoutId = setTimeout(() => controller.abort(), 4000)
+
+  try {
+    const response = await fetch(`${API_BASE_URL}${path}`, {
+      ...options,
+      headers: { 'Content-Type': 'application/json', ...options.headers },
+      signal: controller.signal,
+    })
+    clearTimeout(timeoutId)
+
+    if (!response.ok) {
+      if (response.status === 401 || response.status === 429 || response.status >= 500) {
+        // Back off for 60 seconds to avoid repeating 401/429
+        backendUnavailableUntil = Date.now() + 60000
+      }
+      const errorBody = await response.json().catch(() => ({}))
+      throw new Error(errorBody.error || `API request failed with status ${response.status}`)
+    }
+    const payload = await response.json()
+    return payload.data ?? payload
+  } catch (err) {
+    clearTimeout(timeoutId)
+    // If CORS or network error, back off
+    if (err.name === 'AbortError' || err.message?.includes('fetch') || err.message?.includes('NetworkError')) {
+      backendUnavailableUntil = Date.now() + 60000
+    }
+    throw err
+  }
 }
 
 function withFallback(requestPromise, fallback) {
   return requestPromise.catch(() => (typeof fallback === 'function' ? fallback() : fallback))
 }
 
-function calculateHaversineKm(start, end) {
-  if (!Array.isArray(start) || !Array.isArray(end)) return 10
-  const [lng1, lat1] = start.map(Number)
-  const [lng2, lat2] = end.map(Number)
+export function calculateHaversineKm(start, end) {
+  if (!Array.isArray(start) || !Array.isArray(end) || start.length < 2 || end.length < 2) return null
+  const lng1 = Number(start[0])
+  const lat1 = Number(start[1])
+  const lng2 = Number(end[0])
+  const lat2 = Number(end[1])
+  if (isNaN(lng1) || isNaN(lat1) || isNaN(lng2) || isNaN(lat2)) return null
+
   const R = 6371
   const dLat = ((lat2 - lat1) * Math.PI) / 180
   const dLng = ((lng2 - lng1) * Math.PI) / 180
@@ -37,8 +150,18 @@ function calculateHaversineKm(start, end) {
   return R * c
 }
 
-function calculateDynamicFallbackRoute(start, end, profile = 'driving-car') {
+export function calculateDynamicFallbackRoute(start, end, profile = 'driving-car') {
   const directKm = calculateHaversineKm(start, end)
+  if (directKm == null) {
+    return {
+      error: true,
+      message: 'Distance unavailable',
+      duration: null,
+      distance: null,
+      source: 'client-dynamic-fallback',
+    }
+  }
+
   const routedKm = Number((Math.max(0.5, directKm * 1.25)).toFixed(1))
   const distanceMeters = Math.round(routedKm * 1000)
 
@@ -82,10 +205,34 @@ export function getNearbyRestaurants(latitude, longitude) {
   return withFallback(request(`/restaurants?${params}`), restaurants)
 }
 
-export function askAI(message, history = [], place = 'Charminar') {
+export function askAI(message, history = [], options = {}) {
+  const currentPlaceObj = typeof options === 'object' && options !== null ? (options.currentPlace || options.place) : null
+  const placeName = typeof options === 'string' ? options : (currentPlaceObj?.name || options?.place || 'Charminar')
+  const travelMode = typeof options === 'object' && options !== null ? options.travelMode : 'driving-car'
+  const userLocation = typeof options === 'object' && options !== null ? options.userLocation : null
+
+  const payload = {
+    message,
+    history,
+    place: placeName,
+    currentPlace: currentPlaceObj,
+    travelMode,
+    userLocation,
+  }
+
   return withFallback(
-    request('/ai/ask', { method: 'POST', body: JSON.stringify({ message, history, place }) }),
-    { answer: 'I can help you plan Telangana. Start with Charminar at golden hour, then explore Laad Bazaar for local food, crafts, and history.' },
+    request('/chat', { method: 'POST', body: JSON.stringify(payload) }),
+    {
+      answer: `**${placeName}** is one of Hyderabad's most celebrated heritage landmarks.
+
+• **Visiting Guidelines**: Open daily, 9:00 AM - 5:30 PM.
+• **Exploration**: Marvel at the historic architecture, then explore nearby markets and authentic eateries.
+• **Directions**: Easily accessible via central Hyderabad roads.
+
+💡 Practical Tip: Visit during early morning or golden hour (4:30 PM - 5:30 PM) for the best photography light and cooler weather.`,
+      recommendedPlaces: currentPlaceObj ? [currentPlaceObj] : [],
+      source: 'offline-fallback',
+    },
   )
 }
 
@@ -94,32 +241,81 @@ export function generateItinerary(preferences) {
     request('/ai/itinerary', { method: 'POST', body: JSON.stringify({ preferences }) }),
     {
       days: [
-        { day: 1, title: 'Hyderabad heritage', stops: places.slice(0, 3).map((place) => place.name) },
-        { day: 2, title: 'Telangana beyond the city', stops: places.slice(3, 6).map((place) => place.name) },
+        { day: 1, title: 'Hyderabad Heritage Core', stops: places.slice(0, 3).map((place) => place.name) },
+        { day: 2, title: 'Lakes, Palaces & Culture', stops: places.slice(3, 6).map((place) => place.name) },
       ],
     },
   )
 }
 
-export function fetchRoute(start, end, profile = 'driving-car') {
-  return withFallback(
-    request('/route', {
-      method: 'POST',
-      body: JSON.stringify({ start, end, profile }),
-    }),
-    () => calculateDynamicFallbackRoute(start, end, profile),
-  )
+export async function fetchRoute(start, end, profile = 'driving-car', placeId = null) {
+  // Check in-memory cache first
+  const cached = getRouteCache(start, end, profile, placeId)
+  if (cached) {
+    return cached
+  }
+
+  // Validate start and end coordinates
+  const validStart = Array.isArray(start) && start.length >= 2 && !isNaN(Number(start[0])) && !isNaN(Number(start[1]))
+  const validEnd = Array.isArray(end) && end.length >= 2 && !isNaN(Number(end[0])) && !isNaN(Number(end[1]))
+
+  if (!validStart || !validEnd) {
+    const errorResult = {
+      error: true,
+      message: 'Distance unavailable',
+      duration: null,
+      distance: null,
+      source: 'invalid-coordinates',
+    }
+    setRouteCache(start, end, profile, errorResult, placeId)
+    return errorResult
+  }
+
+  let routeResult = null
+
+  if (API_BASE_URL && Date.now() >= backendUnavailableUntil) {
+    try {
+      const data = await request('/route', {
+        method: 'POST',
+        body: JSON.stringify({ start, end, profile }),
+      })
+      if (data && (data.duration || data.durationMeters || data.distance || data.distanceMeters)) {
+        routeResult = data
+      }
+    } catch {
+      // Backend request failed (e.g. 401, 429, CORS, network offline); fall through to dynamic fallback
+    }
+  }
+
+  if (!routeResult) {
+    routeResult = calculateDynamicFallbackRoute(start, end, profile)
+  }
+
+  setRouteCache(start, end, profile, routeResult, placeId)
+  return routeResult
 }
 
-export function geocodeAddress(text) {
-  return withFallback(
-    request(`/route/geocode?text=${encodeURIComponent(text)}`),
-    {
+export async function geocodeAddress(text) {
+  const cached = getGeocodeCache(text)
+  if (cached) return cached
+
+  let result = null
+  if (API_BASE_URL && Date.now() >= backendUnavailableUntil) {
+    try {
+      result = await request(`/route/geocode?text=${encodeURIComponent(text)}`)
+    } catch {}
+  }
+
+  if (!result) {
+    result = {
       query: text,
-      results: [{ name: `${text}, Hyderabad`, coordinates: [78.4747, 17.3616] }],
+      results: [{ name: `${text}, Hyderabad`, coordinates: [78.4747, 17.3614] }],
       source: 'client-fallback',
-    },
-  )
+    }
+  }
+
+  setGeocodeCache(text, result)
+  return result
 }
 
 export function fetchMatrixRoute(locations, sources = [0], destinations, profile = 'driving-car') {

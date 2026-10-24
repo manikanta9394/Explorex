@@ -3,10 +3,11 @@ import { Camera, Clock, Heart, MapPin, Navigation, ShieldAlert, Shirt, Sparkles,
 import { useSavedPlaces } from '../context/useSavedPlaces'
 import { useTravelMode } from '../context/useTravelMode'
 import { useUserLocation } from '../context/useUserLocation'
-import { fetchRoute } from '../services/api'
+import { fetchRoute, getRouteCache } from '../services/api'
 import { formatPriceWithUnit } from '../utils/formatCurrency'
 import { openGoogleMapsDirections } from '../utils/googleMaps'
 import SafeImage from './SafeImage'
+import { DistanceBadgeErrorBoundary } from './ErrorBoundary'
 
 function getRuleIcon(ruleText) {
   const text = ruleText.toLowerCase()
@@ -139,6 +140,13 @@ export default function PlaceDetailModal({
     return result
   }, [place, allPlaces])
 
+  const destCoords = useMemo(() => {
+    if (!place) return [78.4747, 17.3614]
+    return place.position
+      ? [Number(place.position[1]), Number(place.position[0])]
+      : place.location?.coordinates || [78.4747, 17.3614]
+  }, [place])
+
   // Fetch live route info respecting selected travel mode and user location
   useEffect(() => {
     if (!isOpen || !place) return
@@ -146,20 +154,34 @@ export default function PlaceDetailModal({
     let isMounted = true
 
     const updateRoute = async () => {
-      setLoadingRoute(true)
-      const destCoords = place.position
-        ? [place.position[1], place.position[0]]
-        : place.location?.coordinates || [78.4747, 17.3616]
+      const cached = getRouteCache(activeOrigin, destCoords, travelMode, place.id)
+      if (cached) {
+        if (!cached.error && (cached.duration || cached.durationMeters)) {
+          setRouteInfo({
+            duration: cached.duration?.formatted || `${cached.duration} min`,
+            distance: cached.distance?.km ?? cached.distance ?? 2.4,
+          })
+        } else {
+          setRouteInfo({ error: true })
+        }
+        setLoadingRoute(false)
+        return
+      }
 
+      setLoadingRoute(true)
       try {
-        const data = await fetchRoute(activeOrigin, destCoords, travelMode)
+        const data = await fetchRoute(activeOrigin, destCoords, travelMode, place.id)
         if (!isMounted) return
-        if (data) {
+        if (data && !data.error && (data.duration || data.durationMeters)) {
           setRouteInfo({
             duration: data.duration?.formatted || (data.duration ? `${data.duration} min` : '10 min'),
-            distance: data.distance?.km || data.distance || (data.distanceMeters ? (data.distanceMeters / 1000).toFixed(1) : 2.4),
+            distance: data.distance?.km ?? data.distance ?? (data.distanceMeters ? (data.distanceMeters / 1000).toFixed(1) : 2.4),
           })
+        } else {
+          setRouteInfo({ error: true })
         }
+      } catch {
+        if (isMounted) setRouteInfo({ error: true })
       } finally {
         if (isMounted) setLoadingRoute(false)
       }
@@ -170,7 +192,7 @@ export default function PlaceDetailModal({
     return () => {
       isMounted = false
     }
-  }, [isOpen, place, travelMode, activeOrigin])
+  }, [isOpen, place, destCoords, travelMode, activeOrigin])
 
   if (!isOpen || !place) return null
 
@@ -259,15 +281,21 @@ export default function PlaceDetailModal({
               <small>Highly rated</small>
             </div>
 
-            {loadingRoute ? (
-              <div className="travel-time-chip shimmer">
-                <span className="shimmer-dot" /> Recalculating...
-              </div>
-            ) : routeInfo ? (
-              <div className="travel-time-chip">
-                {modeEmoji} {routeInfo.duration} ({routeInfo.distance} km)
-              </div>
-            ) : null}
+            <DistanceBadgeErrorBoundary modeEmoji={modeEmoji}>
+              {loadingRoute ? (
+                <div className="travel-time-chip shimmer">
+                  <span className="shimmer-dot" /> Recalculating...
+                </div>
+              ) : routeInfo && !routeInfo.error && routeInfo.duration ? (
+                <div className="travel-time-chip">
+                  {modeEmoji} {routeInfo.duration} ({routeInfo.distance} km)
+                </div>
+              ) : (
+                <div className="travel-time-chip travel-time-unavailable">
+                  {modeEmoji} Distance unavailable
+                </div>
+              )}
+            </DistanceBadgeErrorBoundary>
           </div>
 
           <div className="modal-section-divider" />

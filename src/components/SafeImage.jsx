@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { getFallbackImage } from '../utils/fallbackImages'
+import { resolveImageSrc } from '../utils/imageUtils'
 
 export default function SafeImage({
   src,
@@ -12,9 +13,11 @@ export default function SafeImage({
   ...props
 }) {
   const defaultFallback = customFallback || getFallbackImage(category, type)
-  const [hasError, setHasError] = useState(false)
+  const [failedSrc, setFailedSrc] = useState(null)
 
-  const effectiveSrc = hasError || !src || typeof src !== 'string' || !src.trim() ? defaultFallback : src
+  const resolved = resolveImageSrc(src)
+  const isFailed = !resolved || failedSrc === resolved
+  const effectiveSrc = isFailed ? defaultFallback : resolved
 
   return (
     <img
@@ -22,7 +25,12 @@ export default function SafeImage({
       alt={alt}
       className={className}
       style={style}
-      onError={() => setHasError(true)}
+      onError={() => {
+        if (resolved) {
+          setFailedSrc(resolved)
+        }
+      }}
+      loading="lazy"
       {...props}
     />
   )

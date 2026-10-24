@@ -4,11 +4,13 @@ import L from 'leaflet'
 import { ArrowRight, Compass, Locate, Navigation, Star } from 'lucide-react'
 import { useTravelMode } from '../context/useTravelMode'
 import { useUserLocation } from '../context/useUserLocation'
-import { fetchRoute } from '../services/api'
+import { fetchRoute, getRouteCache } from '../services/api'
 import { formatPriceWithUnit } from '../utils/formatCurrency'
 import { openGoogleMapsDirections } from '../utils/googleMaps'
+import { isInsideTelangana, validateAndFilterTelanganaPlaces } from '../utils/geoUtils'
 import MarkerClusterGroup from './MarkerClusterGroup'
 import SafeImage from './SafeImage'
+import { DistanceBadgeErrorBoundary, MapErrorBoundary } from './ErrorBoundary'
 import 'leaflet/dist/leaflet.css'
 
 // Custom Marker Icons for Categories
@@ -49,66 +51,107 @@ const userLocationIcon = L.divIcon({
   iconAnchor: [14, 14],
 })
 
-function MapBoundsRecenter({ items, userCoords }) {
+function MapBoundsRecenter({ items, userCoords, filterKey }) {
   const map = useMap()
-  const hasFittedRef = useRef(false)
+  const lastKeyRef = useRef(null)
 
   useEffect(() => {
-    if (hasFittedRef.current && (!userCoords || items.length === 0)) return
+    // Only fit bounds on initial load or when filter changes, not repeatedly on every render
+    const currentKey = `${filterKey}_${items?.length || 0}_${userCoords ? 'geo' : 'nogeo'}`
+    if (lastKeyRef.current === currentKey) return
+    lastKeyRef.current = currentKey
 
-    // Filter items to Hyderabad & surrounding metro region (16.5..18.5 N, 77.5..79.5 E)
+    if (!items || items.length === 0) {
+      map.setView([17.3850, 78.4867], 12)
+      return
+    }
+
+    // Filter items to Hyderabad bounds (17.15..17.65 N, 78.20..78.70 E)
     const localCoords = items
       .map((item) => {
-        if (item.position) return item.position
-        if (item.location?.coordinates) return [item.location.coordinates[1], item.location.coordinates[0]]
+        if (Array.isArray(item.position) && item.position.length >= 2) {
+          const lat = Number(item.position[0])
+          const lng = Number(item.position[1])
+          if (!isNaN(lat) && !isNaN(lng)) return [lat, lng]
+        }
+        if (item.location?.coordinates && Array.isArray(item.location.coordinates) && item.location.coordinates.length >= 2) {
+          const lat = Number(item.location.coordinates[1])
+          const lng = Number(item.location.coordinates[0])
+          if (!isNaN(lat) && !isNaN(lng)) return [lat, lng]
+        }
         return null
       })
-      .filter((coord) => coord && coord[0] >= 16.5 && coord[0] <= 18.5 && coord[1] >= 77.5 && coord[1] <= 79.5)
+      .filter((coord) => coord && coord[0] >= 17.15 && coord[0] <= 17.65 && coord[1] >= 78.20 && coord[1] <= 78.70)
 
-    if (userCoords) {
-      localCoords.push([userCoords[1], userCoords[0]])
+    if (userCoords && Array.isArray(userCoords) && userCoords.length >= 2) {
+      const uLat = Number(userCoords[1])
+      const uLng = Number(userCoords[0])
+      if (!isNaN(uLat) && !isNaN(uLng) && uLat >= 17.15 && uLat <= 17.65 && uLng >= 78.20 && uLng <= 78.70) {
+        localCoords.push([uLat, uLng])
+      }
     }
 
     if (localCoords.length > 0) {
-      const bounds = L.latLngBounds(localCoords)
-      if (bounds.isValid()) {
-        map.fitBounds(bounds, { padding: [40, 40], maxZoom: 13, minZoom: 11 })
-        hasFittedRef.current = true
+      try {
+        const bounds = L.latLngBounds(localCoords)
+        if (bounds.isValid()) {
+          map.fitBounds(bounds, { padding: [40, 40], maxZoom: 13, minZoom: 11 })
+        }
+      } catch {
+        map.setView([17.3850, 78.4867], 12)
       }
     } else {
       map.setView([17.3850, 78.4867], 12)
-      hasFittedRef.current = true
     }
-  }, [map, items, userCoords])
+  }, [map, items, userCoords, filterKey])
 
   return null
 }
 
 function PopupCardContent({ place, onSelectPlace, onGetDirections }) {
-  const [routeInfo, setRouteInfo] = useState(null)
   const { travelMode } = useTravelMode()
   const { activeOrigin } = useUserLocation()
 
+  const destCoords = useMemo(() => {
+    return place.position
+      ? [Number(place.position[1]), Number(place.position[0])]
+      : place.location?.coordinates || [78.4747, 17.3614]
+  }, [place])
+
+  const [routeInfo, setRouteInfo] = useState(() => {
+    const cached = getRouteCache(activeOrigin, destCoords, travelMode, place.id)
+    if (cached && !cached.error && (cached.duration || cached.durationMeters)) {
+      return {
+        duration: cached.duration?.formatted || `${cached.duration} min`,
+        distance: cached.distance?.km ?? cached.distance ?? 2.4,
+      }
+    }
+    return null
+  })
+
   useEffect(() => {
     let isMounted = true
-    const destCoords = place.position
-      ? [place.position[1], place.position[0]]
-      : place.location?.coordinates || [78.4747, 17.3616]
 
-    fetchRoute(activeOrigin, destCoords, travelMode).then((data) => {
-      if (!isMounted) return
-      if (data) {
-        setRouteInfo({
-          duration: data.duration?.formatted || (data.duration ? `${data.duration} min` : '10 min'),
-          distance: data.distance?.km || data.distance || (data.distanceMeters ? (data.distanceMeters / 1000).toFixed(1) : 2.4),
-        })
-      }
-    })
+    fetchRoute(activeOrigin, destCoords, travelMode, place.id)
+      .then((data) => {
+        if (!isMounted) return
+        if (data && !data.error && (data.duration || data.durationMeters)) {
+          setRouteInfo({
+            duration: data.duration?.formatted || (data.duration ? `${data.duration} min` : '10 min'),
+            distance: data.distance?.km ?? data.distance ?? (data.distanceMeters ? (data.distanceMeters / 1000).toFixed(1) : 2.4),
+          })
+        } else {
+          setRouteInfo({ error: true })
+        }
+      })
+      .catch(() => {
+        if (isMounted) setRouteInfo({ error: true })
+      })
 
     return () => {
       isMounted = false
     }
-  }, [place, travelMode, activeOrigin])
+  }, [place.id, destCoords, travelMode, activeOrigin])
 
   const fallbackType = place.category?.toLowerCase().includes('hotel') ? 'hotel' : 'attraction'
   const { priceDisplay, unitDisplay: priceUnit } = formatPriceWithUnit(place.price, fallbackType)
@@ -123,7 +166,7 @@ function PopupCardContent({ place, onSelectPlace, onGetDirections }) {
           fallbackSrc={place.fallbackImage}
           alt={place.name}
         />
-        <span className="popup-category-chip">{place.category}</span>
+        <span className="popup-category-chip">{place.category || 'Attraction'}</span>
       </div>
 
       <div className="popup-body">
@@ -131,16 +174,22 @@ function PopupCardContent({ place, onSelectPlace, onGetDirections }) {
         <div className="popup-meta-row">
           <span className="popup-rating">
             <Star size={13} fill="#C9A227" color="#C9A227" />
-            <strong>{place.rating || 4.7}</strong>
+            <strong>{(Number(place.rating) || 4.7).toFixed(1)}</strong>
           </span>
           <span className="popup-price">{priceDisplay} <small>/{priceUnit}</small></span>
         </div>
 
-        {routeInfo && (
-          <div className="popup-travel-badge">
-            {modeEmoji} {routeInfo.duration} ({routeInfo.distance} km)
-          </div>
-        )}
+        <DistanceBadgeErrorBoundary modeEmoji={modeEmoji}>
+          {routeInfo && !routeInfo.error && routeInfo.duration ? (
+            <div className="popup-travel-badge">
+              {modeEmoji} {routeInfo.duration} ({routeInfo.distance} km)
+            </div>
+          ) : routeInfo?.error ? (
+            <div className="popup-travel-badge travel-time-unavailable">
+              {modeEmoji} Distance unavailable
+            </div>
+          ) : null}
+        </DistanceBadgeErrorBoundary>
 
         <div className="popup-actions">
           <button className="popup-view-btn" onClick={() => onSelectPlace?.(place)}>
@@ -165,7 +214,7 @@ function PopupCardContent({ place, onSelectPlace, onGetDirections }) {
   )
 }
 
-export default function AllPlacesMap({ places = [], onSelectPlace, onGetDirections }) {
+function AllPlacesMapInner({ places = [], onSelectPlace, onGetDirections }) {
   const [filter, setFilter] = useState('all') // 'all' | 'attractions' | 'hotels' | 'restaurants'
   const [userCoords, setUserCoords] = useState(null)
   const [geoLocating, setGeoLocating] = useState(false)
@@ -187,25 +236,39 @@ export default function AllPlacesMap({ places = [], onSelectPlace, onGetDirectio
     )
   }
 
-  // Filter dataset items
+  // Filter dataset items, validating every place is within Telangana/Hyderabad boundary
   const filteredPlaces = useMemo(() => {
+    const rawList = Array.isArray(places) ? places : []
+    const validatedList = validateAndFilterTelanganaPlaces(rawList, 'AllPlacesMap')
+
     if (filter === 'attractions') {
-      return places.filter((p) => p.id.startsWith('place-') || (!p.id.startsWith('hotel-') && !p.id.startsWith('restaurant-')))
+      return validatedList.filter((p) => {
+        const id = String(p.id || '')
+        return id.startsWith('place-') || (!id.startsWith('hotel-') && !id.startsWith('restaurant-'))
+      })
     }
     if (filter === 'hotels') {
-      return places.filter((p) => p.id.startsWith('hotel-') || p.category?.toLowerCase().includes('hotel'))
+      return validatedList.filter((p) => {
+        const id = String(p.id || '')
+        return id.startsWith('hotel-') || p.category?.toLowerCase().includes('hotel')
+      })
     }
     if (filter === 'restaurants') {
-      return places.filter((p) => p.id.startsWith('restaurant-') || p.cuisine || p.detail?.includes('Dining'))
+      return validatedList.filter((p) => {
+        const id = String(p.id || '')
+        return id.startsWith('restaurant-') || p.cuisine || p.detail?.includes('Dining')
+      })
     }
-    return places
+    return validatedList
   }, [places, filter])
 
   function getMarkerIcon(place) {
-    if (place.id.startsWith('hotel-') || place.category?.toLowerCase().includes('hotel')) {
+    const id = String(place.id || '')
+    const cat = (place.category || '').toLowerCase()
+    if (id.startsWith('hotel-') || cat.includes('hotel')) {
       return hotelIcon
     }
-    if (place.id.startsWith('restaurant-') || place.cuisine || place.detail?.includes('Dining')) {
+    if (id.startsWith('restaurant-') || place.cuisine || place.detail?.includes('Dining') || cat.includes('restaurant')) {
       return restaurantIcon
     }
     return attractionIcon
@@ -262,11 +325,14 @@ export default function AllPlacesMap({ places = [], onSelectPlace, onGetDirectio
           )}
 
           {/* Place Category Markers with Marker Clustering */}
-          <MarkerClusterGroup key={filter}>
+          <MarkerClusterGroup key={filter} spiderfyOnMaxZoom={true} maxClusterRadius={45}>
             {filteredPlaces.map((place) => {
-              const leafletLat = place.position ? place.position[0] : place.location?.coordinates[1]
-              const leafletLng = place.position ? place.position[1] : place.location?.coordinates[0]
-              if (!leafletLat || !leafletLng) return null
+              const leafletLat = place.position ? Number(place.position[0]) : Number(place.location?.coordinates?.[1])
+              const leafletLng = place.position ? Number(place.position[1]) : Number(place.location?.coordinates?.[0])
+              if (!isInsideTelangana(leafletLat, leafletLng)) {
+                console.warn(`[AllPlacesMap] Hiding pin outside Telangana: ${place.name} at [${leafletLat}, ${leafletLng}]`)
+                return null
+              }
 
               return (
                 <Marker key={place.id} position={[leafletLat, leafletLng]} icon={getMarkerIcon(place)}>
@@ -282,7 +348,7 @@ export default function AllPlacesMap({ places = [], onSelectPlace, onGetDirectio
             })}
           </MarkerClusterGroup>
 
-          <MapBoundsRecenter items={filteredPlaces} userCoords={userCoords} />
+          <MapBoundsRecenter items={filteredPlaces} userCoords={userCoords} filterKey={filter} />
         </MapContainer>
 
         {/* Map Legend Overlay */}
@@ -294,5 +360,13 @@ export default function AllPlacesMap({ places = [], onSelectPlace, onGetDirectio
         </div>
       </div>
     </div>
+  )
+}
+
+export default function AllPlacesMap(props) {
+  return (
+    <MapErrorBoundary minHeight="450px">
+      <AllPlacesMapInner {...props} />
+    </MapErrorBoundary>
   )
 }
