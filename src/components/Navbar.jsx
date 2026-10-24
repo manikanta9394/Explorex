@@ -270,6 +270,9 @@ export default function Navbar({
     logout()
     setUserDropdownOpen(false)
     setMobileDrawerOpen(false)
+    if (onNavigate) {
+      onNavigate('/welcome')
+    }
   }
 
   const isLinkActive = (path) => {

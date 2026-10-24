@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import ErrorBoundary from './components/ErrorBoundary'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ScrollProgressBar from './components/ScrollProgressBar'
 import AuthModal from './components/AuthModal'
+import AccessGate from './components/AccessGate'
+import GuestUpgradeBanner from './components/GuestUpgradeBanner'
 import { AuthProvider } from './context/AuthContext'
 import { LanguageProvider } from './context/LanguageContext'
 import { useAuth } from './context/useAuth'
@@ -22,9 +25,19 @@ import SavedPlacesPage from './pages/SavedPlacesPage'
 import FestivalCalendarPage from './pages/FestivalCalendarPage'
 import LoginPage from './pages/LoginPage'
 import SignupPage from './pages/SignupPage'
+import WelcomePage from './pages/WelcomePage'
 import { allDatasetPlaces } from './data/tourismData'
 import { openGoogleMapsDirections } from './utils/googleMaps'
 import './App.css'
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+      retry: 1,
+    },
+  },
+})
 
 function getRouteFromLocation() {
   if (typeof window === 'undefined') return { route: '/', id: null }
@@ -57,6 +70,7 @@ function getRouteFromLocation() {
   // Strip query params for route matching
   const cleanPath = path.split('?')[0].split('#')[0]
 
+  if (cleanPath === '/welcome') return { route: '/welcome', id: null }
   if (cleanPath === '/login') return { route: '/login', id: null }
   if (cleanPath === '/signup') return { route: '/signup', id: null }
   if (cleanPath === '/explore') return { route: '/explore', id: null }
@@ -117,6 +131,10 @@ function AppContent() {
   }
 
   // Auth pages have dedicated centered glassmorphic cards without Navbar/Footer
+  if (currentRoute.route === '/welcome') {
+    return <WelcomePage onNavigate={navigateTo} />
+  }
+
   if (currentRoute.route === '/login') {
     return <LoginPage onNavigate={navigateTo} />
   }
@@ -198,44 +216,49 @@ function AppContent() {
   }
 
   return (
-    <div className="explorex-app-shell">
-      <ScrollProgressBar />
-      <Navbar
-        currentRoute={currentRoute.route === '/explore/:id' ? `/explore/${currentRoute.id}` : currentRoute.route}
-        onNavigate={navigateTo}
-        allPlaces={allDatasetPlaces}
-        onGetDirections={handleGetDirections}
-      />
-      <main className="main-content-area" id="main-content">
-        <div key={routeKey} className="page-transition-wrap">
-          {renderCurrentPage()}
-        </div>
-      </main>
-      <Footer onNavigate={navigateTo} />
-      <AuthModal
-        isOpen={authModalOpen}
-        onClose={closeAuthModal}
-        initialMode={authModalMode}
-        onNavigate={navigateTo}
-      />
-    </div>
+    <AccessGate currentRoute={currentRoute} onNavigate={navigateTo}>
+      <div className="explorex-app-shell">
+        <ScrollProgressBar />
+        <GuestUpgradeBanner />
+        <Navbar
+          currentRoute={currentRoute.route === '/explore/:id' ? `/explore/${currentRoute.id}` : currentRoute.route}
+          onNavigate={navigateTo}
+          allPlaces={allDatasetPlaces}
+          onGetDirections={handleGetDirections}
+        />
+        <main className="main-content-area" id="main-content">
+          <div key={routeKey} className="page-transition-wrap">
+            {renderCurrentPage()}
+          </div>
+        </main>
+        <Footer onNavigate={navigateTo} />
+        <AuthModal
+          isOpen={authModalOpen}
+          onClose={closeAuthModal}
+          initialMode={authModalMode}
+          onNavigate={navigateTo}
+        />
+      </div>
+    </AccessGate>
   )
 }
 
 export default function App() {
   return (
     <ErrorBoundary>
-      <AuthProvider>
-        <LanguageProvider>
-          <TravelModeProvider>
-            <UserLocationProvider>
-              <SavedPlacesProvider>
-                <AppContent />
-              </SavedPlacesProvider>
-            </UserLocationProvider>
-          </TravelModeProvider>
-        </LanguageProvider>
-      </AuthProvider>
+      <QueryClientProvider client={queryClient}>
+        <AuthProvider>
+          <LanguageProvider>
+            <TravelModeProvider>
+              <UserLocationProvider>
+                <SavedPlacesProvider>
+                  <AppContent />
+                </SavedPlacesProvider>
+              </UserLocationProvider>
+            </TravelModeProvider>
+          </LanguageProvider>
+        </AuthProvider>
+      </QueryClientProvider>
     </ErrorBoundary>
   )
 }
