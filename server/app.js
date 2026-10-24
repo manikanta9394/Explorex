@@ -9,7 +9,7 @@ import restaurantRoutes from './routes/restaurantRoutes.js'
 import aiRoutes from './routes/aiRoutes.js'
 import routeRoutes from './routes/routeRoutes.js'
 import authRoutes from './routes/authRoutes.js'
-import { askAI } from './controllers/aiController.js'
+import { askAI, streamAIChat } from './controllers/aiController.js'
 import { errorHandler, notFound } from './middleware/errorMiddleware.js'
 
 const app = express()
@@ -34,6 +34,7 @@ app.use('/api/hotels', hotelRoutes)
 app.use('/api/restaurants', restaurantRoutes)
 app.use('/api/ai', aiRoutes)
 app.post('/api/chat', askAI)
+app.post('/api/chat/stream', streamAIChat)
 app.use('/api/route', routeRoutes)
 app.use('/api/auth', authRoutes)
 app.use(notFound)
