@@ -1,0 +1,60 @@
+{
+  "id": "fatehpur-sikri",
+  "name": "Fatehpur Sikri & Buland Darwaza",
+  "wikidata_id": "Q179046",
+  "wiki_title": "Fatehpur_Sikri",
+  "type": "attraction",
+  "category": "Heritage Monument",
+  "state": "Uttar Pradesh",
+  "city": "Fatehpur Sikri",
+  "lat": 27.0945,
+  "lng": 77.6679,
+  "price_amount": 50,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Sunrise to Sunset daily",
+  "best_time": "October to March",
+  "rules": [
+    "Remove footwear when entering Jama Masjid and Salim Chishti tomb",
+    "Authorized ASI guides carry badge ID"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "Mughal Capital",
+    "Buland Darwaza",
+    "Architecture"
+  ],
+  "visual_features": "colossal red sandstone Buland Darwaza gateway towering above stone steps",
+  "description": "Fatehpur Sikri is a town in the Agra District of Uttar Pradesh, India. Situated 35.7 kilometres (22.2 mi) from the district headquarters of Agra, Fatehpur Sikri itself was founded as the capital of the Mughal Empire in 1571 by Emperor Akbar, serving this role from 1571 to 1585, when Akbar abandoned it due to a campaign in Punjab and was later completely abandoned in 1610.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Fatehput_Sikiri_Buland_Darwaza_gate_2010.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Fatehput_Sikiri_Buland_Darwaza_gate_2010.jpg/330px-Fatehput_Sikiri_Buland_Darwaza_gate_2010.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 2938,
+    "height": 2536,
+    "sha256": "fc8a03be60c26ced8d92f72f41e6d39609c4c8030f92a9cc7879bf616205b2ae",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Fatehput_Sikiri_Buland_Darwaza_gate_2010.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Fatehput_Sikiri_Buland_Darwaza_gate_2010.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Fatehput_Sikiri_Buland_Darwaza_gate_2010.jpg/330px-Fatehput_Sikiri_Buland_Darwaza_gate_2010.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 2938,
+      "height": 2536,
+      "sha256": "fc8a03be60c26ced8d92f72f41e6d39609c4c8030f92a9cc7879bf616205b2ae",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

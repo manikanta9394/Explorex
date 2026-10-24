@@ -1,0 +1,60 @@
+{
+  "id": "nilgiri-mountain-railway",
+  "name": "Nilgiri Mountain Railway (Toy Train)",
+  "wikidata_id": "Q378775",
+  "wiki_title": "Nilgiri_Mountain_Railway",
+  "type": "attraction",
+  "category": "Heritage Railway",
+  "state": "Tamil Nadu",
+  "city": "Ooty (Udhagamandalam)",
+  "lat": 11.41,
+  "lng": 76.7,
+  "price_amount": 205,
+  "price_currency": "INR",
+  "price_unit": "first class ticket per person",
+  "price_source": "https://irctc.co.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Daily departures between Mettupalayam and Ooty via Coonoor",
+  "best_time": "October to May",
+  "rules": [
+    "Advance IRCTC railway booking highly recommended weeks ahead",
+    "Do not lean out of carriage windows during tunnel transit"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "Steam Locomotive",
+    "Blue Mountains",
+    "Tea Valley Viaducts"
+  ],
+  "visual_features": "blue and cream heritage steam toy train crossing stone arched viaducts amidst lush tea estates and mist-cloaked pine hills",
+  "description": "The Nilgiri Mountain Railway (NMR), colloquially called the \"Toy Train\" by locals, is a 1,000 mm metre gauge railway in Nilgiris district, Tamil Nadu, India, built by the British in 1908. The railway is operated by the Southern Railway and is the only rack railway in India.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/NMR_train_at_Ketti_05-02-26_75.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/NMR_train_at_Ketti_05-02-26_75.jpeg/330px-NMR_train_at_Ketti_05-02-26_75.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 1516,
+    "height": 1073,
+    "sha256": "6ed5e8359004e8b0bed064f84fc50ba35489e477dba94acca1af7126c0eba495",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/41/NMR_train_at_Ketti_05-02-26_75.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/NMR_train_at_Ketti_05-02-26_75.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/NMR_train_at_Ketti_05-02-26_75.jpeg/330px-NMR_train_at_Ketti_05-02-26_75.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 1516,
+      "height": 1073,
+      "sha256": "6ed5e8359004e8b0bed064f84fc50ba35489e477dba94acca1af7126c0eba495",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

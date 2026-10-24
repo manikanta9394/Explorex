@@ -1,0 +1,60 @@
+{
+  "id": "sarnath-deer-park",
+  "name": "Sarnath & Dhamek Stupa",
+  "wikidata_id": "Q192236",
+  "wiki_title": "Sarnath",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Uttar Pradesh",
+  "city": "Sarnath",
+  "lat": 25.3811,
+  "lng": 83.0214,
+  "price_amount": 25,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Sunrise to Sunset daily · Archaeological Museum closed Fridays",
+  "best_time": "November to February",
+  "rules": [
+    "Circumambulate the stupa clockwise",
+    "Museum ticket separate and closed on Fridays"
+  ],
+  "tags": [
+    "Buddhist Pilgrimage",
+    "Dhamek Stupa",
+    "Ashoka Pillar",
+    "Peace"
+  ],
+  "visual_features": "cylindrical brick and stone Dhamek Stupa with ancient geometric floral carvings set in lush lawns",
+  "description": "Sarnath is a town northeast of Varanasi, in Uttar Pradesh, India. It was here that the Buddha gave his first sermon after attaining enlightenment at Bodh Gaya. The Lion Capital of Ashoka, raised on a column in Sarnath in 250 BCE by the first Buddhist emperor Ashoka, commemorates this event. It is also the State Emblem of India.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Ancient_Buddhist_monasteries_near_Dhamekh_Stupa_Monument_Site%2C_Sarnath.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Ancient_Buddhist_monasteries_near_Dhamekh_Stupa_Monument_Site%2C_Sarnath.jpg/330px-Ancient_Buddhist_monasteries_near_Dhamekh_Stupa_Monument_Site%2C_Sarnath.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 1600,
+    "height": 1200,
+    "sha256": "bddd6a5312ca60290b0e164c528718d59b677e8719761b9ee33afb8a473efb14",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Ancient_Buddhist_monasteries_near_Dhamekh_Stupa_Monument_Site%2C_Sarnath.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Ancient_Buddhist_monasteries_near_Dhamekh_Stupa_Monument_Site%2C_Sarnath.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Ancient_Buddhist_monasteries_near_Dhamekh_Stupa_Monument_Site%2C_Sarnath.jpg/330px-Ancient_Buddhist_monasteries_near_Dhamekh_Stupa_Monument_Site%2C_Sarnath.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 1600,
+      "height": 1200,
+      "sha256": "bddd6a5312ca60290b0e164c528718d59b677e8719761b9ee33afb8a473efb14",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

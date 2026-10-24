@@ -1,0 +1,59 @@
+{
+  "id": "humayuns-tomb-delhi",
+  "name": "Humayun's Tomb",
+  "wikidata_id": "Q191484",
+  "wiki_title": "Humayun's_Tomb",
+  "type": "attraction",
+  "category": "Heritage Monument",
+  "state": "Delhi",
+  "city": "New Delhi",
+  "lat": 28.5933,
+  "lng": 77.2507,
+  "price_amount": 40,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:00 AM - 6:00 PM daily",
+  "best_time": "Late afternoon in winter for golden hour",
+  "rules": [
+    "Stay on designated pathways in Charbagh garden",
+    "Footwear removal required inside inner tomb chamber"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "Charbagh Garden",
+    "Mughal Architecture"
+  ],
+  "visual_features": "red sandstone octagonal mausoleum with white marble dome surrounded by symmetrical Persian water gardens",
+  "description": "Humayun's tomb is the tomb of the Mughal Emperor Humayun located in Delhi, India. The tomb was commissioned by Humayun's first wife and chief consort, Empress Bega Begum, under her patronage in 1558, and designed by the Persian architects Mirak Mirza Ghiyas and his son, Sayyid Muhammad, whom she personally chose. It was the first garden-tomb on the Indian subcontinent, and is located in Nizamuddin East, Delhi, close to the Dina-panah Citadel, also known as Purana Qila, that Humayun founded in 1538. It was also the first structure to use red sandstone at such a scale.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Tomb_of_Humayun%2C_Delhi.jpg/3840px-Tomb_of_Humayun%2C_Delhi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Tomb_of_Humayun%2C_Delhi.jpg/330px-Tomb_of_Humayun%2C_Delhi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 5294,
+    "height": 1788,
+    "sha256": "a531493e56c6c6f5af8896904fdd3d8536cbf772bacd5f1de1d3ee1340ab9fe2",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Tomb_of_Humayun%2C_Delhi.jpg/3840px-Tomb_of_Humayun%2C_Delhi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Tomb_of_Humayun%2C_Delhi.jpg/3840px-Tomb_of_Humayun%2C_Delhi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Tomb_of_Humayun%2C_Delhi.jpg/330px-Tomb_of_Humayun%2C_Delhi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 5294,
+      "height": 1788,
+      "sha256": "a531493e56c6c6f5af8896904fdd3d8536cbf772bacd5f1de1d3ee1340ab9fe2",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

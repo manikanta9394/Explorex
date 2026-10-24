@@ -1,0 +1,60 @@
+{
+  "id": "mysore-palace",
+  "name": "Mysore Palace (Amba Vilas)",
+  "wikidata_id": "Q1140027",
+  "wiki_title": "Mysore_Palace",
+  "type": "attraction",
+  "category": "Heritage Palace",
+  "state": "Karnataka",
+  "city": "Mysuru",
+  "lat": 12.3051,
+  "lng": 76.6551,
+  "price_amount": 100,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://mysorepalace.karnataka.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "10:00 AM - 5:30 PM daily · Illumination Sundays & holidays 7:00 PM - 7:45 PM",
+  "best_time": "October to March (famous Dasara festival in autumn)",
+  "rules": [
+    "Footwear must be deposited at free counters before entering palace interiors",
+    "Photography prohibited inside royal residential museum wing"
+  ],
+  "tags": [
+    "Indo-Saracenic Architecture",
+    "Wodeyar Royal Dynasty",
+    "Golden Howdah",
+    "100,000 Light Bulbs"
+  ],
+  "visual_features": "grand Indo-Saracenic palace with three-story stone arches, marble domes, and 100,000 glowing light bulbs illuminating the facade at dusk",
+  "description": "Mysore Palace, also known as Amba Vilas Palace, is a historic palace and royal residence located in Mysore, Karnataka, India. It served as the official residence of the Wadiyar dynasty and the seat of the Kingdom of Mysore, and was commissioned by Krishnaraja Wodeyar IV in August 1897 following the destruction of the previous structure in a fire. The design of the palace is attributed to Henry Irwin, a British architect who had earlier designed the Madras High Court, and Edwin Wolleston Fritchley, who would later design the Lalitha Mahal. Construction of the current structure began in 1897 and was completed in 1912. It is one of the largest palaces in India, and is a prominent example of Indo-Saracenic architecture, combining Indo-Islamic, Rajput, Hoysala and Gothic architectural styles.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Mysore_Palace_Morning.jpg/3840px-Mysore_Palace_Morning.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Mysore_Palace_Morning.jpg/330px-Mysore_Palace_Morning.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4407,
+    "height": 2148,
+    "sha256": "e059fadc99eb0b7969128ebabf80e8cdc131e6f9d529d542cb283d11db2ad954",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Mysore_Palace_Morning.jpg/3840px-Mysore_Palace_Morning.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Mysore_Palace_Morning.jpg/3840px-Mysore_Palace_Morning.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Mysore_Palace_Morning.jpg/330px-Mysore_Palace_Morning.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4407,
+      "height": 2148,
+      "sha256": "e059fadc99eb0b7969128ebabf80e8cdc131e6f9d529d542cb283d11db2ad954",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

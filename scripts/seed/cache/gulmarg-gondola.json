@@ -1,0 +1,60 @@
+{
+  "id": "gulmarg-gondola",
+  "name": "Gulmarg Gondola & Apharwat Peak",
+  "wikidata_id": "Q5617652",
+  "wiki_title": "Gulmarg_Gondola",
+  "type": "attraction",
+  "category": "Hill Station & Snow",
+  "state": "Jammu and Kashmir",
+  "city": "Gulmarg",
+  "lat": 34.0489,
+  "lng": 74.3806,
+  "price_amount": 800,
+  "price_currency": "INR",
+  "price_unit": "Phase 1 ticket (Phase 2 ₹1,050)",
+  "price_source": "https://jksstdc.com",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "9:00 AM - 4:00 PM (Subject to mountain weather conditions)",
+  "best_time": "December to March (skiing snow season) or May to September (green meadow)",
+  "rules": [
+    "Book gondola tickets online well in advance (heavy seasonal rush)",
+    "Carry adequate thermal winter wear for Phase 2 at 13,780 ft"
+  ],
+  "tags": [
+    "Ski Resort",
+    "Highest Cable Car in Asia",
+    "Apharwat Peak",
+    "Snow Sports"
+  ],
+  "visual_features": "cable car cabins ascending over snow-blanketed fir pine forests toward rugged glaciated Apharwat summit",
+  "description": "Gulmarg Gondola in Gulmarg, Jammu and Kashmir, is the second longest and second highest cable car in the world. Higher lines include the Mi Teleférico in Bolivia and at Jade Dragon Snow Mountain.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Gulmarg_gondola.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Gulmarg_gondola.JPG/330px-Gulmarg_gondola.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 2048,
+    "height": 1222,
+    "sha256": "9d316ffe9ca9179a1bf90f16e6342dd1f70e26976e40b3a5694483de0636c1cb",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Gulmarg_gondola.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Gulmarg_gondola.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Gulmarg_gondola.JPG/330px-Gulmarg_gondola.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 2048,
+      "height": 1222,
+      "sha256": "9d316ffe9ca9179a1bf90f16e6342dd1f70e26976e40b3a5694483de0636c1cb",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

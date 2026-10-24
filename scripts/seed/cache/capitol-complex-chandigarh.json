@@ -1,0 +1,60 @@
+{
+  "id": "capitol-complex-chandigarh",
+  "name": "Chandigarh Capitol Complex",
+  "wikidata_id": "Q2937517",
+  "wiki_title": "Chandigarh_Capitol_Complex",
+  "type": "attraction",
+  "category": "Modernist Architecture",
+  "state": "Chandigarh",
+  "city": "Chandigarh",
+  "lat": 30.7583,
+  "lng": 76.8042,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free guided tour registration",
+  "price_source": "https://chandigarhtourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Three daily guided tours: 10:00 AM, 12:00 PM, 3:00 PM (Requires tourist pass from Sector 1)",
+  "best_time": "October to March",
+  "rules": [
+    "Government security registration required before entering High Court and Secretariat areas",
+    "ID proof mandatory for all visitors"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "Le Corbusier",
+    "Open Hand Monument",
+    "Modernism"
+  ],
+  "visual_features": "monumental exposed concrete modernist buildings and the iconic rotating metal Open Hand Monument in vast paved plaza",
+  "description": "Chandigarh Capitol Complex is a government compound designed by Swiss-French architect Le Corbusier and his co-workers in Chandigarh, India.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Palace_of_Assembly_Chandigarh_2006.jpg/3840px-Palace_of_Assembly_Chandigarh_2006.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Palace_of_Assembly_Chandigarh_2006.jpg/330px-Palace_of_Assembly_Chandigarh_2006.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4760,
+    "height": 1990,
+    "sha256": "08391fb9d2c7103ac90695f1ffe58a8241273541e5645ba963e929ad43f574a5",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Palace_of_Assembly_Chandigarh_2006.jpg/3840px-Palace_of_Assembly_Chandigarh_2006.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Palace_of_Assembly_Chandigarh_2006.jpg/3840px-Palace_of_Assembly_Chandigarh_2006.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Palace_of_Assembly_Chandigarh_2006.jpg/330px-Palace_of_Assembly_Chandigarh_2006.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4760,
+      "height": 1990,
+      "sha256": "08391fb9d2c7103ac90695f1ffe58a8241273541e5645ba963e929ad43f574a5",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

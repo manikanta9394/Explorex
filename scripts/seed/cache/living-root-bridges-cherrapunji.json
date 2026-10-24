@@ -1,0 +1,60 @@
+{
+  "id": "living-root-bridges-cherrapunji",
+  "name": "Double Decker Living Root Bridge (Nongriat)",
+  "wikidata_id": "Q3520110",
+  "wiki_title": "Living_root_bridge",
+  "type": "attraction",
+  "category": "Natural Wonder",
+  "state": "Meghalaya",
+  "city": "Nongriat (Cherrapunji / Sohra)",
+  "lat": 25.2508,
+  "lng": 91.6719,
+  "price_amount": 50,
+  "price_currency": "INR",
+  "price_unit": "village development entry fee",
+  "price_source": "https://meghalayatourism.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Daylight trek hours (allow 4 to 6 hours for roundtrip)",
+  "best_time": "October to May (crystal clear turquoise natural swimming pools below bridge)",
+  "rules": [
+    "Trek of 3,500 stone steps descending from Tyrna village requires good physical stamina",
+    "Do not peel or carve rubber tree aerial roots forming the living bridge"
+  ],
+  "tags": [
+    "Ficus Elastica Bio-engineering",
+    "UNESCO Tentative List",
+    "Khasi Tribe Ingenuity",
+    "Double Decker Bridge"
+  ],
+  "visual_features": "extraordinary double-tiered living bridge woven across roaring jungle stream from the living aerial roots of ancient rubber trees",
+  "description": "Living root bridges are a kind of tree shaping in which rivers are spanned by bridges formed out of the roots of ficus plants. Due to their being made from living, growing trees, they \"show a very wide variety of structural typologies, with various aspects of particular bridges resembling characteristics of suspension bridges, cable-stayed bridges, arches, trusses, and simply-supported beams.\" They are common in the Indian state of Meghalaya.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Living_root_bridges%2C_Nongriat_village%2C_Meghalaya2.jpg/3840px-Living_root_bridges%2C_Nongriat_village%2C_Meghalaya2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Living_root_bridges%2C_Nongriat_village%2C_Meghalaya2.jpg/330px-Living_root_bridges%2C_Nongriat_village%2C_Meghalaya2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 5184,
+    "height": 3456,
+    "sha256": "6c685c44c30f55d36dfc31eeee0dc74a7fdb75bc0e26dd74b86244800c295985",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Living_root_bridges%2C_Nongriat_village%2C_Meghalaya2.jpg/3840px-Living_root_bridges%2C_Nongriat_village%2C_Meghalaya2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Living_root_bridges%2C_Nongriat_village%2C_Meghalaya2.jpg/3840px-Living_root_bridges%2C_Nongriat_village%2C_Meghalaya2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Living_root_bridges%2C_Nongriat_village%2C_Meghalaya2.jpg/330px-Living_root_bridges%2C_Nongriat_village%2C_Meghalaya2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 5184,
+      "height": 3456,
+      "sha256": "6c685c44c30f55d36dfc31eeee0dc74a7fdb75bc0e26dd74b86244800c295985",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

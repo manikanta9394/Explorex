@@ -1,0 +1,60 @@
+{
+  "id": "neermahal-water-palace",
+  "name": "Neermahal Palace (Water Palace of the East)",
+  "wikidata_id": "Q807217",
+  "wiki_title": "Neermahal",
+  "type": "attraction",
+  "category": "Heritage Palace & Lake",
+  "state": "Tripura",
+  "city": "Melaghar (Rudrasagar Lake)",
+  "lat": 23.5014,
+  "lng": 91.3147,
+  "price_amount": 30,
+  "price_currency": "INR",
+  "price_unit": "palace entry (Motorboat roundtrip ₹50)",
+  "price_source": "https://tripuratourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "9:00 AM - 5:00 PM daily",
+  "best_time": "October to March (migratory bird boating season)",
+  "rules": [
+    "One of only two major water palaces in India (along with Jal Mahal Jaipur)",
+    "Take the picturesque 15-minute motorboat voyage across Rudrasagar Lake to the palace entrance"
+  ],
+  "tags": [
+    "Royal Lake Palace",
+    "Rudrasagar Lake (Ramsar Site)",
+    "Hindu and Mughal Fusion",
+    "Motorboat Voyage"
+  ],
+  "visual_features": "fairytale white and red royal palace with decorative minarets, bridges, and pavilions rising right out of the shimmering waters of Rudrasagar lake",
+  "description": "Neermahal also known as Twijilikma Nuyung is a former royal palace of the Tripura Kingdom. Built by Maharaja Bir Bikram Kishore Manikya Bahadur in 1930. It is also the largest water palace in India. The palace is situated in the middle of Rudrasagar Lake, in Melaghar 53 kilometers away from Agartala, the capital of Tripura.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Neer_Mahal%2C_the_water_palace_of_Tripura_02.jpg/3840px-Neer_Mahal%2C_the_water_palace_of_Tripura_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Neer_Mahal%2C_the_water_palace_of_Tripura_02.jpg/330px-Neer_Mahal%2C_the_water_palace_of_Tripura_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 5904,
+    "height": 3936,
+    "sha256": "effe0905f397f14e447545f8507133e9901c312bd2291f64fb3315b23f5b66bd",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Neer_Mahal%2C_the_water_palace_of_Tripura_02.jpg/3840px-Neer_Mahal%2C_the_water_palace_of_Tripura_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Neer_Mahal%2C_the_water_palace_of_Tripura_02.jpg/3840px-Neer_Mahal%2C_the_water_palace_of_Tripura_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Neer_Mahal%2C_the_water_palace_of_Tripura_02.jpg/330px-Neer_Mahal%2C_the_water_palace_of_Tripura_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 5904,
+      "height": 3936,
+      "sha256": "effe0905f397f14e447545f8507133e9901c312bd2291f64fb3315b23f5b66bd",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "fort-aguada-candolim",
+  "name": "Fort Aguada & 1864 Lighthouse",
+  "wikidata_id": "Q3520110",
+  "wiki_title": "Fort_Aguada",
+  "type": "attraction",
+  "category": "Heritage Fort",
+  "state": "Goa",
+  "city": "Candolim (Sinquerim)",
+  "lat": 15.4925,
+  "lng": 73.7736,
+  "price_amount": 25,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "9:30 AM - 6:00 PM daily",
+  "best_time": "October to April (sunset views over Arabian Sea)",
+  "rules": [
+    "Watch out for steep rocky slopes along outer sea ramparts",
+    "Visit the lower Aguada jail museum complex nearby"
+  ],
+  "tags": [
+    "17th Century Portuguese Citadel",
+    "Mandovi River Estuary",
+    "Historic Lighthouse",
+    "Arabian Sea Ramparts"
+  ],
+  "visual_features": "massive red laterite stone fort bastion with four-story circular lighthouse commanding panoramic views of Sinquerim beach and the Arabian Sea",
+  "description": "Fort Aguada is a seventeenth-century Portuguese-era fort, built in 1612, along with a lighthouse, standing in Goa, India, on Sinquerim Beach, overlooking the Arabian Sea. It is an ASI protected Monument of National Importance in Goa.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Fort_aguada.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Fort_aguada.jpg/330px-Fort_aguada.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 1024,
+    "height": 768,
+    "sha256": "fa57602f41c85990cb99dcc9f3bc3201f97e226380d4b2eab7b34d07f06a7e26",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Fort_aguada.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Fort_aguada.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Fort_aguada.jpg/330px-Fort_aguada.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 1024,
+      "height": 768,
+      "sha256": "fa57602f41c85990cb99dcc9f3bc3201f97e226380d4b2eab7b34d07f06a7e26",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

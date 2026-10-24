@@ -1,0 +1,60 @@
+{
+  "id": "vivekananda-rock-kanyakumari",
+  "name": "Vivekananda Rock Memorial & Thiruvalluvar Statue",
+  "wikidata_id": "Q1520638",
+  "wiki_title": "Vivekananda_Rock_Memorial",
+  "type": "attraction",
+  "category": "Monument & Sea",
+  "state": "Tamil Nadu",
+  "city": "Kanyakumari",
+  "lat": 8.078,
+  "lng": 77.555,
+  "price_amount": 20,
+  "price_currency": "INR",
+  "price_unit": "entry fee (ferry ride ₹50 roundtrip)",
+  "price_source": "https://kanyakumari.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "8:00 AM - 4:00 PM daily (subject to sea ferry conditions)",
+  "best_time": "October to March (confluence of Arabian Sea, Bay of Bengal, and Indian Ocean)",
+  "rules": [
+    "Life-jackets mandatory on ferry boat ride",
+    "Observe silent meditation inside Dhyana Mandapam"
+  ],
+  "tags": [
+    "Triveni Sangam",
+    "Swami Vivekananda",
+    "Thiruvalluvar Statue",
+    "Southernmost Tip of Mainland India"
+  ],
+  "visual_features": "granite memorial pavilion and monumental 133-foot stone Thiruvalluvar statue standing on offshore rock islands in crashing turquoise ocean",
+  "description": "Vivekananda Rock Memorial is a monument and popular tourist attraction in Kanyakumari, India's southernmost tip. The memorial stands on one of the two rocks located about 500 meters off mainland of Vavathurai, Tamil Nadu. It was built in 1970 in honour of Swami Vivekananda, who is said to have attained enlightenment on the rock.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/RockMemorial.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/RockMemorial.jpg/330px-RockMemorial.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 3264,
+    "height": 2448,
+    "sha256": "66fc0bc8115af20bd202bb4f98c28bfdcd6972208ec20c2fbd798f9a35791b7f",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/RockMemorial.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/RockMemorial.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/RockMemorial.jpg/330px-RockMemorial.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 3264,
+      "height": 2448,
+      "sha256": "66fc0bc8115af20bd202bb4f98c28bfdcd6972208ec20c2fbd798f9a35791b7f",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

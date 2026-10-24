@@ -1,0 +1,60 @@
+{
+  "id": "rajgir-glass-bridge-ropeway",
+  "name": "Rajgir Glass Skywalk & Vishwa Shanti Stupa",
+  "wikidata_id": "Q3520110",
+  "wiki_title": "Rajgir",
+  "type": "attraction",
+  "category": "Adventure & Peace Pagoda",
+  "state": "Bihar",
+  "city": "Rajgir (Nalanda)",
+  "lat": 25.013,
+  "lng": 85.419,
+  "price_amount": 150,
+  "price_currency": "INR",
+  "price_unit": "Glass Bridge ticket (Chairlift Ropeway ₹100)",
+  "price_source": "https://tourism.bihar.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "9:00 AM - 5:00 PM (Nature Safari closed on Mondays)",
+  "best_time": "October to March",
+  "rules": [
+    "Shoe covers provided for walking across the transparent glass bridge cantilevered over the gorge",
+    "Pre-book online tickets on Bihar Tourism Nature Safari portal"
+  ],
+  "tags": [
+    "Glass Skywalk Bridge",
+    "Single-seater Chairlift",
+    "Gridhakuta Vulture Peak",
+    "Peace Pagoda"
+  ],
+  "visual_features": "transparent glass skywalk suspended 200 feet over a lush green valley beside the white-domed Vishwa Shanti Stupa on Ratnagiri hill",
+  "description": "Rajgir is an ancient city and university town in the Nalanda district of Bihar, India. It is also considered a cultural capital of Magadh. It was the capital of the Haryanka dynasty, the Pradyota dynasty, the Brihadratha dynasty, the Maurya Empire, and it was the retreat center for the Buddha and his sangha. Other historical figures such as Mahavira and king Bimbisara lived there, and due to its religious significance, the city holds a place of prominence in Buddhist, Jain and Hindu scriptures.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Shanti_Stupa_at_Rajgir_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Shanti_Stupa_at_Rajgir_%28cropped%29.jpg/330px-Shanti_Stupa_at_Rajgir_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 2620,
+    "height": 1952,
+    "sha256": "8542f5f314d4fc27e4cf06e1896d678add0eec70be34c975a4b1f4fa37d1b61a",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Shanti_Stupa_at_Rajgir_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Shanti_Stupa_at_Rajgir_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Shanti_Stupa_at_Rajgir_%28cropped%29.jpg/330px-Shanti_Stupa_at_Rajgir_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 2620,
+      "height": 1952,
+      "sha256": "8542f5f314d4fc27e4cf06e1896d678add0eec70be34c975a4b1f4fa37d1b61a",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

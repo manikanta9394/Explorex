@@ -1,0 +1,60 @@
+{
+  "id": "gir-national-park-asiatic-lions",
+  "name": "Gir National Park (Home of Asiatic Lions)",
+  "wikidata_id": "Q1471718",
+  "wiki_title": "Gir_National_Park",
+  "type": "attraction",
+  "category": "Wildlife Sanctuary",
+  "state": "Gujarat",
+  "city": "Sasan Gir (Junagadh)",
+  "lat": 21.1242,
+  "lng": 70.8242,
+  "price_amount": 800,
+  "price_currency": "INR",
+  "price_unit": "jeep safari permit estimate per Indian national",
+  "price_source": "https://girlion.gujarat.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Morning safari: 6:00 AM - 9:00 AM, 9:00 AM - 12:00 PM · Afternoon safari: 3:00 PM - 6:00 PM (Closed June 16 - October 15)",
+  "best_time": "December to April",
+  "rules": [
+    "Government online advance permit booking essential",
+    "Closed during monsoon breeding season (mid-June to mid-October)"
+  ],
+  "tags": [
+    "Sole Home of the Asiatic Lion",
+    "Dry Deciduous Teak Jungle",
+    "Jeep Safari",
+    "Biodiversity"
+  ],
+  "visual_features": "golden scrub forest and rocky dry deciduous teak woods where Asiatic lions with dark manes roam freely in open savannah glades",
+  "description": "Gir National Park and Wildlife Sanctuary, also known as Sasan Gir, is a national park and wildlife sanctuary in Gujarat, India. It was established in 1965 in the erstwhile Nawab of Junagarh's private hunting area, with a total area of 1,410.30 km2 (544.52 sq mi), of which 258.71 km2 (99.89 sq mi) is fully protected as a national park and 1,151.59 km2 (444.63 sq mi) as wildlife sanctuary. It is part of the Khathiar-Gir dry deciduous forests ecoregion.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Gir_lion-Gir_forest%2Cjunagadh%2Cgujarat%2Cindia.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Gir_lion-Gir_forest%2Cjunagadh%2Cgujarat%2Cindia.jpeg/330px-Gir_lion-Gir_forest%2Cjunagadh%2Cgujarat%2Cindia.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 618,
+    "height": 440,
+    "sha256": "668937667311585c5b37e33379ab37a71ad9af900a5728386781776dcc4af835",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Gir_lion-Gir_forest%2Cjunagadh%2Cgujarat%2Cindia.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Gir_lion-Gir_forest%2Cjunagadh%2Cgujarat%2Cindia.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Gir_lion-Gir_forest%2Cjunagadh%2Cgujarat%2Cindia.jpeg/330px-Gir_lion-Gir_forest%2Cjunagadh%2Cgujarat%2Cindia.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 618,
+      "height": 440,
+      "sha256": "668937667311585c5b37e33379ab37a71ad9af900a5728386781776dcc4af835",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

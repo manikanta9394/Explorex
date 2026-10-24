@@ -1,0 +1,60 @@
+{
+  "id": "akshardham-delhi",
+  "name": "Swaminarayan Akshardham",
+  "wikidata_id": "Q597394",
+  "wiki_title": "Swaminarayan_Akshardham_(Delhi)",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Delhi",
+  "city": "New Delhi",
+  "lat": 28.6127,
+  "lng": 77.2773,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free temple entry",
+  "price_source": "https://akshardham.com",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "10:00 AM - 6:30 PM (Closed on Mondays)",
+  "best_time": "Afternoon leading into Sahaj Anand water show at dusk",
+  "rules": [
+    "Electronic devices and mobile phones prohibited on premises (free locker available)",
+    "Strict modest dress code"
+  ],
+  "tags": [
+    "Hindu Temple",
+    "Ornate Carvings",
+    "Cultural Center",
+    "Water Show"
+  ],
+  "visual_features": "ornate pink sandstone and Italian Carrara marble temple with intricately carved mandapams",
+  "description": "Swaminarayan Akshardham is a Hindu temple and campus in Delhi, India. The temple is close to the border with Noida. Also known as Akshardham Temple or Akshardham Delhi, the complex displays traditional and modern Hindu culture and architecture. Inspired by Yogiji Maharaj and created by Pramukh Swami Maharaj, it was constructed by BAPS. It is the world's second-largest BAPS Hindu temple, following Akshardham, New Jersey, in the United States.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/New_Delhi_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/New_Delhi_Temple.jpg/330px-New_Delhi_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 800,
+    "height": 600,
+    "sha256": "6a243614437540a62aa19ecd7e14c36511a394dc868b04e970af969ad0d63cc4",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/New_Delhi_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/New_Delhi_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/New_Delhi_Temple.jpg/330px-New_Delhi_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 800,
+      "height": 600,
+      "sha256": "6a243614437540a62aa19ecd7e14c36511a394dc868b04e970af969ad0d63cc4",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "ridge-and-mall-shimla",
+  "name": "The Ridge & Christ Church Shimla",
+  "wikidata_id": "Q7760773",
+  "wiki_title": "The_Ridge,_Shimla",
+  "type": "attraction",
+  "category": "Heritage Landmark",
+  "state": "Himachal Pradesh",
+  "city": "Shimla",
+  "lat": 31.1048,
+  "lng": 77.1741,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free pedestrian promenade",
+  "price_source": "https://himachaltourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Pedestrian area open 24 hours · Christ Church open 8:00 AM - 6:00 PM",
+  "best_time": "March to June or December/January for snowfall",
+  "rules": [
+    "Pedestrian-only promenade: vehicular traffic strictly banned",
+    "Smoking and littering subject to municipal fines"
+  ],
+  "tags": [
+    "Colonial Architecture",
+    "Christ Church",
+    "Himalayan Panorama",
+    "Pedestrian Walkway"
+  ],
+  "visual_features": "wide open stone-paved ridge promenade anchored by neo-Gothic yellow Christ Church with snow peaks on horizon",
+  "description": "The Ridge road is a large open space, located in the center of Shimla, the capital city of Himachal Pradesh, India. The Ridge is the hub of all cultural activities of Shimla. It is situated along the Mall Road, the shopping center of Shimla. Most major places of Shimla like Sanjauli Snowdown (IGMC), Mall Road, Jakhu Temple, Oakover, Kali Bari, and Annadale are connected through the Ridge.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/The_Ridge_Shimla_5.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/The_Ridge_Shimla_5.jpg/330px-The_Ridge_Shimla_5.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 2416,
+    "height": 2152,
+    "sha256": "91560773ecc5d9a9ef161f2f8edd6d842614fb64610fa40dcad0c46b4afceb8a",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/The_Ridge_Shimla_5.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/The_Ridge_Shimla_5.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/The_Ridge_Shimla_5.jpg/330px-The_Ridge_Shimla_5.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 2416,
+      "height": 2152,
+      "sha256": "91560773ecc5d9a9ef161f2f8edd6d842614fb64610fa40dcad0c46b4afceb8a",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

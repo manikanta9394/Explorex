@@ -1,0 +1,60 @@
+{
+  "id": "kanha-national-park-tiger",
+  "name": "Kanha Tiger Reserve (The Jungle Book)",
+  "wikidata_id": "Q1471718",
+  "wiki_title": "Kanha_Tiger_Reserve",
+  "type": "attraction",
+  "category": "Wildlife Sanctuary",
+  "state": "Madhya Pradesh",
+  "city": "Mandla / Balaghat",
+  "lat": 22.3333,
+  "lng": 80.6333,
+  "price_amount": 1550,
+  "price_currency": "INR",
+  "price_unit": "jeep safari vehicle permit estimate",
+  "price_source": "https://forest.mponline.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Morning safari: 6:00 AM - 11:00 AM · Afternoon safari: 3:00 PM - 6:00 PM (Closed July to mid-October)",
+  "best_time": "November to May (March to May offers prime tiger sightings at waterholes)",
+  "rules": [
+    "Inspiration for Rudyard Kipling Jungle Book",
+    "Core zones: Kanha, Kisli, Mukki, Sarhi require advance online forest permits"
+  ],
+  "tags": [
+    "Royal Bengal Tiger",
+    "Barasingha Swamp Deer Sanctuary",
+    "Sal Forest Meadows",
+    "Jungle Safari"
+  ],
+  "visual_features": "golden savannah meadows bordered by dense sal and bamboo forests where majestic Bengal tigers and antlered Barasingha swamp deer roam",
+  "description": "Kanha Tiger Reserve, also known as Kanha–Kisli National Park, is one of the tiger reserves of India and the largest national park of the state of Madhya Pradesh. It covers an area of 940 km2 (360 sq mi) in the two districts Mandla and Balaghat.\nThe park hosts Bengal tiger, Indian leopard, sloth bear, barasingha and dhole. It is also the first tiger reserve in India to officially introduce a mascot, Bhoorsingh the Barasingha.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Tiger_Kanha_National_Park.jpg/3840px-Tiger_Kanha_National_Park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Tiger_Kanha_National_Park.jpg/330px-Tiger_Kanha_National_Park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 5184,
+    "height": 3456,
+    "sha256": "5c8503cea2b5bdb633aa64111a504141b66feb7f4475f22792bada1e1258156d",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Tiger_Kanha_National_Park.jpg/3840px-Tiger_Kanha_National_Park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Tiger_Kanha_National_Park.jpg/3840px-Tiger_Kanha_National_Park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Tiger_Kanha_National_Park.jpg/330px-Tiger_Kanha_National_Park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 5184,
+      "height": 3456,
+      "sha256": "5c8503cea2b5bdb633aa64111a504141b66feb7f4475f22792bada1e1258156d",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

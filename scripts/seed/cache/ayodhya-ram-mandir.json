@@ -1,0 +1,59 @@
+{
+  "id": "ayodhya-ram-mandir",
+  "name": "Shri Ram Janmabhoomi Mandir",
+  "wikidata_id": "Q105085351",
+  "wiki_title": "Ram_Mandir,_Ayodhya",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Uttar Pradesh",
+  "city": "Ayodhya",
+  "lat": 26.7956,
+  "lng": 82.1944,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free darshan",
+  "price_source": "https://srjbtkshetra.org",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:30 AM - 12:00 PM, 2:00 PM - 10:00 PM daily",
+  "best_time": "November to March",
+  "rules": [
+    "Bags and smartphones must be deposited in electronic lockers at Janmabhoomi path entrance",
+    "Security frisking mandatory"
+  ],
+  "tags": [
+    "Nagara Style Temple",
+    "Spiritual Landmark",
+    "Pink Bansi Paharpur Stone"
+  ],
+  "visual_features": "three-story Nagara style pink sandstone temple with carved pillars and towering shikharas",
+  "description": "The Ram Mandir, is a Hindu temple complex in Ayodhya, Uttar Pradesh, India. It is one of the most visited Hindu temples in India, as many Hindus believe that it is located at the site of Ram Janmabhoomi, the mythical birthplace of Rama.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Shri_Ram_Janambhoomi_Mandir%2C_Ayodhya_Dham.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Shri_Ram_Janambhoomi_Mandir%2C_Ayodhya_Dham.jpg/330px-Shri_Ram_Janambhoomi_Mandir%2C_Ayodhya_Dham.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 2200,
+    "height": 1662,
+    "sha256": "f5bac922da302c6ed53cc28f33fb5543357f074e4d9b56cec84a1f7d5182ae6a",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Shri_Ram_Janambhoomi_Mandir%2C_Ayodhya_Dham.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Shri_Ram_Janambhoomi_Mandir%2C_Ayodhya_Dham.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Shri_Ram_Janambhoomi_Mandir%2C_Ayodhya_Dham.jpg/330px-Shri_Ram_Janambhoomi_Mandir%2C_Ayodhya_Dham.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 2200,
+      "height": 1662,
+      "sha256": "f5bac922da302c6ed53cc28f33fb5543357f074e4d9b56cec84a1f7d5182ae6a",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

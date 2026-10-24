@@ -1,0 +1,60 @@
+{
+  "id": "brahma-sarovar-kurukshetra",
+  "name": "Brahma Sarovar & Jyotisar",
+  "wikidata_id": "Q4955543",
+  "wiki_title": "Brahma_Sarovar",
+  "type": "attraction",
+  "category": "Spiritual & Heritage",
+  "state": "Haryana",
+  "city": "Kurukshetra",
+  "lat": 29.961,
+  "lng": 76.835,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free entry",
+  "price_source": "https://haryanatourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Open 24 hours daily · Evening Aarti at sunset",
+  "best_time": "October to March (Gita Jayanti festival in December)",
+  "rules": [
+    "Maintain cleanliness along the vast stone bathing steps",
+    "Deposit shoes at designated counters before inner shrine"
+  ],
+  "tags": [
+    "Mahabharata Epic",
+    "Sacred Sarovar",
+    "Gita Birthplace",
+    "Kurukshetra"
+  ],
+  "visual_features": "gigantic stone-paved sacred water tank with central island shrine and colossal bronze chariot of Krishna and Arjuna",
+  "description": "\n\nBrahma Sarovar is a natural and divine tank in Kurukshetra, in the state of Haryana, India. It is 3600 feet long, 1500 feet wide, and 45 feet deep. Hinduism lays emphasis on taking bath for internal and external purity. Most religious sites have water pools or sarovar in or near the Hindu temple and Sikh gurdwara. The Hindu genealogy registers at Kurukshetra, Haryana are kept here.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Holy_pic_kkr.jpg/3840px-Holy_pic_kkr.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Holy_pic_kkr.jpg/330px-Holy_pic_kkr.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4096,
+    "height": 3072,
+    "sha256": "b9240fbc81ee05878effc1ab94e44ed0965f87caed8da60c8c8d65bc02791987",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Holy_pic_kkr.jpg/3840px-Holy_pic_kkr.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Holy_pic_kkr.jpg/3840px-Holy_pic_kkr.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Holy_pic_kkr.jpg/330px-Holy_pic_kkr.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4096,
+      "height": 3072,
+      "sha256": "b9240fbc81ee05878effc1ab94e44ed0965f87caed8da60c8c8d65bc02791987",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "ramanathaswamy-temple-rameswaram",
+  "name": "Ramanathaswamy Temple Rameswaram",
+  "wikidata_id": "Q2087524",
+  "wiki_title": "Ramanathaswamy_Temple",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Tamil Nadu",
+  "city": "Rameswaram",
+  "lat": 9.2881,
+  "lng": 79.3174,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free temple darshan (special teertham bath ₹25)",
+  "price_source": "https://rameswaramtemple.tnhrce.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "5:00 AM - 1:00 PM, 3:00 PM - 9:00 PM daily",
+  "best_time": "October to April",
+  "rules": [
+    "Bathing in 22 sacred teerthams requires change of dry clothes before entering main sanctum",
+    "Smartphones strictly deposited outside"
+  ],
+  "tags": [
+    "Char Dham",
+    "Jyotirlinga",
+    "Longest Pillared Corridor in the World",
+    "Rameswaram Island"
+  ],
+  "visual_features": "longest pillared temple corridor in the world with thousands of intricately carved granite columns stretching into perspective",
+  "description": "Ramanathaswamy Temple is a Hindu temple dedicated to the Hindu god Shiva located on Rameswaram island in the state of Tamil Nadu, India. It is one of the twelve Jyotirlinga temples. It is one of the 276 Paadal Petra Sthalams, the sacred sites glorified by the Nayanars, Appar, Sundarar, and Sambandar, with their songs. According to tradition, the lingam of the Ramanathaswamy Temple was established and worshipped by Rama before he crossed the bridge called Rama Setu to the island kingdom of Lanka, identified with Sri Lanka. It is one of the Char Dham pilgrimage sites. The temple was expanded during the 12th century by the Pandya Dynasty, and its principal shrine’s sanctum was renovated by Jeyaveera Cinkaiariyan and his successor Gunaveera Cinkaiariyan, monarchs of the Jaffna kingdom. The temple has the longest corridor among all the Hindu temples of India. It was built by King Muthuramalinga Sethupathy. The temple is considered a pilgrimage site for Shaivites, Vaishnavites, and Smartas.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Ramanathaswamy_temple7.JPG/1920px-Ramanathaswamy_temple7.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Ramanathaswamy_temple7.JPG/330px-Ramanathaswamy_temple7.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 2448,
+    "height": 3264,
+    "sha256": "f112f0a0a39992b7b8cadccbda12ab8f8684303c991c0363912b894a45586efa",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Ramanathaswamy_temple7.JPG/1920px-Ramanathaswamy_temple7.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Ramanathaswamy_temple7.JPG/1920px-Ramanathaswamy_temple7.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Ramanathaswamy_temple7.JPG/330px-Ramanathaswamy_temple7.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 2448,
+      "height": 3264,
+      "sha256": "f112f0a0a39992b7b8cadccbda12ab8f8684303c991c0363912b894a45586efa",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "jagannath-temple-puri",
+  "name": "Shree Jagannath Temple Puri",
+  "wikidata_id": "Q844111",
+  "wiki_title": "Jagannath_Temple,_Puri",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Odisha",
+  "city": "Puri",
+  "lat": 19.8047,
+  "lng": 85.8178,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free darshan",
+  "price_source": "https://puri.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "5:30 AM - 10:00 PM daily (Mahaprasad distributed at Ananda Bazar from 1:00 PM)",
+  "best_time": "October to March (world-famous Ratha Yatra in June/July)",
+  "rules": [
+    "Only practicing Hindus permitted inside inner temple precinct per ancient temple tradition",
+    "Electronic items, cameras, and leather items strictly prohibited at Singhadwara entrance"
+  ],
+  "tags": [
+    "Char Dham Pilgrimage",
+    "Ratha Yatra Chariot Festival",
+    "Mahaprasad 56 Bhog",
+    "Neelachakra Flag Mystery"
+  ],
+  "visual_features": "towering 214-foot curvilinear granite shikhara crowned with the sacred Neelachakra and wind-fluttering Patita Pavana flag",
+  "description": "The Jagannath Temple is a Hindu temple dedicated to Jagannath, a form of Vishnu. It is located in Puri, Odisha, on the eastern coast of India. As per temple records, King Indradyumna of Avanti built the main temple. The present temple complex was rebuilt from the eleventh century onwards on the site of the earlier shrines, excluding the main Jagannath temple, and was begun by Anantavarman Chodaganga, the first ruler of the Eastern Ganga dynasty. Many of the temple rituals are based on Shabari Tantras which are evolved from tribal beliefs respectively. The local legends link the idols with Nilamadhaba deva worshipped by tribala and the daitapatis (servitors) claim to be descendants of the tribes. The temple is one of the 108 Abhimana Kshethram of the Sri Vaishnavite tradition.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Shri_Jagannath_temple.jpg/3840px-Shri_Jagannath_temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Shri_Jagannath_temple.jpg/330px-Shri_Jagannath_temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 6000,
+    "height": 3789,
+    "sha256": "8d871d7b6040d5c6c2a6bb09cc31189c99f7a15d4be0175a17cc43c110128cd1",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Shri_Jagannath_temple.jpg/3840px-Shri_Jagannath_temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Shri_Jagannath_temple.jpg/3840px-Shri_Jagannath_temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Shri_Jagannath_temple.jpg/330px-Shri_Jagannath_temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 6000,
+      "height": 3789,
+      "sha256": "8d871d7b6040d5c6c2a6bb09cc31189c99f7a15d4be0175a17cc43c110128cd1",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

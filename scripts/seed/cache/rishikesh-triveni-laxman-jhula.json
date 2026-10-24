@@ -1,0 +1,60 @@
+{
+  "id": "rishikesh-triveni-laxman-jhula",
+  "name": "Rishikesh Ganga Ghats & Suspension Bridges",
+  "wikidata_id": "Q16859535",
+  "wiki_title": "Lakshman_Jhula",
+  "type": "attraction",
+  "category": "Spiritual & Adventure",
+  "state": "Uttarakhand",
+  "city": "Rishikesh",
+  "lat": 30.136,
+  "lng": 78.3308,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free ghat access",
+  "price_source": "https://uttarakhandtourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Open 24 hours · Triveni Ghat Maha Aarti at 6:00 PM daily",
+  "best_time": "September to April (river rafting season October to May)",
+  "rules": [
+    "Smoking, alcohol, and non-vegetarian food strictly banned across Rishikesh municipality",
+    "Wear life-jackets during certified river rafting"
+  ],
+  "tags": [
+    "Yoga Capital of the World",
+    "Ganga Aarti",
+    "White Water Rafting",
+    "Ashrams"
+  ],
+  "visual_features": "flowing turquoise Ganga river spanned by suspension bridge with multi-storey temple towers in Himalayan foothills",
+  "description": "Lakshman Jhula is a suspension bridge across the river Ganges. This is a very famous and older bridge on river ganga and has been closed from 2020. Lakshman Jhula was built in the time of the East India Company.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Rishikesh-Lakshman_Jhula_by_Kaustubh_Nayyar.jpg/3840px-Rishikesh-Lakshman_Jhula_by_Kaustubh_Nayyar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Rishikesh-Lakshman_Jhula_by_Kaustubh_Nayyar.jpg/330px-Rishikesh-Lakshman_Jhula_by_Kaustubh_Nayyar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4608,
+    "height": 2592,
+    "sha256": "0dfad3cc122aad0f15d29dbd4093447ec7ba332584e0ef980a42069122f34e3d",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Rishikesh-Lakshman_Jhula_by_Kaustubh_Nayyar.jpg/3840px-Rishikesh-Lakshman_Jhula_by_Kaustubh_Nayyar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Rishikesh-Lakshman_Jhula_by_Kaustubh_Nayyar.jpg/3840px-Rishikesh-Lakshman_Jhula_by_Kaustubh_Nayyar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Rishikesh-Lakshman_Jhula_by_Kaustubh_Nayyar.jpg/330px-Rishikesh-Lakshman_Jhula_by_Kaustubh_Nayyar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4608,
+      "height": 2592,
+      "sha256": "0dfad3cc122aad0f15d29dbd4093447ec7ba332584e0ef980a42069122f34e3d",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

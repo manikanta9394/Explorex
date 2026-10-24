@@ -1,0 +1,60 @@
+{
+  "id": "india-gate-delhi",
+  "name": "India Gate",
+  "wikidata_id": "Q192770",
+  "wiki_title": "India_Gate",
+  "type": "attraction",
+  "category": "War Memorial",
+  "state": "Delhi",
+  "city": "New Delhi",
+  "lat": 28.6129,
+  "lng": 77.2295,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free entry",
+  "price_source": "https://delhitourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Open 24 hours daily",
+  "best_time": "Evening (illuminated lighting)",
+  "rules": [
+    "No crossing perimeter security barriers around Amar Jawan Jyoti",
+    "Littering strictly fined on Kartavya Path"
+  ],
+  "tags": [
+    "Memorial",
+    "Kartavya Path",
+    "National Landmark",
+    "Architecture"
+  ],
+  "visual_features": "triumphal arch sandstone memorial with eternal flame, evening floodlights",
+  "description": "The India Gate is a war memorial arch that’s located near the Rajpath on the eastern edge of the \"ceremonial axis\" of New Delhi, India. It stands as a memorial to exactly 74,187 Indian soldiers of the British Indian Army who died between 1914 and 1921 during the First World War, in places like France, Flanders, Mesopotamia, Persia, East Africa, Gallipoli, in the Near and Far East, and the 1919 Third Anglo-Afghan War. Around 13,300 British servicemen's names, including some soldiers and officers from the United Kingdom, are also inscribed onto the gate. Designed by architect sir Edwin Lutyens, the gate evokes the architectural style of the ancient Roman triumphal arches, such as the Arch of Constantine in Rome, Italy and later memorial arches; it is often compared to the Arc de Triomphe in Paris, France and the Gateway of India in Mumbai, India.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/India_Gate_front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/India_Gate_front.jpg/330px-India_Gate_front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 3456,
+    "height": 3771,
+    "sha256": "46668c176bc4e189c8d748d30b1c1ae594919aec687e09348ad63687140a38b6",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/India_Gate_front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/India_Gate_front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/India_Gate_front.jpg/330px-India_Gate_front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 3456,
+      "height": 3771,
+      "sha256": "46668c176bc4e189c8d748d30b1c1ae594919aec687e09348ad63687140a38b6",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

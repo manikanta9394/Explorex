@@ -1,0 +1,60 @@
+{
+  "id": "brihadeeswarar-temple-thanjavur",
+  "name": "Brihadeeswarar Temple (Big Temple)",
+  "wikidata_id": "Q379934",
+  "wiki_title": "Brihadisvara_Temple,_Thanjavur",
+  "type": "attraction",
+  "category": "Heritage Temple",
+  "state": "Tamil Nadu",
+  "city": "Thanjavur",
+  "lat": 10.7828,
+  "lng": 79.1318,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free entry",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:00 AM - 12:30 PM, 4:00 PM - 8:30 PM daily",
+  "best_time": "November to February (mild winter)",
+  "rules": [
+    "Footwear must be deposited at temple stall before outer moat gate",
+    "No touching ancient fresco wall paintings inside sanctuary corridor"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "Great Living Chola Temples",
+    "Granite Architecture",
+    "Dravidian"
+  ],
+  "visual_features": "towering monolithic granite Vimana shikhara standing 216 feet tall with a massive Nandi bull pavilion in foreground",
+  "description": "Brihadisvara Temple, called Rajarajesvaram by its builder, and known locally as Thanjai Periya Kovil and Peruvudaiyar Kovil, is a Shaivite Hindu temple built in a Chola architectural style located on the south bank of the Cauvery river in Thanjavur, Tamil Nadu, India. It is one of the largest Hindu temples and an exemplar of Tamil architecture. It is also called Dakshina Meru. Built by Chola emperor Rajaraja I between 1003 and 1010 CE, the temple is a part of the UNESCO World Heritage Site known as the \"Great Living Chola Temples\", along with the Chola-era Gangaikonda Cholapuram temple and Airavatesvara temple, which are about 70 kilometres (43 mi) and 40 kilometres (25 mi) to its northeast respectively.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/3840px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/330px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 5849,
+    "height": 3655,
+    "sha256": "d3e41760d69c28d13f0a2ee856a3e88f317951748b187df9b59ed9622c2d4b3a",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/3840px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/3840px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/330px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 5849,
+      "height": 3655,
+      "sha256": "d3e41760d69c28d13f0a2ee856a3e88f317951748b187df9b59ed9622c2d4b3a",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

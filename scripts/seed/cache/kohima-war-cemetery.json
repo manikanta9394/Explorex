@@ -1,0 +1,60 @@
+{
+  "id": "kohima-war-cemetery",
+  "name": "Kohima Commonwealth War Cemetery",
+  "wikidata_id": "Q1053018",
+  "wiki_title": "Kohima_War_Cemetery",
+  "type": "attraction",
+  "category": "Historical Memorial",
+  "state": "Nagaland",
+  "city": "Kohima",
+  "lat": 25.6667,
+  "lng": 94.1042,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free entry",
+  "price_source": "https://tourism.nagaland.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "9:00 AM - 4:00 PM daily",
+  "best_time": "October to April",
+  "rules": [
+    "Famous Kohima Epitaph inscription: \"When you go home, tell them of us and say, For your tomorrow, we gave our today\"",
+    "Keep quiet along the manicured terrace graves"
+  ],
+  "tags": [
+    "Battle of Kohima (1944)",
+    "Stalingrad of the East",
+    "Garrison Hill",
+    "Famous Kohima Epitaph"
+  ],
+  "visual_features": "beautifully terraced hillside cemetery of polished bronze and stone Commonwealth war graves centered around the historic tennis court battle site",
+  "description": "Kohima War Cemetery is a memorial dedicated to soldiers of the 2nd British Division of the Allied Forces who died in the Second World War at Kohima, the capital of the Indian state of Nagaland in April 1944. The soldiers died on the battleground of Garrison Hill in the tennis court area of the Deputy Commissioner's residence. According to the Commonwealth War Graves Commission, which maintains this cemetery among many others in the world, there are 1,420 Commonwealth burials of the Second World War at this cemetery, and a memorial to an additional 917 Hindu and Sikh soldiers who were cremated in accordance with their faith. The memorial was inaugurated by Field Marshal Sir William Slim, then Commander of the 14th Army in Burma.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Cemetery_with_kohima.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Cemetery_with_kohima.jpeg/330px-Cemetery_with_kohima.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 2048,
+    "height": 1536,
+    "sha256": "5e6df35320ce2d1c3adc00db173145b18735b989d1ea1718a7fd62be6441f356",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Cemetery_with_kohima.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Cemetery_with_kohima.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Cemetery_with_kohima.jpeg/330px-Cemetery_with_kohima.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 2048,
+      "height": 1536,
+      "sha256": "5e6df35320ce2d1c3adc00db173145b18735b989d1ea1718a7fd62be6441f356",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

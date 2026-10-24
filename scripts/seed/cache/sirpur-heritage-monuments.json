@@ -1,0 +1,60 @@
+{
+  "id": "sirpur-heritage-monuments",
+  "name": "Sirpur Archaeological Complex & Laxman Temple",
+  "wikidata_id": "Q191484",
+  "wiki_title": "Sirpur,_Chhattisgarh",
+  "type": "attraction",
+  "category": "Heritage Monument",
+  "state": "Chhattisgarh",
+  "city": "Sirpur (Mahasamund)",
+  "lat": 21.3417,
+  "lng": 82.1764,
+  "price_amount": 25,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:00 AM - 6:00 PM daily",
+  "best_time": "November to March (Sirpur National Dance & Music Festival in January)",
+  "rules": [
+    "Laxman Temple is one of India finest surviving 7th-century brick temples",
+    "Explore nearby excavated Buddhist monasteries where Chinese traveler Xuanzang stayed"
+  ],
+  "tags": [
+    "7th Century Brick Temple",
+    "Buddhist Monasteries",
+    "Mahanadi River",
+    "Archaeological Excavation"
+  ],
+  "visual_features": "rare and masterfully preserved 7th-century red brick temple adorned with intricate carvings of Vishnu avatars and life scenes on the Mahanadi riverbank",
+  "description": "Sirpur is a village in Mahasamund district in the state of Chhattisgarh, 35 km from Mahasamund city and 78 km away from Raipur on the banks of the river Mahanadi.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/7th_-_9th_century_Surang_tila_mandapa_before_shrines%2C_Sirpur_monuments_Chhattisgarh.jpg/3840px-7th_-_9th_century_Surang_tila_mandapa_before_shrines%2C_Sirpur_monuments_Chhattisgarh.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/7th_-_9th_century_Surang_tila_mandapa_before_shrines%2C_Sirpur_monuments_Chhattisgarh.jpg/330px-7th_-_9th_century_Surang_tila_mandapa_before_shrines%2C_Sirpur_monuments_Chhattisgarh.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4032,
+    "height": 3024,
+    "sha256": "0c6b23f42a02efe1fe16d556fa0c639c389384945af87c2bc185376e59ea0548",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/7th_-_9th_century_Surang_tila_mandapa_before_shrines%2C_Sirpur_monuments_Chhattisgarh.jpg/3840px-7th_-_9th_century_Surang_tila_mandapa_before_shrines%2C_Sirpur_monuments_Chhattisgarh.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/7th_-_9th_century_Surang_tila_mandapa_before_shrines%2C_Sirpur_monuments_Chhattisgarh.jpg/3840px-7th_-_9th_century_Surang_tila_mandapa_before_shrines%2C_Sirpur_monuments_Chhattisgarh.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/7th_-_9th_century_Surang_tila_mandapa_before_shrines%2C_Sirpur_monuments_Chhattisgarh.jpg/330px-7th_-_9th_century_Surang_tila_mandapa_before_shrines%2C_Sirpur_monuments_Chhattisgarh.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4032,
+      "height": 3024,
+      "sha256": "0c6b23f42a02efe1fe16d556fa0c639c389384945af87c2bc185376e59ea0548",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

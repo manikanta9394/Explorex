@@ -1,0 +1,60 @@
+{
+  "id": "jim-corbett-national-park",
+  "name": "Jim Corbett National Park",
+  "wikidata_id": "Q1471718",
+  "wiki_title": "Jim_Corbett_National_Park",
+  "type": "attraction",
+  "category": "Wildlife Sanctuary",
+  "state": "Uttarakhand",
+  "city": "Ramnagar (Nainital)",
+  "lat": 29.53,
+  "lng": 78.7747,
+  "price_amount": 1000,
+  "price_currency": "INR",
+  "price_unit": "safari permit estimate per vehicle",
+  "price_source": "https://corbettnationalpark.uk.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Morning safari: 6:00 AM - 9:30 AM · Afternoon safari: 2:30 PM - 6:00 PM",
+  "best_time": "November to June (Dhikala zone opens November 15)",
+  "rules": [
+    "Advance government online permit booking required",
+    "Do not alight from safari jeep inside forest zone"
+  ],
+  "tags": [
+    "Bengal Tiger Reserve",
+    "India First National Park",
+    "Ramganga River",
+    "Jungle Safari"
+  ],
+  "visual_features": "sal tree forest trail winding alongside Ramganga riverbed with grassland glades inhabited by wild elephants and tigers",
+  "description": "Jim Corbett National Park is a national park in the Nainital district of the state of Uttarakhand, India. It was established in 1936 as the country's first national park and is named in honour of Jim Corbett, who had played a leading role in its establishment. It was the first to come under the Project Tiger initiative and encompasses an area of 520.8 km2 (201.1 sq mi) consisting of hills, riverine belts, marshy depressions, grasslands and a large lake at an elevation range of 400–1,220 m (1,300–4,000 ft). It receives rainfall from July to September. Almost 73% of the national park is covered by dense moist deciduous forest dominated by Shorea robusta, peepal, rohini and mango trees among 110 tree species and 617 different plant species. Grasslands cover about 10% of its total area. It harbours 50 mammal species, 580 bird species and 25 reptile species. The increase in tourist activities continues to present a serious challenge to the park's ecological balance.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Bengal-Tiger_Corbett_Uttarakhand_Dec-2013.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Bengal-Tiger_Corbett_Uttarakhand_Dec-2013.jpg/330px-Bengal-Tiger_Corbett_Uttarakhand_Dec-2013.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 1024,
+    "height": 683,
+    "sha256": "8a842e6e7ab022e3e21625320e6d3d42fe98852b4b840a7aa3d2a0a700e8efc3",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Bengal-Tiger_Corbett_Uttarakhand_Dec-2013.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Bengal-Tiger_Corbett_Uttarakhand_Dec-2013.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Bengal-Tiger_Corbett_Uttarakhand_Dec-2013.jpg/330px-Bengal-Tiger_Corbett_Uttarakhand_Dec-2013.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 1024,
+      "height": 683,
+      "sha256": "8a842e6e7ab022e3e21625320e6d3d42fe98852b4b840a7aa3d2a0a700e8efc3",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

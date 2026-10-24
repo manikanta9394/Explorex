@@ -1,0 +1,60 @@
+{
+  "id": "kaziranga-national-park-rhino",
+  "name": "Kaziranga National Park (Greater One-Horned Rhinos)",
+  "wikidata_id": "Q1471718",
+  "wiki_title": "Kaziranga_National_Park",
+  "type": "attraction",
+  "category": "Wildlife Sanctuary",
+  "state": "Assam",
+  "city": "Golaghat / Nagaon (Kohora)",
+  "lat": 26.6667,
+  "lng": 93.35,
+  "price_amount": 100,
+  "price_currency": "INR",
+  "price_unit": "entry fee per Indian national (Jeep safari vehicle ₹2,000 approx)",
+  "price_source": "https://kaziranga.assam.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Elephant safari: 5:00 AM - 7:30 AM · Jeep safari: 7:30 AM - 11:00 AM, 1:30 PM - 3:30 PM (Open November to April)",
+  "best_time": "November to April (flooded during summer monsoon floods)",
+  "rules": [
+    "Home to two-thirds of the world Great One-Horned Rhinoceros population",
+    "Advance jeep and elephant safari bookings recommended at Kohora or Bagori range"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "One-horned Rhinoceros",
+    "Brahmaputra Floodplains",
+    "Elephant Grass Savannah"
+  ],
+  "visual_features": "expansive elephant grass plains and wetlands with wild prehistoric one-horned rhinos, wild water buffaloes, and river dolphins along the Brahmaputra",
+  "description": "Kaziranga National Park is a national park and World Heritage Site in the Golaghat, Sonitpur, Biswanath and Nagaon districts of the Indian state of Assam. Located on the edge of the Brahmaputra River, it encompasses dense tropical moist broadleaf forests interspersed with tall elephant grass and marshland surrounding numerous beels. This habitat hosts populations of the Indian rhinoceros, Asian elephant, wild water buffalo, swamp deer, tiger and fishing cat. It is recognized as an Important Bird Area and was declared a Tiger Reserve in 2006.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Beauty_of_Kaziranga_National_Park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Beauty_of_Kaziranga_National_Park.jpg/330px-Beauty_of_Kaziranga_National_Park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 3000,
+    "height": 2000,
+    "sha256": "f60d7837ab88f1ebcb0d45a1210f383db218b05c16aa825ffc408328b006d188",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Beauty_of_Kaziranga_National_Park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Beauty_of_Kaziranga_National_Park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Beauty_of_Kaziranga_National_Park.jpg/330px-Beauty_of_Kaziranga_National_Park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 3000,
+      "height": 2000,
+      "sha256": "f60d7837ab88f1ebcb0d45a1210f383db218b05c16aa825ffc408328b006d188",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

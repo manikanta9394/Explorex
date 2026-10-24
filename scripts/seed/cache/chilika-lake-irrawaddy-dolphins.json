@@ -1,0 +1,60 @@
+{
+  "id": "chilika-lake-irrawaddy-dolphins",
+  "name": "Chilika Lake & Irrawaddy Dolphins (Satapada)",
+  "wikidata_id": "Q843802",
+  "wiki_title": "Chilika_Lake",
+  "type": "attraction",
+  "category": "Nature & Lagoon",
+  "state": "Odisha",
+  "city": "Satapada (Puri / Khordha)",
+  "lat": 19.6739,
+  "lng": 85.4744,
+  "price_amount": 1200,
+  "price_currency": "INR",
+  "price_unit": "OTDC motorboat safari per boat (seats up to 6 persons)",
+  "price_source": "https://odishatourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:00 AM - 5:00 PM daily (Boating halts at sunset)",
+  "best_time": "November to February (over a million migratory birds from Siberia and Caspian Sea)",
+  "rules": [
+    "Book official OTDC boat counters at Satapada or Barkul jetty",
+    "Maintain quiet when boat approaches dolphin sighting waters; life-jackets mandatory"
+  ],
+  "tags": [
+    "Asia Largest Brackish Lagoon",
+    "Irrawaddy Dolphins",
+    "Ramsar Wetland Site",
+    "Nalbana Bird Sanctuary"
+  ],
+  "visual_features": "expansive shimmering brackish water lagoon dotted with traditional fishing boats and rare Irrawaddy dolphins surfacing near the sea mouth",
+  "description": "Chilika Lake is the largest brackish water lagoon with estuarine characteristics along the east coast of Indian sub-continent in Asia and second largest coastal lagoon in the world, its area ranges from about 900 to 11,165 sq km during summers and monsoon respectively. It is spread over the Puri, Khordha and Ganjam districts of Odisha state on the east coast of India, at the mouth of the Daya River, flowing into the Bay of Bengal.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Birds_eyeview_of_Chilika_Lake.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Birds_eyeview_of_Chilika_Lake.jpg/330px-Birds_eyeview_of_Chilika_Lake.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 1200,
+    "height": 675,
+    "sha256": "40ffd60d62edb02cc5bc48948d839446f556ab07585a8c96f783182d3f65bd64",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Birds_eyeview_of_Chilika_Lake.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Birds_eyeview_of_Chilika_Lake.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Birds_eyeview_of_Chilika_Lake.jpg/330px-Birds_eyeview_of_Chilika_Lake.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 1200,
+      "height": 675,
+      "sha256": "40ffd60d62edb02cc5bc48948d839446f556ab07585a8c96f783182d3f65bd64",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

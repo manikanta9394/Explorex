@@ -1,0 +1,60 @@
+{
+  "id": "mahabodhi-temple-bodh-gaya",
+  "name": "Mahabodhi Temple & Bodhi Tree",
+  "wikidata_id": "Q207865",
+  "wiki_title": "Mahabodhi_Temple",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Bihar",
+  "city": "Bodh Gaya",
+  "lat": 24.696,
+  "lng": 84.9914,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free temple entry (Camera permit ₹100)",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "5:00 AM - 9:00 PM daily",
+  "best_time": "November to February (peaceful winter meditation)",
+  "rules": [
+    "Mobile phones must be deposited at free security lockers outside main entrance gate",
+    "Meditators welcome in sacred Bodhi Tree garden courtyard"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "Enlightenment of the Buddha",
+    "Sacred Bodhi Tree",
+    "Vajrasana Diamond Throne"
+  ],
+  "visual_features": "majestic 180-foot pyramidal brick and stone shikhara temple standing beside the sacred ancient Bodhi Tree where Siddhartha Gautama attained enlightenment",
+  "description": "The Mahabodhi Temple or the Mahābodhi Mahāvihāra, is a restored Buddhist temple in Bodh Gaya, Bihar, India, marking the location where the Buddha is said to have attained enlightenment, according to the Buddhist faith. A UNESCO World Heritage Site, the site contains a tree believed to be a descendant of the Bodhi Tree under which the Buddha gained enlightenment and which has been a major pilgrimage destination of Buddhists for over two thousand years. The Mahabodhi Temple at Bodh Gaya is the holiest and most revered pilgrimage site for Buddhists worldwide.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Mahabodhitemple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Mahabodhitemple.jpg/330px-Mahabodhitemple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 1944,
+    "height": 2592,
+    "sha256": "481852560bad4e8484545af57509f9896e2fb8eddd7e95d0a1e4962a90b49958",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Mahabodhitemple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Mahabodhitemple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Mahabodhitemple.jpg/330px-Mahabodhitemple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 1944,
+      "height": 2592,
+      "sha256": "481852560bad4e8484545af57509f9896e2fb8eddd7e95d0a1e4962a90b49958",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

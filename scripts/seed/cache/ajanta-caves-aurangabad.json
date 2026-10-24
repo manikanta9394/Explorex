@@ -1,0 +1,60 @@
+{
+  "id": "ajanta-caves-aurangabad",
+  "name": "Ajanta Caves (Ancient Buddhist Frescoes)",
+  "wikidata_id": "Q184518",
+  "wiki_title": "Ajanta_Caves",
+  "type": "attraction",
+  "category": "Heritage Monument",
+  "state": "Maharashtra",
+  "city": "Chhatrapati Sambhajinagar (Aurangabad)",
+  "lat": 20.5519,
+  "lng": 75.7033,
+  "price_amount": 40,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "9:00 AM - 5:00 PM (Closed on Mondays)",
+  "best_time": "October to March or during monsoon for lush green gorge and waterfalls",
+  "rules": [
+    "Flash photography and tripods strictly prohibited to preserve ancient vegetable dye frescoes",
+    "Eco-friendly electric shuttle bus transports visitors from T-Point parking to cave base"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "Masterpiece of Buddhist Art",
+    "Padmapani Fresco",
+    "Waghur River Gorge"
+  ],
+  "visual_features": "horseshoe-shaped volcanic rock ravine hugging thirty ancient rock-cut Buddhist chaitya halls and viharas with carved columned porticoes",
+  "description": "The Ajanta Caves are 30 rock-cut Buddhist cave monuments dating from the second century BCE to about 480 CE in Aurangabad district of Maharashtra state in India. Ajanta Caves are a UNESCO World Heritage Site. Universally regarded as masterpieces of Buddhist religious art, the caves include paintings and rock-cut sculptures, described as among the finest surviving examples of ancient Indian art, particularly expressive paintings that present emotions through gesture, pose and form.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Ajanta_%2863%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Ajanta_%2863%29.jpg/330px-Ajanta_%2863%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 1280,
+    "height": 960,
+    "sha256": "a776b96bea57fd9206c8e91524bfa4019fe4d98a97ca38baafa0afff037beb7f",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Ajanta_%2863%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Ajanta_%2863%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Ajanta_%2863%29.jpg/330px-Ajanta_%2863%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 1280,
+      "height": 960,
+      "sha256": "a776b96bea57fd9206c8e91524bfa4019fe4d98a97ca38baafa0afff037beb7f",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "tsomgo-lake-sikkim",
+  "name": "Tsomgo Lake (Changu Lake) & Baba Mandir",
+  "wikidata_id": "Q1157973",
+  "wiki_title": "Lake_Tsomgo",
+  "type": "attraction",
+  "category": "High Altitude Glacial Lake",
+  "state": "Sikkim",
+  "city": "Gangtok (East Sikkim)",
+  "lat": 27.3742,
+  "lng": 88.7619,
+  "price_amount": 200,
+  "price_currency": "INR",
+  "price_unit": "protected area permit per person estimate",
+  "price_source": "https://sikkimtourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Permit entry 7:30 AM - 11:00 AM (vehicles must return before 4:00 PM)",
+  "best_time": "March to May (rhododendrons) and October to December (clear views of Kanchenjunga range)",
+  "rules": [
+    "Protected Area Permit (PAP) issued through registered Sikkim travel agencies in Gangtok (bring passport photos and photo ID)",
+    "Yak rides available along lake perimeter"
+  ],
+  "tags": [
+    "Sacred Glacial Lake (12,310 ft)",
+    "Color Changing Waters",
+    "Nathula Route",
+    "Decorated Yaks"
+  ],
+  "visual_features": "oval-shaped glacial lake at 12,310 feet reflecting snow-capped Himalayan peaks, with brightly decorated Tibetan yaks on the rocky shore",
+  "description": "Tsomgo Lake, also known as Tsongmo Lake or Changgu Lake, is a glacial lake in Changu in the Gangtok district of the Indian state of Sikkim, some 40 kilometres (25 mi) from the capital Gangtok. Located at an elevation of 3,753 m (12,313 ft), the lake remains frozen during the winter season. The lake surface reflects different colours with change of seasons and is held in great reverence by the local Sikkimese people. Buddhist monks prognosticated after studying the changing colours of the lake.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Tsongmo_Lake_or_Changu_Lake_-_East_Sikkim.jpg/3840px-Tsongmo_Lake_or_Changu_Lake_-_East_Sikkim.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Tsongmo_Lake_or_Changu_Lake_-_East_Sikkim.jpg/330px-Tsongmo_Lake_or_Changu_Lake_-_East_Sikkim.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 3888,
+    "height": 2592,
+    "sha256": "a1b8e5592701a582e99d6f8965a38de6fd978a7ab52deb53a923856e619e3ac1",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Tsongmo_Lake_or_Changu_Lake_-_East_Sikkim.jpg/3840px-Tsongmo_Lake_or_Changu_Lake_-_East_Sikkim.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Tsongmo_Lake_or_Changu_Lake_-_East_Sikkim.jpg/3840px-Tsongmo_Lake_or_Changu_Lake_-_East_Sikkim.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Tsongmo_Lake_or_Changu_Lake_-_East_Sikkim.jpg/330px-Tsongmo_Lake_or_Changu_Lake_-_East_Sikkim.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 3888,
+      "height": 2592,
+      "sha256": "a1b8e5592701a582e99d6f8965a38de6fd978a7ab52deb53a923856e619e3ac1",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

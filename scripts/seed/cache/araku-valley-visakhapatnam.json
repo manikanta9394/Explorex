@@ -1,0 +1,60 @@
+{
+  "id": "araku-valley-visakhapatnam",
+  "name": "Araku Valley & Coffee Country",
+  "wikidata_id": "Q4784409",
+  "wiki_title": "Araku_Valley",
+  "type": "attraction",
+  "category": "Hill Station & Nature",
+  "state": "Andhra Pradesh",
+  "city": "Araku (Visakhapatnam)",
+  "lat": 18.3273,
+  "lng": 82.8775,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free valley scenic access",
+  "price_source": "https://tourism.ap.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Daylight scenic valley · Tribal Museum open 9:00 AM - 7:00 PM",
+  "best_time": "October to March (misty winter mornings and yellow Niger flower bloom)",
+  "rules": [
+    "Scenic Vistadome train journey from Visakhapatnam to Araku must be booked in advance on IRCTC",
+    "Sample organic indigenous Araku tribal coffee"
+  ],
+  "tags": [
+    "Eastern Ghats",
+    "Organic Coffee",
+    "Vistadome Train",
+    "Tribal Culture"
+  ],
+  "visual_features": "picturesque green valley in the Eastern Ghats carpeted with coffee shrubs and yellow flowers under rolling cloud mists",
+  "description": "Araku Valley is a hill station in the Alluri Sitharama Raju district of Andhra Pradesh, India, located 111 km from Visakhapatnam.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Araku-valley.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Araku-valley.jpg/330px-Araku-valley.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 620,
+    "height": 412,
+    "sha256": "8db269481159532375c46836e93cfb0d4b743d11aa758c2eb7015df0d1e51c29",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Araku-valley.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Araku-valley.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Araku-valley.jpg/330px-Araku-valley.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 620,
+      "height": 412,
+      "sha256": "8db269481159532375c46836e93cfb0d4b743d11aa758c2eb7015df0d1e51c29",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

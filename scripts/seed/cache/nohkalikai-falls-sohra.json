@@ -1,0 +1,60 @@
+{
+  "id": "nohkalikai-falls-sohra",
+  "name": "Nohkalikai Falls (Tallest Plunge Waterfall)",
+  "wikidata_id": "Q1263721",
+  "wiki_title": "Nohkalikai_Falls",
+  "type": "attraction",
+  "category": "Nature & Waterfall",
+  "state": "Meghalaya",
+  "city": "Sohra (Cherrapunji)",
+  "lat": 25.2764,
+  "lng": 91.6847,
+  "price_amount": 50,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://meghalayatourism.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "8:00 AM - 5:30 PM daily",
+  "best_time": "September to December (clear skies for full view before afternoon mist rolls in)",
+  "rules": [
+    "Tallest plunge waterfall in India dropping 1,115 feet into an emerald-green plunge pool",
+    "Viewpoints are positioned along cliff plateau with safety railings"
+  ],
+  "tags": [
+    "India Tallest Plunge Waterfall (1,115 ft)",
+    "Emerald Plunge Pool",
+    "Rainiest Place on Earth",
+    "Khasi Hills"
+  ],
+  "visual_features": "dramatic single stream waterfall plunging 1,115 feet from lush green rainforest tableland into an iridescent turquoise pool below",
+  "description": "Nohkalikai Falls, sometimes Ka Likai, is the tallest plunge waterfall in India. The 340 metres (1,115 ft) waterfall is located in the Indian state of Meghalaya, near Cherapunji, one of the wettest places on Earth. Nohkalikai Falls are fed by the rainwater collected on the summit of a comparatively small plateau and decrease in power during the dry season, from December to February. Below the falls is a plunge pool with water of an unusual shade of green.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/NohKaLikai_Falls_V2_Wiki.jpg/3840px-NohKaLikai_Falls_V2_Wiki.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/NohKaLikai_Falls_V2_Wiki.jpg/330px-NohKaLikai_Falls_V2_Wiki.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4216,
+    "height": 3238,
+    "sha256": "b2376ccb9fab013ad944bfdb36c39cf6f5fcdcba5e928098e346ca726236c486",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/NohKaLikai_Falls_V2_Wiki.jpg/3840px-NohKaLikai_Falls_V2_Wiki.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/NohKaLikai_Falls_V2_Wiki.jpg/3840px-NohKaLikai_Falls_V2_Wiki.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/NohKaLikai_Falls_V2_Wiki.jpg/330px-NohKaLikai_Falls_V2_Wiki.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4216,
+      "height": 3238,
+      "sha256": "b2376ccb9fab013ad944bfdb36c39cf6f5fcdcba5e928098e346ca726236c486",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

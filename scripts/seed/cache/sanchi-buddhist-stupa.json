@@ -1,0 +1,60 @@
+{
+  "id": "sanchi-buddhist-stupa",
+  "name": "Great Stupa at Sanchi (Ashokan Stupa 1)",
+  "wikidata_id": "Q180564",
+  "wiki_title": "Sanchi",
+  "type": "attraction",
+  "category": "Heritage Monument",
+  "state": "Madhya Pradesh",
+  "city": "Sanchi (Raisen)",
+  "lat": 23.4813,
+  "lng": 77.7408,
+  "price_amount": 40,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:30 AM - 6:30 PM daily · Archaeological Museum closed Fridays",
+  "best_time": "October to March",
+  "rules": [
+    "Circumambulate the hemispherical stupa clockwise along the elevated stone balustrade",
+    "Examine the four ornamental Torana gateway narrative reliefs"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "Oldest Stone Structure in India",
+    "Emperor Ashoka (3rd C. BCE)",
+    "Torana Gateways"
+  ],
+  "visual_features": "monumental hemispherical stone dome crowned by a stone chhatri umbrella and surrounded by four lavishly carved ornamental Torana gateway arches",
+  "description": "Sanchi Stupa is a Buddhist complex, famous for its Great Stupa, on a hilltop at Sanchi Town in Raisen District of the State of Madhya Pradesh, India. It is located about 23 kilometres from Raisen town, the district headquarters and 46 kilometres (29 mi) northeast of Bhopal, capital of Madhya Pradesh.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/East_Gateway_-_Stupa_1_-_Sanchi_Hill_2013-02-21_4398.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/East_Gateway_-_Stupa_1_-_Sanchi_Hill_2013-02-21_4398.JPG/330px-East_Gateway_-_Stupa_1_-_Sanchi_Hill_2013-02-21_4398.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 2848,
+    "height": 4288,
+    "sha256": "39e73de9ee32dbc9b64e0054e2f7839222fca98900c34323570ae5f32f52ef5a",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/East_Gateway_-_Stupa_1_-_Sanchi_Hill_2013-02-21_4398.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/East_Gateway_-_Stupa_1_-_Sanchi_Hill_2013-02-21_4398.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/East_Gateway_-_Stupa_1_-_Sanchi_Hill_2013-02-21_4398.JPG/330px-East_Gateway_-_Stupa_1_-_Sanchi_Hill_2013-02-21_4398.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 2848,
+      "height": 4288,
+      "sha256": "39e73de9ee32dbc9b64e0054e2f7839222fca98900c34323570ae5f32f52ef5a",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "badami-cave-temples",
+  "name": "Badami Rock-Cut Cave Temples",
+  "wikidata_id": "Q2643505",
+  "wiki_title": "Badami_cave_temples",
+  "type": "attraction",
+  "category": "Heritage Temple",
+  "state": "Karnataka",
+  "city": "Badami (Bagalkot)",
+  "lat": 15.9189,
+  "lng": 75.6842,
+  "price_amount": 25,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:00 AM - 6:00 PM daily",
+  "best_time": "October to March",
+  "rules": [
+    "Watch out for resident monkeys along stone cliff steps",
+    "Keep ASI ticket valid for all 4 caves"
+  ],
+  "tags": [
+    "Chalukya Dynasty",
+    "Red Sandstone Cliffs",
+    "Agastya Lake",
+    "Nataraja Relief"
+  ],
+  "visual_features": "four intricate rock-cut cave shrines excavated into vertical rust-red sandstone cliffs overlooking the calm green Agastya Lake",
+  "description": "The Badami cave temples are a complex of Buddhist, Hindu and Jain cave temples located in Badami, a town in the Bagalkot district in northern part of Karnataka, India. The caves are important examples of Indian rock-cut architecture, especially Badami Chalukya architecture, and the earliest date from the 6th century. Badami is a modern name and was previously known as \"Vataapi\", the capital of the early Chalukya dynasty, which ruled much of Karnataka from the 6th to the 8th century. Badami is situated on the west bank of a man-made lake ringed by an earthen wall with stone steps; it is surrounded on the north and south by forts built during Early Chalukya and in later times.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Vishnu_image_inside_cave_number_3_in_Badami.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Vishnu_image_inside_cave_number_3_in_Badami.jpg/330px-Vishnu_image_inside_cave_number_3_in_Badami.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 1944,
+    "height": 2592,
+    "sha256": "5752e44e19067679c0e65272aa047892217c3960dfd6cbbce211ad09bb556862",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Vishnu_image_inside_cave_number_3_in_Badami.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Vishnu_image_inside_cave_number_3_in_Badami.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Vishnu_image_inside_cave_number_3_in_Badami.jpg/330px-Vishnu_image_inside_cave_number_3_in_Badami.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 1944,
+      "height": 2592,
+      "sha256": "5752e44e19067679c0e65272aa047892217c3960dfd6cbbce211ad09bb556862",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

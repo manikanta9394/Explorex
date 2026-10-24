@@ -1,0 +1,60 @@
+{
+  "id": "cellular-jail-port-blair",
+  "name": "Cellular Jail National Memorial (Kala Pani)",
+  "wikidata_id": "Q1053018",
+  "wiki_title": "Cellular_Jail",
+  "type": "attraction",
+  "category": "Historical Memorial",
+  "state": "Andaman and Nicobar Islands",
+  "city": "Port Blair",
+  "lat": 11.6738,
+  "lng": 92.7481,
+  "price_amount": 30,
+  "price_currency": "INR",
+  "price_unit": "museum entry (Light & Sound show ₹150)",
+  "price_source": "https://andamantourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "9:00 AM - 12:30 PM, 1:30 PM - 4:45 PM (Closed on Mondays · Light & Sound show at 6:00 PM & 7:15 PM)",
+  "best_time": "October to April",
+  "rules": [
+    "Closed every Monday",
+    "Attend the stirring Light & Sound show narrated from the perspective of the ancient Peepal tree"
+  ],
+  "tags": [
+    "National Memorial",
+    "Kala Pani",
+    "Freedom Fighters",
+    "Swatantryaveer Savarkar Cell"
+  ],
+  "visual_features": "red brick panopticon penitentiary with central watchtower and three remaining radiating three-story wings overlooking the blue Andaman Sea",
+  "description": "The Cellular Jail, also known as 'Kālā Pānī', is a former British colonial prison in the Andaman and Nicobar Islands. The prison was used by the colonial government of India for the purpose of exiling insurgents and political prisoners. Many notable independence activists were imprisoned there during the struggle for India's independence. Today, the complex serves as a national memorial monument.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Front_View_of_Cellular_Jail%2C_Port_Blair.JPG/3840px-Front_View_of_Cellular_Jail%2C_Port_Blair.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Front_View_of_Cellular_Jail%2C_Port_Blair.JPG/330px-Front_View_of_Cellular_Jail%2C_Port_Blair.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 3872,
+    "height": 2592,
+    "sha256": "863f918d15c90305358bfe6089e0aa926b7bc62c337c2bf7ce516b1b3c663b36",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Front_View_of_Cellular_Jail%2C_Port_Blair.JPG/3840px-Front_View_of_Cellular_Jail%2C_Port_Blair.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Front_View_of_Cellular_Jail%2C_Port_Blair.JPG/3840px-Front_View_of_Cellular_Jail%2C_Port_Blair.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Front_View_of_Cellular_Jail%2C_Port_Blair.JPG/330px-Front_View_of_Cellular_Jail%2C_Port_Blair.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 3872,
+      "height": 2592,
+      "sha256": "863f918d15c90305358bfe6089e0aa926b7bc62c337c2bf7ce516b1b3c663b36",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

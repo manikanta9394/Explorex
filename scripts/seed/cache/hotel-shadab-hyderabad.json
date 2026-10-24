@@ -1,0 +1,60 @@
+{
+  "id": "hotel-shadab-hyderabad",
+  "name": "Hotel Shadab Ghansi Bazaar",
+  "wikidata_id": "Q5912076",
+  "wiki_title": "Hyderabadi_biryani",
+  "type": "food",
+  "category": "Iconic Culinary",
+  "state": "Telangana",
+  "city": "Hyderabad",
+  "lat": 17.368,
+  "lng": 78.476,
+  "price_amount": 500,
+  "price_currency": "INR",
+  "price_unit": "for two approx",
+  "price_source": "https://telanganatourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "5:30 AM - 2:00 AM daily",
+  "best_time": "Lunch or late night biryani with Irani chai and Osmania biscuits",
+  "rules": [
+    "Cash and UPI accepted",
+    "High demand at lunch and dinner; table sharing common on ground floor"
+  ],
+  "tags": [
+    "Hyderabadi Dum Biryani",
+    "Irani Chai",
+    "Mirchi Ka Salan",
+    "Old City Flavor"
+  ],
+  "visual_features": "vibrant multi-story culinary institution near Madina building serving authentic slow-cooked clay-pot mutton dum biryani",
+  "description": "Hyderabadi biryani is a style of biryani originating from Hyderabad, India made with basmati rice and meat. Originating in the kitchens of the Nizam of Hyderabad, it combines elements of Hyderabadi and Mughlai cuisines. Hyderabad biryani is a key dish in Hyderabadi cuisine and it is so famous that the dish is considered synonymous with the city of Hyderabad.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Hyderabadi_Chicken_Biryani.jpg/3840px-Hyderabadi_Chicken_Biryani.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Hyderabadi_Chicken_Biryani.jpg/330px-Hyderabadi_Chicken_Biryani.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 3888,
+    "height": 2592,
+    "sha256": "21a01a727112fc49f1e8b6781f7a9aa494e34e9a21bc5f2527c2a3c12d716020",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Hyderabadi_Chicken_Biryani.jpg/3840px-Hyderabadi_Chicken_Biryani.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Hyderabadi_Chicken_Biryani.jpg/3840px-Hyderabadi_Chicken_Biryani.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Hyderabadi_Chicken_Biryani.jpg/330px-Hyderabadi_Chicken_Biryani.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 3888,
+      "height": 2592,
+      "sha256": "21a01a727112fc49f1e8b6781f7a9aa494e34e9a21bc5f2527c2a3c12d716020",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

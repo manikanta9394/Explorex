@@ -1,0 +1,60 @@
+{
+  "id": "basilica-of-bom-jesus-goa",
+  "name": "Basilica of Bom Jesus",
+  "wikidata_id": "Q810052",
+  "wiki_title": "Basilica_of_Bom_Jesus",
+  "type": "attraction",
+  "category": "Heritage Church",
+  "state": "Goa",
+  "city": "Old Goa",
+  "lat": 15.5008,
+  "lng": 73.9117,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free entry",
+  "price_source": "https://goatourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "9:00 AM - 6:30 PM (Sundays 10:30 AM - 6:30 PM)",
+  "best_time": "November to February (Feast of St. Francis Xavier on December 3)",
+  "rules": [
+    "Dress code: shoulders and knees must be covered inside basilica",
+    "Maintain silence in the sacred silver casket reliquary chapel"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "Portuguese Baroque",
+    "St. Francis Xavier Relics",
+    "Old Goa"
+  ],
+  "visual_features": "unplastered red laterite stone baroque church facade crowned with basalt carvings and ornate gilded wooden altars inside",
+  "description": "The Basilica of Bom Jesus is a Catholic basilica in Goa, in the Konkan region of India. The church is a pilgrimage centre and recognised by UNESCO as a World Heritage Site. The basilica is located in Old Goa, the former capital of Portuguese India, and holds the body of St Francis Xavier.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Front_Elevation_of_Basilica_of_Bom_Jesus.jpg/3840px-Front_Elevation_of_Basilica_of_Bom_Jesus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Front_Elevation_of_Basilica_of_Bom_Jesus.jpg/330px-Front_Elevation_of_Basilica_of_Bom_Jesus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 5468,
+    "height": 3866,
+    "sha256": "6843c01bf6061316a3b11edcc044225e3b549ea03590d0309337bab8f8015c25",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Front_Elevation_of_Basilica_of_Bom_Jesus.jpg/3840px-Front_Elevation_of_Basilica_of_Bom_Jesus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Front_Elevation_of_Basilica_of_Bom_Jesus.jpg/3840px-Front_Elevation_of_Basilica_of_Bom_Jesus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Front_Elevation_of_Basilica_of_Bom_Jesus.jpg/330px-Front_Elevation_of_Basilica_of_Bom_Jesus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 5468,
+      "height": 3866,
+      "sha256": "6843c01bf6061316a3b11edcc044225e3b549ea03590d0309337bab8f8015c25",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

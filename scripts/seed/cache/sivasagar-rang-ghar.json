@@ -1,0 +1,60 @@
+{
+  "id": "sivasagar-rang-ghar",
+  "name": "Sivasagar Rang Ghar & Talatal Ghar",
+  "wikidata_id": "Q807217",
+  "wiki_title": "Rang_Ghar",
+  "type": "attraction",
+  "category": "Heritage Monument",
+  "state": "Assam",
+  "city": "Sivasagar",
+  "lat": 26.9633,
+  "lng": 94.6253,
+  "price_amount": 25,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:00 AM - 6:00 PM daily",
+  "best_time": "October to April",
+  "rules": [
+    "One of Asia oldest surviving sports royal amphitheaters",
+    "Built with indigenous bricks and a mortar made from sticky Bora rice, duck eggs, and snail shells"
+  ],
+  "tags": [
+    "Ahom Kingdom Capital",
+    "Colosseum of the East",
+    "Royal Sports Pavilion",
+    "Unique Ahom Architecture"
+  ],
+  "visual_features": "two-story red brick oval royal pavilion with an inverted royal long-boat shaped roof where Ahom kings watched traditional buffalo fights",
+  "description": "The Rang Ghar, is a two-storeyed building which once served as the royal sports-pavilion where Ahom kings and nobles were spectators at games like buffalo fights and other sports at Rupahi Pathar - particularly during the Rongali Bihu festival in the Ahom capital of Rangpur.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Ranghar_-_Assam.jpg/3840px-Ranghar_-_Assam.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Ranghar_-_Assam.jpg/330px-Ranghar_-_Assam.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 3888,
+    "height": 2592,
+    "sha256": "8a653a109e19e4018ccbf41b440e1fd112de2d54fe3a07a5ca9ce0903b7d3469",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Ranghar_-_Assam.jpg/3840px-Ranghar_-_Assam.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Ranghar_-_Assam.jpg/3840px-Ranghar_-_Assam.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Ranghar_-_Assam.jpg/330px-Ranghar_-_Assam.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 3888,
+      "height": 2592,
+      "sha256": "8a653a109e19e4018ccbf41b440e1fd112de2d54fe3a07a5ca9ce0903b7d3469",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

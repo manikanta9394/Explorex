@@ -1,0 +1,60 @@
+{
+  "id": "gateway-of-india-mumbai",
+  "name": "Gateway of India",
+  "wikidata_id": "Q235884",
+  "wiki_title": "Gateway_of_India",
+  "type": "attraction",
+  "category": "Heritage Monument",
+  "state": "Maharashtra",
+  "city": "Mumbai",
+  "lat": 18.922,
+  "lng": 72.8347,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free public monument",
+  "price_source": "https://mumbaitourism.org",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Open 24 hours · Ferries to Elephanta Caves operate 9:00 AM - 3:30 PM (except Mondays)",
+  "best_time": "October to March (sunset over Mumbai Harbour)",
+  "rules": [
+    "Security baggage screening at waterfront plaza",
+    "Authorized ferry ticket counters located along the jetty"
+  ],
+  "tags": [
+    "Symbol of Mumbai",
+    "Indo-Saracenic Arch",
+    "Mumbai Harbour",
+    "Arabian Sea"
+  ],
+  "visual_features": "monumental yellow basalt archway standing on Mumbai Harbour waterfront facing the Arabian Sea with the Taj Mahal Palace hotel adjacent",
+  "description": "The Gateway of India is an arch-monument, completed in 1924, on the waterfront of Mumbai, Maharashtra, India. It was erected to commemorate the landing of King George V of the United Kingdom for his coronation as the Emperor of India in December 1911 at Strand Road near Wellington Fountain. He was the first British monarch to visit India.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/330px-Mumbai_03-2016_30_Gateway_of_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 3585,
+    "height": 3585,
+    "sha256": "7ced7a8a302e2ea4fbc6ca3de718ee071d3b9f89bf25f4708bc9ef45e8c5c47b",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/330px-Mumbai_03-2016_30_Gateway_of_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 3585,
+      "height": 3585,
+      "sha256": "7ced7a8a302e2ea4fbc6ca3de718ee071d3b9f89bf25f4708bc9ef45e8c5c47b",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

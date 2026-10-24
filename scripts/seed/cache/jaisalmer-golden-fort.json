@@ -1,0 +1,60 @@
+{
+  "id": "jaisalmer-golden-fort",
+  "name": "Jaisalmer Fort (Sonar Qila / Golden Fort)",
+  "wikidata_id": "Q1678888",
+  "wiki_title": "Jaisalmer_Fort",
+  "type": "attraction",
+  "category": "Heritage Fort",
+  "state": "Rajasthan",
+  "city": "Jaisalmer",
+  "lat": 26.9124,
+  "lng": 70.9126,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free living fort entry (Raja Mahal museum ₹100)",
+  "price_source": "https://tourism.rajasthan.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Living fort open 24 hours · Fort palace museum 9:00 AM - 6:00 PM",
+  "best_time": "October to March (Desert Festival in February)",
+  "rules": [
+    "One of the only functioning living forts in the world (housing 4,000 residents)",
+    "Visit seven intricately carved yellow sandstone Jain Temples inside"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "Living Golden Fort",
+    "Yellow Sandstone",
+    "Thar Desert"
+  ],
+  "visual_features": "golden-yellow sandstone walled fortress with 99 bastions glowing like burnished gold against the beige sands of the Thar Desert",
+  "description": "Jaisalmer Fort is situated in the city of Jaisalmer, in the Indian state of Rajasthan. It is one of the very few \"living forts\" in the world, as nearly one fourth of the old city's population still resides within the fort. For the better part of its 860-year history, the fort was the city of Jaisalmer. The first settlements outside the fort walls, to accommodate the growing population of Jaisalmer, are said to have come up in the 17th century.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Jaisalmer_forteresse.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Jaisalmer_forteresse.jpg/330px-Jaisalmer_forteresse.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 2048,
+    "height": 853,
+    "sha256": "3d87b3193cb7784b7e6eeb984d94481e526c5bc64a1b38a5af4b9643c8566423",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Jaisalmer_forteresse.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Jaisalmer_forteresse.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Jaisalmer_forteresse.jpg/330px-Jaisalmer_forteresse.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 2048,
+      "height": 853,
+      "sha256": "3d87b3193cb7784b7e6eeb984d94481e526c5bc64a1b38a5af4b9643c8566423",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

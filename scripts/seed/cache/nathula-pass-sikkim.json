@@ -1,0 +1,60 @@
+{
+  "id": "nathula-pass-sikkim",
+  "name": "Nathula Pass (Old Silk Route Indo-China Border)",
+  "wikidata_id": "Q740523",
+  "wiki_title": "Nathula_Pass",
+  "type": "attraction",
+  "category": "High Altitude Border Pass",
+  "state": "Sikkim",
+  "city": "Gangtok (Indo-China Border)",
+  "lat": 27.3867,
+  "lng": 88.8306,
+  "price_amount": 500,
+  "price_currency": "INR",
+  "price_unit": "special border permit fee per vehicle",
+  "price_source": "https://sikkimtourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "8:00 AM - 1:30 PM (Closed on Mondays & Tuesdays for general tourists)",
+  "best_time": "May to October",
+  "rules": [
+    "Open exclusively to Indian nationals with valid ID and army permit",
+    "Elevation 14,140 feet: take slow deep breaths and do not run"
+  ],
+  "tags": [
+    "Historic Silk Road",
+    "Indo-China International Border",
+    "Indian Army Memorial",
+    "14,140 Feet Altitude"
+  ],
+  "visual_features": "mountain pass at 14,140 feet with Indian and Chinese military barbed wire border posts, war memorial, and fluttering tricolour flag in the snow",
+  "description": "Nathu La is a mountain pass in the Dongkya Range of the Himalayas between China's Yadong County in Tibet, and the Indian states of Sikkim. The pass, at 4,310 m (14,140 ft), connects the towns of Kalimpong and Gangtok to the villages and towns of the lower Chumbi Valley.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Location_of_Nathula.svg/960px-Location_of_Nathula.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Location_of_Nathula.svg/330px-Location_of_Nathula.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 800,
+    "height": 740,
+    "sha256": "6b2e7d71ff0db1adf65cdbdb4d4380d8d7c7df5b42a3851dacc52b0b150ccd5c",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Location_of_Nathula.svg/960px-Location_of_Nathula.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Location_of_Nathula.svg/960px-Location_of_Nathula.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Location_of_Nathula.svg/330px-Location_of_Nathula.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 800,
+      "height": 740,
+      "sha256": "6b2e7d71ff0db1adf65cdbdb4d4380d8d7c7df5b42a3851dacc52b0b150ccd5c",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

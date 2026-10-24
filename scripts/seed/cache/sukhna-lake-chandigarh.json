@@ -1,0 +1,60 @@
+{
+  "id": "sukhna-lake-chandigarh",
+  "name": "Sukhna Lake Promenade",
+  "wikidata_id": "Q7635790",
+  "wiki_title": "Sukhna_Lake",
+  "type": "attraction",
+  "category": "Lake & Recreation",
+  "state": "Chandigarh",
+  "city": "Chandigarh",
+  "lat": 30.7425,
+  "lng": 76.8183,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free promenade access",
+  "price_source": "https://chandigarhtourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "5:00 AM - 9:00 PM daily · Boating 9:30 AM - 6:00 PM",
+  "best_time": "October to March (migratory bird season)",
+  "rules": [
+    "No feeding ducks or birds in the lake",
+    "Pedal and solar boat rentals available at central jetty"
+  ],
+  "tags": [
+    "Shivalik Foothills",
+    "Birdwatching",
+    "Boating",
+    "Walking Trail"
+  ],
+  "visual_features": "picturesque artificial lake bordered by a manicured 3 km promenade with weeping willows and the Shivalik hills reflecting in water",
+  "description": "Sukhna Lake is a reservoir and wetland hosting the Sukhna Wildlife Sanctuary located in Chandigarh, India, at the Shivalik hills of the Himalayas. This 3 km2 rain-fed lake was created in 1958 by damming the Sukhna Choe, a seasonal stream coming down from the Shivalik hills. Originally, the seasonal flow entered the lake directly, causing heavy siltation. To check the inflow of silt, 25.42 km2 of land was acquired in the catchment area and put under vegetation. In 1974, the Choe was diverted and made to bypass the lake completely, the lake being fed by three siltation pots, minimizing the silt into the lake itself.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Sukhna_Lake_Chandigarh_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Sukhna_Lake_Chandigarh_India.jpg/330px-Sukhna_Lake_Chandigarh_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 1241,
+    "height": 931,
+    "sha256": "95e040f15554bba0082522ffb7845490991171c550a7b704964eae7f73326eea",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Sukhna_Lake_Chandigarh_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Sukhna_Lake_Chandigarh_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Sukhna_Lake_Chandigarh_India.jpg/330px-Sukhna_Lake_Chandigarh_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 1241,
+      "height": 931,
+      "sha256": "95e040f15554bba0082522ffb7845490991171c550a7b704964eae7f73326eea",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

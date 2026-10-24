@@ -1,0 +1,60 @@
+{
+  "id": "reiek-tlang-mountain",
+  "name": "Reiek Tlang Mountain Peak & Heritage Village",
+  "wikidata_id": "Q2724285",
+  "wiki_title": "Reiek",
+  "type": "attraction",
+  "category": "Mountain Peak & Heritage",
+  "state": "Mizoram",
+  "city": "Reiek (Mamit / Aizawl)",
+  "lat": 23.6833,
+  "lng": 92.6167,
+  "price_amount": 20,
+  "price_currency": "INR",
+  "price_unit": "heritage village entry",
+  "price_source": "https://tourism.mizoram.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Daylight hiking hours (29 km drive from Aizawl)",
+  "best_time": "October to April (Anthourium Festival in autumn)",
+  "rules": [
+    "30-minute forested trail ascends to cliff precipice at 4,800 ft offering views of Bangladesh plains",
+    "Visit the authentic replica of a traditional Mizo chieftain village at base"
+  ],
+  "tags": [
+    "Mizo Chieftain Hut",
+    "Sheer Cliff Viewpoint",
+    "Anthourium Flower Festival",
+    "Aizawl Skyline"
+  ],
+  "visual_features": "breathtaking mountain promontory terminating in an abrupt vertical rocky cliff edge looking out over rolling mist-filled green valleys",
+  "description": "Reiek is a mountain and tourist spot 29 km from Aizawl, Mizoram, India. It rests at an elevation of 1,465 metres overlooking Aizawl and offers a view of the surrounding valleys and hills. On a clear day, the plains of Bangladesh can be seen from the top of the hill. Reiek Hill is surrounded by thick lush green temperate trees and bushes.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Reiek.JPG/3840px-Reiek.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Reiek.JPG/330px-Reiek.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4000,
+    "height": 3000,
+    "sha256": "7e95b8d9c1be0157d96ab42940162c9ec1281d3513813c6a5410a97597d780fd",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Reiek.JPG/3840px-Reiek.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Reiek.JPG/3840px-Reiek.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Reiek.JPG/330px-Reiek.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4000,
+      "height": 3000,
+      "sha256": "7e95b8d9c1be0157d96ab42940162c9ec1281d3513813c6a5410a97597d780fd",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

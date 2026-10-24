@@ -1,0 +1,60 @@
+{
+  "id": "great-himalayan-national-park",
+  "name": "Great Himalayan National Park",
+  "wikidata_id": "Q5264359",
+  "wiki_title": "Great_Himalayan_National_Park",
+  "type": "attraction",
+  "category": "Wildlife Sanctuary",
+  "state": "Himachal Pradesh",
+  "city": "Kullu (Tirthan Valley)",
+  "lat": 31.73,
+  "lng": 77.56,
+  "price_amount": 100,
+  "price_currency": "INR",
+  "price_unit": "entry fee per Indian national",
+  "price_source": "https://greathimalayannationalpark.org",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Sunrise to Sunset · Trekking requires forest department permit",
+  "best_time": "April to June and September to November",
+  "rules": [
+    "Forest department entry permit mandatory at Sai Ropa or Sainj office",
+    "Strict no-plastic and no-fire zone in core wilderness area"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "Biodiversity",
+    "Snow Leopard Habitat",
+    "Trekking"
+  ],
+  "visual_features": "virgin alpine river valley flanked by rugged crags, wildflower meadows, and pristine glacier-fed streams",
+  "description": "The Great Himalayan National Park (GHNP) is a national park in India, located in Banjar sub-division of Kullu in the state of Himachal Pradesh. The park was established in 1984 and is spread over an area of 1171 km2; elevations within the park range between 1500 and 6000 m. The Great Himalayan National Park is a habitat to numerous flora and more than 375 fauna species, including approximately 31 mammals, 181 birds, 3 reptiles, 9 amphibians, 11 annelids, 17 mollusks and 127 insects. They are protected under the strict guidelines of the Wildlife Protection Act of 1972; hence any sort of hunting is not permitted.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Himalayn_National_Park_01.jpg/3840px-Himalayn_National_Park_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Himalayn_National_Park_01.jpg/330px-Himalayn_National_Park_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 5456,
+    "height": 3069,
+    "sha256": "0bbd382704d5ea4ead9e4427bb06545e98cc4f1707b38b605bd595b5fbe478ff",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Himalayn_National_Park_01.jpg/3840px-Himalayn_National_Park_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Himalayn_National_Park_01.jpg/3840px-Himalayn_National_Park_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Himalayn_National_Park_01.jpg/330px-Himalayn_National_Park_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 5456,
+      "height": 3069,
+      "sha256": "0bbd382704d5ea4ead9e4427bb06545e98cc4f1707b38b605bd595b5fbe478ff",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

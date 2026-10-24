@@ -1,0 +1,60 @@
+{
+  "id": "dzukou-valley-nagaland",
+  "name": "Dzukou Valley & Wild Lily Trails",
+  "wikidata_id": "Q4897262",
+  "wiki_title": "Dzukou_Valley",
+  "type": "attraction",
+  "category": "Nature & Trekking",
+  "state": "Nagaland",
+  "city": "Kohima (Viswema / Jakhama)",
+  "lat": 25.5647,
+  "lng": 94.0736,
+  "price_amount": 100,
+  "price_currency": "INR",
+  "price_unit": "entry fee per trekker",
+  "price_source": "https://tourism.nagaland.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Trek daylight hours (overnight stay at Dzukou rest house available)",
+  "best_time": "June to September (rare pink Dzukou lily bloom) and October to March (crisp views)",
+  "rules": [
+    "Trekkers start from Viswema or Jakhama village base points",
+    "Zero plastic zone: all wrappers and plastic bottles must be carried back"
+  ],
+  "tags": [
+    "Valley of Flowers of the East",
+    "Endemic Dzukou Lily",
+    "Rolling Mounded Hills",
+    "Trekking Paradise"
+  ],
+  "visual_features": "surreal undulating emerald hills contoured with dwarf bamboo and meandering streams where rare pink Dzukou lilies bloom in summer",
+  "description": "The Dzukou Valley is a high-altitude valley in Northeast India, straddling the inter-state border of the states of Nagaland and Manipur. Lying behind Mount Japfü at an elevation between 2,438 and 2,452 m above sea level in the Kohima and Senapati districts, it is known for its rolling meadows, seasonal wildflowers and rich biodiversity, and is among the most popular trekking destinations in northeastern India.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_%28edit%29.jpg/3840px-Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_%28edit%29.jpg/330px-Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4499,
+    "height": 2530,
+    "sha256": "38bf1c2b027ecf07c81a5840ce03a4bae47a06eff073f734fef854e3d21704e2",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_%28edit%29.jpg/3840px-Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_%28edit%29.jpg/3840px-Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_%28edit%29.jpg/330px-Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4499,
+      "height": 2530,
+      "sha256": "38bf1c2b027ecf07c81a5840ce03a4bae47a06eff073f734fef854e3d21704e2",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "charminar-hyderabad",
+  "name": "Charminar",
+  "wikidata_id": "Q180564",
+  "wiki_title": "Charminar",
+  "type": "attraction",
+  "category": "Heritage Monument",
+  "state": "Telangana",
+  "city": "Hyderabad",
+  "lat": 17.3614,
+  "lng": 78.4747,
+  "price_amount": 25,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "9:00 AM - 5:30 PM daily (monument illuminated in evening)",
+  "best_time": "October to March (festive night bazaar during Ramzan)",
+  "rules": [
+    "ASI entry ticket required for ascending first balcony level",
+    "Surrounding pedestrian Laad Bazaar is famous for lacquer bangles"
+  ],
+  "tags": [
+    "Symbol of Hyderabad",
+    "Qutb Shahi Era (1591)",
+    "Four Minarets",
+    "ASI Monument"
+  ],
+  "visual_features": "monumental square granite structure with four 160-foot fluted minarets and ornate stucco balconies rising above the old city market",
+  "description": "The Charminar is a monument located in Hyderabad, Telangana, India. Constructed in 1591, the landmark is a symbol of Hyderabad and officially incorporated in the emblem of Telangana. It remained the tallest structure in Hyderabad for 396 years until 1987. The Charminar's long history includes the existence of a mosque on its top floor for more than 435 years. While both historically and religiously significant, it is also known for its popular and busy local markets surrounding the structure, and has become one of the most frequented tourist attractions in Hyderabad. Charminar is also a site of numerous festival celebrations, such as Eid-ul-adha and Eid al-Fitr, as it is adjacent to the city's main mosque, the Makkah Masjid.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Charminar_Hyderabad_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Charminar_Hyderabad_1.jpg/330px-Charminar_Hyderabad_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 2174,
+    "height": 3071,
+    "sha256": "8ba108c4f1f1d9ed6ecee178b6d16982ff05802820d2209640cb3c0f1596c8ba",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Charminar_Hyderabad_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Charminar_Hyderabad_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Charminar_Hyderabad_1.jpg/330px-Charminar_Hyderabad_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 2174,
+      "height": 3071,
+      "sha256": "8ba108c4f1f1d9ed6ecee178b6d16982ff05802820d2209640cb3c0f1596c8ba",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

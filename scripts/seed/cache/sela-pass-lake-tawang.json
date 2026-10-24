@@ -1,0 +1,60 @@
+{
+  "id": "sela-pass-lake-tawang",
+  "name": "Sela Pass & Sela Lake (13,700 ft)",
+  "wikidata_id": "Q2724285",
+  "wiki_title": "Sela_Pass",
+  "type": "attraction",
+  "category": "Mountain Pass & Lake",
+  "state": "Arunachal Pradesh",
+  "city": "West Kameng / Tawang",
+  "lat": 27.5042,
+  "lng": 92.1039,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "scenic transit pass",
+  "price_source": "https://arunachaltourism.com",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Regulated traffic by Indian Army according to weather conditions",
+  "best_time": "October to April (frozen lake in winter, blanket of rhododendrons in spring)",
+  "rules": [
+    "Gateway to Tawang crossing the Eastern Himalayas at 13,700 feet",
+    "Do not step onto thin frozen lake ice in winter"
+  ],
+  "tags": [
+    "High Altitude Himalayan Pass",
+    "Sacred Sela Lake",
+    "Tibetan Prayer Gate",
+    "Snow Covered Peaks"
+  ],
+  "visual_features": "ornate Tibetan welcoming archway at mountain pass summit flanking the crystal blue waters of Sela Lake surrounded by snow walls",
+  "description": "The Sela Pass is a high-altitude mountain pass located on the border between the Tawang and West Kameng districts in the Indian state of Arunachal Pradesh. It has an elevation of 4170 m (13,700 ft) and connects the Indian Buddhist town of Tawang to Dirang and Guwahati. The pass carries the National Highway 13, connecting Tawang with the rest of India. The pass supports scarce amounts of vegetation and is usually snow-covered to some extent throughout the year. Sela Lake, near the summit of the pass, is one of approximately 101 lakes in the area that are sacred in Tibetan Buddhism. While Sela Pass does get heavy snowfall in winters, it is usually open throughout the year unless landslides or snow require the pass to be shut down temporarily. Sela pass is one of the highest motorable mountain passes in the world",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Tawang_Gate.jpg/3840px-Tawang_Gate.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Tawang_Gate.jpg/330px-Tawang_Gate.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4500,
+    "height": 2981,
+    "sha256": "ab8c11b32b29351197b39cbb06afe919f102d402056c3153b6155ab88cf52d2e",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Tawang_Gate.jpg/3840px-Tawang_Gate.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Tawang_Gate.jpg/3840px-Tawang_Gate.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Tawang_Gate.jpg/330px-Tawang_Gate.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4500,
+      "height": 2981,
+      "sha256": "ab8c11b32b29351197b39cbb06afe919f102d402056c3153b6155ab88cf52d2e",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

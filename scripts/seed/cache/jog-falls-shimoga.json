@@ -1,0 +1,60 @@
+{
+  "id": "jog-falls-shimoga",
+  "name": "Jog Falls (Gersoppa Falls)",
+  "wikidata_id": "Q1144078",
+  "wiki_title": "Jog_Falls",
+  "type": "attraction",
+  "category": "Nature & Waterfall",
+  "state": "Karnataka",
+  "city": "Sagara (Shivamogga)",
+  "lat": 14.228,
+  "lng": 74.812,
+  "price_amount": 50,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://karnatakatourism.org",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:00 AM - 6:00 PM daily",
+  "best_time": "July to November (monsoon roar and peak flow)",
+  "rules": [
+    "Steep staircase descent of 1,400 steps to base requires high physical fitness",
+    "Do not cross protective barricades near cliff edges"
+  ],
+  "tags": [
+    "Sharavathi River",
+    "Second Highest Plunge in India",
+    "Western Ghats",
+    "Raja Rani Roarer Rocket"
+  ],
+  "visual_features": "thunderous cataract split into four distinct waterfalls plunging 830 feet down a sheer granite cliff in the Western Ghats jungle",
+  "description": "Jog Falls is a series of large, segmented waterfalls on the Sharavati River in Karnataka state of India, created by the river plunging approximately 253 metres (830 ft) and splitting into four distinct cascades. The waterfalls are situated in the Sagar taluk of the Shivamogga district.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Jog_Falls_05092016.jpg/3840px-Jog_Falls_05092016.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Jog_Falls_05092016.jpg/330px-Jog_Falls_05092016.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 3899,
+    "height": 4000,
+    "sha256": "3ebd8c0fad8d4ecb48f9c9521e0047a1aef32e0e0417288d20814949d9e7c8ec",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Jog_Falls_05092016.jpg/3840px-Jog_Falls_05092016.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Jog_Falls_05092016.jpg/3840px-Jog_Falls_05092016.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Jog_Falls_05092016.jpg/330px-Jog_Falls_05092016.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 3899,
+      "height": 4000,
+      "sha256": "3ebd8c0fad8d4ecb48f9c9521e0047a1aef32e0e0417288d20814949d9e7c8ec",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "thiksey-monastery-ladakh",
+  "name": "Thiksey Gompa & Maitreya Buddha",
+  "wikidata_id": "Q1994689",
+  "wiki_title": "Thiksey_Monastery",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Ladakh",
+  "city": "Leh (Thiksey)",
+  "lat": 34.0583,
+  "lng": 77.6667,
+  "price_amount": 50,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://leh.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "7:00 AM - 7:00 PM daily · Morning prayer chanting at 7:00 AM",
+  "best_time": "May to October",
+  "rules": [
+    "Observe respectful silence in Maitreya temple chamber",
+    "Photography permitted without flash in designated halls"
+  ],
+  "tags": [
+    "Mini Potala",
+    "Gelugpa Order",
+    "Giant Maitreya Statue",
+    "Indus Valley"
+  ],
+  "visual_features": "twelve-story whitewashed and ochre Tibetan monastery stacked up a barren hill slope resembling Lhasa Potala Palace",
+  "description": "Thiksey Monastery or Thiksey Gompa is a Buddhist monastery affiliated with the Gelug school of Tibetan Buddhism. It is located on top of a hill in Thiksey approximately 19 kilometres (12 mi) east of Leh, in the Ladakh region of northern India. It is noted for its resemblance to the Potala Palace in Lhasa, Tibet, and is the largest monastery in central Ladakh, notably containing a separate set of buildings for female renunciates that has been the source of significant recent building and reorganization.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Thikse_Monastery_.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Thikse_Monastery_.jpg/330px-Thikse_Monastery_.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 1600,
+    "height": 1067,
+    "sha256": "18ddba394fb185a5c6747e6096c07a201ef51419ebe68cfef9784ead680584d3",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Thikse_Monastery_.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Thikse_Monastery_.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Thikse_Monastery_.jpg/330px-Thikse_Monastery_.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 1600,
+      "height": 1067,
+      "sha256": "18ddba394fb185a5c6747e6096c07a201ef51419ebe68cfef9784ead680584d3",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

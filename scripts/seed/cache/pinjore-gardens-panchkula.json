@@ -1,0 +1,60 @@
+{
+  "id": "pinjore-gardens-panchkula",
+  "name": "Yadavindra Gardens (Pinjore)",
+  "wikidata_id": "Q7196395",
+  "wiki_title": "Yadavindra_Gardens",
+  "type": "attraction",
+  "category": "Heritage Garden",
+  "state": "Haryana",
+  "city": "Panchkula (Pinjore)",
+  "lat": 30.7967,
+  "lng": 76.915,
+  "price_amount": 25,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://haryanatourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "7:00 AM - 9:30 PM daily (illuminated fountains in evening)",
+  "best_time": "October to April (Mango Festival in July)",
+  "rules": [
+    "Do not wade into fountain water channels",
+    "Toy train ride available inside lower garden terrace"
+  ],
+  "tags": [
+    "17th Century Mughal Garden",
+    "Terraces",
+    "Illuminated Fountains",
+    "Pinjore Heritage"
+  ],
+  "visual_features": "seven-tiered terraced Mughal pleasure garden with central waterway, fountains, and royal pavilions like Shish Mahal",
+  "description": "Yadavindra Gardens, also known as Pinjore Gardens, is a historic 17th century garden located in Pinjore city of Panchkula district in the Indian state of Haryana. Panchkula city is nearby it. It is an example of the Mughal gardens architectural style, which was renovated by the Patiala dynasty Sikh rulers. The garden was built by Fidai Khan, a foster-brother to the Mughal Emperor Aurangzeb.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Pinjore_Garden_Panchkula.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Pinjore_Garden_Panchkula.jpg/330px-Pinjore_Garden_Panchkula.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 2268,
+    "height": 2537,
+    "sha256": "548c6fc2a39b0d78ea8c9b1a6f93d141b81ca9220acad4c07a26bb07dfa7a4b7",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Pinjore_Garden_Panchkula.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Pinjore_Garden_Panchkula.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Pinjore_Garden_Panchkula.jpg/330px-Pinjore_Garden_Panchkula.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 2268,
+      "height": 2537,
+      "sha256": "548c6fc2a39b0d78ea8c9b1a6f93d141b81ca9220acad4c07a26bb07dfa7a4b7",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

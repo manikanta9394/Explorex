@@ -1,0 +1,60 @@
+{
+  "id": "tirumala-venkateswara-temple",
+  "name": "Tirumala Sri Venkateswara Swamy Temple",
+  "wikidata_id": "Q122434",
+  "wiki_title": "Venkateswara_Temple,_Tirumala",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Andhra Pradesh",
+  "city": "Tirupati (Tirumala)",
+  "lat": 13.6833,
+  "lng": 79.35,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free Sarva Darshan (Special Entry ₹300)",
+  "price_source": "https://ttdevasthanams.ap.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Open 24 hours (continuous darshan with brief breaks for rituals and sevas)",
+  "best_time": "September to March (Brahmotsavam in September/October)",
+  "rules": [
+    "Strict traditional dress code: dhoti/kurta for men, saree/half-saree/salwar with dupatta for women",
+    "Electronic devices and cell phones prohibited inside inner enclosure (locker provided at entry)"
+  ],
+  "tags": [
+    "Richest Shrine",
+    "Seven Hills of Tirumala",
+    "Lord Balaji",
+    "Srivari Laddu Prasadam"
+  ],
+  "visual_features": "sacred golden Ananda Nilayam vimana tower gleaming atop the Tirumala hill shrine surrounded by green Seshachalam ridges",
+  "description": "The Venkateswara Swami Temple—also known as Tirumala Temple, Tirupati Temple and Tirupati Balaji Temple—is a Hindu temple located in the hills of Tirumala, within Tirupati Urban Mandal, Tirupati district, Andhra Pradesh, India. The temple is dedicated to Venkateswara, a form of Vishnu, who is believed to have appeared on earth to save mankind from trials and troubles of Kali Yuga. Hence the site is also called Kaliyuga Vaikuntha and the deity is known as Kaliyuga Prathyaksha Daivam. Venkateswara is additionally known as Balaji, Govinda, and Srinivasa. The temple is administered by the Tirumala Tirupati Devasthanams (TTD), an autonomous body under the control of the Government of Andhra Pradesh. The head of TTD is appointed by Andhra Pradesh Government.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Tirumala_090615.jpg/3840px-Tirumala_090615.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Tirumala_090615.jpg/330px-Tirumala_090615.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4096,
+    "height": 2731,
+    "sha256": "b867620654791b2f0f5921a2c19ddde288822f5444efe0a02cf26bdd0403d6f3",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Tirumala_090615.jpg/3840px-Tirumala_090615.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Tirumala_090615.jpg/3840px-Tirumala_090615.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Tirumala_090615.jpg/330px-Tirumala_090615.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4096,
+      "height": 2731,
+      "sha256": "b867620654791b2f0f5921a2c19ddde288822f5444efe0a02cf26bdd0403d6f3",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

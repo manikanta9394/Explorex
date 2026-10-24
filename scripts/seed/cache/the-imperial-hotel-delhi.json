@@ -1,0 +1,60 @@
+{
+  "id": "the-imperial-hotel-delhi",
+  "name": "The Imperial New Delhi",
+  "wikidata_id": "Q7741527",
+  "wiki_title": "The_Imperial,_New_Delhi",
+  "type": "stay",
+  "category": "Luxury Heritage Stay",
+  "state": "Delhi",
+  "city": "New Delhi",
+  "lat": 28.6247,
+  "lng": 77.2173,
+  "price_amount": 18500,
+  "price_currency": "INR",
+  "price_unit": "per night",
+  "price_source": "https://theimperialindia.com",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "24-hour reception · Check-in 2:00 PM, Check-out 12:00 PM",
+  "best_time": "October to April",
+  "rules": [
+    "Government photo ID required at check-in",
+    "Smart casual attire in dining rooms"
+  ],
+  "tags": [
+    "Art Deco",
+    "Colonial Heritage",
+    "Luxury Hotel",
+    "Connaught Place"
+  ],
+  "visual_features": "white colonial Art Deco facade with manicured royal palm avenue",
+  "description": "The Imperial New Delhi is a historic luxury hotel opened in 1936 in New Delhi, India. It is located on Janpath, close to Rajiv Chowk. It was New Delhi's first grand hotel. The hotel is owned by the Akoi family.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Imperial_Hotel%2C_Delhi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Imperial_Hotel%2C_Delhi.jpg/330px-Imperial_Hotel%2C_Delhi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 797,
+    "height": 1200,
+    "sha256": "c93434db8e595524fd469cd831d06711bf93a777cec01e953e539eb90c9073c6",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Imperial_Hotel%2C_Delhi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Imperial_Hotel%2C_Delhi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Imperial_Hotel%2C_Delhi.jpg/330px-Imperial_Hotel%2C_Delhi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 797,
+      "height": 1200,
+      "sha256": "c93434db8e595524fd469cd831d06711bf93a777cec01e953e539eb90c9073c6",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

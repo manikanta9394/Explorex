@@ -1,0 +1,60 @@
+{
+  "id": "marble-rocks-bhedaghat-narmada",
+  "name": "Bhedaghat Marble Rocks & Dhuandhar Falls",
+  "wikidata_id": "Q1263721",
+  "wiki_title": "Bhedaghat",
+  "type": "attraction",
+  "category": "Natural Wonder",
+  "state": "Madhya Pradesh",
+  "city": "Jabalpur (Bhedaghat)",
+  "lat": 23.1317,
+  "lng": 79.8006,
+  "price_amount": 100,
+  "price_currency": "INR",
+  "price_unit": "shared boat ride on the Narmada gorge",
+  "price_source": "https://mptourism.com",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "7:00 AM - 7:00 PM (Boating operational except during peak monsoon flood months · Full moon night boating is magical)",
+  "best_time": "October to April (especially on full-moon nights when the white marble glow is ethereal)",
+  "rules": [
+    "Boat boatmen recite rhythmic folk couplets describing rock shapes during the 3 km canyon voyage",
+    "Do not lean over boat sides; wear provided life-jackets"
+  ],
+  "tags": [
+    "Narmada River Gorge",
+    "100-foot Pure Marble Cliffs",
+    "Dhuandhar Smoke Falls",
+    "Full Moon Boating"
+  ],
+  "visual_features": "tranquil emerald Narmada river slicing through dramatic 100-foot white and pink sheer marble cliffs that lead into the roaring Dhuandhar waterfall mist",
+  "description": "Bhedaghat is a town and a nagar panchayat in Jabalpur district in the state of Madhya Pradesh, India. It is situated by the side of river Narmada and is approximately 20 km from Jabalpur city. Bhedaghat is known for the high marble rocks making a valley through which river Narmada flows. The site is also home to Dhuandhar Falls, named for its smoky appearance as the water crashes down, creating a mist that looks like rising steam.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Bhedaghat_Jbp.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Bhedaghat_Jbp.jpg/330px-Bhedaghat_Jbp.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 1600,
+    "height": 1067,
+    "sha256": "60aae2001a210764bc9214d7de5a547497a09ca67f12cd23313e8ce57c9161bb",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Bhedaghat_Jbp.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Bhedaghat_Jbp.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Bhedaghat_Jbp.jpg/330px-Bhedaghat_Jbp.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 1600,
+      "height": 1067,
+      "sha256": "60aae2001a210764bc9214d7de5a547497a09ca67f12cd23313e8ce57c9161bb",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

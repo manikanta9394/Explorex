@@ -1,0 +1,60 @@
+{
+  "id": "howrah-bridge-kolkata",
+  "name": "Howrah Bridge (Rabindra Setu)",
+  "wikidata_id": "Q235884",
+  "wiki_title": "Howrah_Bridge",
+  "type": "attraction",
+  "category": "Engineering & Landmark",
+  "state": "West Bengal",
+  "city": "Kolkata / Howrah",
+  "lat": 22.5851,
+  "lng": 88.3468,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free bridge pedestrian walkway",
+  "price_source": "https://kolkatatourism.org",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Open 24 hours daily · Walk across along pedestrian sidewalks",
+  "best_time": "Early morning during the Mullick Ghat flower market or evening illuminated",
+  "rules": [
+    "Photography of defense and security posts on bridge piers restricted",
+    "Vibrant wholesale flower market located right under the eastern bridge span"
+  ],
+  "tags": [
+    "Balanced Cantilever Wonder",
+    "Hooghly River",
+    "No Nuts & Bolts (Riveted Steel)",
+    "Lifeline of Kolkata"
+  ],
+  "visual_features": "monumental steel cantilever truss bridge spanning the Hooghly river without pylons in the water, packed with classic yellow Ambassador taxis",
+  "description": "The Howrah Bridge is a balanced steel bridge over the Hooghly River in West Bengal, India. Commissioned in 1943, the bridge was originally named the New Howrah Bridge, because it replaced a pontoon bridge at the same location linking both sides of Kolkata. Burrabazar is connected with Howrah rail terminal because of this bridge. On 14 June 1965, it was renamed Rabindra Setu after the Bengali poet Rabindranath Tagore, who was the first Indian and Asian Nobel laureate. It is still popularly known as the Howrah Bridge.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Howrah_bridge_at_night.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Howrah_bridge_at_night.jpg/330px-Howrah_bridge_at_night.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 1400,
+    "height": 556,
+    "sha256": "913d0d7b37cd099bac03a5ed40d3dcd6eea95ba0c31fac7ea45f53d4282328a1",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Howrah_bridge_at_night.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Howrah_bridge_at_night.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Howrah_bridge_at_night.jpg/330px-Howrah_bridge_at_night.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 1400,
+      "height": 556,
+      "sha256": "913d0d7b37cd099bac03a5ed40d3dcd6eea95ba0c31fac7ea45f53d4282328a1",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

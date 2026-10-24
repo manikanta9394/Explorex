@@ -1,0 +1,60 @@
+{
+  "id": "nubra-valley-hunder",
+  "name": "Nubra Valley & Hunder Sand Dunes",
+  "wikidata_id": "Q1978438",
+  "wiki_title": "Nubra_Valley",
+  "type": "attraction",
+  "category": "Cold Desert & Valley",
+  "state": "Ladakh",
+  "city": "Diskit / Hunder",
+  "lat": 34.582,
+  "lng": 77.47,
+  "price_amount": 300,
+  "price_currency": "INR",
+  "price_unit": "double-humped camel ride approx",
+  "price_source": "https://leh.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Open daily · Camel safari 9:00 AM - 12:00 PM, 3:30 PM - 6:30 PM",
+  "best_time": "June to September",
+  "rules": [
+    "Cross Khardung La pass with valid permit",
+    "Eco-friendly disposal of all trash"
+  ],
+  "tags": [
+    "Bactrian Camels",
+    "Cold Desert Dunes",
+    "Diskit Monastery",
+    "Shyok River"
+  ],
+  "visual_features": "white cold desert sand dunes traversed by furry double-humped Bactrian camels against stark towering mountain walls",
+  "description": "Nubra, also called Dumra, is a historical region of Ladakh, India in the Nubra district. Its inhabited areas form a tri-armed valley cut by the Nubra and Shyok rivers. Its Tibetan name Dumra means \"valley of flowers\".",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/5_Nubra_valley.jpg/3840px-5_Nubra_valley.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/5_Nubra_valley.jpg/330px-5_Nubra_valley.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 6000,
+    "height": 4000,
+    "sha256": "7ea063f9c6b5b6281209f264a96868ef7ccedf90654c524ea41ac1fcfeddfba0",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/5_Nubra_valley.jpg/3840px-5_Nubra_valley.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/5_Nubra_valley.jpg/3840px-5_Nubra_valley.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/5_Nubra_valley.jpg/330px-5_Nubra_valley.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 6000,
+      "height": 4000,
+      "sha256": "7ea063f9c6b5b6281209f264a96868ef7ccedf90654c524ea41ac1fcfeddfba0",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

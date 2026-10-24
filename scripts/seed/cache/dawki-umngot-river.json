@@ -1,0 +1,60 @@
+{
+  "id": "dawki-umngot-river",
+  "name": "Dawki Umngot River (Crystal Clear Transparent Waters)",
+  "wikidata_id": "Q1157973",
+  "wiki_title": "Dawki",
+  "type": "attraction",
+  "category": "Nature & Boating",
+  "state": "Meghalaya",
+  "city": "Dawki (West Jaintia Hills)",
+  "lat": 25.1889,
+  "lng": 92.0239,
+  "price_amount": 800,
+  "price_currency": "INR",
+  "price_unit": "boat ride on the transparent river per boat (seats up to 4)",
+  "price_source": "https://meghalayatourism.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "7:00 AM - 5:00 PM daily (boats halt at dusk)",
+  "best_time": "November to April (water is glass-like and completely transparent)",
+  "rules": [
+    "During winter months, the river is so crystal clear that boats appear to float in mid-air",
+    "Life-jackets mandatory for all passengers"
+  ],
+  "tags": [
+    "Glass-like Transparent Water",
+    "Indo-Bangladesh Border",
+    "Suspension Bridge",
+    "Kayaking Paradise"
+  ],
+  "visual_features": "unbelievably clear glass-like river where wooden boats look as if suspended in air over pebble-strewn riverbeds between steep jungle gorges",
+  "description": "Dawki or Dauki is a town in West Jaintia Hills district, Meghalaya, India.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Umngot_river%2C_Dawki.jpg/3840px-Umngot_river%2C_Dawki.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Umngot_river%2C_Dawki.jpg/330px-Umngot_river%2C_Dawki.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 5144,
+    "height": 3430,
+    "sha256": "471393a41a107df18c6b8e1fa28a447170c06c55e58998c36773b49cdb3019f3",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Umngot_river%2C_Dawki.jpg/3840px-Umngot_river%2C_Dawki.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Umngot_river%2C_Dawki.jpg/3840px-Umngot_river%2C_Dawki.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Umngot_river%2C_Dawki.jpg/330px-Umngot_river%2C_Dawki.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 5144,
+      "height": 3430,
+      "sha256": "471393a41a107df18c6b8e1fa28a447170c06c55e58998c36773b49cdb3019f3",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "khajjiar-mini-switzerland",
+  "name": "Khajjiar Lake & Meadow",
+  "wikidata_id": "Q6399718",
+  "wiki_title": "Khajjiar",
+  "type": "attraction",
+  "category": "Hill Station & Nature",
+  "state": "Himachal Pradesh",
+  "city": "Dalhousie (Khajjiar)",
+  "lat": 32.55,
+  "lng": 76.06,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free meadow access",
+  "price_source": "https://himachaltourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Open daylight hours",
+  "best_time": "March to October (green turf) or December to February (snow blanket)",
+  "rules": [
+    "Do not drive on the protected grassy meadow",
+    "Eco-tourism green fee applicable per vehicle entering the valley"
+  ],
+  "tags": [
+    "Mini Switzerland",
+    "Alpine Meadow",
+    "Cedar Forest",
+    "Lake"
+  ],
+  "visual_features": "emerald green saucer-shaped plateau meadow surrounded by dense deodar forests with floating island lake in center",
+  "description": "Khajjiar is a hill station near the town of Chamba in Chamba district of Himachal Pradesh, India. Located approximately 24 kilometres (15 mi) from Dalhousie, it lies on a small plateau about 2,000 meters above sea level in the foothills of the Dhauladhar ranges in the Western Himalayas. It is also part of the Kalatop Khajjiar Sanctuary.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Nature_of_Khajjiar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Nature_of_Khajjiar.jpg/330px-Nature_of_Khajjiar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 1080,
+    "height": 1080,
+    "sha256": "2bfdcf56fc15202f69ff451a2f85ed83971ebd89c8485f83add7c378a85db24f",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Nature_of_Khajjiar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Nature_of_Khajjiar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Nature_of_Khajjiar.jpg/330px-Nature_of_Khajjiar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 1080,
+      "height": 1080,
+      "sha256": "2bfdcf56fc15202f69ff451a2f85ed83971ebd89c8485f83add7c378a85db24f",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

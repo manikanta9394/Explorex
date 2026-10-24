@@ -1,0 +1,60 @@
+{
+  "id": "shanti-stupa-leh",
+  "name": "Shanti Stupa Leh",
+  "wikidata_id": "Q7489066",
+  "wiki_title": "Shanti_Stupa,_Ladakh",
+  "type": "attraction",
+  "category": "Spiritual Monument",
+  "state": "Ladakh",
+  "city": "Leh",
+  "lat": 34.1719,
+  "lng": 77.5817,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free entry",
+  "price_source": "https://leh.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "5:00 AM - 9:00 PM daily",
+  "best_time": "Sunset or sunrise (panoramic city and mountain views)",
+  "rules": [
+    "Circumambulate stupa in a clockwise direction",
+    "Footwear must be removed on the upper stupa terrace"
+  ],
+  "tags": [
+    "White-domed Stupa",
+    "Sunset Viewpoint",
+    "Peace Pagoda",
+    "Leh Town Panorama"
+  ],
+  "visual_features": "gleaming white-domed Buddhist stupa illuminated with golden trim perched high on a rocky ridge overlooking Leh town and Stok Kangri",
+  "description": "Shanti Stupa is a Buddhist white-domed Stupa (chorten) on a hilltop in Chanspa, Leh district, Ladakh, in north India. It was built in 1991 by Japanese Buddhist monk Gyomyo Nakamura. The Shanti Stupa holds the relics of the Buddha at its base, enshrined by the 14th Dalai Lama. The Stupa has become a tourist attraction not only due to its religious significance but also due to its location which provides panoramic views of the surrounding landscape.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Leh%2C_Shanti_Stupa%2C_Ladakh%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Leh%2C_Shanti_Stupa%2C_Ladakh%2C_India.jpg/330px-Leh%2C_Shanti_Stupa%2C_Ladakh%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 2048,
+    "height": 3072,
+    "sha256": "5a20908645bdaf5d64dda928858469d8f6ffadc2fdfbb0c35c46206de7520fae",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Leh%2C_Shanti_Stupa%2C_Ladakh%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Leh%2C_Shanti_Stupa%2C_Ladakh%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Leh%2C_Shanti_Stupa%2C_Ladakh%2C_India.jpg/330px-Leh%2C_Shanti_Stupa%2C_Ladakh%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 2048,
+      "height": 3072,
+      "sha256": "5a20908645bdaf5d64dda928858469d8f6ffadc2fdfbb0c35c46206de7520fae",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

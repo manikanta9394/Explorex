@@ -1,0 +1,60 @@
+{
+  "id": "mawlynnong-cleanest-village",
+  "name": "Mawlynnong Village (God Own Garden)",
+  "wikidata_id": "Q3520110",
+  "wiki_title": "Mawlynnong",
+  "type": "attraction",
+  "category": "Culture & Village",
+  "state": "Meghalaya",
+  "city": "Mawlynnong (East Khasi Hills)",
+  "lat": 25.2017,
+  "lng": 91.9167,
+  "price_amount": 50,
+  "price_currency": "INR",
+  "price_unit": "village development toll per vehicle",
+  "price_source": "https://meghalayatourism.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Open daylight hours (village observes quiet family hours in evening)",
+  "best_time": "October to April",
+  "rules": [
+    "Awarded Cleanest Village in Asia: strict 100% plastic ban and handmade conical bamboo dustbins on every street",
+    "Climb the 85-foot high Sky Walk bamboo machan for views across the Bangladesh plains"
+  ],
+  "tags": [
+    "Cleanest Village in Asia",
+    "Bamboo Dustbins",
+    "Sky Walk Viewpoint",
+    "Matrilineal Khasi Culture"
+  ],
+  "visual_features": "storybook village of neat thatched and wooden cottages lined with colorful orchids, polished stone pathways, and pristine flower-bordered gardens",
+  "description": "Mawlynnong is a village in the East Khasi Hills district of the Meghalaya state in North East India. It is notable for its cleanliness and also was chosen by Discover India magazine as Asia's cleanest village.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Mawlynnong_-_Cleanest_village_of_Asia.jpg/3840px-Mawlynnong_-_Cleanest_village_of_Asia.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Mawlynnong_-_Cleanest_village_of_Asia.jpg/330px-Mawlynnong_-_Cleanest_village_of_Asia.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4904,
+    "height": 4000,
+    "sha256": "c208601db1ff1fee4f4c659256c535b70991ff01748417c6c754b0ac7a2d3414",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Mawlynnong_-_Cleanest_village_of_Asia.jpg/3840px-Mawlynnong_-_Cleanest_village_of_Asia.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Mawlynnong_-_Cleanest_village_of_Asia.jpg/3840px-Mawlynnong_-_Cleanest_village_of_Asia.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Mawlynnong_-_Cleanest_village_of_Asia.jpg/330px-Mawlynnong_-_Cleanest_village_of_Asia.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4904,
+      "height": 4000,
+      "sha256": "c208601db1ff1fee4f4c659256c535b70991ff01748417c6c754b0ac7a2d3414",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

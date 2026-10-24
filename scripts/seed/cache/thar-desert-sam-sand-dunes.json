@@ -1,0 +1,60 @@
+{
+  "id": "thar-desert-sam-sand-dunes",
+  "name": "Sam Sand Dunes & Desert Safari",
+  "wikidata_id": "Q3520110",
+  "wiki_title": "Thar_Desert",
+  "type": "attraction",
+  "category": "Desert & Culture",
+  "state": "Rajasthan",
+  "city": "Jaisalmer (Sam)",
+  "lat": 26.83,
+  "lng": 70.51,
+  "price_amount": 800,
+  "price_currency": "INR",
+  "price_unit": "camel safari and cultural folk dance program approx",
+  "price_source": "https://tourism.rajasthan.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Camel and 4x4 Jeep safaris operate 5:00 AM - 8:00 AM and 4:00 PM - 7:30 PM",
+  "best_time": "November to February (clear desert night skies with star stargazing)",
+  "rules": [
+    "Negotiate authorized RTDC or camp-registered safaris",
+    "Carry warm jackets for chilly desert nights after sundown"
+  ],
+  "tags": [
+    "Rippled Sand Dunes",
+    "Camel Safari",
+    "Kalbelia Folk Dance",
+    "Thar Sunset"
+  ],
+  "visual_features": "endless undulating golden wind-rippled sand dunes stretching to the desert horizon with camel caravans silhouetted at dusk",
+  "description": "The Thar Desert, also known as the Great Indian Desert, is an arid region in the north-western part of the Indian subcontinent stretching across India and Pakistan. Covering an area of 264,091 km2 (101,966 sq mi), it is one of the largest subtropical deserts in Asia by area. About two-thirds of the desert area lies in India, with the remainder in Pakistan. It forms about six percent of the geographical area of India, with the majority of the desert lying in the state of Rajasthan, with portions extending into Gujarat, Haryana, and Punjab. Towards the west, it extends into the provinces of Sindh and Punjab in Pakistan. It is bordered by the Indo-Gangetic Plain to the north, west and northeast, Rann of Kutch to the south, and the Aravalli Range to the east.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Thar_desert_Rajasthan_India.jpg/3840px-Thar_desert_Rajasthan_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Thar_desert_Rajasthan_India.jpg/330px-Thar_desert_Rajasthan_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 3888,
+    "height": 2592,
+    "sha256": "49dc9aa7755a7932e20f1bc56913438df6d0a8672218b07e2718f4bee1c6b93a",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Thar_desert_Rajasthan_India.jpg/3840px-Thar_desert_Rajasthan_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Thar_desert_Rajasthan_India.jpg/3840px-Thar_desert_Rajasthan_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Thar_desert_Rajasthan_India.jpg/330px-Thar_desert_Rajasthan_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 3888,
+      "height": 2592,
+      "sha256": "49dc9aa7755a7932e20f1bc56913438df6d0a8672218b07e2718f4bee1c6b93a",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

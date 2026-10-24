@@ -1,0 +1,61 @@
+{
+  "id": "taj-mahal-agra",
+  "name": "Taj Mahal",
+  "wikidata_id": "Q9141",
+  "wiki_title": "Taj_Mahal",
+  "type": "attraction",
+  "category": "Heritage Monument",
+  "state": "Uttar Pradesh",
+  "city": "Agra",
+  "lat": 27.1751,
+  "lng": 78.0421,
+  "price_amount": 50,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "30 minutes before sunrise to 30 minutes before sunset (Closed on Fridays)",
+  "best_time": "Sunrise in October to March",
+  "rules": [
+    "Closed every Friday for general visitors",
+    "No food or smoking items permitted inside",
+    "Main mausoleum step requires shoe covers provided with ticket"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "Seven Wonders",
+    "Mughal Architecture",
+    "Agra"
+  ],
+  "visual_features": "white marble mausoleum with four slender minarets, central lotus dome, and long reflecting pool",
+  "description": "The Taj Mahal is an ivory-white marble mausoleum on the right bank of the river Yamuna in Agra, Uttar Pradesh, India. It was commissioned in 1631 by the fifth Mughal emperor, Shah Jahan, to house the tomb of his late wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself. The tomb is the centrepiece of a 17-hectare (42-acre) complex, which includes a mosque and a guest house, and is set in formal gardens bounded on three sides by a crenellated wall.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Taj_Mahal_%28Edited%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/330px-Taj_Mahal_%28Edited%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 3840,
+    "height": 2525,
+    "sha256": "c700ea02a176e49d6437d4afac457d7e0a0193aec8118f6cd7dcba3f9df10bc6",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Taj_Mahal_%28Edited%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Taj_Mahal_%28Edited%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/330px-Taj_Mahal_%28Edited%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 3840,
+      "height": 2525,
+      "sha256": "c700ea02a176e49d6437d4afac457d7e0a0193aec8118f6cd7dcba3f9df10bc6",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

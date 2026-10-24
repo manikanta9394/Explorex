@@ -1,0 +1,60 @@
+{
+  "id": "darjeeling-himalayan-railway",
+  "name": "Darjeeling Himalayan Railway (Toy Train) & Tiger Hill",
+  "wikidata_id": "Q378775",
+  "wiki_title": "Darjeeling_Himalayan_Railway",
+  "type": "attraction",
+  "category": "Heritage Railway & Mountains",
+  "state": "West Bengal",
+  "city": "Darjeeling",
+  "lat": 27.036,
+  "lng": 88.2627,
+  "price_amount": 1000,
+  "price_currency": "INR",
+  "price_unit": "steam engine joy ride roundtrip to Ghum (first class)",
+  "price_source": "https://dhr.indianrailways.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Joy rides operate daily 9:00 AM - 4:30 PM · Tiger Hill sunrise 4:00 AM departure",
+  "best_time": "October to December and March to May (breathtaking Kanchenjunga sunrise views)",
+  "rules": [
+    "Book heritage steam locomotive joy rides weeks in advance on IRCTC",
+    "Ghum is India highest railway station at 7,407 ft"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "Narrow Gauge Steam Train",
+    "Batasia Loop",
+    "Kanchenjunga Panorama"
+  ],
+  "visual_features": "blue vintage steam locomotive puffing white smoke around the circular Batasia Loop with snow-clad Kanchenjunga peak towering in the distance",
+  "description": "The Darjeeling Himalayan Railway, also known as the DHR, is a 610 mm gauge railway that runs between New Jalpaiguri and Darjeeling in the Indian state of West Bengal. Built between 1879 and 1881, it is about 88 km (55 mi) long. It climbs from about 100 m (330 ft) above sea level at New Jalpaiguri to about 2,200 m (7,200 ft) at Darjeeling, using six zig zags and three loops to gain altitude. Ghum station is situated at an altitude of 2,260 metres (7,410 ft). Six diesel locomotives handle most of the scheduled service, with daily tourist trains from Darjeeling to Ghum – India's highest railway station – and the steam-hauled Red Panda service from Darjeeling to Kurseong. Steam-enthusiast specials are hauled by vintage British-built B-Class steam locomotives. The railway's headquarters are at Kurseong.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Ministry_of_Railways_India.svg/1280px-Ministry_of_Railways_India.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Ministry_of_Railways_India.svg/330px-Ministry_of_Railways_India.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 975,
+    "height": 479,
+    "sha256": "34821fdbb94db5d28d9d8d1db38d99209b6dde2e86920183cf19e3797b9bf5df",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Ministry_of_Railways_India.svg/1280px-Ministry_of_Railways_India.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Ministry_of_Railways_India.svg/1280px-Ministry_of_Railways_India.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Ministry_of_Railways_India.svg/330px-Ministry_of_Railways_India.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 975,
+      "height": 479,
+      "sha256": "34821fdbb94db5d28d9d8d1db38d99209b6dde2e86920183cf19e3797b9bf5df",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

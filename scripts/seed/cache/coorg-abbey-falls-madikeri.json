@@ -1,0 +1,60 @@
+{
+  "id": "coorg-abbey-falls-madikeri",
+  "name": "Abbey Falls & Coffee Plantations",
+  "wikidata_id": "Q4664009",
+  "wiki_title": "Abbey_Falls",
+  "type": "attraction",
+  "category": "Nature & Waterfall",
+  "state": "Karnataka",
+  "city": "Madikeri (Kodagu/Coorg)",
+  "lat": 12.4542,
+  "lng": 75.7175,
+  "price_amount": 20,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://karnatakatourism.org",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "9:00 AM - 5:00 PM daily",
+  "best_time": "July to December",
+  "rules": [
+    "Swimming in waterfall pool is strictly prohibited for safety",
+    "Hanging bridge provides optimal viewing perspective"
+  ],
+  "tags": [
+    "Coffee Estate Trail",
+    "Hanging Bridge",
+    "Western Ghats",
+    "Coorg Mist"
+  ],
+  "visual_features": "foaming white waterfall cascading between spice and coffee plantations viewed from an arched pedestrian suspension bridge",
+  "description": "Abbey Falls is a waterfall in Kodagu, in the Western Ghats of Karnataka, India. It is located 8 km from the Madikeri, 122 km from Mysore, 144 km from Mangalore and 268 km from Bangalore.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Abbey_Falls_New.jpg/3840px-Abbey_Falls_New.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Abbey_Falls_New.jpg/330px-Abbey_Falls_New.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 6000,
+    "height": 3376,
+    "sha256": "73bdd1bf635a912a35713557755d6d27be99521f5572cde773f08c2126c546b9",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Abbey_Falls_New.jpg/3840px-Abbey_Falls_New.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Abbey_Falls_New.jpg/3840px-Abbey_Falls_New.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Abbey_Falls_New.jpg/330px-Abbey_Falls_New.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 6000,
+      "height": 3376,
+      "sha256": "73bdd1bf635a912a35713557755d6d27be99521f5572cde773f08c2126c546b9",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

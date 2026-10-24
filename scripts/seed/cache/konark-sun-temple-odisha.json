@@ -1,0 +1,60 @@
+{
+  "id": "konark-sun-temple-odisha",
+  "name": "Konark Sun Temple (Black Pagoda)",
+  "wikidata_id": "Q219965",
+  "wiki_title": "Konark_Sun_Temple",
+  "type": "attraction",
+  "category": "Heritage Monument",
+  "state": "Odisha",
+  "city": "Konark (Puri)",
+  "lat": 19.8876,
+  "lng": 86.0945,
+  "price_amount": 40,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:00 AM - 8:00 PM daily (Evening Light & Sound Show at 6:30 PM & 7:30 PM)",
+  "best_time": "October to March (Konark Dance Festival in December)",
+  "rules": [
+    "Famous carved stone sundial wheels tell time accurately to the minute using shadow alignment",
+    "Do not touch or climb the carved Chlorite stone chariot wheels"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "Chariot of the Sun God",
+    "24 Carved Sundial Wheels",
+    "Kalinga Architecture"
+  ],
+  "visual_features": "monumental 13th-century stone chariot temple carved with 24 colossal sundial wheels pulled by seven galloping stone horses",
+  "description": "Konark Sun Temple is a 13th-century CE Hindu Sun temple at Konark about 35 kilometres (22 mi) northeast from Puri city on the coastline in Puri district, Odisha, India. The temple is attributed to king Narasingha Deva I of the Eastern Ganga dynasty about 1250 CE. Dedicated to the Hindu Sun-god Surya, it reflects the pinnacle of Kalingan architecture and artistic excellence, what remains of the temple complex has the appearance of a 30-metre (100 ft) high chariot with immense wheels and horses, all carved from stone. Once over 61 metres (200 ft) high, much of the temple is now in ruins, in particular the large shikara tower over the sanctuary; at one time this rose much higher than the mandapa that remains. The structures and elements that have survived are famed for their intricate artwork, iconography, and themes, including erotic kama and mithuna scenes. Also called the Surya Devalaya, it is a classic illustration of the Odisha style of Architecture or Kalinga architecture.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Konarka_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Konarka_Temple.jpg/330px-Konarka_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 2048,
+    "height": 1366,
+    "sha256": "6e7a2336ffafe00835f00c9a2760cae3361f455b7b04238b8e9721f04f876e63",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Konarka_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Konarka_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Konarka_Temple.jpg/330px-Konarka_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 2048,
+      "height": 1366,
+      "sha256": "6e7a2336ffafe00835f00c9a2760cae3361f455b7b04238b8e9721f04f876e63",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

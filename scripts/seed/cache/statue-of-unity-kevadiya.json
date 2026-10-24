@@ -1,0 +1,60 @@
+{
+  "id": "statue-of-unity-kevadiya",
+  "name": "Statue of Unity (Sardar Vallabhbhai Patel)",
+  "wikidata_id": "Q57984180",
+  "wiki_title": "Statue_of_Unity",
+  "type": "attraction",
+  "category": "Monument & Engineering",
+  "state": "Gujarat",
+  "city": "Ekta Nagar (Kevadiya)",
+  "lat": 21.838,
+  "lng": 73.7191,
+  "price_amount": 150,
+  "price_currency": "INR",
+  "price_unit": "entry ticket (Viewing Gallery at 153m is ₹380)",
+  "price_source": "https://soutickets.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "8:00 AM - 6:00 PM (Closed on Mondays · Laser Light & Sound Show at 7:00 PM)",
+  "best_time": "October to March",
+  "rules": [
+    "Closed every Monday for maintenance",
+    "Pre-booking tickets online mandatory; high-speed elevators ascend to the chest-level viewing gallery in 30 seconds"
+  ],
+  "tags": [
+    "World Tallest Statue (182m)",
+    "Iron Man of India",
+    "Narmada River",
+    "Engineering Marvel"
+  ],
+  "visual_features": "colossal bronze-clad statue standing 597 feet high on an island in the Narmada river against the Vindhya and Satpura mountain ranges",
+  "description": "\nThe Statue of Unity is the world's tallest statue, with a height of 182 metres, located in Narmada valley, near Kevadia in the state of Gujarat, India. It depicts Indian politician and independence activist Sardar Patel (1875–1950), who was the first deputy prime minister and home minister of independent India. Patel played a significant role in the political integration of India. The statue is on the Narmada River in the Kevadiya colony, facing the Sardar Sarovar Dam, 100 kilometres southeast of the city of Vadodara.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Statue_of_Unity.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Statue_of_Unity.jpg/330px-Statue_of_Unity.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 3456,
+    "height": 5184,
+    "sha256": "300f24cfec35d25ec02af300b97b088c8b7dbbb98c645e1aa846174f12b1dc57",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Statue_of_Unity.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Statue_of_Unity.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Statue_of_Unity.jpg/330px-Statue_of_Unity.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 3456,
+      "height": 5184,
+      "sha256": "300f24cfec35d25ec02af300b97b088c8b7dbbb98c645e1aa846174f12b1dc57",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

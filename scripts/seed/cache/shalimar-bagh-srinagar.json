@@ -1,0 +1,60 @@
+{
+  "id": "shalimar-bagh-srinagar",
+  "name": "Shalimar Bagh Mughal Garden",
+  "wikidata_id": "Q3481283",
+  "wiki_title": "Shalimar_Bagh,_Srinagar",
+  "type": "attraction",
+  "category": "Heritage Garden",
+  "state": "Jammu and Kashmir",
+  "city": "Srinagar",
+  "lat": 34.1481,
+  "lng": 74.8728,
+  "price_amount": 24,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://jktourism.jk.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "9:00 AM - 7:00 PM daily",
+  "best_time": "April to October (golden autumn chinars in October-November)",
+  "rules": [
+    "Stay on garden paved terrace walkways",
+    "Do not pluck flowers or step on manicured turf"
+  ],
+  "tags": [
+    "Mughal Terrace Garden",
+    "Emperor Jahangir",
+    "Chinar Trees",
+    "Water Cascades"
+  ],
+  "visual_features": "terraced Mughal Persian garden with stepped stone water channels, fountains, and massive century-old chinar trees",
+  "description": "Shalimar Bagh is a Mughal garden in Srinagar, Indian-administered Jammu and Kashmir, located at the northeast of Dal Lake. It is also known as Shalimar Garden, Farah Baksh, and Faiz Baksh. The other famous shoreline garden in the vicinity is Nishat Bagh, 'The Garden of Delight'. The garden was built by Mughal emperor Jahangir in 1619 and is considered the high point of Mughal horticulture. It is now a public park and also referred to as the \"Crown of Srinagar\".",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Shalimar_Bagh_1.jpg/3840px-Shalimar_Bagh_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Shalimar_Bagh_1.jpg/330px-Shalimar_Bagh_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4000,
+    "height": 2250,
+    "sha256": "a0fc11158d96a1ea117a64bf6ca2f845a4b021baa741f6a00c020a57ad671b28",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Shalimar_Bagh_1.jpg/3840px-Shalimar_Bagh_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Shalimar_Bagh_1.jpg/3840px-Shalimar_Bagh_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Shalimar_Bagh_1.jpg/330px-Shalimar_Bagh_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4000,
+      "height": 2250,
+      "sha256": "a0fc11158d96a1ea117a64bf6ca2f845a4b021baa741f6a00c020a57ad671b28",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

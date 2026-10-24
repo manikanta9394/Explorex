@@ -1,0 +1,60 @@
+{
+  "id": "agra-fort",
+  "name": "Agra Fort",
+  "wikidata_id": "Q170047",
+  "wiki_title": "Agra_Fort",
+  "type": "attraction",
+  "category": "Heritage Fort",
+  "state": "Uttar Pradesh",
+  "city": "Agra",
+  "lat": 27.1795,
+  "lng": 78.0211,
+  "price_amount": 50,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:00 AM - 6:00 PM daily",
+  "best_time": "October to March",
+  "rules": [
+    "Military section of fort is restricted to defense personnel",
+    "Keep ticket barcode accessible"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "Mughal Fortress",
+    "Jahangiri Mahal",
+    "Diwan-i-Khas"
+  ],
+  "visual_features": "massive crescent red sandstone fort ramparts with white marble palaces overlooking the river",
+  "description": "Agra Fort, also known as the Red Fort of Agra (Lal-Qila) or Qila-i-Akbari, is an historic fort in the city of Agra in Uttar Pradesh, India. A brick fortification on the site, noted as early as 1080 and later known as Badalgarh, was extensively rebuilt in red sandstone by the Mughal emperor Akbar from 1565 to 1573. It served as the main residence of the rulers of the Mughal dynasty until 1638, when the capital was moved from Agra to Shahjahanabad in Delhi. Much of the present interior dates from the reign of Shah Jahan, who added a number of white marble palaces and mosques within the fort after 1628. The Marathas were the last Indian rulers to occupy the fort before it was captured by the British in 1803.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Agra_03-2016_16_Agra_Fort.jpg/3840px-Agra_03-2016_16_Agra_Fort.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Agra_03-2016_16_Agra_Fort.jpg/330px-Agra_03-2016_16_Agra_Fort.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 5410,
+    "height": 3607,
+    "sha256": "b0840172d2aabafbfcab77b0e57ef985abfc4d7ecd1abce727945c3e2b1c42fb",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Agra_03-2016_16_Agra_Fort.jpg/3840px-Agra_03-2016_16_Agra_Fort.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Agra_03-2016_16_Agra_Fort.jpg/3840px-Agra_03-2016_16_Agra_Fort.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Agra_03-2016_16_Agra_Fort.jpg/330px-Agra_03-2016_16_Agra_Fort.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 5410,
+      "height": 3607,
+      "sha256": "b0840172d2aabafbfcab77b0e57ef985abfc4d7ecd1abce727945c3e2b1c42fb",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

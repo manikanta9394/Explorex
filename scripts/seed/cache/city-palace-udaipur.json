@@ -1,0 +1,60 @@
+{
+  "id": "city-palace-udaipur",
+  "name": "City Palace Complex Udaipur",
+  "wikidata_id": "Q2978009",
+  "wiki_title": "City_Palace,_Udaipur",
+  "type": "attraction",
+  "category": "Heritage Palace",
+  "state": "Rajasthan",
+  "city": "Udaipur",
+  "lat": 24.5764,
+  "lng": 73.6835,
+  "price_amount": 300,
+  "price_currency": "INR",
+  "price_unit": "palace museum entry per person",
+  "price_source": "https://citypalacemuseum.org",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "9:00 AM - 9:00 PM daily · Lake Pichola boat rides from Bansi Ghat until sunset",
+  "best_time": "October to March",
+  "rules": [
+    "Boat ride to Jagmandir Island requires separate combined ticket",
+    "Photography permitted with camera permit token"
+  ],
+  "tags": [
+    "City of Lakes",
+    "Mewar Royal Dynasty",
+    "Lake Pichola",
+    "Mor Chowk Peacock Courtyard"
+  ],
+  "visual_features": "colossal granite and marble palace complex towering on the east bank of Lake Pichola with balconies, cupolas, and mirror mosaics",
+  "description": "City Palace, Udaipur is a palace complex situated in the city of Udaipur in the Indian state of Rajasthan. It was built over a period of nearly 400 years, with contributions from several rulers of the Mewar dynasty. Its construction began in 1553, started by Maharana Udai Singh II of the Sisodia Rajput family as he shifted his capital from the erstwhile Chittor to the newfound city of Udaipur. The palace is located on the east bank of Lake Pichola and has several palaces built within its complex.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Udaipur_City_Palace.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Udaipur_City_Palace.jpg/330px-Udaipur_City_Palace.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 1943,
+    "height": 1410,
+    "sha256": "f692fd8d00de18c6ee1b5b94471a7302ad25a314845e02cc20315d1d12da2f2f",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Udaipur_City_Palace.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Udaipur_City_Palace.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Udaipur_City_Palace.jpg/330px-Udaipur_City_Palace.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 1943,
+      "height": 1410,
+      "sha256": "f692fd8d00de18c6ee1b5b94471a7302ad25a314845e02cc20315d1d12da2f2f",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

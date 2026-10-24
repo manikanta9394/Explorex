@@ -1,0 +1,60 @@
+{
+  "id": "baidyanath-dham-deoghar",
+  "name": "Baba Baidyanath Jyotirlinga Temple",
+  "wikidata_id": "Q844111",
+  "wiki_title": "Baidyanath_Temple",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Jharkhand",
+  "city": "Deoghar",
+  "lat": 24.4925,
+  "lng": 86.7003,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free general darshan (Shighra Darshan pass ₹500)",
+  "price_source": "https://babadham.org",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "4:00 AM - 3:30 PM, 6:00 PM - 9:00 PM daily",
+  "best_time": "October to March (Shravani Mela Kanwar Yatra in July/August draws millions)",
+  "rules": [
+    "During Shravani Mela, saffron-clad Kanwariyas walk 105 km carrying holy Ganga water from Sultanganj",
+    "Dress modestly"
+  ],
+  "tags": [
+    "12 Sacred Jyotirlingas",
+    "Shakti Peeth Confluence",
+    "Panchshool Trident",
+    "Baidyanath Dham"
+  ],
+  "visual_features": "ancient stone temple complex crowned with the distinct brass Panchshool trident atop its 72-foot pyramidal shikhara surrounded by 21 shrines",
+  "description": "Baidyanath Temple is a Hindu temple dedicated to Shiva. It is located in Deoghar, in the Santhal Parganas division of the Indian state of Jharkhand. The temple complex comprises the central shrine of Baba Baidyanath along with 21 additional temples. It is significant to the Hindu sects of Shaivism as this temple is referred to as one of the twelve Jyotirlingas.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Baidyanath_temple_and_temple_complex%2C_Deoghar_04.jpg/3840px-Baidyanath_temple_and_temple_complex%2C_Deoghar_04.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Baidyanath_temple_and_temple_complex%2C_Deoghar_04.jpg/330px-Baidyanath_temple_and_temple_complex%2C_Deoghar_04.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4080,
+    "height": 3060,
+    "sha256": "65651de40e539c38dabd41d13806b5603c2ceef4edfdeaa6676fea08177b377f",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Baidyanath_temple_and_temple_complex%2C_Deoghar_04.jpg/3840px-Baidyanath_temple_and_temple_complex%2C_Deoghar_04.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Baidyanath_temple_and_temple_complex%2C_Deoghar_04.jpg/3840px-Baidyanath_temple_and_temple_complex%2C_Deoghar_04.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Baidyanath_temple_and_temple_complex%2C_Deoghar_04.jpg/330px-Baidyanath_temple_and_temple_complex%2C_Deoghar_04.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4080,
+      "height": 3060,
+      "sha256": "65651de40e539c38dabd41d13806b5603c2ceef4edfdeaa6676fea08177b377f",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

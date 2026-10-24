@@ -1,0 +1,60 @@
+{
+  "id": "fort-kochi-chinese-nets",
+  "name": "Fort Kochi Chinese Fishing Nets & Mattancherry",
+  "wikidata_id": "Q3529244",
+  "wiki_title": "Fort_Kochi",
+  "type": "attraction",
+  "category": "Coastal & Heritage",
+  "state": "Kerala",
+  "city": "Kochi (Cochin)",
+  "lat": 9.9667,
+  "lng": 76.2417,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free waterfront promenade",
+  "price_source": "https://keralatourism.org",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Waterfront open 24 hours · Fishermen operate nets at sunrise and sunset",
+  "best_time": "October to March (sunset over the Arabian Sea)",
+  "rules": [
+    "Negotiate nominal tip if fishermen invite you to operate the cantilevered net counterweights",
+    "Visit nearby 1503 St. Francis Church and Jewish Synagogue"
+  ],
+  "tags": [
+    "Cheena Vala",
+    "Colonial Spice Port",
+    "Arabian Sea Sunset",
+    "Mattancherry Palace"
+  ],
+  "visual_features": "iconic cantilevered teak and bamboo Chinese fishing nets silhouetted against the burning orange Arabian Sea sunset",
+  "description": "Fort Kochi, formerly also known as Fort Cochin, is a region of Kochi city in Kerala, India. Fort Kochi takes its name from the Fort Manuel of Kochi, the first European fort on Indian soil, controlled by the Portuguese East Indies. This is part of a handful of water-bound islands and islets toward the south-west of the mainland Kochi, and collectively known as Old Kochi or West Kochi. Adjacent to this is the locality of Mattancherry. In 1967, these three municipalities along with a few adjoining areas, were amalgamated to form the Kochi Municipal Corporation.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Kochi%2C_Fishing_nets_at_sunset%2C_Kerala%2C_India.jpg/3840px-Kochi%2C_Fishing_nets_at_sunset%2C_Kerala%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Kochi%2C_Fishing_nets_at_sunset%2C_Kerala%2C_India.jpg/330px-Kochi%2C_Fishing_nets_at_sunset%2C_Kerala%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4032,
+    "height": 2688,
+    "sha256": "e4f4bc5ad0cab64e237c25433bb1ac3942eee409d509eaefadbbde4131ba8f7f",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Kochi%2C_Fishing_nets_at_sunset%2C_Kerala%2C_India.jpg/3840px-Kochi%2C_Fishing_nets_at_sunset%2C_Kerala%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Kochi%2C_Fishing_nets_at_sunset%2C_Kerala%2C_India.jpg/3840px-Kochi%2C_Fishing_nets_at_sunset%2C_Kerala%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Kochi%2C_Fishing_nets_at_sunset%2C_Kerala%2C_India.jpg/330px-Kochi%2C_Fishing_nets_at_sunset%2C_Kerala%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4032,
+      "height": 2688,
+      "sha256": "e4f4bc5ad0cab64e237c25433bb1ac3942eee409d509eaefadbbde4131ba8f7f",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

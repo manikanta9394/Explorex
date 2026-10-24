@@ -1,0 +1,60 @@
+{
+  "id": "sun-temple-modhera",
+  "name": "Sun Temple Modhera & Surya Kund",
+  "wikidata_id": "Q2962635",
+  "wiki_title": "Sun_Temple,_Modhera",
+  "type": "attraction",
+  "category": "Heritage Monument",
+  "state": "Gujarat",
+  "city": "Modhera (Mehsana)",
+  "lat": 23.5836,
+  "lng": 72.1331,
+  "price_amount": 25,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "7:00 AM - 6:00 PM daily (Evening 3D projection mapping on weekends)",
+  "best_time": "October to March (Modhera Dance Festival in January)",
+  "rules": [
+    "Equinox alignment: sunrise rays strike the innermost sanctum on solar equinoxes",
+    "No stepping onto delicate stepped tank miniature shrines"
+  ],
+  "tags": [
+    "Maru-Gurjara Architecture",
+    "Surya Kund Stepped Tank",
+    "Equinox Alignment",
+    "ASI Protected"
+  ],
+  "visual_features": "ornately carved Solanki dynasty sandstone temple aligned with a magnificent stepped rectangular water tank (Surya Kund) holding 108 miniature shrines",
+  "description": "The  Sun Temple of Modhera is a Hindu temple dedicated to the solar deity Surya, located in the village of Modhera in Mehsana district, Gujarat, India. The temple is situated on the bank of the river Pushpavati, and was constructed in the 11th century during the reign of Bhima I and Karna I of the Chaulukya dynasty. The temple is no longer used for worship and is a protected monument maintained by the Archaeological Survey of India. The temple complex has three components: Gūḍhamanḍapa, the shrine hall; Sabhamanḍapa, the assembly hall and Kunḍa, the reservoir. The halls are noted for the intricately carved exteriors and decorated pillars. The tiered steps of the reservoir lead to the bottom and numerous small shrines.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Surya_mandhir.jpg/3840px-Surya_mandhir.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Surya_mandhir.jpg/330px-Surya_mandhir.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4032,
+    "height": 3024,
+    "sha256": "19ddf37e9e8397837ac42838ff12f5ec71512e2ef87c7f697da245db866e7eea",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Surya_mandhir.jpg/3840px-Surya_mandhir.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Surya_mandhir.jpg/3840px-Surya_mandhir.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Surya_mandhir.jpg/330px-Surya_mandhir.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4032,
+      "height": 3024,
+      "sha256": "19ddf37e9e8397837ac42838ff12f5ec71512e2ef87c7f697da245db866e7eea",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

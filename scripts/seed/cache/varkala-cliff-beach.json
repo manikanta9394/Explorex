@@ -1,0 +1,60 @@
+{
+  "id": "varkala-cliff-beach",
+  "name": "Varkala Papanasam Beach & Red Cliffs",
+  "wikidata_id": "Q3532789",
+  "wiki_title": "Varkala_Beach",
+  "type": "attraction",
+  "category": "Coastal & Beach",
+  "state": "Kerala",
+  "city": "Varkala (Thiruvananthapuram)",
+  "lat": 8.735,
+  "lng": 76.7032,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free beach access",
+  "price_source": "https://keralatourism.org",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Open 24 hours · Cliff cafes open till midnight",
+  "best_time": "November to March",
+  "rules": [
+    "Cliff walkway has no railing at certain spots; walk cautiously after dark",
+    "Swim only in designated lifeguard-patrolled zones"
+  ],
+  "tags": [
+    "Geo-heritage Red Laterite Cliffs",
+    "Papanasam Holy Waters",
+    "Sunset Cafes",
+    "Arabian Sea"
+  ],
+  "visual_features": "unique red laterite cliffs towering above golden sands and rolling turquoise Arabian Sea breakers with rooftop cafes",
+  "description": "Varkala Beach is situated in the town of Varkala in Varkala Municipality, Thiruvananthapuram district, Kerala, India. The beach skirts the Arabian Sea, part of the Indian Ocean.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Varkala_beach_from_above.jpg/3840px-Varkala_beach_from_above.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Varkala_beach_from_above.jpg/330px-Varkala_beach_from_above.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4534,
+    "height": 3023,
+    "sha256": "027eaa5d4a35720e5df1c5bc00f9cb462dd4729c6900a7c19b2fb81e5e9b5797",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Varkala_beach_from_above.jpg/3840px-Varkala_beach_from_above.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Varkala_beach_from_above.jpg/3840px-Varkala_beach_from_above.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Varkala_beach_from_above.jpg/330px-Varkala_beach_from_above.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4534,
+      "height": 3023,
+      "sha256": "027eaa5d4a35720e5df1c5bc00f9cb462dd4729c6900a7c19b2fb81e5e9b5797",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

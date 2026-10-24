@@ -1,0 +1,60 @@
+{
+  "id": "bhoramdeo-temple-kawardha",
+  "name": "Bhoramdeo Temple (Khajuraho of Chhattisgarh)",
+  "wikidata_id": "Q379934",
+  "wiki_title": "Bhoramdeo_Temple",
+  "type": "attraction",
+  "category": "Heritage Temple",
+  "state": "Chhattisgarh",
+  "city": "Kawardha (Kabirdham)",
+  "lat": 22.1189,
+  "lng": 81.1611,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free entry",
+  "price_source": "https://chhattisgarhtourism.co.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:00 AM - 6:00 PM daily",
+  "best_time": "October to March (Bhoramdeo Mahotsav in spring)",
+  "rules": [
+    "Footwear removal required at stone plinth base",
+    "Admire the 11th-century Nagara style stone carvings of the Nagavanshi dynasty"
+  ],
+  "tags": [
+    "Nagara Architecture",
+    "Nagavanshi Dynasty",
+    "Maikal Hills",
+    "Intricate Erotic Stone Sculptures"
+  ],
+  "visual_features": "exquisite 11th-century stone temple standing on a five-foot platform nestled against the dense forested backdrop of the Maikal mountain range",
+  "description": "Bhoramdeo Temple is a Hindu temple dedicated to the god Shiva in Bhoramdeo, in the Indian state of Chhattisgarh. It comprises a group of four temples of which the earliest is a brick-temple. The main temple is the Bhoramdeo temple built in stone. The architectural features with erotic sculptures has given a distinct style akin to the Khajuraho temple and the Konark Sun Temple in Odisha, and hence the Bhoramdeo complex is known by the sobriquet the \"Khajuraho of Chhattisgarh\".",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Bhoramdeo_Temple%2C_Kawardha.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Bhoramdeo_Temple%2C_Kawardha.jpg/330px-Bhoramdeo_Temple%2C_Kawardha.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 3072,
+    "height": 2304,
+    "sha256": "036abbde6cc7938fc08f6da9e799a0189299b603f7af39e77c3b2c7a73e720f5",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Bhoramdeo_Temple%2C_Kawardha.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Bhoramdeo_Temple%2C_Kawardha.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Bhoramdeo_Temple%2C_Kawardha.jpg/330px-Bhoramdeo_Temple%2C_Kawardha.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 3072,
+      "height": 2304,
+      "sha256": "036abbde6cc7938fc08f6da9e799a0189299b603f7af39e77c3b2c7a73e720f5",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

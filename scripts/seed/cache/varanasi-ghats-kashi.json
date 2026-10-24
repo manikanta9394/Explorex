@@ -1,0 +1,60 @@
+{
+  "id": "varanasi-ghats-kashi",
+  "name": "Varanasi Ghats & Kashi Vishwanath",
+  "wikidata_id": "Q10255",
+  "wiki_title": "Ghats_in_Varanasi",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Uttar Pradesh",
+  "city": "Varanasi",
+  "lat": 25.3109,
+  "lng": 83.0104,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free ghat access",
+  "price_source": "https://uptourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Ghats open 24 hours · Dashashwamedh Ganga Aarti at 6:45 PM",
+  "best_time": "October to March (dawn boat ride or evening Ganga Aarti)",
+  "rules": [
+    "Cremation photography strictly prohibited at Manikarnika and Harishchandra ghats",
+    "Dress modestly near temple precincts"
+  ],
+  "tags": [
+    "Sacred River Ganga",
+    "Ganga Aarti",
+    "Ancient City",
+    "Spiritual"
+  ],
+  "visual_features": "ancient stone riverfront steps along the Ganges with brass lamps during Ganga Aarti ceremony",
+  "description": "Ghats in Varanasi are riverfront steps leading to the banks of the Ganges river. The city has 84 ghats. Most of the ghats are bathing and puja ceremonial ghats, while two ghats, Manikarnika and Harishchandra, are used exclusively as cremation sites.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg/3840px-Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg/330px-Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4000,
+    "height": 3000,
+    "sha256": "440863a6fa7b2b6d1ef705524af23e890686684463b23a9957753d99a13728eb",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg/3840px-Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg/3840px-Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg/330px-Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4000,
+      "height": 3000,
+      "sha256": "440863a6fa7b2b6d1ef705524af23e890686684463b23a9957753d99a13728eb",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

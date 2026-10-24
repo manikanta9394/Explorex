@@ -1,0 +1,60 @@
+{
+  "id": "vantawng-falls-mizoram",
+  "name": "Vantawng Falls & Thenzawl Sericulture",
+  "wikidata_id": "Q1263721",
+  "wiki_title": "Vantawng_Falls",
+  "type": "attraction",
+  "category": "Nature & Waterfall",
+  "state": "Mizoram",
+  "city": "Thenzawl (Serchhip)",
+  "lat": 23.2842,
+  "lng": 92.7917,
+  "price_amount": 20,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://tourism.mizoram.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Open daylight hours (viewing tower open 8:00 AM - 5:00 PM)",
+  "best_time": "September to January",
+  "rules": [
+    "Highest waterfall in Mizoram (750 ft)",
+    "View the falls safely from the comfortable government watchtower across the bamboo forest ravine"
+  ],
+  "tags": [
+    "Highest Waterfall in Mizoram",
+    "Thenzawl Handlooms",
+    "Bamboo Forest Gorges",
+    "Vanva River"
+  ],
+  "visual_features": "striking two-tiered white water cataract falling 750 feet down a sheer rock face flanked by dense tropical evergreen and bamboo forests",
+  "description": "The Vantawng Khawhthla is located 5 kilometres (3.1 mi) south of Thenzawl in Serchhip district in the Indian state of Mizoram. It is the highest uninterrupted waterfall in Mizoram. It is about 92 kilometres away from Aizawl.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Vantawng_Falls_in_1990s.jpg/3840px-Vantawng_Falls_in_1990s.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Vantawng_Falls_in_1990s.jpg/330px-Vantawng_Falls_in_1990s.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4002,
+    "height": 5753,
+    "sha256": "8f9f160128224dc9e5dd2e0278e6a5a93321806a9cc613fdd7dfc843ed8d0722",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Vantawng_Falls_in_1990s.jpg/3840px-Vantawng_Falls_in_1990s.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Vantawng_Falls_in_1990s.jpg/3840px-Vantawng_Falls_in_1990s.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Vantawng_Falls_in_1990s.jpg/330px-Vantawng_Falls_in_1990s.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4002,
+      "height": 5753,
+      "sha256": "8f9f160128224dc9e5dd2e0278e6a5a93321806a9cc613fdd7dfc843ed8d0722",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

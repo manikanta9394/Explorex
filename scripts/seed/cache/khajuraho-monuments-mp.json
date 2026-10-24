@@ -1,0 +1,60 @@
+{
+  "id": "khajuraho-monuments-mp",
+  "name": "Khajuraho Group of Monuments (Kandariya Mahadeva)",
+  "wikidata_id": "Q207865",
+  "wiki_title": "Khajuraho_Group_of_Monuments",
+  "type": "attraction",
+  "category": "Heritage Temple",
+  "state": "Madhya Pradesh",
+  "city": "Khajuraho (Chhatarpur)",
+  "lat": 24.853,
+  "lng": 79.9197,
+  "price_amount": 40,
+  "price_currency": "INR",
+  "price_unit": "Western Group temples entry per person",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Sunrise to Sunset daily · Sound & Light show at 6:30 PM & 7:40 PM",
+  "best_time": "October to March (Khajuraho Dance Festival in February)",
+  "rules": [
+    "Ticket valid for all Western Group temples on date of issue",
+    "Hire certified ASI guides for detailed iconography explanation of 84 miniature spires"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "Nagara Temple Architecture",
+    "Chandela Dynasty",
+    "Sensuous Stone Carvings"
+  ],
+  "visual_features": "towering sandstone temple with soaring mountain-like spires adorned with thousands of intricate friezes of celestial nymphs, musicians, and deities",
+  "description": "The Khajuraho Group of Monuments are a group of Hindu and Digambara Jain temples in Chhatarpur district, Madhya Pradesh, India. They are about 46 km from Chhatarpur city, the district headquarters, 283 km from Gwalior, 175 kilometres (109 mi) southeast of Jhansi, 10 kilometres (6.2 mi) from Khajwa and 9 kilometres (5.6 mi) from Rajnagar. The temples are famous for their Nagara-style architectural symbolism and a few erotic sculptures.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/1_Khajuraho.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/1_Khajuraho.jpg/330px-1_Khajuraho.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 2435,
+    "height": 1700,
+    "sha256": "f36b2888063c3aa0f5a8582ea89c771db7ea83dc78f19afd81bcf53cca07f202",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/1_Khajuraho.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/1_Khajuraho.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/1_Khajuraho.jpg/330px-1_Khajuraho.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 2435,
+      "height": 1700,
+      "sha256": "f36b2888063c3aa0f5a8582ea89c771db7ea83dc78f19afd81bcf53cca07f202",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

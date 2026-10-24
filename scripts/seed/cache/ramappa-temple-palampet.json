@@ -1,0 +1,60 @@
+{
+  "id": "ramappa-temple-palampet",
+  "name": "Ramappa Temple (Kakatiya Rudreshwara)",
+  "wikidata_id": "Q7289242",
+  "wiki_title": "Ramappa_Temple",
+  "type": "attraction",
+  "category": "Heritage Temple",
+  "state": "Telangana",
+  "city": "Palampet (Mulugu)",
+  "lat": 18.265,
+  "lng": 79.9431,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free entry",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:00 AM - 6:00 PM daily",
+  "best_time": "October to March",
+  "rules": [
+    "Famous floating bricks used in temple shikhara (so light they float on water)",
+    "Sandbox foundation technology absorbs earthquake shocks"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "Kakatiya Dynasty",
+    "Floating Bricks",
+    "Intricate Sandstone Carvings"
+  ],
+  "visual_features": "star-shaped medieval temple sitting on a 6-foot platform built with carved red sandstone and lightweight floating brick spire",
+  "description": "The Rudreshwara Temple, more commonly known as the Ramappa Temple, is a Hindu temple located in the village of Palampet in eastern Telangana, India. An inscription on a basalt pillar found within a nearby courtyard records that the temple was commissioned in 1213 by Recherla Rudra, a military general of the Kakatiya dynasty, and constructed over a period of 40 years during the reign of Ganapati, the third sovereign of the dynasty. Dedicated to the Hindu deity Shiva, it is a prominent example of Kakatiya architecture, and combines elements of Dravidian and Chalukyan architectural styles.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Ramappa_Temple_%28Human_Scale%29.jpg/3840px-Ramappa_Temple_%28Human_Scale%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Ramappa_Temple_%28Human_Scale%29.jpg/330px-Ramappa_Temple_%28Human_Scale%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4062,
+    "height": 2884,
+    "sha256": "30d90df95ceca725a5d76904a0bb194e2c2e419f1a5c9498d4c28c27d4168767",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Ramappa_Temple_%28Human_Scale%29.jpg/3840px-Ramappa_Temple_%28Human_Scale%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Ramappa_Temple_%28Human_Scale%29.jpg/3840px-Ramappa_Temple_%28Human_Scale%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Ramappa_Temple_%28Human_Scale%29.jpg/330px-Ramappa_Temple_%28Human_Scale%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4062,
+      "height": 2884,
+      "sha256": "30d90df95ceca725a5d76904a0bb194e2c2e419f1a5c9498d4c28c27d4168767",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

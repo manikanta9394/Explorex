@@ -1,0 +1,60 @@
+{
+  "id": "rani-ki-vav-patan",
+  "name": "Rani ki Vav (Queen Stepwell)",
+  "wikidata_id": "Q19896798",
+  "wiki_title": "Rani_ki_Vav",
+  "type": "attraction",
+  "category": "Heritage Monument",
+  "state": "Gujarat",
+  "city": "Patan",
+  "lat": 23.8589,
+  "lng": 72.1014,
+  "price_amount": 40,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "8:00 AM - 6:00 PM daily",
+  "best_time": "October to March",
+  "rules": [
+    "Featured on the reverse of the Indian ₹100 banknote",
+    "Step down carefully on seven stepped pillared terraces"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "Masterpiece of Subterranean Architecture",
+    "Dashavatara Carvings",
+    "Stepwell Wonder"
+  ],
+  "visual_features": "seven-level subterranean stepped well descending 28 meters into the earth, with over 500 sculpted panels of Vishnu avatars lining pillared walls",
+  "description": "Rani ki Vav is a stepwell situated in the town of Patan in Gujarat, India. It is located on the banks of the Saraswati River. Its construction is attributed to Udayamati, the Wife of the 11th-century Chaulukya king Bhima I. Silted over, it was rediscovered in the 1940s and restored in the 1980s by the Archaeological Survey of India. It has been listed as a UNESCO World Heritage Sites in India since 2014. The stepwell is designed as an underground shrine or inverted temple symbolizing the sanctity of water, with sculptures depicting numerous Hindu deities. It is divided into seven stair levels, each with sculptural panels. These panels contain more than 500 principal sculptures and over a thousand minor ones, combining religious, secular, and symbolic imagery.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Rani_ki_vav_02.jpg/3840px-Rani_ki_vav_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Rani_ki_vav_02.jpg/330px-Rani_ki_vav_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4953,
+    "height": 3302,
+    "sha256": "d766108bd1cbc4af6a0357e193958ae32d7658bd999fcc3f85b3d8911ea991fd",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Rani_ki_vav_02.jpg/3840px-Rani_ki_vav_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Rani_ki_vav_02.jpg/3840px-Rani_ki_vav_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Rani_ki_vav_02.jpg/330px-Rani_ki_vav_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4953,
+      "height": 3302,
+      "sha256": "d766108bd1cbc4af6a0357e193958ae32d7658bd999fcc3f85b3d8911ea991fd",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

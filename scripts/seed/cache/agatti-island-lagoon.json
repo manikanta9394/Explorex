@@ -1,0 +1,60 @@
+{
+  "id": "agatti-island-lagoon",
+  "name": "Agatti Island Lagoon & Coral Reef",
+  "wikidata_id": "Q391696",
+  "wiki_title": "Agatti_Island",
+  "type": "attraction",
+  "category": "Tropical Beach",
+  "state": "Lakshadweep",
+  "city": "Agatti",
+  "lat": 10.8533,
+  "lng": 72.1867,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "permit included in package",
+  "price_source": "https://lakshadweep.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Daylight beach and marine water sports",
+  "best_time": "October to May",
+  "rules": [
+    "Fly into Agatti airstrip (one of the most scenic ocean runways in the world)",
+    "Liquor strictly prohibited in Lakshadweep (except Bangaram)"
+  ],
+  "tags": [
+    "Ocean Runway",
+    "Sea Turtles",
+    "Kayaking",
+    "Snorkeling Paradise"
+  ],
+  "visual_features": "slender palm-covered coral atoll featuring a dramatic airport runway surrounded on both sides by iridescent blue ocean waters",
+  "description": "Agatti Island is a 7.6 km long island, situated on a coral atoll called Agatti atoll in the Union Territory of Lakshadweep, India. It is 459 km (285 mi) west of the city of Kochi.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Agatti_Airstrip.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Agatti_Airstrip.jpg/330px-Agatti_Airstrip.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 2481,
+    "height": 1827,
+    "sha256": "8ec6243f87b1bd4fffcb325acdc3c95c6fbf50d8210ab14c9ad9db8ebec720de",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Agatti_Airstrip.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Agatti_Airstrip.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Agatti_Airstrip.jpg/330px-Agatti_Airstrip.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 2481,
+      "height": 1827,
+      "sha256": "8ec6243f87b1bd4fffcb325acdc3c95c6fbf50d8210ab14c9ad9db8ebec720de",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "har-ki-pauri-haridwar",
+  "name": "Har Ki Pauri Haridwar",
+  "wikidata_id": "Q3126830",
+  "wiki_title": "Har_Ki_Pauri",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Uttarakhand",
+  "city": "Haridwar",
+  "lat": 29.9567,
+  "lng": 78.1708,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free access",
+  "price_source": "https://uttarakhandtourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Open 24 hours · Evening Ganga Aarti at sunset (approx. 6:30 PM)",
+  "best_time": "October to March (Kumbh Mela site)",
+  "rules": [
+    "Watch out for swift river currents at bathing steps; use support chains provided",
+    "Deposit footwear at designated ghat stalls"
+  ],
+  "tags": [
+    "Sacred Brahmakund",
+    "Ganga Aarti",
+    "Ancient Pilgrimage",
+    "Haridwar"
+  ],
+  "visual_features": "bustling riverside ghat packed with devotees watching thousands of floating leaf lamps lit during the evening Ganga Aarti",
+  "description": " \nHar Ki Pauri is a sacred ghat on the banks of the Ganges River in the Hindu holy city of Haridwar, in the Indian state of Uttarakhand.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Evening_view_of_Har-ki-Pauri%2C_Haridwar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Evening_view_of_Har-ki-Pauri%2C_Haridwar.jpg/330px-Evening_view_of_Har-ki-Pauri%2C_Haridwar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 800,
+    "height": 542,
+    "sha256": "409866828d54db5526228327eed787927181dd403fd935d19f40ad60166a94f5",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Evening_view_of_Har-ki-Pauri%2C_Haridwar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Evening_view_of_Har-ki-Pauri%2C_Haridwar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Evening_view_of_Har-ki-Pauri%2C_Haridwar.jpg/330px-Evening_view_of_Har-ki-Pauri%2C_Haridwar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 800,
+      "height": 542,
+      "sha256": "409866828d54db5526228327eed787927181dd403fd935d19f40ad60166a94f5",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "mahakaleshwar-jyotirlinga-ujjain",
+  "name": "Shri Mahakaleshwar Temple & Mahakal Lok Corridor",
+  "wikidata_id": "Q844111",
+  "wiki_title": "Mahakaleshwar_Jyotirlinga",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Madhya Pradesh",
+  "city": "Ujjain",
+  "lat": 23.1828,
+  "lng": 75.7683,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free general darshan (Bhasma Aarti pre-booking required)",
+  "price_source": "https://shrimahakaleshwar.com",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "4:00 AM - 11:00 PM daily (Famous Bhasma Aarti at 4:00 AM requires advance online registration)",
+  "best_time": "October to March (Simhastha Kumbh city)",
+  "rules": [
+    "Traditional dress mandatory for participating in Bhasma Aarti inner sanctum jalabhishek (men in unstitched dhoti, women in saree)",
+    "Explore the 900-meter carved Mahakal Lok corridor"
+  ],
+  "tags": [
+    "South-facing Dakshinmukhi Jyotirlinga",
+    "Bhasma Aarti",
+    "Mahakal Lok",
+    "Holy Shipra River"
+  ],
+  "visual_features": "ancient five-level stone temple complex with brass-plated spire standing beside the sacred Koti Tirtha water tank and illuminated Mahakal Lok corridor",
+  "description": "Mahakaleshwar Jyotirlinga is a Hindu temple dedicated to Shiva and is one of the twelve Jyotirlingas, shrines which are said to be the most sacred abodes of Shiva. It is located in the ancient city of Ujjain in the state of Madhya Pradesh, India. The temple is situated on the side of the holy river Shipra. The presiding deity, Shiva in the lingam form is believed to be Swayambhu, deriving currents of power (Shakti) from within itself as against the other images and lingams that are ritually established and invested with mantra-shakti.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Mahakaleshwar_Temple%2C_Ujjain.jpg/3840px-Mahakaleshwar_Temple%2C_Ujjain.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Mahakaleshwar_Temple%2C_Ujjain.jpg/330px-Mahakaleshwar_Temple%2C_Ujjain.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4608,
+    "height": 2592,
+    "sha256": "ed9ed4813b2699481d762d01a6861f64475392b0ed6615187404d6fbe915e539",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Mahakaleshwar_Temple%2C_Ujjain.jpg/3840px-Mahakaleshwar_Temple%2C_Ujjain.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Mahakaleshwar_Temple%2C_Ujjain.jpg/3840px-Mahakaleshwar_Temple%2C_Ujjain.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Mahakaleshwar_Temple%2C_Ujjain.jpg/330px-Mahakaleshwar_Temple%2C_Ujjain.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4608,
+      "height": 2592,
+      "sha256": "ed9ed4813b2699481d762d01a6861f64475392b0ed6615187404d6fbe915e539",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

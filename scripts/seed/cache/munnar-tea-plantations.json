@@ -1,0 +1,60 @@
+{
+  "id": "munnar-tea-plantations",
+  "name": "Munnar Tea Estates & Eravikulam National Park",
+  "wikidata_id": "Q506229",
+  "wiki_title": "Munnar",
+  "type": "attraction",
+  "category": "Hill Station & Nature",
+  "state": "Kerala",
+  "city": "Munnar (Idukki)",
+  "lat": 10.0889,
+  "lng": 77.0597,
+  "price_amount": 200,
+  "price_currency": "INR",
+  "price_unit": "Eravikulam National Park entry fee",
+  "price_source": "https://eravikulamnationalpark.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "7:30 AM - 4:00 PM daily (Eravikulam closes mid-January to March for Nilgiri Tahr calving season)",
+  "best_time": "September to May",
+  "rules": [
+    "National park permits must be pre-booked online; safari minibuses transport visitors",
+    "Do not pluck tea leaves on private commercial estates"
+  ],
+  "tags": [
+    "Tea Gardens",
+    "Anamudi Peak",
+    "Nilgiri Tahr",
+    "Western Ghats Mist"
+  ],
+  "visual_features": "rolling green hills contoured with manicured tea bushes enveloped in morning mountain mist under Anamudi peak",
+  "description": "Munnar is a town located in the Idukki district of the southwestern Indian state of Kerala. Munnar is situated at around 1,600 metres (5,200 ft) above mean sea level, in the Western Ghats mountain range. This ancient plantation settlement, dominated by its tea industry, is also a growing modern hill station.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Munnar_Overview.jpg/3840px-Munnar_Overview.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Munnar_Overview.jpg/330px-Munnar_Overview.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4873,
+    "height": 3249,
+    "sha256": "1679b4ccff01e9c9e4a55dc2fee5769f5d685b3bb96d1339a7f194ece2123a28",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Munnar_Overview.jpg/3840px-Munnar_Overview.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Munnar_Overview.jpg/3840px-Munnar_Overview.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Munnar_Overview.jpg/330px-Munnar_Overview.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4873,
+      "height": 3249,
+      "sha256": "1679b4ccff01e9c9e4a55dc2fee5769f5d685b3bb96d1339a7f194ece2123a28",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

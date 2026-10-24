@@ -1,0 +1,61 @@
+{
+  "id": "qutub-minar-delhi",
+  "name": "Qutub Minar",
+  "wikidata_id": "Q185298",
+  "wiki_title": "Qutb_Minar",
+  "type": "attraction",
+  "category": "Heritage Monument",
+  "state": "Delhi",
+  "city": "New Delhi",
+  "lat": 28.5245,
+  "lng": 77.1855,
+  "price_amount": 40,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Sunrise to Sunset daily (approx. 7:00 AM - 6:00 PM)",
+  "best_time": "October to March (cool sunny days)",
+  "rules": [
+    "Bags and tripods subject to security scanning",
+    "Climbing tower interior strictly prohibited",
+    "Entry ticket mandatory at gate"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "Indo-Islamic Architecture",
+    "Minaret",
+    "History"
+  ],
+  "visual_features": "fluted red sandstone and white marble minaret tower, iron pillar in foreground, blue sky",
+  "description": "The Qutb Minar, also spelled Qutub Minar and Qutab Minar, is a minaret and victory tower, built during the Delhi sultanate, and comprising the Qutb complex, a UNESCO World Heritage Site in Mehrauli, South Delhi, India. It was mostly built between 1199 and 1220, contains 399 steps, and is one of the most frequented heritage spots in the city. After defeating Prithviraj Chauhan, the last Hindu ruler of Delhi before the Ghurid conquest of the region, Qutab-ud-din Aibak initiated the construction of the victory tower, but only managed to finish the first level. It was to mark the beginning of Islamic rule in the region. Successive dynasties of the Delhi Sultanate continued the construction, and, in 1368, Firuz Shah Tughlaq rebuilt the top parts and added a cupola.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Qutb_Minar_2022.jpg/3840px-Qutb_Minar_2022.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Qutb_Minar_2022.jpg/330px-Qutb_Minar_2022.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 3947,
+    "height": 5966,
+    "sha256": "5691881c50468e4ad6f4ae0d06d8924e8f94578cfba9352774fccf329fcefa9a",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Qutb_Minar_2022.jpg/3840px-Qutb_Minar_2022.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Qutb_Minar_2022.jpg/3840px-Qutb_Minar_2022.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Qutb_Minar_2022.jpg/330px-Qutb_Minar_2022.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 3947,
+      "height": 5966,
+      "sha256": "5691881c50468e4ad6f4ae0d06d8924e8f94578cfba9352774fccf329fcefa9a",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

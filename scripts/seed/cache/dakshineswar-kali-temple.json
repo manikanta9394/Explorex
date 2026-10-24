@@ -1,0 +1,60 @@
+{
+  "id": "dakshineswar-kali-temple",
+  "name": "Dakshineswar Kali Temple & Belur Math",
+  "wikidata_id": "Q844111",
+  "wiki_title": "Dakshineswar_Kali_Temple",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "West Bengal",
+  "city": "Kolkata (Dakshineswar)",
+  "lat": 22.655,
+  "lng": 88.3575,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free temple darshan",
+  "price_source": "https://dakshineswarkalitemple.org",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:00 AM - 12:30 PM, 3:30 PM - 8:30 PM daily",
+  "best_time": "October to March (Kali Puja celebration in autumn)",
+  "rules": [
+    "Take the scenic ferry boat across the Hooghly river from Dakshineswar directly to Belur Math (Ramakrishna Mission HQ)",
+    "Remove footwear at ghat entrance"
+  ],
+  "tags": [
+    "Bhavatarini Kali Shrine",
+    "Ramakrishna Paramahamsa",
+    "Nava-ratna Nine-spire Architecture",
+    "Hooghly Riverfront"
+  ],
+  "visual_features": "nine-spired Nava-ratna style terracotta-accented temple facing a broad river ghat flanked by twelve identical Shiva shrines",
+  "description": "Dakshineswar Kali Temple is a Hindu navaratna style temple in Dakshineswar, Kolkata, West Bengal, India, on the eastern bank of the Hooghly River. The presiding deity of the temple is Bhavatarini (Kali), a form of Mahadevi or Parashakti Adya Kali, otherwise known as Adishakti Kalika. The temple was built in 1855 by Rani Rashmoni, a zamindar, and a devotee of Kali. The temple is associated with Ramakrishna and Sarada Devi, his wife and devotee mystic, both of 19th century Bengal.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Dakhineshwar_Temple_beside_the_Hoogly%2C_West_Bengal.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Dakhineshwar_Temple_beside_the_Hoogly%2C_West_Bengal.JPG/330px-Dakhineshwar_Temple_beside_the_Hoogly%2C_West_Bengal.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 3072,
+    "height": 2304,
+    "sha256": "2f2584db293fe08b153b544d010e08bf376ca7c7220fa3a5bee3f5a77eb65bfd",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Dakhineshwar_Temple_beside_the_Hoogly%2C_West_Bengal.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Dakhineshwar_Temple_beside_the_Hoogly%2C_West_Bengal.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Dakhineshwar_Temple_beside_the_Hoogly%2C_West_Bengal.JPG/330px-Dakhineshwar_Temple_beside_the_Hoogly%2C_West_Bengal.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 3072,
+      "height": 2304,
+      "sha256": "2f2584db293fe08b153b544d010e08bf376ca7c7220fa3a5bee3f5a77eb65bfd",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

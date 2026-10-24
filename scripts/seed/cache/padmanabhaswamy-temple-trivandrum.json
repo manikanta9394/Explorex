@@ -1,0 +1,60 @@
+{
+  "id": "padmanabhaswamy-temple-trivandrum",
+  "name": "Sree Padmanabhaswamy Temple",
+  "wikidata_id": "Q843802",
+  "wiki_title": "Padmanabhaswamy_Temple",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Kerala",
+  "city": "Thiruvananthapuram",
+  "lat": 8.483,
+  "lng": 76.9436,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free temple darshan",
+  "price_source": "https://spst.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "3:30 AM - 12:00 PM, 5:00 PM - 8:30 PM daily (split into traditional darshan timings)",
+  "best_time": "October to March",
+  "rules": [
+    "Strict Kerala temple dress code: men must wear white dhotis bare-chested; women must wear sarees or traditional set-mundu (dhotis available for rental outside)",
+    "No electronic items permitted"
+  ],
+  "tags": [
+    "Richest Temple in the World",
+    "Travancore Royal Sanctuary",
+    "Anantha Shayanam",
+    "Kerala-Dravidian Style"
+  ],
+  "visual_features": "sixteen-century seven-tier Dravidian gopuram reflected in the sacred Padma Theertham temple tank",
+  "description": "The Padmanabhaswamy Temple is a Hindu temple dedicated to Vishnu in Thiruvananthapuram, Keralam, India. It is one of the 108 Divya Desams which are considered the sacred sites of the Sri Vaishnava tradition.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Sree_Padmanabhaswamy_temple_01.jpg/1920px-Sree_Padmanabhaswamy_temple_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Sree_Padmanabhaswamy_temple_01.jpg/330px-Sree_Padmanabhaswamy_temple_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 3072,
+    "height": 4096,
+    "sha256": "48609f9de1f3d7b127ad552fc2f474fb9d5a392de998b09f0c8fab5f4522a991",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Sree_Padmanabhaswamy_temple_01.jpg/1920px-Sree_Padmanabhaswamy_temple_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Sree_Padmanabhaswamy_temple_01.jpg/1920px-Sree_Padmanabhaswamy_temple_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Sree_Padmanabhaswamy_temple_01.jpg/330px-Sree_Padmanabhaswamy_temple_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 3072,
+      "height": 4096,
+      "sha256": "48609f9de1f3d7b127ad552fc2f474fb9d5a392de998b09f0c8fab5f4522a991",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

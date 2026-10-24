@@ -1,0 +1,59 @@
+{
+  "id": "wagah-border-ceremony",
+  "name": "Attari-Wagah Border Beating Retreat",
+  "wikidata_id": "Q2567403",
+  "wiki_title": "Wagah-Attari_border_ceremony",
+  "type": "attraction",
+  "category": "National Landmark",
+  "state": "Punjab",
+  "city": "Amritsar (Attari)",
+  "lat": 31.6047,
+  "lng": 74.5714,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free entry (first-come seating)",
+  "price_source": "https://bsf.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Ceremony begins 4:30 PM in winter, 5:30 PM in summer (arrive 2 hours early)",
+  "best_time": "October to March",
+  "rules": [
+    "Only wallet and mobile phone permitted in amphitheatre (no large bags or backpacks)",
+    "Valid ID proof recommended for entry checkpoints"
+  ],
+  "tags": [
+    "BSF Drill",
+    "Border Ceremony",
+    "Patriotic Experience"
+  ],
+  "visual_features": "high-kicking synchronized BSF and Pakistan Rangers retreat drill at the twin international border gates",
+  "description": "The ceremony at the Attari–Wagah border is a daily ceremony that the security forces of India and Pakistan have jointly followed since 1959. The drill is characterized by elaborate and rapid dance-like manoeuvres and raising legs as high as possible. It is symbolic of the brotherhood as well as the rivalry that these two nations share. The border troops exchange sweets with the opposing side during the Muslim holidays of Eid and Hindu holiday of Diwali.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/The_SAARC_Car_Rally_2007_being_welcomed_by_traditional_Drummers_at_the_Wagah_Border_on_March_28%2C_2007.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/The_SAARC_Car_Rally_2007_being_welcomed_by_traditional_Drummers_at_the_Wagah_Border_on_March_28%2C_2007.jpg/330px-The_SAARC_Car_Rally_2007_being_welcomed_by_traditional_Drummers_at_the_Wagah_Border_on_March_28%2C_2007.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 2300,
+    "height": 1541,
+    "sha256": "92f1dda864518547c16cfce615038e0c7f59cfa32e33c590af3c87ac2ea1b208",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/The_SAARC_Car_Rally_2007_being_welcomed_by_traditional_Drummers_at_the_Wagah_Border_on_March_28%2C_2007.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/The_SAARC_Car_Rally_2007_being_welcomed_by_traditional_Drummers_at_the_Wagah_Border_on_March_28%2C_2007.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/The_SAARC_Car_Rally_2007_being_welcomed_by_traditional_Drummers_at_the_Wagah_Border_on_March_28%2C_2007.jpg/330px-The_SAARC_Car_Rally_2007_being_welcomed_by_traditional_Drummers_at_the_Wagah_Border_on_March_28%2C_2007.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 2300,
+      "height": 1541,
+      "sha256": "92f1dda864518547c16cfce615038e0c7f59cfa32e33c590af3c87ac2ea1b208",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

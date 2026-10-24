@@ -1,0 +1,60 @@
+{
+  "id": "golconda-fort-hyderabad",
+  "name": "Golconda Fort",
+  "wikidata_id": "Q844111",
+  "wiki_title": "Golconda_Fort",
+  "type": "attraction",
+  "category": "Heritage Fort",
+  "state": "Telangana",
+  "city": "Hyderabad",
+  "lat": 17.3833,
+  "lng": 78.4011,
+  "price_amount": 25,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "8:30 AM - 5:30 PM daily · Sound & Light show at 6:30 PM & 8:00 PM",
+  "best_time": "October to March",
+  "rules": [
+    "Acoustic clapping test at Fateh Darwaza dome can be heard clearly at the Bala Hissar pavilion 1 km away",
+    "Steep climb of 380 stone steps to summit citadel"
+  ],
+  "tags": [
+    "Diamond Capital of the World",
+    "Acoustic Architecture",
+    "Koh-i-Noor Origin",
+    "Qutb Shahi Citadel"
+  ],
+  "visual_features": "massive hill fort encircled by three concentric battlement stone walls with iron-spiked gates and royal ruins cascading down granite boulders",
+  "description": "Golconda is a fortified citadel and ruined city located on the western outskirts of Hyderabad, Telangana, India. The fort was built by Kakatiya ruler Pratāparudra in the 11th century out of mud walls. It was ceded to the Bahmani Kings from Musunuri Nayakas during the reign of Bahmani Sultan Mohammed Shah I, during the first Bahmani–Vijayanagara War. Following the death of Sultan Mahmood Shah, the Sultanate disintegrated and Sultan Quli, who had been appointed as the Governor of Hyderabad by the Bahmani Kings, fortified the city and made it the capital of the Sultanate of Golconda. Because of the vicinity of diamond mines, especially Kollur Mine, Golconda flourished as a trade centre of large diamonds known as Golconda diamonds. The complex was put by UNESCO on its \"tentative list\" to become a World Heritage Site in 2014, with other forts in the region, under the name Monuments and Forts of the Deccan Sultanate.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Golconda_Fort_005.jpg/3840px-Golconda_Fort_005.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Golconda_Fort_005.jpg/330px-Golconda_Fort_005.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4479,
+    "height": 2798,
+    "sha256": "02093d6177d0d1e233d40c373d9020447c96292248762f63c990ed7c26ed982f",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Golconda_Fort_005.jpg/3840px-Golconda_Fort_005.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Golconda_Fort_005.jpg/3840px-Golconda_Fort_005.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Golconda_Fort_005.jpg/330px-Golconda_Fort_005.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4479,
+      "height": 2798,
+      "sha256": "02093d6177d0d1e233d40c373d9020447c96292248762f63c990ed7c26ed982f",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

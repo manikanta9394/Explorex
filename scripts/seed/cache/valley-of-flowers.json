@@ -1,0 +1,60 @@
+{
+  "id": "valley-of-flowers",
+  "name": "Valley of Flowers National Park",
+  "wikidata_id": "Q843132",
+  "wiki_title": "Valley_of_Flowers_National_Park",
+  "type": "attraction",
+  "category": "Nature & Trekking",
+  "state": "Uttarakhand",
+  "city": "Govindghat (Chamoli)",
+  "lat": 30.728,
+  "lng": 79.605,
+  "price_amount": 200,
+  "price_currency": "INR",
+  "price_unit": "permit for 3 days",
+  "price_source": "https://forest.uk.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "7:00 AM - 2:00 PM entry (must exit valley before 5:00 PM daily; overnight camping strictly banned)",
+  "best_time": "July to early September (peak wildflower bloom)",
+  "rules": [
+    "Open only from June 1 to October 31",
+    "No overnight stay inside park boundary; base camp is Ghangaria"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "Wildflowers",
+    "Brahma Kamal",
+    "Alpine Trek"
+  ],
+  "visual_features": "sweeping high Himalayan alpine valley blanketed in millions of wild alpine blossoms under mist and glacier peaks",
+  "description": "Valley of Flowers National Park is an Indian national park which was established in 1982. It is located in Chamoli in the state of Uttarakhand and is known for its meadows of endemic alpine flowers and the variety of flora. This richly diverse area is also home to rare and endangered animals, including the Asiatic black bear, snow leopard, musk deer, brown bear, red fox and blue sheep. Birds found in the park include Himalayan monal pheasant and other high-altitude birds.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Valley_of_flowers_national_park%2C_Uttarakhand%2C_India_03_%28edit%29.jpg/3840px-Valley_of_flowers_national_park%2C_Uttarakhand%2C_India_03_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Valley_of_flowers_national_park%2C_Uttarakhand%2C_India_03_%28edit%29.jpg/330px-Valley_of_flowers_national_park%2C_Uttarakhand%2C_India_03_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 6000,
+    "height": 4000,
+    "sha256": "0a3a76b5c76919a15668db05bb59591b07bdb8e6a24ae3a5d19195f222e89474",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Valley_of_flowers_national_park%2C_Uttarakhand%2C_India_03_%28edit%29.jpg/3840px-Valley_of_flowers_national_park%2C_Uttarakhand%2C_India_03_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Valley_of_flowers_national_park%2C_Uttarakhand%2C_India_03_%28edit%29.jpg/3840px-Valley_of_flowers_national_park%2C_Uttarakhand%2C_India_03_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Valley_of_flowers_national_park%2C_Uttarakhand%2C_India_03_%28edit%29.jpg/330px-Valley_of_flowers_national_park%2C_Uttarakhand%2C_India_03_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 6000,
+      "height": 4000,
+      "sha256": "0a3a76b5c76919a15668db05bb59591b07bdb8e6a24ae3a5d19195f222e89474",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

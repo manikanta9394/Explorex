@@ -1,0 +1,60 @@
+{
+  "id": "marina-beach-chennai",
+  "name": "Marina Beach Promenade",
+  "wikidata_id": "Q3181412",
+  "wiki_title": "Marina_Beach",
+  "type": "attraction",
+  "category": "Coastal & Beach",
+  "state": "Tamil Nadu",
+  "city": "Chennai",
+  "lat": 13.05,
+  "lng": 80.2824,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free public beach",
+  "price_source": "https://chennaitourism.com",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Open 24 hours · Lighthouse open 10:00 AM - 1:00 PM, 3:00 PM - 5:00 PM",
+  "best_time": "November to February (breezy evenings)",
+  "rules": [
+    "Swimming in sea strictly prohibited due to dangerous undertow currents",
+    "Littering on sands subject to corporation fine"
+  ],
+  "tags": [
+    "World Second Longest Beach",
+    "Chennai Promenade",
+    "Lighthouse",
+    "Evening Breeze"
+  ],
+  "visual_features": "broad expanse of golden urban sand beach stretching for miles along the Bay of Bengal with colonial statues",
+  "description": "Marina Beach, or simply the Marina, is a natural urban beach in Chennai, Tamil Nadu, India, along the Bay of Bengal. The beach runs from near Fort St. George in the north to Foreshore Estate in the south, a distance of 6.0 km (3.7 mi), It is a prominent landmark in Chennai.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Chennai_-_bird%27s-eye_view.jpg/3840px-Chennai_-_bird%27s-eye_view.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Chennai_-_bird%27s-eye_view.jpg/330px-Chennai_-_bird%27s-eye_view.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4000,
+    "height": 3000,
+    "sha256": "209f76b9cc13157e1a6dae55191342f5e6865be3c72ee0fe4cb71c3d55bea534",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Chennai_-_bird%27s-eye_view.jpg/3840px-Chennai_-_bird%27s-eye_view.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Chennai_-_bird%27s-eye_view.jpg/3840px-Chennai_-_bird%27s-eye_view.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Chennai_-_bird%27s-eye_view.jpg/330px-Chennai_-_bird%27s-eye_view.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4000,
+      "height": 3000,
+      "sha256": "209f76b9cc13157e1a6dae55191342f5e6865be3c72ee0fe4cb71c3d55bea534",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

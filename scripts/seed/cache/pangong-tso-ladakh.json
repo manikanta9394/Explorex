@@ -1,0 +1,61 @@
+{
+  "id": "pangong-tso-ladakh",
+  "name": "Pangong Tso High Altitude Lake",
+  "wikidata_id": "Q1076878",
+  "wiki_title": "Pangong_Tso",
+  "type": "attraction",
+  "category": "High Altitude Lake",
+  "state": "Ladakh",
+  "city": "Leh (Changthang)",
+  "lat": 33.7594,
+  "lng": 78.6586,
+  "price_amount": 500,
+  "price_currency": "INR",
+  "price_unit": "Inner Line Permit ecology fee",
+  "price_source": "https://lahdclehpermit.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Accessible during daylight hours",
+  "best_time": "June to September",
+  "rules": [
+    "Inner Line Permit (ILP) required from Leh district portal",
+    "Rest and acclimatize 48 hours in Leh before traveling to 14,270 ft lake",
+    "Zero tolerance for driving vehicles on shoreline"
+  ],
+  "tags": [
+    "Color Changing Lake",
+    "Indo-Tibetan Border",
+    "High Altitude Desert",
+    "Himalayas"
+  ],
+  "visual_features": "endorheic salt lake transitioning across vivid shades of deep blue and turquoise flanked by barren golden-brown mountain ranges",
+  "description": "Pangong Tso or Pangong Lake is an endorheic lake spanning eastern Ladakh in India and Ngari Prefecture in Tibet. Situated at an elevation of 14,200 ft (4,300 m), it occupies an area of approximately 604 km2 (233 sq mi). It stretches for 134 km (83 mi) and is 5 km (3.1 mi) wide at its broadest point. It is located in a landlocked basin and is separated from the Indus River basin by an elevated ridge. The water is saline, and the lake freezes during winter.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/ISS054-E-7809_-_View_of_Earth_%28cropped%29.jpg/3840px-ISS054-E-7809_-_View_of_Earth_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/ISS054-E-7809_-_View_of_Earth_%28cropped%29.jpg/330px-ISS054-E-7809_-_View_of_Earth_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4454,
+    "height": 2970,
+    "sha256": "f754273df723922058801b3ad0a285e5c6cb58c6711375c878587d7a2e6a82ba",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/ISS054-E-7809_-_View_of_Earth_%28cropped%29.jpg/3840px-ISS054-E-7809_-_View_of_Earth_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/ISS054-E-7809_-_View_of_Earth_%28cropped%29.jpg/3840px-ISS054-E-7809_-_View_of_Earth_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/ISS054-E-7809_-_View_of_Earth_%28cropped%29.jpg/330px-ISS054-E-7809_-_View_of_Earth_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4454,
+      "height": 2970,
+      "sha256": "f754273df723922058801b3ad0a285e5c6cb58c6711375c878587d7a2e6a82ba",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "gobindgarh-fort",
+  "name": "Gobindgarh Fort",
+  "wikidata_id": "Q5575466",
+  "wiki_title": "Gobindgarh_Fort",
+  "type": "attraction",
+  "category": "Heritage Fort",
+  "state": "Punjab",
+  "city": "Amritsar",
+  "lat": 31.6274,
+  "lng": 74.8569,
+  "price_amount": 150,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://fortgobindgarh.com",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "10:00 AM - 10:00 PM daily",
+  "best_time": "Afternoon leading to evening Whispering Walls 7D show",
+  "rules": [
+    "Follow guided routes through Toshakhana treasury",
+    "Photography permitted in outer courtyards"
+  ],
+  "tags": [
+    "Maharaja Ranjit Singh",
+    "Military Fort",
+    "Cultural Shows",
+    "Museum"
+  ],
+  "visual_features": "brick and mud-mortar bastion fort with moat and ancient cannon battery",
+  "description": "Gobindgarh Fort is a historic military fort located in the center of the city of Amritsar in the Indian state of Punjab. The Fort was until recently under the Indian Army, but was opened to the public on 10 February 2017. Today the fort is being developed as a museum and theme park, as a repository of Punjab’s history.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Gobindgarh_fort%2C_Amritsar%2C_Punjab%2C_India.jpg/3840px-Gobindgarh_fort%2C_Amritsar%2C_Punjab%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Gobindgarh_fort%2C_Amritsar%2C_Punjab%2C_India.jpg/330px-Gobindgarh_fort%2C_Amritsar%2C_Punjab%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4608,
+    "height": 3456,
+    "sha256": "742f51fa63fb5dd1873a8bacd4e2982d6457c3e6297007f8d31fcd60e334564f",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Gobindgarh_fort%2C_Amritsar%2C_Punjab%2C_India.jpg/3840px-Gobindgarh_fort%2C_Amritsar%2C_Punjab%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Gobindgarh_fort%2C_Amritsar%2C_Punjab%2C_India.jpg/3840px-Gobindgarh_fort%2C_Amritsar%2C_Punjab%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Gobindgarh_fort%2C_Amritsar%2C_Punjab%2C_India.jpg/330px-Gobindgarh_fort%2C_Amritsar%2C_Punjab%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4608,
+      "height": 3456,
+      "sha256": "742f51fa63fb5dd1873a8bacd4e2982d6457c3e6297007f8d31fcd60e334564f",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "radhanagar-beach-havelock",
+  "name": "Radhanagar Beach (Beach No. 7)",
+  "wikidata_id": "Q3181412",
+  "wiki_title": "Havelock_Island",
+  "type": "attraction",
+  "category": "Coastal & Beach",
+  "state": "Andaman and Nicobar Islands",
+  "city": "Swaraj Dweep (Havelock Island)",
+  "lat": 11.9844,
+  "lng": 92.9547,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free public beach",
+  "price_source": "https://andamantourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Sunrise to Sunset daily (lifeguards on duty until 5:30 PM)",
+  "best_time": "October to May (crystal clear water and breathtaking sunset)",
+  "rules": [
+    "Voted Asia Best Beach (Time Magazine): keep sands pristine and plastic-free",
+    "Swimming after dark is prohibited for safety"
+  ],
+  "tags": [
+    "Asia Best Beach",
+    "Blue Flag Beach",
+    "Powder White Sand",
+    "Turquoise Waters"
+  ],
+  "visual_features": "crescent-shaped paradise beach of pristine powder-soft white sand flanked by ancient rainforest Mahua trees and turquoise ocean surf",
+  "description": "Havelock Island, officially known as Swaraj Dweep, is one of the largest islands in Ritchie's Archipelago, to the east of Great Andaman within the Andaman Islands of India. It belongs to the South Andaman administrative district, part of the Indian union territory of Andaman and Nicobar Islands. The island is 41 km (25 mi) northeast of the capital city, Port Blair.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Havelock%2C_Andaman_%26_Nicobar_Islands.JPG/3840px-Havelock%2C_Andaman_%26_Nicobar_Islands.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Havelock%2C_Andaman_%26_Nicobar_Islands.JPG/330px-Havelock%2C_Andaman_%26_Nicobar_Islands.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4000,
+    "height": 3000,
+    "sha256": "34777404d47f54c4a3bcdb792310333cc0604e8e838fbb8a1a2aafcd01a2837c",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Havelock%2C_Andaman_%26_Nicobar_Islands.JPG/3840px-Havelock%2C_Andaman_%26_Nicobar_Islands.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Havelock%2C_Andaman_%26_Nicobar_Islands.JPG/3840px-Havelock%2C_Andaman_%26_Nicobar_Islands.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Havelock%2C_Andaman_%26_Nicobar_Islands.JPG/330px-Havelock%2C_Andaman_%26_Nicobar_Islands.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4000,
+      "height": 3000,
+      "sha256": "34777404d47f54c4a3bcdb792310333cc0604e8e838fbb8a1a2aafcd01a2837c",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

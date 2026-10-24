@@ -1,0 +1,60 @@
+{
+  "id": "unakoti-rock-carvings",
+  "name": "Unakoti Sub-Tirtha (Colossal Rock Reliefs of Shiva)",
+  "wikidata_id": "Q2643505",
+  "wiki_title": "Unakoti",
+  "type": "attraction",
+  "category": "Heritage Monument",
+  "state": "Tripura",
+  "city": "Kailashahar (Unakoti)",
+  "lat": 24.32,
+  "lng": 92.0667,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free entry",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:00 AM - 6:00 PM daily",
+  "best_time": "October to March (Ashokastami Mela in April)",
+  "rules": [
+    "Unakoti means \"one less than a crore\" (legend of 99,99,999 deities carved in stone)",
+    "Wear good walking shoes for stepping down the ravine steps to the central 30-foot Unakotiswara Kal Bhairava rock face"
+  ],
+  "tags": [
+    "UNESCO Tentative List",
+    "Angkor Wat of the Northeast",
+    "Colossal Rock Reliefs",
+    "Shiva Kal Bhairava"
+  ],
+  "visual_features": "a lush forested mountain gorge where vertical rocky cliff faces and boulders are carved into colossal 30-foot stone bas-reliefs of Lord Shiva and Ganesha",
+  "description": "Unakoti or Subrai Khung is a sculptural emblem and ancient Shaivite place that hosts rock carvings, figures and images of gods and goddesses. The bas relief sculptures at Unakoti are on stylistic grounds ascribed to 7th–9th century CE, to the period of Pre-Manikya rule. The rock art was patronised by Deva Dynasty of Sribhumi in Samatata. The only inscription at Unakoti is on the other Chaturmukhalinga image, consisting of a couple of records in Bengali Characters of the 11th to 12th century CE, which mentions one Sri Jayadeva, probably a pilgrim.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Unakoti_3.jpg/3840px-Unakoti_3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Unakoti_3.jpg/330px-Unakoti_3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4032,
+    "height": 3024,
+    "sha256": "4e475adee7e8af76719df7865a0d0b6c9d215a5bce56432747c28dbc678343db",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Unakoti_3.jpg/3840px-Unakoti_3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Unakoti_3.jpg/3840px-Unakoti_3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Unakoti_3.jpg/330px-Unakoti_3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4032,
+      "height": 3024,
+      "sha256": "4e475adee7e8af76719df7865a0d0b6c9d215a5bce56432747c28dbc678343db",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

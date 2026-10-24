@@ -1,0 +1,60 @@
+{
+  "id": "mathura-krishna-janmabhoomi",
+  "name": "Krishna Janmasthan Temple Complex",
+  "wikidata_id": "Q15115206",
+  "wiki_title": "Krishna_Janmasthan_Temple_Complex",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Uttar Pradesh",
+  "city": "Mathura",
+  "lat": 27.505,
+  "lng": 77.67,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free entry",
+  "price_source": "https://uptourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "5:30 AM - 12:00 PM, 4:00 PM - 9:30 PM daily",
+  "best_time": "September to March (Janmashtami celebration season)",
+  "rules": [
+    "High-security zone: mobile phones and electronic cameras prohibited inside",
+    "Lockers available near entry gate"
+  ],
+  "tags": [
+    "Holy Braj",
+    "Lord Krishna",
+    "Pilgrimage",
+    "Mathura"
+  ],
+  "visual_features": "sacred temple spire and Garbha Griha shrine situated on an elevated ancient stone platform",
+  "description": "Krishna Janmasthan Temple is a Hindu temple situated in Mathura, Uttar Pradesh, India. There are three main temples inside the premises -- Keshavdev temple which is dedicated to Krishna, Garbh Griha where Krishna is believed to be born in Dvapar Yuga and Bhagvata Bhavan where presiding deities are Radha Krishna.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Mathura_Temple-Mathura-India0002.JPG/3840px-Mathura_Temple-Mathura-India0002.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Mathura_Temple-Mathura-India0002.JPG/330px-Mathura_Temple-Mathura-India0002.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 3888,
+    "height": 2592,
+    "sha256": "f368b8be3e0caead730cca06870b2ed9623bf849d0b612d08b9d5f68853f2ed7",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Mathura_Temple-Mathura-India0002.JPG/3840px-Mathura_Temple-Mathura-India0002.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Mathura_Temple-Mathura-India0002.JPG/3840px-Mathura_Temple-Mathura-India0002.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Mathura_Temple-Mathura-India0002.JPG/330px-Mathura_Temple-Mathura-India0002.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 3888,
+      "height": 2592,
+      "sha256": "f368b8be3e0caead730cca06870b2ed9623bf849d0b612d08b9d5f68853f2ed7",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

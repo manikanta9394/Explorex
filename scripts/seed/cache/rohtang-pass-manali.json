@@ -1,0 +1,60 @@
+{
+  "id": "rohtang-pass-manali",
+  "name": "Rohtang Pass & Atal Tunnel",
+  "wikidata_id": "Q2724285",
+  "wiki_title": "Rohtang_Pass",
+  "type": "attraction",
+  "category": "Mountain Pass",
+  "state": "Himachal Pradesh",
+  "city": "Manali",
+  "lat": 32.3716,
+  "lng": 77.2466,
+  "price_amount": 550,
+  "price_currency": "INR",
+  "price_unit": "environmental permit fee per vehicle",
+  "price_source": "https://himachal.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Permit timings 6:00 AM - 9:00 AM / 9:00 AM - 12:00 PM (Closed Tuesdays for road maintenance)",
+  "best_time": "May to October (snow walls in early summer)",
+  "rules": [
+    "Online National Green Tribunal (NGT) permit mandatory before driving up",
+    "Closed for maintenance every Tuesday"
+  ],
+  "tags": [
+    "Himalayas",
+    "Snow Peak",
+    "High Altitude Pass",
+    "Adventure"
+  ],
+  "visual_features": "glaciated high mountain pass at 13,058 feet surrounded by snow-draped Pir Panjal mountain ridges",
+  "description": "Rohtang Pass is a high mountain pass on the eastern end of the Pir Panjal Range of the Himalayas around 51 km (32 mi) from Manali in the Indian state of Himachal Pradesh, It connects the Kullu Valley with the Lahaul and Spiti Valleys of Himachal Pradesh, India.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Kullu_Valley_from_Rohtang_Pass%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Kullu_Valley_from_Rohtang_Pass%2C_India.jpg/330px-Kullu_Valley_from_Rohtang_Pass%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 3072,
+    "height": 2048,
+    "sha256": "8a3073600f7a8e1723587384bb4c55c1d1a8c3c0c61f3b4411611332933706a0",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Kullu_Valley_from_Rohtang_Pass%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Kullu_Valley_from_Rohtang_Pass%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Kullu_Valley_from_Rohtang_Pass%2C_India.jpg/330px-Kullu_Valley_from_Rohtang_Pass%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 3072,
+      "height": 2048,
+      "sha256": "8a3073600f7a8e1723587384bb4c55c1d1a8c3c0c61f3b4411611332933706a0",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

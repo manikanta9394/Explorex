@@ -1,0 +1,60 @@
+{
+  "id": "virasat-e-khalsa",
+  "name": "Virasat-e-Khalsa Anandpur Sahib",
+  "wikidata_id": "Q7933560",
+  "wiki_title": "Virasat-e-Khalsa",
+  "type": "attraction",
+  "category": "Cultural Center",
+  "state": "Punjab",
+  "city": "Anandpur Sahib",
+  "lat": 31.2339,
+  "lng": 76.5025,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free entry",
+  "price_source": "https://punjabtourism.punjab.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "10:00 AM - 4:30 PM (Closed on Mondays)",
+  "best_time": "October to March (especially during Hola Mohalla festival)",
+  "rules": [
+    "Bags and cameras must be deposited at entry cloakroom",
+    "Audio guide available at nominal fee"
+  ],
+  "tags": [
+    "Moshe Safdie Architecture",
+    "Museum",
+    "Sikh Heritage",
+    "Anandpur Sahib"
+  ],
+  "visual_features": "striking modern stone and steel museum roofs resembling fortress folds against the Shivalik hill backdrop",
+  "description": "Virasat-e-Khalsa, also known as the Khalsa Heritage Complex, is a mega-museum complex of Sikhism, located in the town of Anandpur Sahib, and is close to the Takht Kesgarh Sahib, located in the state of Punjab, India. The museum celebrates 500 years of Sikh history and the 300th anniversary of the birth of Khalsa, based on the scriptures written by the tenth and last of Sikhism's gurus, Guru Gobind Singh. Tourists and pilgrims visit. It is the most visited Sikh museum.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Khalsa_Heritage_Memorial_176_Edit.jpg/3840px-Khalsa_Heritage_Memorial_176_Edit.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Khalsa_Heritage_Memorial_176_Edit.jpg/330px-Khalsa_Heritage_Memorial_176_Edit.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 3872,
+    "height": 2592,
+    "sha256": "e48fceab2b4432f7c73ba0e09e8fb78c63bf41b6a6c480604be0f48d48a6d26f",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Khalsa_Heritage_Memorial_176_Edit.jpg/3840px-Khalsa_Heritage_Memorial_176_Edit.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Khalsa_Heritage_Memorial_176_Edit.jpg/3840px-Khalsa_Heritage_Memorial_176_Edit.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Khalsa_Heritage_Memorial_176_Edit.jpg/330px-Khalsa_Heritage_Memorial_176_Edit.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 3872,
+      "height": 2592,
+      "sha256": "e48fceab2b4432f7c73ba0e09e8fb78c63bf41b6a6c480604be0f48d48a6d26f",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

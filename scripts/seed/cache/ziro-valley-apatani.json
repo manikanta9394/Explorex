@@ -1,0 +1,61 @@
+{
+  "id": "ziro-valley-apatani",
+  "name": "Ziro Valley (Apatani Cultural Landscape)",
+  "wikidata_id": "Q4784409",
+  "wiki_title": "Ziro",
+  "type": "attraction",
+  "category": "Culture & Valley",
+  "state": "Arunachal Pradesh",
+  "city": "Ziro (Lower Subansiri)",
+  "lat": 27.53,
+  "lng": 93.83,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free valley scenic access",
+  "price_source": "https://arunachaltourism.com",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Daylight scenic valley · Ziro Festival of Music in late September",
+  "best_time": "March to October (vibrant Ziro Music Festival in autumn)",
+  "rules": [
+    "Inner Line Permit (ILP) required at check gates",
+    "Respect elder Apatani women wearing traditional facial tattoos (Tepyo) and nose plugs (Yaping Hullo)"
+  ],
+  "tags": [
+    "UNESCO Tentative List",
+    "Apatani Tribe",
+    "Wet Rice & Fish Agriculture",
+    "Ziro Music Festival",
+    "Pine Groves"
+  ],
+  "visual_features": "peaceful emerald valley surrounded by pine-clad hills featuring terraced paddy fields cultivated with indigenous wet-rice and fish farming",
+  "description": "Ziro is a town in and the district headquarters of the Lower Subansiri district of the Indian state of Arunachal Pradesh. The part of the town which is the centre of economic activities and where the administrative offices are located is called Hapoli, or locally known by the Apatanis as \"Hao-Polyang\". Ziro is home to the Apatani tribe. Ziro is included in the Tentative List for UNESCO's World Heritage Site for the Apatani cultural landscape.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/A_cross_section_of_luch_green_valley_of_Ziro.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/A_cross_section_of_luch_green_valley_of_Ziro.jpg/330px-A_cross_section_of_luch_green_valley_of_Ziro.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 2500,
+    "height": 1650,
+    "sha256": "4a57a7409be636cb306088595b3e3bfcb0aae19eb78c8e894c2ca8e63b26f123",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/A_cross_section_of_luch_green_valley_of_Ziro.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/A_cross_section_of_luch_green_valley_of_Ziro.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/A_cross_section_of_luch_green_valley_of_Ziro.jpg/330px-A_cross_section_of_luch_green_valley_of_Ziro.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 2500,
+      "height": 1650,
+      "sha256": "4a57a7409be636cb306088595b3e3bfcb0aae19eb78c8e894c2ca8e63b26f123",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

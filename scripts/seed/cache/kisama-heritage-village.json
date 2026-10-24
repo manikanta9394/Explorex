@@ -1,0 +1,60 @@
+{
+  "id": "kisama-heritage-village",
+  "name": "Kisama Naga Heritage Village (Hornbill Festival)",
+  "wikidata_id": "Q3520110",
+  "wiki_title": "Hornbill_Festival",
+  "type": "attraction",
+  "category": "Culture & Heritage",
+  "state": "Nagaland",
+  "city": "Kohima (Kisama)",
+  "lat": 25.6133,
+  "lng": 94.1033,
+  "price_amount": 50,
+  "price_currency": "INR",
+  "price_unit": "per person (Hornbill Festival pass ₹100/day in December)",
+  "price_source": "https://hornbillfestival.com",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "9:00 AM - 5:00 PM (December 1 - 10 hosts the famous Hornbill Festival of Festivals)",
+  "best_time": "December 1 to 10 for the Hornbill Festival",
+  "rules": [
+    "Showcases traditional wooden morungs (dormitories) of all 16 major Naga tribes",
+    "Sample authentic Naga culinary delicacies and bamboo shoots"
+  ],
+  "tags": [
+    "Festival of Festivals",
+    "16 Naga Tribes",
+    "Traditional Morungs",
+    "Wood Carvings and Hornbill Feathers"
+  ],
+  "visual_features": "traditional Naga tribal village with massive carved wooden warrior log houses, hornbill bird motifs, and open-air performance amphitheater",
+  "description": "Hornbill Festival is an annual festival celebrated from 1 to 10 of December in the Northeastern Indian state of Nagaland. The festival represents all ethnic groups of Nagaland for which it is also called the Festival of Festivals.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/en/5/57/HornbillFest2014logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/en/5/57/HornbillFest2014logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 259,
+    "height": 385,
+    "sha256": "551b310c233da5db5d5cf8335c06161c15d4bc33127b49f62d1a7a3c61c3bffe",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/en/5/57/HornbillFest2014logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/5/57/HornbillFest2014logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://upload.wikimedia.org/wikipedia/en/5/57/HornbillFest2014logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 259,
+      "height": 385,
+      "sha256": "551b310c233da5db5d5cf8335c06161c15d4bc33127b49f62d1a7a3c61c3bffe",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

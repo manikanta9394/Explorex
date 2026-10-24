@@ -1,0 +1,60 @@
+{
+  "id": "nalanda-university-ruins",
+  "name": "Nalanda Mahavihara (Ancient University Ruins)",
+  "wikidata_id": "Q191484",
+  "wiki_title": "Nalanda",
+  "type": "attraction",
+  "category": "Heritage Monument",
+  "state": "Bihar",
+  "city": "Nalanda (Rajgir)",
+  "lat": 25.1357,
+  "lng": 85.4451,
+  "price_amount": 40,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "9:00 AM - 5:00 PM daily · Archaeological Museum closed Fridays",
+  "best_time": "October to March",
+  "rules": [
+    "Stay on paved brick pathways to avoid damaging ancient excavated walls",
+    "Visit the Archaeological Museum directly opposite for preserved bronze sculptures"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "Ancient Monastic University",
+    "5th Century CE",
+    "Sariputra Stupa"
+  ],
+  "visual_features": "sprawling red brick archaeological excavations of multi-tiered monasteries and the iconic multi-stepped Great Stupa of Sariputra",
+  "description": "Nalanda was a renowned Buddhist mahavihara in medieval Magadha, eastern India. Widely considered to be among the greatest centres of learning in the ancient world and often referred to as \"the world's first residential university\", it was located near the city of Rajagriha, roughly 90 kilometres (56 mi) southeast of Pataliputra. Operating for almost a thousand years from 427 CE until around 1400 CE, Nalanda mahavihara played a vital role in promoting the patronage of arts, culture and academics during the 5th and 6th century CE, a period that has since been described as the \"Golden Age of India\" by scholars. The characterisation of Nalanda as a \"university\" in the modern sense has been challenged by scholars. They argue that while it was undoubtedly a major centre of learning, comparing it directly to a modern university is historically imprecise.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Temple_No.-_3%2C_Nalanda_Archaeological_Site.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Temple_No.-_3%2C_Nalanda_Archaeological_Site.jpg/330px-Temple_No.-_3%2C_Nalanda_Archaeological_Site.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 2894,
+    "height": 1827,
+    "sha256": "e266f5d3bf7231c10f03a51643c842511f2394309337ec4a9f1e31cfa91f9d72",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Temple_No.-_3%2C_Nalanda_Archaeological_Site.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Temple_No.-_3%2C_Nalanda_Archaeological_Site.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Temple_No.-_3%2C_Nalanda_Archaeological_Site.jpg/330px-Temple_No.-_3%2C_Nalanda_Archaeological_Site.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 2894,
+      "height": 1827,
+      "sha256": "e266f5d3bf7231c10f03a51643c842511f2394309337ec4a9f1e31cfa91f9d72",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

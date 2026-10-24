@@ -1,0 +1,60 @@
+{
+  "id": "betaab-valley-pahalgam",
+  "name": "Betaab Valley & Aru Valley",
+  "wikidata_id": "Q4897262",
+  "wiki_title": "Betaab_Valley",
+  "type": "attraction",
+  "category": "Nature & Valley",
+  "state": "Jammu and Kashmir",
+  "city": "Pahalgam",
+  "lat": 34.032,
+  "lng": 75.353,
+  "price_amount": 100,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://jktourism.jk.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "8:00 AM - 6:00 PM daily",
+  "best_time": "April to October",
+  "rules": [
+    "Local union taxi cabs operate routes from Pahalgam town stand",
+    "Keep the Lidder river valley clean and plastic-free"
+  ],
+  "tags": [
+    "Lidder River",
+    "Bollywood Shooting Site",
+    "Pine Forests",
+    "Pahalgam"
+  ],
+  "visual_features": "lush green river meadows bordered by crystal-clear Lidder mountain stream and snow-tipped pine ridges",
+  "description": "Betaab Valley, also known as Hajan Valley, Hagan Valley or Hagoon, is situated at a distance of 15 km (9.3 mi) from Pahalgam in the Anantnag district in India's union territory of Jammu and Kashmir. The Valley is towards northeast of Pahalgam and falls between Pahalgam and Chandanwadi and is en route Amarnath Temple Yatra. The valley surrounded by lush green meadows, snow clad mountains and covered with dense vegetation.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Betaab_Valley.jpg/3840px-Betaab_Valley.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Betaab_Valley.jpg/330px-Betaab_Valley.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4608,
+    "height": 3072,
+    "sha256": "5501f2028523ff4bf11316c848cfc9846f79b17446e1856835fe08ae3624cbed",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Betaab_Valley.jpg/3840px-Betaab_Valley.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Betaab_Valley.jpg/3840px-Betaab_Valley.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Betaab_Valley.jpg/330px-Betaab_Valley.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4608,
+      "height": 3072,
+      "sha256": "5501f2028523ff4bf11316c848cfc9846f79b17446e1856835fe08ae3624cbed",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

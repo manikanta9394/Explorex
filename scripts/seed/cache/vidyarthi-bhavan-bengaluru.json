@@ -1,0 +1,60 @@
+{
+  "id": "vidyarthi-bhavan-bengaluru",
+  "name": "Vidyarthi Bhavan Gandhi Bazaar",
+  "wikidata_id": "Q7928122",
+  "wiki_title": "Vidyarthi_Bhavan",
+  "type": "food",
+  "category": "Iconic Culinary",
+  "state": "Karnataka",
+  "city": "Bengaluru",
+  "lat": 12.9431,
+  "lng": 77.5714,
+  "price_amount": 220,
+  "price_currency": "INR",
+  "price_unit": "for two approx",
+  "price_source": "https://vidyarthibhavan.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:30 AM - 11:30 AM, 2:00 PM - 8:00 PM (Closed on Fridays)",
+  "best_time": "Morning breakfast for crispy benne masala dosa with filter coffee",
+  "rules": [
+    "Classic token queue system on weekend mornings",
+    "Legendary waitstaff carrying dozens of stacked dosa plates"
+  ],
+  "tags": [
+    "Benne Masala Dosa",
+    "Since 1943",
+    "Filter Coffee",
+    "Bengaluru Heritage"
+  ],
+  "visual_features": "vintage South Indian heritage diner filled with the aroma of sizzling ghee dosa and steaming brass filter coffee tumblers",
+  "description": "Vidyarthi Bhavan is a vegetarian tiffin restaurant in Gandhi Bazaar, Basavanagudi, South Bangalore. It has been considered an iconic establishment of the area and Bangalore in general, with its masala dosa being particularly recognized.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/VidyarthiBhavanEntrance.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/VidyarthiBhavanEntrance.jpg/330px-VidyarthiBhavanEntrance.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 1600,
+    "height": 1200,
+    "sha256": "57aa12d74fa938396f83534f157379ff2481ac81d2585caabce3b5bd35b268e8",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/VidyarthiBhavanEntrance.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/VidyarthiBhavanEntrance.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/VidyarthiBhavanEntrance.jpg/330px-VidyarthiBhavanEntrance.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 1600,
+      "height": 1200,
+      "sha256": "57aa12d74fa938396f83534f157379ff2481ac81d2585caabce3b5bd35b268e8",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

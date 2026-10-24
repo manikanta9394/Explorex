@@ -1,0 +1,60 @@
+{
+  "id": "betla-national-park-palamu",
+  "name": "Betla National Park & Palamu Forts",
+  "wikidata_id": "Q1471718",
+  "wiki_title": "Betla_National_Park",
+  "type": "attraction",
+  "category": "Wildlife & Forts",
+  "state": "Jharkhand",
+  "city": "Palamu / Latehar",
+  "lat": 23.8692,
+  "lng": 84.1906,
+  "price_amount": 100,
+  "price_currency": "INR",
+  "price_unit": "entry fee per Indian national",
+  "price_source": "https://jharkhandtourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:00 AM - 10:00 AM, 2:00 PM - 5:00 PM (Closed during monsoon from July to September)",
+  "best_time": "November to March",
+  "rules": [
+    "Jeep and elephant safaris available at morning and evening timings",
+    "Visit the ancient 16th-century Chero dynasty twin forts deep in the forest"
+  ],
+  "tags": [
+    "Project Tiger Pioneer (1973)",
+    "Wild Elephants",
+    "Chero Dynasty Forts",
+    "Sal and Bamboo Forests"
+  ],
+  "visual_features": "lush sal and bamboo forest glades where wild Asian elephants roam near ancient overgrown stone fort ruins with battlements",
+  "description": "Betla National Park is a national park located in the Latehar and Palamu district of Jharkhand, India. Its the only national park in the state. It is spread over an area of 226.32 km2 (87.38 sq mi) and is a part of the Palamu Tiger Reserve. It was declared a national park in 1986. The park hosts a wide variety of wildlife.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Entrance_of_Betla_national_park.jpg/3840px-Entrance_of_Betla_national_park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Entrance_of_Betla_national_park.jpg/330px-Entrance_of_Betla_national_park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 5184,
+    "height": 3456,
+    "sha256": "7d72310b6d3b9201f30d710edead80cc99eea86011deb8caefcf20b2af7a732c",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Entrance_of_Betla_national_park.jpg/3840px-Entrance_of_Betla_national_park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Entrance_of_Betla_national_park.jpg/3840px-Entrance_of_Betla_national_park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Entrance_of_Betla_national_park.jpg/330px-Entrance_of_Betla_national_park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 5184,
+      "height": 3456,
+      "sha256": "7d72310b6d3b9201f30d710edead80cc99eea86011deb8caefcf20b2af7a732c",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

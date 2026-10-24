@@ -1,0 +1,60 @@
+{
+  "id": "dhanushkodi-point",
+  "name": "Dhanushkodi Ghost Town & Ram Setu Point",
+  "wikidata_id": "Q2567087",
+  "wiki_title": "Dhanushkodi",
+  "type": "attraction",
+  "category": "Coastal & Historic",
+  "state": "Tamil Nadu",
+  "city": "Dhanushkodi (Rameswaram)",
+  "lat": 9.1764,
+  "lng": 79.4186,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free coastal road access",
+  "price_source": "https://tamilnadutourism.tn.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Daylight hours: 6:00 AM - 5:00 PM (Police checkpoint closes road at sunset)",
+  "best_time": "October to March",
+  "rules": [
+    "No private vehicles permitted on sand shoals past Arichal Munai",
+    "All visitors must return to Rameswaram before sunset"
+  ],
+  "tags": [
+    "Submerged City Ruins",
+    "Ram Setu",
+    "Arichal Munai",
+    "Untouched Beaches"
+  ],
+  "visual_features": "narrow strip of land flanked by turquoise sea on both sides leading to wind-swept ruins of 1964 cyclone church and railway station",
+  "description": "Dhanushkodi is an abandoned town at the south-eastern tip of Pamban Island of the state of Tamil Nadu in India. It is south-east of Pamban and is about 24 kilometres (15 mi) west of Talaimannar in Sri Lanka. The town was destroyed during the 1964 Rameswaram cyclone and remains uninhabited in the aftermath. Although devoid of inhabitants, Dhanushkodi remains a tourist attraction due to its historical and mythological relevance.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Final_Dhanush_002.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Final_Dhanush_002.jpg/330px-Final_Dhanush_002.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 768,
+    "height": 496,
+    "sha256": "fc21c2a9e2342da9143032f0bcb1a56aa3de9d76ee5645b1e489838a558870ff",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Final_Dhanush_002.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Final_Dhanush_002.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Final_Dhanush_002.jpg/330px-Final_Dhanush_002.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 768,
+      "height": 496,
+      "sha256": "fc21c2a9e2342da9143032f0bcb1a56aa3de9d76ee5645b1e489838a558870ff",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

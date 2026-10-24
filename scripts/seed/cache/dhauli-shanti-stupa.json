@@ -1,0 +1,60 @@
+{
+  "id": "dhauli-shanti-stupa",
+  "name": "Dhauli Giri Shanti Stupa & Ashokan Edicts",
+  "wikidata_id": "Q3520110",
+  "wiki_title": "Dhauli",
+  "type": "attraction",
+  "category": "Peace Monument & Heritage",
+  "state": "Odisha",
+  "city": "Bhubaneswar (Dhauli)",
+  "lat": 20.1925,
+  "lng": 85.8394,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free peace pagoda access",
+  "price_source": "https://odishatourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:00 AM - 7:00 PM daily · Light & Sound show at 7:00 PM",
+  "best_time": "October to March",
+  "rules": [
+    "Respect the solemn heritage of the Kalinga War battlefield where Emperor Ashoka embraced Buddhism",
+    "Examine the 3rd-century BCE Rock Edict with sculpted rock elephant"
+  ],
+  "tags": [
+    "White Peace Pagoda",
+    "Emperor Ashoka Transformation",
+    "Kalinga War Site",
+    "Daya River"
+  ],
+  "visual_features": "gleaming white dome Buddhist peace pagoda decorated with golden Buddha statues perched on a hill overlooking the historic Daya River plain",
+  "description": "Dhauli or Dhauligiri is a hill located on the banks of the river Daya, 8 km south of Bhubaneswar in Odisha, India.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/ShantiSthupa_Dhauli.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/ShantiSthupa_Dhauli.jpg/330px-ShantiSthupa_Dhauli.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 1200,
+    "height": 675,
+    "sha256": "5d79d3879a371ba13081813f2c9820f44d51532e4c56207dbae9cd2e8a63e6cc",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/ShantiSthupa_Dhauli.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/ShantiSthupa_Dhauli.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/ShantiSthupa_Dhauli.jpg/330px-ShantiSthupa_Dhauli.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 1200,
+      "height": 675,
+      "sha256": "5d79d3879a371ba13081813f2c9820f44d51532e4c56207dbae9cd2e8a63e6cc",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

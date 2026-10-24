@@ -1,0 +1,60 @@
+{
+  "id": "key-monastery-spiti",
+  "name": "Key Gompa & Spiti Valley",
+  "wikidata_id": "Q1740316",
+  "wiki_title": "Key_Monastery",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Himachal Pradesh",
+  "city": "Kaza (Spiti Valley)",
+  "lat": 32.2989,
+  "lng": 78.0125,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free monastery entry",
+  "price_source": "https://himachaltourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:00 AM - 6:00 PM daily",
+  "best_time": "June to September (roads clear of snow)",
+  "rules": [
+    "Acclimatize in Kaza for at least 24 hours to prevent altitude sickness",
+    "Remove shoes before entering prayer prayer room with murals"
+  ],
+  "tags": [
+    "Tibetan Buddhism",
+    "High Altitude Cold Desert",
+    "Spiti Valley",
+    "Thangka Murals"
+  ],
+  "visual_features": "fortress-like white and red whitewashed Tibetan monastery perched dramatically atop an arid conical hill at 13,668 feet",
+  "description": "Kye Gompa is a Tibetan Buddhist monastery of the Gelugpa sect located on top of a hill at an altitude of 4,166 metres (13,668 ft) above sea level, close to the Spiti River, in the Spiti Valley of Himachal Pradesh, Lahaul and Spiti district, India.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/1000_Year_loop.jpg/3840px-1000_Year_loop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/1000_Year_loop.jpg/330px-1000_Year_loop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 5341,
+    "height": 3556,
+    "sha256": "b1afd85703b9db5ac932229778fc4985fdf0b88f17a6eb1c52168255d768a141",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/1000_Year_loop.jpg/3840px-1000_Year_loop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/1000_Year_loop.jpg/3840px-1000_Year_loop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/1000_Year_loop.jpg/330px-1000_Year_loop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 5341,
+      "height": 3556,
+      "sha256": "b1afd85703b9db5ac932229778fc4985fdf0b88f17a6eb1c52168255d768a141",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

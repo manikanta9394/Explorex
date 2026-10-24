@@ -1,0 +1,60 @@
+{
+  "id": "hawa-mahal-jaipur",
+  "name": "Hawa Mahal (Palace of Winds)",
+  "wikidata_id": "Q199586",
+  "wiki_title": "Hawa_Mahal",
+  "type": "attraction",
+  "category": "Heritage Palace",
+  "state": "Rajasthan",
+  "city": "Jaipur",
+  "lat": 26.9239,
+  "lng": 75.8267,
+  "price_amount": 50,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://tourism.rajasthan.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "9:00 AM - 5:00 PM daily (facade illuminated at night)",
+  "best_time": "October to March (early morning sunlight illuminates pink sandstone)",
+  "rules": [
+    "Composite Rajasthan heritage ticket accepted",
+    "Rooftop cafes across the street offer prime photography viewpoints"
+  ],
+  "tags": [
+    "Pink City",
+    "953 Jharokha Windows",
+    "Krishna Crown Design",
+    "Air Conditioning Architecture"
+  ],
+  "visual_features": "five-story pink and red sandstone honeycomb facade with 953 delicately carved casement windows and miniature domed jharokhas",
+  "description": "The Hawa Mahal is a palace in the city of Jaipur, Rajasthan, India. Built from red and pink sandstone, it is on the edge of the City Palace, Jaipur, and extends to the Zenana, or women's chambers.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg/330px-East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 3345,
+    "height": 2509,
+    "sha256": "2c9287f0b1781272787cbcff8d2cb0e721fd1e5063ae76d249d45d6b74f8f180",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg/330px-East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 3345,
+      "height": 2509,
+      "sha256": "2c9287f0b1781272787cbcff8d2cb0e721fd1e5063ae76d249d45d6b74f8f180",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

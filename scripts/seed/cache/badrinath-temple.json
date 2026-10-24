@@ -1,0 +1,60 @@
+{
+  "id": "badrinath-temple",
+  "name": "Badrinath Temple",
+  "wikidata_id": "Q800160",
+  "wiki_title": "Badrinath_Temple",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Uttarakhand",
+  "city": "Badrinath (Chamoli)",
+  "lat": 30.7447,
+  "lng": 79.4912,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free darshan",
+  "price_source": "https://badrinath-kedarnath.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "4:30 AM - 1:00 PM, 4:00 PM - 9:00 PM (Open May to November annually)",
+  "best_time": "May to June, September to October",
+  "rules": [
+    "Char Dham biometric registration required by Uttarakhand government",
+    "Closed during winter due to heavy snow; deity moves to Pandukeshwar"
+  ],
+  "tags": [
+    "Char Dham",
+    "Lord Vishnu Shrine",
+    "Alaknanda River",
+    "Garhwal Himalayas"
+  ],
+  "visual_features": "brightly painted vibrant facade of stone temple with arched roof set between Nar and Narayana mountain peaks on Alaknanda bank",
+  "description": "Badarinath Temple, also known as Badarinarayana Temple, is a Hindu temple dedicated to Vishnu. It is located in the town of Badrinath in Chamoli district of Uttarakhand, India. The temple is one of the 108 Divya Desams, sacred to Vaishnavism, where Vishnu is worshipped as Badrinath. Due to extreme weather conditions in the Himalayas, the temple is open for six months each year, from late April to early November. It is one of the most visited pilgrimage centres of India, having recorded 2.8 million visits in just 2 months in 2022. It is one of the Char Dham pilgrimage sites.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Badrinath_Temple_%2C_Uttarakhand.jpg/3840px-Badrinath_Temple_%2C_Uttarakhand.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Badrinath_Temple_%2C_Uttarakhand.jpg/330px-Badrinath_Temple_%2C_Uttarakhand.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4000,
+    "height": 3000,
+    "sha256": "6178763f4e2e99493c35fd28928b80232b333ecb99729cdd0897a00631353568",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Badrinath_Temple_%2C_Uttarakhand.jpg/3840px-Badrinath_Temple_%2C_Uttarakhand.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Badrinath_Temple_%2C_Uttarakhand.jpg/3840px-Badrinath_Temple_%2C_Uttarakhand.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Badrinath_Temple_%2C_Uttarakhand.jpg/330px-Badrinath_Temple_%2C_Uttarakhand.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4000,
+      "height": 3000,
+      "sha256": "6178763f4e2e99493c35fd28928b80232b333ecb99729cdd0897a00631353568",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

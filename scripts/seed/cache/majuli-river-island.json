@@ -1,0 +1,60 @@
+{
+  "id": "majuli-river-island",
+  "name": "Majuli Island & Vaishnavite Satras",
+  "wikidata_id": "Q1847141",
+  "wiki_title": "Majuli",
+  "type": "attraction",
+  "category": "Culture & Island",
+  "state": "Assam",
+  "city": "Majuli (Jorhat)",
+  "lat": 26.95,
+  "lng": 94.2167,
+  "price_amount": 20,
+  "price_currency": "INR",
+  "price_unit": "ferry boat ticket from Nimati Ghat per person",
+  "price_source": "https://majuli.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Ferry operates daily 7:00 AM - 4:00 PM from Nimati Ghat (Jorhat)",
+  "best_time": "October to March (Raas Mahotsav in November is a cultural spectacle)",
+  "rules": [
+    "World largest inhabited river island nestled in the Brahmaputra river",
+    "Visit Kamalabari and Samaguri Satras famous for traditional mythological bamboo-clay mask making"
+  ],
+  "tags": [
+    "World Largest River Island",
+    "Neo-Vaishnavite Culture",
+    "Traditional Mask Making",
+    "Brahmaputra River"
+  ],
+  "visual_features": "peaceful river island village bordered by the expansive Brahmaputra with stilt bamboo houses, monks dancing Sattriya, and hand-crafted mythological masks",
+  "description": "Majuli is the largest river island in Assam, a state in Northeast India. It is bordered by the Brahmaputra River to the south and east, the Subansiri River to the west, and an anabranch of the Brahmaputra to the north.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Doriya_River_of_Majuli.jpg/3840px-Doriya_River_of_Majuli.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Doriya_River_of_Majuli.jpg/330px-Doriya_River_of_Majuli.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4928,
+    "height": 3264,
+    "sha256": "b9b70fa10d365543df454172bba55fdd025d6ab0af409d3f970dfbf8febefaa9",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Doriya_River_of_Majuli.jpg/3840px-Doriya_River_of_Majuli.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Doriya_River_of_Majuli.jpg/3840px-Doriya_River_of_Majuli.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Doriya_River_of_Majuli.jpg/330px-Doriya_River_of_Majuli.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4928,
+      "height": 3264,
+      "sha256": "b9b70fa10d365543df454172bba55fdd025d6ab0af409d3f970dfbf8febefaa9",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

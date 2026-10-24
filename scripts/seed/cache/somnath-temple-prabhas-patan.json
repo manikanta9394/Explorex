@@ -1,0 +1,60 @@
+{
+  "id": "somnath-temple-prabhas-patan",
+  "name": "Shree Somnath Jyotirlinga Temple",
+  "wikidata_id": "Q844111",
+  "wiki_title": "Somnath_temple",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Gujarat",
+  "city": "Prabhas Patan (Veraval)",
+  "lat": 20.888,
+  "lng": 70.4014,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free darshan",
+  "price_source": "https://somnath.org",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:00 AM - 10:00 PM daily · Aartis at 7:00 AM, 12:00 PM, 7:00 PM · Sound & Light show at 8:00 PM",
+  "best_time": "October to March (Maha Shivaratri in spring)",
+  "rules": [
+    "Mobile phones, electronic gadgets, leather belts, and bags strictly prohibited (free lockers at gate)",
+    "Dress code: modest traditional attire encouraged"
+  ],
+  "tags": [
+    "First among 12 Jyotirlingas",
+    "Arabian Sea Shore",
+    "Baan Stambh Arrow Pillar",
+    "Chalukya Architecture"
+  ],
+  "visual_features": "grand honey-colored sandstone temple with soaring 150-foot shikhara standing on the edge of the roaring Arabian Sea surf",
+  "description": "Somanatha Temple is a Hindu temple, located in Prabhas Patan, Veraval, in Gujarat, India. It is one of the most sacred pilgrimage sites, or Tirtha Kshetra for Hindus and is the first among the twelve jyotirlinga shrines of Shiva. The date of construction of the earliest Somnath temple remains uncertain, with estimates varying between the early centuries of the 1st millennium and about the 9th century CE. Various texts, including the Mahabharata and Bhagavata Purana, mention a tirtha at Prabhas Patan on the coastline of Saurashtra, where the later temple would eventually be built, but archaeology has not found traces of an early temple, though there was a settlement there.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Somanath_mandir_%28cropped%29.jpg/3840px-Somanath_mandir_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Somanath_mandir_%28cropped%29.jpg/330px-Somanath_mandir_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 5712,
+    "height": 4497,
+    "sha256": "11c35637074adbeeca3f24f41d27f790a94ac6ec2339e5657a8fd4e9055a7976",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Somanath_mandir_%28cropped%29.jpg/3840px-Somanath_mandir_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Somanath_mandir_%28cropped%29.jpg/3840px-Somanath_mandir_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Somanath_mandir_%28cropped%29.jpg/330px-Somanath_mandir_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 5712,
+      "height": 4497,
+      "sha256": "11c35637074adbeeca3f24f41d27f790a94ac6ec2339e5657a8fd4e9055a7976",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "lepakshi-veerabhadra-temple",
+  "name": "Lepakshi Veerabhadra Temple & Monolithic Nandi",
+  "wikidata_id": "Q3532789",
+  "wiki_title": "Veerabhadra_Temple,_Lepakshi",
+  "type": "attraction",
+  "category": "Heritage Temple",
+  "state": "Andhra Pradesh",
+  "city": "Lepakshi (Sri Sathya Sai)",
+  "lat": 14.1436,
+  "lng": 77.6108,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free entry",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:00 AM - 6:00 PM daily",
+  "best_time": "October to March",
+  "rules": [
+    "Famous hanging pillar: cloth or paper can be passed underneath without touching the floor",
+    "No touching ancient Vijayanagara ceiling frescoes"
+  ],
+  "tags": [
+    "Vijayanagara Architecture",
+    "Hanging Pillar Wonder",
+    "Gigantic Monolithic Nandi",
+    "Nagalinga"
+  ],
+  "visual_features": "grand Vijayanagara stone temple complex featuring the famous hanging pillar and a colossal seven-hooded serpent Nagalinga carved from a single granite boulder",
+  "description": "Veerabhadra temple is a Hindu temple located in the Lepakshi, in the state of Andhra Pradesh, India. The temple is dedicated to Virabhadra, a fierce form of Shiva, a major deity in Hinduism.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Veerabhadra_Temple_Tower.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Veerabhadra_Temple_Tower.JPG/330px-Veerabhadra_Temple_Tower.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 1944,
+    "height": 2592,
+    "sha256": "782916428108935649d2fe0dbe9db275127bfa1312378322599fc5a6cc876fc1",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Veerabhadra_Temple_Tower.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Veerabhadra_Temple_Tower.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Veerabhadra_Temple_Tower.JPG/330px-Veerabhadra_Temple_Tower.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 1944,
+      "height": 2592,
+      "sha256": "782916428108935649d2fe0dbe9db275127bfa1312378322599fc5a6cc876fc1",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

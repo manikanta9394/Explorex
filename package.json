@@ -11,6 +11,8 @@
     "server": "node server/index.js",
     "server:dev": "nodemon server/index.js",
     "seed": "node server/seed.js",
+    "seed:india": "node scripts/seed/seedIndiaDataset.js",
+    "check:images": "node scripts/checkImageIntegrity.js",
     "data:generate": "node scripts/generateTourismData.mjs"
   },
   "dependencies": {

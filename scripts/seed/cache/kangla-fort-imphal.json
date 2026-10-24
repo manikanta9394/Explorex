@@ -1,0 +1,60 @@
+{
+  "id": "kangla-fort-imphal",
+  "name": "Kangla Fort & Royal Palace",
+  "wikidata_id": "Q844111",
+  "wiki_title": "Kangla_Fort",
+  "type": "attraction",
+  "category": "Heritage Fort",
+  "state": "Manipur",
+  "city": "Imphal",
+  "lat": 24.8083,
+  "lng": 93.9417,
+  "price_amount": 20,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://manipurtourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "7:00 AM - 5:00 PM (Closed on Wednesdays)",
+  "best_time": "October to March",
+  "rules": [
+    "Ancient seat of the Meitei rulers of Manipur",
+    "Rent a bicycle at the main gate to explore the expansive 237-acre fort grounds and sacred ponds"
+  ],
+  "tags": [
+    "Ancient Meitei Kingdom",
+    "Kangla Sha Dragon Statues",
+    "Sacred Ponds",
+    "Imphal Heart"
+  ],
+  "visual_features": "historic red brick fort citadel framed by two colossal white mythological dragon lion (Kangla Sha) statues guarding the palace grounds",
+  "description": "The Kanglā is a historic site and tourist attraction in fortified palace in Imphal, Manipur, India. The Kangla, a fortified palace, was the traditional seat of the Meitei kings of the Ningthouja dynasty. It includes a royal residence, two museums, gardens, a traditional boathouse holding Meitei racing boats, a Sanamahist temple, and other Meitei cultural and artistic treasures.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/The_sacred_idols_of_God_Pakhangba_and_his_divine_consort_kept_inside_the_Pakhangba_Temple_in_the_Kangla_Fort_in_Imphal.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/The_sacred_idols_of_God_Pakhangba_and_his_divine_consort_kept_inside_the_Pakhangba_Temple_in_the_Kangla_Fort_in_Imphal.jpg/330px-The_sacred_idols_of_God_Pakhangba_and_his_divine_consort_kept_inside_the_Pakhangba_Temple_in_the_Kangla_Fort_in_Imphal.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 2992,
+    "height": 4000,
+    "sha256": "ebb5ee4720fd28ab801b9509e5038f3a47801d5c76b70d5c31cc5141c818256f",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/03/The_sacred_idols_of_God_Pakhangba_and_his_divine_consort_kept_inside_the_Pakhangba_Temple_in_the_Kangla_Fort_in_Imphal.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/The_sacred_idols_of_God_Pakhangba_and_his_divine_consort_kept_inside_the_Pakhangba_Temple_in_the_Kangla_Fort_in_Imphal.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/The_sacred_idols_of_God_Pakhangba_and_his_divine_consort_kept_inside_the_Pakhangba_Temple_in_the_Kangla_Fort_in_Imphal.jpg/330px-The_sacred_idols_of_God_Pakhangba_and_his_divine_consort_kept_inside_the_Pakhangba_Temple_in_the_Kangla_Fort_in_Imphal.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 2992,
+      "height": 4000,
+      "sha256": "ebb5ee4720fd28ab801b9509e5038f3a47801d5c76b70d5c31cc5141c818256f",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "kamakhya-temple-guwahati",
+  "name": "Maa Kamakhya Devi Temple (Nilachal Hill)",
+  "wikidata_id": "Q844111",
+  "wiki_title": "Kamakhya_Temple",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Assam",
+  "city": "Guwahati",
+  "lat": 26.1664,
+  "lng": 91.7056,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free general darshan (VIP coupon ₹501)",
+  "price_source": "https://maakamakhya.org",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "5:30 AM - 1:00 PM, 2:30 PM - 6:00 PM daily",
+  "best_time": "October to April (Ambubachi Mela in June draws tantric pilgrims nationwide)",
+  "rules": [
+    "Natural rock cave spring Garbhagriha has no idol; devotees touch the natural stone spring fissure",
+    "Dress respectfully; footwear removed at stone gateway"
+  ],
+  "tags": [
+    "Premier Tantric Shakti Peeth",
+    "Nilachal Hill",
+    "Ambubachi Mela",
+    "Guwahati Landmark"
+  ],
+  "visual_features": "distinctive beehive-shaped dome (Shikhara) of ancient stone temple nestled in forested Nilachal hill overlooking Guwahati and the Brahmaputra river",
+  "description": "Kamakhya Temple is a Hindu temple at Nilachal hills in Guwahati, Assam is one of the oldest and most revered centres of Tantric practices, dedicated to the goddess Kamakhya. The temple is the centre of the Kulachara Tantra Marga and the site of the Ambubachi Mela, an annual festival that celebrates the menstruation of the goddess. Structurally, the temple is dated to the 8th-9th century with many subsequent rebuildings—and the final hybrid architecture defines a local style called Nilachal. It is also one among the oldest 4 of the 51 pithas in the Shakta tradition. An obscure place of worship for much of history it became an important pilgrimage destination, especially for those from Bengal, in the 19th century during colonial rule.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Kamakhya_Temple_-_DEV_8829.jpg/3840px-Kamakhya_Temple_-_DEV_8829.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Kamakhya_Temple_-_DEV_8829.jpg/330px-Kamakhya_Temple_-_DEV_8829.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 6016,
+    "height": 4016,
+    "sha256": "b9edab9056eac4637b1d63e7c2d205c8fe2f569282f4f8497d767be221c1a22c",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Kamakhya_Temple_-_DEV_8829.jpg/3840px-Kamakhya_Temple_-_DEV_8829.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Kamakhya_Temple_-_DEV_8829.jpg/3840px-Kamakhya_Temple_-_DEV_8829.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Kamakhya_Temple_-_DEV_8829.jpg/330px-Kamakhya_Temple_-_DEV_8829.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 6016,
+      "height": 4016,
+      "sha256": "b9edab9056eac4637b1d63e7c2d205c8fe2f569282f4f8497d767be221c1a22c",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

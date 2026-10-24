@@ -1,0 +1,60 @@
+{
+  "id": "elephanta-caves-mumbai",
+  "name": "Elephanta Caves & Trimurti Sculpture",
+  "wikidata_id": "Q185298",
+  "wiki_title": "Elephanta_Caves",
+  "type": "attraction",
+  "category": "Heritage Monument",
+  "state": "Maharashtra",
+  "city": "Mumbai (Elephanta Island)",
+  "lat": 18.9633,
+  "lng": 72.9315,
+  "price_amount": 40,
+  "price_currency": "INR",
+  "price_unit": "per person (Ferry ₹260 roundtrip)",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "9:30 AM - 5:30 PM (Closed on Mondays · Ferry service halts in monsoon)",
+  "best_time": "November to March",
+  "rules": [
+    "Closed every Monday",
+    "Toy train operates between island pier and hill base staircase for elderly visitors"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "Sadashiva Trimurti",
+    "Island Cave Shrine",
+    "Shiva Sculptures"
+  ],
+  "visual_features": "immense subterranean basalt rock-cut pillared hall anchored by the famous 20-foot high three-headed Sadashiva Trimurti sculpture",
+  "description": "The Elephanta Caves form a collection of cave temples predominantly dedicated to the Hindu god Shiva; UNESCO has designated them as a World Heritage Site. They are located on Elephanta Island, or Gharapuri, in Mumbai Harbour, 10 kilometres (6.2 mi) east of Mumbai in the Indian state of Maharashtra. The island, about 2 kilometres (1.2 mi) west of the Jawaharlal Nehru Port, features five Hindu caves, a few Buddhist stupa mounds that date back to the 2nd century BCE, and two Buddhist caves with water tanks.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Elephanta_Caves_Trimurti.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Elephanta_Caves_Trimurti.jpg/330px-Elephanta_Caves_Trimurti.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 2501,
+    "height": 2846,
+    "sha256": "3a2feefd97057ae7956a5160aad278fac56fc9dc033da3724e12120bd1905a64",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Elephanta_Caves_Trimurti.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Elephanta_Caves_Trimurti.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Elephanta_Caves_Trimurti.jpg/330px-Elephanta_Caves_Trimurti.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 2501,
+      "height": 2846,
+      "sha256": "3a2feefd97057ae7956a5160aad278fac56fc9dc033da3724e12120bd1905a64",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

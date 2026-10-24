@@ -1,0 +1,61 @@
+{
+  "id": "red-fort-delhi",
+  "name": "Red Fort",
+  "wikidata_id": "Q122434",
+  "wiki_title": "Red_Fort",
+  "type": "attraction",
+  "category": "Heritage Fort",
+  "state": "Delhi",
+  "city": "Old Delhi",
+  "lat": 28.6562,
+  "lng": 77.241,
+  "price_amount": 50,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "9:30 AM - 4:30 PM (Closed on Mondays)",
+  "best_time": "October to March",
+  "rules": [
+    "Closed every Monday",
+    "Sound and Light show requires separate ticket",
+    "Drone photography strictly prohibited"
+  ],
+  "tags": [
+    "Mughal Architecture",
+    "UNESCO World Heritage",
+    "Historic Fort",
+    "Delhi"
+  ],
+  "visual_features": "massive red sandstone ramparts, Lahori Gate entrance with Indian tri-colour flag",
+  "description": "The Red Fort is a historic Mughal fort located in the Old Delhi area of Delhi, India. Serving as the main residence of the Mughal emperors, it was commissioned by Emperor Shah Jahan on the 12th of May 1639; the fort was constructed following his decision to shift the Mughal capital from Agra to Delhi. Originally adorned in red and white, the fort's design is attributed to Ustad Ahmad Lahori, the architect of the Taj Mahal. The Red Fort is a prominent example of Mughal architecture from Shah Jahan's reign, combining Persian and Indian architectural styles.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Delhi_fort.jpg/3840px-Delhi_fort.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Delhi_fort.jpg/330px-Delhi_fort.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4242,
+    "height": 1949,
+    "sha256": "e1e897950d5136785e0e2830db591b83a701f70f62f12e676ee1e887d5116185",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Delhi_fort.jpg/3840px-Delhi_fort.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Delhi_fort.jpg/3840px-Delhi_fort.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Delhi_fort.jpg/330px-Delhi_fort.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4242,
+      "height": 1949,
+      "sha256": "e1e897950d5136785e0e2830db591b83a701f70f62f12e676ee1e887d5116185",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

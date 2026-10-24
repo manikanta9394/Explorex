@@ -1,0 +1,60 @@
+{
+  "id": "ujjayanta-palace-agartala",
+  "name": "Ujjayanta Palace & Tripura State Museum",
+  "wikidata_id": "Q1140027",
+  "wiki_title": "Ujjayanta_Palace",
+  "type": "attraction",
+  "category": "Heritage Palace",
+  "state": "Tripura",
+  "city": "Agartala",
+  "lat": 23.8375,
+  "lng": 91.2825,
+  "price_amount": 20,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://tripuratourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "10:00 AM - 5:00 PM (Closed on Mondays)",
+  "best_time": "October to March",
+  "rules": [
+    "Named by Nobel laureate Rabindranath Tagore, who was a frequent guest of the Manikya royal court",
+    "Musical fountains illuminate the Mughal-style front gardens at dusk"
+  ],
+  "tags": [
+    "Manikya Dynasty",
+    "White Neoclassical Palace",
+    "Rabindranath Tagore",
+    "State Museum"
+  ],
+  "visual_features": "gleaming white neoclassical royal palace flanked by twin ornamental lakes and Mughal-style geometric garden canals with central fountain",
+  "description": "Ujjayanta Palace is the state museum of the Indian state of Tripura and former royal palace of the princely state of Tripura. It was built by Maharaja Radha Kishore Manikya in 1901. It housed the State Legislative Assembly between 1973 and 2011. The palace primarily showcases the lifestyle, arts, culture, tradition and crafts of communities residing in northeast India, along with many stone sculptures of the Manikya dynasty.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Ujjayanta_palace_Tripura_State_Museum_Agartala_India.jpg/3840px-Ujjayanta_palace_Tripura_State_Museum_Agartala_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Ujjayanta_palace_Tripura_State_Museum_Agartala_India.jpg/330px-Ujjayanta_palace_Tripura_State_Museum_Agartala_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 5602,
+    "height": 3955,
+    "sha256": "7b74ef519d8090fc45be08e496fe07aed2c4dee81ae110574d837e2b729efc80",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Ujjayanta_palace_Tripura_State_Museum_Agartala_India.jpg/3840px-Ujjayanta_palace_Tripura_State_Museum_Agartala_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Ujjayanta_palace_Tripura_State_Museum_Agartala_India.jpg/3840px-Ujjayanta_palace_Tripura_State_Museum_Agartala_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Ujjayanta_palace_Tripura_State_Museum_Agartala_India.jpg/330px-Ujjayanta_palace_Tripura_State_Museum_Agartala_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 5602,
+      "height": 3955,
+      "sha256": "7b74ef519d8090fc45be08e496fe07aed2c4dee81ae110574d837e2b729efc80",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

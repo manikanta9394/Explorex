@@ -1,0 +1,60 @@
+{
+  "id": "gurudongmar-lake-north-sikkim",
+  "name": "Gurudongmar Lake (One of World Highest Lakes at 17,800 ft)",
+  "wikidata_id": "Q1076878",
+  "wiki_title": "Gurudongmar_Lake",
+  "type": "attraction",
+  "category": "Extreme High Altitude Lake",
+  "state": "Sikkim",
+  "city": "Lachen (North Sikkim)",
+  "lat": 28.025,
+  "lng": 88.7125,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "permit included in North Sikkim tour package",
+  "price_source": "https://sikkimtourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Must reach lake by 8:30 AM and depart before 11:00 AM due to gale force winds",
+  "best_time": "April to June and October to November",
+  "rules": [
+    "Permitted for Indian citizens only due to border sensitivity",
+    "Altitude 17,800 ft: spend no more than 30 minutes at lake level; overnight stay in Lachen mandatory for acclimatization"
+  ],
+  "tags": [
+    "Holy to Buddhists and Sikhs",
+    "Guru Nanak and Padmasambhava Blessing",
+    "Never Freezes Completely",
+    "17,800 Feet"
+  ],
+  "visual_features": "stunning milky-blue glacial lake at 17,800 feet surrounded by jagged snow-covered Himalayan peaks with a golden-roofed prayer shrine on its shore",
+  "description": "Gurudongmar Lake is one of the highest lakes in the world and in India, at an elevation of 5,430 m (17,800 ft) according to the Government of Sikkim. It is located in the Great Himalayas in the Mangan district in Indian state of Sikkim, and considered sacred by Buddhists. The lake is named after Padmasambhava, who visited it in the 8th century.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Gurudongmar_Lake_Sikkim%2C_India_%28edit%29.jpg/3840px-Gurudongmar_Lake_Sikkim%2C_India_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Gurudongmar_Lake_Sikkim%2C_India_%28edit%29.jpg/330px-Gurudongmar_Lake_Sikkim%2C_India_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 6000,
+    "height": 4000,
+    "sha256": "fddc0aca3d412ab0518c0cf190047f24a093892b0b7164e0edc3fd5928fcc143",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Gurudongmar_Lake_Sikkim%2C_India_%28edit%29.jpg/3840px-Gurudongmar_Lake_Sikkim%2C_India_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Gurudongmar_Lake_Sikkim%2C_India_%28edit%29.jpg/3840px-Gurudongmar_Lake_Sikkim%2C_India_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Gurudongmar_Lake_Sikkim%2C_India_%28edit%29.jpg/330px-Gurudongmar_Lake_Sikkim%2C_India_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 6000,
+      "height": 4000,
+      "sha256": "fddc0aca3d412ab0518c0cf190047f24a093892b0b7164e0edc3fd5928fcc143",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

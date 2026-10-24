@@ -1,0 +1,60 @@
+{
+  "id": "lingaraj-temple-bhubaneswar",
+  "name": "Lingaraj Temple Bhubaneswar",
+  "wikidata_id": "Q1826725",
+  "wiki_title": "Lingaraj_Temple",
+  "type": "attraction",
+  "category": "Heritage Temple",
+  "state": "Odisha",
+  "city": "Bhubaneswar",
+  "lat": 20.2383,
+  "lng": 85.8336,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free darshan",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:00 AM - 9:00 PM daily",
+  "best_time": "October to March (Shivaratri festival celebration)",
+  "rules": [
+    "Only Hindus permitted inside sanctum; a raised viewing platform outside northern boundary wall provides panoramic view for international visitors",
+    "No leather items or phones"
+  ],
+  "tags": [
+    "Temple City of India",
+    "Kalinga Architectural Pinnacle",
+    "Bindu Sagar Lake",
+    "Harihara Deity"
+  ],
+  "visual_features": "majestic 180-foot red sandstone deula shikhara dominating the Bhubaneswar skyline with 150 smaller subsidiary shrines",
+  "description": "Lingaraja Temple is a Hindu temple dedicated to Shiva and is one of the oldest temples in Bhubaneswar, the capital of the Indian state of Odisha, India. The temple is the most prominent landmark of Bhubaneswar city and one of the major tourist attractions of the state. Shiva's consort and the temple's presiding Goddess, Parvati, is referred to as Annapurna or Girija.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Lingaraj_Temple_%2C_Bhubaneswar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Lingaraj_Temple_%2C_Bhubaneswar.jpg/330px-Lingaraj_Temple_%2C_Bhubaneswar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 3456,
+    "height": 4608,
+    "sha256": "92072d2514f116ea444c68e67c3832a61f84c7dfbe4183565a109e1cbf50b5a2",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Lingaraj_Temple_%2C_Bhubaneswar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Lingaraj_Temple_%2C_Bhubaneswar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Lingaraj_Temple_%2C_Bhubaneswar.jpg/330px-Lingaraj_Temple_%2C_Bhubaneswar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 3456,
+      "height": 4608,
+      "sha256": "92072d2514f116ea444c68e67c3832a61f84c7dfbe4183565a109e1cbf50b5a2",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

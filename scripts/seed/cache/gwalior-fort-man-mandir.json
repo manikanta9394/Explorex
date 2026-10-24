@@ -1,0 +1,60 @@
+{
+  "id": "gwalior-fort-man-mandir",
+  "name": "Gwalior Fort & Man Mandir Palace",
+  "wikidata_id": "Q844111",
+  "wiki_title": "Gwalior_Fort",
+  "type": "attraction",
+  "category": "Heritage Fort",
+  "state": "Madhya Pradesh",
+  "city": "Gwalior",
+  "lat": 26.2308,
+  "lng": 78.1694,
+  "price_amount": 25,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:00 AM - 5:30 PM daily · Sound & Light show in Hindi & English at dusk",
+  "best_time": "October to March",
+  "rules": [
+    "Described by Mughal Emperor Babur as the pearl among fortresses of Hind",
+    "Walk through the rock-cut Gopachal Parvat Jain colossi on the hillside ascent"
+  ],
+  "tags": [
+    "Gibraltar of India",
+    "Glazed Blue Ceramic Tiles",
+    "Tomar Rajput Fort",
+    "Teli ka Mandir"
+  ],
+  "visual_features": "imposing hill fortress with bright turquoise and yellow glazed tile friezes of ducks, elephants, and peacocks decorating the rounded circular palace bastions",
+  "description": "The Fort of Gwalior or Gwalior Fort is a 6th-century hill fort in Gwalior, India. Mughal Emperor Babur described it as the \"pearl amongst the fortresses of Hind and not even the winds could touch its masts\" due to its grandeur and magnificence. It was nicknamed the \"Gibraltar of India\" for its impregnability and defensive structure. The fort dates back to the 5th century, perhaps earlier, making it one of the oldest defence forts in India. Ancient Sanskrit inscriptions record the name of the fort as \"Gopgiri\".",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Gwalior_Fort_front.jpg/3840px-Gwalior_Fort_front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Gwalior_Fort_front.jpg/330px-Gwalior_Fort_front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 6000,
+    "height": 4000,
+    "sha256": "e3c26cdd5a9c48ae2fe97101e7526db49f357ab84c358ca58990aa8a128c1a8e",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Gwalior_Fort_front.jpg/3840px-Gwalior_Fort_front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Gwalior_Fort_front.jpg/3840px-Gwalior_Fort_front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Gwalior_Fort_front.jpg/330px-Gwalior_Fort_front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 6000,
+      "height": 4000,
+      "sha256": "e3c26cdd5a9c48ae2fe97101e7526db49f357ab84c358ca58990aa8a128c1a8e",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

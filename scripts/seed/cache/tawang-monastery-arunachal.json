@@ -1,0 +1,60 @@
+{
+  "id": "tawang-monastery-arunachal",
+  "name": "Tawang Monastery (Galden Namgey Lhatse)",
+  "wikidata_id": "Q1740316",
+  "wiki_title": "Tawang_Monastery",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Arunachal Pradesh",
+  "city": "Tawang",
+  "lat": 27.5861,
+  "lng": 91.8594,
+  "price_amount": 20,
+  "price_currency": "INR",
+  "price_unit": "museum entry fee",
+  "price_source": "https://tawang.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "7:00 AM - 5:00 PM daily · Morning prayer chanting at 7:00 AM",
+  "best_time": "March to October (Torgya festival in January)",
+  "rules": [
+    "Inner Line Permit (ILP) required for all domestic Indian tourists entering Arunachal Pradesh",
+    "Second largest Tibetan Buddhist monastery in the world after Lhasa Potala Palace"
+  ],
+  "tags": [
+    "Largest Monastery in India",
+    "10,000 ft Mountain Ridge",
+    "Colossal Golden Buddha Statue",
+    "Birthplace of 6th Dalai Lama"
+  ],
+  "visual_features": "fortress-like whitewashed Tibetan monastery with golden roofs perched majestically at 10,000 feet on a mountain ridge overlooking snow peaks",
+  "description": "Tawang Monastery is a Buddhist monastery located in Tawang, Arunachal Pradesh, India. It is the largest Buddhist monastery in the country. It is situated in the valley of the Tawang Chu, in close proximity to the Chinese and Bhutanese border.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/TawangMonastery.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/TawangMonastery.jpg/330px-TawangMonastery.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 1024,
+    "height": 664,
+    "sha256": "814d4b56fff027ec5714d1b93c2368738073cd04f5c961783efef9f617826944",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/TawangMonastery.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/TawangMonastery.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/TawangMonastery.jpg/330px-TawangMonastery.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 1024,
+      "height": 664,
+      "sha256": "814d4b56fff027ec5714d1b93c2368738073cd04f5c961783efef9f617826944",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

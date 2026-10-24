@@ -1,0 +1,60 @@
+{
+  "id": "gandikota-grand-canyon",
+  "name": "Gandikota Fort & Pennar River Gorge",
+  "wikidata_id": "Q5520638",
+  "wiki_title": "Gandikota",
+  "type": "attraction",
+  "category": "Natural Wonder & Fort",
+  "state": "Andhra Pradesh",
+  "city": "Gandikota (Kadapa)",
+  "lat": 14.8153,
+  "lng": 78.2867,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free fort and gorge access",
+  "price_source": "https://tourism.ap.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Fort open sunrise to sunset · Gorge viewpoints accessible all hours",
+  "best_time": "October to February (camping and sunrise over the canyon)",
+  "rules": [
+    "Gorge cliffs have sheer vertical drops without guard rails: maintain safe distance from edge",
+    "Carry sufficient drinking water"
+  ],
+  "tags": [
+    "Grand Canyon of India",
+    "Pennar River Gorge",
+    "Red Granite Cliffs",
+    "Historic Fort"
+  ],
+  "visual_features": "majestic red granite canyon carved deep by the emerald Pennar river with ancient fort ramparts, Madhavaraya temple, and Jama Masjid perched on edge",
+  "description": "Gandikota is a village and historical fort on the right bank of the Penna river, 15 km from Jammalamadugu in Kadapa district, Andhra Pradesh, India. The fort was the centre of power for various dynasties, such as the Kalyani Chalukyas, Pemmasani Nayakas, and the Golconda Sultanate. Initially, a sand fort was constructed by Kaka Raja, a vassal of the Kalyani Chalukya rulers. The village transformed into a major fortified settlement with the rise of the Pemmasani Nayakas. Later, various additions reflecting Islamic architectural styles were made during the period of Muslim rule. The fort is a centrally protected monument of Archaeological Survey of India (ASI).",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Indian_Grand_Canyon_Sudhakar_Bichali.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Indian_Grand_Canyon_Sudhakar_Bichali.jpg/330px-Indian_Grand_Canyon_Sudhakar_Bichali.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 1920,
+    "height": 1068,
+    "sha256": "2a97d3b9c70b99682f3b7007dcbddd6b33b89ff553697b23de1be2242547cbe2",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Indian_Grand_Canyon_Sudhakar_Bichali.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Indian_Grand_Canyon_Sudhakar_Bichali.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Indian_Grand_Canyon_Sudhakar_Bichali.jpg/330px-Indian_Grand_Canyon_Sudhakar_Bichali.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 1920,
+      "height": 1068,
+      "sha256": "2a97d3b9c70b99682f3b7007dcbddd6b33b89ff553697b23de1be2242547cbe2",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

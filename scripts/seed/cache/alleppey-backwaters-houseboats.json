@@ -1,0 +1,60 @@
+{
+  "id": "alleppey-backwaters-houseboats",
+  "name": "Alleppey Backwaters & Vembanad Lake",
+  "wikidata_id": "Q1847141",
+  "wiki_title": "Alappuzha",
+  "type": "attraction",
+  "category": "Backwaters & Cruises",
+  "state": "Kerala",
+  "city": "Alappuzha (Alleppey)",
+  "lat": 9.4981,
+  "lng": 76.3388,
+  "price_amount": 8500,
+  "price_currency": "INR",
+  "price_unit": "traditional Kettuvallam houseboat overnight cruise for two approx",
+  "price_source": "https://keralatourism.org",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Houseboats cruise 12:00 PM - 5:30 PM, anchor overnight at village canals (re-start 8:00 AM)",
+  "best_time": "September to March (cooler weather, Nehru Trophy Boat Race in August)",
+  "rules": [
+    "Book certified Kerala Tourism approved green-palm houseboats",
+    "Night cruising banned after 5:30 PM to protect fishermen nets"
+  ],
+  "tags": [
+    "Venice of the East",
+    "Kettuvallam Houseboat",
+    "Coconut Palms",
+    "Vembanad Lake"
+  ],
+  "visual_features": "thatched woven coir bamboo houseboat sailing smoothly through tranquil palm-fringed emerald lagoons and paddy fields",
+  "description": "Alappuzha or Alleppey is a city and municipality on the Laccadive Sea in the southern Indian state of Kerala. It is the headquarters of Alappuzha district, located about 62 km (39 mi) south of the commercial city of Kochi and 152 km (94.4 mi) northwest of the state capital Thiruvananthapuram. As per the 2011 Indian census, Alappuzha has a population of 240,991 people, and a population density of 3,675/km2 (9,520/sq mi).",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Alappuzha_Boat_Beauty_W.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Alappuzha_Boat_Beauty_W.jpg/330px-Alappuzha_Boat_Beauty_W.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 2500,
+    "height": 1656,
+    "sha256": "fff507d777e28a95b2f70062b49b98387c27797bf97a4a0ba129107f988cba0b",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Alappuzha_Boat_Beauty_W.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Alappuzha_Boat_Beauty_W.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Alappuzha_Boat_Beauty_W.jpg/330px-Alappuzha_Boat_Beauty_W.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 2500,
+      "height": 1656,
+      "sha256": "fff507d777e28a95b2f70062b49b98387c27797bf97a4a0ba129107f988cba0b",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

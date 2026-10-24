@@ -1,0 +1,60 @@
+{
+  "id": "sher-shah-suri-tomb-sasaram",
+  "name": "Tomb of Sher Shah Suri",
+  "wikidata_id": "Q807217",
+  "wiki_title": "Tomb_of_Sher_Shah_Suri",
+  "type": "attraction",
+  "category": "Heritage Monument",
+  "state": "Bihar",
+  "city": "Sasaram (Rohtas)",
+  "lat": 24.9536,
+  "lng": 84.015,
+  "price_amount": 25,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:00 AM - 6:00 PM daily",
+  "best_time": "October to March",
+  "rules": [
+    "Walk along the stone stepped bridge connecting lake shore to the island tomb",
+    "Preserve ancient Indo-Islamic stonework"
+  ],
+  "tags": [
+    "Second Taj of India",
+    "Indo-Islamic Architecture",
+    "Grand Water Lake",
+    "Grand Trunk Road Builder"
+  ],
+  "visual_features": "colossal octagonal red sandstone mausoleum rising 122 feet from the center of a square artificial lake connected by a causeway bridge",
+  "description": "The Tomb of Sher Shah Suri is a mausoleum located in Sasaram, in the Indian state of Bihar. Sher Shah Suri, who was the founder of the Sur Empire, commissioned the tomb for himself. It was completed on 16 August 1545, about three months after his death.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Sher_Shah_Suri_Tomb.jpg/3840px-Sher_Shah_Suri_Tomb.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Sher_Shah_Suri_Tomb.jpg/330px-Sher_Shah_Suri_Tomb.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4608,
+    "height": 3072,
+    "sha256": "262e1ef365b5f5382508967bba97aa33169332bb26c5b1f62ce1df8b770ced94",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Sher_Shah_Suri_Tomb.jpg/3840px-Sher_Shah_Suri_Tomb.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Sher_Shah_Suri_Tomb.jpg/3840px-Sher_Shah_Suri_Tomb.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Sher_Shah_Suri_Tomb.jpg/330px-Sher_Shah_Suri_Tomb.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4608,
+      "height": 3072,
+      "sha256": "262e1ef365b5f5382508967bba97aa33169332bb26c5b1f62ce1df8b770ced94",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

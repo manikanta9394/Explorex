@@ -1,0 +1,60 @@
+{
+  "id": "jallianwala-bagh",
+  "name": "Jallianwala Bagh Memorial",
+  "wikidata_id": "Q73458",
+  "wiki_title": "Jallianwala_Bagh",
+  "type": "attraction",
+  "category": "Historic Monument",
+  "state": "Punjab",
+  "city": "Amritsar",
+  "lat": 31.6206,
+  "lng": 74.8801,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free entry",
+  "price_source": "https://punjabtourism.punjab.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:30 AM - 7:30 PM daily",
+  "best_time": "October to March",
+  "rules": [
+    "Maintain respectful silence near the Martyrs Well and bullet mark memorial walls",
+    "Littering strictly prohibited"
+  ],
+  "tags": [
+    "Freedom Movement",
+    "National Memorial",
+    "Heritage",
+    "Amritsar"
+  ],
+  "visual_features": "flame-shaped red stone memorial pillar, preserved bullet-marked brick walls, and memorial well",
+  "description": "Jallianwala Bagh is a historic garden and memorial of national importance close to the Golden Temple complex in Amritsar, Punjab, India, preserved in the memory of those wounded and killed in the Jallianwala Bagh Massacre that took place on the site on the festival of Baisakhi Day, 13 April 1919. The 7-acre (28,000 m2) site houses a museum, gallery and several memorial structures. It is managed by the Jallianwala Bagh National Memorial Trust, and will be renovated between 2025 and 2027.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Jallianwala_Bagh%2C_Amritsar_01.jpg/3840px-Jallianwala_Bagh%2C_Amritsar_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Jallianwala_Bagh%2C_Amritsar_01.jpg/330px-Jallianwala_Bagh%2C_Amritsar_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4486,
+    "height": 2991,
+    "sha256": "ad836f2ab4bc76abef8b9ba7648743cade9e82aba6e4710520cc5faafbcbef23",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Jallianwala_Bagh%2C_Amritsar_01.jpg/3840px-Jallianwala_Bagh%2C_Amritsar_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Jallianwala_Bagh%2C_Amritsar_01.jpg/3840px-Jallianwala_Bagh%2C_Amritsar_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Jallianwala_Bagh%2C_Amritsar_01.jpg/330px-Jallianwala_Bagh%2C_Amritsar_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4486,
+      "height": 2991,
+      "sha256": "ad836f2ab4bc76abef8b9ba7648743cade9e82aba6e4710520cc5faafbcbef23",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

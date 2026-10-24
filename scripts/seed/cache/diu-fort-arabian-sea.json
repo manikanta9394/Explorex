@@ -1,0 +1,60 @@
+{
+  "id": "diu-fort-arabian-sea",
+  "name": "Diu Fort & Naida Caves",
+  "wikidata_id": "Q5283624",
+  "wiki_title": "Diu_Fort",
+  "type": "attraction",
+  "category": "Heritage Fort",
+  "state": "Dadra and Nagar Haveli and Daman and Diu",
+  "city": "Diu",
+  "lat": 20.7139,
+  "lng": 70.9972,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free fort access",
+  "price_source": "https://diutourism.co.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "8:00 AM - 6:00 PM daily",
+  "best_time": "October to April",
+  "rules": [
+    "Walk along the sea-facing ramparts lined with historic bronze cannons",
+    "Explore the adjacent mystical labyrinthine Naida limestone caves"
+  ],
+  "tags": [
+    "Portuguese Coastal Citadel",
+    "Sea Ramparts",
+    "Lighthouse View",
+    "Naida Caves"
+  ],
+  "visual_features": "colossal stone sea fortress surrounded on three sides by ocean waves with historic Portuguese cannons pointing across the Gulf of Khambhat",
+  "description": "The Diu Fortress is a Portuguese-built fortification located on the west coast of India in Diu. The fortress was built as part of Portuguese India's defensive fortifications at the eastern tip of the island of Diu during the 16th century. The fortress, which borders on the town of Diu, was built in 1535 subsequent to a defense alliance forged by Bahadur Shah, the Sultan of Gujarat and the Portuguese when Humayun, the Mughal Emperor attempted to annex this territory. It was strengthened over the years, till 1546. The Portuguese ruled over this territory from 1537 until the Indian invasion of December 1961. Today it is a landmark of Diu and one of the Seven Wonders of Portuguese Origin in the World.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Diu%2CGujarat%2CIndia_%2837%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Diu%2CGujarat%2CIndia_%2837%29.jpg/330px-Diu%2CGujarat%2CIndia_%2837%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 800,
+    "height": 1200,
+    "sha256": "72ba69f25377bf911a1b94049d18585446dd0b772b8bcca5d06a69fc48548b8e",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Diu%2CGujarat%2CIndia_%2837%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Diu%2CGujarat%2CIndia_%2837%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Diu%2CGujarat%2CIndia_%2837%29.jpg/330px-Diu%2CGujarat%2CIndia_%2837%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 800,
+      "height": 1200,
+      "sha256": "72ba69f25377bf911a1b94049d18585446dd0b772b8bcca5d06a69fc48548b8e",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "the-taj-mahal-palace-mumbai",
+  "name": "The Taj Mahal Palace Mumbai",
+  "wikidata_id": "Q7741527",
+  "wiki_title": "The_Taj_Mahal_Palace_Hotel",
+  "type": "stay",
+  "category": "Luxury Heritage Stay",
+  "state": "Maharashtra",
+  "city": "Mumbai",
+  "lat": 18.9217,
+  "lng": 72.8333,
+  "price_amount": 22000,
+  "price_currency": "INR",
+  "price_unit": "per night",
+  "price_source": "https://tajhotels.com",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "24-hour luxury hospitality · Afternoon Tea served at Sea Lounge",
+  "best_time": "October to April",
+  "rules": [
+    "Smart casual dress code in lobby and dining lounges",
+    "Government photo identification mandatory at check-in"
+  ],
+  "tags": [
+    "Flagship Heritage Hotel",
+    "Since 1903",
+    "Florentine Dome",
+    "Sea Lounge High Tea"
+  ],
+  "visual_features": "majestic red-domed Victorian and Moorish heritage waterfront palace hotel overlooking the Gateway of India and the Arabian Sea",
+  "description": "The Taj Mahal Palace is a heritage, five-star, luxury hotel in the Colaba area of Mumbai, Maharashtra, India, situated next to the Gateway of India. Built in the Indo-Saracenic style, it opened in 1903 as the Taj Mahal Hotel, and has historically often been known simply as \"The Taj\". The hotel is named after the Taj Mahal, which is located in the city of Agra, approximately 1,050 kilometres (650 mi) from Mumbai. It has been considered one of the finest hotels in the East since the time of the British Raj. It is currently owned and managed by the Indian Hotels Company Limited (IHCL), a Tata Group company. The hotel was one of the main targets in the 2008 Mumbai attacks.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Taj_Mahal_Palace_Hotel_photo.jpg/3840px-Taj_Mahal_Palace_Hotel_photo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Taj_Mahal_Palace_Hotel_photo.jpg/330px-Taj_Mahal_Palace_Hotel_photo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4624,
+    "height": 2565,
+    "sha256": "79291100352e6ccf8e146ced7005b30f0f10cd9f1c8c40d95e87215a0544a376",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Taj_Mahal_Palace_Hotel_photo.jpg/3840px-Taj_Mahal_Palace_Hotel_photo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Taj_Mahal_Palace_Hotel_photo.jpg/3840px-Taj_Mahal_Palace_Hotel_photo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Taj_Mahal_Palace_Hotel_photo.jpg/330px-Taj_Mahal_Palace_Hotel_photo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4624,
+      "height": 2565,
+      "sha256": "79291100352e6ccf8e146ced7005b30f0f10cd9f1c8c40d95e87215a0544a376",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

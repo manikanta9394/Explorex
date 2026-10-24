@@ -1,0 +1,60 @@
+{
+  "id": "gol-gumbaz-bijapur",
+  "name": "Gol Gumbaz & Whispering Gallery",
+  "wikidata_id": "Q889125",
+  "wiki_title": "Gol_Gumbaz",
+  "type": "attraction",
+  "category": "Heritage Monument",
+  "state": "Karnataka",
+  "city": "Vijayapura (Bijapur)",
+  "lat": 16.83,
+  "lng": 75.736,
+  "price_amount": 25,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:00 AM - 6:00 PM daily",
+  "best_time": "October to March",
+  "rules": [
+    "Whispering gallery acoustic phenomenon: faint whispers echo 11 times across the 44-meter circular dome",
+    "Step carefully on narrow gallery stairs"
+  ],
+  "tags": [
+    "Deccan Sultanate",
+    "Acoustic Whispering Gallery",
+    "Second Largest Dome in World",
+    "Adil Shahi"
+  ],
+  "visual_features": "massive grey basalt square mausoleum crowned by an immense unsupported circular dome and four octagonal seven-story corner minarets",
+  "description": "The Gol Gumbaz, also written as Gol Gumbad, is a dark gray basalt mausoleum located in the city of Bijapur in northern Karnataka, India. It contains the tomb of Mohammad Adil Shah, the seventh ruler of the Sultanate of Bijapur, alongside the tombs of his two wives, mistress, daughter and grandson. Construction of the monument began in the early 17th century following Adil Shah's ascension to the throne, and halted in 1656 after his death; at the time, the structure was not yet fully complete, with several decorative elements remaining unfinished. The mausoleum is a prominent example of Indo-Islamic architecture in the Deccan region, and combines elements of Persian, Mughal, and local architectural styles.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Gol_Gumbaz_-4%2C_Bijapur%2C_Karnataka.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Gol_Gumbaz_-4%2C_Bijapur%2C_Karnataka.jpg/330px-Gol_Gumbaz_-4%2C_Bijapur%2C_Karnataka.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 2048,
+    "height": 1333,
+    "sha256": "bc7c93c84f2cdb41fe822eac0ba4c27ae5311d24272183911fdf5b9520844f5b",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Gol_Gumbaz_-4%2C_Bijapur%2C_Karnataka.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Gol_Gumbaz_-4%2C_Bijapur%2C_Karnataka.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Gol_Gumbaz_-4%2C_Bijapur%2C_Karnataka.jpg/330px-Gol_Gumbaz_-4%2C_Bijapur%2C_Karnataka.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 2048,
+      "height": 1333,
+      "sha256": "bc7c93c84f2cdb41fe822eac0ba4c27ae5311d24272183911fdf5b9520844f5b",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

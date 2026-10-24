@@ -1,0 +1,60 @@
+{
+  "id": "hussain-sagar-buddha",
+  "name": "Hussain Sagar Lake & Monolithic Buddha",
+  "wikidata_id": "Q3247076",
+  "wiki_title": "Hussain_Sagar",
+  "type": "attraction",
+  "category": "Lake & Monument",
+  "state": "Telangana",
+  "city": "Hyderabad",
+  "lat": 17.4239,
+  "lng": 78.4738,
+  "price_amount": 80,
+  "price_currency": "INR",
+  "price_unit": "ferry boat roundtrip to Gibraltar Rock",
+  "price_source": "https://telanganatourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "8:00 AM - 10:00 PM daily",
+  "best_time": "October to March (evening boat ride and musical fountain show)",
+  "rules": [
+    "Wear life-jackets on boat transit across lake",
+    "Necklace Road promenade accessible 24 hours"
+  ],
+  "tags": [
+    "Heart-shaped Lake",
+    "World Tallest Monolithic Buddha",
+    "Necklace Road",
+    "Ferry Ride"
+  ],
+  "visual_features": "colossal 58-foot white granite monolithic statue of Gautama Buddha standing in blessing posture on an island rock in the heart of Hyderabad",
+  "description": "Hussain Sagar is a heart-shaped lake in Hyderabad, Telangana, India, built by Ibrahim Quli Qutb Shah in 1562. It is spread across an area of 5.7 square kilometres (2.2 sq mi) and is fed by the River Musi. A large monolithic statue of the Gautama Buddha, erected in 1992, stands on Gibraltar Rock in the middle of the lake. The lake separates the city centre of Hyderabad from the neighbourhood of Secunderabad. The maximum depth of the lake is 32 feet (9.8 m).",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Aerial_view_of_Hussain_Sagar_from_Bansalipet.jpg/3840px-Aerial_view_of_Hussain_Sagar_from_Bansalipet.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Aerial_view_of_Hussain_Sagar_from_Bansalipet.jpg/330px-Aerial_view_of_Hussain_Sagar_from_Bansalipet.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 6000,
+    "height": 3375,
+    "sha256": "87923d4828d34ddfbbded92640efe0bfe0a1d52eb8ed9ee583f2314dcdf955ad",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Aerial_view_of_Hussain_Sagar_from_Bansalipet.jpg/3840px-Aerial_view_of_Hussain_Sagar_from_Bansalipet.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Aerial_view_of_Hussain_Sagar_from_Bansalipet.jpg/3840px-Aerial_view_of_Hussain_Sagar_from_Bansalipet.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Aerial_view_of_Hussain_Sagar_from_Bansalipet.jpg/330px-Aerial_view_of_Hussain_Sagar_from_Bansalipet.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 6000,
+      "height": 3375,
+      "sha256": "87923d4828d34ddfbbded92640efe0bfe0a1d52eb8ed9ee583f2314dcdf955ad",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

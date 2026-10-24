@@ -1,0 +1,60 @@
+{
+  "id": "mcleodganj-tsuglagkhang",
+  "name": "Tsuglagkhang Complex (Dalai Lama Temple)",
+  "wikidata_id": "Q889025",
+  "wiki_title": "Namgyal_Monastery",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Himachal Pradesh",
+  "city": "Dharamshala (McLeod Ganj)",
+  "lat": 32.2343,
+  "lng": 76.3262,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free entry",
+  "price_source": "https://tibet.net",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "5:00 AM - 8:00 PM daily",
+  "best_time": "September to May",
+  "rules": [
+    "Security screening at gate; electronic devices allowed in outer areas",
+    "Rotate prayer wheels clockwise around the temple kora path"
+  ],
+  "tags": [
+    "Tibetan Heritage",
+    "Dalai Lama Residence",
+    "Dhauladhar Mountains",
+    "Meditation"
+  ],
+  "visual_features": "peaceful monastic complex with prayer wheels, golden Buddha statue, and panoramic views of the Dhauladhar range",
+  "description": "Namgyal Monastery is located in Mcleod Ganj, Dharamsala, India. It is the personal monastery of the 14th Dalai Lama. Another name for this temple-complex is Namgyal Tantric College.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Namgyal_Monastery_India_Himachal_Pradesh_Mc_Leod_Ganj.jpg/3840px-Namgyal_Monastery_India_Himachal_Pradesh_Mc_Leod_Ganj.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Namgyal_Monastery_India_Himachal_Pradesh_Mc_Leod_Ganj.jpg/330px-Namgyal_Monastery_India_Himachal_Pradesh_Mc_Leod_Ganj.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4000,
+    "height": 3000,
+    "sha256": "8c501105f5ff93a1d96345fe87f9e1223150e0bf65c11ca1369f9e164fd83896",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Namgyal_Monastery_India_Himachal_Pradesh_Mc_Leod_Ganj.jpg/3840px-Namgyal_Monastery_India_Himachal_Pradesh_Mc_Leod_Ganj.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Namgyal_Monastery_India_Himachal_Pradesh_Mc_Leod_Ganj.jpg/3840px-Namgyal_Monastery_India_Himachal_Pradesh_Mc_Leod_Ganj.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Namgyal_Monastery_India_Himachal_Pradesh_Mc_Leod_Ganj.jpg/330px-Namgyal_Monastery_India_Himachal_Pradesh_Mc_Leod_Ganj.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4000,
+      "height": 3000,
+      "sha256": "8c501105f5ff93a1d96345fe87f9e1223150e0bf65c11ca1369f9e164fd83896",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

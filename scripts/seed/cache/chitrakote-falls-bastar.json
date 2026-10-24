@@ -1,0 +1,60 @@
+{
+  "id": "chitrakote-falls-bastar",
+  "name": "Chitrakote Waterfalls (Niagara of India)",
+  "wikidata_id": "Q1263721",
+  "wiki_title": "Chitrakote_Falls",
+  "type": "attraction",
+  "category": "Nature & Waterfall",
+  "state": "Chhattisgarh",
+  "city": "Jagdalpur (Bastar)",
+  "lat": 19.2017,
+  "lng": 81.7061,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free scenic viewing (Local boat ride to mist base ₹100)",
+  "price_source": "https://chhattisgarhtourism.co.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Sunrise to Sunset daily (Floodlights illuminate the cascade at night)",
+  "best_time": "July to October (monsoon peak where the waterfall spans nearly 1,000 feet wide)",
+  "rules": [
+    "Widest waterfall in India (horseshoe shape)",
+    "Boating to the thunderous spray base available in wooden country boats with life-jackets"
+  ],
+  "tags": [
+    "Horseshoe Waterfall",
+    "Indravati River",
+    "Bastar Heartlands",
+    "Widest Falls in India"
+  ],
+  "visual_features": "monumental 980-foot wide horseshoe-shaped waterfall roaring over a 95-foot vertical sandstone cliff on the Indravati river amidst lush sal jungles",
+  "description": "The Chitrakote Falls is a natural waterfall on the Indravati River, located approximately 38 kilometres (24 mi) to the west of Jagdalpur, in Bastar district in the Indian state of Chhattisgarh.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Chitrakot_waterfalls.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Chitrakot_waterfalls.JPG/330px-Chitrakot_waterfalls.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 2048,
+    "height": 1536,
+    "sha256": "721775ffee7c6f35594e84c83035592ce61efb4cf12d6030bbbaa17d3653f5d6",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Chitrakot_waterfalls.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Chitrakot_waterfalls.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Chitrakot_waterfalls.JPG/330px-Chitrakot_waterfalls.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 2048,
+      "height": 1536,
+      "sha256": "721775ffee7c6f35594e84c83035592ce61efb4cf12d6030bbbaa17d3653f5d6",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

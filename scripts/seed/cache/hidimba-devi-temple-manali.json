@@ -1,0 +1,60 @@
+{
+  "id": "hidimba-devi-temple-manali",
+  "name": "Hidimba Devi Temple Manali",
+  "wikidata_id": "Q3635738",
+  "wiki_title": "Hidimba_Devi_Temple",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Himachal Pradesh",
+  "city": "Manali",
+  "lat": 32.2483,
+  "lng": 77.1812,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free entry",
+  "price_source": "https://himachaltourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "8:00 AM - 6:00 PM daily",
+  "best_time": "Year-round (snow-draped in winter, lush pine scent in summer)",
+  "rules": [
+    "Sacred wooden sanctum built over an ancient rock cave",
+    "Keep steps clean in deodar forest sanctuary"
+  ],
+  "tags": [
+    "Pagoda Temple",
+    "Deodar Forest",
+    "Dhungri Van Vihar",
+    "Heritage"
+  ],
+  "visual_features": "four-tiered timber pagoda style temple with intricately carved wooden door frames nestled within towering deodar pine woods",
+  "description": "Hidimba Devi Temple, locally known as Dhungari Temple, also known variously as the Hadimba Temple, is a Hindu Temple, located in Manāli, a hill station in the State of Himāchal Pradesh in north India. It is an ancient cave temple dedicated to Hidimbi Devi, wife of Bhima, a figure in the Indian epic Mahābhārata. The temple is surrounded by a cedar forest called Dhungiri Van Vihar at the foot of the Himālayas. The sanctuary is built over a huge rock jutting out of the ground which was worshiped as an image of the deity. The structure was built in 1553 by Maharaja Bahadur Singh.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Hidimba_Devi_Temple_-_North-east_View_-_Manali_2014-05-11_2648-2649.TIF/lossy-page1-3840px-Hidimba_Devi_Temple_-_North-east_View_-_Manali_2014-05-11_2648-2649.TIF.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Hidimba_Devi_Temple_-_North-east_View_-_Manali_2014-05-11_2648-2649.TIF/lossy-page1-330px-Hidimba_Devi_Temple_-_North-east_View_-_Manali_2014-05-11_2648-2649.TIF.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 6995,
+    "height": 5965,
+    "sha256": "c71696042f36f28c41ebfa37440e78ffdaac41e3f9eb2ccf24e5d66e73b07c60",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Hidimba_Devi_Temple_-_North-east_View_-_Manali_2014-05-11_2648-2649.TIF/lossy-page1-3840px-Hidimba_Devi_Temple_-_North-east_View_-_Manali_2014-05-11_2648-2649.TIF.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Hidimba_Devi_Temple_-_North-east_View_-_Manali_2014-05-11_2648-2649.TIF/lossy-page1-3840px-Hidimba_Devi_Temple_-_North-east_View_-_Manali_2014-05-11_2648-2649.TIF.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Hidimba_Devi_Temple_-_North-east_View_-_Manali_2014-05-11_2648-2649.TIF/lossy-page1-330px-Hidimba_Devi_Temple_-_North-east_View_-_Manali_2014-05-11_2648-2649.TIF.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 6995,
+      "height": 5965,
+      "sha256": "c71696042f36f28c41ebfa37440e78ffdaac41e3f9eb2ccf24e5d66e73b07c60",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

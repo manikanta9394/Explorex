@@ -1,0 +1,60 @@
+{
+  "id": "dal-lake-srinagar",
+  "name": "Dal Lake & Shikara Rides",
+  "wikidata_id": "Q1157973",
+  "wiki_title": "Dal_Lake",
+  "type": "attraction",
+  "category": "Lake & Culture",
+  "state": "Jammu and Kashmir",
+  "city": "Srinagar",
+  "lat": 34.1167,
+  "lng": 74.8667,
+  "price_amount": 800,
+  "price_currency": "INR",
+  "price_unit": "per hour Shikara boat ride regulated rate",
+  "price_source": "https://jktourism.jk.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Sunrise to late evening · Early morning floating vegetable market at 5:30 AM",
+  "best_time": "April to October (chinar autumn in October, lotus bloom in July)",
+  "rules": [
+    "Negotiate or book government fixed-rate Shikara stands at Boulevard Road Ghats",
+    "Wear life-jackets provided on shikaras"
+  ],
+  "tags": [
+    "Shikara Boat",
+    "Houseboats",
+    "Floating Market",
+    "Kashmir Valley"
+  ],
+  "visual_features": "carved wooden shikara boat gliding across serene mirrored lake with floating lotus blossoms and houseboats against mountain backdrop",
+  "description": "Dal is a freshwater lake in Srinagar, the summer capital of Jammu and Kashmir in Indian-administered Kashmir. It is an urban lake, the second largest lake in Jammu and Kashmir, and the most visited place in Srinagar by tourists and locals. It is integral to tourism and recreation in the Kashmir Valley and is variously known as the \"Lake of Flowers\", \"Jewel in the crown of Kashmir\" or \"Srinagar's Jewel\". The lake is also an important source for commercial operations in fishing and water plant harvesting.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Dal_Lake_Hazratbal_Srinagar.jpg/3840px-Dal_Lake_Hazratbal_Srinagar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Dal_Lake_Hazratbal_Srinagar.jpg/330px-Dal_Lake_Hazratbal_Srinagar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 5727,
+    "height": 3818,
+    "sha256": "305cdac945029413a18b97045aac45c0960d3bdee88ea90575f29597c545732b",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Dal_Lake_Hazratbal_Srinagar.jpg/3840px-Dal_Lake_Hazratbal_Srinagar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Dal_Lake_Hazratbal_Srinagar.jpg/3840px-Dal_Lake_Hazratbal_Srinagar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Dal_Lake_Hazratbal_Srinagar.jpg/330px-Dal_Lake_Hazratbal_Srinagar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 5727,
+      "height": 3818,
+      "sha256": "305cdac945029413a18b97045aac45c0960d3bdee88ea90575f29597c545732b",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

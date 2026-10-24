@@ -1,0 +1,60 @@
+{
+  "id": "csmt-railway-terminus-mumbai",
+  "name": "Chhatrapati Shivaji Maharaj Terminus (CSMT)",
+  "wikidata_id": "Q235884",
+  "wiki_title": "Chhatrapati_Shivaji_Terminus",
+  "type": "attraction",
+  "category": "Heritage Landmark",
+  "state": "Maharashtra",
+  "city": "Mumbai",
+  "lat": 18.94,
+  "lng": 72.8353,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free station concourse access",
+  "price_source": "https://cr.indianrailways.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Station operational 24 hours · Heritage Museum tour 2:00 PM - 5:00 PM (weekdays)",
+  "best_time": "Evening (illuminated in dynamic multicolored LED lighting)",
+  "rules": [
+    "Valid railway platform ticket required to enter boarding platforms",
+    "Pedestrian viewing gallery on opposite road intersection for facade photography"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "Victorian Gothic Revival",
+    "F.W. Stevens Architecture",
+    "Mumbai Icon"
+  ],
+  "visual_features": "monumental Victorian Gothic revival railway headquarters with central octagonal ribbed dome topped by colossal statue of Progress",
+  "description": "Chhatrapati Shivaji Terminus (CST), officially Chhatrapati Shivaji Maharaj Terminus (CSMT) and also known as Victoria Terminus (VT), is a historic railway terminus and UNESCO World Heritage Site in Mumbai (Bombay), Maharashtra, India.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Chhatrapati_shivaji_terminus%2C_esterno_01.jpg/3840px-Chhatrapati_shivaji_terminus%2C_esterno_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Chhatrapati_shivaji_terminus%2C_esterno_01.jpg/330px-Chhatrapati_shivaji_terminus%2C_esterno_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4624,
+    "height": 3032,
+    "sha256": "59ba212ff04f177541294c1000788e8e978c213bceff63ac6dec3da10d8cae2c",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Chhatrapati_shivaji_terminus%2C_esterno_01.jpg/3840px-Chhatrapati_shivaji_terminus%2C_esterno_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Chhatrapati_shivaji_terminus%2C_esterno_01.jpg/3840px-Chhatrapati_shivaji_terminus%2C_esterno_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Chhatrapati_shivaji_terminus%2C_esterno_01.jpg/330px-Chhatrapati_shivaji_terminus%2C_esterno_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4624,
+      "height": 3032,
+      "sha256": "59ba212ff04f177541294c1000788e8e978c213bceff63ac6dec3da10d8cae2c",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

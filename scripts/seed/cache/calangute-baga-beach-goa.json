@@ -1,0 +1,60 @@
+{
+  "id": "calangute-baga-beach-goa",
+  "name": "Calangute & Baga Beach Promenade",
+  "wikidata_id": "Q3181412",
+  "wiki_title": "Calangute",
+  "type": "attraction",
+  "category": "Coastal & Beach",
+  "state": "Goa",
+  "city": "Calangute / Baga",
+  "lat": 15.5439,
+  "lng": 73.7553,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free public beach",
+  "price_source": "https://goatourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Beach open 24 hours · Watersports 9:00 AM - 5:30 PM",
+  "best_time": "November to March",
+  "rules": [
+    "Engage only in government registered watersports operators (parasailing, jet-skiing)",
+    "Red warning flags indicate dangerous swimming conditions"
+  ],
+  "tags": [
+    "Queen of Beaches",
+    "Beach Shacks",
+    "Parasailing",
+    "Baga Creek"
+  ],
+  "visual_features": "expansive crescent of golden sand beach lined with vibrant beach shacks, colorful parasols, and gentle Arabian Sea waves",
+  "description": "Calangute is a town in the North Goa district of the Indian state of Goa. It is famous for its beach, the largest in North Goa and a popular tourist destination. The peak tourist season is during Christmas and New Year, and during the summer in May.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Sunset_at_Calangute.jpg/3840px-Sunset_at_Calangute.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Sunset_at_Calangute.jpg/330px-Sunset_at_Calangute.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4000,
+    "height": 3000,
+    "sha256": "dbef9b6e6ca123aaf95756c61998b68bb2434a3187e5767c88fc80664aa036d7",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Sunset_at_Calangute.jpg/3840px-Sunset_at_Calangute.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Sunset_at_Calangute.jpg/3840px-Sunset_at_Calangute.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Sunset_at_Calangute.jpg/330px-Sunset_at_Calangute.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4000,
+      "height": 3000,
+      "sha256": "dbef9b6e6ca123aaf95756c61998b68bb2434a3187e5767c88fc80664aa036d7",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

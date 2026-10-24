@@ -1,0 +1,61 @@
+{
+  "id": "golden-temple-amritsar",
+  "name": "Golden Temple (Harmandir Sahib)",
+  "wikidata_id": "Q180422",
+  "wiki_title": "Golden_Temple",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Punjab",
+  "city": "Amritsar",
+  "lat": 31.62,
+  "lng": 74.8765,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free entry for all",
+  "price_source": "https://sgpc.net",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Open 24 hours daily · Langar meal served continuously",
+  "best_time": "October to March (early morning Palki Sahib ceremony or evening illumination)",
+  "rules": [
+    "Head must be covered at all times (scarves available at entrances)",
+    "Shoes removed and feet washed in holy water channel before entry",
+    "Tobacco and alcohol strictly prohibited on complex perimeter"
+  ],
+  "tags": [
+    "Sikh Holy Shrine",
+    "Langar",
+    "Amrit Sarovar",
+    "Spiritual Sanctuary"
+  ],
+  "visual_features": "gilded gold sanctum standing in the center of the illuminated Amrit Sarovar sacred pool connected by a marble bridge",
+  "description": "The Golden Temple is a gurdwara located in Amritsar, Punjab, India. It is the pre-eminent spiritual site of Sikhism and its holiest site. The gurdwara complex is a collection of buildings around the sanctum sanctorum and the sarovar, known as the Amrit Sarovar. One of these is Akal Takht, part of the Panj Takht and the chief centre of religious authority of Sikhism. Additional buildings include a clock tower, the offices of the Shiromani Gurdwara Parbandhak Committee, a museum and a langar—a free Sikh community-run kitchen that offers a vegetarian meal to all visitors without discrimination. Over 150,000 people visit the shrine every day for worship, being one of the most visited religious sites in the world. The gurdwara complex has been nominated as a UNESCO World Heritage Site, and its application is pending on the tentative list of UNESCO.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/The_Golden_Temple_of_Amrithsar_7.jpg/3840px-The_Golden_Temple_of_Amrithsar_7.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/The_Golden_Temple_of_Amrithsar_7.jpg/330px-The_Golden_Temple_of_Amrithsar_7.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4176,
+    "height": 2784,
+    "sha256": "c65b136d8d1fd89f6315a04059d48cf6ea10cbe4b7fa3e69d148cba73ea833e6",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/The_Golden_Temple_of_Amrithsar_7.jpg/3840px-The_Golden_Temple_of_Amrithsar_7.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/The_Golden_Temple_of_Amrithsar_7.jpg/3840px-The_Golden_Temple_of_Amrithsar_7.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/The_Golden_Temple_of_Amrithsar_7.jpg/330px-The_Golden_Temple_of_Amrithsar_7.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4176,
+      "height": 2784,
+      "sha256": "c65b136d8d1fd89f6315a04059d48cf6ea10cbe4b7fa3e69d148cba73ea833e6",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

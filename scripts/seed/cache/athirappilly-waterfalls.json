@@ -1,0 +1,60 @@
+{
+  "id": "athirappilly-waterfalls",
+  "name": "Athirappilly Waterfalls (Niagara of India)",
+  "wikidata_id": "Q2869275",
+  "wiki_title": "Athirappilly_Falls",
+  "type": "attraction",
+  "category": "Nature & Waterfall",
+  "state": "Kerala",
+  "city": "Chalakudy (Thrissur)",
+  "lat": 10.2853,
+  "lng": 76.5694,
+  "price_amount": 50,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://keralatourism.org",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "8:00 AM - 5:00 PM daily",
+  "best_time": "June to January (monsoon and post-monsoon full flow)",
+  "rules": [
+    "Wear slip-resistant footwear on the rocky bamboo path descending to the waterfall base",
+    "Bathing at top river rapids strictly forbidden"
+  ],
+  "tags": [
+    "Chalakudy River",
+    "Niagara of South India",
+    "Vazhachal Forest",
+    "Bahubali Film Location"
+  ],
+  "visual_features": "gigantic curtain of water cascading 80 feet down wide rocky precipice surrounded by dense tropical rainforest",
+  "description": "Athirappilly Falls is situated in Athirappilly Panchayat in Chalakudy Taluk of Thrissur District in Kerala, India on the Chalakudy River, which originates from the upper reaches of the Western Ghats at the entrance to the Sholayar ranges. It is the largest waterfall in Kerala, which stands tall at 81.5 feet. Just a short drive from Athirappilly is the Vazhachal Falls, which is close to dense green forests that are home to many endangered and endemic species of flora and fauna.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/The_View_of_the_Athirapally_Falls_during_the_onset_of_Monsoon.jpg/3840px-The_View_of_the_Athirapally_Falls_during_the_onset_of_Monsoon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/The_View_of_the_Athirapally_Falls_during_the_onset_of_Monsoon.jpg/330px-The_View_of_the_Athirapally_Falls_during_the_onset_of_Monsoon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 5760,
+    "height": 3840,
+    "sha256": "c8e7c830c14dc536035d49cef4e6ba99121eb8a997e84ac23ab65a10f8e383ad",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/The_View_of_the_Athirapally_Falls_during_the_onset_of_Monsoon.jpg/3840px-The_View_of_the_Athirapally_Falls_during_the_onset_of_Monsoon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/The_View_of_the_Athirapally_Falls_during_the_onset_of_Monsoon.jpg/3840px-The_View_of_the_Athirapally_Falls_during_the_onset_of_Monsoon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/The_View_of_the_Athirapally_Falls_during_the_onset_of_Monsoon.jpg/330px-The_View_of_the_Athirapally_Falls_during_the_onset_of_Monsoon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 5760,
+      "height": 3840,
+      "sha256": "c8e7c830c14dc536035d49cef4e6ba99121eb8a997e84ac23ab65a10f8e383ad",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

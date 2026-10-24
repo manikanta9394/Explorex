@@ -1,0 +1,60 @@
+{
+  "id": "borra-caves-ananthagiri",
+  "name": "Borra Caves (Million Year Limestone Caverns)",
+  "wikidata_id": "Q3520110",
+  "wiki_title": "Borra_Caves",
+  "type": "attraction",
+  "category": "Natural Wonder",
+  "state": "Andhra Pradesh",
+  "city": "Ananthagiri (Visakhapatnam)",
+  "lat": 18.2806,
+  "lng": 83.0403,
+  "price_amount": 80,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://tourism.ap.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "10:00 AM - 5:00 PM daily (lunch break 1:00 PM - 2:00 PM)",
+  "best_time": "October to March",
+  "rules": [
+    "Steep stairs inside cave require caution; illuminated with multicolored LED lighting",
+    "Natural stalactite and stalagmite formations must not be touched"
+  ],
+  "tags": [
+    "Gosthani River",
+    "Deepest Caves in India",
+    "Speleothem Formations",
+    "Eastern Ghats"
+  ],
+  "visual_features": "cavernous limestone chambers illuminated in vibrant colors showcasing dramatic stalactites and naturally formed Shiva-Parvati speleothems",
+  "description": "Borra Caves are a limestone cave system in Ananthagiri hills of the Araku Valley in Alluri Sitharama Raju district, Andhra Pradesh. They feature extensive karst formations, including stalactites, stalagmites, and other speleothems.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Borra_caves%2C_Viskhapatnam.jpg/3840px-Borra_caves%2C_Viskhapatnam.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Borra_caves%2C_Viskhapatnam.jpg/330px-Borra_caves%2C_Viskhapatnam.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 5312,
+    "height": 2988,
+    "sha256": "52c57b64e294b3fb9ddd2475ebfe6b4fa97e8a2c24d7f5b5b974d76e1c4c25d9",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Borra_caves%2C_Viskhapatnam.jpg/3840px-Borra_caves%2C_Viskhapatnam.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Borra_caves%2C_Viskhapatnam.jpg/3840px-Borra_caves%2C_Viskhapatnam.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Borra_caves%2C_Viskhapatnam.jpg/330px-Borra_caves%2C_Viskhapatnam.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 5312,
+      "height": 2988,
+      "sha256": "52c57b64e294b3fb9ddd2475ebfe6b4fa97e8a2c24d7f5b5b974d76e1c4c25d9",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

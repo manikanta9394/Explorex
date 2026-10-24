@@ -1,0 +1,60 @@
+{
+  "id": "hundru-falls-ranchi",
+  "name": "Hundru Falls & Subarnarekha River",
+  "wikidata_id": "Q1263721",
+  "wiki_title": "Hundru_Falls",
+  "type": "attraction",
+  "category": "Nature & Waterfall",
+  "state": "Jharkhand",
+  "city": "Ranchi",
+  "lat": 23.45,
+  "lng": 85.65,
+  "price_amount": 20,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://jharkhandtourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:00 AM - 5:00 PM daily",
+  "best_time": "October to February (picturesque picnic season following monsoon)",
+  "rules": [
+    "Steep descent of 750 concrete steps down to the river pool",
+    "Swimming near water plunge is hazardous due to rocky undercurrents"
+  ],
+  "tags": [
+    "Subarnarekha River",
+    "City of Waterfalls",
+    "Chota Nagpur Plateau",
+    "Scenic Picnic"
+  ],
+  "visual_features": "roaring 322-foot waterfall cascading across unique eroded black granite rock terraces into a clear mountain pool",
+  "description": "Hundru Falls is a waterfall located in Ranchi District in the Indian state of Jharkhand. It is the 34th highest waterfall in India, and one of the most famous tourist places in the region.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Hundru_Falls%2C_Jharkhand%2C_India_4.jpg/3840px-Hundru_Falls%2C_Jharkhand%2C_India_4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Hundru_Falls%2C_Jharkhand%2C_India_4.jpg/330px-Hundru_Falls%2C_Jharkhand%2C_India_4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4000,
+    "height": 3000,
+    "sha256": "1c39202fc32a0993bccca8ffb15e77833235f76a3d6c65467d0ff841b5f19800",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Hundru_Falls%2C_Jharkhand%2C_India_4.jpg/3840px-Hundru_Falls%2C_Jharkhand%2C_India_4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Hundru_Falls%2C_Jharkhand%2C_India_4.jpg/3840px-Hundru_Falls%2C_Jharkhand%2C_India_4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Hundru_Falls%2C_Jharkhand%2C_India_4.jpg/330px-Hundru_Falls%2C_Jharkhand%2C_India_4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4000,
+      "height": 3000,
+      "sha256": "1c39202fc32a0993bccca8ffb15e77833235f76a3d6c65467d0ff841b5f19800",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "auroville-matrimandir-puducherry",
+  "name": "Auroville & The Matrimandir",
+  "wikidata_id": "Q757428",
+  "wiki_title": "Matrimandir",
+  "type": "attraction",
+  "category": "Spiritual & Architecture",
+  "state": "Puducherry",
+  "city": "Auroville (Puducherry)",
+  "lat": 11.9869,
+  "lng": 79.8117,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free visitor center and viewing point pass",
+  "price_source": "https://auroville.org",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "9:00 AM - 5:30 PM (Viewing point open daily · Inner chamber requires in-person advance booking at Visitor Centre 1 day prior)",
+  "best_time": "November to March",
+  "rules": [
+    "Absolute silence inside the inner crystal globe meditation chamber",
+    "Photography strictly prohibited inside inner sanctum"
+  ],
+  "tags": [
+    "City of Dawn",
+    "Golden Globe",
+    "Optical Glass Crystal",
+    "Peace & Meditation"
+  ],
+  "visual_features": "colossal futuristic golden sphere surfaced with gold disc tiles surrounded by twelve tranquil petal gardens and amphitheater",
+  "description": "The Matrimandir is an edifice of spiritual significance for practitioners of integral yoga in the centre of Auroville, India established by Mirra Alfassa of the Sri Aurobindo Ashram, Auroville's spiritual co-founder, known to her followers as The Mother or La Mère. It is called Soul of the City and situated in a large open space called \"Paix\". The Mandir was conceived of in late 1965 as a gleaming sphere rising amid twelve gardens by, who marked a lone banyan tree as the heart of the city. Its foundation stone was laid at sunrise on her 93rd birthday, 21 February 1971, and the four supporting pillars were concreted on 17 November 1973; she died that evening. After decades of work by Aurovilians and craftsmen, the Inner Chamber opened in 1994 and the gold‑clad sphere was completed in May 2008.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/The_Matrimandir_in_Auroville%2C_Tamil_Nadu%2C_India.jpg/3840px-The_Matrimandir_in_Auroville%2C_Tamil_Nadu%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/The_Matrimandir_in_Auroville%2C_Tamil_Nadu%2C_India.jpg/330px-The_Matrimandir_in_Auroville%2C_Tamil_Nadu%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 5487,
+    "height": 4115,
+    "sha256": "d0b5ce1bfde2dc1a06b9c525aca86b361223a8ffc65f7ab8cc76122dd6b9958d",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/The_Matrimandir_in_Auroville%2C_Tamil_Nadu%2C_India.jpg/3840px-The_Matrimandir_in_Auroville%2C_Tamil_Nadu%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/The_Matrimandir_in_Auroville%2C_Tamil_Nadu%2C_India.jpg/3840px-The_Matrimandir_in_Auroville%2C_Tamil_Nadu%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/The_Matrimandir_in_Auroville%2C_Tamil_Nadu%2C_India.jpg/330px-The_Matrimandir_in_Auroville%2C_Tamil_Nadu%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 5487,
+      "height": 4115,
+      "sha256": "d0b5ce1bfde2dc1a06b9c525aca86b361223a8ffc65f7ab8cc76122dd6b9958d",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "rock-garden-chandigarh",
+  "name": "Rock Garden of Chandigarh",
+  "wikidata_id": "Q3520110",
+  "wiki_title": "Rock_Garden_of_Chandigarh",
+  "type": "attraction",
+  "category": "Sculpture & Art",
+  "state": "Chandigarh",
+  "city": "Chandigarh",
+  "lat": 30.7525,
+  "lng": 76.8069,
+  "price_amount": 30,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://chandigarhtourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "9:00 AM - 7:00 PM (April to September), 9:00 AM - 6:00 PM (October to March)",
+  "best_time": "October to March",
+  "rules": [
+    "Follow designated winding path through all phases",
+    "Do not climb or deface recycled ceramic sculptures"
+  ],
+  "tags": [
+    "Nek Chand Masterpiece",
+    "Recycled Art",
+    "Waterfalls",
+    "Chandigarh Landmark"
+  ],
+  "visual_features": "surreal multi-acre open-air sculpture garden composed of recycled broken ceramics, bangles, and industrial scrap forming whimsical courtyards and waterfalls",
+  "description": "The Rock Garden of Chandigarh is a sculpture garden in Chandigarh, India. It is also known as Nek Chand Saini's Rock Garden of Nathupur  after its founder Nek Chand Saini, a government official who started building the garden secretly in his spare time in 1957. It has spread over an area of 40 acres (16 ha), and is completely built from industrial, home waste, and discarded items.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Chandigarh_Rock_Garden_4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Chandigarh_Rock_Garden_4.jpg/330px-Chandigarh_Rock_Garden_4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 3264,
+    "height": 2448,
+    "sha256": "14aa9301b4883722c556f75c56a88783571415897100a24b9835b725d74a7fc4",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Chandigarh_Rock_Garden_4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Chandigarh_Rock_Garden_4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Chandigarh_Rock_Garden_4.jpg/330px-Chandigarh_Rock_Garden_4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 3264,
+      "height": 2448,
+      "sha256": "14aa9301b4883722c556f75c56a88783571415897100a24b9835b725d74a7fc4",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "lotus-temple-delhi",
+  "name": "Lotus Temple",
+  "wikidata_id": "Q208470",
+  "wiki_title": "Lotus_Temple",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Delhi",
+  "city": "New Delhi",
+  "lat": 28.5535,
+  "lng": 77.2588,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free entry",
+  "price_source": "https://bahaihouseofworship.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "8:30 AM - 5:00 PM (Closed on Mondays)",
+  "best_time": "Winter afternoons",
+  "rules": [
+    "Absolute silence inside prayer hall",
+    "Footwear must be deposited at token counter",
+    "Closed on Mondays"
+  ],
+  "tags": [
+    "Bahai Faith",
+    "Modern Architecture",
+    "Meditation",
+    "Peace"
+  ],
+  "visual_features": "lotus flower marble petal architecture surrounded by nine tranquil blue ponds and manicured lawns",
+  "description": "The Lotus Temple, also known as the Baháʼí House of Worship, New Delhi, is a Baháʼí House of Worship at Bahapur in south Delhi, India. Designed by the architect Fariborz Sahba, it takes the form of a half-open lotus of 27 free-standing marble-clad concrete petals, arranged in three rings of nine around a central hall. It was dedicated on 24 December 1986 and opened to the public on 1 January 1987.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/LotusDelhi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/LotusDelhi.jpg/330px-LotusDelhi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 1014,
+    "height": 626,
+    "sha256": "03b21d861bcbe888c444748416f5a233aaa48cdeb3f58e264fcaa6366c8c9576",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/LotusDelhi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/LotusDelhi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/LotusDelhi.jpg/330px-LotusDelhi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 1014,
+      "height": 626,
+      "sha256": "03b21d861bcbe888c444748416f5a233aaa48cdeb3f58e264fcaa6366c8c9576",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

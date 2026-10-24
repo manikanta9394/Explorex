@@ -1,0 +1,60 @@
+{
+  "id": "loktak-lake-keibul-lamjao",
+  "name": "Loktak Lake & Keibul Lamjao Floating National Park",
+  "wikidata_id": "Q1157973",
+  "wiki_title": "Loktak_Lake",
+  "type": "attraction",
+  "category": "Natural Wonder",
+  "state": "Manipur",
+  "city": "Moirang / Bishnupur",
+  "lat": 24.55,
+  "lng": 93.8167,
+  "price_amount": 200,
+  "price_currency": "INR",
+  "price_unit": "boat tour per person",
+  "price_source": "https://manipurtourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Sunrise to Sunset daily",
+  "best_time": "October to March",
+  "rules": [
+    "Only floating national park in the world (formed by circular organic biomass called Phumdis)",
+    "Home to the endangered Sangai (dancing deer of Manipur)"
+  ],
+  "tags": [
+    "World Only Floating National Park",
+    "Circular Phumdis",
+    "Dancing Deer Sangai",
+    "Sendra Island"
+  ],
+  "visual_features": "immense lake covered in thousands of natural circular floating green biomass rings (phumdis) with traditional fishing huts on water",
+  "description": "Loktak Lake is the largest freshwater lake in Northeast India. It is a pulsating lake, with a surface area varying from 250 km2 to 500 km2 during the rainy season with a typical area of 287 km2. The lake is located at Moirang in Manipur state, India. The etymology of Loktak is Lok = \"stream\" and tak = \"the end\" in Meitei language. It is famous for the phumdi floating over it. The largest of all the phumdis covers an area of 40 km2 (15 sq mi) and is situated on the southeastern shore of the lake. Located on this phumdi, Keibul Lamjao National Park is the only floating national park in the world. The park is the last natural refuge of the endangered Sangai, Rucervus eldii eldii or Manipur brow-antlered deer, one of three subspecies of Eld's deer.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/The_Loktak_Lake.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/The_Loktak_Lake.jpg/330px-The_Loktak_Lake.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 1600,
+    "height": 1044,
+    "sha256": "69344dcc65b4f6ab67751605dd9bb3077e4e91b8cd7b0e0f1c52e18abc4f1eab",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/The_Loktak_Lake.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/The_Loktak_Lake.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/The_Loktak_Lake.jpg/330px-The_Loktak_Lake.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 1600,
+      "height": 1044,
+      "sha256": "69344dcc65b4f6ab67751605dd9bb3077e4e91b8cd7b0e0f1c52e18abc4f1eab",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

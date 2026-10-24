@@ -1,0 +1,60 @@
+{
+  "id": "raigad-fort-shivaji",
+  "name": "Raigad Fort (Capital of Chhatrapati Shivaji Maharaj)",
+  "wikidata_id": "Q7283742",
+  "wiki_title": "Raigad_Fort",
+  "type": "attraction",
+  "category": "Heritage Fort",
+  "state": "Maharashtra",
+  "city": "Mahad (Raigad)",
+  "lat": 18.2347,
+  "lng": 73.4419,
+  "price_amount": 25,
+  "price_currency": "INR",
+  "price_unit": "per person (Ropeway ₹350 roundtrip)",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Sunrise to Sunset daily · Ropeway operates 8:00 AM - 5:30 PM",
+  "best_time": "September to March or monsoon for misty cloud-enveloped ramparts",
+  "rules": [
+    "Ropeway provides 4-minute ascent saving 1,737 stone steps climb",
+    "Carry water bottle; historical ruins span large high plateau"
+  ],
+  "tags": [
+    "Maratha Empire Capital",
+    "Coronation Site of Shivaji Maharaj",
+    "Sahyadri Mountains",
+    "Maha Darwaja"
+  ],
+  "visual_features": "impregnable mountain plateau fortress encircled by steep sheer rock cliffs with the royal court (Raj Sabha) and Nagarkhana gate standing proud",
+  "description": "Raigad, located in the Raigad district of Maharashtra, India, is a hill fort situated near the town of Mahad. It is one of the strongest fortresses on the Deccan Plateau and was historically referred to as Rairee or Rairy Fort. Raigad is the largest fort in Asia, with an area of 1,200 acres.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Nagarkhana%2C_Raigad_Fort%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Nagarkhana%2C_Raigad_Fort%2C_India.jpg/330px-Nagarkhana%2C_Raigad_Fort%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 1728,
+    "height": 1152,
+    "sha256": "2c839f8dbb27687fb80e391f4774dad3ec11bd93800ad914360c61f4e65f63b9",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Nagarkhana%2C_Raigad_Fort%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Nagarkhana%2C_Raigad_Fort%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Nagarkhana%2C_Raigad_Fort%2C_India.jpg/330px-Nagarkhana%2C_Raigad_Fort%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 1728,
+      "height": 1152,
+      "sha256": "2c839f8dbb27687fb80e391f4774dad3ec11bd93800ad914360c61f4e65f63b9",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

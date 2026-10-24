@@ -1,0 +1,60 @@
+{
+  "id": "kedarnath-temple",
+  "name": "Kedarnath Temple",
+  "wikidata_id": "Q839841",
+  "wiki_title": "Kedarnath_Temple",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Uttarakhand",
+  "city": "Kedarnath (Rudraprayag)",
+  "lat": 30.7352,
+  "lng": 79.0669,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free darshan",
+  "price_source": "https://badrinath-kedarnath.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "4:00 AM - 1:00 PM, 5:00 PM - 9:00 PM (May to November annually)",
+  "best_time": "May to June, September to October",
+  "rules": [
+    "16 km mountain trek from Gaurikund or helicopter shuttle",
+    "Char Dham biometric registration compulsory"
+  ],
+  "tags": [
+    "Jyotirlinga",
+    "Char Dham",
+    "Shiva Sanctuary",
+    "Mandakini River"
+  ],
+  "visual_features": "ancient monolithic grey stone temple enduring against the majestic snow-capped Kedarnath and Kedar Dome peaks",
+  "description": "Kēdāranātha Temple is a Hindu temple, one of the twelve jyotirlinga of Śiva. The temple is located on the Garhwal Himalayan range \nnear the Mandākinī River, in the state of Uttarakhand, India. Due to extreme weather conditions, the temple is open to the general public only between the months of April and November. During the winters, the vigraha (deity) of the temple is carried down to Ukhimath to be worshiped for the next six months. Kēdāranātha is seen as a homogeneous form of Śiva, the 'Lord of Kēdārakhaṇḍa', the historical name of the region.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Kedarnath_Temple_in_Rainy_season.jpg/3840px-Kedarnath_Temple_in_Rainy_season.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Kedarnath_Temple_in_Rainy_season.jpg/330px-Kedarnath_Temple_in_Rainy_season.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4073,
+    "height": 3165,
+    "sha256": "56caa3dcb248d45fad52c135066ad9879bea9c03a77e8e726a0f00d2a78e7154",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Kedarnath_Temple_in_Rainy_season.jpg/3840px-Kedarnath_Temple_in_Rainy_season.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Kedarnath_Temple_in_Rainy_season.jpg/3840px-Kedarnath_Temple_in_Rainy_season.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Kedarnath_Temple_in_Rainy_season.jpg/330px-Kedarnath_Temple_in_Rainy_season.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4073,
+      "height": 3165,
+      "sha256": "56caa3dcb248d45fad52c135066ad9879bea9c03a77e8e726a0f00d2a78e7154",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

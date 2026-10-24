@@ -1,0 +1,60 @@
+{
+  "id": "karims-old-delhi",
+  "name": "Karim's Historic Old Delhi",
+  "wikidata_id": "Q6370557",
+  "wiki_title": "Karim's",
+  "type": "food",
+  "category": "Iconic Culinary",
+  "state": "Delhi",
+  "city": "Old Delhi",
+  "lat": 28.6503,
+  "lng": 77.2338,
+  "price_amount": 750,
+  "price_currency": "INR",
+  "price_unit": "for two approx",
+  "price_source": "https://karimhoteldelhi.com",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "11:00 AM - 11:30 PM daily",
+  "best_time": "Lunch or dinner",
+  "rules": [
+    "Peak wait times on weekend evenings",
+    "Cash and UPI accepted"
+  ],
+  "tags": [
+    "Mughlai Cuisine",
+    "Since 1913",
+    "Mutton Korma",
+    "Old Delhi Food Trail"
+  ],
+  "visual_features": "heritage culinary dining hall in Gali Kababian near Jama Masjid",
+  "description": "Karim's Hotel or Karim's is an international chain of restaurants headquartered in Old Delhi in Delhi, India. Established in 1913, the original location in the Jama Masjid area of Delhi was founded by Haji Karimuddin, a cook from the royal court of Mughal Emperor Bahadur Shah Zafar. The restaurant has been described as Old Delhi's most famous culinary destination.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Karim%27s.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Karim%27s.jpg/330px-Karim%27s.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 443,
+    "height": 443,
+    "sha256": "2555ecd85f33499456193a8ee02505e3a7fe82cceb108d8f520e4b538757b42d",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Karim%27s.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Karim%27s.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Karim%27s.jpg/330px-Karim%27s.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 443,
+      "height": 443,
+      "sha256": "2555ecd85f33499456193a8ee02505e3a7fe82cceb108d8f520e4b538757b42d",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

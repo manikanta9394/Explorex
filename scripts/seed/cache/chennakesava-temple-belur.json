@@ -1,0 +1,60 @@
+{
+  "id": "chennakesava-temple-belur",
+  "name": "Hoysala Chennakeshava Temple Belur",
+  "wikidata_id": "Q2962635",
+  "wiki_title": "Chennakeshava_Temple,_Belur",
+  "type": "attraction",
+  "category": "Heritage Temple",
+  "state": "Karnataka",
+  "city": "Belur (Hassan)",
+  "lat": 13.1625,
+  "lng": 75.86,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free entry",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "7:30 AM - 7:30 PM daily",
+  "best_time": "October to March",
+  "rules": [
+    "Footwear removal required at soapstone perimeter",
+    "Marvel at the microscopic details of bracket dancers (Madanikas)"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "Hoysala Architecture",
+    "Chloritic Schist Carvings",
+    "Madanika Sculptures"
+  ],
+  "visual_features": "star-shaped soapstone temple raised on high plinth covered in friezes of war elephants, lions, and dancing nymphs",
+  "description": "The Chennakeshava Temple, also referred to as the Keshava, Kesava or Vijayanarayana Temple, is a 12th-century Hindu temple in the Hassan district of Karnataka, India. It was commissioned by King Vishnuvardhana in 1117 CE, on the banks of the Yagachi River in Belur, an early Hoysala Empire capital. The temple was built over three generations and took 103 years to finish. It was repeatedly damaged and plundered during wars, repeatedly rebuilt and repaired over its history. It is located 35 km from Hassan city and about 220 km from Bengaluru.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/The_Courtyard_of_Chennakesava_Temple_-_Belur.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/The_Courtyard_of_Chennakesava_Temple_-_Belur.jpg/330px-The_Courtyard_of_Chennakesava_Temple_-_Belur.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 2048,
+    "height": 1371,
+    "sha256": "74aff9f599e2efa9b9d59d83811d9583dd14fd30d998b576637731040db5eb3d",
+    "is_primary": true,
+    "is_verified": false,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/The_Courtyard_of_Chennakesava_Temple_-_Belur.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/The_Courtyard_of_Chennakesava_Temple_-_Belur.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/The_Courtyard_of_Chennakesava_Temple_-_Belur.jpg/330px-The_Courtyard_of_Chennakesava_Temple_-_Belur.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 2048,
+      "height": 1371,
+      "sha256": "74aff9f599e2efa9b9d59d83811d9583dd14fd30d998b576637731040db5eb3d",
+      "is_primary": true,
+      "is_verified": false,
+      "is_illustration": false
+    }
+  ]
+}

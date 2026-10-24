@@ -1,0 +1,60 @@
+{
+  "id": "meenakshi-amman-temple-madurai",
+  "name": "Meenakshi Amman Temple",
+  "wikidata_id": "Q854067",
+  "wiki_title": "Meenakshi_Temple",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Tamil Nadu",
+  "city": "Madurai",
+  "lat": 9.9195,
+  "lng": 78.1193,
+  "price_amount": 0,
+  "price_currency": "INR",
+  "price_unit": "free darshan",
+  "price_source": "https://maduraimeenakshi.hrce.tn.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "5:00 AM - 12:30 PM, 4:00 PM - 10:00 PM daily",
+  "best_time": "October to March (Chithirai Festival in April/May)",
+  "rules": [
+    "Strict dress code: traditional Indian attire only (dhotis/pyjamas for men, sarees/churidars for women)",
+    "Mobile phones strictly banned inside premises; deposit at entrance locker"
+  ],
+  "tags": [
+    "Dravidian Gopurams",
+    "Thousand Pillar Hall",
+    "Madurai",
+    "Spiritual Landmark"
+  ],
+  "visual_features": "fourteen colossal multi-coloured gopuram gateway towers decorated with thousands of painted mythological stucco figures",
+  "description": "Meenakshi Temple, also known as Meenakshi Sundareswarar Temple, is a historic Hindu temple located on the southern bank of the Vaigai River in Madurai, Tamil Nadu, India. It is dedicated to Meenakshi, a form of Parvati, and her consort Sundareswarar (Shiva). The temple is theologically significant as it represents a confluence of various denominations of Hinduism such as Shaivism, Shaktism, and Vaishnavism.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/An_aerial_view_of_Madurai_city_from_atop_of_Meenakshi_Amman_temple.jpg/3840px-An_aerial_view_of_Madurai_city_from_atop_of_Meenakshi_Amman_temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/An_aerial_view_of_Madurai_city_from_atop_of_Meenakshi_Amman_temple.jpg/330px-An_aerial_view_of_Madurai_city_from_atop_of_Meenakshi_Amman_temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 4365,
+    "height": 1430,
+    "sha256": "19abdbcbea6f1c1110548fe2e65846cc84a5f0aafc919685d0c16dc7768f817c",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/An_aerial_view_of_Madurai_city_from_atop_of_Meenakshi_Amman_temple.jpg/3840px-An_aerial_view_of_Madurai_city_from_atop_of_Meenakshi_Amman_temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/An_aerial_view_of_Madurai_city_from_atop_of_Meenakshi_Amman_temple.jpg/3840px-An_aerial_view_of_Madurai_city_from_atop_of_Meenakshi_Amman_temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/An_aerial_view_of_Madurai_city_from_atop_of_Meenakshi_Amman_temple.jpg/330px-An_aerial_view_of_Madurai_city_from_atop_of_Meenakshi_Amman_temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 4365,
+      "height": 1430,
+      "sha256": "19abdbcbea6f1c1110548fe2e65846cc84a5f0aafc919685d0c16dc7768f817c",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

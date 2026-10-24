@@ -1,0 +1,60 @@
+{
+  "id": "rumtek-monastery-sikkim",
+  "name": "Rumtek Dharma Chakra Centre",
+  "wikidata_id": "Q1740316",
+  "wiki_title": "Rumtek_Monastery",
+  "type": "attraction",
+  "category": "Spiritual",
+  "state": "Sikkim",
+  "city": "Gangtok (Rumtek)",
+  "lat": 27.3017,
+  "lng": 88.5417,
+  "price_amount": 10,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://sikkimtourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "6:00 AM - 6:00 PM daily",
+  "best_time": "March to May and October to December",
+  "rules": [
+    "Seat of His Holiness the Gyalwang Karmapa (Karma Kagyu lineage)",
+    "Valid government photo ID required at security checkpoint"
+  ],
+  "tags": [
+    "Karma Kagyu Seat",
+    "Golden Stupa",
+    "Tibetan Murals",
+    "Golden Reliquary"
+  ],
+  "visual_features": "magnificent multi-story Tibetan monastery decorated with traditional murals, silk thangkas, and a golden roof overlooking the green Gangtok valley",
+  "description": "Rumtek Monastery, also called the Dharma Chakra Centre, is a gompa located in the Indian state of Sikkim near the capital Gangtok. It is the seat in exile of the Gyalwang Karmapa, inaugurated in 1966 by the 16th Karmapa. It is also a focal point for the sectarian tensions within the Karma Kagyu school of Tibetan Buddhism that characterize the 17th Karmapa controversy.",
+  "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Rumtek_Monastery_alias_Dharma_Chakra_Centre_near_Gangtok%2C_East_Sikkim_09.jpg/3840px-Rumtek_Monastery_alias_Dharma_Chakra_Centre_near_Gangtok%2C_East_Sikkim_09.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Rumtek_Monastery_alias_Dharma_Chakra_Centre_near_Gangtok%2C_East_Sikkim_09.jpg/330px-Rumtek_Monastery_alias_Dharma_Chakra_Centre_near_Gangtok%2C_East_Sikkim_09.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 8256,
+    "height": 5504,
+    "sha256": "b685e4f6300a45f0910cb7c4a250596b8b93d192c2a651ed87bb6e4d84219956",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Rumtek_Monastery_alias_Dharma_Chakra_Centre_near_Gangtok%2C_East_Sikkim_09.jpg/3840px-Rumtek_Monastery_alias_Dharma_Chakra_Centre_near_Gangtok%2C_East_Sikkim_09.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "images": [
+    {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Rumtek_Monastery_alias_Dharma_Chakra_Centre_near_Gangtok%2C_East_Sikkim_09.jpg/3840px-Rumtek_Monastery_alias_Dharma_Chakra_Centre_near_Gangtok%2C_East_Sikkim_09.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Rumtek_Monastery_alias_Dharma_Chakra_Centre_near_Gangtok%2C_East_Sikkim_09.jpg/330px-Rumtek_Monastery_alias_Dharma_Chakra_Centre_near_Gangtok%2C_East_Sikkim_09.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 8256,
+      "height": 5504,
+      "sha256": "b685e4f6300a45f0910cb7c4a250596b8b93d192c2a651ed87bb6e4d84219956",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

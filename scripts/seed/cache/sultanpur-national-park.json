@@ -1,0 +1,60 @@
+{
+  "id": "sultanpur-national-park",
+  "name": "Sultanpur National Park & Bird Sanctuary",
+  "wikidata_id": "Q17068597",
+  "wiki_title": "Sultanpur_National_Park",
+  "type": "attraction",
+  "category": "Wildlife Sanctuary",
+  "state": "Haryana",
+  "city": "Gurugram (Sultanpur)",
+  "lat": 28.4633,
+  "lng": 76.8906,
+  "price_amount": 5,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://haryanatourism.gov.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "7:00 AM - 4:30 PM (Closed on Tuesdays · Open October to March)",
+  "best_time": "November to February (migratory waterfowl peak season)",
+  "rules": [
+    "Closed every Tuesday",
+    "Binoculars recommended; quiet observation mandatory in watchtowers"
+  ],
+  "tags": [
+    "Ramsar Wetland",
+    "Migratory Birds",
+    "Siberian Cranes",
+    "Eco Park"
+  ],
+  "visual_features": "freshwater wetland lake with four elevated watchtowers hosting thousands of migratory ducks and flamingos",
+  "description": "Sultanpur National Park is a national park in Haryana, India, covering approximately 1.43 km2 (0.55 sq mi).",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Sultanpur_Bird_Sanctuary%2C_Gurgaon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Sultanpur_Bird_Sanctuary%2C_Gurgaon.jpg/330px-Sultanpur_Bird_Sanctuary%2C_Gurgaon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 3264,
+    "height": 2448,
+    "sha256": "fdc85218ceaa2743acb3bf7981c722873a84c1f2eba42e49b26d69f5b93a184f",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Sultanpur_Bird_Sanctuary%2C_Gurgaon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Sultanpur_Bird_Sanctuary%2C_Gurgaon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Sultanpur_Bird_Sanctuary%2C_Gurgaon.jpg/330px-Sultanpur_Bird_Sanctuary%2C_Gurgaon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 3264,
+      "height": 2448,
+      "sha256": "fdc85218ceaa2743acb3bf7981c722873a84c1f2eba42e49b26d69f5b93a184f",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "chittorgarh-fort",
+  "name": "Chittorgarh Fort (Pride of Rajputana)",
+  "wikidata_id": "Q1074984",
+  "wiki_title": "Chittor_Fort",
+  "type": "attraction",
+  "category": "Heritage Fort",
+  "state": "Rajasthan",
+  "city": "Chittorgarh",
+  "lat": 24.8878,
+  "lng": 74.6453,
+  "price_amount": 40,
+  "price_currency": "INR",
+  "price_unit": "per person",
+  "price_source": "https://asi.nic.in",
+  "price_last_verified": "2026-01-15",
+  "opening_hours": "Sunrise to Sunset daily (approx. 6:00 AM - 6:30 PM)",
+  "best_time": "October to March",
+  "rules": [
+    "Largest fort complex in India spanning 700 acres; auto-rickshaw or car recommended inside",
+    "Ascend the nine-story Vijay Stambha (Tower of Victory) for panoramic view"
+  ],
+  "tags": [
+    "UNESCO World Heritage",
+    "Vijay Stambha Victory Tower",
+    "Padmini Palace",
+    "Rani Padmini Jauhar"
+  ],
+  "visual_features": "mammoth plateau fortress with 65 historic structures including the nine-story sculpted Vijay Stambha tower and Padmini Palace water pavilion",
+  "description": "Chittor Fort, also known as Chittod Fort, is one of the largest forts in India. It is a UNESCO World Heritage Site. The fort was the capital of Mewar and is located in the present-day city of Chittorgarh. It sprawls over a hill 180 m (590.6 ft) in height, spread over an area of 280 ha above the plains of the valley drained by the Berach River. The fort covers 65 historic structures, which include four palaces, 19 large temples, 20 large water bodies, 4 memorials, and a few victory towers.",
+  "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Chittorgarh_fort.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Chittorgarh_fort.JPG/330px-Chittorgarh_fort.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "source": "wikimedia_commons",
+    "license": "CC BY-SA 4.0",
+    "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+    "width": 3008,
+    "height": 2000,
+    "sha256": "ccacdf6e6a05fee903e70b8b8455b82e442e8b66f81df1ba6a6e3d0db2424aae",
+    "is_primary": true,
+    "is_verified": true,
+    "is_illustration": false
+  },
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Chittorgarh_fort.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Chittorgarh_fort.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Chittorgarh_fort.JPG/330px-Chittorgarh_fort.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "source": "wikimedia_commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Photo: Wikimedia Commons Contributor via Wikimedia Commons (CC BY-SA 4.0)",
+      "width": 3008,
+      "height": 2000,
+      "sha256": "ccacdf6e6a05fee903e70b8b8455b82e442e8b66f81df1ba6a6e3d0db2424aae",
+      "is_primary": true,
+      "is_verified": true,
+      "is_illustration": false
+    }
+  ]
+}
