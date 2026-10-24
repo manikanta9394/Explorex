@@ -1,24 +1,44 @@
 import { createTravelChat } from '../services/openRouterService.js'
 
 export async function askAI(req, res) {
-  const { message, history, place } = req.body
-  if (typeof message !== 'string' || !message.trim()) return res.status(400).json({ error: 'message is required' })
+  const { message, history, place, currentPlace, travelMode, userLocation } = req.body
+  if (typeof message !== 'string' || !message.trim()) {
+    return res.status(400).json({ error: 'message is required' })
+  }
 
   try {
-    const answer = await createTravelChat({ message: message.trim(), history, place })
-    res.json({ data: { answer, source: 'openrouter' } })
+    const result = await createTravelChat({
+      message: message.trim(),
+      history,
+      place,
+      currentPlace,
+      travelMode,
+      userLocation,
+    })
+    res.json({ data: result })
   } catch (error) {
-    if (error.message === 'OPENROUTER_API_KEY is not configured') {
-      return res.json({ data: { answer: 'I can help you plan Telangana. Start with Charminar at golden hour, then explore Laad Bazaar for local food, crafts, and history.', source: 'local-fallback' } })
-    }
-    throw error
+    console.error('aiController askAI error:', error)
+    res.status(500).json({
+      error: error.message || 'Failed to generate response',
+      data: {
+        answer: 'Explorex took longer than expected to respond. Please check your connection or tap Retry to ask again.',
+        recommendedPlaces: [],
+        source: 'error-fallback',
+      },
+    })
   }
 }
 
 export async function generateItinerary(req, res) {
-  const { preferences } = req.body
-  const answer = await createTravelChat({
-    message: `Create a practical travel itinerary from these preferences: ${JSON.stringify(preferences || {})}`,
-  })
-  res.json({ data: { answer } })
+  const { preferences, currentPlace, travelMode } = req.body
+  try {
+    const result = await createTravelChat({
+      message: `Create a practical travel itinerary from these preferences: ${JSON.stringify(preferences || {})}`,
+      currentPlace,
+      travelMode,
+    })
+    res.json({ data: result })
+  } catch (error) {
+    res.status(500).json({ error: error.message })
+  }
 }

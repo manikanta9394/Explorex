@@ -3,5 +3,6 @@ import { askAI, generateItinerary } from '../controllers/aiController.js'
 
 const router = Router()
 router.post('/ask', askAI)
+router.post('/chat', askAI)
 router.post('/itinerary', generateItinerary)
 export default router

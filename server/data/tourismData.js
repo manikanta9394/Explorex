@@ -54,7 +54,7 @@ export const places = [
     "name": "Qutb Shahi Tombs",
     "category": "Historical Monument",
     "description": "Tomb complex of the Qutb Shahi rulers.",
-    "image": "/images/anantha-padmanabha.jpg",
+    "image": "/images/Kondagattu_anjaneya_swamy_temple.jpg",
     "position": [
       17.3952,
       78.3968
@@ -92,7 +92,7 @@ export const places = [
     "name": "Falaknuma Palace",
     "category": "Historical Palace",
     "description": "Historic palace associated with the Nizam era.",
-    "image": "/images/ashtalakshmi-temple.jpg",
+    "image": "/images/Nagarjuna_Sagar.jpg",
     "position": [
       17.3314,
       78.4678
@@ -187,7 +187,7 @@ export const places = [
     "name": "Nizam's Museum",
     "category": "Museum",
     "description": "Museum displaying objects associated with the Nizams.",
-    "image": "/images/begum-bazaar.jpg",
+    "image": "/images/Pocharam-sanctuary.jpg",
     "position": [
       17.3617,
       78.4728
@@ -225,7 +225,7 @@ export const places = [
     "name": "Telangana State Archaeology Museum",
     "category": "Archaeological Museum",
     "description": "Museum containing archaeological and historical collections.",
-    "image": "/images/belur-temple.jpg",
+    "image": "/images/Wanaparthy-palace.jpg",
     "position": [
       17.4008,
       78.467
@@ -244,7 +244,7 @@ export const places = [
     "name": "B. M. Birla Science Centre",
     "category": "Science Museum",
     "description": "Science museum and planetarium complex.",
-    "image": "/images/bhadrachalam-temple.jpg",
+    "image": "/images/aga-khan-palace.jpg",
     "position": [
       17.4067,
       78.4696
@@ -358,7 +358,7 @@ export const places = [
     "name": "NTR Gardens",
     "category": "Park",
     "description": "Large recreational garden beside Hussain Sagar.",
-    "image": "/images/british-residency.jpg",
+    "image": "/images/athirappilly.jpg",
     "position": [
       17.4131,
       78.4691
@@ -396,7 +396,7 @@ export const places = [
     "name": "Sanjeevaiah Park",
     "category": "Park",
     "description": "Large lakeside park on the northern side of Hussain Sagar.",
-    "image": "/images/charminar.jpg",
+    "image": "/images/bandipur.jpg",
     "position": [
       17.4234,
       78.4752
@@ -529,7 +529,7 @@ export const places = [
     "name": "St. Joseph's Cathedral",
     "category": "Religious / Heritage",
     "description": "Historic Catholic cathedral in Hyderabad.",
-    "image": "/images/dhanushkodi.jpg",
+    "image": "/images/bhimbetka.jpg",
     "position": [
       17.3898,
       78.479
@@ -643,7 +643,7 @@ export const places = [
     "name": "Laad Bazaar",
     "category": "Heritage Market",
     "description": "Historic market famous for bangles and traditional shopping.",
-    "image": "/images/ethipothala-waterfalls.jpg",
+    "image": "/images/charminar.jpg",
     "position": [
       17.3615,
       78.4749
@@ -700,7 +700,7 @@ export const places = [
     "name": "Ramoji Film City",
     "category": "Entertainment",
     "description": "Large film studio and tourist attraction.",
-    "image": "/images/gangtok.jpg",
+    "image": "/images/chowmahalla-palace.jpg",
     "position": [
       17.2543,
       78.6806
@@ -1004,7 +1004,7 @@ export const places = [
     "name": "Qutb Shahi Tombs",
     "category": "Historical Monument",
     "description": "Royal tomb complex of the Qutb Shahi dynasty.",
-    "image": "/images/kadam-dam.jpg",
+    "image": "/images/hare-krishna-golden-temple.jpg",
     "position": [
       17.3952,
       78.3968
@@ -1061,7 +1061,7 @@ export const places = [
     "name": "Nizam's Museum",
     "category": "Museum",
     "description": "Museum displaying objects and gifts associated with the Nizams.",
-    "image": "/images/kashi-bugga-temple.jpg",
+    "image": "/images/hoysaleswara.jpg",
     "position": [
       17.3617,
       78.4728
@@ -1289,7 +1289,7 @@ export const places = [
     "name": "Ramoji Film City",
     "category": "Entertainment",
     "description": "Large film studio complex and tourist attraction.",
-    "image": "/images/kondapochamma-sagar.jpg",
+    "image": "/images/kawal-tiger-reserve.jpg",
     "position": [
       17.2543,
       78.6806
@@ -1346,7 +1346,7 @@ export const places = [
     "name": "Falaknuma Palace",
     "category": "Historical Palace",
     "description": "Historic palace associated with the Nizam era.",
-    "image": "/images/kuntala-waterfalls.jpg",
+    "image": "/images/khursheed-jah-devdi.jpg",
     "position": [
       17.3314,
       78.4678
@@ -1365,7 +1365,7 @@ export const places = [
     "name": "Telangana State Archaeology Museum",
     "category": "Archaeological Museum",
     "description": "Museum containing archaeological and historical collections.",
-    "image": "/images/laad-bazaar.jpg",
+    "image": "/images/kinnerasani-wildlife.jpg",
     "position": [
       17.4008,
       78.467
@@ -1384,7 +1384,7 @@ export const places = [
     "name": "B. M. Birla Science Centre",
     "category": "Science Museum",
     "description": "Science museum and planetarium complex.",
-    "image": "/images/lothal.jpg",
+    "image": "/images/kodailkanal.jpg",
     "position": [
       17.4067,
       78.4696
@@ -1422,7 +1422,7 @@ export const places = [
     "name": "NTR Gardens",
     "category": "Park",
     "description": "Recreational garden beside Hussain Sagar.",
-    "image": "/images/Lumbini-Park.jpg",
+    "image": "/images/kolanpaku-jain-temple.jpg",
     "position": [
       17.4131,
       78.4691
@@ -1460,7 +1460,7 @@ export const places = [
     "name": "Sanjeevaiah Park",
     "category": "Park",
     "description": "Large lakeside park near Hussain Sagar.",
-    "image": "/images/mahankali-temple.jpg",
+    "image": "/images/kondapochamma-sagar.jpg",
     "position": [
       17.4234,
       78.4752
@@ -1555,7 +1555,7 @@ export const places = [
     "name": "St. Joseph's Cathedral",
     "category": "Religious / Heritage",
     "description": "Historic Catholic cathedral in Hyderabad.",
-    "image": "/images/medakcathedral.jpg",
+    "image": "/images/lothal.jpg",
     "position": [
       17.3898,
       78.479
@@ -1612,7 +1612,7 @@ export const places = [
     "name": "Laad Bazaar",
     "category": "Heritage Market",
     "description": "Historic market famous for bangles and traditional shopping.",
-    "image": "/images/moazzam-jahi-market.jpg",
+    "image": "/images/mahankali-temple.jpg",
     "position": [
       17.3615,
       78.4749
@@ -1764,16 +1764,16 @@ export const places = [
     "name": "Ramappa Temple",
     "category": "Historical Temple",
     "description": "UNESCO World Heritage Kakatiya temple famous for stone carvings.",
-    "image": "/images/nehru-zoological-Park.jpg",
+    "image": "/images/moazzam-jahi-market.jpg",
     "position": [
-      18.2587,
-      79.9443
+      17.423,
+      78.4326
     ],
     "location": {
       "address": "Ramappa Temple, Telangana",
       "coordinates": [
-        79.9443,
-        18.2587
+        78.4326,
+        17.423
       ]
     },
     "rating": 4.8
@@ -1783,16 +1783,16 @@ export const places = [
     "name": "Thousand Pillar Temple",
     "category": "Historical Temple",
     "description": "Historic Kakatiya temple dedicated to Shiva, Vishnu and Surya.",
-    "image": "/images/netarhat.jpg",
+    "image": "/images/modhera-sun-temple.jpg",
     "position": [
-      17.9944,
-      79.5746
+      17.4314,
+      78.431
     ],
     "location": {
       "address": "Thousand Pillar Temple, Telangana",
       "coordinates": [
-        79.5746,
-        17.9944
+        78.431,
+        17.4314
       ]
     },
     "rating": 4.8999999999999995
@@ -1802,16 +1802,16 @@ export const places = [
     "name": "Warangal Fort",
     "category": "Historical Fort",
     "description": "Major Kakatiya fort with impressive stone gateways and ruins.",
-    "image": "/images/Nirmal-Fort.jpg",
+    "image": "/images/modhera-sun.jpg",
     "position": [
-      17.9547,
-      79.6177
+      17.3106,
+      78.442
     ],
     "location": {
       "address": "Warangal Fort, Telangana",
       "coordinates": [
-        79.6177,
-        17.9547
+        78.442,
+        17.3106
       ]
     },
     "rating": 4.6
@@ -1821,16 +1821,16 @@ export const places = [
     "name": "Bhadrakali Temple",
     "category": "Temple",
     "description": "Ancient temple dedicated to Goddess Bhadrakali.",
-    "image": "/images/nizam-museum.jpg",
+    "image": "/images/mrugavani-national-park.jpg",
     "position": [
-      17.989,
-      79.576
+      17.3182,
+      78.44
     ],
     "location": {
       "address": "Bhadrakali Temple, Telangana",
       "coordinates": [
-        79.576,
-        17.989
+        78.44,
+        17.3182
       ]
     },
     "rating": 4.699999999999999
@@ -1840,16 +1840,16 @@ export const places = [
     "name": "Pakhal Lake",
     "category": "Lake / Nature",
     "description": "Scenic historic lake surrounded by forest and wildlife.",
-    "image": "/images/Nizam_Sagar.jpg",
+    "image": "/images/murudeshwar.jpg",
     "position": [
-      17.994,
-      80.026
+      17.325,
+      78.44
     ],
     "location": {
       "address": "Pakhal Lake, Telangana",
       "coordinates": [
-        80.026,
-        17.994
+        78.44,
+        17.325
       ]
     },
     "rating": 4.8
@@ -1859,16 +1859,16 @@ export const places = [
     "name": "Pakhal Wildlife Sanctuary",
     "category": "Wildlife",
     "description": "Forest sanctuary surrounding Pakhal Lake.",
-    "image": "/images/ntr-garden.jpg",
+    "image": "/images/nagarjunakonda.jpg",
     "position": [
-      17.96,
-      80.08
+      17.3354,
+      78.44
     ],
     "location": {
       "address": "Pakhal Wildlife Sanctuary, Telangana",
       "coordinates": [
-        80.08,
-        17.96
+        78.44,
+        17.3354
       ]
     },
     "rating": 4.8999999999999995
@@ -1878,16 +1878,16 @@ export const places = [
     "name": "Laknavaram Lake",
     "category": "Lake / Adventure",
     "description": "Beautiful lake famous for its suspension bridge and boating.",
-    "image": "/images/ntr-statue.jpg",
+    "image": "/images/necklace-road.jpg",
     "position": [
-      18.15,
-      79.9667
+      17.343,
+      78.4424
     ],
     "location": {
       "address": "Laknavaram Lake, Telangana",
       "coordinates": [
-        79.9667,
-        18.15
+        78.4424,
+        17.343
       ]
     },
     "rating": 4.6
@@ -1897,16 +1897,16 @@ export const places = [
     "name": "Bogatha Waterfalls",
     "category": "Waterfall",
     "description": "Popular waterfall known as the Niagara of Telangana.",
-    "image": "/images/orchha-fort.jpg",
+    "image": "/images/nehru-zoological-Park.jpg",
     "position": [
-      17.914,
-      80.25
+      17.3506,
+      78.4412
     ],
     "location": {
       "address": "Bogatha Waterfalls, Telangana",
       "coordinates": [
-        80.25,
-        17.914
+        78.4412,
+        17.3506
       ]
     },
     "rating": 4.699999999999999
@@ -1916,16 +1916,16 @@ export const places = [
     "name": "Kaleshwaram Temple",
     "category": "Temple",
     "description": "Famous Shiva temple near the Godavari and Pranahita rivers.",
-    "image": "/images/osman-sagar.jpg",
+    "image": "/images/netarhat.jpg",
     "position": [
-      18.811,
-      79.906
+      17.359,
+      78.4436
     ],
     "location": {
       "address": "Kaleshwaram Temple, Telangana",
       "coordinates": [
-        79.906,
-        18.811
+        78.4436,
+        17.359
       ]
     },
     "rating": 4.8
@@ -1935,16 +1935,16 @@ export const places = [
     "name": "Medaram",
     "category": "Religious / Cultural",
     "description": "Famous tribal pilgrimage destination associated with Sammakka Saralamma Jatara.",
-    "image": "/images/osmania-general-hospital.jpg",
+    "image": "/images/nizam-museum.jpg",
     "position": [
-      18.335,
-      80.001
+      17.365,
+      78.4428
     ],
     "location": {
       "address": "Medaram, Telangana",
       "coordinates": [
-        80.001,
-        18.335
+        78.4428,
+        17.365
       ]
     },
     "rating": 4.8999999999999995
@@ -1954,16 +1954,16 @@ export const places = [
     "name": "Yadadri Temple",
     "category": "Temple",
     "description": "Major hilltop temple dedicated to Lord Lakshmi Narasimha.",
-    "image": "/images/osmania-university.jpg",
+    "image": "/images/ntr-garden.jpg",
     "position": [
-      17.588,
-      78.948
+      17.3758,
+      78.4428
     ],
     "location": {
       "address": "Yadadri Temple, Telangana",
       "coordinates": [
-        78.948,
-        17.588
+        78.4428,
+        17.3758
       ]
     },
     "rating": 4.6
@@ -1973,16 +1973,16 @@ export const places = [
     "name": "Bhongir Fort",
     "category": "Historical Fort",
     "description": "Massive hilltop fort built on a monolithic rock.",
-    "image": "/images/paigah-tombs.jpg",
+    "image": "/images/ntr-statue.jpg",
     "position": [
-      17.516,
-      78.885
+      17.383,
+      78.4416
     ],
     "location": {
       "address": "Bhongir Fort, Telangana",
       "coordinates": [
-        78.885,
-        17.516
+        78.4416,
+        17.383
       ]
     },
     "rating": 4.699999999999999
@@ -1992,16 +1992,16 @@ export const places = [
     "name": "Kolanupaka Jain Temple",
     "category": "Temple / Heritage",
     "description": "Ancient Jain temple known for historic sculptures and architecture.",
-    "image": "/images/panchgani.jpg",
+    "image": "/images/orchha-fort.jpg",
     "position": [
-      17.486,
-      79.013
+      17.3898,
+      78.4436
     ],
     "location": {
       "address": "Kolanupaka Jain Temple, Telangana",
       "coordinates": [
-        79.013,
-        17.486
+        78.4436,
+        17.3898
       ]
     },
     "rating": 4.8
@@ -2011,16 +2011,16 @@ export const places = [
     "name": "Phanigiri Buddhist Site",
     "category": "Buddhist Heritage",
     "description": "Important ancient Buddhist archaeological site.",
-    "image": "/images/Parnasala.jpg",
+    "image": "/images/osman-sagar.jpg",
     "position": [
-      17.236,
-      79.536
+      17.3986,
+      78.4408
     ],
     "location": {
       "address": "Phanigiri Buddhist Site, Telangana",
       "coordinates": [
-        79.536,
-        17.236
+        78.4408,
+        17.3986
       ]
     },
     "rating": 4.8999999999999995
@@ -2030,16 +2030,16 @@ export const places = [
     "name": "Pillalamarri",
     "category": "Heritage / Nature",
     "description": "Historic banyan tree and cultural attraction.",
-    "image": "/images/patna-sahib.jpg",
+    "image": "/images/osmania-general-hospital.jpg",
     "position": [
-      16.997,
-      79.694
+      17.4074,
+      78.4432
     ],
     "location": {
       "address": "Pillalamarri, Telangana",
       "coordinates": [
-        79.694,
-        16.997
+        78.4432,
+        17.4074
       ]
     },
     "rating": 4.6
@@ -2051,14 +2051,14 @@ export const places = [
     "description": "Major dam and scenic destination on the Krishna River.",
     "image": "/images/Nagarjuna_Sagar.jpg",
     "position": [
-      16.5772,
-      79.3134
+      17.4154,
+      78.4436
     ],
     "location": {
       "address": "Nagarjuna Sagar, Telangana",
       "coordinates": [
-        79.3134,
-        16.5772
+        78.4436,
+        17.4154
       ]
     },
     "rating": 4.699999999999999
@@ -2070,14 +2070,14 @@ export const places = [
     "description": "Historic Buddhist archaeological site and museum area.",
     "image": "/images/nagarjunakonda.jpg",
     "position": [
-      16.533,
-      79.25
+      17.423,
+      78.4408
     ],
     "location": {
       "address": "Nagarjunakonda, Telangana",
       "coordinates": [
-        79.25,
-        16.533
+        78.4408,
+        17.423
       ]
     },
     "rating": 4.8
@@ -2089,14 +2089,14 @@ export const places = [
     "description": "Scenic waterfall formed by the Chandravanka stream.",
     "image": "/images/ethipothala-waterfalls.jpg",
     "position": [
-      16.874,
-      79.449
+      17.4322,
+      78.4416
     ],
     "location": {
       "address": "Ethipothala Waterfalls, Telangana",
       "coordinates": [
-        79.449,
-        16.874
+        78.4416,
+        17.4322
       ]
     },
     "rating": 4.8999999999999995
@@ -2108,14 +2108,14 @@ export const places = [
     "description": "Historic hill fort associated with medieval Telangana history.",
     "image": "/images/devarakonda-fort.jpg",
     "position": [
-      16.69,
-      79.35
+      17.3122,
+      78.4526
     ],
     "location": {
       "address": "Devarakonda Fort, Telangana",
       "coordinates": [
-        79.35,
-        16.69
+        78.4526,
+        17.3122
       ]
     },
     "rating": 4.6
@@ -2125,16 +2125,16 @@ export const places = [
     "name": "Chaya Someswara Temple",
     "category": "Historical Temple",
     "description": "Historic temple famous for its unique shadow phenomenon.",
-    "image": "/images/pocharam-dam.jpg",
+    "image": "/images/peddamma-thalli.jpg",
     "position": [
-      17.06,
-      79.26
+      17.3182,
+      78.4502
     ],
     "location": {
       "address": "Chaya Someswara Temple, Telangana",
       "coordinates": [
-        79.26,
-        17.06
+        78.4502,
+        17.3182
       ]
     },
     "rating": 4.699999999999999
@@ -2146,14 +2146,14 @@ export const places = [
     "description": "Famous Shiva temple and major pilgrimage centre.",
     "image": "/images/vemulawada-temple.jpg",
     "position": [
-      18.465,
-      78.868
+      17.3278,
+      78.4518
     ],
     "location": {
       "address": "Vemulawada Rajarajeshwara Temple, Telangana",
       "coordinates": [
-        78.868,
-        18.465
+        78.4518,
+        17.3278
       ]
     },
     "rating": 4.8
@@ -2163,16 +2163,16 @@ export const places = [
     "name": "Kondagattu Anjaneya Swamy Temple",
     "category": "Temple",
     "description": "Popular Hanuman temple situated among scenic hills.",
-    "image": "/images/pochera-waterfalls.jpg",
+    "image": "/images/phanigri -buddhist -site.jpg",
     "position": [
-      18.68,
-      78.91
+      17.335,
+      78.449
     ],
     "location": {
       "address": "Kondagattu Anjaneya Swamy Temple, Telangana",
       "coordinates": [
-        78.91,
-        18.68
+        78.449,
+        17.335
       ]
     },
     "rating": 4.8999999999999995
@@ -2184,14 +2184,14 @@ export const places = [
     "description": "Historic temple dedicated to Lord Narasimha near the Godavari.",
     "image": "/images/dharmapuri-temple.jpg",
     "position": [
-      18.95,
-      79.09
+      17.3426,
+      78.4526
     ],
     "location": {
       "address": "Dharmapuri Lakshmi Narasimha Temple, Telangana",
       "coordinates": [
-        79.09,
-        18.95
+        78.4526,
+        17.3426
       ]
     },
     "rating": 4.6
@@ -2203,14 +2203,14 @@ export const places = [
     "description": "Historic hill fort surrounded by natural scenery.",
     "image": "/images/ramagiri-fort.jpg",
     "position": [
-      18.59,
-      79.43
+      17.3526,
+      78.4502
     ],
     "location": {
       "address": "Ramagiri Fort, Telangana",
       "coordinates": [
-        79.43,
-        18.59
+        78.4502,
+        17.3526
       ]
     },
     "rating": 4.699999999999999
@@ -2222,14 +2222,14 @@ export const places = [
     "description": "Historic fort overlooking the Maner River.",
     "image": "/images/Elgandal_Fort.jpg",
     "position": [
-      18.4235,
-      79.0347
+      17.3602,
+      78.4494
     ],
     "location": {
       "address": "Elgandal Fort, Telangana",
       "coordinates": [
-        79.0347,
-        18.4235
+        78.4494,
+        17.3602
       ]
     },
     "rating": 4.8
@@ -2241,14 +2241,14 @@ export const places = [
     "description": "Popular scenic reservoir and recreational destination.",
     "image": "/images/lower-manair-dam.jpg",
     "position": [
-      18.438,
-      79.15
+      17.3654,
+      78.4518
     ],
     "location": {
       "address": "Lower Manair Dam, Telangana",
       "coordinates": [
-        79.15,
-        18.438
+        78.4518,
+        17.3654
       ]
     },
     "rating": 4.8999999999999995
@@ -2260,14 +2260,14 @@ export const places = [
     "description": "One of Telangana's most popular waterfalls.",
     "image": "/images/kuntala-waterfalls.jpg",
     "position": [
-      19.35,
-      78.82
+      17.375,
+      78.4514
     ],
     "location": {
       "address": "Kuntala Waterfalls, Telangana",
       "coordinates": [
-        78.82,
-        19.35
+        78.4514,
+        17.375
       ]
     },
     "rating": 4.6
@@ -2279,14 +2279,14 @@ export const places = [
     "description": "Scenic waterfall surrounded by rocky terrain and greenery.",
     "image": "/images/pochera-waterfalls.jpg",
     "position": [
-      19.32,
-      78.81
+      17.3826,
+      78.4494
     ],
     "location": {
       "address": "Pochera Waterfalls, Telangana",
       "coordinates": [
-        78.81,
-        19.32
+        78.4494,
+        17.3826
       ]
     },
     "rating": 4.699999999999999
@@ -2298,14 +2298,14 @@ export const places = [
     "description": "Famous temple dedicated to Goddess Saraswati.",
     "image": "/images/basara-temple.jpg",
     "position": [
-      18.88,
-      77.95
+      17.389,
+      78.4518
     ],
     "location": {
       "address": "Basara Saraswathi Temple, Telangana",
       "coordinates": [
-        77.95,
-        18.88
+        78.4518,
+        17.389
       ]
     },
     "rating": 4.8
@@ -2317,14 +2317,14 @@ export const places = [
     "description": "Historic fort associated with the Nirmal region.",
     "image": "/images/Nirmal-Fort.jpg",
     "position": [
-      19.096,
-      78.344
+      17.3998,
+      78.4522
     ],
     "location": {
       "address": "Nirmal Fort, Telangana",
       "coordinates": [
-        78.344,
-        19.096
+        78.4522,
+        17.3998
       ]
     },
     "rating": 4.8999999999999995
@@ -2336,14 +2336,14 @@ export const places = [
     "description": "Scenic reservoir surrounded by forest and hills.",
     "image": "/images/kadam-dam.jpg",
     "position": [
-      19.12,
-      78.82
+      17.4082,
+      78.4526
     ],
     "location": {
       "address": "Kadam Dam, Telangana",
       "coordinates": [
-        78.82,
-        19.12
+        78.4526,
+        17.4082
       ]
     },
     "rating": 4.6
@@ -2355,14 +2355,14 @@ export const places = [
     "description": "Ancient temple dedicated to Lord Lakshmi Narasimha.",
     "image": "/images/jainath-temple.jpg",
     "position": [
-      19.67,
-      78.53
+      17.4166,
+      78.451
     ],
     "location": {
       "address": "Jainath Temple, Telangana",
       "coordinates": [
-        78.53,
-        19.67
+        78.451,
+        17.4166
       ]
     },
     "rating": 4.699999999999999
@@ -2374,14 +2374,14 @@ export const places = [
     "description": "Major tiger reserve with forests and diverse wildlife.",
     "image": "/images/kawal-tiger-reserve.jpg",
     "position": [
-      19.16,
-      79.4
+      17.423,
+      78.4506
     ],
     "location": {
       "address": "Kawal Tiger Reserve, Telangana",
       "coordinates": [
-        79.4,
-        19.16
+        78.4506,
+        17.423
       ]
     },
     "rating": 4.8
@@ -2393,14 +2393,14 @@ export const places = [
     "description": "Wildlife sanctuary along the Pranahita River.",
     "image": "/images/pranahita-wildlife-sanctuary.jpg",
     "position": [
-      18.97,
-      79.82
+      17.4318,
+      78.4514
     ],
     "location": {
       "address": "Pranahita Wildlife Sanctuary, Telangana",
       "coordinates": [
-        79.82,
-        18.97
+        78.4514,
+        17.4318
       ]
     },
     "rating": 4.8999999999999995
@@ -2412,14 +2412,14 @@ export const places = [
     "description": "Famous Sri Sita Ramachandra Swamy temple on the Godavari.",
     "image": "/images/bhadrachalam-temple.jpg",
     "position": [
-      17.6688,
-      80.8929
+      17.3094,
+      78.4588
     ],
     "location": {
       "address": "Bhadrachalam Temple, Telangana",
       "coordinates": [
-        80.8929,
-        17.6688
+        78.4588,
+        17.3094
       ]
     },
     "rating": 4.6
@@ -2431,14 +2431,14 @@ export const places = [
     "description": "Important Ramayana-associated destination near Bhadrachalam.",
     "image": "/images/Parnasala.jpg",
     "position": [
-      17.56,
-      80.89
+      17.3202,
+      78.4596
     ],
     "location": {
       "address": "Parnasala, Telangana",
       "coordinates": [
-        80.89,
-        17.56
+        78.4596,
+        17.3202
       ]
     },
     "rating": 4.699999999999999
@@ -2450,14 +2450,14 @@ export const places = [
     "description": "Forest and wildlife destination around Kinnerasani reservoir.",
     "image": "/images/kinnerasani-wildlife.jpg",
     "position": [
-      17.75,
-      80.7
+      17.3274,
+      78.4596
     ],
     "location": {
       "address": "Kinnerasani Wildlife Sanctuary, Telangana",
       "coordinates": [
-        80.7,
-        17.75
+        78.4596,
+        17.3274
       ]
     },
     "rating": 4.8
@@ -2469,14 +2469,14 @@ export const places = [
     "description": "Scenic reservoir surrounded by forest.",
     "image": "/images/Kinnerasani_Dam.jpg",
     "position": [
-      17.78,
-      80.68
+      17.3334,
+      78.4608
     ],
     "location": {
       "address": "Kinnerasani Dam, Telangana",
       "coordinates": [
-        80.68,
-        17.78
+        78.4608,
+        17.3334
       ]
     },
     "rating": 4.8999999999999995
@@ -2488,14 +2488,14 @@ export const places = [
     "description": "Forest waterfall located in the Nallamala hills.",
     "image": "/images/mallela-theertham.jpg",
     "position": [
-      16.14,
-      78.95
+      17.3414,
+      78.4596
     ],
     "location": {
       "address": "Mallela Theertham, Telangana",
       "coordinates": [
-        78.95,
-        16.14
+        78.4596,
+        17.3414
       ]
     },
     "rating": 4.6
@@ -2507,14 +2507,14 @@ export const places = [
     "description": "Large protected forest area of the Nallamala hills.",
     "image": "/images/amrabad-tiger-reserve.jpg",
     "position": [
-      16.15,
-      78.7
+      17.3526,
+      78.4588
     ],
     "location": {
       "address": "Amrabad Tiger Reserve, Telangana",
       "coordinates": [
-        78.7,
-        16.15
+        78.4588,
+        17.3526
       ]
     },
     "rating": 4.699999999999999
@@ -2526,14 +2526,14 @@ export const places = [
     "description": "Ancient Shiva temple located in the Nallamala hills.",
     "image": "/images/uma-maheshwaram.jpg",
     "position": [
-      16.1,
-      78.85
+      17.3606,
+      78.4616
     ],
     "location": {
       "address": "Uma Maheshwaram Temple, Telangana",
       "coordinates": [
-        78.85,
-        16.1
+        78.4616,
+        17.3606
       ]
     },
     "rating": 4.8
@@ -2545,14 +2545,14 @@ export const places = [
     "description": "Historic Shakti Peetha and major pilgrimage destination.",
     "image": "/images/alampur-jogulamba.jpg",
     "position": [
-      15.8825,
-      78.1294
+      17.367,
+      78.46
     ],
     "location": {
       "address": "Alampur Jogulamba Temple, Telangana",
       "coordinates": [
-        78.1294,
-        15.8825
+        78.46,
+        17.367
       ]
     },
     "rating": 4.8999999999999995
@@ -2564,14 +2564,14 @@ export const places = [
     "description": "Historic fort associated with Gadwal Samsthanam.",
     "image": "/images/gadwal-fort.jpg",
     "position": [
-      16.235,
-      77.8
+      17.3762,
+      78.4604
     ],
     "location": {
       "address": "Gadwal Fort, Telangana",
       "coordinates": [
-        77.8,
-        16.235
+        78.4604,
+        17.3762
       ]
     },
     "rating": 4.6
@@ -2583,14 +2583,14 @@ export const places = [
     "description": "Scenic dam on the Krishna River.",
     "image": "/images/jurala-dam.jpg",
     "position": [
-      16.25,
-      77.78
+      17.3846,
+      78.4604
     ],
     "location": {
       "address": "Jurala Dam, Telangana",
       "coordinates": [
-        77.78,
-        16.25
+        78.4604,
+        17.3846
       ]
     },
     "rating": 4.699999999999999
@@ -2602,14 +2602,14 @@ export const places = [
     "description": "Scenic reservoir surrounded by hills.",
     "image": "/images/koilsagar-dam.jpg",
     "position": [
-      16.43,
-      77.8
+      17.389,
+      78.46
     ],
     "location": {
       "address": "Koilsagar Dam, Telangana",
       "coordinates": [
-        77.8,
-        16.43
+        78.46,
+        17.389
       ]
     },
     "rating": 4.8
@@ -2621,14 +2621,14 @@ export const places = [
     "description": "Historic palace associated with Wanaparthy Samsthanam.",
     "image": "/images/Wanaparthy-palace.jpg",
     "position": [
-      16.36,
-      78.06
+      17.3982,
+      78.4596
     ],
     "location": {
       "address": "Wanaparthy Palace, Telangana",
       "coordinates": [
-        78.06,
-        16.36
+        78.4596,
+        17.3982
       ]
     },
     "rating": 4.8999999999999995
@@ -2638,16 +2638,16 @@ export const places = [
     "name": "Ananthagiri Hills",
     "category": "Hills / Adventure",
     "description": "Popular destination for trekking, camping and nature tourism.",
-    "image": "/images/statue-of-equality.jpg",
+    "image": "/images/st-losephs-cathedral.jpg",
     "position": [
-      17.3117,
-      77.8658
+      17.405,
+      78.4588
     ],
     "location": {
       "address": "Ananthagiri Hills, Telangana",
       "coordinates": [
-        77.8658,
-        17.3117
+        78.4588,
+        17.405
       ]
     },
     "rating": 4.6
@@ -2659,14 +2659,14 @@ export const places = [
     "description": "Scenic reservoir popular for kayaking and outdoor activities.",
     "image": "/images/kotepally-reservoir.jpg",
     "position": [
-      17.3,
-      77.87
+      17.4134,
+      78.4592
     ],
     "location": {
       "address": "Kotepally Reservoir, Telangana",
       "coordinates": [
-        77.87,
-        17.3
+        78.4592,
+        17.4134
       ]
     },
     "rating": 4.699999999999999
@@ -2678,14 +2678,14 @@ export const places = [
     "description": "Historic fort-palace complex with distinctive architecture.",
     "image": "/images/domakonda-fort.jpg",
     "position": [
-      18.26,
-      78.45
+      17.4246,
+      78.4604
     ],
     "location": {
       "address": "Domakonda Fort, Telangana",
       "coordinates": [
-        78.45,
-        18.26
+        78.4604,
+        17.4246
       ]
     },
     "rating": 4.8
@@ -2697,14 +2697,14 @@ export const places = [
     "description": "Historic reservoir and scenic destination.",
     "image": "/images/Nizam_Sagar.jpg",
     "position": [
-      18.09,
-      77.97
+      17.4298,
+      78.4588
     ],
     "location": {
       "address": "Nizam Sagar, Telangana",
       "coordinates": [
-        77.97,
-        18.09
+        78.4588,
+        17.4298
       ]
     },
     "rating": 4.8999999999999995
@@ -2716,14 +2716,14 @@ export const places = [
     "description": "Famous Gothic-style cathedral and major heritage landmark.",
     "image": "/images/medakcathedral.jpg",
     "position": [
-      18.046,
-      78.262
+      17.309,
+      78.467
     ],
     "location": {
       "address": "Medak Cathedral, Telangana",
       "coordinates": [
-        78.262,
-        18.046
+        78.467,
+        17.309
       ]
     },
     "rating": 4.6
@@ -2735,14 +2735,14 @@ export const places = [
     "description": "Historic fort located on a hill overlooking Medak town.",
     "image": "/images/medak-fort.jpg",
     "position": [
-      18.0456,
-      78.2612
+      17.3186,
+      78.467
     ],
     "location": {
       "address": "Medak Fort, Telangana",
       "coordinates": [
-        78.2612,
-        18.0456
+        78.467,
+        17.3186
       ]
     },
     "rating": 4.699999999999999
@@ -2754,14 +2754,14 @@ export const places = [
     "description": "Wildlife sanctuary surrounding Pocharam reservoir.",
     "image": "/images/Pocharam-sanctuary.jpg",
     "position": [
-      18.18,
-      78.1
+      17.3262,
+      78.467
     ],
     "location": {
       "address": "Pocharam Wildlife Sanctuary, Telangana",
       "coordinates": [
-        78.1,
-        18.18
+        78.467,
+        17.3262
       ]
     },
     "rating": 4.8
@@ -2773,14 +2773,14 @@ export const places = [
     "description": "Scenic reservoir and bird-watching destination.",
     "image": "/images/pocharam-dam.jpg",
     "position": [
-      18.18,
-      78.11
+      17.3362,
+      78.4682
     ],
     "location": {
       "address": "Pocharam Dam, Telangana",
       "coordinates": [
-        78.11,
-        18.18
+        78.4682,
+        17.3362
       ]
     },
     "rating": 4.8999999999999995
@@ -2790,16 +2790,16 @@ export const places = [
     "name": "Komuravelli Mallanna Temple",
     "category": "Temple",
     "description": "Popular temple dedicated to Mallanna on a hill.",
-    "image": "/images/vemulawada-temple.jpg",
+    "image": "/images/uma-maheshwaram.jpg",
     "position": [
-      17.952,
-      78.905
+      17.3434,
+      78.4694
     ],
     "location": {
       "address": "Komuravelli Mallanna Temple, Telangana",
       "coordinates": [
-        78.905,
-        17.952
+        78.4694,
+        17.3434
       ]
     },
     "rating": 4.6
@@ -2811,14 +2811,14 @@ export const places = [
     "description": "Large reservoir and recreational destination.",
     "image": "/images/kondapochamma-sagar.jpg",
     "position": [
-      17.7812,
-      78.6811
+      17.5212,
+      78.5811
     ],
     "location": {
       "address": "Kondapochamma Sagar, Telangana",
       "coordinates": [
-        78.6811,
-        17.7812
+        78.5811,
+        17.5212
       ]
     },
     "rating": 4.699999999999999
@@ -3096,14 +3096,14 @@ export const places = [
     "description": "Hilltop temple complex with scenic surroundings.",
     "image": "/images/sanghi-temple.jpg",
     "position": [
-      17.255,
-      78.68
+      17.3438,
+      78.4776
     ],
     "location": {
       "address": "Sanghi Temple, Telangana",
       "coordinates": [
-        78.68,
-        17.255
+        78.4776,
+        17.3438
       ]
     },
     "rating": 4.6
@@ -3172,14 +3172,14 @@ export const places = [
     "description": "Ancient temple dedicated to Sri Ramalingeswara Swamy.",
     "image": "/images/keesaragutta.jpg",
     "position": [
-      17.5219,
-      78.6872
+      17.373,
+      78.478
     ],
     "location": {
       "address": "Keesaragutta Temple, Telangana",
       "coordinates": [
-        78.6872,
-        17.5219
+        78.478,
+        17.373
       ]
     },
     "rating": 4.6
@@ -3360,7 +3360,7 @@ export const places = [
     "name": "Lothal",
     "category": "Ahmedabad Region",
     "description": "Archaeological Site",
-    "image": "/images/devarakonda-fort.jpg",
+    "image": "/images/bhagya-laxmi-temple.jpg",
     "position": [
       17.3362,
       78.4886
@@ -3379,7 +3379,7 @@ export const places = [
     "name": "Dholavira",
     "category": "Kutch",
     "description": "Archaeological Site",
-    "image": "/images/dhanushkodi.jpg",
+    "image": "/images/bhimbetka.jpg",
     "position": [
       17.3442,
       78.4882
@@ -3398,7 +3398,7 @@ export const places = [
     "name": "Modhera Sun Temple",
     "category": "Mehsana",
     "description": "Historical Temple",
-    "image": "/images/dharmapuri-temple.jpg",
+    "image": "/images/bhongir.jpg",
     "position": [
       17.349,
       78.4878
@@ -3417,7 +3417,7 @@ export const places = [
     "name": "Sabarmati Riverfront",
     "category": "Ahmedabad",
     "description": "Tourist Attraction",
-    "image": "/images/dholavira.jpg",
+    "image": "/images/birla-mandir.jpg",
     "position": [
       17.3574,
       78.485
@@ -3436,7 +3436,7 @@ export const places = [
     "name": "Marine Drive",
     "category": "Mumbai",
     "description": "Landmark",
-    "image": "/images/digha.jpg",
+    "image": "/images/birla-science-museum.jpg",
     "position": [
       17.3678,
       78.4854
@@ -3455,7 +3455,7 @@ export const places = [
     "name": "Siddhivinayak Temple",
     "category": "Mumbai",
     "description": "Temple",
-    "image": "/images/domakonda-fort.jpg",
+    "image": "/images/british-residency.jpg",
     "position": [
       17.3742,
       78.4878
@@ -3474,7 +3474,7 @@ export const places = [
     "name": "Sanjay Gandhi National Park",
     "category": "Mumbai",
     "description": "Wildlife",
-    "image": "/images/Elgandal_Fort.jpg",
+    "image": "/images/buddha-statue.jpg",
     "position": [
       17.381,
       78.487
@@ -3493,7 +3493,7 @@ export const places = [
     "name": "Aga Khan Palace",
     "category": "Pune",
     "description": "Historical Site",
-    "image": "/images/ethipothala-waterfalls.jpg",
+    "image": "/images/charminar.jpg",
     "position": [
       17.3926,
       78.4878
@@ -3512,7 +3512,7 @@ export const places = [
     "name": "Sinhagad Fort",
     "category": "Pune",
     "description": "Historical Fort",
-    "image": "/images/falakuma-palace.jpg",
+    "image": "/images/chettinad-palace.jpg",
     "position": [
       17.3974,
       78.4862
@@ -3531,7 +3531,7 @@ export const places = [
     "name": "Mahabaleshwar",
     "category": "Satara",
     "description": "Hill Station",
-    "image": "/images/gadwal-fort.jpg",
+    "image": "/images/chilkur-balaji.jpg",
     "position": [
       17.4066,
       78.485
@@ -3550,7 +3550,7 @@ export const places = [
     "name": "Panchgani",
     "category": "Satara",
     "description": "Hill Station",
-    "image": "/images/gangtok.jpg",
+    "image": "/images/chowmahalla-palace.jpg",
     "position": [
       17.4154,
       78.4882
@@ -3569,7 +3569,7 @@ export const places = [
     "name": "Gokarna Beach",
     "category": "Gokarna",
     "description": "Beach",
-    "image": "/images/gokarna-beach.jpg",
+    "image": "/images/deoghar-temple.jpg",
     "position": [
       17.423,
       78.485
@@ -3588,7 +3588,7 @@ export const places = [
     "name": "Murudeshwar Temple",
     "category": "Murudeshwar",
     "description": "Temple",
-    "image": "/images/golconda-fort.jpg",
+    "image": "/images/devarakonda-fort.jpg",
     "position": [
       17.4298,
       78.4878
@@ -3607,7 +3607,7 @@ export const places = [
     "name": "Hoysaleswara Temple",
     "category": "Halebidu",
     "description": "Historical Temple",
-    "image": "/images/golconda-light-show.jpg",
+    "image": "/images/dhanushkodi.jpg",
     "position": [
       17.3102,
       78.496
@@ -3626,7 +3626,7 @@ export const places = [
     "name": "Belur Temple",
     "category": "Belur",
     "description": "Historical Temple",
-    "image": "/images/guruvayur.jpg",
+    "image": "/images/dharmapuri-temple.jpg",
     "position": [
       17.3182,
       78.496
@@ -3645,7 +3645,7 @@ export const places = [
     "name": "Bandipur National Park",
     "category": "Chamarajanagar",
     "description": "Wildlife",
-    "image": "/images/gwalior-fort.jpg",
+    "image": "/images/dholavira.jpg",
     "position": [
       17.3266,
       78.4944
@@ -3664,7 +3664,7 @@ export const places = [
     "name": "Kabini",
     "category": "Mysuru Region",
     "description": "Wildlife / Nature",
-    "image": "/images/hare-krishna-golden-temple.jpg",
+    "image": "/images/digha.jpg",
     "position": [
       17.333,
       78.4944
@@ -3683,7 +3683,7 @@ export const places = [
     "name": "Dhanushkodi",
     "category": "Rameswaram",
     "description": "Coastal Attraction",
-    "image": "/images/hatiyan-jhad.jpg",
+    "image": "/images/domakonda-fort.jpg",
     "position": [
       17.3438,
       78.4976
@@ -3702,7 +3702,7 @@ export const places = [
     "name": "Rameswaram Temple",
     "category": "Rameswaram",
     "description": "Temple",
-    "image": "/images/himayat-sagar.jpg",
+    "image": "/images/ethipothala-waterfalls.jpg",
     "position": [
       17.3494,
       78.496
@@ -3721,7 +3721,7 @@ export const places = [
     "name": "Chettinad Palace",
     "category": "Chettinad",
     "description": "Heritage",
-    "image": "/images/hoysaleswara.jpg",
+    "image": "/images/falakuma-palace.jpg",
     "position": [
       17.359,
       78.4972
@@ -3740,7 +3740,7 @@ export const places = [
     "name": "Kodaikanal",
     "category": "Dindigul",
     "description": "Hill Station",
-    "image": "/images/hussain-sagar.jpg",
+    "image": "/images/gadwal-fort.jpg",
     "position": [
       17.3678,
       78.4948
@@ -3759,7 +3759,7 @@ export const places = [
     "name": "Athirappilly Falls",
     "category": "Thrissur",
     "description": "Waterfall",
-    "image": "/images/indian-museum.jpg",
+    "image": "/images/gangtok.jpg",
     "position": [
       17.3754,
       78.4964
@@ -3778,7 +3778,7 @@ export const places = [
     "name": "Bekal Fort",
     "category": "Kasaragod",
     "description": "Historical Fort",
-    "image": "/images/indira-park.jpg",
+    "image": "/images/gokarna-beach.jpg",
     "position": [
       17.3818,
       78.496
@@ -3797,7 +3797,7 @@ export const places = [
     "name": "Kovalam Beach",
     "category": "Thiruvananthapuram",
     "description": "Beach",
-    "image": "/images/iskcon-temple.jpg",
+    "image": "/images/golconda-fort.jpg",
     "position": [
       17.3918,
       78.4956
@@ -3816,7 +3816,7 @@ export const places = [
     "name": "Sabarimala Temple",
     "category": "Pathanamthitta",
     "description": "Temple",
-    "image": "/images/jagannath-temple.jpg",
+    "image": "/images/golconda-light-show.jpg",
     "position": [
       17.4002,
       78.4968
@@ -3835,7 +3835,7 @@ export const places = [
     "name": "Guruvayur Temple",
     "category": "Guruvayur",
     "description": "Temple",
-    "image": "/images/jainath-temple.jpg",
+    "image": "/images/guruvayur.jpg",
     "position": [
       17.4066,
       78.4968
@@ -3854,7 +3854,7 @@ export const places = [
     "name": "Digha Beach",
     "category": "Digha",
     "description": "Beach",
-    "image": "/images/jurala-dam.jpg",
+    "image": "/images/gwalior-fort.jpg",
     "position": [
       17.4162,
       78.496
@@ -3873,7 +3873,7 @@ export const places = [
     "name": "Indian Museum",
     "category": "Kolkata",
     "description": "Museum",
-    "image": "/images/kadam-dam.jpg",
+    "image": "/images/hare-krishna-golden-temple.jpg",
     "position": [
       17.421,
       78.4948
@@ -3892,7 +3892,7 @@ export const places = [
     "name": "Sundarbans National Park",
     "category": "Sundarbans",
     "description": "Wildlife",
-    "image": "/images/kaeshwaram-temple.jpg",
+    "image": "/images/hatiyan-jhad.jpg",
     "position": [
       17.4318,
       78.4964
@@ -3911,7 +3911,7 @@ export const places = [
     "name": "Gangtok",
     "category": "Gangtok",
     "description": "Hill Station",
-    "image": "/images/karmanghat-hanuman.jpg",
+    "image": "/images/himayat-sagar.jpg",
     "position": [
       17.3122,
       78.5062
@@ -3930,7 +3930,7 @@ export const places = [
     "name": "Pelling",
     "category": "Pelling",
     "description": "Hill Station",
-    "image": "/images/kashi-bugga-temple.jpg",
+    "image": "/images/hoysaleswara.jpg",
     "position": [
       17.3206,
       78.5066
@@ -3949,7 +3949,7 @@ export const places = [
     "name": "Sandakphu",
     "category": "Darjeeling",
     "description": "Trekking / Nature",
-    "image": "/images/kawal-tiger-reserve.jpg",
+    "image": "/images/hussain-sagar.jpg",
     "position": [
       17.3262,
       78.5066
@@ -3968,7 +3968,7 @@ export const places = [
     "name": "Rajgir",
     "category": "Nalanda",
     "description": "Historical / Nature",
-    "image": "/images/kbr-national-park.jpg",
+    "image": "/images/indian-museum.jpg",
     "position": [
       17.3346,
       78.5038
@@ -3987,7 +3987,7 @@ export const places = [
     "name": "Rajgir Glass Bridge",
     "category": "Rajgir",
     "description": "Tourist Attraction",
-    "image": "/images/keesaragutta.jpg",
+    "image": "/images/indira-park.jpg",
     "position": [
       17.3442,
       78.5062
@@ -4006,7 +4006,7 @@ export const places = [
     "name": "Patna Sahib Gurudwara",
     "category": "Patna",
     "description": "Religious",
-    "image": "/images/khursheed-jah-devdi.jpg",
+    "image": "/images/iskcon-temple.jpg",
     "position": [
       17.3522,
       78.5066
@@ -4025,7 +4025,7 @@ export const places = [
     "name": "Deoghar Temple",
     "category": "Deoghar",
     "description": "Temple",
-    "image": "/images/kinnerasani-wildlife.jpg",
+    "image": "/images/jagannath-temple.jpg",
     "position": [
       17.3574,
       78.503
@@ -4044,7 +4044,7 @@ export const places = [
     "name": "Netarhat",
     "category": "Latehar",
     "description": "Hill Station",
-    "image": "/images/Kinnerasani_Dam.jpg",
+    "image": "/images/jainath-temple.jpg",
     "position": [
       17.3666,
       78.5038
@@ -4063,7 +4063,7 @@ export const places = [
     "name": "Victoria Memorial",
     "category": "Kolkata",
     "description": "Historical Monument",
-    "image": "/images/kodailkanal.jpg",
+    "image": "/images/jurala-dam.jpg",
     "position": [
       17.375,
       78.5058
@@ -4082,7 +4082,7 @@ export const places = [
     "name": "Gwalior Fort",
     "category": "Gwalior",
     "description": "Historical Fort",
-    "image": "/images/koilsagar-dam.jpg",
+    "image": "/images/kadam-dam.jpg",
     "position": [
       17.3838,
       78.5042
@@ -4101,7 +4101,7 @@ export const places = [
     "name": "Orchha Fort",
     "category": "Orchha",
     "description": "Historical Fort",
-    "image": "/images/kolanpaku-jain-temple.jpg",
+    "image": "/images/kaeshwaram-temple.jpg",
     "position": [
       17.3898,
       78.5058
@@ -4120,7 +4120,7 @@ export const places = [
     "name": "Bhimbetka Rock Shelters",
     "category": "Raisen",
     "description": "Archaeological Site",
-    "image": "/images/komuravalli-mallanna.jpg",
+    "image": "/images/karmanghat-hanuman.jpg",
     "position": [
       17.4006,
       78.5058
@@ -4139,7 +4139,7 @@ export const places = [
     "name": "Omkareshwar Temple",
     "category": "Omkareshwar",
     "description": "Temple",
-    "image": "/images/Kondagattu_anjaneya_swamy_temple.jpg",
+    "image": "/images/kashi-bugga-temple.jpg",
     "position": [
       17.4082,
       78.505
@@ -4158,7 +4158,7 @@ export const places = [
     "name": "Ujjain Mahakal Lok",
     "category": "Ujjain",
     "description": "Religious / Tourist Attraction",
-    "image": "/images/kondapochamma-sagar.jpg",
+    "image": "/images/kawal-tiger-reserve.jpg",
     "position": [
       17.4162,
       78.5038
@@ -4177,7 +4177,7 @@ export const places = [
     "name": "Jagdalpur",
     "category": "Bastar",
     "description": "Nature / Culture",
-    "image": "/images/kotepally-reservoir.jpg",
+    "image": "/images/kbr-national-park.jpg",
     "position": [
       17.4222,
       78.505
@@ -4196,7 +4196,7 @@ export const places = [
     "name": "Amarkantak",
     "category": "Anuppur",
     "description": "Nature / Religious",
-    "image": "/images/kovalam-beach-light.jpg",
+    "image": "/images/keesaragutta.jpg",
     "position": [
       17.431,
       78.5038
@@ -4215,7 +4215,7 @@ export const places = [
     "name": "Pachmarhi",
     "category": "Narmadapuram",
     "description": "Hill Station",
-    "image": "/images/kuntala-waterfalls.jpg",
+    "image": "/images/khursheed-jah-devdi.jpg",
     "position": [
       17.3114,
       78.5144
@@ -4234,7 +4234,7 @@ export const places = [
     "name": "Chitrakote Waterfall",
     "category": "Bastar",
     "description": "Waterfall",
-    "image": "/images/laad-bazaar.jpg",
+    "image": "/images/kinnerasani-wildlife.jpg",
     "position": [
       17.317,
       78.5136
@@ -4253,7 +4253,7 @@ export const places = [
     "name": "Bastar Palace",
     "category": "Jagdalpur",
     "description": "Historical Palace",
-    "image": "/images/lothal.jpg",
+    "image": "/images/kodailkanal.jpg",
     "position": [
       17.3282,
       78.5124
@@ -4272,7 +4272,7 @@ export const places = [
     "name": "Marine Drive Kochi",
     "category": "Kochi",
     "description": "Landmark",
-    "image": "/images/lower-manair-dam.jpg",
+    "image": "/images/koilsagar-dam.jpg",
     "position": [
       17.3362,
       78.512
@@ -4291,7 +4291,7 @@ export const places = [
     "name": "Mattancherry Palace",
     "category": "Kochi",
     "description": "Historical Palace",
-    "image": "/images/Lumbini-Park.jpg",
+    "image": "/images/kolanpaku-jain-temple.jpg",
     "position": [
       17.3414,
       78.5144
@@ -4310,7 +4310,7 @@ export const places = [
     "name": "Athirappilly Waterfalls",
     "category": "Thrissur",
     "description": "Waterfall",
-    "image": "/images/mahabaleshwar.jpg",
+    "image": "/images/komuravalli-mallanna.jpg",
     "position": [
       17.3506,
       78.5128
@@ -4329,7 +4329,7 @@ export const places = [
     "name": "Wayanad",
     "category": "Wayanad",
     "description": "Hills / Nature",
-    "image": "/images/mahankali-temple.jpg",
+    "image": "/images/kondapochamma-sagar.jpg",
     "position": [
       17.3606,
       78.5124
@@ -4348,7 +4348,7 @@ export const places = [
     "name": "Thekkady",
     "category": "Idukki",
     "description": "Wildlife / Nature",
-    "image": "/images/mallela-theertham.jpg",
+    "image": "/images/kotepally-reservoir.jpg",
     "position": [
       17.3658,
       78.5128
@@ -4367,7 +4367,7 @@ export const places = [
     "name": "Kumarakom",
     "category": "Kottayam",
     "description": "Backwaters",
-    "image": "/images/marine-drive.jpg",
+    "image": "/images/kovalam-beach-light.jpg",
     "position": [
       17.373,
       78.5124
@@ -4386,7 +4386,7 @@ export const places = [
     "name": "Konark Beach",
     "category": "Konark",
     "description": "Beach",
-    "image": "/images/mecca-masjid.jpg",
+    "image": "/images/kuntala-waterfalls.jpg",
     "position": [
       17.381,
       78.5124
@@ -4405,7 +4405,7 @@ export const places = [
     "name": "Lingaraj Temple",
     "category": "Bhubaneswar",
     "description": "Temple",
-    "image": "/images/medak-fort.jpg",
+    "image": "/images/laad-bazaar.jpg",
     "position": [
       17.391,
       78.514
@@ -4424,7 +4424,7 @@ export const places = [
     "name": "Udayagiri and Khandagiri Caves",
     "category": "Bhubaneswar",
     "description": "Historical Caves",
-    "image": "/images/medakcathedral.jpg",
+    "image": "/images/lothal.jpg",
     "position": [
       17.4006,
       78.514
@@ -4443,7 +4443,7 @@ export const places = [
     "name": "Simlipal National Park",
     "category": "Mayurbhanj",
     "description": "Wildlife",
-    "image": "/images/medara.jpg",
+    "image": "/images/lower-manair-dam.jpg",
     "position": [
       17.4078,
       78.5128
@@ -4462,7 +4462,7 @@ export const places = [
     "name": "Raghurajpur Artist Village",
     "category": "Puri",
     "description": "Cultural Heritage",
-    "image": "/images/mir-alam-tank.jpg",
+    "image": "/images/mahabaleshwar.jpg",
     "position": [
       17.415,
       78.5124
@@ -4481,7 +4481,7 @@ export const places = [
     "name": "Dhauli Shanti Stupa",
     "category": "Bhubaneswar",
     "description": "Buddhist Heritage",
-    "image": "/images/moazzam-jahi-market.jpg",
+    "image": "/images/mahankali-temple.jpg",
     "position": [
       17.4214,
       78.5148
@@ -4500,7 +4500,7 @@ export const places = [
     "name": "Varkala Cliff",
     "category": "Varkala",
     "description": "Coastal Attraction",
-    "image": "/images/modhera-sun-temple.jpg",
+    "image": "/images/mallela-theertham.jpg",
     "position": [
       17.4294,
       78.512
@@ -4519,7 +4519,7 @@ export const places = [
     "name": "Bekal Beach",
     "category": "Kasaragod",
     "description": "Beach",
-    "image": "/images/modhera-sun.jpg",
+    "image": "/images/marine-drive.jpg",
     "position": [
       17.3126,
       78.5218
@@ -4538,7 +4538,7 @@ export const places = [
     "name": "Marari Beach",
     "category": "Alappuzha",
     "description": "Beach",
-    "image": "/images/mrugavani-national-park.jpg",
+    "image": "/images/mecca-masjid.jpg",
     "position": [
       17.3182,
       78.5234
@@ -4557,7 +4557,7 @@ export const places = [
     "name": "Silent Valley National Park",
     "category": "Palakkad",
     "description": "Wildlife / Nature",
-    "image": "/images/murudeshwar.jpg",
+    "image": "/images/medak-fort.jpg",
     "position": [
       17.3262,
       78.523
@@ -4576,7 +4576,7 @@ export const places = [
     "name": "Hogenakkal Falls",
     "category": "Dharmapuri",
     "description": "Waterfall",
-    "image": "/images/nagarjunakonda.jpg",
+    "image": "/images/medakcathedral.jpg",
     "position": [
       17.3366,
       78.523
@@ -4595,7 +4595,7 @@ export const places = [
     "name": "Yercaud",
     "category": "Salem",
     "description": "Hill Station",
-    "image": "/images/Nagarjuna_Sagar.jpg",
+    "image": "/images/medara.jpg",
     "position": [
       17.3426,
       78.5246
@@ -4614,7 +4614,7 @@ export const places = [
     "name": "Gingee Fort",
     "category": "Villupuram",
     "description": "Historical Fort",
-    "image": "/images/necklace-road.jpg",
+    "image": "/images/mir-alam-tank.jpg",
     "position": [
       17.3522,
       78.5218
@@ -4633,7 +4633,7 @@ export const places = [
     "name": "Srirangam Temple",
     "category": "Tiruchirappalli",
     "description": "Temple",
-    "image": "/images/nehru-zoological-Park.jpg",
+    "image": "/images/moazzam-jahi-market.jpg",
     "position": [
       17.3578,
       78.5238
@@ -4652,7 +4652,7 @@ export const places = [
     "name": "Thirumalai Nayakkar Palace",
     "category": "Madurai",
     "description": "Historical Palace",
-    "image": "/images/netarhat.jpg",
+    "image": "/images/modhera-sun-temple.jpg",
     "position": [
       17.3658,
       78.5218
@@ -4671,7 +4671,7 @@ export const places = [
     "name": "Pulicat Lake",
     "category": "Tiruvallur",
     "description": "Lake / Nature",
-    "image": "/images/Nirmal-Fort.jpg",
+    "image": "/images/modhera-sun.jpg",
     "position": [
       17.3746,
       78.5246
@@ -4690,7 +4690,7 @@ export const places = [
     "name": "Chikmagalur",
     "category": "Chikkamagaluru",
     "description": "Hills / Nature",
-    "image": "/images/nizam-museum.jpg",
+    "image": "/images/mrugavani-national-park.jpg",
     "position": [
       17.3842,
       78.5234
@@ -4709,7 +4709,7 @@ export const places = [
     "name": "Jog Falls",
     "category": "Shivamogga",
     "description": "Waterfall",
-    "image": "/images/Nizam_Sagar.jpg",
+    "image": "/images/murudeshwar.jpg",
     "position": [
       17.3914,
       78.523
@@ -4728,7 +4728,7 @@ export const places = [
     "name": "Udupi Sri Krishna Temple",
     "category": "Udupi",
     "description": "Temple",
-    "image": "/images/ntr-garden.jpg",
+    "image": "/images/nagarjunakonda.jpg",
     "position": [
       17.4006,
       78.5214
@@ -4747,7 +4747,7 @@ export const places = [
     "name": "Pattadakal",
     "category": "Bagalkot",
     "description": "Historical Heritage",
-    "image": "/images/ntr-statue.jpg",
+    "image": "/images/necklace-road.jpg",
     "position": [
       17.4086,
       78.5214
@@ -4769,7 +4769,7 @@ export const hotels = [
     "name": "Taj Falaknuma Palace",
     "category": "Luxury Hotel",
     "description": "Heritage luxury palace hotel with royal architecture and premium facilities.",
-    "image": "/images/alampur-jogulamba.jpg",
+    "image": "/images/Elgandal_Fort.jpg",
     "position": [
       17.3314,
       78.4678
@@ -4788,7 +4788,7 @@ export const hotels = [
     "name": "The Park Hyderabad",
     "category": "Luxury Hotel",
     "description": "Premium hotel located near Hussain Sagar and central Hyderabad.",
-    "image": "/images/amrabad-tiger-reserve.jpg",
+    "image": "/images/Kinnerasani_Dam.jpg",
     "position": [
       17.423,
       78.457
@@ -4807,7 +4807,7 @@ export const hotels = [
     "name": "Lemon Tree Premier HITEC City",
     "category": "Business Hotel",
     "description": "Modern business hotel suitable for tourists and business travelers.",
-    "image": "/images/anantha-padmanabha.jpg",
+    "image": "/images/Kondagattu_anjaneya_swamy_temple.jpg",
     "position": [
       17.45,
       78.382
@@ -4826,7 +4826,7 @@ export const hotels = [
     "name": "ibis Hyderabad HITEC City",
     "category": "Business Hotel",
     "description": "Contemporary hotel close to technology and business areas.",
-    "image": "/images/anathagiri-hills.jpg",
+    "image": "/images/Lumbini-Park.jpg",
     "position": [
       17.447,
       78.383
@@ -4845,7 +4845,7 @@ export const hotels = [
     "name": "Red Fox by Lemon Tree",
     "category": "Business Hotel",
     "description": "Comfortable hotel near Hyderabad's IT and business district.",
-    "image": "/images/ashtalakshmi-temple.jpg",
+    "image": "/images/Nagarjuna_Sagar.jpg",
     "position": [
       17.45,
       78.382
@@ -4864,7 +4864,7 @@ export const hotels = [
     "name": "Holiday Inn Express HITEC City",
     "category": "Business Hotel",
     "description": "Convenient hotel for business and leisure travelers.",
-    "image": "/images/athirappilly.jpg",
+    "image": "/images/Nirmal-Fort.jpg",
     "position": [
       17.446,
       78.382
@@ -4883,7 +4883,7 @@ export const hotels = [
     "name": "Deccan Serai Hotel",
     "category": "Business Hotel",
     "description": "Modern hotel near Mindspace and major IT offices.",
-    "image": "/images/balkampet-yellamma.jpg",
+    "image": "/images/Nizam_Sagar.jpg",
     "position": [
       17.441,
       78.384
@@ -4902,7 +4902,7 @@ export const hotels = [
     "name": "The Plaza Hotel Hyderabad",
     "category": "Hotel",
     "description": "Telangana Tourism hotel located in the central business district.",
-    "image": "/images/bandipur.jpg",
+    "image": "/images/Parnasala.jpg",
     "position": [
       17.443,
       78.467
@@ -4921,7 +4921,7 @@ export const hotels = [
     "name": "Taramati Baradari Resort",
     "category": "Heritage Resort",
     "description": "Heritage-style resort near Golconda and Taramati Baradari.",
-    "image": "/images/basara-temple.jpg",
+    "image": "/images/Pillalamarry.jpg",
     "position": [
       17.3848,
       78.3679
@@ -4940,7 +4940,7 @@ export const hotels = [
     "name": "Annapurna Residency",
     "category": "Budget Hotel",
     "description": "Budget-friendly hotel in central Secunderabad.",
-    "image": "/images/begum-bazaar.jpg",
+    "image": "/images/Pocharam-sanctuary.jpg",
     "position": [
       17.439,
       78.498
@@ -4959,7 +4959,7 @@ export const hotels = [
     "name": "Sapthagiri Hotel",
     "category": "Hotel",
     "description": "Full-service hotel suitable for family and business travelers.",
-    "image": "/images/bekal-fort.jpg",
+    "image": "/images/State-archeological-museum.jpg",
     "position": [
       17.439,
       78.498
@@ -4978,7 +4978,7 @@ export const hotels = [
     "name": "Royal Reve Hotel",
     "category": "Hotel",
     "description": "Centrally located hotel offering comfortable accommodation.",
-    "image": "/images/belur-temple.jpg",
+    "image": "/images/Wanaparthy-palace.jpg",
     "position": [
       17.44,
       78.498
@@ -4997,7 +4997,7 @@ export const hotels = [
     "name": "Sri Ambica Lodge",
     "category": "Budget Hotel",
     "description": "Budget accommodation close to Hyderabad Old City attractions.",
-    "image": "/images/bhadrachalam-temple.jpg",
+    "image": "/images/aga-khan-palace.jpg",
     "position": [
       17.373,
       78.473
@@ -5016,7 +5016,7 @@ export const hotels = [
     "name": "Grand Continent Gachibowli",
     "category": "Hotel",
     "description": "Comfortable hotel in Hyderabad's technology hub.",
-    "image": "/images/bhagya-laxmi-temple.jpg",
+    "image": "/images/alampur-jogulamba.jpg",
     "position": [
       17.44,
       78.35
@@ -5035,16 +5035,16 @@ export const hotels = [
     "name": "Haritha Hotel Warangal",
     "category": "Tourist Hotel",
     "description": "Telangana Tourism accommodation for visitors exploring Warangal.",
-    "image": "/images/bhimbetka.jpg",
+    "image": "/images/amrabad-tiger-reserve.jpg",
     "position": [
-      17.98,
-      79.59
+      17.4802,
+      78.3284
     ],
     "location": {
       "address": "Haritha Hotel Warangal, Telangana",
       "coordinates": [
-        79.59,
-        17.98
+        78.3284,
+        17.4802
       ]
     },
     "rating": 4.8999999999999995
@@ -5054,16 +5054,16 @@ export const hotels = [
     "name": "Haritha Hotel Ramappa",
     "category": "Tourist Hotel",
     "description": "Accommodation near Ramappa Temple and Ramappa Lake.",
-    "image": "/images/bhongir.jpg",
+    "image": "/images/anantha-padmanabha.jpg",
     "position": [
-      18.26,
-      79.943
+      17.3618,
+      78.3378
     ],
     "location": {
       "address": "Haritha Hotel Ramappa, Telangana",
       "coordinates": [
-        79.943,
-        18.26
+        78.3378,
+        17.3618
       ]
     },
     "rating": 4.6
@@ -5073,16 +5073,16 @@ export const hotels = [
     "name": "Haritha Hotel Laknavaram",
     "category": "Resort",
     "description": "Tourist accommodation near Laknavaram Lake.",
-    "image": "/images/birla-mandir.jpg",
+    "image": "/images/anathagiri-hills.jpg",
     "position": [
-      18.01,
-      80.02
+      17.3686,
+      78.3382
     ],
     "location": {
       "address": "Haritha Hotel Laknavaram, Telangana",
       "coordinates": [
-        80.02,
-        18.01
+        78.3382,
+        17.3686
       ]
     },
     "rating": 4.699999999999999
@@ -5092,16 +5092,16 @@ export const hotels = [
     "name": "Haritha Hotel Bhadrachalam",
     "category": "Tourist Hotel",
     "description": "Accommodation for pilgrims and tourists visiting Bhadrachalam.",
-    "image": "/images/birla-science-museum.jpg",
+    "image": "/images/ashtalakshmi-temple.jpg",
     "position": [
-      17.6688,
-      80.8936
+      17.3762,
+      78.337
     ],
     "location": {
       "address": "Haritha Hotel Bhadrachalam, Telangana",
       "coordinates": [
-        80.8936,
-        17.6688
+        78.337,
+        17.3762
       ]
     },
     "rating": 4.8
@@ -5111,16 +5111,16 @@ export const hotels = [
     "name": "Haritha Hotel Basara",
     "category": "Tourist Hotel",
     "description": "Accommodation near Saraswathi Temple and Godavari River.",
-    "image": "/images/british-residency.jpg",
+    "image": "/images/athirappilly.jpg",
     "position": [
-      18.88,
-      77.95
+      17.383,
+      78.3358
     ],
     "location": {
       "address": "Haritha Hotel Basara, Telangana",
       "coordinates": [
-        77.95,
-        18.88
+        78.3358,
+        17.383
       ]
     },
     "rating": 4.8999999999999995
@@ -5130,16 +5130,16 @@ export const hotels = [
     "name": "Haritha Hotel Vemulawada",
     "category": "Tourist Hotel",
     "description": "Accommodation near Rajarajeshwara Temple.",
-    "image": "/images/buddha-statue.jpg",
+    "image": "/images/balkampet-yellamma.jpg",
     "position": [
-      18.465,
-      78.868
+      17.3938,
+      78.335
     ],
     "location": {
       "address": "Haritha Hotel Vemulawada, Telangana",
       "coordinates": [
-        78.868,
-        18.465
+        78.335,
+        17.3938
       ]
     },
     "rating": 4.6
@@ -5149,16 +5149,16 @@ export const hotels = [
     "name": "Haritha Hotel Kaleshwaram",
     "category": "Tourist Hotel",
     "description": "Tourist accommodation near Kaleshwaram Temple.",
-    "image": "/images/charminar.jpg",
+    "image": "/images/bandipur.jpg",
     "position": [
-      18.811,
-      79.906
+      17.4002,
+      78.3366
     ],
     "location": {
       "address": "Haritha Hotel Kaleshwaram, Telangana",
       "coordinates": [
-        79.906,
-        18.811
+        78.3366,
+        17.4002
       ]
     },
     "rating": 4.699999999999999
@@ -5168,16 +5168,16 @@ export const hotels = [
     "name": "Haritha Hotel Kondagattu",
     "category": "Tourist Hotel",
     "description": "Accommodation near Kondagattu Anjaneya Swamy Temple.",
-    "image": "/images/Chaya_Someshwara_Temple.jpg",
+    "image": "/images/basara-temple.jpg",
     "position": [
-      18.68,
-      78.91
+      17.4086,
+      78.3374
     ],
     "location": {
       "address": "Haritha Hotel Kondagattu, Telangana",
       "coordinates": [
-        78.91,
-        18.68
+        78.3374,
+        17.4086
       ]
     },
     "rating": 4.8
@@ -5187,16 +5187,16 @@ export const hotels = [
     "name": "Haritha Hotel Nagarjuna Sagar",
     "category": "Tourist Hotel",
     "description": "Tourist accommodation near Nagarjuna Sagar Dam.",
-    "image": "/images/chettinad-palace.jpg",
+    "image": "/images/begum-bazaar.jpg",
     "position": [
-      16.574,
-      79.312
+      17.4158,
+      78.3382
     ],
     "location": {
       "address": "Haritha Hotel Nagarjuna Sagar, Telangana",
       "coordinates": [
-        79.312,
-        16.574
+        78.3382,
+        17.4158
       ]
     },
     "rating": 4.8999999999999995
@@ -5206,16 +5206,16 @@ export const hotels = [
     "name": "Haritha Hotel Medaram",
     "category": "Tourist Hotel",
     "description": "Accommodation for visitors to Medaram pilgrimage destination.",
-    "image": "/images/chilkur-balaji.jpg",
+    "image": "/images/bekal-fort.jpg",
     "position": [
-      18.335,
-      80.001
+      17.4242,
+      78.3358
     ],
     "location": {
       "address": "Haritha Hotel Medaram, Telangana",
       "coordinates": [
-        80.001,
-        18.335
+        78.3358,
+        17.4242
       ]
     },
     "rating": 4.6
@@ -5225,16 +5225,16 @@ export const hotels = [
     "name": "Haritha Hotel Bogatha",
     "category": "Tourist Hotel",
     "description": "Accommodation near Bogatha Waterfalls.",
-    "image": "/images/chowmahalla-palace.jpg",
+    "image": "/images/belur-temple.jpg",
     "position": [
-      17.914,
-      80.25
+      17.4338,
+      78.3386
     ],
     "location": {
       "address": "Haritha Hotel Bogatha, Telangana",
       "coordinates": [
-        80.25,
-        17.914
+        78.3386,
+        17.4338
       ]
     },
     "rating": 4.699999999999999
@@ -5244,7 +5244,7 @@ export const hotels = [
     "name": "The Taj Mahal Palace",
     "category": "Luxury Hotel",
     "description": "Iconic luxury hotel overlooking the Gateway of India and Mumbai Harbour.",
-    "image": "/images/devarakonda-fort.jpg",
+    "image": "/images/bhagya-laxmi-temple.jpg",
     "position": [
       17.4474,
       78.3354
@@ -5263,7 +5263,7 @@ export const hotels = [
     "name": "Taj Lands End",
     "category": "Luxury Hotel",
     "description": "Famous luxury hotel with Arabian Sea views and premium hospitality.",
-    "image": "/images/dhanushkodi.jpg",
+    "image": "/images/bhimbetka.jpg",
     "position": [
       17.4586,
       78.3362
@@ -5282,7 +5282,7 @@ export const hotels = [
     "name": "Taj Mahal, New Delhi",
     "category": "Luxury Hotel",
     "description": "Landmark luxury hotel close to major attractions in central Delhi.",
-    "image": "/images/dharmapuri-temple.jpg",
+    "image": "/images/bhongir.jpg",
     "position": [
       17.463,
       78.3362
@@ -5301,7 +5301,7 @@ export const hotels = [
     "name": "Taj Palace, New Delhi",
     "category": "Luxury Hotel",
     "description": "Well-known luxury hotel popular with international and business travellers.",
-    "image": "/images/dholavira.jpg",
+    "image": "/images/birla-mandir.jpg",
     "position": [
       17.4722,
       78.337
@@ -5320,7 +5320,7 @@ export const hotels = [
     "name": "The Oberoi Amarvilas",
     "category": "Luxury Resort",
     "description": "Luxury resort famous for views of the Taj Mahal.",
-    "image": "/images/digha.jpg",
+    "image": "/images/birla-science-museum.jpg",
     "position": [
       17.4798,
       78.3366
@@ -5339,7 +5339,7 @@ export const hotels = [
     "name": "The Oberoi, Mumbai",
     "category": "Luxury Hotel",
     "description": "Premium hotel overlooking Marine Drive and the Arabian Sea.",
-    "image": "/images/domakonda-fort.jpg",
+    "image": "/images/british-residency.jpg",
     "position": [
       17.3614,
       78.3444
@@ -5358,7 +5358,7 @@ export const hotels = [
     "name": "The Oberoi, New Delhi",
     "category": "Luxury Hotel",
     "description": "Iconic luxury hotel near Delhi's major heritage attractions.",
-    "image": "/images/Elgandal_Fort.jpg",
+    "image": "/images/buddha-statue.jpg",
     "position": [
       17.3702,
       78.344
@@ -5377,7 +5377,7 @@ export const hotels = [
     "name": "The Oberoi Rajvilas",
     "category": "Luxury Resort",
     "description": "Famous heritage-style luxury resort in Jaipur.",
-    "image": "/images/ethipothala-waterfalls.jpg",
+    "image": "/images/charminar.jpg",
     "position": [
       17.3754,
       78.346
@@ -5396,7 +5396,7 @@ export const hotels = [
     "name": "The Oberoi Udaivilas",
     "category": "Luxury Resort",
     "description": "Luxury resort overlooking Lake Pichola and Udaipur's heritage landscape.",
-    "image": "/images/falakuma-palace.jpg",
+    "image": "/images/chettinad-palace.jpg",
     "position": [
       17.3862,
       78.3448
@@ -5415,7 +5415,7 @@ export const hotels = [
     "name": "The Oberoi Vanyavilas",
     "category": "Luxury Resort",
     "description": "Luxury wildlife resort near Ranthambore National Park.",
-    "image": "/images/gadwal-fort.jpg",
+    "image": "/images/chilkur-balaji.jpg",
     "position": [
       17.3914,
       78.3452
@@ -5434,7 +5434,7 @@ export const hotels = [
     "name": "ITC Maurya",
     "category": "Luxury Hotel",
     "description": "Famous luxury hotel in New Delhi known for fine dining and hospitality.",
-    "image": "/images/gangtok.jpg",
+    "image": "/images/chowmahalla-palace.jpg",
     "position": [
       17.4006,
       78.3476
@@ -5453,7 +5453,7 @@ export const hotels = [
     "name": "ITC Grand Chola",
     "category": "Luxury Hotel",
     "description": "Large luxury hotel known for grand architecture and restaurants.",
-    "image": "/images/gokarna-beach.jpg",
+    "image": "/images/deoghar-temple.jpg",
     "position": [
       17.4074,
       78.3452
@@ -5472,7 +5472,7 @@ export const hotels = [
     "name": "ITC Kohenur",
     "category": "Luxury Hotel",
     "description": "Modern luxury hotel overlooking Durgam Cheruvu.",
-    "image": "/images/golconda-fort.jpg",
+    "image": "/images/devarakonda-fort.jpg",
     "position": [
       17.43,
       78.3815
@@ -5491,7 +5491,7 @@ export const hotels = [
     "name": "ITC Kakatiya",
     "category": "Luxury Hotel",
     "description": "Established luxury hotel in Hyderabad known for business and leisure stays.",
-    "image": "/images/golconda-light-show.jpg",
+    "image": "/images/dhanushkodi.jpg",
     "position": [
       17.4338,
       78.456
@@ -5510,7 +5510,7 @@ export const hotels = [
     "name": "ITC Royal Bengal",
     "category": "Luxury Hotel",
     "description": "Grand luxury hotel near Kolkata's major attractions.",
-    "image": "/images/guruvayur.jpg",
+    "image": "/images/dharmapuri-temple.jpg",
     "position": [
       17.4334,
       78.3468
@@ -5529,7 +5529,7 @@ export const hotels = [
     "name": "ITC Sonar",
     "category": "Luxury Hotel",
     "description": "Luxury hotel known for landscaped surroundings and fine dining.",
-    "image": "/images/gwalior-fort.jpg",
+    "image": "/images/dholavira.jpg",
     "position": [
       17.4406,
       78.3444
@@ -5548,7 +5548,7 @@ export const hotels = [
     "name": "ITC Mughal",
     "category": "Luxury Resort",
     "description": "Famous Agra resort inspired by Mughal architecture and heritage.",
-    "image": "/images/hare-krishna-golden-temple.jpg",
+    "image": "/images/digha.jpg",
     "position": [
       17.4494,
       78.344
@@ -5567,7 +5567,7 @@ export const hotels = [
     "name": "ITC Rajputana",
     "category": "Luxury Hotel",
     "description": "Rajasthan-inspired luxury hotel in Jaipur.",
-    "image": "/images/hatiyan-jhad.jpg",
+    "image": "/images/domakonda-fort.jpg",
     "position": [
       17.4586,
       78.344
@@ -5586,7 +5586,7 @@ export const hotels = [
     "name": "ITC Grand Goa",
     "category": "Luxury Resort",
     "description": "Luxury beachfront resort in Goa.",
-    "image": "/images/himayat-sagar.jpg",
+    "image": "/images/ethipothala-waterfalls.jpg",
     "position": [
       17.4642,
       78.3448
@@ -5605,7 +5605,7 @@ export const hotels = [
     "name": "Taj Lake Palace",
     "category": "Heritage Luxury Hotel",
     "description": "Iconic palace hotel located on Lake Pichola.",
-    "image": "/images/hoysaleswara.jpg",
+    "image": "/images/falakuma-palace.jpg",
     "position": [
       17.4738,
       78.3448
@@ -5624,7 +5624,7 @@ export const hotels = [
     "name": "Taj Falaknuma Palace",
     "category": "Heritage Luxury Hotel",
     "description": "Historic palace hotel offering a royal Hyderabad experience.",
-    "image": "/images/hussain-sagar.jpg",
+    "image": "/images/gadwal-fort.jpg",
     "position": [
       17.3314,
       78.4678
@@ -5643,7 +5643,7 @@ export const hotels = [
     "name": "Taj Rambagh Palace",
     "category": "Heritage Luxury Hotel",
     "description": "Historic royal palace converted into a luxury hotel in Jaipur.",
-    "image": "/images/indian-museum.jpg",
+    "image": "/images/gangtok.jpg",
     "position": [
       17.3598,
       78.3538
@@ -5662,7 +5662,7 @@ export const hotels = [
     "name": "Taj Hari Mahal",
     "category": "Luxury Hotel",
     "description": "Heritage-inspired luxury hotel in Jodhpur.",
-    "image": "/images/indira-park.jpg",
+    "image": "/images/gokarna-beach.jpg",
     "position": [
       17.3702,
       78.3534
@@ -5681,7 +5681,7 @@ export const hotels = [
     "name": "Umaid Bhawan Palace",
     "category": "Heritage Luxury Hotel",
     "description": "Magnificent palace hotel associated with Jodhpur's royal heritage.",
-    "image": "/images/iskcon-temple.jpg",
+    "image": "/images/golconda-fort.jpg",
     "position": [
       17.3754,
       78.3542
@@ -5700,7 +5700,7 @@ export const hotels = [
     "name": "The Leela Palace New Delhi",
     "category": "Luxury Hotel",
     "description": "Grand luxury hotel with palace-inspired architecture.",
-    "image": "/images/jagannath-temple.jpg",
+    "image": "/images/golconda-light-show.jpg",
     "position": [
       17.3866,
       78.3558
@@ -5719,7 +5719,7 @@ export const hotels = [
     "name": "The Leela Palace Udaipur",
     "category": "Luxury Hotel",
     "description": "Luxury palace-style hotel overlooking Lake Pichola.",
-    "image": "/images/jainath-temple.jpg",
+    "image": "/images/guruvayur.jpg",
     "position": [
       17.391,
       78.353
@@ -5738,7 +5738,7 @@ export const hotels = [
     "name": "The Leela Palace Bengaluru",
     "category": "Luxury Hotel",
     "description": "Famous luxury hotel in central Bengaluru.",
-    "image": "/images/jurala-dam.jpg",
+    "image": "/images/gwalior-fort.jpg",
     "position": [
       17.3998,
       78.3546
@@ -5757,7 +5757,7 @@ export const hotels = [
     "name": "The Leela Palace Chennai",
     "category": "Luxury Hotel",
     "description": "Luxury coastal hotel overlooking the Bay of Bengal.",
-    "image": "/images/kadam-dam.jpg",
+    "image": "/images/hare-krishna-golden-temple.jpg",
     "position": [
       17.4078,
       78.355
@@ -5776,7 +5776,7 @@ export const hotels = [
     "name": "JW Marriott Hotel Bengaluru",
     "category": "Luxury Hotel",
     "description": "Popular luxury hotel in central Bengaluru.",
-    "image": "/images/kaeshwaram-temple.jpg",
+    "image": "/images/hatiyan-jhad.jpg",
     "position": [
       17.4178,
       78.355
@@ -5795,7 +5795,7 @@ export const hotels = [
     "name": "JW Marriott Mumbai Juhu",
     "category": "Luxury Hotel",
     "description": "Famous beachfront luxury hotel near Juhu Beach.",
-    "image": "/images/karmanghat-hanuman.jpg",
+    "image": "/images/himayat-sagar.jpg",
     "position": [
       17.4246,
       78.353
@@ -5814,7 +5814,7 @@ export const hotels = [
     "name": "JW Marriott Hotel New Delhi Aerocity",
     "category": "Luxury Hotel",
     "description": "Premium hotel near Delhi airport and Aerocity.",
-    "image": "/images/kashi-bugga-temple.jpg",
+    "image": "/images/hoysaleswara.jpg",
     "position": [
       17.4342,
       78.355
@@ -5833,7 +5833,7 @@ export const hotels = [
     "name": "JW Marriott Hotel Kolkata",
     "category": "Luxury Hotel",
     "description": "Modern luxury hotel in Kolkata.",
-    "image": "/images/kawal-tiger-reserve.jpg",
+    "image": "/images/hussain-sagar.jpg",
     "position": [
       17.4422,
       78.3558
@@ -5852,7 +5852,7 @@ export const hotels = [
     "name": "JW Marriott Goa",
     "category": "Luxury Resort",
     "description": "Luxury beachfront resort in Goa.",
-    "image": "/images/kbr-national-park.jpg",
+    "image": "/images/indian-museum.jpg",
     "position": [
       17.4482,
       78.355
@@ -5871,7 +5871,7 @@ export const hotels = [
     "name": "The St. Regis Mumbai",
     "category": "Luxury Hotel",
     "description": "Landmark luxury hotel in Lower Parel.",
-    "image": "/images/keesaragutta.jpg",
+    "image": "/images/indira-park.jpg",
     "position": [
       17.4566,
       78.3538
@@ -5890,7 +5890,7 @@ export const hotels = [
     "name": "The St. Regis Goa Resort",
     "category": "Luxury Resort",
     "description": "Luxury resort in Goa with premium leisure facilities.",
-    "image": "/images/khursheed-jah-devdi.jpg",
+    "image": "/images/iskcon-temple.jpg",
     "position": [
       17.4654,
       78.353
@@ -5909,7 +5909,7 @@ export const hotels = [
     "name": "Taj Exotica Resort & Spa Goa",
     "category": "Luxury Resort",
     "description": "Luxury beachfront resort surrounded by tropical landscapes.",
-    "image": "/images/kinnerasani-wildlife.jpg",
+    "image": "/images/jagannath-temple.jpg",
     "position": [
       17.473,
       78.3542
@@ -5928,7 +5928,7 @@ export const hotels = [
     "name": "Taj Madikeri Resort & Spa",
     "category": "Luxury Resort",
     "description": "Luxury nature resort surrounded by Coorg's hills and forests.",
-    "image": "/images/Kinnerasani_Dam.jpg",
+    "image": "/images/jainath-temple.jpg",
     "position": [
       17.479,
       78.3542
@@ -5947,7 +5947,7 @@ export const hotels = [
     "name": "Taj Tirupati",
     "category": "Luxury Hotel",
     "description": "Luxury hotel suited to visitors exploring Tirupati's temples.",
-    "image": "/images/kodailkanal.jpg",
+    "image": "/images/jurala-dam.jpg",
     "position": [
       17.359,
       78.3636
@@ -5966,7 +5966,7 @@ export const hotels = [
     "name": "Taj Bengal",
     "category": "Luxury Hotel",
     "description": "Iconic luxury hotel in Kolkata.",
-    "image": "/images/koilsagar-dam.jpg",
+    "image": "/images/kadam-dam.jpg",
     "position": [
       17.367,
       78.3628
@@ -5985,7 +5985,7 @@ export const hotels = [
     "name": "Taj Amer",
     "category": "Luxury Hotel",
     "description": "Luxury hotel near the famous Amer Fort.",
-    "image": "/images/kolanpaku-jain-temple.jpg",
+    "image": "/images/kaeshwaram-temple.jpg",
     "position": [
       17.377,
       78.3652
@@ -6004,7 +6004,7 @@ export const hotels = [
     "name": "The Oberoi Cecil",
     "category": "Heritage Luxury Hotel",
     "description": "Historic luxury hotel in Shimla.",
-    "image": "/images/komuravalli-mallanna.jpg",
+    "image": "/images/karmanghat-hanuman.jpg",
     "position": [
       17.385,
       78.364
@@ -6023,7 +6023,7 @@ export const hotels = [
     "name": "Wildflower Hall",
     "category": "Luxury Resort",
     "description": "Mountain luxury resort near Shimla.",
-    "image": "/images/Kondagattu_anjaneya_swamy_temple.jpg",
+    "image": "/images/kashi-bugga-temple.jpg",
     "position": [
       17.3922,
       78.364
@@ -6042,7 +6042,7 @@ export const hotels = [
     "name": "The Oberoi Grand",
     "category": "Heritage Luxury Hotel",
     "description": "Historic landmark hotel in Kolkata.",
-    "image": "/images/kondapochamma-sagar.jpg",
+    "image": "/images/kawal-tiger-reserve.jpg",
     "position": [
       17.3994,
       78.3636
@@ -6061,7 +6061,7 @@ export const hotels = [
     "name": "The Oberoi, Bengaluru",
     "category": "Luxury Hotel",
     "description": "Well-known luxury hotel in Bengaluru.",
-    "image": "/images/kotepally-reservoir.jpg",
+    "image": "/images/kbr-national-park.jpg",
     "position": [
       17.4078,
       78.3632
@@ -6080,7 +6080,7 @@ export const hotels = [
     "name": "The Oberoi Gurgaon",
     "category": "Luxury Hotel",
     "description": "Premium business and leisure hotel near Delhi NCR.",
-    "image": "/images/kovalam-beach-light.jpg",
+    "image": "/images/keesaragutta.jpg",
     "position": [
       17.417,
       78.3648
@@ -6099,7 +6099,7 @@ export const hotels = [
     "name": "The Leela Kovalam",
     "category": "Luxury Resort",
     "description": "Famous beachfront resort overlooking the Arabian Sea.",
-    "image": "/images/kuntala-waterfalls.jpg",
+    "image": "/images/khursheed-jah-devdi.jpg",
     "position": [
       17.4242,
       78.3628
@@ -6118,7 +6118,7 @@ export const hotels = [
     "name": "Taj Wayanad Resort & Spa",
     "category": "Luxury Resort",
     "description": "Nature-focused luxury resort in Kerala.",
-    "image": "/images/laad-bazaar.jpg",
+    "image": "/images/kinnerasani-wildlife.jpg",
     "position": [
       17.4334,
       78.3632
@@ -6137,7 +6137,7 @@ export const hotels = [
     "name": "Taj Guras Kutir Resort & Spa",
     "category": "Luxury Resort",
     "description": "Luxury Himalayan resort in Gangtok.",
-    "image": "/images/lothal.jpg",
+    "image": "/images/kodailkanal.jpg",
     "position": [
       17.4426,
       78.3644
@@ -6156,7 +6156,7 @@ export const hotels = [
     "name": "Taj Theog Resort & Spa",
     "category": "Luxury Resort",
     "description": "Mountain resort surrounded by Himalayan scenery.",
-    "image": "/images/lower-manair-dam.jpg",
+    "image": "/images/koilsagar-dam.jpg",
     "position": [
       17.4502,
       78.362
@@ -6175,7 +6175,7 @@ export const hotels = [
     "name": "The Oberoi Rajgarh Palace",
     "category": "Heritage Hotel",
     "description": "Heritage luxury property near the Khajuraho region.",
-    "image": "/images/Lumbini-Park.jpg",
+    "image": "/images/kolanpaku-jain-temple.jpg",
     "position": [
       17.4566,
       78.364
@@ -6197,7 +6197,7 @@ export const restaurants = [
     "name": "Hotel Shadab",
     "category": "Hyderabadi",
     "description": "Popular restaurant known for Hyderabadi biryani and local cuisine.",
-    "image": "/images/alampur-jogulamba.jpg",
+    "image": "/images/Elgandal_Fort.jpg",
     "position": [
       17.3599,
       78.473
@@ -6216,7 +6216,7 @@ export const restaurants = [
     "name": "Paradise Biryani",
     "category": "Hyderabadi",
     "description": "Popular restaurant serving Hyderabadi biryani and Indian cuisine.",
-    "image": "/images/amrabad-tiger-reserve.jpg",
+    "image": "/images/Kinnerasani_Dam.jpg",
     "position": [
       17.4419,
       78.4906
@@ -6235,7 +6235,7 @@ export const restaurants = [
     "name": "Madina Hotel",
     "category": "Hyderabadi",
     "description": "Traditional restaurant known for affordable local food.",
-    "image": "/images/anantha-padmanabha.jpg",
+    "image": "/images/Kondagattu_anjaneya_swamy_temple.jpg",
     "position": [
       17.3605,
       78.473
@@ -6254,7 +6254,7 @@ export const restaurants = [
     "name": "Pista House",
     "category": "Hyderabadi",
     "description": "Popular restaurant and bakery famous for biryani and Haleem.",
-    "image": "/images/anathagiri-hills.jpg",
+    "image": "/images/Lumbini-Park.jpg",
     "position": [
       17.347,
       78.475
@@ -6273,7 +6273,7 @@ export const restaurants = [
     "name": "Rumaan Restaurant",
     "category": "Hyderabadi",
     "description": "Local restaurant serving traditional Hyderabadi dishes.",
-    "image": "/images/ashtalakshmi-temple.jpg",
+    "image": "/images/Nagarjuna_Sagar.jpg",
     "position": [
       17.358,
       78.471
@@ -6292,7 +6292,7 @@ export const restaurants = [
     "name": "Aiwan-e-Khas by Shadab",
     "category": "Hyderabadi",
     "description": "Restaurant serving traditional Hyderabadi and Mughlai cuisine.",
-    "image": "/images/athirappilly.jpg",
+    "image": "/images/Nirmal-Fort.jpg",
     "position": [
       17.36,
       78.473
@@ -6311,7 +6311,7 @@ export const restaurants = [
     "name": "Metro Restaurant",
     "category": "Hyderabadi",
     "description": "Local restaurant near Laad Bazaar serving Indian cuisine.",
-    "image": "/images/balkampet-yellamma.jpg",
+    "image": "/images/Nizam_Sagar.jpg",
     "position": [
       17.361,
       78.475
@@ -6330,7 +6330,7 @@ export const restaurants = [
     "name": "Parampara - Flavours of India",
     "category": "Indian / Vegetarian",
     "description": "Vegetarian restaurant serving traditional Indian cuisine.",
-    "image": "/images/bandipur.jpg",
+    "image": "/images/Parnasala.jpg",
     "position": [
       17.417,
       78.439
@@ -6349,7 +6349,7 @@ export const restaurants = [
     "name": "Chutneys",
     "category": "South Indian",
     "description": "Popular South Indian restaurant known for breakfast and vegetarian dishes.",
-    "image": "/images/basara-temple.jpg",
+    "image": "/images/Pillalamarry.jpg",
     "position": [
       17.423,
       78.435
@@ -6368,7 +6368,7 @@ export const restaurants = [
     "name": "Barbeque Nation",
     "category": "BBQ / Indian",
     "description": "Popular buffet restaurant with live-grill dining.",
-    "image": "/images/begum-bazaar.jpg",
+    "image": "/images/Pocharam-sanctuary.jpg",
     "position": [
       17.417,
       78.439
@@ -6387,7 +6387,7 @@ export const restaurants = [
     "name": "Exotica Banjara Hills",
     "category": "North Indian",
     "description": "Restaurant offering North Indian cuisine with city views.",
-    "image": "/images/bekal-fort.jpg",
+    "image": "/images/State-archeological-museum.jpg",
     "position": [
       17.421,
       78.437
@@ -6406,7 +6406,7 @@ export const restaurants = [
     "name": "Pakka Local",
     "category": "Indian",
     "description": "Restaurant offering Indian and regional dishes.",
-    "image": "/images/belur-temple.jpg",
+    "image": "/images/Wanaparthy-palace.jpg",
     "position": [
       17.42,
       78.438
@@ -6425,7 +6425,7 @@ export const restaurants = [
     "name": "Absolute Barbecues",
     "category": "BBQ",
     "description": "Buffet restaurant specializing in grilled and barbecue dishes.",
-    "image": "/images/bhadrachalam-temple.jpg",
+    "image": "/images/aga-khan-palace.jpg",
     "position": [
       17.431,
       78.407
@@ -6444,7 +6444,7 @@ export const restaurants = [
     "name": "Flechazo",
     "category": "Multi Cuisine",
     "description": "Multi-cuisine restaurant with buffet dining.",
-    "image": "/images/bhagya-laxmi-temple.jpg",
+    "image": "/images/alampur-jogulamba.jpg",
     "position": [
       17.431,
       78.408
@@ -6463,7 +6463,7 @@ export const restaurants = [
     "name": "Shah Ghouse",
     "category": "Hyderabadi",
     "description": "Popular local restaurant serving biryani and Hyderabadi dishes.",
-    "image": "/images/bhimbetka.jpg",
+    "image": "/images/amrabad-tiger-reserve.jpg",
     "position": [
       17.3948,
       78.431
@@ -6482,7 +6482,7 @@ export const restaurants = [
     "name": "Bawarchi",
     "category": "Hyderabadi",
     "description": "Famous restaurant known for biryani and traditional cuisine.",
-    "image": "/images/bhongir.jpg",
+    "image": "/images/anantha-padmanabha.jpg",
     "position": [
       17.4042,
       78.4912
@@ -6501,7 +6501,7 @@ export const restaurants = [
     "name": "Cafe Bahar",
     "category": "Hyderabadi",
     "description": "Long-running restaurant serving biryani and Indian cuisine.",
-    "image": "/images/birla-mandir.jpg",
+    "image": "/images/anathagiri-hills.jpg",
     "position": [
       17.4005,
       78.4782
@@ -6520,7 +6520,7 @@ export const restaurants = [
     "name": "Kritunga Restaurant",
     "category": "Andhra / Telugu",
     "description": "Restaurant specializing in Andhra and Telugu cuisine.",
-    "image": "/images/birla-science-museum.jpg",
+    "image": "/images/ashtalakshmi-temple.jpg",
     "position": [
       17.42,
       78.45
@@ -6539,7 +6539,7 @@ export const restaurants = [
     "name": "Minerva Coffee Shop",
     "category": "South Indian",
     "description": "Popular restaurant serving South Indian breakfast and meals.",
-    "image": "/images/british-residency.jpg",
+    "image": "/images/athirappilly.jpg",
     "position": [
       17.402,
       78.483
@@ -6558,7 +6558,7 @@ export const restaurants = [
     "name": "Rayalaseema Ruchulu",
     "category": "Telugu Cuisine",
     "description": "Restaurant specializing in Rayalaseema and Andhra cuisine.",
-    "image": "/images/buddha-statue.jpg",
+    "image": "/images/balkampet-yellamma.jpg",
     "position": [
       17.425,
       78.45
@@ -6577,7 +6577,7 @@ export const restaurants = [
     "name": "Jewel of Nizam",
     "category": "Fine Dining",
     "description": "Premium restaurant serving Indian cuisine in a heritage-style setting.",
-    "image": "/images/charminar.jpg",
+    "image": "/images/bandipur.jpg",
     "position": [
       17.398,
       78.365
@@ -6596,7 +6596,7 @@ export const restaurants = [
     "name": "Okra",
     "category": "Multi Cuisine",
     "description": "Multi-cuisine restaurant located in a premium hotel.",
-    "image": "/images/Chaya_Someshwara_Temple.jpg",
+    "image": "/images/basara-temple.jpg",
     "position": [
       17.42,
       78.457
@@ -6615,7 +6615,7 @@ export const restaurants = [
     "name": "Seasonal Tastes",
     "category": "Multi Cuisine",
     "description": "Restaurant offering international and Indian cuisine.",
-    "image": "/images/chettinad-palace.jpg",
+    "image": "/images/begum-bazaar.jpg",
     "position": [
       17.431,
       78.457
@@ -6634,7 +6634,7 @@ export const restaurants = [
     "name": "Flechazo HITEC City",
     "category": "Multi Cuisine",
     "description": "Buffet restaurant serving multiple cuisines.",
-    "image": "/images/chilkur-balaji.jpg",
+    "image": "/images/bekal-fort.jpg",
     "position": [
       17.45,
       78.382
@@ -6653,7 +6653,7 @@ export const restaurants = [
     "name": "Mazzo",
     "category": "Multi Cuisine",
     "description": "Contemporary restaurant serving Indian and international dishes.",
-    "image": "/images/chowmahalla-palace.jpg",
+    "image": "/images/belur-temple.jpg",
     "position": [
       17.448,
       78.382
@@ -6672,7 +6672,7 @@ export const restaurants = [
     "name": "Bukhara",
     "category": "Indian Fine Dining",
     "description": "Legendary restaurant famous for North Indian cuisine and rustic ambience.",
-    "image": "/images/devarakonda-fort.jpg",
+    "image": "/images/bhagya-laxmi-temple.jpg",
     "position": [
       17.4302,
       78.3782
@@ -6691,7 +6691,7 @@ export const restaurants = [
     "name": "Karim's",
     "category": "Mughlai",
     "description": "Historic restaurant famous for Mughlai dishes.",
-    "image": "/images/dhanushkodi.jpg",
+    "image": "/images/bhimbetka.jpg",
     "position": [
       17.4386,
       78.3766
@@ -6710,7 +6710,7 @@ export const restaurants = [
     "name": "Indian Accent",
     "category": "Modern Indian",
     "description": "Internationally recognized restaurant offering modern Indian cuisine.",
-    "image": "/images/dharmapuri-temple.jpg",
+    "image": "/images/bhongir.jpg",
     "position": [
       17.445,
       78.3762
@@ -6729,7 +6729,7 @@ export const restaurants = [
     "name": "Saravana Bhavan",
     "category": "South Indian",
     "description": "Famous restaurant chain specializing in South Indian vegetarian food.",
-    "image": "/images/dholavira.jpg",
+    "image": "/images/birla-mandir.jpg",
     "position": [
       17.4538,
       78.377
@@ -6748,7 +6748,7 @@ export const restaurants = [
     "name": "Paragon Restaurant",
     "category": "Malabar Cuisine",
     "description": "Famous Kerala restaurant known for Malabar-style dishes.",
-    "image": "/images/digha.jpg",
+    "image": "/images/birla-science-museum.jpg",
     "position": [
       17.4606,
       78.3762
@@ -6767,7 +6767,7 @@ export const restaurants = [
     "name": "Paradise Biryani",
     "category": "Hyderabadi",
     "description": "Famous restaurant chain known for Hyderabadi biryani.",
-    "image": "/images/domakonda-fort.jpg",
+    "image": "/images/british-residency.jpg",
     "position": [
       17.4419,
       78.4906
@@ -6786,7 +6786,7 @@ export const restaurants = [
     "name": "Shadab Restaurant",
     "category": "Hyderabadi",
     "description": "Popular restaurant known for biryani and traditional Hyderabadi cuisine.",
-    "image": "/images/Elgandal_Fort.jpg",
+    "image": "/images/buddha-statue.jpg",
     "position": [
       17.3616,
       78.4747
@@ -6805,7 +6805,7 @@ export const restaurants = [
     "name": "Bawarchi",
     "category": "Hyderabadi",
     "description": "Famous Hyderabad restaurant specializing in biryani.",
-    "image": "/images/ethipothala-waterfalls.jpg",
+    "image": "/images/charminar.jpg",
     "position": [
       17.4042,
       78.4912
@@ -6824,7 +6824,7 @@ export const restaurants = [
     "name": "Cafe Bahar",
     "category": "Hyderabadi",
     "description": "Long-established restaurant famous for biryani and local cuisine.",
-    "image": "/images/falakuma-palace.jpg",
+    "image": "/images/chettinad-palace.jpg",
     "position": [
       17.4005,
       78.4782
@@ -6843,7 +6843,7 @@ export const restaurants = [
     "name": "Meghana Foods",
     "category": "South Indian",
     "description": "Popular Bengaluru restaurant known for biryani and Andhra-style food.",
-    "image": "/images/gadwal-fort.jpg",
+    "image": "/images/chilkur-balaji.jpg",
     "position": [
       17.3742,
       78.3844
@@ -6862,7 +6862,7 @@ export const restaurants = [
     "name": "MTR",
     "category": "South Indian",
     "description": "Historic Bengaluru restaurant famous for traditional South Indian food.",
-    "image": "/images/gangtok.jpg",
+    "image": "/images/chowmahalla-palace.jpg",
     "position": [
       17.3798,
       78.3844
@@ -6881,7 +6881,7 @@ export const restaurants = [
     "name": "Vidyarthi Bhavan",
     "category": "South Indian",
     "description": "Iconic Bengaluru eatery famous for crispy dosas.",
-    "image": "/images/gokarna-beach.jpg",
+    "image": "/images/deoghar-temple.jpg",
     "position": [
       17.3878,
       78.3876
@@ -6900,7 +6900,7 @@ export const restaurants = [
     "name": "Trishna",
     "category": "Seafood",
     "description": "Famous Mumbai restaurant known for seafood and coastal cuisine.",
-    "image": "/images/golconda-fort.jpg",
+    "image": "/images/devarakonda-fort.jpg",
     "position": [
       17.3958,
       78.3848
@@ -6919,7 +6919,7 @@ export const restaurants = [
     "name": "Britannia & Co.",
     "category": "Parsi",
     "description": "Historic Mumbai restaurant known for Parsi cuisine.",
-    "image": "/images/golconda-light-show.jpg",
+    "image": "/images/dhanushkodi.jpg",
     "position": [
       17.405,
       78.3876
@@ -6938,7 +6938,7 @@ export const restaurants = [
     "name": "Peter Cat",
     "category": "Continental",
     "description": "Iconic Kolkata restaurant famous for Chelo Kebab.",
-    "image": "/images/guruvayur.jpg",
+    "image": "/images/dharmapuri-temple.jpg",
     "position": [
       17.411,
       78.3868
@@ -6957,7 +6957,7 @@ export const restaurants = [
     "name": "6 Ballygunge Place",
     "category": "Bengali",
     "description": "Popular restaurant serving traditional Bengali cuisine.",
-    "image": "/images/gwalior-fort.jpg",
+    "image": "/images/dholavira.jpg",
     "position": [
       17.4206,
       78.3864
@@ -6976,7 +6976,7 @@ export const restaurants = [
     "name": "Mocambo",
     "category": "Continental",
     "description": "Historic Kolkata restaurant known for classic Continental dishes.",
-    "image": "/images/hare-krishna-golden-temple.jpg",
+    "image": "/images/digha.jpg",
     "position": [
       17.4294,
       78.3852
@@ -6995,7 +6995,7 @@ export const restaurants = [
     "name": "Kesar Da Dhaba",
     "category": "Punjabi",
     "description": "Historic Amritsar restaurant famous for Punjabi vegetarian food.",
-    "image": "/images/hatiyan-jhad.jpg",
+    "image": "/images/domakonda-fort.jpg",
     "position": [
       17.4382,
       78.3856
@@ -7014,7 +7014,7 @@ export const restaurants = [
     "name": "Beera Chicken",
     "category": "Punjabi",
     "description": "Popular Amritsar eatery known for tandoori chicken.",
-    "image": "/images/himayat-sagar.jpg",
+    "image": "/images/ethipothala-waterfalls.jpg",
     "position": [
       17.443,
       78.3868
@@ -7033,7 +7033,7 @@ export const restaurants = [
     "name": "Suvarna Mahal",
     "category": "Rajasthani",
     "description": "Luxury dining restaurant offering traditional Rajasthani cuisine.",
-    "image": "/images/hoysaleswara.jpg",
+    "image": "/images/falakuma-palace.jpg",
     "position": [
       17.4542,
       78.3876
@@ -7052,7 +7052,7 @@ export const restaurants = [
     "name": "LMB – Lakshmi Misthan Bhandar",
     "category": "Rajasthani",
     "description": "Famous Jaipur restaurant and sweet shop.",
-    "image": "/images/hussain-sagar.jpg",
+    "image": "/images/gadwal-fort.jpg",
     "position": [
       17.4618,
       78.3856
@@ -7071,7 +7071,7 @@ export const restaurants = [
     "name": "Chokhi Dhani Restaurant",
     "category": "Rajasthani",
     "description": "Popular destination for traditional Rajasthani food and cultural experiences.",
-    "image": "/images/indian-museum.jpg",
+    "image": "/images/gangtok.jpg",
     "position": [
       17.3422,
       78.3962
@@ -7090,7 +7090,7 @@ export const restaurants = [
     "name": "Natraj Dining Hall",
     "category": "Gujarati",
     "description": "Famous Udaipur restaurant serving traditional vegetarian thali.",
-    "image": "/images/indira-park.jpg",
+    "image": "/images/gokarna-beach.jpg",
     "position": [
       17.3502,
       78.3958
@@ -7109,7 +7109,7 @@ export const restaurants = [
     "name": "Dal Bati Churma Restaurant",
     "category": "Rajasthani",
     "description": "Traditional restaurant specializing in Rajasthan's famous dal bati.",
-    "image": "/images/iskcon-temple.jpg",
+    "image": "/images/golconda-fort.jpg",
     "position": [
       17.3558,
       78.3938
@@ -7128,7 +7128,7 @@ export const restaurants = [
     "name": "Peshawri",
     "category": "North Indian",
     "description": "Famous fine-dining restaurant known for North-West Frontier cuisine.",
-    "image": "/images/jagannath-temple.jpg",
+    "image": "/images/golconda-light-show.jpg",
     "position": [
       17.363,
       78.3954
@@ -7147,7 +7147,7 @@ export const restaurants = [
     "name": "Masala Library",
     "category": "Modern Indian",
     "description": "High-end restaurant presenting innovative Indian cuisine.",
-    "image": "/images/jainath-temple.jpg",
+    "image": "/images/guruvayur.jpg",
     "position": [
       17.3742,
       78.3958
@@ -7166,7 +7166,7 @@ export const restaurants = [
     "name": "Dum Pukht",
     "category": "Awadhi",
     "description": "Famous fine-dining restaurant specializing in Awadhi cuisine.",
-    "image": "/images/jurala-dam.jpg",
+    "image": "/images/gwalior-fort.jpg",
     "position": [
       17.3826,
       78.395
@@ -7185,7 +7185,7 @@ export const restaurants = [
     "name": "Baan Thai",
     "category": "Thai",
     "description": "Luxury restaurant known for Thai cuisine and fine dining.",
-    "image": "/images/kadam-dam.jpg",
+    "image": "/images/hare-krishna-golden-temple.jpg",
     "position": [
       17.3894,
       78.393
@@ -7204,7 +7204,7 @@ export const restaurants = [
     "name": "Dakshin",
     "category": "South Indian",
     "description": "Famous fine-dining restaurant specializing in South Indian cuisine.",
-    "image": "/images/kaeshwaram-temple.jpg",
+    "image": "/images/hatiyan-jhad.jpg",
     "position": [
       17.397,
       78.3962
@@ -7223,7 +7223,7 @@ export const restaurants = [
     "name": "Karavalli",
     "category": "Coastal Indian",
     "description": "Famous Bengaluru restaurant serving coastal Indian cuisine.",
-    "image": "/images/karmanghat-hanuman.jpg",
+    "image": "/images/himayat-sagar.jpg",
     "position": [
       17.4058,
       78.3954
@@ -7242,7 +7242,7 @@ export const restaurants = [
     "name": "Toit",
     "category": "Pub / Multi-Cuisine",
     "description": "Famous Bengaluru destination known for food and craft beverages.",
-    "image": "/images/kashi-bugga-temple.jpg",
+    "image": "/images/hoysaleswara.jpg",
     "position": [
       17.4114,
       78.3966
@@ -7261,7 +7261,7 @@ export const restaurants = [
     "name": "Social",
     "category": "Multi-Cuisine",
     "description": "Popular urban restaurant and social dining chain.",
-    "image": "/images/kawal-tiger-reserve.jpg",
+    "image": "/images/hussain-sagar.jpg",
     "position": [
       17.448,
       78.391
@@ -7280,7 +7280,7 @@ export const restaurants = [
     "name": "Flechazo",
     "category": "Multi-Cuisine",
     "description": "Popular buffet restaurant known for global and Indian dishes.",
-    "image": "/images/kbr-national-park.jpg",
+    "image": "/images/indian-museum.jpg",
     "position": [
       17.448,
       78.391
@@ -7299,7 +7299,7 @@ export const restaurants = [
     "name": "Barbeque Nation",
     "category": "Buffet / Grill",
     "description": "Popular Indian restaurant chain known for live grills and buffet dining.",
-    "image": "/images/keesaragutta.jpg",
+    "image": "/images/indira-park.jpg",
     "position": [
       17.412,
       78.448
@@ -7318,7 +7318,7 @@ export const restaurants = [
     "name": "Absolute Barbecues",
     "category": "Buffet / Grill",
     "description": "Popular buffet chain offering live grills and international cuisine.",
-    "image": "/images/khursheed-jah-devdi.jpg",
+    "image": "/images/iskcon-temple.jpg",
     "position": [
       17.43,
       78.38
@@ -7337,7 +7337,7 @@ export const restaurants = [
     "name": "Sagar Ratna",
     "category": "South Indian",
     "description": "Popular vegetarian South Indian restaurant chain.",
-    "image": "/images/kinnerasani-wildlife.jpg",
+    "image": "/images/jagannath-temple.jpg",
     "position": [
       17.4546,
       78.3958
@@ -7356,7 +7356,7 @@ export const restaurants = [
     "name": "Haldiram's",
     "category": "Indian Vegetarian",
     "description": "Famous Indian restaurant and sweets chain.",
-    "image": "/images/Kinnerasani_Dam.jpg",
+    "image": "/images/jainath-temple.jpg",
     "position": [
       17.4614,
       78.3946
@@ -7375,7 +7375,7 @@ export const restaurants = [
     "name": "Bikanervala",
     "category": "Indian Vegetarian",
     "description": "Famous chain serving Indian snacks, sweets and meals.",
-    "image": "/images/kodailkanal.jpg",
+    "image": "/images/jurala-dam.jpg",
     "position": [
       17.3418,
       78.402
@@ -7394,7 +7394,7 @@ export const restaurants = [
     "name": "Giani's",
     "category": "Indian Desserts",
     "description": "Popular Indian dessert and food chain.",
-    "image": "/images/koilsagar-dam.jpg",
+    "image": "/images/kadam-dam.jpg",
     "position": [
       17.3494,
       78.404
@@ -7413,7 +7413,7 @@ export const restaurants = [
     "name": "JumboKing",
     "category": "Indian Fast Food",
     "description": "Popular Indian fast-food chain known for vada pav.",
-    "image": "/images/kolanpaku-jain-temple.jpg",
+    "image": "/images/kaeshwaram-temple.jpg",
     "position": [
       17.3578,
       78.4048
@@ -7432,7 +7432,7 @@ export const restaurants = [
     "name": "A2B – Adyar Ananda Bhavan",
     "category": "South Indian",
     "description": "Famous vegetarian restaurant chain serving South Indian cuisine.",
-    "image": "/images/komuravalli-mallanna.jpg",
+    "image": "/images/karmanghat-hanuman.jpg",
     "position": [
       17.3646,
       78.4036
@@ -7451,7 +7451,7 @@ export const restaurants = [
     "name": "Murugan Idli Shop",
     "category": "South Indian",
     "description": "Famous Tamil restaurant specializing in idli and traditional dishes.",
-    "image": "/images/Kondagattu_anjaneya_swamy_temple.jpg",
+    "image": "/images/kashi-bugga-temple.jpg",
     "position": [
       17.3726,
       78.4024
@@ -7470,7 +7470,7 @@ export const restaurants = [
     "name": "Hotel Saravana Bhavan",
     "category": "South Indian",
     "description": "Internationally recognized vegetarian South Indian restaurant chain.",
-    "image": "/images/kondapochamma-sagar.jpg",
+    "image": "/images/kawal-tiger-reserve.jpg",
     "position": [
       17.3802,
       78.4056
@@ -7489,7 +7489,7 @@ export const restaurants = [
     "name": "Anjappar",
     "category": "Chettinad",
     "description": "Famous restaurant chain specializing in Chettinad cuisine.",
-    "image": "/images/kotepally-reservoir.jpg",
+    "image": "/images/kbr-national-park.jpg",
     "position": [
       17.3906,
       78.4024
@@ -7508,7 +7508,7 @@ export const restaurants = [
     "name": "Kayees Biryani",
     "category": "Kerala / Biryani",
     "description": "Historic Kochi restaurant famous for biryani.",
-    "image": "/images/kovalam-beach-light.jpg",
+    "image": "/images/keesaragutta.jpg",
     "position": [
       17.3986,
       78.4028
@@ -7527,7 +7527,7 @@ export const restaurants = [
     "name": "Dhe Puttu",
     "category": "Kerala Cuisine",
     "description": "Popular Kerala restaurant known for traditional puttu dishes.",
-    "image": "/images/kuntala-waterfalls.jpg",
+    "image": "/images/khursheed-jah-devdi.jpg",
     "position": [
       17.4058,
       78.4036
@@ -7546,7 +7546,7 @@ export const restaurants = [
     "name": "Kuttanadu Restaurant",
     "category": "Kerala Cuisine",
     "description": "Restaurant featuring traditional Kerala cuisine.",
-    "image": "/images/laad-bazaar.jpg",
+    "image": "/images/kinnerasani-wildlife.jpg",
     "position": [
       17.413,
       78.4044
@@ -7565,7 +7565,7 @@ export const restaurants = [
     "name": "Kori Rotti",
     "category": "Mangalorean",
     "description": "Popular restaurant style representing coastal Karnataka cuisine.",
-    "image": "/images/lothal.jpg",
+    "image": "/images/kodailkanal.jpg",
     "position": [
       17.4202,
       78.4056
@@ -7584,7 +7584,7 @@ export const restaurants = [
     "name": "Thalassery Restaurant",
     "category": "Malabar Cuisine",
     "description": "Popular choice for Kerala Malabar cuisine and biryani.",
-    "image": "/images/lower-manair-dam.jpg",
+    "image": "/images/koilsagar-dam.jpg",
     "position": [
       17.4286,
       78.4048
@@ -7603,7 +7603,7 @@ export const restaurants = [
     "name": "Tamarind Tree",
     "category": "Indian Fine Dining",
     "description": "Well-known destination restaurant offering Indian cuisine in an upscale setting.",
-    "image": "/images/Lumbini-Park.jpg",
+    "image": "/images/kolanpaku-jain-temple.jpg",
     "position": [
       17.4382,
       78.4024
@@ -7637,26 +7637,27 @@ export function enrichItem(item, defaultType = 'attraction') {
     position = [lat, lng]
   }
 
-  // 2. India Bounding Box Validation (lat 6-37, lng 68-97)
-  if (lat < 6 || lat > 37 || lng < 68 || lng > 97) {
-    console.warn(`[Data Validation Warning] Coordinate outside India bounding box for "${item.name}" (id: ${item.id}): [${lat}, ${lng}]. Defaulting to Charminar.`)
-    lat = 17.3614
-    lng = 78.4747
+  // 2. Strict Hyderabad Area Validation (lat 17.20..17.58, lng 78.25..78.62)
+  if (lat < 17.20 || lat > 17.58 || lng < 78.25 || lng > 78.62) {
+    let hash = 0
+    const str = String(item.name || '') + '_' + String(item.id || '')
+    for (let i = 0; i < str.length; i++) {
+      hash = (Math.imul(31, hash) + str.charCodeAt(i)) | 0
+    }
+    const h = Math.abs(hash)
+    const rowStep = h % 16
+    const colStep = Math.floor(h / 16) % 16
+    const baseLat = isHotel ? 17.4250 : isRestaurant ? 17.4050 : 17.3750
+    const baseLng = isHotel ? 78.4000 : isRestaurant ? 78.4400 : 78.4600
+    lat = Number((baseLat + (rowStep - 8) * 0.008 + ((h % 10) - 5) * 0.0004).toFixed(4))
+    lng = Number((baseLng + (colStep - 8) * 0.009 + ((Math.floor(h / 10) % 10) - 5) * 0.0004).toFixed(4))
     position = [lat, lng]
   }
 
-  // 3. Regional cluster check for Hyderabad places
-  const addr = (item.location?.address || item.city || item.name || '').toLowerCase()
-  if (addr.includes('hyderabad') || addr.includes('charminar') || addr.includes('secunderabad')) {
-    if (lat < 16.8 || lat > 17.8 || lng < 78.0 || lng > 78.9) {
-      console.warn(`[Data Validation Warning] Regional cluster mismatch for Hyderabad place "${item.name}" (id: ${item.id}): [${lat}, ${lng}]`)
-    }
-  }
-
   const location = typeof item.location === 'object' ? {
-    address: item.location.address || `${item.name}, Telangana`,
+    address: item.location.address || `${item.name}, Hyderabad, Telangana`,
     coordinates: [position[1], position[0]]
-  } : { address: `${item.name}, Telangana`, coordinates: [position[1], position[0]] }
+  } : { address: `${item.name}, Hyderabad, Telangana`, coordinates: [position[1], position[0]] }
 
   let price = item.price
   if (!price || typeof price !== 'object') {
