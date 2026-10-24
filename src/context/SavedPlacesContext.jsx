@@ -1,74 +1,86 @@
-import { useEffect, useState, useCallback } from 'react'
+import { useCallback } from 'react'
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
 import { SavedPlacesContext } from './SavedPlacesContextObject'
 import { useAuth } from './useAuth'
-import { authApi } from '../services/authApi'
+import { fetchSavedPlaces, savePlace, unsavePlace } from '../lib/api/savedPlaces'
 
 export function SavedPlacesProvider({ children }) {
-  const { user, token, promptLogin } = useAuth()
+  const { user } = useAuth()
   const userId = user?.id || null
+  const queryClient = useQueryClient()
 
-  // Function to load saved IDs for current user or guest
-  const loadUserSaved = useCallback((uid) => {
-    const key = uid ? `explorex_saved_${uid}` : 'explorex_saved_guest'
-    try {
-      const stored = localStorage.getItem(key)
-      if (stored) return JSON.parse(stored)
-      if (uid && Array.isArray(user?.savedPlaces)) return user.savedPlaces
-      return []
-    } catch {
-      return []
-    }
-  }, [user])
+  // 1. Fetch saved place IDs from Supabase DB via React Query
+  const { data: savedIds = [], isLoading } = useQuery({
+    queryKey: ['saved_places', userId],
+    queryFn: async () => {
+      if (!userId) return []
+      return await fetchSavedPlaces(userId)
+    },
+    enabled: Boolean(userId),
+    staleTime: 1000 * 60 * 5, // 5 minutes fresh
+  })
 
-  const [savedIds, setSavedIds] = useState(() => loadUserSaved(userId))
-  const [prevUserId, setPrevUserId] = useState(userId)
-
-  // When user changes (login, logout, switch user), update state during render
-  if (userId !== prevUserId) {
-    setPrevUserId(userId)
-    if (!prevUserId && userId) {
-      try {
-        const guestItems = JSON.parse(localStorage.getItem('explorex_saved_guest') || '[]')
-        const userItems = loadUserSaved(userId)
-        setSavedIds(Array.from(new Set([...userItems, ...guestItems])))
-      } catch {
-        setSavedIds(loadUserSaved(userId))
+  // 2. Optimistic Mutation for Save/Unsave
+  const saveMutation = useMutation({
+    mutationFn: async ({ placeId, willSave }) => {
+      if (!userId) throw new Error('No user session available')
+      if (willSave) {
+        return await savePlace(userId, placeId)
+      } else {
+        return await unsavePlace(userId, placeId)
       }
-    } else {
-      setSavedIds(loadUserSaved(userId))
-    }
-  }
+    },
+    onMutate: async ({ placeId, willSave }) => {
+      // Cancel outgoing refetches
+      await queryClient.cancelQueries({ queryKey: ['saved_places', userId] })
 
-  // Sync to localStorage (and backend if logged in)
-  useEffect(() => {
-    const key = userId ? `explorex_saved_${userId}` : 'explorex_saved_guest'
-    try {
-      localStorage.setItem(key, JSON.stringify(savedIds))
-      if (token && userId) {
-        authApi.syncSavedPlaces(token, savedIds).catch(() => {})
+      // Snapshot previous state for rollback on error
+      const previousSaved = queryClient.getQueryData(['saved_places', userId]) || []
+
+      // Optimistically update cache instantly
+      queryClient.setQueryData(['saved_places', userId], (old = []) => {
+        if (willSave) {
+          return old.includes(placeId) ? old : [...old, placeId]
+        } else {
+          return old.filter((id) => id !== placeId)
+        }
+      })
+
+      return { previousSaved }
+    },
+    onError: (err, _variables, context) => {
+      // Rollback to previous state on failure
+      if (context?.previousSaved) {
+        queryClient.setQueryData(['saved_places', userId], context.previousSaved)
       }
-    } catch (e) {
-      console.warn('Failed to sync saved places:', e)
-    }
-  }, [savedIds, userId, token])
+      console.warn('[SavedPlaces] Database mutation failed, rolled back:', err)
+    },
+    onSettled: () => {
+      // Invalidate to guarantee database synchronization
+      queryClient.invalidateQueries({ queryKey: ['saved_places', userId] })
+    },
+  })
 
-  const isSaved = useCallback((id) => {
-    if (!id) return false
-    return savedIds.includes(id)
-  }, [savedIds])
+  const isSaved = useCallback(
+    (id) => {
+      if (!id) return false
+      return savedIds.includes(id)
+    },
+    [savedIds]
+  )
 
-  const toggleSave = useCallback((id) => {
-    if (!id) return false
-    setSavedIds((prev) => {
-      const exists = prev.includes(id)
-      const next = exists ? prev.filter((item) => item !== id) : [...prev, id]
-      return next
-    })
-    return true
-  }, [])
+  const toggleSave = useCallback(
+    (id) => {
+      if (!id || !userId) return false
+      const currentlySaved = savedIds.includes(id)
+      saveMutation.mutate({ placeId: id, willSave: !currentlySaved })
+      return true
+    },
+    [userId, savedIds, saveMutation]
+  )
 
   return (
-    <SavedPlacesContext.Provider value={{ savedIds, isSaved, toggleSave }}>
+    <SavedPlacesContext.Provider value={{ savedIds, isSaved, toggleSave, isLoading }}>
       {children}
     </SavedPlacesContext.Provider>
   )
