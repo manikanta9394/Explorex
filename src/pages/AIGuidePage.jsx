@@ -371,7 +371,7 @@ export default function AIGuidePage({ onNavigate: _onNavigate, onSelectPlace, on
     return () => {
       mounted = false
     }
-  }, [userId])
+  }, [userId, activeConvId])
 
   // Load messages whenever active conversation changes
   useEffect(() => {

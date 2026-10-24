@@ -198,7 +198,26 @@ export function AuthProvider({ children }) {
   }, [])
 
   const updateUserProfile = useCallback((partial) => {
-    setUser((prev) => (prev ? { ...prev, ...partial } : null))
+    setUser((prev) => {
+      if (!prev) return null
+      const updated = {
+        ...prev,
+        ...partial,
+        user_metadata: {
+          ...(prev.user_metadata || {}),
+          ...partial,
+        },
+      }
+      try {
+        const raw = localStorage.getItem('sb_emu_session')
+        if (raw) {
+          const parsed = JSON.parse(raw)
+          parsed.user = { ...parsed.user, ...updated }
+          localStorage.setItem('sb_emu_session', JSON.stringify(parsed))
+        }
+      } catch {}
+      return updated
+    })
   }, [])
 
   return (

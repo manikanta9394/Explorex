@@ -56,3 +56,44 @@ export function openGoogleMapsDirections(place, travelMode, cachedCoords = null)
 
   window.open(url, '_blank', 'noopener,noreferrer')
 }
+
+/**
+ * Opens Google Maps directions for a multi-stop route with origin, waypoints, and destination.
+ */
+export function openGoogleMapsMultiStop(stops, travelMode = 'driving-car') {
+  if (!Array.isArray(stops) || stops.length === 0) return
+
+  const validCoords = stops
+    .map((s) => getPlaceLatLng(s))
+    .filter((c) => c && !isNaN(c.lat) && !isNaN(c.lng))
+
+  if (validCoords.length === 0) return
+
+  const googleMode = mapTravelModeToGoogle(travelMode)
+
+  if (validCoords.length === 1) {
+    const dest = `${validCoords[0].lat},${validCoords[0].lng}`
+    window.open(
+      `https://www.google.com/maps/dir/?api=1&destination=${dest}&travelmode=${googleMode}`,
+      '_blank',
+      'noopener,noreferrer'
+    )
+    return
+  }
+
+  const origin = `${validCoords[0].lat},${validCoords[0].lng}`
+  const dest = `${validCoords[validCoords.length - 1].lat},${validCoords[validCoords.length - 1].lng}`
+
+  let url = `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${dest}&travelmode=${googleMode}`
+
+  if (validCoords.length > 2) {
+    const waypoints = validCoords
+      .slice(1, -1)
+      .map((c) => `${c.lat},${c.lng}`)
+      .join('|')
+    url += `&waypoints=${encodeURIComponent(waypoints)}`
+  }
+
+  window.open(url, '_blank', 'noopener,noreferrer')
+}
+
