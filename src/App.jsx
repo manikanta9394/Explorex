@@ -26,6 +26,7 @@ import FestivalCalendarPage from './pages/FestivalCalendarPage'
 import LoginPage from './pages/LoginPage'
 import SignupPage from './pages/SignupPage'
 import WelcomePage from './pages/WelcomePage'
+import StateLandingPage from './pages/StateLandingPage'
 import { allDatasetPlaces } from './data/tourismData'
 import { openGoogleMapsDirections } from './utils/googleMaps'
 import './App.css'
@@ -78,9 +79,17 @@ function getRouteFromLocation() {
     const id = cleanPath.slice('/explore/'.length)
     return { route: '/explore/:id', id }
   }
+  if (cleanPath.startsWith('/place/')) {
+    const id = cleanPath.slice('/place/'.length)
+    return { route: '/explore/:id', id }
+  }
   if (cleanPath === '/map') return { route: '/map', id: null }
   if (cleanPath === '/planner') return { route: '/planner', id: null }
   if (cleanPath === '/festivals') return { route: '/festivals', id: null }
+  if (cleanPath.startsWith('/states/')) {
+    const slug = cleanPath.slice('/states/'.length)
+    return { route: '/states/:slug', slug }
+  }
   if (cleanPath === '/ai') return { route: '/ai', id: null }
   if (cleanPath === '/saved') return { route: '/saved', id: null }
 
@@ -185,6 +194,15 @@ function AppContent() {
           <FestivalCalendarPage
             onNavigate={navigateTo}
             onSelectPlace={(place) => navigateTo(`/explore/${place.id}`)}
+          />
+        )
+      case '/states/:slug':
+        return (
+          <StateLandingPage
+            slug={currentRoute.slug}
+            onNavigate={navigateTo}
+            onSelectPlace={(place) => navigateTo(`/explore/${place.id}`)}
+            onGetDirections={handleGetDirections}
           />
         )
       case '/ai':

@@ -7,7 +7,7 @@ import { useUserLocation } from '../context/useUserLocation'
 import { fetchRoute, getRouteCache } from '../services/api'
 import { formatPriceWithUnit } from '../utils/formatCurrency'
 import { openGoogleMapsDirections } from '../utils/googleMaps'
-import { isInsideTelangana, validateAndFilterTelanganaPlaces } from '../utils/geoUtils'
+import { isInsideIndia, validateAndFilterIndiaPlaces } from '../utils/geoUtils'
 import MarkerClusterGroup from './MarkerClusterGroup'
 import SafeImage from './SafeImage'
 import { DistanceBadgeErrorBoundary, MapErrorBoundary } from './ErrorBoundary'
@@ -56,53 +56,23 @@ function MapBoundsRecenter({ items, userCoords, filterKey }) {
   const lastKeyRef = useRef(null)
 
   useEffect(() => {
-    // Only fit bounds on initial load or when filter changes, not repeatedly on every render
+    // Only fit bounds on initial load or when filter/geo changes
     const currentKey = `${filterKey}_${items?.length || 0}_${userCoords ? 'geo' : 'nogeo'}`
     if (lastKeyRef.current === currentKey) return
     lastKeyRef.current = currentKey
 
-    if (!items || items.length === 0) {
-      map.setView([17.3850, 78.4867], 12)
-      return
-    }
-
-    // Filter items to Hyderabad bounds (17.15..17.65 N, 78.20..78.70 E)
-    const localCoords = items
-      .map((item) => {
-        if (Array.isArray(item.position) && item.position.length >= 2) {
-          const lat = Number(item.position[0])
-          const lng = Number(item.position[1])
-          if (!isNaN(lat) && !isNaN(lng)) return [lat, lng]
-        }
-        if (item.location?.coordinates && Array.isArray(item.location.coordinates) && item.location.coordinates.length >= 2) {
-          const lat = Number(item.location.coordinates[1])
-          const lng = Number(item.location.coordinates[0])
-          if (!isNaN(lat) && !isNaN(lng)) return [lat, lng]
-        }
-        return null
-      })
-      .filter((coord) => coord && coord[0] >= 17.15 && coord[0] <= 17.65 && coord[1] >= 78.20 && coord[1] <= 78.70)
-
+    // If user clicked "My Location" and granted GPS, zoom to user's region
     if (userCoords && Array.isArray(userCoords) && userCoords.length >= 2) {
       const uLat = Number(userCoords[1])
       const uLng = Number(userCoords[0])
-      if (!isNaN(uLat) && !isNaN(uLng) && uLat >= 17.15 && uLat <= 17.65 && uLng >= 78.20 && uLng <= 78.70) {
-        localCoords.push([uLat, uLng])
+      if (!isNaN(uLat) && !isNaN(uLng)) {
+        map.setView([uLat, uLng], 12)
+        return
       }
     }
 
-    if (localCoords.length > 0) {
-      try {
-        const bounds = L.latLngBounds(localCoords)
-        if (bounds.isValid()) {
-          map.fitBounds(bounds, { padding: [40, 40], maxZoom: 13, minZoom: 11 })
-        }
-      } catch {
-        map.setView([17.3850, 78.4867], 12)
-      }
-    } else {
-      map.setView([17.3850, 78.4867], 12)
-    }
+    // Default nationwide view: center of India
+    map.setView([22.5, 79.5], 5)
   }, [map, items, userCoords, filterKey])
 
   return null
@@ -236,27 +206,27 @@ function AllPlacesMapInner({ places = [], onSelectPlace, onGetDirections }) {
     )
   }
 
-  // Filter dataset items, validating every place is within Telangana/Hyderabad boundary
+  // Filter dataset items, validating every place is within India boundary
   const filteredPlaces = useMemo(() => {
     const rawList = Array.isArray(places) ? places : []
-    const validatedList = validateAndFilterTelanganaPlaces(rawList, 'AllPlacesMap')
+    const validatedList = validateAndFilterIndiaPlaces(rawList, 'AllPlacesMap')
 
     if (filter === 'attractions') {
       return validatedList.filter((p) => {
         const id = String(p.id || '')
-        return id.startsWith('place-') || (!id.startsWith('hotel-') && !id.startsWith('restaurant-'))
+        return id.startsWith('place-') || p.type === 'attraction' || (!id.startsWith('hotel-') && !id.startsWith('restaurant-') && p.type !== 'stay' && p.type !== 'food')
       })
     }
     if (filter === 'hotels') {
       return validatedList.filter((p) => {
         const id = String(p.id || '')
-        return id.startsWith('hotel-') || p.category?.toLowerCase().includes('hotel')
+        return id.startsWith('hotel-') || p.type === 'stay' || p.category?.toLowerCase().includes('hotel')
       })
     }
     if (filter === 'restaurants') {
       return validatedList.filter((p) => {
         const id = String(p.id || '')
-        return id.startsWith('restaurant-') || p.cuisine || p.detail?.includes('Dining')
+        return id.startsWith('restaurant-') || p.type === 'food' || p.cuisine || p.detail?.includes('Dining') || p.category?.toLowerCase().includes('food')
       })
     }
     return validatedList
@@ -265,10 +235,10 @@ function AllPlacesMapInner({ places = [], onSelectPlace, onGetDirections }) {
   function getMarkerIcon(place) {
     const id = String(place.id || '')
     const cat = (place.category || '').toLowerCase()
-    if (id.startsWith('hotel-') || cat.includes('hotel')) {
+    if (id.startsWith('hotel-') || place.type === 'stay' || cat.includes('hotel')) {
       return hotelIcon
     }
-    if (id.startsWith('restaurant-') || place.cuisine || place.detail?.includes('Dining') || cat.includes('restaurant')) {
+    if (id.startsWith('restaurant-') || place.type === 'food' || place.cuisine || place.detail?.includes('Dining') || cat.includes('restaurant')) {
       return restaurantIcon
     }
     return attractionIcon
@@ -302,9 +272,10 @@ function AllPlacesMapInner({ places = [], onSelectPlace, onGetDirections }) {
       {/* Leaflet Map Canvas */}
       <div className="map-canvas-container">
         <MapContainer
-          center={[17.3850, 78.4867]}
-          zoom={12}
-          minZoom={9}
+          center={[22.5, 79.5]}
+          zoom={5}
+          minZoom={4}
+          maxZoom={18}
           scrollWheelZoom={true}
           className="all-places-leaflet-map"
         >
@@ -329,8 +300,8 @@ function AllPlacesMapInner({ places = [], onSelectPlace, onGetDirections }) {
             {filteredPlaces.map((place) => {
               const leafletLat = place.position ? Number(place.position[0]) : Number(place.location?.coordinates?.[1])
               const leafletLng = place.position ? Number(place.position[1]) : Number(place.location?.coordinates?.[0])
-              if (!isInsideTelangana(leafletLat, leafletLng)) {
-                console.warn(`[AllPlacesMap] Hiding pin outside Telangana: ${place.name} at [${leafletLat}, ${leafletLng}]`)
+              if (!isInsideIndia(leafletLat, leafletLng)) {
+                console.warn(`[AllPlacesMap] Hiding pin outside India: ${place.name} at [${leafletLat}, ${leafletLng}]`)
                 return null
               }
 

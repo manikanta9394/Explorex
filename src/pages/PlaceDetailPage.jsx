@@ -56,9 +56,13 @@ export default function PlaceDetailPage({
   const [beating, setBeating] = useState(false)
   const [emergencyOpen, setEmergencyOpen] = useState(false)
 
-  // Find place by ID or fallback to first place
+  // Find place by ID or slug with graceful fallback
   const place = useMemo(() => {
-    return allDatasetPlaces.find((p) => p.id === placeId) || allDatasetPlaces[0]
+    if (!placeId) return allDatasetPlaces[0]
+    const direct = allDatasetPlaces.find((p) => p.id === placeId || p.slug === placeId)
+    if (direct) return direct
+    const partial = allDatasetPlaces.find((p) => p.id.startsWith(`${placeId}-`) || p.id.includes(placeId))
+    return partial || allDatasetPlaces[0]
   }, [placeId])
 
   const bestTime = useMemo(() => getBestTimeToVisit(place), [place])
@@ -115,7 +119,7 @@ export default function PlaceDetailPage({
     : place?.id?.startsWith('restaurant-')
     ? 'restaurant'
     : 'place'
-  const { priceDisplay, unitDisplay } = formatPriceWithUnit(place?.price, fallbackType)
+  const { unitDisplay } = formatPriceWithUnit(place?.price, fallbackType)
 
   const rulesList = Array.isArray(place?.rules) && place.rules.length > 0 ? place.rules : [
     'Visiting hours: Daily, 9:00 AM - 5:30 PM',
@@ -143,12 +147,18 @@ export default function PlaceDetailPage({
         }
         eyebrow={place?.category || 'Heritage Destination'}
         title={place?.name}
-        subtitle={place?.location?.address || 'Hyderabad, Telangana'}
+        subtitle={`${place?.city ? `${place.city}, ` : ''}${place?.state || 'India'}`}
         badge={
           <div className="detail-header-badges-row">
-            <span className="detail-rating-pill">
-              <Star size={13} fill="#C9A227" color="#C9A227" /> {place?.rating || 4.7} Rating
-            </span>
+            {place?.rating ? (
+              <span className="detail-rating-pill">
+                <Star size={13} fill="#C9A227" color="#C9A227" /> {place.rating} Rating {place.rating_count ? `(${place.rating_count})` : ''}
+              </span>
+            ) : (
+              <span className="detail-rating-pill unrated">
+                No reviews yet
+              </span>
+            )}
             <PlaceWeatherBadge coordinates={place?.position} placeId={place?.id} />
             <span className="detail-best-time-pill" title={bestTime.fullText}>
               <Sparkles size={12} /> {bestTime.badge}
@@ -158,7 +168,13 @@ export default function PlaceDetailPage({
       />
 
       {/* Main Container */}
-      <div className="place-detail-container">
+      <div
+        className="place-detail-container"
+        data-received-place-id={placeId}
+        data-place-id={place?.id}
+        data-place-img={place?.image}
+        data-place-price={JSON.stringify(place?.price)}
+      >
         {/* Hero Image Card */}
         <div className="detail-hero-media-card">
           <div className="detail-image-wrap">
@@ -172,6 +188,11 @@ export default function PlaceDetailPage({
 
             <div className="detail-hero-top-left-badges">
               <span className="detail-category-chip">{place?.category}</span>
+              {place?.is_illustration && (
+                <span className="detail-illustration-chip" title="AI Cultural Vector Illustration">
+                  🎨 Illustration
+                </span>
+              )}
               <span className="hero-best-time-pill" title={bestTime.fullText}>
                 <Sparkles size={12} /> {bestTime.badge}
               </span>
@@ -191,6 +212,22 @@ export default function PlaceDetailPage({
               <span>{saved ? 'Saved in Wishlist' : 'Save Place'}</span>
             </button>
           </div>
+
+          {/* Image Attribution and Provenance Footer */}
+          <div className="detail-image-attribution-bar">
+            <span className="attribution-icon">📷</span>
+            <span className="attribution-text">
+              {place?.image_attribution || `Verified visual reference for ${place?.name}`}
+            </span>
+            {place?.image_license && (
+              <span className="attribution-license-badge">{place.image_license}</span>
+            )}
+            {place?.is_illustration && (
+              <span className="attribution-ai-note">
+                (Vector fallback illustration created to match authentic architectural features)
+              </span>
+            )}
+          </div>
         </div>
 
         {/* Content Columns Grid */}
@@ -202,7 +239,14 @@ export default function PlaceDetailPage({
               <div className="action-price-box">
                 <span className="price-tag-label">Entry / Average Cost:</span>
                 <div className="price-tag-val">
-                  <strong>{priceDisplay}</strong> <small>/{unitDisplay}</small>
+                  {place?.price?.amount !== null && place?.price?.amount !== undefined ? (
+                    <>
+                      <strong>₹{place.price.amount.toLocaleString('en-IN')}</strong>{' '}
+                      <small>/{place.price.unit || unitDisplay}</small>
+                    </>
+                  ) : (
+                    <strong className="price-unlisted">Not listed, verify locally</strong>
+                  )}
                 </div>
               </div>
 

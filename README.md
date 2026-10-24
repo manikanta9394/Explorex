@@ -1,6 +1,32 @@
-# Explorex – Hyderabad & Telangana Travel Companion
+# Explorex – All-India Travel & Heritage Companion
 
-> **Explore Hyderabad the way locals do.** Explorex is a multimodal heritage explorer, trip planner, and AI travel companion for Hyderabad and Telangana. Crafted with authentic Nizam-era aesthetics, responsive split-screen authentication, offline-first fallback resilience, and live spatial maps.
+> **Explore India the way locals do.** Explorex is a multimodal nationwide heritage explorer, trip planner, and AI travel companion covering all 36 States and Union Territories of India. Crafted with authentic cultural aesthetics, trustworthy open-source data (Wikidata, Wikipedia, ASI), zero image duplication guarantees, responsive split-screen authentication, and live spatial clustering maps.
+
+---
+
+## 🇮🇳 Nationwide Expansion & Image Integrity
+
+Explorex expands from Hyderabad to **ALL of India** with strict data authenticity and visual integrity standards:
+
+1. **Trustworthy Nationwide Dataset (`scripts/seed/`)**:
+   - Curated dataset covering all 36 Indian States & Union Territories.
+   - Grounded in Wikidata entity IDs (`wikidata_id`) as the single source of truth for names, coordinates, and authentic Wikipedia imagery.
+   - **No fabricated facts**: Null ratings/hours display transparently as *"Not listed, verify locally"* or *"No reviews yet"*. Entry fees reflect official Archaeological Survey of India (ASI) or state tourism rates in Indian Rupees (₹) with Indian number grouping (`₹1,50,000`).
+2. **Absolute Image Integrity & SHA-256 Uniqueness**:
+   - Every place's imagery is fetched strictly from the Wikimedia Commons file attached to that exact place's `wikidata_id` (property P18).
+   - Rejects duplicate URLs and identical SHA-256 file hashes across different places.
+   - Verified metadata includes author attribution, Creative Commons license (e.g. CC BY-SA 4.0), and source link.
+   - Where no verified photograph exists, deterministic vector fallback illustrations (`source: 'ai_generated'`) are generated with unique seed parameters and an *"🎨 Illustration"* badge.
+3. **Automated CI Image Audit (`npm run check:images`)**:
+   - Verifies 100% unique image hashes across all published places.
+   - Confirms that iconic landmarks (Charminar, Taj Mahal, Gateway of India, Golden Temple, Hawa Mahal, Konark Sun Temple) strictly display their own verified photos.
+4. **Interactive Spatial Map & Nationwide Clustering**:
+   - Centers on India (`[22.5, 79.5]`, zoom 5) by default.
+   - Leaflet marker clustering groups places at national scale and smoothly disperses down to state and city levels.
+   - Strict national boundary validation (lat 6.0°–37.5° N, lng 68.0°–97.5° E) flags and hides any out-of-bounds coordinates.
+5. **State Landing Pages & Region Switcher**:
+   - Dedicated state portals (`/states/:slug`, e.g. `/states/tamil-nadu`, `/states/rajasthan`) featuring regional taglines, signature highlights, best time to visit, and filtered destinations.
+   - Navbar and mobile drawer Region Switcher for one-click jumping between All India and individual states.
 
 ---
 
@@ -153,9 +179,18 @@ npx oxlint
 
 ## 🧪 Automated Testing & Verification
 
-Explorex includes comprehensive Puppeteer end-to-end verification suites in `scripts/`:
+Explorex includes comprehensive Puppeteer end-to-end verification suites and CI audit tools:
 
 ```bash
+# Verify 100% unique image integrity and landmark accuracy
+npm run check:images
+
+# Comprehensive nationwide expansion test (Images, State filter, Search highlight, State pages, Map clustering)
+node scripts/verify_india_expansion.js
+
+# Verify Supabase Auth, Access Gate & RLS persistence
+node scripts/verify_supabase_auth_gate.js
+
 # Verify 7 new advanced features (Weather, Crowd Chart, Shared Link, Expense Splitter, Language Toggle, SOS Help, Festivals)
 node scripts/verify_new_features.js
 

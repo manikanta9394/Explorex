@@ -1,3 +1,5 @@
+import { indiaPlaces } from './indiaPlacesData.js'
+
 // Generated from place-names.xlsx, hotel-name.xlsx, res-name.xlsx and images/
 import { getFallbackImage } from '../utils/fallbackImages.js'
 
@@ -7736,14 +7738,35 @@ export function enrichItem(item, defaultType = 'attraction') {
   }
 }
 
-export const enrichedPlaces = places.map((p) => enrichItem(p, 'place'))
-export const enrichedHotels = hotels.map((h) => enrichItem(h, 'hotel'))
-export const enrichedRestaurants = restaurants.map((r) => enrichItem(r, 'restaurant'))
-
-export const allDatasetPlaces = [
-  ...enrichedPlaces,
-  ...enrichedHotels,
-  ...enrichedRestaurants,
+export const enrichedPlaces = [
+  ...indiaPlaces.filter((p) => p.type === 'attraction' || !p.type),
+  ...places.map((p) => enrichItem(p, 'place')).filter((p) => !indiaPlaces.some((ip) => ip.name.toLowerCase() === p.name.toLowerCase())),
 ]
 
-export const mapAttractions = enrichedPlaces.map(({ id, name, category, rating, position }) => ({ id, name, category, rating, position }))
+export const enrichedHotels = [
+  ...indiaPlaces.filter((p) => p.type === 'stay'),
+  ...hotels.map((h) => enrichItem(h, 'hotel')),
+]
+
+export const enrichedRestaurants = [
+  ...indiaPlaces.filter((p) => p.type === 'food'),
+  ...restaurants.map((r) => enrichItem(r, 'restaurant')),
+]
+
+export const allDatasetPlaces = [
+  ...indiaPlaces,
+  ...places.map((p) => enrichItem(p, 'place')).filter((p) => !indiaPlaces.some((ip) => ip.id === p.id || ip.name.toLowerCase() === p.name.toLowerCase())),
+  ...hotels.map((h) => enrichItem(h, 'hotel')).filter((h) => !indiaPlaces.some((ip) => ip.id === h.id || ip.name.toLowerCase() === h.name.toLowerCase())),
+  ...restaurants.map((r) => enrichItem(r, 'restaurant')).filter((r) => !indiaPlaces.some((ip) => ip.id === r.id || ip.name.toLowerCase() === r.name.toLowerCase())),
+]
+
+export const mapAttractions = allDatasetPlaces.map(({ id, name, category, rating, position, state, city, image }) => ({
+  id,
+  name,
+  category,
+  rating,
+  position,
+  state,
+  city,
+  image,
+}))

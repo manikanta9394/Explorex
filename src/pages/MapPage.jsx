@@ -19,11 +19,11 @@ export default function MapPage({ onNavigate, onSelectPlace, onGetDirections }) 
       {/* Header Band */}
       <PageHeaderBand
         eyebrow="Spatial Navigation & Explorer"
-        title="Interactive Telangana Map"
-        subtitle="Explore 400 destinations clustered across Hyderabad and Telangana with category filters, spatial previews, and live routing."
+        title="Interactive India Map"
+        subtitle="Explore destinations clustered across all 36 States and Union Territories of India with category filters, spatial previews, and live routing."
         badge={
           <span className="header-stat-badge">
-            <MapPin size={13} /> 400 Pins Clustered
+            <MapPin size={13} /> {allDatasetPlaces.length} Pins Clustered Across India
           </span>
         }
         breadcrumbs={[

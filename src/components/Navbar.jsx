@@ -16,6 +16,7 @@ import { useLanguage } from '../context/LanguageContext'
 import AuthModal from './AuthModal'
 import EmergencyHelpModal from './EmergencyHelpModal'
 import LanguageSelector from './LanguageSelector'
+import RegionSwitcher from './RegionSwitcher'
 import SavedPlacesModal from './SavedPlacesModal'
 
 export function Logo({ onClick }) {
@@ -344,8 +345,12 @@ export default function Navbar({
             </ul>
           </nav>
 
-          {/* Right: Actions (Language, SOS Help, Wishlist, Auth / User Profile) */}
+          {/* Right: Actions (Region Switcher, Language, SOS Help, Wishlist, Auth / User Profile) */}
           <div className="nav-right">
+            <div className="nav-region-wrap">
+              <RegionSwitcher currentRoute={currentRoute} onNavigate={onNavigate} />
+            </div>
+
             <div className="nav-lang-wrap">
               <LanguageSelector />
             </div>
@@ -660,6 +665,17 @@ export default function Navbar({
           className="drawer-footer stagger-item"
           style={{ '--stagger': navLinks.length + 4 }}
         >
+          <div className="drawer-footer-region">
+            <span>Region:</span>
+            <RegionSwitcher
+              currentRoute={currentRoute}
+              onNavigate={(path) => {
+                setMobileDrawerOpen(false)
+                onNavigate(path)
+              }}
+            />
+          </div>
+
           <div className="drawer-footer-lang">
             <span>Language:</span>
             <LanguageSelector />
@@ -676,7 +692,7 @@ export default function Navbar({
           )}
 
           <p className="drawer-tagline">
-            Explorex · Telangana Travel Intelligence
+            Explorex · India Travel Intelligence
           </p>
         </div>
       </aside>
