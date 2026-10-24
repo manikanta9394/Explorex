@@ -9,6 +9,8 @@ import {
   Map as MapIcon,
   MapPin,
   ShieldAlert,
+  User,
+  MessageSquare,
 } from 'lucide-react'
 import { useAuth } from '../context/useAuth'
 import { useSavedPlaces } from '../context/useSavedPlaces'
@@ -428,6 +430,18 @@ export default function Navbar({
                       type="button"
                       className="dropdown-menu-item"
                       role="menuitem"
+                      onClick={(e) => handleLinkClick(e, '/profile')}
+                    >
+                      <span className="menu-item-icon">
+                        <User size={16} />
+                      </span>
+                      <span className="menu-item-text">My Profile</span>
+                    </button>
+
+                    <button
+                      type="button"
+                      className="dropdown-menu-item"
+                      role="menuitem"
                       onClick={handleOpenSaved}
                     >
                       <span className="menu-item-icon heart">
@@ -451,6 +465,18 @@ export default function Navbar({
                         <CalendarDays size={16} />
                       </span>
                       <span className="menu-item-text">Trip planner</span>
+                    </button>
+
+                    <button
+                      type="button"
+                      className="dropdown-menu-item"
+                      role="menuitem"
+                      onClick={(e) => handleLinkClick(e, '/feedback')}
+                    >
+                      <span className="menu-item-icon">
+                        <MessageSquare size={16} />
+                      </span>
+                      <span className="menu-item-text">Feedback &amp; Reports</span>
                     </button>
 
                     <div className="dropdown-divider" />
@@ -616,10 +642,27 @@ export default function Navbar({
                 </li>
               )
             })}
-            {/* Saved Places in Drawer */}
+            {/* My Profile in Drawer */}
             <li
               className="stagger-item"
               style={{ '--stagger': navLinks.length + 2 }}
+            >
+              <button
+                type="button"
+                className={`drawer-link-item ${isLinkActive('/profile') ? 'active' : ''}`}
+                onClick={(e) => handleLinkClick(e, '/profile')}
+              >
+                <span className="drawer-item-icon">
+                  <User size={18} />
+                </span>
+                <span className="drawer-item-label">My Profile</span>
+              </button>
+            </li>
+
+            {/* Saved Places in Drawer */}
+            <li
+              className="stagger-item"
+              style={{ '--stagger': navLinks.length + 3 }}
             >
               <button
                 type="button"
@@ -638,10 +681,27 @@ export default function Navbar({
               </button>
             </li>
 
+            {/* Feedback & Support in Drawer */}
+            <li
+              className="stagger-item"
+              style={{ '--stagger': navLinks.length + 4 }}
+            >
+              <button
+                type="button"
+                className={`drawer-link-item ${isLinkActive('/feedback') ? 'active' : ''}`}
+                onClick={(e) => handleLinkClick(e, '/feedback')}
+              >
+                <span className="drawer-item-icon">
+                  <MessageSquare size={18} />
+                </span>
+                <span className="drawer-item-label">Feedback &amp; Reports</span>
+              </button>
+            </li>
+
             {/* Emergency & Tourist Help in Drawer */}
             <li
               className="stagger-item"
-              style={{ '--stagger': navLinks.length + 3 }}
+              style={{ '--stagger': navLinks.length + 5 }}
             >
               <button
                 type="button"
