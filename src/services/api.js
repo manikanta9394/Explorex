@@ -248,6 +248,96 @@ export function generateItinerary(preferences) {
   )
 }
 
+export async function streamAIChatClient({
+  message,
+  history = [],
+  currentPlace = null,
+  travelMode = 'driving-car',
+  userLocation = null,
+  userId = null,
+  image = null,
+  signal,
+  onToken,
+  onDone,
+  onError,
+}) {
+  const url = `${API_BASE_URL || 'http://localhost:5005/api'}/chat/stream`
+  const payload = {
+    message,
+    history,
+    currentPlace,
+    travelMode,
+    userLocation,
+    userId,
+    image,
+  }
+
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+      signal,
+    })
+
+    if (!response.ok) {
+      throw new Error(`Streaming failed with status ${response.status}`)
+    }
+
+    const reader = response.body.getReader()
+    const decoder = new TextDecoder()
+    let buffer = ''
+
+    while (true) {
+      const { done, value } = await reader.read()
+      if (done) break
+
+      buffer += decoder.decode(value, { stream: true })
+      const parts = buffer.split('\n\n')
+      buffer = parts.pop() || ''
+
+      for (const part of parts) {
+        const trimmed = part.trim()
+        if (trimmed.startsWith('data: ')) {
+          try {
+            const data = JSON.parse(trimmed.slice(6))
+            if (data.type === 'token' && onToken) {
+              onToken(data.token)
+            } else if (data.type === 'done' && onDone) {
+              onDone(data)
+            } else if (data.type === 'error' && onError) {
+              onError(new Error(data.error || 'Streaming error'))
+            }
+          } catch {}
+        }
+      }
+    }
+
+    // Flush any trailing event left in buffer
+    if (buffer.trim().startsWith('data: ')) {
+      try {
+        const data = JSON.parse(buffer.trim().slice(6))
+        if (data.type === 'token' && onToken) onToken(data.token)
+        else if (data.type === 'done' && onDone) onDone(data)
+      } catch {}
+    }
+  } catch (err) {
+    if (signal?.aborted) return
+    if (onError) onError(err)
+    else throw err
+  }
+}
+
+export async function sendAIFeedback({ messageId, conversationId, feedback, reason, comment }) {
+  try {
+    await fetch(`${API_BASE_URL || 'http://localhost:5005/api'}/ai/feedback`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ messageId, conversationId, feedback, reason, comment }),
+    })
+  } catch {}
+}
+
 export async function fetchRoute(start, end, profile = 'driving-car', placeId = null) {
   // Check in-memory cache first
   const cached = getRouteCache(start, end, profile, placeId)

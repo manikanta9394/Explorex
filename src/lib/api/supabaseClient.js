@@ -316,6 +316,31 @@ class LocalSupabaseEmulator {
         return queryObj
       },
 
+      update: (fields) => {
+        let filters = []
+        const queryObj = {
+          eq: (field, value) => {
+            filters.push((row) => row[field] === value)
+            return queryObj
+          },
+          then: (resolve) => {
+            const rows = self._getStorage(`table_${table}`, [])
+            let updated = null
+            const newRows = rows.map((r) => {
+              if (filters.every((fn) => fn(r))) {
+                const merged = { ...r, ...fields, updated_at: new Date().toISOString() }
+                updated = merged
+                return merged
+              }
+              return r
+            })
+            self._setStorage(`table_${table}`, newRows)
+            resolve({ data: updated, error: null })
+          },
+        }
+        return queryObj
+      },
+
       upsert: (record) => {
         return {
           then: (resolve) => {
