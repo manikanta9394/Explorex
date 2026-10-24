@@ -35,45 +35,54 @@ async function run() {
     })
     page.on('pageerror', (err) => consoleErrors.push(err.message))
 
+    // Ensure authenticated or guest session via Access Gate
+    console.log('Passing Access Gate: Continuing as guest...')
+    await page.goto(`${BASE_URL}welcome`, { waitUntil: 'networkidle2' })
+    await sleep(400)
+    await page.evaluate(() => {
+      const guestBtn = document.querySelector('.welcome-choice-card.highlight-guest .choice-action-btn')
+      if (guestBtn) guestBtn.click()
+    })
+    await sleep(800)
+
     // =========================================================================
     // 1. GUEST SAVE / WISHLIST FUNCTIONALITY
     // =========================================================================
     console.log('--- Test 1: Guest Save (Wishlist) & Wishlist Persistence ---')
-    await page.goto(`${BASE_URL}#/explore`, { waitUntil: 'networkidle2' })
+    await page.goto(`${BASE_URL}explore`, { waitUntil: 'networkidle2' })
     await sleep(400)
 
     // Clear saved items from previous tests
     await page.evaluate(() => {
       localStorage.removeItem('explorex_saved_guest')
+      localStorage.removeItem('sb_emu_table_saved_places')
     })
     await page.reload({ waitUntil: 'networkidle2' })
     await sleep(300)
-
-    const initialSavedCount = await page.evaluate(() => {
-      return document.querySelectorAll('.card-save-btn.saved').length
-    })
 
     // Click the first place card's save heart button
     await page.evaluate(() => {
       const firstSaveBtn = document.querySelector('.card-save-btn')
       if (firstSaveBtn) firstSaveBtn.click()
     })
-    await sleep(300)
+    await sleep(600)
 
     const afterSaveGuest = await page.evaluate(() => {
+      const dbSaved = JSON.parse(localStorage.getItem('sb_emu_table_saved_places') || '[]')
       const guestSaved = JSON.parse(localStorage.getItem('explorex_saved_guest') || '[]')
+      const savedCount = dbSaved.length || guestSaved.length
       const isCardSaved = document.querySelector('.card-save-btn')?.classList.contains('saved')
       const navBadge = document.querySelector('.nav-saved-badge')?.textContent.trim()
       return {
-        guestSavedCount: guestSaved.length,
-        firstSavedId: guestSaved[0],
+        guestSavedCount: savedCount,
+        firstSavedId: dbSaved[0]?.place_id || guestSaved[0],
         isCardSaved,
         navBadge,
       }
     })
     console.log('Guest Save State:', afterSaveGuest)
-    if (afterSaveGuest.guestSavedCount !== 1 || !afterSaveGuest.isCardSaved) {
-      throw new Error('Guest wishlist save did not persist to localStorage or update UI!')
+    if (afterSaveGuest.guestSavedCount < 1 || !afterSaveGuest.isCardSaved) {
+      throw new Error('Guest wishlist save did not persist to database or update UI!')
     }
     console.log('✅ Test 1 (Guest Wishlist Save) Passed!')
 

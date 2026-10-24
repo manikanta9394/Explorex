@@ -93,6 +93,12 @@ cp .env.example .env
 Edit `.env` with your preferred credentials:
 
 ```env
+# Supabase Configuration (PostgreSQL Database, Auth & RLS)
+VITE_SUPABASE_URL=https://your-project-id.supabase.co
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_public_key_here
+# Server-only keys (NEVER expose in frontend code)
+SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_secret_key_here
+
 PORT=5005
 NODE_ENV=development
 JWT_SECRET=your_jwt_secret_key_change_in_production
@@ -106,7 +112,16 @@ OPENROUTER_MODEL=google/gemma-3-27b-it:free
 ORS_API_KEY=your_openrouteservice_api_key_here
 ```
 
-> **Note**: Even if no external API keys are provided, Explorex includes robust offline fallbacks for AI chat, distance calculations, weather, and geocoding.
+### 4. Supabase Database & Migrations Setup
+
+1. Create a project on [Supabase](https://supabase.com).
+2. Run the SQL migrations located in `/supabase/migrations/`:
+   - `20261024000001_initial_schema.sql`: Sets up `profiles`, `places`, `place_images`, `saved_places`, `trips`, `conversations`, `messages`, `feedback`, `audit_logs`, `place_embeddings` with `vector(1536)` HNSW indexes, the `is_admin()` function, the `handle_new_user()` trigger, and strict Row-Level Security (RLS) on all tables.
+   - `20261024000002_seed_places.sql`: Seeds canonical Hyderabad & Telangana landmarks, royal stays, and authentic culinary dining stops.
+3. In your Supabase Dashboard under **Authentication -> Providers**, enable **Anonymous Sign-ins** (Authentication -> Settings -> Allow anonymous sign-ins). This enables visitors to use "Continue as guest" while persisting their data in the database.
+4. Copy your **Project URL** and **Anon Public Key** into `.env`.
+
+> **Note**: Even if no external API keys are provided, Explorex includes robust offline fallbacks and an emulator for AI chat, distance calculations, weather, geocoding, and database persistence.
 
 ---
 

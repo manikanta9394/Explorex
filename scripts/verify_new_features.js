@@ -27,12 +27,22 @@ async function run() {
     })
     page.on('pageerror', (err) => consoleErrors.push(err.message))
 
+    // Pass through Access Gate by continuing as guest
+    console.log('Passing Access Gate: Continuing as guest...')
+    await page.goto(`${BASE_URL}welcome`, { waitUntil: 'networkidle2' })
+    await sleep(400)
+    await page.evaluate(() => {
+      const guestBtn = document.querySelector('.welcome-choice-card.highlight-guest .choice-action-btn')
+      if (guestBtn) guestBtn.click()
+    })
+    await sleep(800)
+
     // -------------------------------------------------------------
     // FEATURE 1: Weather and "Best Time to Visit" Badge
     // -------------------------------------------------------------
     console.log('\n--- Test 1: Weather and "Best Time to Visit" Badge ---')
-    await page.goto(`${BASE_URL}#/explore`, { waitUntil: 'networkidle2' })
-    await sleep(600)
+    await page.goto(`${BASE_URL}explore`, { waitUntil: 'networkidle2' })
+    await sleep(800)
 
     const exploreBadges = await page.evaluate(() => {
       const cards = document.querySelectorAll('.explore-place-card')
