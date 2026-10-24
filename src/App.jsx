@@ -20,7 +20,9 @@ import { useUserLocation } from './context/useUserLocation'
 import { ToastProvider } from './context/ToastContext'
 import { allDatasetPlaces } from './data/tourismData'
 import { openGoogleMapsDirections } from './utils/googleMaps'
+import { analytics } from './services/analytics'
 import AnnouncementBanner from './components/AnnouncementBanner'
+import NetworkStatusIndicator from './components/NetworkStatusIndicator'
 import AdminLayout from './admin/AdminLayout'
 import AdminAuthGuard from './admin/AdminAuthGuard'
 import './admin/admin.css'
@@ -100,7 +102,7 @@ export function getRouteFromLocation() {
   // Strip query params for route matching
   const cleanPath = path.split('?')[0].split('#')[0]
 
-  if (cleanPath === '' || cleanPath === '/') return { route: '/', id: null }
+  if (cleanPath === '' || cleanPath === '/' || cleanPath === '/home') return { route: '/', id: null }
   if (cleanPath === '/welcome') return { route: '/welcome', id: null }
   if (cleanPath === '/login') return { route: '/login', id: null }
   if (cleanPath === '/signup') return { route: '/signup', id: null }
@@ -176,6 +178,10 @@ function AppContent() {
       window.removeEventListener('hashchange', handleRouteChange)
     }
   }, [])
+
+  useEffect(() => {
+    analytics.trackPageView(currentRoute.route, typeof document !== 'undefined' ? document.title : '')
+  }, [currentRoute])
 
   const navigateTo = (path) => {
     let target = path || '/'
@@ -442,6 +448,9 @@ function AppContent() {
         <FeedbackDrawer
           currentRoute={currentRoute.route === '/explore/:id' ? `/explore/${currentRoute.id}` : currentRoute.route}
         />
+
+        {/* Global Offline / Online Network Indicator */}
+        <NetworkStatusIndicator />
 
         <AuthModal
           isOpen={authModalOpen}
