@@ -10,6 +10,12 @@ export default defineConfig({
     port: 5180,
     strictPort: false,
     host: true,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:5005',
+        changeOrigin: true,
+      },
+    },
     watch: {
       ignored: ['**/server/**', '**/scripts/**', '**/data/**'],
     },

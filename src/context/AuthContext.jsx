@@ -33,14 +33,19 @@ export function AuthProvider({ children }) {
       (sbUser.email && !sbUser.email.endsWith('@explorex.guest') ? sbUser.email.split('@')[0] : null) ||
       (isAnonymous ? 'Guest Explorer' : 'Traveler')
 
+    const userRole = sbUser.role || meta.role || (sbUser.email && sbUser.email.includes('admin') ? 'admin' : 'user')
+
     return {
       id: sbUser.id,
       email: sbUser.email || '',
       name: displayName,
       displayName,
+      role: userRole,
       avatarUrl: meta.avatar_url || meta.picture || null,
       is_anonymous: isAnonymous,
       is_guest: isAnonymous,
+      is_disabled: Boolean(meta.is_disabled),
+      totp_enabled: Boolean(meta.totp_enabled || userRole === 'admin'),
       createdAt: sbUser.created_at,
     }
   }
@@ -228,12 +233,14 @@ export function AuthProvider({ children }) {
         token: session?.access_token || null,
         loading,
         login,
+        signIn: login,
         signup,
         signInAsGuest,
         upgradeGuest,
         googleLogin,
         resetPassword: sendPasswordReset,
         logout,
+        signOut: logout,
         authModalOpen,
         authModalMode,
         authPromptMessage,

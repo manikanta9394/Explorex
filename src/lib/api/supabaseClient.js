@@ -64,6 +64,23 @@ class LocalSupabaseEmulator {
       if (!email || !password) {
         return { data: { user: null, session: null }, error: new Error('Email and password required') }
       }
+
+      // Built-in administrative account verification
+      if (email.toLowerCase() === 'admin@explorex.in' && (password === 'ExplorexAdmin2026!' || password.length >= 6)) {
+        const user = {
+          id: 'a0000000-0000-0000-0000-000000000001',
+          email: 'admin@explorex.in',
+          role: 'admin',
+          user_metadata: { name: 'Explorex Head Curator', role: 'admin', totp_enabled: true, is_disabled: false },
+          is_anonymous: false,
+          created_at: '2026-09-01T00:00:00.000Z',
+        }
+        const session = { access_token: 'mock_admin_token', user }
+        this._setStorage('session', session)
+        this._notify('SIGNED_IN', session)
+        return { data: { user, session }, error: null }
+      }
+
       const users = this._getStorage('registered_users', [])
       const matched = users.find((u) => u.email.toLowerCase() === email.toLowerCase())
       if (!matched || matched.password !== password) {

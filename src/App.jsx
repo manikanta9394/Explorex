@@ -20,9 +20,13 @@ import { useUserLocation } from './context/useUserLocation'
 import { ToastProvider } from './context/ToastContext'
 import { allDatasetPlaces } from './data/tourismData'
 import { openGoogleMapsDirections } from './utils/googleMaps'
+import AnnouncementBanner from './components/AnnouncementBanner'
+import AdminLayout from './admin/AdminLayout'
+import AdminAuthGuard from './admin/AdminAuthGuard'
+import './admin/admin.css'
 import './App.css'
 
-// Lazy-loaded routes for performance & code-splitting
+// User App Pages
 const HomePage = lazy(() => import('./pages/HomePage'))
 const ExplorePage = lazy(() => import('./pages/ExplorePage'))
 const PlaceDetailPage = lazy(() => import('./pages/PlaceDetailPage'))
@@ -43,6 +47,18 @@ const AboutPage = lazy(() => import('./pages/AboutPage'))
 const PrivacyPage = lazy(() => import('./pages/PrivacyPage'))
 const TermsPage = lazy(() => import('./pages/TermsPage'))
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'))
+
+// Admin App Pages
+const AdminLoginPage = lazy(() => import('./admin/pages/AdminLoginPage'))
+const AdminDashboardPage = lazy(() => import('./admin/pages/AdminDashboardPage'))
+const AdminPlacesPage = lazy(() => import('./admin/pages/AdminPlacesPage'))
+const AdminImagesPage = lazy(() => import('./admin/pages/AdminImagesPage'))
+const AdminUsersPage = lazy(() => import('./admin/pages/AdminUsersPage'))
+const AdminFeedbackPage = lazy(() => import('./admin/pages/AdminFeedbackPage'))
+const AdminAIQualityPage = lazy(() => import('./admin/pages/AdminAIQualityPage'))
+const AdminContentPage = lazy(() => import('./admin/pages/AdminContentPage'))
+const AdminAuditLogsPage = lazy(() => import('./admin/pages/AdminAuditLogsPage'))
+const AdminSettingsPage = lazy(() => import('./admin/pages/AdminSettingsPage'))
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -122,6 +138,22 @@ export function getRouteFromLocation() {
   if (cleanPath === '/privacy') return { route: '/privacy', id: null }
   if (cleanPath === '/terms') return { route: '/terms', id: null }
 
+  // Admin Routes
+  if (cleanPath === '/admin/login') return { route: '/admin/login', id: null }
+  if (cleanPath === '/admin' || cleanPath === '/admin/') return { route: '/admin', id: null }
+  if (cleanPath === '/admin/places') return { route: '/admin/places', id: null }
+  if (cleanPath === '/admin/images') return { route: '/admin/images', id: null }
+  if (cleanPath === '/admin/users') return { route: '/admin/users', id: null }
+  if (cleanPath === '/admin/feedback') return { route: '/admin/feedback', id: null }
+  if (cleanPath === '/admin/ai-quality') return { route: '/admin/ai-quality', id: null }
+  if (cleanPath === '/admin/content') return { route: '/admin/content', id: null }
+  if (cleanPath === '/admin/audit-logs') return { route: '/admin/audit-logs', id: null }
+  if (cleanPath === '/admin/settings') return { route: '/admin/settings', id: null }
+  if (cleanPath.startsWith('/admin/')) {
+    const sub = cleanPath.slice('/admin/'.length)
+    return { route: `/admin/${sub}`, id: sub }
+  }
+
   return { route: '/404', id: null }
 }
 
@@ -166,6 +198,52 @@ function AppContent() {
   const handleGetDirections = (place) => {
     const userLatLng = userCoords ? { lat: userCoords[1], lng: userCoords[0] } : null
     openGoogleMapsDirections(place, travelMode, userLatLng)
+  }
+
+  // Admin App Login Route (dense slate aesthetic, no user hero/footer)
+  if (currentRoute.route === '/admin/login') {
+    return (
+      <Suspense fallback={<PageSkeletonLoader />}>
+        <AdminLoginPage onNavigate={navigateTo} />
+      </Suspense>
+    )
+  }
+
+  // Admin App Shell & Routes (dense, functional slate dashboard guarded by admin role)
+  if (currentRoute.route.startsWith('/admin')) {
+    const renderAdminSection = () => {
+      switch (currentRoute.route) {
+        case '/admin/places':
+          return <AdminPlacesPage onNavigate={navigateTo} />
+        case '/admin/images':
+          return <AdminImagesPage onNavigate={navigateTo} />
+        case '/admin/users':
+          return <AdminUsersPage onNavigate={navigateTo} />
+        case '/admin/feedback':
+          return <AdminFeedbackPage onNavigate={navigateTo} />
+        case '/admin/ai-quality':
+          return <AdminAIQualityPage onNavigate={navigateTo} />
+        case '/admin/content':
+          return <AdminContentPage onNavigate={navigateTo} />
+        case '/admin/audit-logs':
+          return <AdminAuditLogsPage onNavigate={navigateTo} />
+        case '/admin/settings':
+          return <AdminSettingsPage onNavigate={navigateTo} />
+        case '/admin':
+        default:
+          return <AdminDashboardPage onNavigate={navigateTo} />
+      }
+    }
+
+    return (
+      <AdminAuthGuard onNavigate={navigateTo}>
+        <AdminLayout currentRoute={currentRoute} onNavigate={navigateTo}>
+          <Suspense fallback={<div style={{ padding: '40px', textAlign: 'center', color: 'var(--adm-text-dim)' }}>Loading admin console...</div>}>
+            {renderAdminSection()}
+          </Suspense>
+        </AdminLayout>
+      </AdminAuthGuard>
+    )
   }
 
   // Auth pages have dedicated split/centered layouts without full Navbar/Footer
@@ -337,6 +415,9 @@ function AppContent() {
         <a href="#main-content" className="skip-to-content-link">
           Skip to main content
         </a>
+
+        {/* Global Announcement Banner from Admin Content Studio */}
+        <AnnouncementBanner onNavigate={navigateTo} />
 
         <ScrollProgressBar />
         <GuestUpgradeBanner />
