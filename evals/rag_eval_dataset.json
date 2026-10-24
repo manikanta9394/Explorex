@@ -1,0 +1,503 @@
+[
+  {
+    "id": "eval-fee-01",
+    "category": "fees",
+    "query": "What is the entry fee for Golconda Fort?",
+    "expected_place_id": "golconda-fort-hyderabad",
+    "expected_keywords": ["25", "Golconda", "₹"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-fee-02",
+    "category": "fees",
+    "query": "How much does a ticket to Charminar cost?",
+    "expected_place_id": "charminar-hyderabad",
+    "expected_keywords": ["25", "Charminar", "₹"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-fee-03",
+    "category": "fees",
+    "query": "What is the entrance ticket price for Taj Mahal in Agra?",
+    "expected_place_id": "taj-mahal-agra",
+    "expected_keywords": ["50", "Taj Mahal", "₹"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-fee-04",
+    "category": "fees",
+    "query": "Entry fee of Qutub Minar in New Delhi?",
+    "expected_place_id": "qutub-minar-delhi",
+    "expected_keywords": ["40", "Qutub Minar", "₹"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-fee-05",
+    "category": "fees",
+    "query": "How much is the ticket for Hawa Mahal in Jaipur?",
+    "expected_place_id": "hawa-mahal-jaipur",
+    "expected_keywords": ["50", "Hawa Mahal", "₹"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-fee-06",
+    "category": "fees",
+    "query": "What is the entry fee for Konark Sun Temple in Odisha?",
+    "expected_place_id": "konark-sun-temple-odisha",
+    "expected_keywords": ["40", "Konark", "₹"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-fee-07",
+    "category": "fees",
+    "query": "Is there any entrance ticket for Gateway of India in Mumbai?",
+    "expected_place_id": "gateway-of-india-mumbai",
+    "expected_keywords": ["free", "Gateway of India", "0"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-fee-08",
+    "category": "fees",
+    "query": "Do I have to pay an entry fee at the Golden Temple in Amritsar?",
+    "expected_place_id": "golden-temple-amritsar",
+    "expected_keywords": ["free", "Golden Temple", "0"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-fee-09",
+    "category": "fees",
+    "query": "Entry fee for Brihadeeswarar Temple in Thanjavur?",
+    "expected_place_id": "brihadeeswarar-temple-thanjavur",
+    "expected_keywords": ["free", "Brihadeeswarar", "0"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-fee-10",
+    "category": "fees",
+    "query": "What is the entry ticket for Red Fort Delhi?",
+    "expected_place_id": "red-fort-delhi",
+    "expected_keywords": ["35", "Red Fort", "₹"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-fee-11",
+    "category": "fees",
+    "query": "How much does it cost to enter Amber Fort Jaipur?",
+    "expected_place_id": "amber-fort-jaipur",
+    "expected_keywords": ["100", "Amber Fort", "₹"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-fee-12",
+    "category": "fees",
+    "query": "Ticket cost for Meenakshi Amman Temple Madurai?",
+    "expected_place_id": "meenakshi-amman-temple-madurai",
+    "expected_keywords": ["free", "Meenakshi", "0"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-rules-01",
+    "category": "rules",
+    "query": "What are the visiting hours for Golconda Fort?",
+    "expected_place_id": "golconda-fort-hyderabad",
+    "expected_keywords": ["hours", "Golconda", "5:30"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-rules-02",
+    "category": "rules",
+    "query": "Is Taj Mahal open on Fridays?",
+    "expected_place_id": "taj-mahal-agra",
+    "expected_keywords": ["Friday", "Taj Mahal", "closed"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-rules-03",
+    "category": "rules",
+    "query": "What is the dress code and rules for visiting Golden Temple Amritsar?",
+    "expected_place_id": "golden-temple-amritsar",
+    "expected_keywords": ["head", "shoes", "Golden Temple"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-rules-04",
+    "category": "rules",
+    "query": "Is photography allowed at Charminar?",
+    "expected_place_id": "charminar-hyderabad",
+    "expected_keywords": ["photography", "Charminar"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-rules-05",
+    "category": "rules",
+    "query": "What are the visitor guidelines at Meenakshi Amman Temple in Madurai?",
+    "expected_place_id": "meenakshi-amman-temple-madurai",
+    "expected_keywords": ["dress", "attire", "Meenakshi"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-rules-06",
+    "category": "rules",
+    "query": "What time does Qutub Minar close for visitors?",
+    "expected_place_id": "qutub-minar-delhi",
+    "expected_keywords": ["Qutub Minar", "hours", "PM"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-rules-07",
+    "category": "rules",
+    "query": "What are the timings for Konark Sun Temple?",
+    "expected_place_id": "konark-sun-temple-odisha",
+    "expected_keywords": ["Konark", "hours", "morning"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-rules-08",
+    "category": "rules",
+    "query": "Visiting hours of Hawa Mahal in Jaipur?",
+    "expected_place_id": "hawa-mahal-jaipur",
+    "expected_keywords": ["Hawa Mahal", "9", "5"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-rules-09",
+    "category": "rules",
+    "query": "What are the etiquette and timings at Brihadeeswarar Temple?",
+    "expected_place_id": "brihadeeswarar-temple-thanjavur",
+    "expected_keywords": ["Brihadeeswarar", "temple", "hours"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-rules-10",
+    "category": "rules",
+    "query": "Are audio guides available at Golconda Fort?",
+    "expected_place_id": "golconda-fort-hyderabad",
+    "expected_keywords": ["guide", "audio", "Golconda"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-near-01",
+    "category": "proximity",
+    "query": "What stays and food spots are near Charminar in Hyderabad?",
+    "expected_place_id": "charminar-hyderabad",
+    "expected_keywords": ["Charminar", "Hyderabad", "nearby"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-near-02",
+    "category": "proximity",
+    "query": "Where can I stay or eat near Taj Mahal in Agra?",
+    "expected_place_id": "taj-mahal-agra",
+    "expected_keywords": ["Taj Mahal", "Agra", "stay"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-near-03",
+    "category": "proximity",
+    "query": "Hotels and food near Golden Temple in Amritsar?",
+    "expected_place_id": "golden-temple-amritsar",
+    "expected_keywords": ["Golden Temple", "Amritsar", "km"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-near-04",
+    "category": "proximity",
+    "query": "Attractions and food places near Golconda Fort?",
+    "expected_place_id": "golconda-fort-hyderabad",
+    "expected_keywords": ["Golconda", "heritage", "km"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-near-05",
+    "category": "proximity",
+    "query": "Where to find stays near Hawa Mahal in Jaipur?",
+    "expected_place_id": "hawa-mahal-jaipur",
+    "expected_keywords": ["Hawa Mahal", "Jaipur", "stay"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-near-06",
+    "category": "proximity",
+    "query": "Places to explore near Qutub Minar in South Delhi?",
+    "expected_place_id": "qutub-minar-delhi",
+    "expected_keywords": ["Qutub Minar", "Delhi"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-near-07",
+    "category": "proximity",
+    "query": "Where to stay near Gateway of India in South Mumbai?",
+    "expected_place_id": "gateway-of-india-mumbai",
+    "expected_keywords": ["Gateway of India", "Mumbai"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-near-08",
+    "category": "proximity",
+    "query": "Hotels and heritage stops near Brihadeeswarar Temple in Thanjavur?",
+    "expected_place_id": "brihadeeswarar-temple-thanjavur",
+    "expected_keywords": ["Brihadeeswarar", "Thanjavur"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-multi-01",
+    "category": "multilingual",
+    "query": "గోల్కొండ కోట టికెట్ ధర ఎంత?",
+    "expected_language": "te",
+    "expected_place_id": "golconda-fort-hyderabad",
+    "expected_keywords": ["గోల్కొండ", "25", "రూపాయలు"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-multi-02",
+    "category": "multilingual",
+    "query": "చార్మినార్ సందర్శన వేళలు మరియు టికెట్ వివరాలు చెప్పండి",
+    "expected_language": "te",
+    "expected_place_id": "charminar-hyderabad",
+    "expected_keywords": ["చార్మినార్", "సమయం", "ధర"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-multi-03",
+    "category": "multilingual",
+    "query": "తాజ్ మహల్ ప్రవేశ రుసుము ఎంత?",
+    "expected_language": "te",
+    "expected_place_id": "taj-mahal-agra",
+    "expected_keywords": ["తాజ్ మహల్", "50", "రూపాయలు"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-multi-04",
+    "category": "multilingual",
+    "query": "హైదరాబాద్‌లో చూడదగిన చారిత్రక ప్రదేశాలు ఏమిటి?",
+    "expected_language": "te",
+    "expected_place_id": "charminar-hyderabad",
+    "expected_keywords": ["హైదరాబాద్", "చారిత్రక"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-multi-05",
+    "category": "multilingual",
+    "query": "गोलकोंडा किले का प्रवेश शुल्क क्या है?",
+    "expected_language": "hi",
+    "expected_place_id": "golconda-fort-hyderabad",
+    "expected_keywords": ["गोलकोंडा", "25", "रुपये"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-multi-06",
+    "category": "multilingual",
+    "query": "चारमीनार का टिकट कितने का है और कब खुलता है?",
+    "expected_language": "hi",
+    "expected_place_id": "charminar-hyderabad",
+    "expected_keywords": ["चारमीनार", "25", "खुलने"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-multi-07",
+    "category": "multilingual",
+    "query": "आगरा के ताज महल का प्रवेश टिकट कितने का है?",
+    "expected_language": "hi",
+    "expected_place_id": "taj-mahal-agra",
+    "expected_keywords": ["ताज महल", "50", "रुपये"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-multi-08",
+    "category": "multilingual",
+    "query": "अमृतसर के स्वर्ण मंदिर में जाने के क्या नियम हैं?",
+    "expected_language": "hi",
+    "expected_place_id": "golden-temple-amritsar",
+    "expected_keywords": ["स्वर्ण मंदिर", "नियम", "निशुल्क"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-multi-09",
+    "category": "multilingual",
+    "query": "जयपुर का हवा महल कब बना और टिकट कितना है?",
+    "expected_language": "hi",
+    "expected_place_id": "hawa-mahal-jaipur",
+    "expected_keywords": ["हवा महल", "50", "जयपुर"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-multi-10",
+    "category": "multilingual",
+    "query": "தாஜ்மஹால் நுழைவுக் கட்டணம் என்ன?",
+    "expected_language": "ta",
+    "expected_place_id": "taj-mahal-agra",
+    "expected_keywords": ["தாஜ்மஹால்", "ரூபாய்"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-multi-11",
+    "category": "multilingual",
+    "query": "சார்மினார் பார்க்க சிறந்த நேரம் எது?",
+    "expected_language": "ta",
+    "expected_place_id": "charminar-hyderabad",
+    "expected_keywords": ["சார்மினார்", "நேரம்"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-multi-12",
+    "category": "multilingual",
+    "query": "తంజావూరు బృహదీశ్వర దేవాలయం ప్రత్యేకత ఏమిటి?",
+    "expected_language": "te",
+    "expected_place_id": "brihadeeswarar-temple-thanjavur",
+    "expected_keywords": ["బృహదీశ్వర", "తంజావూరు"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-itin-01",
+    "category": "itinerary",
+    "query": "Plan a 2-day heritage itinerary in Hyderabad under ₹2000 per person",
+    "expected_place_id": "charminar-hyderabad",
+    "expected_keywords": ["Day 1", "Day 2", "₹", "Golconda"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-itin-02",
+    "category": "itinerary",
+    "query": "How to plan a 1-day trip in Jaipur visiting Hawa Mahal and Amber Fort?",
+    "expected_place_id": "hawa-mahal-jaipur",
+    "expected_keywords": ["Hawa Mahal", "Amber Fort", "Jaipur"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-itin-03",
+    "category": "itinerary",
+    "query": "1-day spiritual and cultural itinerary in Amritsar",
+    "expected_place_id": "golden-temple-amritsar",
+    "expected_keywords": ["Golden Temple", "Amritsar", "Langar"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-itin-04",
+    "category": "itinerary",
+    "query": "2-day historic monument tour of Delhi covering Qutub Minar and Red Fort",
+    "expected_place_id": "qutub-minar-delhi",
+    "expected_keywords": ["Qutub Minar", "Red Fort", "Delhi"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-itin-05",
+    "category": "itinerary",
+    "query": "1-day sightseeing itinerary in Mumbai starting from Gateway of India",
+    "expected_place_id": "gateway-of-india-mumbai",
+    "expected_keywords": ["Gateway of India", "Mumbai"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-itin-06",
+    "category": "itinerary",
+    "query": "2-day temple trail in Tamil Nadu visiting Brihadeeswarar and Meenakshi Amman",
+    "expected_place_id": "brihadeeswarar-temple-thanjavur",
+    "expected_keywords": ["Brihadeeswarar", "Meenakshi", "Tamil Nadu"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-itin-07",
+    "category": "itinerary",
+    "query": "Weekend travel plan for Agra covering Taj Mahal and Agra Fort",
+    "expected_place_id": "taj-mahal-agra",
+    "expected_keywords": ["Taj Mahal", "Agra"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-itin-08",
+    "category": "itinerary",
+    "query": "Best 1-day itinerary for Konark and Puri in Odisha",
+    "expected_place_id": "konark-sun-temple-odisha",
+    "expected_keywords": ["Konark", "Odisha"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-refuse-01",
+    "category": "refusal",
+    "query": "What is the entry ticket fee for the Eiffel Tower in Paris?",
+    "expected_keywords": ["don't have", "verified information"],
+    "must_refuse": true
+  },
+  {
+    "id": "eval-refuse-02",
+    "category": "refusal",
+    "query": "How do I take a bus to Hogwarts Castle in Hyderabad?",
+    "expected_keywords": ["don't have", "verified information"],
+    "must_refuse": true
+  },
+  {
+    "id": "eval-refuse-03",
+    "category": "refusal",
+    "query": "What are the timings of Atlantis Resort on Hussain Sagar Lake?",
+    "expected_keywords": ["don't have", "verified information"],
+    "must_refuse": true
+  },
+  {
+    "id": "eval-refuse-04",
+    "category": "refusal",
+    "query": "Tell me the visiting hours of the Statue of Liberty in India",
+    "expected_keywords": ["don't have", "verified information"],
+    "must_refuse": true
+  },
+  {
+    "id": "eval-refuse-05",
+    "category": "refusal",
+    "query": "Ticket prices to visit the Pyramids of Giza in Telangana?",
+    "expected_keywords": ["don't have", "verified information"],
+    "must_refuse": true
+  },
+  {
+    "id": "eval-refuse-06",
+    "category": "refusal",
+    "query": "When is Narnia Palace open for public tours in Delhi?",
+    "expected_keywords": ["don't have", "verified information"],
+    "must_refuse": true
+  },
+  {
+    "id": "eval-trick-01",
+    "category": "trick",
+    "query": "Does Charminar have the Taj Mahal white marble dome?",
+    "expected_place_id": "charminar-hyderabad",
+    "expected_keywords": ["Charminar", "granite", "Taj Mahal"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-trick-02",
+    "category": "trick",
+    "query": "Is Gateway of India located in Hyderabad?",
+    "expected_place_id": "gateway-of-india-mumbai",
+    "expected_keywords": ["Mumbai", "Gateway of India"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-trick-03",
+    "category": "trick",
+    "query": "Is Golconda Fort completely free on Fridays for everyone?",
+    "expected_place_id": "golconda-fort-hyderabad",
+    "expected_keywords": ["25", "Golconda", "ticket"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-trick-04",
+    "category": "trick",
+    "query": "Can you show me the Charminar photo on the Taj Mahal page?",
+    "expected_place_id": "charminar-hyderabad",
+    "expected_keywords": ["Charminar", "Taj Mahal", "unique"],
+    "must_refuse": false
+  },
+  {
+    "id": "eval-trick-05",
+    "category": "trick",
+    "query": "What is the ticket price of the alien moon base in Ladakh?",
+    "expected_keywords": ["don't have", "verified information"],
+    "must_refuse": true
+  },
+  {
+    "id": "eval-trick-06",
+    "category": "trick",
+    "query": "Was Hawa Mahal built in Kolkata by the Nizams?",
+    "expected_place_id": "hawa-mahal-jaipur",
+    "expected_keywords": ["Jaipur", "Hawa Mahal", "Rajasthan"],
+    "must_refuse": false
+  }
+]

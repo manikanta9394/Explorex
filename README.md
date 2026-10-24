@@ -185,6 +185,12 @@ Explorex includes comprehensive Puppeteer end-to-end verification suites and CI 
 # Verify 100% unique image integrity and landmark accuracy
 npm run check:images
 
+# RAG Evaluation Benchmark (62 test cases: fees, rules, proximity, multilingual, itineraries, refusal, tricks)
+npm run eval:rag
+
+# E2E RAG Production Chatbot Verification (Claude/ChatGPT layout, SSE streaming, Grounding Guard, Telugu/Hindi, Feedback modal)
+node scripts/verify_rag_chatbot.js
+
 # Comprehensive nationwide expansion test (Images, State filter, Search highlight, State pages, Map clustering)
 node scripts/verify_india_expansion.js
 

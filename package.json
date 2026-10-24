@@ -13,6 +13,7 @@
     "seed": "node server/seed.js",
     "seed:india": "node scripts/seed/seedIndiaDataset.js",
     "check:images": "node scripts/checkImageIntegrity.js",
+    "eval:rag": "node scripts/eval_rag.js",
     "data:generate": "node scripts/generateTourismData.mjs"
   },
   "dependencies": {
