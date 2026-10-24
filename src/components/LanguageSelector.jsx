@@ -1,31 +1,19 @@
 import { useEffect, useRef, useState } from 'react'
 import { Check, ChevronDown, Globe } from 'lucide-react'
+import { useLanguage } from '../context/LanguageContext'
 
 const LANGUAGES = [
-  { code: 'EN', label: 'English', native: 'English' },
-  { code: 'TE', label: 'Telugu', native: 'తెలుగు' },
-  { code: 'HI', label: 'Hindi', native: 'हिंदी' },
-  { code: 'UR', label: 'Urdu', native: 'اردو' },
+  { code: 'en', label: 'English', native: 'English', codeUpper: 'EN' },
+  { code: 'te', label: 'Telugu', native: 'తెలుగు', codeUpper: 'TE' },
+  { code: 'hi', label: 'Hindi', native: 'हिन्दी', codeUpper: 'HI' },
 ]
 
 export default function LanguageSelector() {
   const [open, setOpen] = useState(false)
-  const [selected, setSelected] = useState(() => {
-    try {
-      return localStorage.getItem('tourmate_lang') || 'EN'
-    } catch {
-      return 'EN'
-    }
-  })
+  const { language, setLanguage } = useLanguage()
   const menuRef = useRef(null)
 
-  useEffect(() => {
-    try {
-      localStorage.setItem('tourmate_lang', selected)
-    } catch (e) {
-      console.warn('Failed to save language preference:', e)
-    }
-  }, [selected])
+  const currentLang = LANGUAGES.find((l) => l.code === language) || LANGUAGES[0]
 
   // Close dropdown on outside click
   useEffect(() => {
@@ -45,31 +33,32 @@ export default function LanguageSelector() {
         className="language-button"
         onClick={() => setOpen(!open)}
         aria-label="Select language"
+        title="Change application language (English, తెలుగు, हिन्दी)"
       >
         <Globe size={13} />
-        <span>{selected}</span>
+        <span>{currentLang.codeUpper}</span>
         <ChevronDown size={14} className={`chevron-icon ${open ? 'rotate' : ''}`} />
       </button>
 
       {open && (
         <div className="language-menu-card">
-          <div className="menu-header">Select Language</div>
+          <div className="menu-header">Select Language / భాష / भाषा</div>
           {LANGUAGES.map((lang) => (
             <button
               key={lang.code}
               type="button"
-              className={`language-menu-item ${selected === lang.code ? 'active' : ''}`}
+              className={`language-menu-item ${language === lang.code ? 'active' : ''}`}
               onClick={() => {
-                setSelected(lang.code)
+                setLanguage(lang.code)
                 setOpen(false)
               }}
             >
-              <span className="lang-code-pill">{lang.code}</span>
+              <span className="lang-code-pill">{lang.codeUpper}</span>
               <div className="lang-names">
                 <span className="main-name">{lang.label}</span>
                 <small className="native-name">{lang.native}</small>
               </div>
-              {selected === lang.code && <Check size={14} className="check-icon" />}
+              {language === lang.code && <Check size={14} className="check-icon" />}
             </button>
           ))}
         </div>
