@@ -2,14 +2,15 @@ import { useEffect, useState } from 'react'
 import { CheckCircle2, Lock, Mail, Sparkles, User, X } from 'lucide-react'
 import { useAuth } from '../context/useAuth'
 
-export default function AuthModal({ isOpen, onClose, initialMode = 'login' }) {
+export default function AuthModal({ isOpen, onClose, initialMode = 'login', onNavigate }) {
   const [mode, setMode] = useState(initialMode) // 'login' | 'signup'
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
   const [success, setSuccess] = useState('')
-  const { login, signup } = useAuth()
+  const [submitting, setSubmitting] = useState(false)
+  const { login, signup, googleLogin, authPromptMessage } = useAuth()
 
   const [prevProps, setPrevProps] = useState({ isOpen, initialMode })
   if (prevProps.isOpen !== isOpen || prevProps.initialMode !== initialMode) {
@@ -33,7 +34,7 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login' }) {
 
   if (!isOpen) return null
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     setError('')
     setSuccess('')
@@ -43,8 +44,8 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login' }) {
       return
     }
 
-    if (!password || password.length < 4) {
-      setError('Password must be at least 4 characters long')
+    if (!password || password.length < 8) {
+      setError('Password must be at least 8 characters long')
       return
     }
 
@@ -53,17 +54,40 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login' }) {
       return
     }
 
-    if (mode === 'login') {
-      const userObj = login(email, password)
-      setSuccess(`Welcome back, ${userObj.name}!`)
-    } else {
-      const userObj = signup(name, email, password)
-      setSuccess(`Account created! Welcome to TourMate, ${userObj.name}!`)
-    }
+    setSubmitting(true)
+    try {
+      if (mode === 'login') {
+        const userObj = await login(email, password)
+        setSuccess(`Welcome back, ${userObj.name}!`)
+      } else {
+        const userObj = await signup(name, email, password, password)
+        setSuccess(`Account created! Welcome to Explorex, ${userObj.name}!`)
+      }
 
-    setTimeout(() => {
-      onClose()
-    }, 1200)
+      setTimeout(() => {
+        onClose()
+      }, 1000)
+    } catch (err) {
+      setError(err.message || 'Authentication failed. Please try again.')
+    } finally {
+      setSubmitting(false)
+    }
+  }
+
+  const handleGoogle = async () => {
+    setSubmitting(true)
+    setError('')
+    try {
+      const userObj = await googleLogin()
+      setSuccess(`Signed in with Google! Welcome, ${userObj.name}!`)
+      setTimeout(() => {
+        onClose()
+      }, 900)
+    } catch (err) {
+      setError(err.message || 'Google sign in failed.')
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   return (
@@ -75,10 +99,14 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login' }) {
 
         <div className="auth-modal-header">
           <span className="auth-eyebrow">
-            <Sparkles size={14} /> TourMate AI Account
+            <Sparkles size={14} /> Explorex Intelligence
           </span>
           <h2>{mode === 'login' ? 'Welcome back' : 'Start your journey'}</h2>
-          <p>{mode === 'login' ? 'Log in to access your saved places and travel history.' : 'Create your account to unlock personalized AI travel recommendations.'}</p>
+          <p>
+            {authPromptMessage || (mode === 'login'
+              ? 'Log in to access your saved places and travel history.'
+              : 'Create your account to unlock personalized AI travel recommendations.')}
+          </p>
 
           <div className="auth-segmented-tabs">
             <button
@@ -153,7 +181,7 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login' }) {
                 <input
                   id="auth-password"
                   type="password"
-                  placeholder="••••••••"
+                  placeholder="At least 8 characters"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
@@ -161,8 +189,8 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login' }) {
               </div>
             </div>
 
-            <button type="submit" className="auth-submit-btn">
-              {mode === 'login' ? 'Log In to TourMate' : 'Create Free Account'}
+            <button type="submit" className="auth-submit-btn" disabled={submitting}>
+              {submitting ? 'Please wait...' : mode === 'login' ? 'Log In to Explorex' : 'Create Free Account'}
             </button>
 
             <div className="auth-divider">
@@ -173,26 +201,34 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login' }) {
               <button
                 type="button"
                 className="social-btn google-btn"
-                onClick={() => {
-                  login('demo.user@gmail.com', 'demo123')
-                  setSuccess('Logged in with Google!')
-                  setTimeout(onClose, 1000)
-                }}
+                onClick={handleGoogle}
+                disabled={submitting}
               >
                 <span>Google</span>
               </button>
-              <button
-                type="button"
-                className="social-btn apple-btn"
-                onClick={() => {
-                  login('apple.explorer@icloud.com', 'demo123')
-                  setSuccess('Logged in with Apple!')
-                  setTimeout(onClose, 1000)
-                }}
-              >
-                <span>Apple</span>
-              </button>
             </div>
+
+            {onNavigate && (
+              <div style={{ textAlign: 'center', marginTop: '16px' }}>
+                <button
+                  type="button"
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    fontSize: '13px',
+                    color: 'var(--green, #1F3A2E)',
+                    cursor: 'pointer',
+                    textDecoration: 'underline',
+                  }}
+                  onClick={() => {
+                    onClose()
+                    onNavigate(mode)
+                  }}
+                >
+                  Open dedicated {mode === 'login' ? 'login' : 'signup'} page
+                </button>
+              </div>
+            )}
           </form>
         )}
       </div>
