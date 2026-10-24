@@ -177,9 +177,48 @@ npx oxlint
 
 ---
 
+## 🛡️ Admin Console & Governance System (`/admin`)
+
+Explorex includes a completely separate administrative and operations dashboard isolated from the user-facing design system:
+
+- **Aesthetic**: Dense, functional slate design (`slate-dark` / `slate-light`), compact data tables, status chips, system font stack, and subtle transitions (zero marketing animations or serifs).
+- **Security & Authorization**:
+  - `/admin/*` routes are protected on both the client (via `<AdminAuthGuard>`) and the server (via `adminMiddleware.js` enforcing `profiles.role = 'admin'`).
+  - Separate dedicated `/admin/login` page with optional Two-Factor Authentication (TOTP).
+  - Normal users and unauthenticated guests visiting `/admin` or calling `/api/admin/*` receive HTTP 401/403 and are redirected.
+- **First Admin Setup (Strict SQL Command - Never via UI)**:
+  Run the following SQL in the Supabase SQL Editor to grant admin access to the first authorized curator:
+  ```sql
+  -- Set first admin user in profiles table
+  UPDATE public.profiles
+  SET role = 'admin', totp_enabled = TRUE
+  WHERE email = 'admin@explorex.in';
+
+  -- Or promote by exact Auth user ID:
+  UPDATE public.profiles
+  SET role = 'admin', totp_enabled = TRUE
+  WHERE id = 'a0000000-0000-0000-0000-000000000001';
+  ```
+- **9 Core Operations Modules**:
+  1. **Dashboard**: KPIs (Active users, guest vs accounts, saves, AI queries, thumbs-up rate, unanswered rate, open feedback, error rate), 7/30-day activity trends, top destinations, and search query trends.
+  2. **Places Management**: Server-side paginated data table, filters (state, category, published, missing image, stale data >6mo), create/edit destination modal with India geo-boundary coordinate validation (`lat 6.0–37.5`, `lng 68.0–98.0`), rules editor, INR entry fee fields with source URL, duplicate detection, and soft-deletion.
+  3. **Image Review Queue**: Side-by-side candidate review with Wikipedia links, CC license, and attribution. **Blocks approval if candidate image SHA-256 hash is already used by another destination**.
+  4. **Users & Access**: Role toggle (`user` <-> `admin`), disable/enable toggle, view saved counts, and automated ephemeral guest account cleanup job.
+  5. **Feedback Inbox**: Master-detail view with SLA breach tracking (>3 days), screenshot lightbox, related place shortcut ("Edit this place"), and verified curator reply dispatcher that immediately synchronizes to the user's "My feedback" panel.
+  6. **AI Quality & Golden Eval Set**: Inspect flagged / negative feedback turns with masked identifiers (`exp_***`), audit retrieved pgvector chunks and citations, curate golden evaluation benchmark set, and trigger vector chunks re-indexing.
+  7. **Content Studio**: National festival calendar editor, help center FAQ editor, and dynamic Announcement Banner manager (active banner renders immediately at the top of the user app).
+  8. **Immutable Audit Trail**: Chronological log of all administrative writes with side-by-side Before/After committed state diff inspector.
+  9. **System Settings**: Production feature switches (Guest access, Reviews, AI guide, Emergency SOS), maintenance mode toggle with custom public notice, and external API quota consumption monitor.
+
+---
+
 ## 🧪 Automated Testing & Verification
 
 Explorex includes comprehensive Puppeteer end-to-end verification suites and CI audit tools:
+
+```bash
+# Verify Admin Console, 2FA, RLS protection, Image Integrity & Audit Logs (20/20 checks)
+node scripts/verify_admin_system.js
 
 ```bash
 # Verify 100% unique image integrity and landmark accuracy
