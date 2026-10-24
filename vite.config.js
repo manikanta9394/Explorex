@@ -10,5 +10,8 @@ export default defineConfig({
     port: 5180,
     strictPort: false,
     host: true,
+    watch: {
+      ignored: ['**/server/**', '**/scripts/**', '**/data/**'],
+    },
   },
 })

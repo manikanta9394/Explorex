@@ -16,6 +16,10 @@ dist-ssr
 !.env.example
 ~$*.xlsx
 
+# Local user database
+server/data/users.json
+server/data/*.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
