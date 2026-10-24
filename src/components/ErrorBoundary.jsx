@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import { AlertTriangle, MapPin, Navigation, RotateCcw, Sparkles } from 'lucide-react'
+import { Sentry } from '../services/sentry'
 
 export default class ErrorBoundary extends Component {
   constructor(props) {
@@ -13,6 +14,7 @@ export default class ErrorBoundary extends Component {
 
   componentDidCatch(error, errorInfo) {
     console.error(`Uncaught error in ${this.props.name || 'ErrorBoundary'}:`, error, errorInfo)
+    Sentry.captureException(error, { component: this.props.name || 'RootErrorBoundary', errorInfo })
   }
 
   handleReset = () => {
