@@ -1,4 +1,29 @@
 /**
+ * Calculates Great-Circle distance in kilometres between two coordinates
+ * using spherical Haversine formula
+ */
+export function haversineDistanceKm(coords1, coords2) {
+  if (!coords1 || !coords2) return 0
+  const lat1 = Array.isArray(coords1) ? coords1[0] : coords1.lat || coords1.latitude
+  const lon1 = Array.isArray(coords1) ? coords1[1] : coords1.lng || coords1.longitude
+  const lat2 = Array.isArray(coords2) ? coords2[0] : coords2.lat || coords2.latitude
+  const lon2 = Array.isArray(coords2) ? coords2[1] : coords2.lng || coords2.longitude
+  if (isNaN(lat1) || isNaN(lon1) || isNaN(lat2) || isNaN(lon2)) return 0
+
+  const R = 6371 // Earth radius in km
+  const dLat = ((lat2 - lat1) * Math.PI) / 180
+  const dLon = ((lon2 - lon1) * Math.PI) / 180
+  const a =
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos((lat1 * Math.PI) / 180) *
+      Math.cos((lat2 * Math.PI) / 180) *
+      Math.sin(dLon / 2) *
+      Math.sin(dLon / 2)
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
+  return Number((R * c).toFixed(2))
+}
+
+/**
  * India Geographic Bounding Box Validation:
  * Latitude:  6.0° N to 37.5° N
  * Longitude: 68.0° E to 97.5° E

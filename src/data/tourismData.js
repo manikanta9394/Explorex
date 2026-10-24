@@ -7726,6 +7726,10 @@ export function enrichItem(item, defaultType = 'attraction') {
 
   return {
     ...item,
+    state: item.state || 'Telangana',
+    city: item.city || 'Hyderabad',
+    lat: position[0],
+    lng: position[1],
     category,
     fallbackImage,
     image: (item.image && typeof item.image === 'string' && item.image.trim()) ? item.image : fallbackImage,
@@ -7740,7 +7744,7 @@ export function enrichItem(item, defaultType = 'attraction') {
 
 export const enrichedPlaces = [
   ...indiaPlaces.filter((p) => p.type === 'attraction' || !p.type),
-  ...places.map((p) => enrichItem(p, 'place')).filter((p) => !indiaPlaces.some((ip) => ip.name.toLowerCase() === p.name.toLowerCase())),
+  ...places.map((p) => enrichItem(p, 'attraction')).filter((p) => !indiaPlaces.some((ip) => ip.name.toLowerCase() === p.name.toLowerCase())),
 ]
 
 export const enrichedHotels = [
@@ -7753,12 +7757,29 @@ export const enrichedRestaurants = [
   ...restaurants.map((r) => enrichItem(r, 'restaurant')),
 ]
 
-export const allDatasetPlaces = [
+const rawDatasetPlaces = [
   ...indiaPlaces,
-  ...places.map((p) => enrichItem(p, 'place')).filter((p) => !indiaPlaces.some((ip) => ip.id === p.id || ip.name.toLowerCase() === p.name.toLowerCase())),
-  ...hotels.map((h) => enrichItem(h, 'hotel')).filter((h) => !indiaPlaces.some((ip) => ip.id === h.id || ip.name.toLowerCase() === h.name.toLowerCase())),
-  ...restaurants.map((r) => enrichItem(r, 'restaurant')).filter((r) => !indiaPlaces.some((ip) => ip.id === r.id || ip.name.toLowerCase() === r.name.toLowerCase())),
+  ...places.map((p) => enrichItem(p, 'attraction')),
+  ...hotels.map((h) => enrichItem(h, 'hotel')),
+  ...restaurants.map((r) => enrichItem(r, 'restaurant')),
 ]
+
+// Deduplicate strictly by ID and Place Name within state
+const seenDatasetIds = new Set()
+const seenDatasetNameState = new Set()
+
+export const allDatasetPlaces = rawDatasetPlaces.filter((p) => {
+  if (!p || !p.id || !p.name) return false
+  const state = (p.state || 'Telangana').toLowerCase().trim()
+  const nameStateKey = `${p.name.toLowerCase().trim()}:::${state}`
+
+  if (seenDatasetIds.has(p.id) || seenDatasetNameState.has(nameStateKey)) {
+    return false
+  }
+  seenDatasetIds.add(p.id)
+  seenDatasetNameState.add(nameStateKey)
+  return true
+})
 
 export const mapAttractions = allDatasetPlaces.map(({ id, name, category, rating, position, state, city, image }) => ({
   id,
