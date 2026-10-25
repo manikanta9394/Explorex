@@ -16,6 +16,7 @@ export default defineConfig({
     launchOptions: {
       executablePath: CHROME_PATH,
       headless: true,
+      args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
     },
     viewport: { width: 1280, height: 800 },
     locale: 'en-IN',
