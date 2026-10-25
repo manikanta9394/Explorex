@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import {
   MessageSquare,
   Search,
@@ -33,7 +33,7 @@ export default function AdminFeedbackPage({ onNavigate }) {
   const [replyLoading, setReplyLoading] = useState(false)
   const [actionSuccess, setActionSuccess] = useState('')
 
-  const loadFeedback = async () => {
+  const loadFeedback = useCallback(async () => {
     setLoading(true)
     try {
       const res = await adminService.fetchFeedbackInbox({
@@ -52,8 +52,8 @@ export default function AdminFeedbackPage({ onNavigate }) {
           )
         }
         setItems(list)
-        if (list.length > 0 && !selectedId) {
-          setSelectedId(list[0].id)
+        if (list.length > 0) {
+          setSelectedId((prev) => prev || list[0].id)
         }
       }
     } catch (err) {
@@ -61,11 +61,11 @@ export default function AdminFeedbackPage({ onNavigate }) {
     } finally {
       setLoading(false)
     }
-  }
+  }, [statusFilter, typeFilter, search])
 
   useEffect(() => {
     loadFeedback()
-  }, [statusFilter, typeFilter, search])
+  }, [loadFeedback])
 
   const selectedItem = items.find((i) => i.id === selectedId) || items[0]
 

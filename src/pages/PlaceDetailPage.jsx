@@ -401,7 +401,7 @@ export default function PlaceDetailPage({
                   </span>
                 </div>
 
-                <PlaceWeatherBadge place={place} />
+                <PlaceWeatherBadge place={place} isDetailPage />
               </div>
 
               {/* Best Time to Visit */}

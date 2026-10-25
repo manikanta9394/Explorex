@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import {
   History,
   Search,
@@ -18,7 +18,7 @@ export default function AdminAuditLogsPage() {
   const [actionFilter, setActionFilter] = useState('')
   const [tableFilter, setTableFilter] = useState('')
 
-  const loadAuditLogs = async () => {
+  const loadAuditLogs = useCallback(async () => {
     setLoading(true)
     try {
       const res = await adminService.fetchAuditLogs({
@@ -33,11 +33,11 @@ export default function AdminAuditLogsPage() {
     } finally {
       setLoading(false)
     }
-  }
+  }, [actionFilter, tableFilter])
 
   useEffect(() => {
     loadAuditLogs()
-  }, [actionFilter, tableFilter])
+  }, [loadAuditLogs])
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>

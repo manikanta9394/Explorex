@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import {
   Users,
   Search,
@@ -22,7 +22,7 @@ export default function AdminUsersPage() {
   const [actionMsg, setActionMsg] = useState('')
   const [cleanupLoading, setCleanupLoading] = useState(false)
 
-  const loadUsers = async () => {
+  const loadUsers = useCallback(async () => {
     setLoading(true)
     try {
       const res = await adminService.fetchUsers({ search, role: roleFilter })
@@ -34,11 +34,11 @@ export default function AdminUsersPage() {
     } finally {
       setLoading(false)
     }
-  }
+  }, [search, roleFilter])
 
   useEffect(() => {
     loadUsers()
-  }, [search, roleFilter])
+  }, [loadUsers])
 
   const handleToggleRole = async (u) => {
     const nextRole = u.role === 'admin' ? 'user' : 'admin'

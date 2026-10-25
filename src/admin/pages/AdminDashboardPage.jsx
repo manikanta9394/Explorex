@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import {
   Users,
   Bookmark,
@@ -21,7 +21,7 @@ export default function AdminDashboardPage({ onNavigate }) {
   const [loading, setLoading] = useState(true)
   const [refreshing, setRefreshing] = useState(false)
 
-  const loadMetrics = async (showRefresh = false) => {
+  const loadMetrics = useCallback(async (showRefresh = false) => {
     if (showRefresh) setRefreshing(true)
     else setLoading(true)
 
@@ -34,11 +34,11 @@ export default function AdminDashboardPage({ onNavigate }) {
       setLoading(false)
       setRefreshing(false)
     }
-  }
+  }, [range])
 
   useEffect(() => {
     loadMetrics()
-  }, [range])
+  }, [loadMetrics])
 
   if (loading && !data) {
     return (

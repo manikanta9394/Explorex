@@ -15,10 +15,10 @@ function interpretWmoCode(code) {
   return { condition: 'Pleasant Weather', icon: '⛅' }
 }
 
-export async function fetchPlaceWeather(lat = 17.3614, lon = 78.4747, placeId = 'hyderabad') {
+export async function fetchPlaceWeather(lat = 17.3614, lon = 78.4747, placeId = 'hyderabad', options = {}) {
   const cacheKey = `explorex_weather_v1_${placeId}`
 
-  // Check cache
+  // Check cache (30 minutes TTL)
   try {
     const cached = localStorage.getItem(cacheKey)
     if (cached) {
@@ -29,20 +29,15 @@ export async function fetchPlaceWeather(lat = 17.3614, lon = 78.4747, placeId = 
     }
   } catch {}
 
-  // Safe fallback
-  const fallback = {
-    tempC: 28,
-    condition: 'Pleasant & Clear',
-    icon: '🌤️',
-    humidity: 48,
-    windSpeedKmH: 12,
-    source: 'offline-fallback',
-  }
-
   try {
     const url = `https://api.open-meteo.com/v1/forecast?latitude=${Number(lat).toFixed(4)}&longitude=${Number(lon).toFixed(4)}&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m`
     const controller = new AbortController()
     const timeoutId = setTimeout(() => controller.abort(), 3500)
+
+    // Forward external abort signal if provided
+    if (options.signal) {
+      options.signal.addEventListener('abort', () => controller.abort(), { once: true })
+    }
 
     const res = await fetch(url, { signal: controller.signal })
     clearTimeout(timeoutId)
@@ -72,7 +67,7 @@ export async function fetchPlaceWeather(lat = 17.3614, lon = 78.4747, placeId = 
 
     return weatherData
   } catch {
-    return fallback
+    return null
   }
 }
 

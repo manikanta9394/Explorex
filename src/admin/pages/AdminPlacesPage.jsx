@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect, useMemo, useCallback } from 'react'
 import {
   Search,
   Plus,
@@ -67,7 +67,7 @@ export default function AdminPlacesPage() {
   })
 
   // Load places
-  const loadPlaces = async () => {
+  const loadPlaces = useCallback(async () => {
     setLoading(true)
     try {
       const res = await adminService.fetchPlaces({
@@ -102,11 +102,11 @@ export default function AdminPlacesPage() {
     } finally {
       setLoading(false)
     }
-  }
+  }, [page, limit, search, selectedState, selectedType, selectedStatus, filterMissingImage, filterStaleData])
 
   useEffect(() => {
     loadPlaces()
-  }, [page, search, selectedState, selectedType, selectedStatus, filterMissingImage, filterStaleData])
+  }, [loadPlaces])
 
   // Get unique states from all dataset
   const availableStates = useMemo(() => {
