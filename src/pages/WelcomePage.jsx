@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import {
   Compass,
   Sparkles,
@@ -6,14 +6,23 @@ import {
   LogIn,
   UserPlus,
   ArrowRight,
-  Shield,
-  MapPin,
-  Check,
+  IndianRupee,
+  BookmarkCheck,
   AlertCircle,
   Eye,
   EyeOff,
 } from 'lucide-react'
 import { useAuth } from '../context/useAuth'
+import IncredibleIndiaBackground, { getTimeTheme } from '../components/IncredibleIndiaBackground'
+import LanguageSelector from '../components/LanguageSelector'
+
+const ROTATING_GREETINGS = [
+  { text: 'Namaste', sub: 'Hindi · Welcome', lang: 'hi' },
+  { text: 'నమస్కారం', sub: 'Telugu · Namaskāram', lang: 'te' },
+  { text: 'வணக்கம்', sub: 'Tamil · Vaṇakkam', lang: 'ta' },
+  { text: 'नमस्कार', sub: 'Marathi · Namaskār', lang: 'mr' },
+  { text: 'ਸਤ ਸ੍ਰੀ ਅਕਾਲ', sub: 'Punjabi · Sat Srī Akāl', lang: 'pa' },
+]
 
 export default function WelcomePage({ onNavigate }) {
   const { signInAsGuest, login, signup, googleLogin } = useAuth()
@@ -23,12 +32,32 @@ export default function WelcomePage({ onNavigate }) {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
 
+  // Rotating greeting index
+  const [greetingIndex, setGreetingIndex] = useState(0)
+  const [timeTheme, setTimeTheme] = useState(getTimeTheme)
+
   // Form fields
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [name, setName] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
   const [showPassword, setShowPassword] = useState(false)
+
+  // Rotate greeting every 3 seconds
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setGreetingIndex((prev) => (prev + 1) % ROTATING_GREETINGS.length)
+    }, 3000)
+    return () => clearInterval(timer)
+  }, [])
+
+  // Keep time theme updated
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeTheme(getTimeTheme())
+    }, 60000)
+    return () => clearInterval(timer)
+  }, [])
 
   // Determine return-to URL if user was redirected from a protected route
   const getRedirectTarget = () => {
@@ -57,6 +86,14 @@ export default function WelcomePage({ onNavigate }) {
         window.location.hash = `#${target}`
       }
       window.dispatchEvent(new PopStateEvent('popstate'))
+    }
+  }
+
+  const navigateTo = (path) => {
+    if (onNavigate) {
+      onNavigate(path)
+    } else {
+      window.location.hash = `#/${path.replace(/^\//, '')}`
     }
   }
 
@@ -126,302 +163,327 @@ export default function WelcomePage({ onNavigate }) {
     }
   }
 
+  const activeGreeting = ROTATING_GREETINGS[greetingIndex]
+
   return (
-    <div className="welcome-gate-shell">
-      <div className="welcome-gate-container">
-        {/* Brand Header */}
-        <div className="welcome-brand-row">
-          <div className="welcome-brand-mark">
-            <Compass size={24} className="welcome-compass-icon" />
-            <span className="brand-text">EXPLOREX</span>
-          </div>
-          <span className="brand-region-tag">Telangana &amp; Hyderabad Guide</span>
-        </div>
-
-        {/* Hero Section */}
-        <div className="welcome-hero-card">
-          <span className="welcome-eyebrow">
-            <Sparkles size={14} /> Official Travel &amp; Heritage Companion
-          </span>
-          <h1>Plan Hyderabad the way locals do.</h1>
-          <p className="welcome-subtitle">
-            Explore 400 verified Nizami monuments, clustered day itineraries, live weather, and dataset-grounded AI guidance. Choose how you would like to proceed:
-          </p>
-        </div>
-
-        {error && (
-          <div className="welcome-error-box" role="alert">
-            <AlertCircle size={16} />
-            <span>{error}</span>
-          </div>
-        )}
-
-        {/* STATE A: Three Choice Cards */}
-        {mode === 'choice' && (
-          <div className="welcome-choices-grid">
-            {/* Card 1: Continue as Guest */}
-            <div className="welcome-choice-card highlight-guest" onClick={handleContinueAsGuest}>
-              <div className="choice-card-top">
-                <div className="choice-icon-wrap guest">
-                  <UserCheck size={22} />
-                </div>
-                <span className="choice-badge-popular">Fastest · 1 Click</span>
-              </div>
-              <h2>Continue as Guest</h2>
-              <p>
-                Explore freely right now. Your saved places and custom itineraries are stored in our database and can be upgraded anytime.
-              </p>
-              <button
-                type="button"
-                className="choice-action-btn primary"
-                onClick={(e) => {
-                  e.stopPropagation()
-                  handleContinueAsGuest()
-                }}
-                disabled={loading}
-              >
-                <span>{loading ? 'Starting Guest Session...' : 'Enter as Guest'}</span>
-                <ArrowRight size={15} />
-              </button>
+    <IncredibleIndiaBackground showControls={true}>
+      <div className="welcome-glass-stage">
+        <main className="welcome-glass-card" aria-label="Welcome to Explorex - Incredible India">
+          {/* Top Bar: Time-of-Day Indicator & Language Switcher */}
+          <div className="welcome-glass-topbar stagger-1">
+            <div className="welcome-time-badge" title="Ambient sky dynamically matches Indian standard time">
+              <span className="time-badge-icon" aria-hidden="true">{timeTheme.icon}</span>
+              <span className="time-badge-label">{timeTheme.label}</span>
             </div>
-
-            {/* Card 2: Sign In */}
-            <div className="welcome-choice-card" onClick={() => setMode('login')}>
-              <div className="choice-card-top">
-                <div className="choice-icon-wrap login">
-                  <LogIn size={22} />
-                </div>
-                <span className="choice-badge-sec">Returning Traveler</span>
-              </div>
-              <h2>Sign In</h2>
-              <p>
-                Access your existing saved places, customized itineraries, and synced travel preferences across all devices.
-              </p>
-              <button
-                type="button"
-                className="choice-action-btn secondary"
-                onClick={(e) => {
-                  e.stopPropagation()
-                  setMode('login')
-                }}
-              >
-                <span>Sign In to Account</span>
-                <ArrowRight size={15} />
-              </button>
-            </div>
-
-            {/* Card 3: Create Account */}
-            <div className="welcome-choice-card" onClick={() => setMode('signup')}>
-              <div className="choice-card-top">
-                <div className="choice-icon-wrap signup">
-                  <UserPlus size={22} />
-                </div>
-                <span className="choice-badge-sec">Permanent Profile</span>
-              </div>
-              <h2>Create Account</h2>
-              <p>
-                Sign up with your email to create a permanent travel profile with unlimited wishlist saves and cloud-backed plans.
-              </p>
-              <button
-                type="button"
-                className="choice-action-btn secondary"
-                onClick={(e) => {
-                  e.stopPropagation()
-                  setMode('signup')
-                }}
-              >
-                <span>Create Free Account</span>
-                <ArrowRight size={15} />
-              </button>
+            <div className="welcome-glass-lang-wrap">
+              <LanguageSelector />
             </div>
           </div>
-        )}
 
-        {/* STATE B: Sign In Form */}
-        {mode === 'login' && (
-          <div className="welcome-form-card">
-            <div className="form-card-header">
-              <button type="button" className="form-back-btn" onClick={() => setMode('choice')}>
-                ← Back to choices
-              </button>
-              <h2>Sign In to Explorex</h2>
-              <p>Enter your credentials to access your trips and saved destinations.</p>
+          {/* Brand Mark with compass icon */}
+          <div className="welcome-glass-brand stagger-2">
+            <div className="brand-logo-gem" aria-hidden="true">
+              <Compass size={28} className="brand-compass-spin" />
+              <Sparkles size={14} className="brand-sparkle-ping" />
             </div>
+            <div className="brand-copy">
+              <span className="brand-super-title">INCREDIBLE INDIA</span>
+              <h1 className="brand-name-title">EXPLOREX</h1>
+            </div>
+          </div>
 
-            <form onSubmit={handleSignIn} className="welcome-interactive-form">
-              <div className="form-field-row">
-                <label>Email Address</label>
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="you@example.com"
-                  required
-                />
-              </div>
+          {/* Rotating Cultural Greeting */}
+          <div className="welcome-greeting-block stagger-3">
+            <div className="rotating-greeting-pill" aria-live="polite">
+              <span className="greeting-main-text">{activeGreeting.text}</span>
+              <span className="greeting-sub-badge">{activeGreeting.sub}</span>
+            </div>
+            {/* One-Line Promise */}
+            <p className="welcome-promise-statement">
+              India’s cultural travel intelligence — curated heritage, live pricing, and verified routes.
+            </p>
+          </div>
 
-              <div className="form-field-row">
-                <label>Password</label>
-                <div className="password-input-wrapper">
-                  <input
-                    type={showPassword ? 'text' : 'password'}
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    placeholder="Enter your password"
-                    required
-                  />
+          {/* Three Benefit Chips */}
+          <div className="welcome-benefit-chips-row stagger-4" aria-label="Key Explorex Benefits">
+            <span className="welcome-benefit-chip" title="Real-time estimated entry & tour costs in Indian Rupees">
+              <IndianRupee size={13} className="chip-icon" aria-hidden="true" />
+              <span>Plan trips in ₹</span>
+            </span>
+            <span className="welcome-benefit-chip" title="AI travel assistant grounded in curated Indian heritage data">
+              <Sparkles size={13} className="chip-icon" aria-hidden="true" />
+              <span>AI guide</span>
+            </span>
+            <span className="welcome-benefit-chip" title="Access your saved monuments even without cell service">
+              <BookmarkCheck size={13} className="chip-icon" aria-hidden="true" />
+              <span>Offline saved places</span>
+            </span>
+          </div>
+
+          {error && (
+            <div className="welcome-error-box glass-error" role="alert">
+              <AlertCircle size={15} />
+              <span>{error}</span>
+            </div>
+          )}
+
+          {/* INTERACTION AREA */}
+          <div className="welcome-choices-area stagger-5">
+            {/* MODE 1: Choice View (Default) */}
+            {mode === 'choice' && (
+              <div className="welcome-choice-action-panel">
+                {/* Primary Choices: Sign in & Create account */}
+                <div className="welcome-primary-choice-row">
                   <button
                     type="button"
-                    className="password-toggle-btn"
-                    onClick={() => setShowPassword(!showPassword)}
-                    aria-label={showPassword ? 'Hide password' : 'Show password'}
+                    className="welcome-choice-btn btn-signin"
+                    onClick={() => setMode('login')}
                   >
-                    {showPassword ? <EyeOff size={15} /> : <Eye size={15} />}
+                    <LogIn size={16} />
+                    <span>Sign In</span>
                   </button>
-                </div>
-              </div>
 
-              <div className="form-actions-row">
-                <button type="submit" className="welcome-submit-btn" disabled={loading}>
-                  {loading ? 'Signing in...' : 'Sign In'}
-                </button>
-                <button
-                  type="button"
-                  className="welcome-google-btn"
-                  onClick={handleGoogleLogin}
-                  disabled={loading}
-                >
-                  <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google" width="16" height="16" />
-                  <span>Continue with Google</span>
-                </button>
-              </div>
-
-              <div className="form-card-footer">
-                <span>Don't have an account yet?</span>
-                <button type="button" className="link-switch-btn" onClick={() => setMode('signup')}>
-                  Create account
-                </button>
-                <span className="dot-sep">·</span>
-                <button type="button" className="link-switch-btn" onClick={handleContinueAsGuest}>
-                  Continue as guest
-                </button>
-              </div>
-            </form>
-          </div>
-        )}
-
-        {/* STATE C: Create Account Form */}
-        {mode === 'signup' && (
-          <div className="welcome-form-card">
-            <div className="form-card-header">
-              <button type="button" className="form-back-btn" onClick={() => setMode('choice')}>
-                ← Back to choices
-              </button>
-              <h2>Create Your Account</h2>
-              <p>Join Explorex for permanent saved places, custom plans, and synced AI chat.</p>
-            </div>
-
-            <form onSubmit={handleSignUp} className="welcome-interactive-form">
-              <div className="form-field-row">
-                <label>Full Name</label>
-                <input
-                  type="text"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  placeholder="e.g. Sravan Kumar"
-                  required
-                />
-              </div>
-
-              <div className="form-field-row">
-                <label>Email Address</label>
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="you@example.com"
-                  required
-                />
-              </div>
-
-              <div className="form-field-row">
-                <label>Password (Min 8 characters)</label>
-                <div className="password-input-wrapper">
-                  <input
-                    type={showPassword ? 'text' : 'password'}
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    placeholder="Create a strong password"
-                    minLength={8}
-                    required
-                  />
                   <button
                     type="button"
-                    className="password-toggle-btn"
-                    onClick={() => setShowPassword(!showPassword)}
-                    aria-label={showPassword ? 'Hide password' : 'Show password'}
+                    className="welcome-choice-btn btn-create"
+                    onClick={() => setMode('signup')}
                   >
-                    {showPassword ? <EyeOff size={15} /> : <Eye size={15} />}
+                    <UserPlus size={16} />
+                    <span>Create Account</span>
                   </button>
                 </div>
-              </div>
 
-              <div className="form-field-row">
-                <label>Confirm Password</label>
-                <input
-                  type={showPassword ? 'text' : 'password'}
-                  value={confirmPassword}
-                  onChange={(e) => setConfirmPassword(e.target.value)}
-                  placeholder="Re-enter your password"
-                  required
-                />
+                {/* Visually Secondary Choice: Continue as guest (Prominent & easy to find) */}
+                {/* Preserves .welcome-choice-card.highlight-guest and button.choice-action-btn for E2E tests */}
+                <div className="welcome-choice-card highlight-guest welcome-guest-glass-card">
+                  <button
+                    type="button"
+                    className="choice-action-btn guest-action-btn"
+                    onClick={handleContinueAsGuest}
+                    disabled={loading}
+                    aria-label="Continue as guest explorer"
+                  >
+                    <UserCheck size={16} />
+                    <span className="guest-action-label">
+                      {loading ? 'Starting Guest Session...' : 'Continue as Guest'}
+                    </span>
+                    <ArrowRight size={14} className="guest-arrow-icon" />
+                  </button>
+                  <span className="guest-reassurance">Instant 1-click access · No password required</span>
+                </div>
               </div>
+            )}
 
-              <div className="form-actions-row">
-                <button type="submit" className="welcome-submit-btn" disabled={loading}>
-                  {loading ? 'Creating Account...' : 'Create Account'}
-                </button>
-                <button
-                  type="button"
-                  className="welcome-google-btn"
-                  onClick={handleGoogleLogin}
-                  disabled={loading}
-                >
-                  <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google" width="16" height="16" />
-                  <span>Sign up with Google</span>
-                </button>
+            {/* MODE 2: Sign In Inline Form */}
+            {mode === 'login' && (
+              <div className="welcome-glass-form-card">
+                <div className="glass-form-header">
+                  <button
+                    type="button"
+                    className="glass-form-back-btn"
+                    onClick={() => setMode('choice')}
+                  >
+                    ← Back to choices
+                  </button>
+                  <h2>Sign In to Explorex</h2>
+                  <p>Welcome back! Enter your credentials to access your trips.</p>
+                </div>
+
+                <form onSubmit={handleSignIn} className="welcome-interactive-form">
+                  <div className="form-field-row">
+                    <label htmlFor="welcome-email">Email Address</label>
+                    <input
+                      id="welcome-email"
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="you@example.com"
+                      required
+                    />
+                  </div>
+
+                  <div className="form-field-row">
+                    <label htmlFor="welcome-password">Password</label>
+                    <div className="password-input-wrapper">
+                      <input
+                        id="welcome-password"
+                        type={showPassword ? 'text' : 'password'}
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        placeholder="Enter your password"
+                        required
+                      />
+                      <button
+                        type="button"
+                        className="password-toggle-btn"
+                        onClick={() => setShowPassword(!showPassword)}
+                        aria-label={showPassword ? 'Hide password' : 'Show password'}
+                      >
+                        {showPassword ? <EyeOff size={15} /> : <Eye size={15} />}
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="form-actions-row">
+                    <button type="submit" className="welcome-submit-btn" disabled={loading}>
+                      {loading ? 'Signing in...' : 'Sign In'}
+                    </button>
+                    <button
+                      type="button"
+                      className="welcome-google-btn"
+                      onClick={handleGoogleLogin}
+                      disabled={loading}
+                    >
+                      <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google" width="16" height="16" />
+                      <span>Continue with Google</span>
+                    </button>
+                  </div>
+
+                  <div className="form-card-footer">
+                    <span>Don't have an account yet?</span>
+                    <button type="button" className="link-switch-btn" onClick={() => setMode('signup')}>
+                      Create account
+                    </button>
+                    <span className="dot-sep">·</span>
+                    <button type="button" className="link-switch-btn" onClick={handleContinueAsGuest}>
+                      Continue as guest
+                    </button>
+                  </div>
+                </form>
               </div>
+            )}
 
-              <div className="form-card-footer">
-                <span>Already have an account?</span>
-                <button type="button" className="link-switch-btn" onClick={() => setMode('login')}>
-                  Sign in
-                </button>
-                <span className="dot-sep">·</span>
-                <button type="button" className="link-switch-btn" onClick={handleContinueAsGuest}>
-                  Continue as guest
-                </button>
+            {/* MODE 3: Create Account Inline Form */}
+            {mode === 'signup' && (
+              <div className="welcome-glass-form-card">
+                <div className="glass-form-header">
+                  <button
+                    type="button"
+                    className="glass-form-back-btn"
+                    onClick={() => setMode('choice')}
+                  >
+                    ← Back to choices
+                  </button>
+                  <h2>Create Your Account</h2>
+                  <p>Join Explorex for permanent saved places and cloud-backed plans.</p>
+                </div>
+
+                <form onSubmit={handleSignUp} className="welcome-interactive-form">
+                  <div className="form-field-row">
+                    <label htmlFor="signup-name">Full Name</label>
+                    <input
+                      id="signup-name"
+                      type="text"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      placeholder="e.g. Sravan Kumar"
+                      required
+                    />
+                  </div>
+
+                  <div className="form-field-row">
+                    <label htmlFor="signup-email">Email Address</label>
+                    <input
+                      id="signup-email"
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="you@example.com"
+                      required
+                    />
+                  </div>
+
+                  <div className="form-field-row">
+                    <label htmlFor="signup-password">Password (Min 8 characters)</label>
+                    <div className="password-input-wrapper">
+                      <input
+                        id="signup-password"
+                        type={showPassword ? 'text' : 'password'}
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        placeholder="Create a strong password"
+                        minLength={8}
+                        required
+                      />
+                      <button
+                        type="button"
+                        className="password-toggle-btn"
+                        onClick={() => setShowPassword(!showPassword)}
+                        aria-label={showPassword ? 'Hide password' : 'Show password'}
+                      >
+                        {showPassword ? <EyeOff size={15} /> : <Eye size={15} />}
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="form-field-row">
+                    <label htmlFor="signup-confirm-password">Confirm Password</label>
+                    <input
+                      id="signup-confirm-password"
+                      type={showPassword ? 'text' : 'password'}
+                      value={confirmPassword}
+                      onChange={(e) => setConfirmPassword(e.target.value)}
+                      placeholder="Re-enter your password"
+                      required
+                    />
+                  </div>
+
+                  <div className="form-actions-row">
+                    <button type="submit" className="welcome-submit-btn" disabled={loading}>
+                      {loading ? 'Creating Account...' : 'Create Account'}
+                    </button>
+                    <button
+                      type="button"
+                      className="welcome-google-btn"
+                      onClick={handleGoogleLogin}
+                      disabled={loading}
+                    >
+                      <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google" width="16" height="16" />
+                      <span>Sign up with Google</span>
+                    </button>
+                  </div>
+
+                  <div className="form-card-footer">
+                    <span>Already have an account?</span>
+                    <button type="button" className="link-switch-btn" onClick={() => setMode('login')}>
+                      Sign in
+                    </button>
+                    <span className="dot-sep">·</span>
+                    <button type="button" className="link-switch-btn" onClick={handleContinueAsGuest}>
+                      Continue as guest
+                    </button>
+                  </div>
+                </form>
               </div>
-            </form>
+            )}
           </div>
-        )}
 
-        {/* Security & Verification Guarantee */}
-        <div className="welcome-trust-strip">
-          <div className="trust-item">
-            <Shield size={14} />
-            <span>Row-Level Security Guaranteed</span>
-          </div>
-          <div className="trust-item">
-            <MapPin size={14} />
-            <span>400 Verified Telangana Landmarks</span>
-          </div>
-          <div className="trust-item">
-            <Check size={14} />
-            <span>Seamless Guest to Account Upgrade</span>
-          </div>
-        </div>
+          {/* Footer: Privacy, Terms, and Direct Page Switchers */}
+          <footer className="welcome-glass-footer stagger-5">
+            <a
+              href="#/privacy"
+              className="welcome-footer-link"
+              onClick={(e) => {
+                e.preventDefault()
+                navigateTo('privacy')
+              }}
+            >
+              Privacy Policy
+            </a>
+            <span className="footer-dot-divider" aria-hidden="true">·</span>
+            <a
+              href="#/terms"
+              className="welcome-footer-link"
+              onClick={(e) => {
+                e.preventDefault()
+                navigateTo('terms')
+              }}
+            >
+              Terms of Service
+            </a>
+          </footer>
+        </main>
       </div>
-    </div>
+    </IncredibleIndiaBackground>
   )
 }

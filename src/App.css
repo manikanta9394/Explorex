@@ -6776,11 +6776,11 @@ button:active:not(:disabled) {
    -------------------------------------------------------------------------- */
 .page-header-band {
   position: relative;
-  background: linear-gradient(135deg, #11221B 0%, #1A3328 45%, #224335 100%);
+  background: linear-gradient(135deg, #0A1B14 0%, #11281E 45%, #183B2B 100%);
   color: #FFFFFF;
   padding: 44px 24px 38px;
-  border-bottom: 1px solid rgba(201, 162, 39, 0.3);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(201, 162, 39, 0.35);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
 
@@ -6788,8 +6788,10 @@ button:active:not(:disabled) {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 85% 20%, rgba(201, 162, 39, 0.12) 0%, transparent 50%),
-    radial-gradient(circle at 15% 80%, rgba(31, 58, 46, 0.3) 0%, transparent 60%);
+    radial-gradient(circle at 85% 20%, rgba(201, 162, 39, 0.2) 0%, transparent 55%),
+    radial-gradient(circle at 15% 80%, rgba(31, 58, 46, 0.4) 0%, transparent 60%),
+    url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 0 L40 20 L20 40 L0 20 Z M20 6 L34 20 L20 34 L6 20 Z' fill='none' stroke='%23C9A227' stroke-width='0.6' stroke-opacity='0.14'/%3E%3Ccircle cx='20' cy='20' r='3.2' fill='none' stroke='%23C9A227' stroke-width='0.5' stroke-opacity='0.16'/%3E%3C/svg%3E");
+  background-size: auto, auto, 40px 40px;
   pointer-events: none;
 }
 
@@ -20476,4 +20478,1118 @@ mark.search-highlight {
   to {
     transform: translateY(0);
   }
+}
+
+
+/* ==========================================================================
+   INCREDIBLE INDIA IMMERSIVE ENTRANCE & WELCOME EXPERIENCE
+   ========================================================================== */
+
+/* 1. Stage & Backdrop */
+.incredible-india-stage {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #060B11;
+  color: #FFFFFF;
+}
+
+.india-sky-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: var(--sky-gradient, linear-gradient(180deg, #0B243B 0%, #1B5270 60%, #E2BE80 100%));
+  transition: background 1.8s ease-in-out;
+  pointer-events: none;
+}
+
+/* Star Clusters for Night and Dawn */
+.india-star-field {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 0 0 4px #FFFFFF;
+  opacity: 0.8;
+  animation: starTwinkle 3.5s ease-in-out infinite alternate;
+}
+
+.star.s1 { top: 12%; left: 18%; animation-delay: 0.2s; }
+.star.s2 { top: 22%; left: 74%; animation-delay: 0.8s; width: 3px; height: 3px; }
+.star.s3 { top: 38%; left: 32%; animation-delay: 1.4s; }
+.star.s4 { top: 16%; left: 88%; animation-delay: 2.1s; }
+.star.s5 { top: 28%; left: 12%; animation-delay: 0.5s; width: 2.5px; height: 2.5px; }
+.star.s6 { top: 44%; left: 82%; animation-delay: 1.9s; }
+
+@keyframes starTwinkle {
+  0% { opacity: 0.3; transform: scale(0.8); }
+  50% { opacity: 0.95; transform: scale(1.3); }
+  100% { opacity: 0.4; transform: scale(0.9); }
+}
+
+/* 2. Photo Slideshow Layer with Ken Burns Zoom */
+.india-slideshow-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.india-slide-layer {
+  position: absolute;
+  inset: -4%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1.8s cubic-bezier(0.4, 0, 0.2, 1), visibility 1.8s;
+  pointer-events: none;
+}
+
+.india-slide-layer.is-active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+.india-slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 36%;
+  transform: translate3d(var(--parallax-x, 0px), var(--parallax-y, 0px), 0);
+  transition: transform 0.2s cubic-bezier(0.2, 0, 0.2, 1);
+}
+
+.india-slide-layer.is-active .india-slide-img {
+  animation: kenBurnsMotion 14s ease-out forwards;
+}
+
+@keyframes kenBurnsMotion {
+  0% {
+    transform: scale(1.0) translate3d(var(--parallax-x, 0px), var(--parallax-y, 0px), 0);
+  }
+  100% {
+    transform: scale(1.09) translate3d(calc(var(--parallax-x, 0px) * -1.2), calc(var(--parallax-y, 0px) * -1.2), 0);
+  }
+}
+
+/* 3. Stylized Precision SVG Map of India */
+.india-svg-map-layer {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  width: clamp(260px, 32vw, 420px);
+  height: auto;
+  opacity: 0.38;
+  z-index: 4;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+.india-map-canvas {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 16px rgba(201, 162, 39, 0.25));
+}
+
+.india-country-outline {
+  fill: rgba(201, 162, 39, 0.05);
+  stroke: rgba(201, 162, 39, 0.45);
+  stroke-width: 0.8;
+  stroke-dasharray: 2.5 3;
+}
+
+.india-route-polyline {
+  fill: none;
+  stroke: #E6C258;
+  stroke-width: 0.95;
+  stroke-dasharray: 3 4;
+  animation: routeDashFlow 24s linear infinite;
+}
+
+@keyframes routeDashFlow {
+  to {
+    stroke-dashoffset: -120;
+  }
+}
+
+.india-map-pin .pin-core {
+  fill: #C9A227;
+  filter: drop-shadow(0 0 3px #FFD700);
+  transition: all 0.3s ease;
+}
+
+.india-map-pin.is-active .pin-core {
+  fill: #FFFFFF;
+  filter: drop-shadow(0 0 6px #FFFFFF) drop-shadow(0 0 10px #C9A227);
+}
+
+.india-map-pin .pin-pulse {
+  fill: none;
+  stroke: #FFD700;
+  stroke-width: 0.7;
+  animation: pinPulseWave 2.2s cubic-bezier(0.2, 0.8, 0.2, 1) infinite;
+}
+
+@keyframes pinPulseWave {
+  0% {
+    r: 1.5;
+    opacity: 1;
+  }
+  100% {
+    r: 7.5;
+    opacity: 0;
+  }
+}
+
+/* 4. Floating Diyas and Marigold Petals */
+.india-floating-particles {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.particle.diya {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  animation: floatUpDrift 16s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.particle.diya .diya-glow {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 185, 35, 0.6) 0%, rgba(201, 162, 39, 0.2) 50%, transparent 75%);
+  animation: diyaFlicker 1.8s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+.particle.diya .diya-flame {
+  filter: drop-shadow(0 0 8px rgba(255, 200, 50, 0.85));
+}
+
+.particle.diya.d1 { left: 12%; animation-delay: 0s; }
+.particle.diya.d2 { left: 42%; animation-delay: 4.5s; font-size: 18px; }
+.particle.diya.d3 { left: 78%; animation-delay: 9s; font-size: 22px; }
+.particle.diya.d4 { left: 60%; animation-delay: 13s; font-size: 19px; }
+
+@keyframes diyaFlicker {
+  0% { transform: scale(0.9); opacity: 0.75; }
+  50% { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+.particle.petal {
+  position: absolute;
+  width: 12px;
+  height: 18px;
+  background: linear-gradient(135deg, #FF9E2C 0%, #D86317 100%);
+  border-radius: 50% 50% 50% 10% / 60% 60% 40% 40%;
+  box-shadow: 0 0 6px rgba(216, 99, 23, 0.4);
+  animation: petalDriftUp 14s cubic-bezier(0.35, 0, 0.25, 1) infinite;
+}
+
+.particle.petal.p1 { left: 24%; animation-delay: 1.5s; width: 10px; height: 16px; }
+.particle.petal.p2 { left: 52%; animation-delay: 5.5s; width: 14px; height: 20px; }
+.particle.petal.p3 { left: 86%; animation-delay: 8.5s; width: 11px; height: 17px; }
+.particle.petal.p4 { left: 34%; animation-delay: 12s; width: 13px; height: 19px; }
+
+@keyframes floatUpDrift {
+  0% {
+    transform: translate3d(0, 105vh, 0) scale(0.85);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.85;
+  }
+  85% {
+    opacity: 0.85;
+  }
+  100% {
+    transform: translate3d(36px, -12vh, 0) scale(1.1);
+    opacity: 0;
+  }
+}
+
+@keyframes petalDriftUp {
+  0% {
+    transform: translate3d(0, 105vh, 0) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.75;
+  }
+  80% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: translate3d(-45px, -12vh, 0) rotate(420deg);
+    opacity: 0;
+  }
+}
+
+/* 5. Contrast Scrim & Grain Layer */
+.india-scrim-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 50% 45%, rgba(10, 16, 22, 0.45) 0%, rgba(8, 12, 17, 0.75) 65%, rgba(4, 7, 10, 0.92) 100%),
+    linear-gradient(180deg, rgba(5, 8, 12, 0.55) 0%, transparent 40%, rgba(4, 7, 10, 0.88) 100%);
+}
+
+.india-noise-grain {
+  position: absolute;
+  inset: 0;
+  z-index: 7;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: radial-gradient(#FFFFFF 1px, transparent 1px);
+  background-size: 3px 3px;
+}
+
+/* 6. Active Landmark Caption (Bottom Left) */
+.india-landmark-caption {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 340px;
+  pointer-events: auto;
+}
+
+.caption-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: rgba(14, 23, 20, 0.75);
+  border: 1px solid rgba(201, 162, 39, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 999px;
+  color: #FFFFFF;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+.caption-pin-icon {
+  color: #E6C258;
+  flex-shrink: 0;
+}
+
+.caption-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.caption-name {
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.caption-state {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 12px;
+}
+
+.caption-attr {
+  font-size: 10.5px;
+  color: rgba(255, 255, 255, 0.45);
+  padding-left: 14px;
+  letter-spacing: 0.3px;
+}
+
+/* 7. Slideshow Dock Controls (Bottom Right) */
+.india-slideshow-dock {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: rgba(14, 23, 20, 0.75);
+  border: 1px solid rgba(201, 162, 39, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 999px;
+  color: #FFFFFF;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+.dock-btn {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.85);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dock-btn:hover {
+  background: rgba(201, 162, 39, 0.2);
+  color: #FFD700;
+}
+
+.dock-btn:focus-visible {
+  outline: 2px solid #C9A227;
+  outline-offset: 2px;
+}
+
+.dock-counter {
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0 4px;
+}
+
+.dock-counter strong {
+  color: #FFD700;
+  font-weight: 700;
+}
+
+/* 8. Foreground Interactive Slot */
+.india-foreground-content {
+  position: relative;
+  z-index: 9;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* ==========================================================================
+   CENTERED WELCOME GLASS CARD
+   ========================================================================== */
+
+.welcome-glass-stage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.welcome-glass-card {
+  width: 100%;
+  max-width: 540px;
+  background: rgba(12, 22, 18, 0.72);
+  backdrop-filter: blur(24px) saturate(160%);
+  -webkit-backdrop-filter: blur(24px) saturate(160%);
+  border: 1px solid rgba(201, 162, 39, 0.32);
+  border-radius: 28px;
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  padding: 34px 32px 28px;
+  text-align: center;
+  color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Staggered entrance animations */
+.stagger-1 { animation: glassFadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both; }
+.stagger-2 { animation: glassFadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both; }
+.stagger-3 { animation: glassFadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both; }
+.stagger-4 { animation: glassFadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.35s both; }
+.stagger-5 { animation: glassFadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.45s both; }
+
+@keyframes glassFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Glass Top Bar */
+.welcome-glass-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.welcome-time-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(201, 162, 39, 0.14);
+  border: 1px solid rgba(201, 162, 39, 0.3);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 500;
+  color: #F0D488;
+}
+
+.welcome-glass-lang-wrap .language-button {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #FFFFFF;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.welcome-glass-lang-wrap .language-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(201, 162, 39, 0.45);
+}
+
+/* Brand Gem */
+.welcome-glass-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.brand-logo-gem {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(201, 162, 39, 0.25) 0%, rgba(201, 162, 39, 0.08) 100%);
+  border: 1px solid rgba(201, 162, 39, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFD700;
+  box-shadow: 0 8px 24px rgba(201, 162, 39, 0.2);
+}
+
+.brand-compass-spin {
+  animation: compassSway 6s ease-in-out infinite;
+}
+
+@keyframes compassSway {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(8deg); }
+  75% { transform: rotate(-8deg); }
+}
+
+.brand-sparkle-ping {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  color: #FFF2A8;
+  animation: pingGlow 2.5s ease-in-out infinite;
+}
+
+@keyframes pingGlow {
+  0%, 100% { transform: scale(0.9); opacity: 0.6; }
+  50% { transform: scale(1.2); opacity: 1; }
+}
+
+.brand-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand-super-title {
+  font-size: 11px;
+  letter-spacing: 3.5px;
+  color: #E6C258;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.brand-name-title {
+  font-family: var(--serif, 'Cinzel', serif);
+  font-size: clamp(28px, 4.5vw, 36px);
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  margin: 0;
+  line-height: 1.15;
+}
+
+/* Rotating Cultural Greeting */
+.welcome-greeting-block {
+  margin-bottom: 20px;
+}
+
+.rotating-greeting-pill {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(201, 162, 39, 0.25);
+  padding: 6px 16px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+
+.greeting-main-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFD700;
+  letter-spacing: 0.5px;
+}
+
+.greeting-sub-badge {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.welcome-promise-statement {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.84);
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+/* Three Benefit Chips */
+.welcome-benefit-chips-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.welcome-benefit-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: rgba(201, 162, 39, 0.1);
+  border: 1px solid rgba(201, 162, 39, 0.28);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #F0D488;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.welcome-benefit-chip:hover {
+  background: rgba(201, 162, 39, 0.2);
+  border-color: rgba(201, 162, 39, 0.5);
+  transform: translateY(-1px);
+}
+
+.welcome-benefit-chip .chip-icon {
+  color: #FFD700;
+}
+
+/* Choices Interaction Panel */
+.welcome-choices-area {
+  margin-bottom: 16px;
+}
+
+.welcome-primary-choice-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 480px) {
+  .welcome-primary-choice-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.welcome-choice-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 20px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid transparent;
+}
+
+.welcome-choice-btn.btn-signin {
+  background: #C9A227;
+  color: #0E1813;
+  box-shadow: 0 4px 16px rgba(201, 162, 39, 0.35);
+}
+
+.welcome-choice-btn.btn-signin:hover {
+  background: #D8B23C;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(201, 162, 39, 0.45);
+}
+
+.welcome-choice-btn.btn-create {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+}
+
+.welcome-choice-btn.btn-create:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(201, 162, 39, 0.4);
+  transform: translateY(-2px);
+}
+
+.welcome-choice-btn:focus-visible {
+  outline: 2px solid #FFD700;
+  outline-offset: 2px;
+}
+
+/* Guest Entry (Visually secondary, but prominent and easily found) */
+.welcome-guest-glass-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px dashed rgba(201, 162, 39, 0.38);
+  border-radius: 16px;
+  padding: 12px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.welcome-guest-glass-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(201, 162, 39, 0.65);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-guest-glass-card .guest-action-btn {
+  background: transparent;
+  border: none;
+  color: #FFFFFF;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 4px 0;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.welcome-guest-glass-card .guest-action-btn:focus-visible {
+  outline: 2px solid #FFD700;
+  outline-offset: 2px;
+}
+
+.guest-arrow-icon {
+  color: #C9A227;
+  transition: transform 0.2s ease;
+}
+
+.welcome-guest-glass-card:hover .guest-arrow-icon {
+  transform: translateX(3px);
+}
+
+.guest-reassurance {
+  font-size: 11.5px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* Inline Glass Forms for Login & Signup */
+.welcome-glass-form-card {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 24px;
+  text-align: left;
+}
+
+.glass-form-header {
+  margin-bottom: 20px;
+}
+
+.glass-form-back-btn {
+  background: transparent;
+  border: none;
+  color: #C9A227;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+  transition: color 0.15s ease;
+}
+
+.glass-form-back-btn:hover {
+  color: #FFD700;
+}
+
+.glass-form-header h2 {
+  font-family: var(--serif, serif);
+  font-size: 22px;
+  color: #FFFFFF;
+  margin: 0 0 4px;
+}
+
+.glass-form-header p {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0;
+}
+
+.welcome-error-box.glass-error {
+  margin-bottom: 16px;
+  border-radius: 12px;
+  background: rgba(220, 38, 38, 0.25);
+  border-color: rgba(220, 38, 38, 0.45);
+  color: #FCA5A5;
+}
+
+/* Glass Footer */
+.welcome-glass-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.welcome-footer-link {
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.welcome-footer-link:hover {
+  color: #C9A227;
+}
+
+.welcome-footer-link:focus-visible {
+  outline: 2px solid #C9A227;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.footer-dot-divider {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+/* Reduced Motion Overrides */
+@media (prefers-reduced-motion: reduce) {
+  .india-slide-layer.is-active .india-slide-img {
+    animation: none !important;
+    transform: none !important;
+  }
+  .particle,
+  .star,
+  .pin-pulse,
+  .brand-compass-spin,
+  .brand-sparkle-ping,
+  .india-route-polyline {
+    animation: none !important;
+  }
+  .particle,
+  .star {
+    display: none !important;
+  }
+  .stagger-1,
+  .stagger-2,
+  .stagger-3,
+  .stagger-4,
+  .stagger-5 {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+
+/* ==========================================================================
+   UNIFIED AUTH GLASS CARD (LOGIN & SIGNUP PAGES)
+   ========================================================================== */
+.auth-themed-glass-card {
+  max-width: 500px;
+}
+
+.auth-themed-glass-card .auth-top-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.auth-themed-glass-card .auth-back-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.auth-themed-glass-card .auth-back-nav:hover {
+  color: #C9A227;
+  transform: translateX(-2px);
+}
+
+.auth-themed-glass-card .auth-guest-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(201, 162, 39, 0.35);
+  border-radius: 999px;
+  padding: 5px 12px;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.auth-themed-glass-card .auth-guest-link:hover {
+  background: rgba(201, 162, 39, 0.2);
+  border-color: #C9A227;
+  transform: translateY(-1px);
+}
+
+.auth-themed-glass-card .auth-page-form {
+  text-align: left;
+}
+
+.auth-themed-glass-card .field-input-wrapper {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1.5px solid rgba(255, 255, 255, 0.16);
+}
+
+.auth-themed-glass-card .floating-input {
+  color: #FFFFFF;
+}
+
+.auth-themed-glass-card .field-leading-icon {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.auth-themed-glass-card .floating-label {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.auth-themed-glass-card .field-input-wrapper:focus-within,
+.auth-themed-glass-card .floating-field-group.has-value .field-input-wrapper {
+  border-color: #C9A227;
+  box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.22);
+}
+
+.auth-themed-glass-card .field-input-wrapper:focus-within .field-leading-icon {
+  color: #FFD700;
+}
+
+.auth-themed-glass-card .floating-field-group.has-value .floating-label,
+.auth-themed-glass-card .floating-input:focus ~ .floating-label,
+.auth-themed-glass-card .floating-input:not(:placeholder-shown) ~ .floating-label {
+  color: #FFD700;
+}
+
+.auth-themed-glass-card .auth-password-toggle {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.65);
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+.auth-themed-glass-card .auth-password-toggle:hover {
+  color: #FFFFFF;
+}
+
+.auth-themed-glass-card .auth-primary-submit-btn {
+  background: #C9A227;
+  color: #0E1813;
+  width: 100%;
+  padding: 13px;
+  border-radius: 12px;
+  font-size: 14.5px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(201, 162, 39, 0.35);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.auth-themed-glass-card .auth-primary-submit-btn:hover {
+  background: #D8B23C;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(201, 162, 39, 0.45);
+}
+
+.auth-themed-glass-card .auth-primary-submit-btn:focus-visible {
+  outline: 2px solid #FFD700;
+  outline-offset: 2px;
+}
+
+.auth-themed-glass-card .auth-or-divider {
+  display: flex;
+  align-items: center;
+  margin: 18px 0;
+  gap: 12px;
+}
+
+.auth-themed-glass-card .divider-line {
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.auth-themed-glass-card .divider-text {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.auth-themed-glass-card .auth-google-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #FFFFFF;
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.auth-themed-glass-card .auth-google-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(201, 162, 39, 0.4);
+}
+
+.auth-themed-glass-card .password-strength-box {
+  margin: -6px 0 16px;
+  padding: 8px 12px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+}
+
+.auth-themed-glass-card .strength-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.auth-themed-glass-card .strength-label-text {
+  font-size: 11.5px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.auth-themed-glass-card .strength-meter-pills {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.auth-themed-glass-card .strength-pill {
+  width: 22px;
+  height: 4px;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.auth-themed-glass-card .auth-success-banner {
+  background: rgba(45, 125, 70, 0.3);
+  border: 1px solid rgba(45, 125, 70, 0.6);
+  color: #A3E6B8;
+  padding: 12px 16px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13.5px;
+}
+
+.auth-themed-glass-card .success-icon-wrap {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #2D7D46;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.auth-themed-glass-card .auth-form-shake {
+  animation: authFormShake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes authFormShake {
+  10%, 90% { transform: translate3d(-2px, 0, 0); }
+  20%, 80% { transform: translate3d(4px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-6px, 0, 0); }
+  40%, 60% { transform: translate3d(6px, 0, 0); }
 }
