@@ -5,7 +5,16 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   base: '/Explorex/',
-  plugins: [react(), tailwindcss()],
+  plugins: [
+    react(),
+    tailwindcss(),
+    {
+      name: 'html-base-fix',
+      transformIndexHtml(html) {
+        return html.replace(/\/Explorex\/Explorex\//g, '/Explorex/')
+      },
+    },
+  ],
   resolve: {
     dedupe: ['react', 'react-dom'],
   },
