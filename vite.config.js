@@ -147,6 +147,11 @@ export default defineConfig({
     strictPort: false,
     host: true,
     proxy: {
+      '^/Explorex/api': {
+        target: 'http://localhost:5005',
+        rewrite: (path) => path.replace(/^\/Explorex/, ''),
+        changeOrigin: true,
+      },
       '/api': {
         target: 'http://localhost:5005',
         changeOrigin: true,
@@ -161,6 +166,11 @@ export default defineConfig({
     strictPort: false,
     host: true,
     proxy: {
+      '^/Explorex/api': {
+        target: 'http://localhost:5005',
+        rewrite: (path) => path.replace(/^\/Explorex/, ''),
+        changeOrigin: true,
+      },
       '/api': {
         target: 'http://localhost:5005',
         changeOrigin: true,
