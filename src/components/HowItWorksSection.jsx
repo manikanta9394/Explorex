@@ -136,8 +136,9 @@ export default function HowItWorksSection({ onStartExploring, onAskAI }) {
             fill="none"
             preserveAspectRatio="none"
           >
-            {/* Background faint trail */}
+            {/* Background faint trail with subtle marching dash animation */}
             <path
+              className="marching-dash-trail"
               d="M 120,60 Q 330,10 500,60 T 880,60"
               stroke="rgba(201, 162, 39, 0.2)"
               strokeWidth="3"

@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from 'react'
+import { useState, useMemo, useEffect, useRef } from 'react'
 import {
   ArrowRight,
   Compass,
@@ -178,6 +178,31 @@ export default function HomePage({ onNavigate, onSelectPlace }) {
     if (onNavigate) onNavigate(`explore/${place.id}`)
   }
 
+  // Drag-to-scroll support for festival strip
+  const festivalTrayRef = useRef(null)
+  const [isDraggingFestivals, setIsDraggingFestivals] = useState(false)
+  const dragStartX = useRef(0)
+  const dragScrollLeft = useRef(0)
+
+  const handleFestivalMouseDown = (e) => {
+    if (!festivalTrayRef.current) return
+    setIsDraggingFestivals(true)
+    dragStartX.current = e.pageX - festivalTrayRef.current.offsetLeft
+    dragScrollLeft.current = festivalTrayRef.current.scrollLeft
+  }
+
+  const handleFestivalMouseMove = (e) => {
+    if (!isDraggingFestivals || !festivalTrayRef.current) return
+    e.preventDefault()
+    const x = e.pageX - festivalTrayRef.current.offsetLeft
+    const walk = (x - dragStartX.current) * 1.5
+    festivalTrayRef.current.scrollLeft = dragScrollLeft.current - walk
+  }
+
+  const handleFestivalMouseUpOrLeave = () => {
+    setIsDraggingFestivals(false)
+  }
+
   return (
     <div className="home-page-container">
       <SEOHead
@@ -279,6 +304,8 @@ export default function HomePage({ onNavigate, onSelectPlace }) {
       {/* ================================================================= */}
       <section className="stats-banner-strip reveal-fade-up">
         <div className="stats-container">
+          {/* Thin gold line that draws across the band on first view */}
+          <div className="stats-gold-line" aria-hidden="true" />
           <div className="stat-card reveal-zoom" style={{ '--reveal-index': 0 }}>
             <span className="stat-num-serif">
               <CountUpNumber target={560} suffix="+" />
@@ -334,56 +361,70 @@ export default function HomePage({ onNavigate, onSelectPlace }) {
             </button>
           </div>
 
-          <div className="festivals-scroll-tray">
-            {FESTIVALS_STRIP.map((fest, idx) => (
-              <div
-                key={idx}
-                className="festival-strip-tile"
-                onClick={() => onNavigate?.(`/explore/${fest.placeId}`)}
-              >
-                <div className="fest-tile-media" style={{ background: fest.tintBg }}>
-                  {fest.image ? (
-                    <SafeImage
-                      src={fest.image}
-                      category="attraction"
-                      alt={fest.name}
-                      className="fest-tile-img"
-                    />
-                  ) : null}
-                  <div className="fest-date-chip">
-                    <span className="fest-chip-month">{fest.month}</span>
-                    <span className="fest-chip-day">{fest.day}</span>
+          <div className="festivals-tray-wrapper">
+            <div
+              ref={festivalTrayRef}
+              className={`festivals-scroll-tray ${isDraggingFestivals ? 'is-dragging' : ''}`}
+              onMouseDown={handleFestivalMouseDown}
+              onMouseMove={handleFestivalMouseMove}
+              onMouseUp={handleFestivalMouseUpOrLeave}
+              onMouseLeave={handleFestivalMouseUpOrLeave}
+              role="region"
+              aria-label="Upcoming festivals carousel"
+              tabIndex={0}
+            >
+              {FESTIVALS_STRIP.map((fest, idx) => (
+                <div
+                  key={idx}
+                  className="festival-strip-tile"
+                  onClick={() => {
+                    if (!isDraggingFestivals) onNavigate?.(`/explore/${fest.placeId}`)
+                  }}
+                >
+                  <div className="fest-tile-media" style={{ background: fest.tintBg }}>
+                    {fest.image ? (
+                      <SafeImage
+                        src={fest.image}
+                        category="attraction"
+                        alt={fest.name}
+                        className="fest-tile-img"
+                      />
+                    ) : null}
+                    <div className="fest-date-chip" style={{ '--tile-index': idx }}>
+                      <span className="fest-chip-month">{fest.month}</span>
+                      <span className="fest-chip-day">{fest.day}</span>
+                    </div>
+                    <span className="fest-category-pill">{fest.tag}</span>
                   </div>
-                  <span className="fest-category-pill">{fest.tag}</span>
-                </div>
 
-                <div className="fest-content">
-                  <h4 className="fest-name">{fest.name}</h4>
-                  <div className="fest-meta-line">
-                    <span className="fest-location">
-                      <MapPin size={12} /> {fest.location}
-                    </span>
-                    <span className="fest-timing">
-                      <Calendar size={12} /> {fest.dates}
-                    </span>
-                  </div>
-                  <p className="fest-description">{fest.description}</p>
-                  <div className="fest-card-action">
-                    <button
-                      type="button"
-                      className="fest-plan-link"
-                      onClick={(e) => {
-                        e.stopPropagation()
-                        onNavigate?.(`/planner?destination=${fest.placeId}`)
-                      }}
-                    >
-                      <span>Plan a visit</span>
-                      <ArrowRight size={13} />
-                    </button>
+                  <div className="fest-content">
+                    <h4 className="fest-name">{fest.name}</h4>
+                    <div className="fest-meta-line">
+                      <span className="fest-location">
+                        <MapPin size={12} /> {fest.location}
+                      </span>
+                      <span className="fest-timing">
+                        <Calendar size={12} /> {fest.dates}
+                      </span>
+                    </div>
+                    <p className="fest-description">{fest.description}</p>
+                    <div className="fest-card-action">
+                      <button
+                        type="button"
+                        className="fest-plan-link"
+                        onClick={(e) => {
+                          e.stopPropagation()
+                          onNavigate?.(`/planner?destination=${fest.placeId}`)
+                        }}
+                      >
+                        <span>Plan a visit</span>
+                        <ArrowRight size={13} />
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>

@@ -94,9 +94,12 @@ export default function LandingHero({ onStartExploring, onAskAI, onSelectPlace, 
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // Auto-rotate every 6 seconds unless user is hovering
+  // Auto-rotate every 6 seconds unless user is hovering, focusing, or prefers reduced motion
   useEffect(() => {
     if (isPaused) return
+    if (typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      return
+    }
 
     timerRef.current = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % HERO_SLIDES.length)
@@ -150,6 +153,13 @@ export default function LandingHero({ onStartExploring, onAskAI, onSelectPlace, 
             />
           </div>
         ))}
+        {/* Subtle slow-drifting celestial lanterns in distant midground, never over text */}
+        <div className="hero-floating-lanterns" aria-hidden="true">
+          <div className="hero-lantern lantern-1" />
+          <div className="hero-lantern lantern-2" />
+          <div className="hero-lantern lantern-3" />
+          <div className="hero-lantern lantern-4" />
+        </div>
         <div className="hero-gradient-overlay" />
         <div className="hero-pattern-mesh" />
       </div>
@@ -207,10 +217,11 @@ export default function LandingHero({ onStartExploring, onAskAI, onSelectPlace, 
             <span className="eyebrow-geo">Hyderabad &amp; Beyond</span>
           </div>
 
-          <h1 className="hero-title fade-in-up delay-2">
-            Heritage, Majesty &amp; Story.
-            <br />
-            <em>Unveiled with AI.</em>
+          <h1 className="hero-title">
+            <span className="hero-title-line hero-rise-1">Heritage, Majesty &amp; Story.</span>
+            <span className="hero-title-line hero-rise-2">
+              <em>Unveiled with AI.</em>
+            </span>
           </h1>
 
           {/* Exact required one-line value proposition */}

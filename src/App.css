@@ -4537,14 +4537,26 @@ button:active:not(:disabled) {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transform: scale(1.05);
-  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 6s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: opacity, transform;
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity;
 }
 
 .hero-slide-bg.active {
   opacity: 1;
-  transform: scale(1);
+}
+
+.hero-slide-bg.active img {
+  animation: kenBurnsZoom 10s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  will-change: transform;
+}
+
+@keyframes kenBurnsZoom {
+  0% {
+    transform: scale(1.0);
+  }
+  100% {
+    transform: scale(1.08);
+  }
 }
 
 .hero-slide-bg img {
@@ -4552,6 +4564,102 @@ button:active:not(:disabled) {
   height: 100%;
   object-fit: cover;
   object-position: center 38%;
+  transform-origin: center center;
+}
+
+/* Subtle slow-drifting celestial lanterns in distant midground, never over text */
+.hero-floating-lanterns {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero-lantern {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(243, 198, 68, 0.75) 0%, rgba(201, 162, 39, 0.35) 55%, transparent 100%);
+  box-shadow: 0 0 14px rgba(243, 198, 68, 0.5);
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
+.hero-lantern.lantern-1 {
+  width: 10px;
+  height: 10px;
+  top: 22%;
+  left: 18%;
+  animation: lanternFloat1 18s ease-in-out infinite alternate;
+}
+
+.hero-lantern.lantern-2 {
+  width: 14px;
+  height: 14px;
+  top: 35%;
+  right: 24%;
+  animation: lanternFloat2 22s ease-in-out infinite alternate;
+}
+
+.hero-lantern.lantern-3 {
+  width: 8px;
+  height: 8px;
+  top: 48%;
+  left: 28%;
+  animation: lanternFloat3 16s ease-in-out infinite alternate;
+}
+
+.hero-lantern.lantern-4 {
+  width: 12px;
+  height: 12px;
+  top: 18%;
+  right: 15%;
+  animation: lanternFloat1 20s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes lanternFloat1 {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.35;
+  }
+  50% {
+    transform: translate3d(16px, -24px, 0);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translate3d(-12px, -45px, 0);
+    opacity: 0.25;
+  }
+}
+
+@keyframes lanternFloat2 {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translate3d(-20px, -30px, 0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate3d(14px, -55px, 0);
+    opacity: 0.3;
+  }
+}
+
+@keyframes lanternFloat3 {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate3d(12px, -18px, 0);
+    opacity: 0.65;
+  }
+  100% {
+    transform: translate3d(-8px, -36px, 0);
+    opacity: 0.2;
+  }
 }
 
 /* Dark gradient scrim across hero so text is readable on any photo */
@@ -4630,7 +4738,10 @@ button:active:not(:disabled) {
   color: rgba(255, 255, 255, 0.85);
 }
 
+/* Headline lines rise in one by one */
 .hero-title {
+  display: flex;
+  flex-direction: column;
   font-family: var(--serif, 'Playfair Display', Georgia, serif);
   font-size: clamp(38px, 5.2vw, 68px);
   font-weight: 500;
@@ -4638,6 +4749,33 @@ button:active:not(:disabled) {
   letter-spacing: -2px;
   color: #FFFFFF;
   margin: 0 0 16px 0;
+}
+
+.hero-title-line {
+  display: block;
+  opacity: 0;
+  transform: translateY(22px);
+  animation: heroLineRise 0.75s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: transform, opacity;
+}
+
+.hero-rise-1 {
+  animation-delay: 0.18s;
+}
+
+.hero-rise-2 {
+  animation-delay: 0.38s;
+}
+
+@keyframes heroLineRise {
+  0% {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-title em {
@@ -6546,9 +6684,9 @@ button:active:not(:disabled) {
    Page Header Bands, Page Transitions, Explore, Detail, Map, Planner, AI, Saved
    ========================================================================== */
 
-/* Page Transition: Soft Fade Up */
+/* Page Transition: Smooth Fade and 12px Rise (380ms ease-out) */
 .page-transition-wrap {
-  animation: pageFadeUp 0.36s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: pageFadeUp 0.38s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   will-change: transform, opacity;
   width: 100%;
 }
@@ -6556,7 +6694,7 @@ button:active:not(:disabled) {
 @keyframes pageFadeUp {
   0% {
     opacity: 0;
-    transform: translateY(14px);
+    transform: translateY(12px);
   }
   100% {
     opacity: 1;
@@ -9127,6 +9265,20 @@ button:active:not(:disabled) {
   transition: stroke-dashoffset 0.12s ease-out;
 }
 
+/* Subtle marching dashed route line behind How It Works steps */
+.marching-dash-trail {
+  animation: subtleMarchingDash 3.5s linear infinite;
+}
+
+@keyframes subtleMarchingDash {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -24;
+  }
+}
+
 .route-waypoints-bar {
   display: flex;
   justify-content: space-around;
@@ -9409,6 +9561,38 @@ button:active:not(:disabled) {
   .hero-parallax-content {
     transform: none !important;
     will-change: auto !important;
+  }
+
+  .hero-slide-bg.active img {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  .hero-title-line {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+
+  .hero-floating-lanterns,
+  .hero-lantern {
+    display: none !important;
+  }
+
+  .stats-gold-line {
+    transform: scaleX(1) !important;
+    transition: none !important;
+  }
+
+  .fest-date-chip {
+    transform: none !important;
+    opacity: 1 !important;
+    transition: none !important;
+  }
+
+  .dock-action-btn .dock-btn-icon,
+  .marching-dash-trail {
+    animation: none !important;
   }
 
   .marquee-track {
@@ -17606,11 +17790,20 @@ mark.search-highlight {
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
 }
 
-.dock-action-btn .dock-btn-icon {
-  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+/* Quick Actions: icons pulse softly once on load, then scale on hover */
+@keyframes iconSoftPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.18); }
+  100% { transform: scale(1); }
 }
 
-/* Hover: Lift and Icon Nudge */
+.dock-action-btn .dock-btn-icon {
+  animation: iconSoftPulse 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.35s both;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+/* Hover: Lift and Icon Scale */
 .dock-action-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 24px rgba(31, 58, 46, 0.12);
@@ -17618,7 +17811,7 @@ mark.search-highlight {
 }
 
 .dock-action-btn:hover .dock-btn-icon {
-  transform: translateX(3px);
+  transform: scale(1.22);
 }
 
 .dock-action-btn.primary {
@@ -17715,6 +17908,8 @@ mark.search-highlight {
 }
 
 .stats-container {
+  position: relative;
+  overflow: hidden;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 0;
@@ -17724,6 +17919,25 @@ mark.search-highlight {
   color: #FFFFFF;
   box-shadow: 0 16px 36px rgba(31, 58, 46, 0.18);
   border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Thin gold line that draws across the band on first view */
+.stats-gold-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, #C9A227 20%, #F3C644 50%, #C9A227 80%, transparent 100%);
+  transform-origin: left center;
+  transform: scaleX(0);
+  transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.15s;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.stats-banner-strip.is-revealed .stats-gold-line {
+  transform: scaleX(1);
 }
 
 @media (max-width: 992px) {
@@ -17868,37 +18082,42 @@ mark.search-highlight {
   gap: 10px;
 }
 
-.festivals-scroll-tray {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+/* Festival strip: horizontal scroll-snap with edge fade and drag support */
+.festivals-tray-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent 0%, black 20px, black calc(100% - 20px), transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20px, black calc(100% - 20px), transparent 100%);
 }
 
-@media (max-width: 680px) {
-  .festivals-scroll-tray {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 16px;
-    padding-bottom: 16px;
-    margin-left: -20px;
-    margin-right: -20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    scrollbar-width: none;
-  }
-  .festivals-scroll-tray::-webkit-scrollbar {
-    display: none;
-  }
-  .festival-strip-tile {
-    min-width: 280px;
-    max-width: 280px;
-    flex-shrink: 0;
-    scroll-snap-align: start;
-  }
+.festivals-scroll-tray {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding: 8px 16px 20px 16px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  cursor: grab;
+  user-select: none;
+  will-change: scroll-position;
+}
+
+.festivals-scroll-tray::-webkit-scrollbar {
+  display: none;
+}
+
+.festivals-scroll-tray.is-dragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
 }
 
 .festival-strip-tile {
+  flex: 0 0 280px;
+  min-width: 280px;
+  max-width: 280px;
+  scroll-snap-align: start;
   display: flex;
   flex-direction: column;
   background: #FFFFFF;
@@ -17907,12 +18126,13 @@ mark.search-highlight {
   overflow: hidden;
   cursor: pointer;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.2s ease;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.2s ease;
+  will-change: transform;
 }
 
 .festival-strip-tile:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 32px rgba(31, 58, 46, 0.12);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(31, 58, 46, 0.14);
   border-color: var(--gold, #C9A227);
 }
 
@@ -17931,11 +18151,12 @@ mark.search-highlight {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
 }
 
 .festival-strip-tile:hover .fest-tile-img {
-  transform: scale(1.05);
+  transform: scale(1.06);
 }
 
 .fest-icon-orb {
@@ -17950,6 +18171,7 @@ mark.search-highlight {
   flex-shrink: 0;
 }
 
+/* Date chip: 3D perspective flip on reveal */
 .fest-date-chip {
   position: absolute;
   top: 14px;
@@ -17964,6 +18186,17 @@ mark.search-highlight {
   align-items: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   z-index: 2;
+  transform-origin: center center;
+  transform: perspective(600px) rotateY(85deg);
+  opacity: 0;
+  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease-out;
+  transition-delay: calc(var(--tile-index, 0) * 85ms + 150ms);
+  will-change: transform, opacity;
+}
+
+.festivals-strip-section.is-revealed .fest-date-chip {
+  transform: perspective(600px) rotateY(0deg);
+  opacity: 1;
 }
 
 .fest-chip-month {
@@ -18125,13 +18358,14 @@ mark.search-highlight {
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  will-change: transform;
 }
 
 .destination-card.interactive-hover:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 32px rgba(31, 58, 46, 0.12);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(31, 58, 46, 0.14);
   border-color: #D6D4CB;
 }
 
@@ -18147,11 +18381,21 @@ mark.search-highlight {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
 }
 
 .destination-card.interactive-hover:hover .card-thumb-img {
-  transform: scale(1.05);
+  transform: scale(1.06);
+}
+
+/* Heart beat animation when saving */
+@keyframes heartBeat {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.32); }
+  50% { transform: scale(0.92); }
+  75% { transform: scale(1.18); }
+  100% { transform: scale(1); }
 }
 
 .destination-card .card-heart-btn {
@@ -18167,7 +18411,7 @@ mark.search-highlight {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), background 0.2s ease;
   backdrop-filter: blur(4px);
   z-index: 2;
 }
@@ -18175,6 +18419,32 @@ mark.search-highlight {
 .destination-card .card-heart-btn:hover {
   transform: scale(1.1);
   background: rgba(0, 0, 0, 0.7);
+}
+
+.destination-card .card-heart-btn:active svg,
+.destination-card .card-heart-btn.is-saved svg,
+.save-button:active svg,
+.save-button.saved svg,
+.nav-wishlist-icon-btn:active svg {
+  animation: heartBeat 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Arrow nudge on links */
+.destination-card .card-explore-btn svg,
+.fest-plan-link svg,
+.link-view-all-festivals svg,
+.hero-primary-btn .btn-arrow,
+.text-link svg {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.destination-card .card-explore-btn:hover svg,
+.fest-plan-link:hover svg,
+.link-view-all-festivals:hover svg,
+.hero-primary-btn:hover .btn-arrow,
+.text-link:hover svg {
+  transform: translateX(4px);
 }
 
 .destination-card .card-category-badge {
