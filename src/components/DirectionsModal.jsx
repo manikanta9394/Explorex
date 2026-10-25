@@ -8,6 +8,7 @@ import { DirectionsErrorBoundary } from './ErrorBoundary'
 import { useTravelMode } from '../context/useTravelMode'
 import { useUserLocation } from '../context/useUserLocation'
 import TravelModeSegmentedControl from './TravelModeSegmentedControl'
+import { Modal } from './PortalDialog'
 
 const DEFAULT_START = {
   name: 'Charminar, Hyderabad',
@@ -135,10 +136,17 @@ export default function DirectionsModal({ isOpen, onClose, destination }) {
   const instructions = routeData?.instructions || []
 
   return (
-    <div className="directions-modal-overlay" onClick={onClose}>
-      <div className="directions-modal-card" onClick={(e) => e.stopPropagation()}>
-        {/* Modal Header */}
-        <div className="directions-header">
+    <Modal
+      isOpen={isOpen}
+      onClose={onClose}
+      className="directions-modal-overlay"
+      contentClassName="directions-modal-card"
+      maxWidth="960px"
+      ariaLabel={`Directions to ${destName}`}
+      raw
+    >
+      {/* Modal Header */}
+      <div className="directions-header">
           <div className="header-title-wrap">
             <span className="eyebrow"><Navigation size={13} /> Route directions</span>
             <h2>{destName}</h2>
@@ -283,7 +291,6 @@ export default function DirectionsModal({ isOpen, onClose, destination }) {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+    </Modal>
   )
 }

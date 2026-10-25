@@ -17,6 +17,7 @@ import {
 import { useAuth } from '../context/useAuth'
 import { useToast } from '../context/useToast'
 import { submitFeedback, fetchUserFeedback } from '../services/feedbackService'
+import { Drawer } from './PortalDialog'
 
 // Custom event name for opening drawer with pre-filled payload
 export const OPEN_FEEDBACK_EVENT = 'explorex:open_feedback'
@@ -132,18 +133,18 @@ export default function FeedbackDrawer({ currentRoute, activePlace = null }) {
         </button>
       </div>
 
-      {/* Slide-over Backdrop & Drawer */}
-      {isOpen && (
-        <div className="feedback-drawer-backdrop" onClick={() => setIsOpen(false)}>
-          <aside
-            className="feedback-drawer-container"
-            onClick={(e) => e.stopPropagation()}
-            role="dialog"
-            aria-modal="true"
-            aria-label="Feedback & Reports"
-          >
-            {/* Drawer Header */}
-            <div className="feedback-drawer-header">
+      {/* Slide-over Backdrop & Drawer via React Portal */}
+      <Drawer
+        isOpen={isOpen}
+        onClose={() => setIsOpen(false)}
+        className="feedback-drawer-backdrop"
+        contentClassName="feedback-drawer-container"
+        maxWidth="520px"
+        ariaLabel="Feedback & Reports"
+        raw
+      >
+        {/* Drawer Header */}
+        <div className="feedback-drawer-header">
               <div className="drawer-title-row">
                 <div className="drawer-icon-orb">
                   <MessageSquarePlus size={20} color="#C9A227" />
@@ -427,9 +428,7 @@ export default function FeedbackDrawer({ currentRoute, activePlace = null }) {
                 )}
               </div>
             )}
-          </aside>
-        </div>
-      )}
+      </Drawer>
     </>
   )
 }

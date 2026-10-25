@@ -9,6 +9,17 @@
   --serif: 'Playfair Display', 'Fraunces', Georgia, serif;
   --sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
+  /* Hierarchical Z-Index Scale */
+  /* content < sticky bars < navbar < dropdowns < drawer < modal < toast < SOS emergency */
+  --z-content: 1;
+  --z-sticky: 100;
+  --z-navbar: 500;
+  --z-dropdown: 600;
+  --z-drawer: 700;
+  --z-modal: 800;
+  --z-toast: 900;
+  --z-sos: 1000;
+
   /* Strict 8px Spacing Grid */
   --space-8: 8px;
   --space-16: 16px;
@@ -1205,7 +1216,7 @@ button:active:not(:disabled) {
 .directions-modal-overlay {
   position: fixed;
   inset: 0;
-  z-index: 9999;
+  z-index: var(--z-modal);
   background: rgba(15, 23, 20, 0.65);
   backdrop-filter: blur(8px);
   display: flex;
@@ -1778,7 +1789,7 @@ button:active:not(:disabled) {
 .place-modal-overlay {
   position: fixed;
   inset: 0;
-  z-index: 10000;
+  z-index: var(--z-modal);
   background: rgba(15, 23, 20, 0.65);
   backdrop-filter: blur(8px);
   display: flex;
@@ -2601,7 +2612,7 @@ button:active:not(:disabled) {
   bottom: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 9999;
+  z-index: var(--z-modal);
   background: rgba(15, 25, 20, 0.7);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -2873,7 +2884,7 @@ button:active:not(:disabled) {
   border-radius: 12px;
   box-shadow: 0 12px 32px rgba(26, 26, 26, 0.15);
   padding: 6px;
-  z-index: 1100;
+  z-index: var(--z-dropdown);
   animation: dropdownFade 0.2s ease-out;
 }
 
@@ -3111,7 +3122,7 @@ button:active:not(:disabled) {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: var(--z-navbar);
   width: 100%;
   transition: transform 0.38s cubic-bezier(0.16, 1, 0.3, 1),
               background-color 0.32s cubic-bezier(0.16, 1, 0.3, 1),
@@ -3630,7 +3641,7 @@ button:active:not(:disabled) {
   border-radius: var(--radius-md, 14px);
   box-shadow: 0 16px 38px rgba(20, 40, 31, 0.16);
   padding: 8px;
-  z-index: 1050;
+  z-index: var(--z-dropdown);
 }
 
 .nav-profile-dropdown.animated-dropdown {
@@ -3827,7 +3838,7 @@ button:active:not(:disabled) {
   background: rgba(20, 40, 31, 0.6);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  z-index: 1200;
+  z-index: var(--z-drawer);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
@@ -3845,7 +3856,7 @@ button:active:not(:disabled) {
   bottom: 0;
   width: min(340px, 86vw);
   background: var(--cream, #F7F5F0);
-  z-index: 1201;
+  z-index: var(--z-drawer);
   transform: translateX(100%);
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   box-shadow: -10px 0 35px rgba(20, 40, 31, 0.25);
@@ -4184,7 +4195,7 @@ button:active:not(:disabled) {
   background: rgba(20, 40, 31, 0.65);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  z-index: 1300;
+  z-index: var(--z-modal);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9149,7 +9160,7 @@ button:active:not(:disabled) {
   right: 0;
   height: 3.5px;
   background: transparent;
-  z-index: 99999;
+  z-index: calc(var(--z-navbar) + 1);
   pointer-events: none;
 }
 
@@ -12484,7 +12495,7 @@ button:active:not(:disabled) {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10000;
+  z-index: var(--z-sos);
   padding: 20px;
 }
 
@@ -13668,7 +13679,7 @@ button:active:not(:disabled) {
   inset: 0;
   background: rgba(15, 30, 23, 0.75);
   backdrop-filter: blur(8px);
-  z-index: 10000;
+  z-index: var(--z-modal);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14170,7 +14181,7 @@ mark.search-highlight {
   border: 1.5px solid #C9A227;
   border-radius: 12px;
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
-  z-index: 2000;
+  z-index: var(--z-dropdown);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -15758,7 +15769,7 @@ mark.search-highlight {
   position: absolute;
   top: -60px;
   left: 16px;
-  z-index: 99999;
+  z-index: calc(var(--z-navbar) + 10);
   background: #1F3A2E;
   color: #FFF9E6;
   padding: 10px 18px;
@@ -15786,7 +15797,7 @@ mark.search-highlight {
   position: fixed;
   bottom: 24px;
   right: 24px;
-  z-index: 9999;
+  z-index: var(--z-toast);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -15870,7 +15881,7 @@ mark.search-highlight {
   position: fixed;
   bottom: 24px;
   right: 24px;
-  z-index: 850;
+  z-index: var(--z-sticky);
   pointer-events: none;
 }
 
@@ -15956,7 +15967,7 @@ mark.search-highlight {
   inset: 0;
   background: rgba(15, 28, 22, 0.6);
   backdrop-filter: blur(4px);
-  z-index: 1000;
+  z-index: var(--z-drawer);
   animation: fadeIn 0.2s ease;
 }
 
@@ -15970,7 +15981,7 @@ mark.search-highlight {
   background: #FBF8F3;
   border-left: 1px solid #E5DFD3;
   box-shadow: -10px 0 40px rgba(0, 0, 0, 0.2);
-  z-index: 1001;
+  z-index: var(--z-drawer);
   display: flex;
   flex-direction: column;
   animation: drawerSlideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
@@ -16581,7 +16592,7 @@ mark.search-highlight {
   inset: 0;
   background: rgba(15, 28, 22, 0.7);
   backdrop-filter: blur(4px);
-  z-index: 2000;
+  z-index: var(--z-modal);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20297,4 +20308,172 @@ mark.search-highlight {
 .resume-chat-btn:hover {
   background: #ffffff;
   border-color: var(--gold);
+}
+
+/* ==========================================================================
+   SHARED PORTAL DIALOG, MODAL & DRAWER SYSTEM
+   ========================================================================== */
+.portal-dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 23, 20, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 16px;
+  animation: portalFadeIn 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  box-sizing: border-box;
+}
+
+.portal-modal-backdrop {
+  z-index: var(--z-modal, 800);
+}
+
+.portal-drawer-backdrop {
+  z-index: var(--z-drawer, 700);
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.portal-emergency-backdrop {
+  z-index: var(--z-sos, 1000) !important;
+  background: rgba(18, 5, 5, 0.75);
+}
+
+.portal-dialog-card {
+  position: relative;
+  background: #ffffff;
+  color: var(--ink, #1A1A1A);
+  border-radius: var(--radius-lg, 24px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.22), 0 4px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--line, #E2E0D8);
+  max-height: calc(100vh - 40px);
+  max-width: 560px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: portalScaleIn 0.32s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.portal-drawer-card {
+  height: 100vh;
+  max-height: 100vh;
+  border-radius: 24px 0 0 24px;
+  max-width: 480px;
+  width: 100%;
+  animation: portalDrawerSlideIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (max-width: 640px) {
+  .portal-drawer-backdrop {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .portal-drawer-card {
+    height: auto;
+    max-height: 88vh;
+    border-radius: 24px 24px 0 0;
+    animation: portalDrawerSlideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+}
+
+.portal-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--line, #E2E0D8);
+  background: rgba(247, 245, 240, 0.9);
+  color: var(--ink, #1A1A1A);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.2s ease;
+}
+
+.portal-close-btn:hover {
+  background: var(--terracotta, #C9682D);
+  color: #ffffff;
+  border-color: var(--terracotta, #C9682D);
+  transform: rotate(90deg);
+}
+
+.portal-dialog-header {
+  padding: 24px 28px 16px;
+  border-bottom: 1px solid var(--line, #E2E0D8);
+  flex-shrink: 0;
+}
+
+.portal-dialog-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--green, #1F3A2E);
+  font-family: var(--serif, 'Playfair Display', serif);
+}
+
+.portal-dialog-subtitle {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: var(--muted, #5C5C5C);
+  line-height: 1.45;
+}
+
+.portal-dialog-body {
+  padding: 24px 28px;
+  overflow-y: auto;
+  flex: 1;
+  -webkit-overflow-scrolling: touch;
+}
+
+.portal-dialog-footer {
+  padding: 16px 28px;
+  border-top: 1px solid var(--line, #E2E0D8);
+  background: rgba(247, 245, 240, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+@keyframes portalFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes portalScaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.94) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes portalDrawerSlideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes portalDrawerSlideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }

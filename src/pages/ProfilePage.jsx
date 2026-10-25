@@ -23,6 +23,7 @@ import { useLanguage } from '../context/LanguageContext'
 import { useSavedPlaces } from '../context/useSavedPlaces'
 import { useToast } from '../context/useToast'
 import { allDatasetPlaces } from '../data/tourismData'
+import { Modal } from '../components/PortalDialog'
 
 const AVATAR_OPTIONS = [
   { id: 'peacock', label: 'Mayura (Peacock)', emoji: '🦚', color: '#1E3A8A' },
@@ -400,7 +401,11 @@ export default function ProfilePage({ onNavigate }) {
                         </span>
                       </div>
                     </div>
-                    <button type="button" className="resume-chat-btn">
+                    <button
+                      type="button"
+                      className="resume-chat-btn"
+                      onClick={() => onNavigate?.('/ai')}
+                    >
                       Resume <ArrowRight size={12} />
                     </button>
                   </div>
@@ -510,38 +515,42 @@ export default function ProfilePage({ onNavigate }) {
         )}
       </div>
 
-      {/* Delete Confirmation Modal */}
-      {showDeleteModal && (
-        <div className="profile-delete-modal-backdrop" onClick={() => setShowDeleteModal(false)}>
-          <div className="profile-delete-modal-inner" onClick={(e) => e.stopPropagation()}>
-            <div className="modal-icon-orb-danger">
-              <AlertTriangle size={32} color="#EF4444" />
-            </div>
-            <h3>Permanently Delete Account?</h3>
-            <p>
-              Are you sure you want to delete your Explorex profile? All your saved places, planned trips, and chat history will be permanently cleared from this device and database.
-            </p>
-            <div className="modal-actions-row">
-              <button
-                type="button"
-                className="btn-modal-cancel"
-                onClick={() => setShowDeleteModal(false)}
-                disabled={deleting}
-              >
-                Cancel
-              </button>
-              <button
-                type="button"
-                className="btn-modal-danger-confirm"
-                onClick={handleDeleteAccount}
-                disabled={deleting}
-              >
-                {deleting ? 'Deleting Data...' : 'Yes, Delete Everything'}
-              </button>
-            </div>
-          </div>
+      {/* Delete Confirmation Modal via React Portal */}
+      <Modal
+        isOpen={showDeleteModal}
+        onClose={() => setShowDeleteModal(false)}
+        className="profile-delete-modal-backdrop"
+        contentClassName="profile-delete-modal-inner"
+        maxWidth="460px"
+        ariaLabel="Permanently Delete Account"
+        raw
+      >
+        <div className="modal-icon-orb-danger">
+          <AlertTriangle size={32} color="#EF4444" />
         </div>
-      )}
+        <h3>Permanently Delete Account?</h3>
+        <p>
+          Are you sure you want to delete your Explorex profile? All your saved places, planned trips, and chat history will be permanently cleared from this device and database.
+        </p>
+        <div className="modal-actions-row">
+          <button
+            type="button"
+            className="btn-modal-cancel"
+            onClick={() => setShowDeleteModal(false)}
+            disabled={deleting}
+          >
+            Cancel
+          </button>
+          <button
+            type="button"
+            className="btn-modal-danger-confirm"
+            onClick={handleDeleteAccount}
+            disabled={deleting}
+          >
+            {deleting ? 'Deleting Data...' : 'Yes, Delete Everything'}
+          </button>
+        </div>
+      </Modal>
     </div>
   )
 }

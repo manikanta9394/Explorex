@@ -8,6 +8,7 @@ import { formatPriceWithUnit } from '../utils/formatCurrency'
 import { openGoogleMapsDirections } from '../utils/googleMaps'
 import SafeImage from './SafeImage'
 import { DistanceBadgeErrorBoundary } from './ErrorBoundary'
+import { Modal } from './PortalDialog'
 
 function getRuleIcon(ruleText) {
   const text = ruleText.toLowerCase()
@@ -68,32 +69,6 @@ export default function PlaceDetailModal({
   const { activeOrigin } = useUserLocation()
 
   const saved = isSaved(place?.id)
-
-  // ESC key listener to close detail modal
-  useEffect(() => {
-    if (!isOpen) return
-
-    const handleKeyDown = (e) => {
-      if (e.key === 'Escape') {
-        onClose()
-      }
-    }
-
-    window.addEventListener('keydown', handleKeyDown)
-    return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [isOpen, onClose])
-
-  // Prevent background body scrolling when detail modal is open
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = ''
-    }
-    return () => {
-      document.body.style.overflow = ''
-    }
-  }, [isOpen])
 
   // Calculate 3 nearest place suggestions mixed across categories sorted by distance
   const nearbySuggestions = useMemo(() => {
@@ -223,12 +198,19 @@ export default function PlaceDetailModal({
   ]
 
   return (
-    <div className="place-modal-overlay" onClick={onClose}>
-      <div className="place-modal-card" onClick={(e) => e.stopPropagation()}>
-        {/* Mobile Swipe-down indicator */}
-        <div className="mobile-sheet-handle" onClick={onClose}>
-          <span className="handle-bar" />
-        </div>
+    <Modal
+      isOpen={isOpen}
+      onClose={onClose}
+      className="place-modal-overlay"
+      contentClassName="place-modal-card"
+      maxWidth="640px"
+      ariaLabel={place.name}
+      raw
+    >
+      {/* Mobile Swipe-down indicator */}
+      <div className="mobile-sheet-handle" onClick={onClose}>
+        <span className="handle-bar" />
+      </div>
 
         {/* Hero Image Section */}
         <div className="modal-hero-image-wrap">
@@ -408,7 +390,6 @@ export default function PlaceDetailModal({
             </button>
           </div>
         </div>
-      </div>
-    </div>
+    </Modal>
   )
 }

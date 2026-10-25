@@ -19,6 +19,7 @@ import { adminService } from '../../services/adminService'
 import { allDatasetPlaces } from '../../data/tourismData'
 import { resolveImageSrc } from '../../utils/imageUtils'
 import { AdminWidgetErrorBoundary } from '../../components/ErrorBoundary'
+import { Modal } from '../../components/PortalDialog'
 
 export default function AdminPlacesPage() {
   const [places, setPlaces] = useState([])
@@ -561,18 +562,24 @@ export default function AdminPlacesPage() {
       </div>
       </AdminWidgetErrorBoundary>
 
-      {/* Create / Edit Modal */}
-      {modalOpen && (
-        <div className="admin-modal-backdrop" onClick={() => setModalOpen(false)}>
-          <div className="admin-modal-box" onClick={(e) => e.stopPropagation()}>
-            <div className="modal-header">
-              <h3>{editingPlace ? `Edit "${editingPlace.name}"` : 'Create New Destination'}</h3>
-              <button type="button" className="sidebar-collapse-toggle" onClick={() => setModalOpen(false)}>
-                <X size={16} />
-              </button>
-            </div>
+      {/* Create / Edit Modal via React Portal */}
+      <Modal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        className="admin-modal-backdrop"
+        contentClassName="admin-modal-box"
+        maxWidth="860px"
+        ariaLabel={editingPlace ? `Edit ${editingPlace.name}` : 'Create New Destination'}
+        raw
+      >
+        <div className="modal-header">
+          <h3>{editingPlace ? `Edit "${editingPlace.name}"` : 'Create New Destination'}</h3>
+          <button type="button" className="sidebar-collapse-toggle" onClick={() => setModalOpen(false)}>
+            <X size={16} />
+          </button>
+        </div>
 
-            <form onSubmit={handleSavePlace}>
+        <form onSubmit={handleSavePlace}>
               <div className="modal-body">
                 {duplicateWarning && (
                   <div
@@ -777,9 +784,7 @@ export default function AdminPlacesPage() {
                 </button>
               </div>
             </form>
-          </div>
-        </div>
-      )}
+      </Modal>
     </div>
   )
 }

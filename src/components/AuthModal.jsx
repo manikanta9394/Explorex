@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { CheckCircle2, Lock, Mail, Sparkles, User, X } from 'lucide-react'
 import { useAuth } from '../context/useAuth'
+import { Modal } from './PortalDialog'
 
 export default function AuthModal({ isOpen, onClose, initialMode = 'login', onNavigate }) {
   const [mode, setMode] = useState(initialMode) // 'login' | 'signup'
@@ -21,16 +22,6 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onNa
       setSuccess('')
     }
   }
-
-  // ESC key listener
-  useEffect(() => {
-    if (!isOpen) return
-    const handleKeyDown = (e) => {
-      if (e.key === 'Escape') onClose()
-    }
-    window.addEventListener('keydown', handleKeyDown)
-    return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [isOpen, onClose])
 
   if (!isOpen) return null
 
@@ -91,13 +82,20 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onNa
   }
 
   return (
-    <div className="auth-modal-overlay" onClick={onClose}>
-      <div className="auth-modal-card" onClick={(e) => e.stopPropagation()}>
-        <button className="modal-close-round" onClick={onClose} aria-label="Close authentication modal">
-          <X size={18} />
-        </button>
+    <Modal
+      isOpen={isOpen}
+      onClose={onClose}
+      className="auth-modal-overlay"
+      contentClassName="auth-modal-card"
+      maxWidth="460px"
+      ariaLabel={mode === 'login' ? 'Log in to Explorex' : 'Create Free Account'}
+      raw
+    >
+      <button className="modal-close-round" onClick={onClose} aria-label="Close authentication modal">
+        <X size={18} />
+      </button>
 
-        <div className="auth-modal-header">
+      <div className="auth-modal-header">
           <span className="auth-eyebrow">
             <Sparkles size={14} /> Explorex Intelligence
           </span>
@@ -231,7 +229,6 @@ export default function AuthModal({ isOpen, onClose, initialMode = 'login', onNa
             )}
           </form>
         )}
-      </div>
-    </div>
+    </Modal>
   )
 }

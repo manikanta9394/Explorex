@@ -512,7 +512,14 @@ export default function HomePage({ onNavigate, onSelectPlace }) {
                     </p>
                     <div className="card-footer-row">
                       <span className="card-price-badge">{priceDisplay}</span>
-                      <button type="button" className="card-explore-btn">
+                      <button
+                        type="button"
+                        className="card-explore-btn"
+                        onClick={(e) => {
+                          e.stopPropagation()
+                          handlePlaceClick(place)
+                        }}
+                      >
                         <span>View Details</span>
                         <ArrowRight size={12} />
                       </button>

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, useMemo } from 'react'
+import { createPortal } from 'react-dom'
 import {
   Calendar,
   CalendarDays,
@@ -533,34 +534,37 @@ export default function Navbar({
         </div>
       </header>
 
-      {/* Mobile Slide-in Drawer with Staggered Links */}
-      <div
-        className={`mobile-drawer-backdrop ${mobileDrawerOpen ? 'drawer-visible' : ''}`}
-        onClick={() => setMobileDrawerOpen(false)}
-        aria-hidden="true"
-      />
+      {/* Mobile Slide-in Drawer with Staggered Links via React Portal */}
+      {typeof document !== 'undefined' &&
+        createPortal(
+          <>
+            <div
+              className={`mobile-drawer-backdrop ${mobileDrawerOpen ? 'drawer-visible' : ''}`}
+              onClick={() => setMobileDrawerOpen(false)}
+              aria-hidden="true"
+            />
 
-      <aside
-        className={`mobile-drawer-panel ${mobileDrawerOpen ? 'drawer-visible' : ''}`}
-        aria-label="Mobile Navigation"
-        role="dialog"
-        aria-modal="true"
-      >
-        {/* Drawer Header */}
-        <div className="drawer-header">
-          <Logo onClick={(e) => handleLinkClick(e, '/')} />
-          <button
-            type="button"
-            className="drawer-close-btn"
-            onClick={() => setMobileDrawerOpen(false)}
-            aria-label="Close menu"
-          >
-            <span className="burger-box close-x-box">
-              <span className="burger-line line-top close-diag-1" />
-              <span className="burger-line line-bot close-diag-2" />
-            </span>
-          </button>
-        </div>
+            <aside
+              className={`mobile-drawer-panel ${mobileDrawerOpen ? 'drawer-visible' : ''}`}
+              aria-label="Mobile Navigation"
+              role="dialog"
+              aria-modal="true"
+            >
+              {/* Drawer Header */}
+              <div className="drawer-header">
+                <Logo onClick={(e) => handleLinkClick(e, '/')} />
+                <button
+                  type="button"
+                  className="drawer-close-btn"
+                  onClick={() => setMobileDrawerOpen(false)}
+                  aria-label="Close menu"
+                >
+                  <span className="burger-box close-x-box">
+                    <span className="burger-line line-top close-diag-1" />
+                    <span className="burger-line line-bot close-diag-2" />
+                  </span>
+                </button>
+              </div>
 
         {/* User Status Card inside Drawer */}
         <div className="drawer-user-section stagger-item" style={{ '--stagger': 0 }}>
@@ -756,6 +760,9 @@ export default function Navbar({
           </p>
         </div>
       </aside>
+    </>,
+    document.body
+  )}
 
       {/* Auth Modal (Fallback) */}
       <AuthModal

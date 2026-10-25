@@ -12,6 +12,7 @@ import {
 } from 'lucide-react'
 import { useUserLocation } from '../context/useUserLocation'
 import { SOSPopupErrorBoundary } from './ErrorBoundary'
+import { SOSModal } from './PortalDialog'
 
 export const EMERGENCY_NUMBERS = [
   {
@@ -132,23 +133,24 @@ export default function EmergencyHelpModal({ isOpen, onClose }) {
   }
 
   return (
-    <div className="emergency-modal-backdrop" onClick={onClose}>
-      <div
-        className="emergency-modal-card"
-        onClick={(e) => e.stopPropagation()}
-        role="dialog"
-        aria-modal="true"
-        aria-label="Emergency and Help Directory"
+    <SOSModal
+      isOpen={isOpen}
+      onClose={onClose}
+      className="emergency-modal-backdrop"
+      contentClassName="emergency-modal-card"
+      maxWidth="780px"
+      ariaLabel="Emergency and Help Directory"
+      raw
+    >
+      <button
+        type="button"
+        className="modal-close-btn"
+        onClick={onClose}
+        aria-label="Close modal"
       >
-        <button
-          type="button"
-          className="modal-close-btn"
-          onClick={onClose}
-          aria-label="Close modal"
-        >
-          <X size={18} />
-        </button>
-        <SOSPopupErrorBoundary>
+        <X size={18} />
+      </button>
+      <SOSPopupErrorBoundary>
           {/* Header */}
           <div className="emergency-modal-header">
             <div className="emergency-header-title">
@@ -257,8 +259,7 @@ export default function EmergencyHelpModal({ isOpen, onClose }) {
             Close Directory
           </button>
         </div>
-        </SOSPopupErrorBoundary>
-      </div>
-    </div>
+      </SOSPopupErrorBoundary>
+    </SOSModal>
   )
 }

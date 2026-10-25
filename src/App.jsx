@@ -23,6 +23,7 @@ import { openGoogleMapsDirections } from './utils/googleMaps'
 import { analytics } from './services/analytics'
 import AnnouncementBanner from './components/AnnouncementBanner'
 import NetworkStatusIndicator from './components/NetworkStatusIndicator'
+import DirectionsModal from './components/DirectionsModal'
 import AdminLayout from './admin/AdminLayout'
 import AdminAuthGuard from './admin/AdminAuthGuard'
 import './admin/admin.css'
@@ -164,6 +165,8 @@ function AppContent() {
   const { travelMode } = useTravelMode()
   const { userCoords } = useUserLocation()
   const { authModalOpen, closeAuthModal, authModalMode } = useAuth()
+  const [directionsModalOpen, setDirectionsModalOpen] = useState(false)
+  const [directionsTarget, setDirectionsTarget] = useState(null)
 
   useEffect(() => {
     const handleRouteChange = () => {
@@ -206,8 +209,10 @@ function AppContent() {
   }
 
   const handleGetDirections = (place) => {
-    const userLatLng = userCoords ? { lat: userCoords[1], lng: userCoords[0] } : null
-    openGoogleMapsDirections(place, travelMode, userLatLng)
+    if (place) {
+      setDirectionsTarget(place)
+      setDirectionsModalOpen(true)
+    }
   }
 
   // Admin App Login Route (dense slate aesthetic, no user hero/footer)
@@ -457,6 +462,13 @@ function AppContent() {
 
         {/* Global Offline / Online Network Indicator */}
         <NetworkStatusIndicator />
+
+        {/* Global Directions Modal with In-App Leaflet Routing */}
+        <DirectionsModal
+          isOpen={directionsModalOpen}
+          onClose={() => setDirectionsModalOpen(false)}
+          destination={directionsTarget}
+        />
 
         <AuthModal
           isOpen={authModalOpen}

@@ -1,8 +1,9 @@
-import { useEffect, useMemo } from 'react'
+import { useMemo } from 'react'
 import { ArrowRight, Heart, MapPin, Navigation, Star, Trash2, X } from 'lucide-react'
 import { useSavedPlaces } from '../context/useSavedPlaces'
 import { formatPriceWithUnit } from '../utils/formatCurrency'
 import SafeImage from './SafeImage'
+import { Modal } from './PortalDialog'
 
 export default function SavedPlacesModal({
   isOpen,
@@ -12,28 +13,6 @@ export default function SavedPlacesModal({
   onGetDirections,
 }) {
   const { savedIds, toggleSave } = useSavedPlaces()
-
-  // ESC key listener to close modal
-  useEffect(() => {
-    if (!isOpen) return
-    const handleKeyDown = (e) => {
-      if (e.key === 'Escape') onClose()
-    }
-    window.addEventListener('keydown', handleKeyDown)
-    return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [isOpen, onClose])
-
-  // Prevent background scrolling when modal is open
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = ''
-    }
-    return () => {
-      document.body.style.overflow = ''
-    }
-  }, [isOpen])
 
   // Look up place objects for all saved IDs
   const savedItems = useMemo(() => {
@@ -47,10 +26,17 @@ export default function SavedPlacesModal({
   if (!isOpen) return null
 
   return (
-    <div className="saved-modal-overlay" onClick={onClose} role="dialog" aria-modal="true" aria-label="Saved Places">
-      <div className="saved-modal-card" onClick={(e) => e.stopPropagation()}>
-        {/* Header */}
-        <div className="saved-modal-header">
+    <Modal
+      isOpen={isOpen}
+      onClose={onClose}
+      className="saved-modal-overlay"
+      contentClassName="saved-modal-card"
+      maxWidth="740px"
+      ariaLabel="Saved Places"
+      raw
+    >
+      {/* Header */}
+      <div className="saved-modal-header">
           <div className="saved-header-left">
             <span className="saved-heart-badge">
               <Heart size={18} fill="#C9682D" color="#C9682D" />
@@ -175,7 +161,6 @@ export default function SavedPlacesModal({
             </div>
           )}
         </div>
-      </div>
-    </div>
+    </Modal>
   )
 }

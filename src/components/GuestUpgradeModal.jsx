@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Check, Eye, EyeOff, Lock, Mail, Sparkles, User, X } from 'lucide-react'
 import { useAuth } from '../context/useAuth'
+import { Modal } from './PortalDialog'
 
 export default function GuestUpgradeModal({ isOpen, onClose }) {
   const { upgradeGuest, user } = useAuth()
@@ -53,11 +54,18 @@ export default function GuestUpgradeModal({ isOpen, onClose }) {
   }
 
   return (
-    <div className="guest-upgrade-backdrop" onClick={onClose} role="dialog" aria-modal="true">
-      <div className="guest-upgrade-card" onClick={(e) => e.stopPropagation()}>
-        <button type="button" className="upgrade-close-btn" onClick={onClose} aria-label="Close upgrade modal">
-          <X size={18} />
-        </button>
+    <Modal
+      isOpen={isOpen}
+      onClose={onClose}
+      className="guest-upgrade-backdrop"
+      contentClassName="guest-upgrade-card"
+      maxWidth="480px"
+      ariaLabel="Upgrade to Permanent Account"
+      raw
+    >
+      <button type="button" className="upgrade-close-btn" onClick={onClose} aria-label="Close upgrade modal">
+        <X size={18} />
+      </button>
 
         {success ? (
           <div className="upgrade-success-view">
@@ -159,7 +167,6 @@ export default function GuestUpgradeModal({ isOpen, onClose }) {
             </form>
           </>
         )}
-      </div>
-    </div>
+    </Modal>
   )
 }
