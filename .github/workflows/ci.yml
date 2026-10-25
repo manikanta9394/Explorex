@@ -43,6 +43,8 @@ jobs:
 
       - name: Production Vite Build
         run: npm run build
+        env:
+          VITE_BASE_PATH: /Explorex/
 
       - name: Install Playwright Chromium Browser
         run: npx playwright install --with-deps chromium
