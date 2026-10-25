@@ -150,6 +150,10 @@ export default function LandingHero({ onStartExploring, onAskAI, onSelectPlace, 
               src={slide.image}
               category={slide.category}
               alt={slide.name}
+              width={1920}
+              height={1080}
+              loading={idx === 0 ? 'eager' : 'lazy'}
+              fetchPriority={idx === 0 ? 'high' : 'auto'}
             />
           </div>
         ))}
@@ -276,6 +280,9 @@ export default function LandingHero({ onStartExploring, onAskAI, onSelectPlace, 
                 src={currentSlide.image}
                 category={currentSlide.category}
                 alt={currentSlide.name}
+                width={64}
+                height={64}
+                loading="lazy"
               />
             </div>
             <div className="place-card-meta">
@@ -334,7 +341,14 @@ export default function LandingHero({ onStartExploring, onAskAI, onSelectPlace, 
                   tabIndex={0}
                 >
                   <span className="hero-dot-thumb">
-                    <SafeImage src={slide.image} category={slide.category} alt={slide.name} />
+                    <SafeImage
+                      src={slide.image}
+                      category={slide.category}
+                      alt={slide.name}
+                      width={36}
+                      height={36}
+                      loading="lazy"
+                    />
                   </span>
                 </button>
               ))}

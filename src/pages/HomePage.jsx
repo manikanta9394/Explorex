@@ -388,6 +388,9 @@ export default function HomePage({ onNavigate, onSelectPlace }) {
                         category="attraction"
                         alt={fest.name}
                         className="fest-tile-img"
+                        width={360}
+                        height={200}
+                        loading="lazy"
                       />
                     ) : null}
                     <div className="fest-date-chip" style={{ '--tile-index': idx }}>
@@ -478,6 +481,9 @@ export default function HomePage({ onNavigate, onSelectPlace }) {
                       category={place.category}
                       alt={place.name}
                       className="card-thumb-img"
+                      width={400}
+                      height={240}
+                      loading="lazy"
                     />
                     <button
                       type="button"
@@ -554,6 +560,9 @@ export default function HomePage({ onNavigate, onSelectPlace }) {
                       src={place.image}
                       category={place.category}
                       alt={place.name}
+                      width={80}
+                      height={80}
+                      loading="lazy"
                     />
                   </div>
                   <div className="seasonal-info">

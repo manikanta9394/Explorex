@@ -167,7 +167,7 @@ export default function WelcomePage({ onNavigate }) {
                 </div>
                 <span className="choice-badge-popular">Fastest · 1 Click</span>
               </div>
-              <h3>Continue as Guest</h3>
+              <h2>Continue as Guest</h2>
               <p>
                 Explore freely right now. Your saved places and custom itineraries are stored in our database and can be upgraded anytime.
               </p>
@@ -193,7 +193,7 @@ export default function WelcomePage({ onNavigate }) {
                 </div>
                 <span className="choice-badge-sec">Returning Traveler</span>
               </div>
-              <h3>Sign In</h3>
+              <h2>Sign In</h2>
               <p>
                 Access your existing saved places, customized itineraries, and synced travel preferences across all devices.
               </p>
@@ -218,7 +218,7 @@ export default function WelcomePage({ onNavigate }) {
                 </div>
                 <span className="choice-badge-sec">Permanent Profile</span>
               </div>
-              <h3>Create Account</h3>
+              <h2>Create Account</h2>
               <p>
                 Sign up with your email to create a permanent travel profile with unlimited wishlist saves and cloud-backed plans.
               </p>

@@ -25,12 +25,13 @@ export default function SafeImage({
       alt={alt}
       className={className}
       style={style}
+      loading="lazy"
+      decoding="async"
       onError={() => {
         if (resolved) {
           setFailedSrc(resolved)
         }
       }}
-      loading="lazy"
       {...props}
     />
   )
