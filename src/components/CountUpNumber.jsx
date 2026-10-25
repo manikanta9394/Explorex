@@ -59,7 +59,7 @@ export default function CountUpNumber({ target, suffix = '', duration = 1600 }) 
   }, [target, duration])
 
   return (
-    <span ref={elementRef} className="stat-number">
+    <span ref={elementRef} className="count-up-number stat-number">
       {displayValue}
       {suffix}
     </span>

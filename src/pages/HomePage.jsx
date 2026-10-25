@@ -43,43 +43,68 @@ const REGIONS = [
 const FESTIVALS_STRIP = [
   {
     name: 'Bonalu & Golconda Utsav',
-    dates: 'July – August',
+    month: 'JUL',
+    day: '18',
+    dates: 'July 18 – August 10',
     location: 'Hyderabad, Telangana',
     placeId: 'golconda-fort-hyderabad',
     tag: 'Folk Heritage',
     icon: '🪔',
+    description: "Telangana's premier folk celebration honoring Goddess Mahakali with colorful ghatam processions, brass bands, and sacred offerings at Golconda Fort.",
+    tintBg: 'linear-gradient(135deg, rgba(201, 104, 45, 0.12) 0%, rgba(201, 162, 39, 0.15) 100%)',
+    image: 'https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=500&auto=format&fit=crop&q=80',
   },
   {
     name: 'Diwali & Dev Deepawali',
-    dates: 'October – November',
+    month: 'OCT',
+    day: '24',
+    dates: 'October 24 – November 15',
     location: 'Varanasi, Uttar Pradesh',
     placeId: 'dashashwamedh-ghat-varanasi',
     tag: 'Spiritual Light',
     icon: '✨',
+    description: 'The ancient festival of lights along the riverfront ghats with millions of earthen oil lamps floating on the sacred waters of the Ganges.',
+    tintBg: 'linear-gradient(135deg, rgba(201, 162, 39, 0.15) 0%, rgba(31, 58, 46, 0.12) 100%)',
+    image: 'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?w=500&auto=format&fit=crop&q=80',
   },
   {
     name: 'Pushkar Camel Fair',
-    dates: 'November',
+    month: 'NOV',
+    day: '12',
+    dates: 'November 12 – 20',
     location: 'Pushkar, Rajasthan',
     placeId: 'pushkar-lake-temple',
     tag: 'Desert Culture',
     icon: '🐪',
+    description: 'A vivid desert gathering of adorned camels, folk musicians, turban-tying traditions, and pilgrims bathing at the holy lake.',
+    tintBg: 'linear-gradient(135deg, rgba(201, 104, 45, 0.15) 0%, rgba(247, 245, 240, 0.9) 100%)',
+    image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=500&auto=format&fit=crop&q=80',
   },
   {
     name: 'Hornbill Festival',
-    dates: 'December 1–10',
+    month: 'DEC',
+    day: '01',
+    dates: 'December 1 – 10',
     location: 'Kohima, Nagaland',
     placeId: 'kisama-heritage-village',
     tag: 'Tribal Traditions',
     icon: '🦚',
+    description: 'The celebrated "Festival of Festivals" honoring indigenous Naga warrior heritage, folklore, music, archery, and tribal crafts.',
+    tintBg: 'linear-gradient(135deg, rgba(31, 58, 46, 0.14) 0%, rgba(201, 162, 39, 0.12) 100%)',
+    image: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=500&auto=format&fit=crop&q=80',
   },
   {
     name: 'Sankranti & Kite Festival',
-    dates: 'January 14–16',
+    month: 'JAN',
+    day: '14',
+    dates: 'January 14 – 16',
     location: 'Telangana & Gujarat',
     placeId: 'charminar-hyderabad',
-    tag: 'Harvest Harvest',
+    tag: 'Harvest Fest',
     icon: '🪁',
+    description: 'A joy-filled harvest festival coloring historical city skies with thousands of kites, traditional sweet feasts, and folk dances.',
+    tintBg: 'linear-gradient(135deg, rgba(201, 104, 45, 0.12) 0%, rgba(201, 162, 39, 0.18) 100%)',
+    image: 'https://images.unsplash.com/photo-1518173946687-a4c8a383392e?w=500&auto=format&fit=crop&q=80',
   },
 ]
 
@@ -93,7 +118,10 @@ export default function HomePage({ onNavigate, onSelectPlace }) {
   const [lastViewedPlace, setLastViewedPlace] = useState(null)
   const [lastChatTitle, setLastChatTitle] = useState(null)
 
-  const profileName = user?.name || user?.user_metadata?.name || (user?.email ? user.email.split('@')[0] : 'Explorer')
+  const profileName =
+    user && !user.is_anonymous && !user.is_guest
+      ? user.name || user.user_metadata?.name || (user.email && !user.email.endsWith('@explorex.guest') ? user.email.split('@')[0] : 'Traveler')
+      : 'Guest Explorer'
 
   // Calculate time greeting
   const greetingText = useMemo(() => {
@@ -172,7 +200,7 @@ export default function HomePage({ onNavigate, onSelectPlace }) {
         <div className="greeting-container">
           <div className="greeting-left-meta">
             <span className="greeting-eyebrow">
-              <Sparkles size={14} color="#C9A227" /> Cultural Compass
+              <Sparkles size={13} color="#C9A227" /> Cultural Compass
             </span>
             <h2 className="greeting-headline">{greetingText}</h2>
             <p className="greeting-subtitle">
@@ -180,14 +208,14 @@ export default function HomePage({ onNavigate, onSelectPlace }) {
             </p>
           </div>
 
-          {/* Quick Actions Buttons */}
+          {/* Quick Actions Buttons: Large pill/card buttons in responsive row (stacks on mobile) */}
           <div className="quick-actions-dock">
             <button
               type="button"
               className="dock-action-btn primary"
               onClick={() => onNavigate?.('/planner')}
             >
-              <Compass size={16} />
+              <Compass size={18} className="dock-btn-icon" />
               <span>Plan Trip</span>
             </button>
 
@@ -196,19 +224,19 @@ export default function HomePage({ onNavigate, onSelectPlace }) {
               className="dock-action-btn gold"
               onClick={() => onNavigate?.('/ai')}
             >
-              <Sparkles size={16} />
+              <Sparkles size={18} className="dock-btn-icon" />
               <span>Ask AI Guide</span>
             </button>
 
             <button
               type="button"
-              className="dock-action-btn"
+              className="dock-action-btn tertiary"
               onClick={() => {
                 requestLocation?.()
                 onNavigate?.('/map')
               }}
             >
-              <MapPin size={16} />
+              <MapPin size={18} className="dock-btn-icon" />
               <span>Near Me</span>
             </button>
           </div>
@@ -247,28 +275,38 @@ export default function HomePage({ onNavigate, onSelectPlace }) {
       </section>
 
       {/* ================================================================= */}
-      {/* 2. STATS COUNTER STRIP WITH COUNT-UP NUMBERS                       */}
+      {/* 2. STATS STRIP WITH 5-COLUMN GRID & COUNT-UP NUMBERS              */}
       {/* ================================================================= */}
       <section className="stats-banner-strip reveal-fade-up">
         <div className="stats-container">
           <div className="stat-card reveal-zoom" style={{ '--reveal-index': 0 }}>
-            <CountUpNumber target={560} suffix="+" />
+            <span className="stat-num-serif">
+              <CountUpNumber target={560} suffix="+" />
+            </span>
             <span className="stat-label">Verified Destinations</span>
           </div>
           <div className="stat-card reveal-zoom" style={{ '--reveal-index': 1 }}>
-            <CountUpNumber target={170} suffix="+" />
+            <span className="stat-num-serif">
+              <CountUpNumber target={170} suffix="+" />
+            </span>
             <span className="stat-label">ASI &amp; UNESCO Monuments</span>
           </div>
           <div className="stat-card reveal-zoom" style={{ '--reveal-index': 2 }}>
-            <CountUpNumber target={36} />
+            <span className="stat-num-serif">
+              <CountUpNumber target={36} />
+            </span>
             <span className="stat-label">States &amp; Union Territories</span>
           </div>
           <div className="stat-card reveal-zoom" style={{ '--reveal-index': 3 }}>
-            <CountUpNumber target={3} suffix=" Modes" />
+            <span className="stat-num-serif">
+              <CountUpNumber target={3} suffix=" Modes" />
+            </span>
             <span className="stat-label">Walk · Cycle · Drive</span>
           </div>
           <div className="stat-card reveal-zoom" style={{ '--reveal-index': 4 }}>
-            <CountUpNumber target={100} suffix="%" />
+            <span className="stat-num-serif">
+              <CountUpNumber target={100} suffix="%" />
+            </span>
             <span className="stat-label">Official Ticket Rates in ₹</span>
           </div>
         </div>
@@ -278,43 +316,75 @@ export default function HomePage({ onNavigate, onSelectPlace }) {
       {/* 3. FESTIVAL CALENDAR STRIP                                        */}
       {/* ================================================================= */}
       <section className="festivals-strip-section reveal-fade-up">
-        <div className="section-head-wrap">
-          <div className="head-left">
-            <span className="section-eyebrow">
-              <Calendar size={14} color="#C9A227" /> Living Cultural Traditions
-            </span>
-            <h3 className="section-title">Upcoming Indian Cultural Festivals</h3>
-          </div>
-          <button
-            type="button"
-            className="link-view-all-festivals"
-            onClick={() => onNavigate?.('/festivals')}
-          >
-            <span>View Full Calendar</span>
-            <ArrowRight size={14} />
-          </button>
-        </div>
-
-        <div className="festivals-scroll-tray">
-          {FESTIVALS_STRIP.map((fest, idx) => (
-            <div
-              key={idx}
-              className="festival-strip-tile"
-              onClick={() => onNavigate?.(`/explore/${fest.placeId}`)}
-            >
-              <div className="fest-icon-orb">{fest.icon}</div>
-              <div className="fest-content">
-                <span className="fest-tag">{fest.tag}</span>
-                <h4>{fest.name}</h4>
-                <p className="fest-timing">
-                  <Calendar size={12} /> {fest.dates}
-                </p>
-                <span className="fest-location">
-                  <MapPin size={11} /> {fest.location}
-                </span>
-              </div>
+        <div className="festivals-container">
+          <div className="section-head-wrap">
+            <div className="head-left">
+              <span className="section-eyebrow">
+                <Calendar size={14} color="#C9A227" /> Living Cultural Traditions
+              </span>
+              <h3 className="section-title">Upcoming Indian Cultural Festivals</h3>
             </div>
-          ))}
+            <button
+              type="button"
+              className="link-view-all-festivals"
+              onClick={() => onNavigate?.('/festivals')}
+            >
+              <span>View full calendar</span>
+              <ArrowRight size={15} />
+            </button>
+          </div>
+
+          <div className="festivals-scroll-tray">
+            {FESTIVALS_STRIP.map((fest, idx) => (
+              <div
+                key={idx}
+                className="festival-strip-tile"
+                onClick={() => onNavigate?.(`/explore/${fest.placeId}`)}
+              >
+                <div className="fest-tile-media" style={{ background: fest.tintBg }}>
+                  {fest.image ? (
+                    <SafeImage
+                      src={fest.image}
+                      category="attraction"
+                      alt={fest.name}
+                      className="fest-tile-img"
+                    />
+                  ) : null}
+                  <div className="fest-date-chip">
+                    <span className="fest-chip-month">{fest.month}</span>
+                    <span className="fest-chip-day">{fest.day}</span>
+                  </div>
+                  <span className="fest-category-pill">{fest.tag}</span>
+                </div>
+
+                <div className="fest-content">
+                  <h4 className="fest-name">{fest.name}</h4>
+                  <div className="fest-meta-line">
+                    <span className="fest-location">
+                      <MapPin size={12} /> {fest.location}
+                    </span>
+                    <span className="fest-timing">
+                      <Calendar size={12} /> {fest.dates}
+                    </span>
+                  </div>
+                  <p className="fest-description">{fest.description}</p>
+                  <div className="fest-card-action">
+                    <button
+                      type="button"
+                      className="fest-plan-link"
+                      onClick={(e) => {
+                        e.stopPropagation()
+                        onNavigate?.(`/planner?destination=${fest.placeId}`)
+                      }}
+                    >
+                      <span>Plan a visit</span>
+                      <ArrowRight size={13} />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -322,83 +392,88 @@ export default function HomePage({ onNavigate, onSelectPlace }) {
       {/* 4. REGIONAL EXPLORER TABS & PLACES GRID                           */}
       {/* ================================================================= */}
       <section className="regional-picks-section reveal-fade-up">
-        <div className="section-head-wrap">
-          <div className="head-left">
-            <span className="section-eyebrow">
-              <Compass size={14} color="#C9A227" /> Nationwide Curation
-            </span>
-            <h3 className="section-title">Explore by Cultural Region</h3>
+        <div className="regional-container">
+          <div className="section-head-wrap">
+            <div className="head-left">
+              <span className="section-eyebrow">
+                <Compass size={14} color="#C9A227" /> Nationwide Curation
+              </span>
+              <h3 className="section-title">Explore by Cultural Region</h3>
+              <p className="section-subtitle">
+                Journey through verified architectural marvels, heritage sanctuaries, and regional icons across India.
+              </p>
+            </div>
           </div>
-        </div>
 
-        {/* Region Tabs */}
-        <div className="region-pills-filter-row">
-          {REGIONS.map((reg) => (
-            <button
-              key={reg.id}
-              type="button"
-              className={`region-pill-btn ${selectedRegion === reg.id ? 'active' : ''}`}
-              onClick={() => setSelectedRegion(reg.id)}
-            >
-              {reg.label}
-            </button>
-          ))}
-        </div>
-
-        {/* Regional Places Cards Grid */}
-        <div className="places-cards-grid">
-          {regionalPlaces.map((place) => {
-            const { priceDisplay } = formatPriceWithUnit(place.price)
-            const saved = isSaved(place.id)
-
-            return (
-              <div
-                key={place.id}
-                className="destination-card interactive-hover"
-                onClick={() => handlePlaceClick(place)}
+          {/* Region Tabs */}
+          <div className="region-pills-filter-row">
+            {REGIONS.map((reg) => (
+              <button
+                key={reg.id}
+                type="button"
+                className={`region-pill-btn ${selectedRegion === reg.id ? 'active' : ''}`}
+                onClick={() => setSelectedRegion(reg.id)}
               >
-                <div className="card-thumb-wrap">
-                  <SafeImage
-                    src={place.image}
-                    category={place.category}
-                    alt={place.name}
-                    className="card-thumb-img"
-                  />
-                  <button
-                    type="button"
-                    className={`card-heart-btn ${saved ? 'saved' : ''}`}
-                    onClick={(e) => {
-                      e.stopPropagation()
-                      toggleSave(place.id)
-                    }}
-                    aria-label={saved ? 'Remove from saved' : 'Save place'}
-                  >
-                    <Heart size={15} fill={saved ? '#EF4444' : 'none'} color={saved ? '#EF4444' : '#FFFFFF'} />
-                  </button>
-                  <span className="card-category-badge">{place.category}</span>
-                </div>
+                {reg.label}
+              </button>
+            ))}
+          </div>
 
-                <div className="card-body">
-                  <div className="card-title-row">
-                    <h4>{place.name}</h4>
-                  </div>
-                  <span className="card-location">
-                    <MapPin size={12} /> {place.city}, {place.state}
-                  </span>
-                  <p className="card-snippet">
-                    {place.description ? place.description.slice(0, 95) + '...' : 'Verified historical destination with ASI circular timings and architectural marvels.'}
-                  </p>
-                  <div className="card-footer-row">
-                    <span className="card-price-badge">{priceDisplay}</span>
-                    <button type="button" className="card-explore-btn">
-                      <span>View Details</span>
-                      <ArrowRight size={12} />
+          {/* Regional Places Cards Grid */}
+          <div className="places-cards-grid">
+            {regionalPlaces.map((place) => {
+              const { priceDisplay } = formatPriceWithUnit(place.price)
+              const saved = isSaved(place.id)
+
+              return (
+                <div
+                  key={place.id}
+                  className="destination-card interactive-hover"
+                  onClick={() => handlePlaceClick(place)}
+                >
+                  <div className="card-thumb-wrap">
+                    <SafeImage
+                      src={place.image}
+                      category={place.category}
+                      alt={place.name}
+                      className="card-thumb-img"
+                    />
+                    <button
+                      type="button"
+                      className={`card-heart-btn ${saved ? 'saved' : ''}`}
+                      onClick={(e) => {
+                        e.stopPropagation()
+                        toggleSave(place.id)
+                      }}
+                      aria-label={saved ? 'Remove from saved' : 'Save place'}
+                    >
+                      <Heart size={15} fill={saved ? '#EF4444' : 'none'} color={saved ? '#EF4444' : '#FFFFFF'} />
                     </button>
+                    <span className="card-category-badge">{place.category}</span>
+                  </div>
+
+                  <div className="card-body">
+                    <div className="card-title-row">
+                      <h4>{place.name}</h4>
+                    </div>
+                    <span className="card-location">
+                      <MapPin size={12} /> {place.city}, {place.state}
+                    </span>
+                    <p className="card-snippet">
+                      {place.description ? place.description.slice(0, 95) + '...' : 'Verified historical destination with ASI circular timings and architectural marvels.'}
+                    </p>
+                    <div className="card-footer-row">
+                      <span className="card-price-badge">{priceDisplay}</span>
+                      <button type="button" className="card-explore-btn">
+                        <span>View Details</span>
+                        <ArrowRight size={12} />
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            )
-          })}
+              )
+            })}
+          </div>
         </div>
       </section>
 
@@ -406,47 +481,50 @@ export default function HomePage({ onNavigate, onSelectPlace }) {
       {/* 5. SEASONAL PICKS ("Best in Monsoon & Lush Greens")                */}
       {/* ================================================================= */}
       <section className="seasonal-picks-section reveal-fade-up">
-        <div className="seasonal-card-banner">
-          <div className="seasonal-header-row">
-            <div className="seasonal-title-block">
-              <span className="seasonal-badge">
-                <CloudRain size={14} color="#C9A227" /> Curated Seasonal Focus
-              </span>
-              <h3>Best in Monsoon &amp; Winter Horizons</h3>
-              <p>Mist-shrouded hill forts, living temple tanks, and roaring monsoon waterfalls.</p>
-            </div>
-            <button
-              type="button"
-              className="seasonal-all-btn"
-              onClick={() => onNavigate?.('/explore')}
-            >
-              Browse All Places <ArrowRight size={13} />
-            </button>
-          </div>
-
-          <div className="seasonal-places-row">
-            {seasonalPicks.map((place) => (
-              <div
-                key={place.id}
-                className="seasonal-place-tile"
-                onClick={() => handlePlaceClick(place)}
-              >
-                <div className="seasonal-thumb">
-                  <SafeImage
-                    src={place.image}
-                    category={place.category}
-                    alt={place.name}
-                  />
-                </div>
-                <div className="seasonal-info">
-                  <h5>{place.name}</h5>
-                  <span className="seasonal-city">{place.city}, {place.state}</span>
-                  <span className="seasonal-best-time">
-                    <Clock size={11} /> {place.best_time || 'October to March'}
-                  </span>
-                </div>
+        <div className="seasonal-container">
+          <div className="seasonal-card-banner">
+            <div className="seasonal-header-row">
+              <div className="seasonal-title-block">
+                <span className="seasonal-badge">
+                  <CloudRain size={14} color="#C9A227" /> Curated Seasonal Focus
+                </span>
+                <h3>Best in Monsoon &amp; Winter Horizons</h3>
+                <p>Mist-shrouded hill forts, living temple tanks, and roaring monsoon waterfalls.</p>
               </div>
-            ))}
+              <button
+                type="button"
+                className="seasonal-all-btn"
+                onClick={() => onNavigate?.('/explore')}
+              >
+                <span>Browse All Places</span>
+                <ArrowRight size={13} />
+              </button>
+            </div>
+
+            <div className="seasonal-places-row">
+              {seasonalPicks.map((place) => (
+                <div
+                  key={place.id}
+                  className="seasonal-place-tile"
+                  onClick={() => handlePlaceClick(place)}
+                >
+                  <div className="seasonal-thumb">
+                    <SafeImage
+                      src={place.image}
+                      category={place.category}
+                      alt={place.name}
+                    />
+                  </div>
+                  <div className="seasonal-info">
+                    <h5>{place.name}</h5>
+                    <span className="seasonal-city">{place.city}, {place.state}</span>
+                    <span className="seasonal-best-time">
+                      <Clock size={11} /> {place.best_time || 'October to March'}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -477,33 +555,35 @@ export default function HomePage({ onNavigate, onSelectPlace }) {
 
       {/* Final Call to Action Banner */}
       <section className="home-final-cta reveal-fade-up">
-        <div className="final-cta-card">
-          <div className="final-cta-mesh" />
-          <div className="final-cta-content">
-            <span className="eyebrow light">
-              <Sparkles size={14} /> Journey through 36 States
-            </span>
-            <h2>Ready to experience the living heritage of India?</h2>
-            <p>
-              Explore 560+ verified monuments, generate proximity-optimized itineraries with authentic lunch stops, and chat with our RAG-grounded AI guide in English, Telugu, or Hindi.
-            </p>
-            <div className="final-cta-actions">
-              <button
-                type="button"
-                className="cta-primary-btn"
-                onClick={() => onNavigate('explore')}
-              >
-                <span>Browse All 560+ Destinations</span>
-                <ArrowRight size={16} />
-              </button>
-              <button
-                type="button"
-                className="cta-secondary-btn"
-                onClick={() => onNavigate('planner')}
-              >
-                <Compass size={16} />
-                <span>Plan Trip with AI</span>
-              </button>
+        <div className="final-cta-container">
+          <div className="final-cta-card">
+            <div className="final-cta-mesh" />
+            <div className="final-cta-content">
+              <span className="eyebrow light">
+                <Sparkles size={14} /> Journey through 36 States
+              </span>
+              <h2>Ready to experience the living heritage of India?</h2>
+              <p>
+                Explore 560+ verified monuments, generate proximity-optimized itineraries with authentic lunch stops, and chat with our RAG-grounded AI guide in English, Telugu, or Hindi.
+              </p>
+              <div className="final-cta-actions">
+                <button
+                  type="button"
+                  className="cta-primary-btn"
+                  onClick={() => onNavigate('explore')}
+                >
+                  <span>Browse All 560+ Destinations</span>
+                  <ArrowRight size={16} />
+                </button>
+                <button
+                  type="button"
+                  className="cta-secondary-btn"
+                  onClick={() => onNavigate('planner')}
+                >
+                  <Compass size={16} />
+                  <span>Plan Trip with AI</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>

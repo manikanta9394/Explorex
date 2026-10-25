@@ -1,4 +1,4 @@
-import { ArrowUp, Heart, Sparkles } from 'lucide-react'
+import { ArrowUp, Heart, Sparkles, Globe, AlertCircle, Compass, ShieldCheck } from 'lucide-react'
 import { Logo } from './Navbar'
 
 export default function Footer({ onOpenSaved, onNavigate }) {
@@ -71,6 +71,11 @@ export default function Footer({ onOpenSaved, onNavigate }) {
                   Saved Wishlist
                 </button>
               </li>
+              <li>
+                <button type="button" className="footer-link-btn" onClick={(e) => handleLink(e, '/festivals')}>
+                  Cultural Festivals
+                </button>
+              </li>
             </ul>
           </div>
 
@@ -94,8 +99,13 @@ export default function Footer({ onOpenSaved, onNavigate }) {
                 </button>
               </li>
               <li>
-                <button type="button" className="footer-link-btn" onClick={(e) => handleLink(e, '/explore')}>
-                  Full Telangana Dataset (400 Places)
+                <button type="button" className="footer-link-btn" onClick={(e) => handleLink(e, '/about')}>
+                  About Explorex
+                </button>
+              </li>
+              <li>
+                <button type="button" className="footer-link-btn" onClick={(e) => handleLink(e, '/feedback')}>
+                  Citizen Feedback &amp; Reports
                 </button>
               </li>
             </ul>
@@ -132,6 +142,49 @@ export default function Footer({ onOpenSaved, onNavigate }) {
               </li>
             </ul>
           </div>
+
+          {/* Quick Links Column 4: Governance & Legal */}
+          <div className="footer-links-col">
+            <h4 className="footer-col-title">Governance &amp; Trust</h4>
+            <ul className="footer-links-list">
+              <li>
+                <button type="button" className="footer-link-btn" onClick={(e) => handleLink(e, '/admin')}>
+                  Admin Portal
+                </button>
+              </li>
+              <li>
+                <button type="button" className="footer-link-btn" onClick={(e) => handleLink(e, '/help')}>
+                  Help &amp; FAQ
+                </button>
+              </li>
+              <li>
+                <button type="button" className="footer-link-btn" onClick={(e) => handleLink(e, '/terms')}>
+                  Terms of Service
+                </button>
+              </li>
+              <li>
+                <button type="button" className="footer-link-btn" onClick={(e) => handleLink(e, '/privacy')}>
+                  Privacy Policy
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Language Note Banner */}
+        <div className="footer-language-note">
+          <Globe size={15} className="lang-icon" />
+          <p className="lang-text">
+            <strong>Language Accessibility:</strong> Explorex is accessible across India in English, Telugu (తెలుగు), Hindi (हिन्दी), Tamil (தமிழ்), Kannada (ಕನ್ನಡ), Bengali (বাংলা), Marathi (मराठी), and Gujarati (ગુજરાતી).
+          </p>
+        </div>
+
+        {/* Verification & Timings Disclaimer */}
+        <div className="footer-disclaimer-note">
+          <AlertCircle size={15} className="disclaimer-icon" />
+          <p className="disclaimer-text">
+            Hours and prices can change, please verify with local authorities or official ASI portals before traveling.
+          </p>
         </div>
 
         {/* Middle Divider */}
