@@ -1,7 +1,8 @@
 import { useEffect, useState, useRef } from 'react'
 import { fetchPlaceWeather } from '../services/weatherService'
+import { WeatherErrorBoundary } from './ErrorBoundary'
 
-export default function PlaceWeatherBadge({
+function PlaceWeatherBadgeInner({
   place,
   coordinates,
   placeId,
@@ -103,5 +104,13 @@ export default function PlaceWeatherBadge({
       <span className="weather-sep">·</span>
       <span className="weather-cond">{weather.condition || 'Clear'}</span>
     </span>
+  )
+}
+
+export default function PlaceWeatherBadge(props) {
+  return (
+    <WeatherErrorBoundary>
+      <PlaceWeatherBadgeInner {...props} />
+    </WeatherErrorBoundary>
   )
 }

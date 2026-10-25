@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { ExternalLink } from 'lucide-react'
 import SafeImage from './SafeImage'
+import { FestivalCardErrorBoundary } from './ErrorBoundary'
 
 export const TELANGANA_FESTIVALS = [
   {
@@ -234,26 +235,27 @@ export default function FestivalCalendar({ onNavigate, onSelectPlace }) {
           {filteredFestivals.map((fest) => {
             const isSelected = selectedFestival.id === fest.id
             return (
-              <div
-                key={fest.id}
-                className={`festival-summary-card ${isSelected ? 'is-selected' : ''}`}
-                onClick={() => setSelectedFestival(fest)}
-              >
-                <div className="fest-card-header">
-                  <span className="fest-card-icon">{fest.icon}</span>
-                  <div className="fest-card-title-group">
-                    <h4>{fest.name}</h4>
-                    <span className="fest-period-tag">{fest.period}</span>
+              <FestivalCardErrorBoundary key={fest.id}>
+                <div
+                  className={`festival-summary-card ${isSelected ? 'is-selected' : ''}`}
+                  onClick={() => setSelectedFestival(fest)}
+                >
+                  <div className="fest-card-header">
+                    <span className="fest-card-icon">{fest.icon}</span>
+                    <div className="fest-card-title-group">
+                      <h4>{fest.name}</h4>
+                      <span className="fest-period-tag">{fest.period}</span>
+                    </div>
+                  </div>
+                  <p className="fest-tagline">{fest.tagline}</p>
+                  <div className="fest-card-bottom">
+                    <span className="fest-season-pill">{fest.seasonTag}</span>
+                    <span className="fest-places-count">
+                      {fest.relatedPlaces.length} Related Destination{fest.relatedPlaces.length > 1 ? 's' : ''}
+                    </span>
                   </div>
                 </div>
-                <p className="fest-tagline">{fest.tagline}</p>
-                <div className="fest-card-bottom">
-                  <span className="fest-season-pill">{fest.seasonTag}</span>
-                  <span className="fest-places-count">
-                    {fest.relatedPlaces.length} Related Destination{fest.relatedPlaces.length > 1 ? 's' : ''}
-                  </span>
-                </div>
-              </div>
+              </FestivalCardErrorBoundary>
             )
           })}
         </div>

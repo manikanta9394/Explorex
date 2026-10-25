@@ -1,6 +1,6 @@
 import { useEffect, useState, useMemo, lazy, Suspense } from 'react'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import ErrorBoundary from './components/ErrorBoundary'
+import ErrorBoundary, { FeedbackDrawerErrorBoundary } from './components/ErrorBoundary'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ScrollProgressBar from './components/ScrollProgressBar'
@@ -195,6 +195,10 @@ function AppContent() {
       window.history.pushState(null, '', newUrl)
     } catch {
       window.location.hash = `#${target}`
+    }
+
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new CustomEvent('explorex:routechange', { detail: { path: target } }))
     }
 
     setCurrentRoute(getRouteFromLocation())
@@ -445,9 +449,11 @@ function AppContent() {
         <Footer onNavigate={navigateTo} />
 
         {/* Global Floating Feedback Drawer */}
-        <FeedbackDrawer
-          currentRoute={currentRoute.route === '/explore/:id' ? `/explore/${currentRoute.id}` : currentRoute.route}
-        />
+        <FeedbackDrawerErrorBoundary>
+          <FeedbackDrawer
+            currentRoute={currentRoute.route === '/explore/:id' ? `/explore/${currentRoute.id}` : currentRoute.route}
+          />
+        </FeedbackDrawerErrorBoundary>
 
         {/* Global Offline / Online Network Indicator */}
         <NetworkStatusIndicator />

@@ -23,6 +23,7 @@ import PlaceMarquee from '../components/PlaceMarquee'
 import CountUpNumber from '../components/CountUpNumber'
 import SafeImage from '../components/SafeImage'
 import SEOHead from '../components/SEOHead'
+import { FestivalCardErrorBoundary } from '../components/ErrorBoundary'
 import { allDatasetPlaces } from '../data/tourismData'
 import { useAuth } from '../context/useAuth'
 import { useSavedPlaces } from '../context/useSavedPlaces'
@@ -374,58 +375,58 @@ export default function HomePage({ onNavigate, onSelectPlace }) {
               tabIndex={0}
             >
               {FESTIVALS_STRIP.map((fest, idx) => (
-                <div
-                  key={idx}
-                  className="festival-strip-tile"
-                  onClick={() => {
-                    if (!isDraggingFestivals) onNavigate?.(`/explore/${fest.placeId}`)
-                  }}
-                >
-                  <div className="fest-tile-media" style={{ background: fest.tintBg }}>
-                    {fest.image ? (
-                      <SafeImage
-                        src={fest.image}
-                        category="attraction"
-                        alt={fest.name}
-                        className="fest-tile-img"
-                        width={360}
-                        height={200}
-                        loading="lazy"
-                      />
-                    ) : null}
-                    <div className="fest-date-chip" style={{ '--tile-index': idx }}>
-                      <span className="fest-chip-month">{fest.month}</span>
-                      <span className="fest-chip-day">{fest.day}</span>
+                <FestivalCardErrorBoundary key={fest.name || idx}>
+                  <div
+                    className="festival-strip-tile"
+                    onClick={() => {
+                      if (!isDraggingFestivals) onNavigate?.(`/explore/${fest.placeId}`)
+                    }}
+                  >
+                    <div className="fest-tile-media" style={{ background: fest.tintBg }}>
+                      {fest.image ? (
+                        <SafeImage
+                          src={fest.image}
+                          category="attraction"
+                          alt={fest.name}
+                          width={360}
+                          height={200}
+                          loading="lazy"
+                        />
+                      ) : null}
+                      <div className="fest-date-chip" style={{ '--tile-index': idx }}>
+                        <span className="fest-chip-month">{fest.month}</span>
+                        <span className="fest-chip-day">{fest.day}</span>
+                      </div>
+                      <span className="fest-category-pill">{fest.tag}</span>
                     </div>
-                    <span className="fest-category-pill">{fest.tag}</span>
-                  </div>
 
-                  <div className="fest-content">
-                    <h4 className="fest-name">{fest.name}</h4>
-                    <div className="fest-meta-line">
-                      <span className="fest-location">
-                        <MapPin size={12} /> {fest.location}
-                      </span>
-                      <span className="fest-timing">
-                        <Calendar size={12} /> {fest.dates}
-                      </span>
-                    </div>
-                    <p className="fest-description">{fest.description}</p>
-                    <div className="fest-card-action">
-                      <button
-                        type="button"
-                        className="fest-plan-link"
-                        onClick={(e) => {
-                          e.stopPropagation()
-                          onNavigate?.(`/planner?destination=${fest.placeId}`)
-                        }}
-                      >
-                        <span>Plan a visit</span>
-                        <ArrowRight size={13} />
-                      </button>
+                    <div className="fest-content">
+                      <h4 className="fest-name">{fest.name}</h4>
+                      <div className="fest-meta-line">
+                        <span className="fest-location">
+                          <MapPin size={12} /> {fest.location}
+                        </span>
+                        <span className="fest-timing">
+                          <Calendar size={12} /> {fest.dates}
+                        </span>
+                      </div>
+                      <p className="fest-description">{fest.description}</p>
+                      <div className="fest-card-action">
+                        <button
+                          type="button"
+                          className="fest-plan-link"
+                          onClick={(e) => {
+                            e.stopPropagation()
+                            onNavigate?.(`/planner?destination=${fest.placeId}`)
+                          }}
+                        >
+                          <span>Plan a visit</span>
+                          <ArrowRight size={13} />
+                        </button>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </FestivalCardErrorBoundary>
               ))}
             </div>
           </div>

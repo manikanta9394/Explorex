@@ -16,6 +16,7 @@ import {
 } from 'lucide-react'
 import { adminService } from '../../services/adminService'
 import { resolveImageSrc } from '../../utils/imageUtils'
+import { AdminWidgetErrorBoundary } from '../../components/ErrorBoundary'
 
 export default function AdminFeedbackPage({ onNavigate }) {
   const [items, setItems] = useState([])
@@ -167,7 +168,8 @@ export default function AdminFeedbackPage({ onNavigate }) {
       {/* Master-Detail Split Grid */}
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', minHeight: '600px' }}>
         {/* Left Column: Master Table */}
-        <div className="admin-table-container" style={{ display: 'flex', flexDirection: 'column' }}>
+        <AdminWidgetErrorBoundary name="AdminFeedbackTable">
+          <div className="admin-table-container" style={{ display: 'flex', flexDirection: 'column' }}>
           <div className="table-toolbar">
             <div className="toolbar-left" style={{ width: '100%' }}>
               <div className="admin-search-wrap" style={{ flex: 1 }}>
@@ -291,18 +293,20 @@ export default function AdminFeedbackPage({ onNavigate }) {
             </table>
           </div>
         </div>
+      </AdminWidgetErrorBoundary>
 
         {/* Right Column: Detail Inspector & Reply Dispatcher */}
-        <div
-          style={{
-            background: 'var(--adm-surface)',
-            border: '1px solid var(--adm-border)',
-            borderRadius: '8px',
-            display: 'flex',
-            flexDirection: 'column',
-            boxShadow: 'var(--adm-shadow)',
-          }}
-        >
+        <AdminWidgetErrorBoundary name="AdminFeedbackDetail">
+          <div
+            style={{
+              background: 'var(--adm-surface)',
+              border: '1px solid var(--adm-border)',
+              borderRadius: '8px',
+              display: 'flex',
+              flexDirection: 'column',
+              boxShadow: 'var(--adm-shadow)',
+            }}
+          >
           {selectedItem ? (
             <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
               {/* Detail Header */}
@@ -467,7 +471,8 @@ export default function AdminFeedbackPage({ onNavigate }) {
               Select a feedback item from the list to inspect details and dispatch reply.
             </div>
           )}
-        </div>
+          </div>
+        </AdminWidgetErrorBoundary>
       </div>
     </div>
   )

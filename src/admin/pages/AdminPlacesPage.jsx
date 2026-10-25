@@ -18,6 +18,7 @@ import {
 import { adminService } from '../../services/adminService'
 import { allDatasetPlaces } from '../../data/tourismData'
 import { resolveImageSrc } from '../../utils/imageUtils'
+import { AdminWidgetErrorBoundary } from '../../components/ErrorBoundary'
 
 export default function AdminPlacesPage() {
   const [places, setPlaces] = useState([])
@@ -329,7 +330,8 @@ export default function AdminPlacesPage() {
       )}
 
       {/* Main Table Container */}
-      <div className="admin-table-container">
+      <AdminWidgetErrorBoundary name="AdminPlacesTable">
+        <div className="admin-table-container">
         {/* Table Filters & Toolbar */}
         <div className="table-toolbar">
           <div className="toolbar-left">
@@ -557,6 +559,7 @@ export default function AdminPlacesPage() {
           </div>
         </div>
       </div>
+      </AdminWidgetErrorBoundary>
 
       {/* Create / Edit Modal */}
       {modalOpen && (

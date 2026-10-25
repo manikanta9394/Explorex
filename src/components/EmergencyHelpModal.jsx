@@ -11,6 +11,7 @@ import {
   X,
 } from 'lucide-react'
 import { useUserLocation } from '../context/useUserLocation'
+import { SOSPopupErrorBoundary } from './ErrorBoundary'
 
 export const EMERGENCY_NUMBERS = [
   {
@@ -139,28 +140,29 @@ export default function EmergencyHelpModal({ isOpen, onClose }) {
         aria-modal="true"
         aria-label="Emergency and Help Directory"
       >
-        {/* Header */}
-        <div className="emergency-modal-header">
-          <div className="emergency-header-title">
-            <span className="emergency-shield-icon">
-              <ShieldAlert size={22} />
-            </span>
-            <div>
-              <h3>Telangana Emergency &amp; Tourist Help</h3>
-              <p>Verified 24x7 emergency contacts, tourist assistance, and top hospitals</p>
+        <button
+          type="button"
+          className="modal-close-btn"
+          onClick={onClose}
+          aria-label="Close modal"
+        >
+          <X size={18} />
+        </button>
+        <SOSPopupErrorBoundary>
+          {/* Header */}
+          <div className="emergency-modal-header">
+            <div className="emergency-header-title">
+              <span className="emergency-shield-icon">
+                <ShieldAlert size={22} />
+              </span>
+              <div>
+                <h3>Telangana Emergency &amp; Tourist Help</h3>
+                <p>Verified 24x7 emergency contacts, tourist assistance, and top hospitals</p>
+              </div>
             </div>
           </div>
-          <button
-            type="button"
-            className="modal-close-btn"
-            onClick={onClose}
-            aria-label="Close modal"
-          >
-            <X size={18} />
-          </button>
-        </div>
 
-        {/* Live GPS Coordinates Beacon */}
+          {/* Live GPS Coordinates Beacon */}
         <div className="gps-beacon-banner">
           <div className="beacon-info">
             <span className="beacon-pulse" />
@@ -255,6 +257,7 @@ export default function EmergencyHelpModal({ isOpen, onClose }) {
             Close Directory
           </button>
         </div>
+        </SOSPopupErrorBoundary>
       </div>
     </div>
   )

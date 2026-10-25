@@ -32,6 +32,7 @@ import {
 } from 'lucide-react'
 import PageHeaderBand from '../components/PageHeaderBand'
 import SafeImage from '../components/SafeImage'
+import { AIChatErrorBoundary } from '../components/ErrorBoundary'
 import { allDatasetPlaces } from '../data/tourismData'
 import { useAuth } from '../context/useAuth'
 import { useLanguage } from '../context/LanguageContext'
@@ -964,7 +965,8 @@ export default function AIGuidePage({ onNavigate: _onNavigate, onSelectPlace, on
         {/* ================================================================= */}
         {/* MAIN CHAT STAGE                                                   */}
         {/* ================================================================= */}
-        <main className="ai-chat-stage">
+        <AIChatErrorBoundary>
+          <main className="ai-chat-stage">
           {/* Top Stage Control Toolbar (Place, Mode, Language, Sidebar button) */}
           <div className="stage-top-controls">
             {!sidebarOpen && (
@@ -1503,6 +1505,7 @@ export default function AIGuidePage({ onNavigate: _onNavigate, onSelectPlace, on
             </div>
           </div>
         </main>
+        </AIChatErrorBoundary>
       </div>
     </div>
   )
