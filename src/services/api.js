@@ -1,7 +1,9 @@
 import { enrichedHotels as hotels, enrichedPlaces as places, enrichedRestaurants as restaurants } from '../data/tourismData.js'
 
 const configuredApiUrl = typeof import.meta !== 'undefined' && import.meta.env?.VITE_API_URL ? import.meta.env.VITE_API_URL.trim() : ''
-const API_BASE_URL = (configuredApiUrl || '').replace(/\/$/, '')
+const rawBase = typeof import.meta !== 'undefined' && import.meta.env?.BASE_URL ? import.meta.env.BASE_URL : '/'
+const normalizedBase = rawBase.endsWith('/') ? rawBase.slice(0, -1) : rawBase
+const API_BASE_URL = (configuredApiUrl || (typeof window !== 'undefined' ? `${normalizedBase}/api` : '')).replace(/\/$/, '')
 
 // Persistent in-memory and localStorage cache for routing & distance results: per place/coordinates + travel mode
 const routeCache = new Map()
@@ -261,7 +263,7 @@ export async function streamAIChatClient({
   onDone,
   onError,
 }) {
-  const url = `${API_BASE_URL || 'http://localhost:5005/api'}/chat/stream`
+  const url = `${API_BASE_URL || '/api'}/chat?stream=true`
   const payload = {
     message,
     history,

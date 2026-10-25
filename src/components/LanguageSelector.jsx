@@ -32,7 +32,7 @@ export default function LanguageSelector() {
         type="button"
         className="language-button"
         onClick={() => setOpen(!open)}
-        aria-label="Select language"
+        aria-label={`Select language: ${currentLang.codeUpper}`}
         title="Change application language (English, తెలుగు, हिन्दी)"
       >
         <Globe size={13} />

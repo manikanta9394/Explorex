@@ -20,6 +20,7 @@ import {
 } from 'lucide-react'
 import { useAuth } from '../context/useAuth'
 import AdminCommandPalette from './AdminCommandPalette'
+import './admin.css'
 
 export default function AdminLayout({ children, currentRoute, onNavigate }) {
   const { user, signOut } = useAuth()

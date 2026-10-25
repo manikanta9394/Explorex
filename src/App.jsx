@@ -1,57 +1,27 @@
-import { useEffect, useState, useMemo, lazy, Suspense } from 'react'
+import { useEffect, useState, lazy, Suspense } from 'react'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import ErrorBoundary, { FeedbackDrawerErrorBoundary } from './components/ErrorBoundary'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import ScrollProgressBar from './components/ScrollProgressBar'
-import AuthModal from './components/AuthModal'
-import AccessGate from './components/AccessGate'
-import GuestUpgradeBanner from './components/GuestUpgradeBanner'
-import FeedbackDrawer from './components/FeedbackDrawer'
+import ErrorBoundary from './components/ErrorBoundary'
 import PageSkeletonLoader from './components/PageSkeletonLoader'
 import { AuthProvider } from './context/AuthContext'
 import { LanguageProvider } from './context/LanguageContext'
-import { useAuth } from './context/useAuth'
 import { SavedPlacesProvider } from './context/SavedPlacesContext'
 import { TravelModeProvider } from './context/TravelModeContext'
-import { useTravelMode } from './context/useTravelMode'
 import { UserLocationProvider } from './context/UserLocationContext'
-import { useUserLocation } from './context/useUserLocation'
 import { ToastProvider } from './context/ToastContext'
-import { allDatasetPlaces } from './data/tourismData'
-import { openGoogleMapsDirections } from './utils/googleMaps'
 import { analytics } from './services/analytics'
-import AnnouncementBanner from './components/AnnouncementBanner'
-import NetworkStatusIndicator from './components/NetworkStatusIndicator'
-import DirectionsModal from './components/DirectionsModal'
-import AdminLayout from './admin/AdminLayout'
-import AdminAuthGuard from './admin/AdminAuthGuard'
-import './admin/admin.css'
-import './App.css'
+import './styles/welcomeCore.css'
 
-// User App Pages
-const HomePage = lazy(() => import('./pages/HomePage'))
-const ExplorePage = lazy(() => import('./pages/ExplorePage'))
-const PlaceDetailPage = lazy(() => import('./pages/PlaceDetailPage'))
-const MapPage = lazy(() => import('./pages/MapPage'))
-const TripPlannerPage = lazy(() => import('./pages/TripPlannerPage'))
-const AIGuidePage = lazy(() => import('./pages/AIGuidePage'))
-const SavedPlacesPage = lazy(() => import('./pages/SavedPlacesPage'))
-const FestivalCalendarPage = lazy(() => import('./pages/FestivalCalendarPage'))
+// User App Shell (lazy loaded to isolate inner styles and large bundles from entrance)
+const MainAppShell = lazy(() => import('./components/MainAppShell'))
+
+// Welcome & Auth Pages (standalone immersive full-screen layouts)
+const WelcomePage = lazy(() => import('./pages/WelcomePage'))
 const LoginPage = lazy(() => import('./pages/LoginPage'))
 const SignupPage = lazy(() => import('./pages/SignupPage'))
-const WelcomePage = lazy(() => import('./pages/WelcomePage'))
-const StateLandingPage = lazy(() => import('./pages/StateLandingPage'))
-const TripViewerPage = lazy(() => import('./pages/TripViewerPage'))
-const ProfilePage = lazy(() => import('./pages/ProfilePage'))
-const FeedbackPage = lazy(() => import('./pages/FeedbackPage'))
-const HelpPage = lazy(() => import('./pages/HelpPage'))
-const AboutPage = lazy(() => import('./pages/AboutPage'))
-const PrivacyPage = lazy(() => import('./pages/PrivacyPage'))
-const TermsPage = lazy(() => import('./pages/TermsPage'))
-const NotFoundPage = lazy(() => import('./pages/NotFoundPage'))
 
-// Admin App Pages
+// Admin App Shell & Pages
+const AdminLayout = lazy(() => import('./admin/AdminLayout'))
+const AdminAuthGuard = lazy(() => import('./admin/AdminAuthGuard'))
 const AdminLoginPage = lazy(() => import('./admin/pages/AdminLoginPage'))
 const AdminDashboardPage = lazy(() => import('./admin/pages/AdminDashboardPage'))
 const AdminPlacesPage = lazy(() => import('./admin/pages/AdminPlacesPage'))
@@ -162,11 +132,6 @@ export function getRouteFromLocation() {
 
 function AppContent() {
   const [currentRoute, setCurrentRoute] = useState(getRouteFromLocation)
-  const { travelMode } = useTravelMode()
-  const { userCoords } = useUserLocation()
-  const { authModalOpen, closeAuthModal, authModalMode } = useAuth()
-  const [directionsModalOpen, setDirectionsModalOpen] = useState(false)
-  const [directionsTarget, setDirectionsTarget] = useState(null)
 
   useEffect(() => {
     const handleRouteChange = () => {
@@ -208,13 +173,6 @@ function AppContent() {
     window.scrollTo({ top: 0, behavior: 'instant' })
   }
 
-  const handleGetDirections = (place) => {
-    if (place) {
-      setDirectionsTarget(place)
-      setDirectionsModalOpen(true)
-    }
-  }
-
   // Admin App Login Route (dense slate aesthetic, no user hero/footer)
   if (currentRoute.route === '/admin/login') {
     return (
@@ -251,13 +209,15 @@ function AppContent() {
     }
 
     return (
-      <AdminAuthGuard onNavigate={navigateTo}>
-        <AdminLayout currentRoute={currentRoute} onNavigate={navigateTo}>
-          <Suspense fallback={<div style={{ padding: '40px', textAlign: 'center', color: 'var(--adm-text-dim)' }}>Loading admin console...</div>}>
-            {renderAdminSection()}
-          </Suspense>
-        </AdminLayout>
-      </AdminAuthGuard>
+      <Suspense fallback={<PageSkeletonLoader />}>
+        <AdminAuthGuard onNavigate={navigateTo}>
+          <AdminLayout currentRoute={currentRoute} onNavigate={navigateTo}>
+            <Suspense fallback={<div style={{ padding: '40px', textAlign: 'center', color: 'var(--adm-text-dim)' }}>Loading admin console...</div>}>
+              {renderAdminSection()}
+            </Suspense>
+          </AdminLayout>
+        </AdminAuthGuard>
+      </Suspense>
     )
   }
 
@@ -286,198 +246,11 @@ function AppContent() {
     )
   }
 
-  const routeKey =
-    currentRoute.route === '/explore/:id'
-      ? `place-${currentRoute.id}`
-      : currentRoute.route === '/states/:slug'
-      ? `state-${currentRoute.slug}`
-      : currentRoute.route === '/trips/:id'
-      ? `trip-${currentRoute.id}`
-      : currentRoute.route
-
-  const renderCurrentPage = () => {
-    switch (currentRoute.route) {
-      case '/explore':
-        return (
-          <ExplorePage
-            onNavigate={navigateTo}
-            onSelectPlace={(place) => navigateTo(`/explore/${place.id}`)}
-            onGetDirections={handleGetDirections}
-          />
-        )
-      case '/explore/:id':
-        return (
-          <PlaceDetailPage
-            placeId={currentRoute.id}
-            onNavigate={navigateTo}
-            onSelectPlace={(place) => navigateTo(`/explore/${place.id}`)}
-            onGetDirections={handleGetDirections}
-          />
-        )
-      case '/map':
-        return (
-          <MapPage
-            onNavigate={navigateTo}
-            onSelectPlace={(place) => navigateTo(`/explore/${place.id}`)}
-            onGetDirections={handleGetDirections}
-          />
-        )
-      case '/planner':
-        return (
-          <TripPlannerPage
-            onNavigate={navigateTo}
-            onSelectPlace={(place) => navigateTo(`/explore/${place.id}`)}
-            onGetDirections={handleGetDirections}
-          />
-        )
-      case '/festivals':
-        return (
-          <FestivalCalendarPage
-            onNavigate={navigateTo}
-            onSelectPlace={(place) => navigateTo(`/explore/${place.id}`)}
-          />
-        )
-      case '/states/:slug':
-        return (
-          <StateLandingPage
-            slug={currentRoute.slug}
-            onNavigate={navigateTo}
-            onSelectPlace={(place) => navigateTo(`/explore/${place.id}`)}
-            onGetDirections={handleGetDirections}
-          />
-        )
-      case '/ai':
-        return (
-          <AIGuidePage
-            onNavigate={navigateTo}
-            onSelectPlace={(place) => navigateTo(`/explore/${place.id}`)}
-            onGetDirections={handleGetDirections}
-          />
-        )
-      case '/saved':
-        return (
-          <SavedPlacesPage
-            allPlaces={allDatasetPlaces}
-            onNavigate={navigateTo}
-            onSelectPlace={(place) => navigateTo(`/explore/${place.id}`)}
-            onGetDirections={handleGetDirections}
-          />
-        )
-      case '/trips/:id':
-        return (
-          <TripViewerPage
-            tripId={currentRoute.id}
-            onNavigate={navigateTo}
-          />
-        )
-      case '/profile':
-        return (
-          <ProfilePage
-            onNavigate={navigateTo}
-          />
-        )
-      case '/feedback':
-        return (
-          <FeedbackPage
-            onNavigate={navigateTo}
-          />
-        )
-      case '/help':
-        return (
-          <HelpPage
-            onNavigate={navigateTo}
-          />
-        )
-      case '/about':
-        return (
-          <AboutPage
-            onNavigate={navigateTo}
-          />
-        )
-      case '/privacy':
-        return (
-          <PrivacyPage
-            onNavigate={navigateTo}
-          />
-        )
-      case '/terms':
-        return (
-          <TermsPage
-            onNavigate={navigateTo}
-          />
-        )
-      case '/404':
-        return (
-          <NotFoundPage
-            onNavigate={navigateTo}
-          />
-        )
-      case '/':
-      default:
-        return (
-          <HomePage
-            onNavigate={navigateTo}
-            onSelectPlace={(place) => navigateTo(`/explore/${place.id}`)}
-          />
-        )
-    }
-  }
-
+  // Main User App Shell
   return (
-    <AccessGate currentRoute={currentRoute} onNavigate={navigateTo}>
-      <div className="explorex-app-shell">
-        {/* Skip to Content for Screen Readers & Keyboard Access */}
-        <a href="#main-content" className="skip-to-content-link">
-          Skip to main content
-        </a>
-
-        {/* Global Announcement Banner from Admin Content Studio */}
-        <AnnouncementBanner onNavigate={navigateTo} />
-
-        <ScrollProgressBar />
-        <GuestUpgradeBanner />
-        <Navbar
-          currentRoute={currentRoute.route === '/explore/:id' ? `/explore/${currentRoute.id}` : currentRoute.route}
-          onNavigate={navigateTo}
-          allPlaces={allDatasetPlaces}
-          onGetDirections={handleGetDirections}
-        />
-
-        <main className="main-content-area" id="main-content" tabIndex="-1">
-          <div key={routeKey} className="page-transition-wrap">
-            <Suspense fallback={<PageSkeletonLoader />}>
-              {renderCurrentPage()}
-            </Suspense>
-          </div>
-        </main>
-
-        <Footer onNavigate={navigateTo} />
-
-        {/* Global Floating Feedback Drawer */}
-        <FeedbackDrawerErrorBoundary>
-          <FeedbackDrawer
-            currentRoute={currentRoute.route === '/explore/:id' ? `/explore/${currentRoute.id}` : currentRoute.route}
-          />
-        </FeedbackDrawerErrorBoundary>
-
-        {/* Global Offline / Online Network Indicator */}
-        <NetworkStatusIndicator />
-
-        {/* Global Directions Modal with In-App Leaflet Routing */}
-        <DirectionsModal
-          isOpen={directionsModalOpen}
-          onClose={() => setDirectionsModalOpen(false)}
-          destination={directionsTarget}
-        />
-
-        <AuthModal
-          isOpen={authModalOpen}
-          onClose={closeAuthModal}
-          initialMode={authModalMode}
-          onNavigate={navigateTo}
-        />
-      </div>
-    </AccessGate>
+    <Suspense fallback={<PageSkeletonLoader />}>
+      <MainAppShell currentRoute={currentRoute} navigateTo={navigateTo} />
+    </Suspense>
   )
 }
 

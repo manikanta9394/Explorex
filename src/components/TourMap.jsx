@@ -6,7 +6,10 @@ import { mapAttractions } from '../data/tourismData'
 import { isInsideTelangana, validateAndFilterTelanganaPlaces } from '../utils/geoUtils'
 import MarkerClusterGroup from './MarkerClusterGroup'
 import { MapErrorBoundary } from './ErrorBoundary'
-import 'leaflet/dist/leaflet.css'
+// Dynamically import leaflet stylesheet so it does not block initial page rendering
+if (typeof window !== 'undefined') {
+  import('leaflet/dist/leaflet.css')
+}
 
 const markerIcon = L.divIcon({
   className: 'tour-marker-wrap',

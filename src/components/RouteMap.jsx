@@ -2,7 +2,10 @@ import { useEffect, useRef } from 'react'
 import { MapContainer, Marker, Polyline, TileLayer, useMap } from 'react-leaflet'
 import L from 'leaflet'
 import { MapErrorBoundary } from './ErrorBoundary'
-import 'leaflet/dist/leaflet.css'
+// Dynamically import leaflet stylesheet so it does not block initial page rendering
+if (typeof window !== 'undefined') {
+  import('leaflet/dist/leaflet.css')
+}
 
 // Custom Start Location Marker (Green Frosted Pin with Pulsing Dot)
 const startIcon = L.divIcon({

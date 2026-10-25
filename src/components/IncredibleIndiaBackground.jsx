@@ -1,13 +1,16 @@
 import { useEffect, useRef, useState, useCallback } from 'react'
 import { Pause, Play, ChevronLeft, ChevronRight, MapPin, Sparkles } from 'lucide-react'
 
+const BASE = import.meta.env.BASE_URL || '/Explorex/'
+const normalizeUrl = (p) => `${BASE.endsWith('/') ? BASE.slice(0, -1) : BASE}/${p.replace(/^\//, '')}`
+
 export const INCREDIBLE_INDIA_SLIDES = [
   {
     id: 'taj-mahal',
     name: 'Taj Mahal',
     state: 'Agra, Uttar Pradesh',
-    src: 'https://upload.wikimedia.org/wikipedia/commons/1/1d/Taj_Mahal_%28Edited%29.jpeg',
-    poster: '/images/charminar.jpg',
+    src: normalizeUrl('images/slides/taj-mahal.jpg'),
+    poster: normalizeUrl('images/charminar.jpg'),
     attribution: 'Wikimedia Commons · CC BY-SA 4.0',
     alt: 'Ivory-white marble mausoleum of Taj Mahal in Agra, Uttar Pradesh',
     coords: { x: 48, y: 35 },
@@ -16,8 +19,8 @@ export const INCREDIBLE_INDIA_SLIDES = [
     id: 'hawa-mahal',
     name: 'Hawa Mahal (Palace of Winds)',
     state: 'Jaipur, Rajasthan',
-    src: 'https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg',
-    poster: '/images/charminar.jpg',
+    src: normalizeUrl('images/slides/hawa-mahal.jpg'),
+    poster: normalizeUrl('images/charminar.jpg'),
     attribution: 'Wikimedia Commons · CC BY-SA 4.0',
     alt: 'Pink and red sandstone facade of Hawa Mahal in Jaipur, Rajasthan',
     coords: { x: 38, y: 36 },
@@ -26,8 +29,8 @@ export const INCREDIBLE_INDIA_SLIDES = [
     id: 'golden-temple',
     name: 'Golden Temple (Harmandir Sahib)',
     state: 'Amritsar, Punjab',
-    src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/The_Golden_Temple_of_Amrithsar_7.jpg/3840px-The_Golden_Temple_of_Amrithsar_7.jpg',
-    poster: '/images/charminar.jpg',
+    src: normalizeUrl('images/slides/golden-temple.jpg'),
+    poster: normalizeUrl('images/charminar.jpg'),
     attribution: 'Wikimedia Commons · CC BY-SA 4.0',
     alt: 'Gilded Golden Temple surrounded by the sacred Amrit Sarovar in Amritsar, Punjab',
     coords: { x: 34, y: 22 },
@@ -36,8 +39,8 @@ export const INCREDIBLE_INDIA_SLIDES = [
     id: 'gateway-of-india',
     name: 'Gateway of India',
     state: 'Mumbai, Maharashtra',
-    src: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg',
-    poster: '/images/charminar.jpg',
+    src: normalizeUrl('images/slides/gateway-of-india.jpg'),
+    poster: normalizeUrl('images/charminar.jpg'),
     attribution: 'Wikimedia Commons · CC BY-SA 4.0',
     alt: 'Basalt arch monument Gateway of India facing the Arabian Sea in Mumbai',
     coords: { x: 30, y: 62 },
@@ -46,8 +49,8 @@ export const INCREDIBLE_INDIA_SLIDES = [
     id: 'charminar',
     name: 'Charminar',
     state: 'Hyderabad, Telangana',
-    src: '/images/charminar.jpg',
-    poster: '/images/charminar.jpg',
+    src: normalizeUrl('images/charminar.jpg'),
+    poster: normalizeUrl('images/charminar.jpg'),
     attribution: 'Explorex Archives · ASI Certified',
     alt: 'Iconic 16th-century Charminar with four grand minarets in Old Hyderabad',
     coords: { x: 46, y: 65 },
@@ -56,8 +59,8 @@ export const INCREDIBLE_INDIA_SLIDES = [
     id: 'konark-sun-temple',
     name: 'Konark Sun Temple (Black Pagoda)',
     state: 'Konark, Odisha',
-    src: 'https://upload.wikimedia.org/wikipedia/commons/4/47/Konarka_Temple.jpg',
-    poster: '/images/charminar.jpg',
+    src: normalizeUrl('images/slides/konark-sun-temple.jpg'),
+    poster: normalizeUrl('images/charminar.jpg'),
     attribution: 'Wikimedia Commons · CC BY-SA 4.0',
     alt: 'Intricately carved 13th-century stone chariot wheels of Konark Sun Temple, Odisha',
     coords: { x: 67, y: 55 },
@@ -66,8 +69,8 @@ export const INCREDIBLE_INDIA_SLIDES = [
     id: 'alleppey-backwaters',
     name: 'Alleppey Backwaters & Vembanad Lake',
     state: 'Alappuzha, Kerala',
-    src: 'https://upload.wikimedia.org/wikipedia/commons/e/e4/Alappuzha_Boat_Beauty_W.jpg',
-    poster: '/images/charminar.jpg',
+    src: normalizeUrl('images/slides/alleppey-backwaters.jpg'),
+    poster: normalizeUrl('images/charminar.jpg'),
     attribution: 'Wikimedia Commons · CC BY-SA 4.0',
     alt: 'Traditional wooden houseboat sailing on tranquil Kerala backwaters lined with coconut palms',
     coords: { x: 40, y: 88 },
@@ -76,8 +79,8 @@ export const INCREDIBLE_INDIA_SLIDES = [
     id: 'great-himalayas',
     name: 'Great Himalayan Range',
     state: 'Himachal Pradesh',
-    src: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Himalayn_National_Park_01.jpg/3840px-Himalayn_National_Park_01.jpg',
-    poster: '/images/charminar.jpg',
+    src: normalizeUrl('images/slides/great-himalayas.jpg'),
+    poster: normalizeUrl('images/charminar.jpg'),
     attribution: 'Wikimedia Commons · CC BY-SA 4.0',
     alt: 'Snow-capped peaks and valleys of Great Himalayan National Park, Himachal Pradesh',
     coords: { x: 44, y: 16 },
@@ -239,6 +242,7 @@ export default function IncredibleIndiaBackground({ children, className = '', sh
                   className="india-slide-img"
                   loading={idx === 0 ? 'eager' : 'lazy'}
                   decoding={idx === 0 ? 'sync' : 'async'}
+                  fetchPriority={idx === 0 ? 'high' : 'low'}
                   onError={(e) => {
                     // Fallback to local verified asset if external CDN is blocked
                     if (e.currentTarget.src !== slide.poster) {

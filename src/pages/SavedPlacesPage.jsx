@@ -12,12 +12,13 @@ import {
 } from 'lucide-react'
 import PageHeaderBand from '../components/PageHeaderBand'
 import SafeImage from '../components/SafeImage'
+import { allDatasetPlaces } from '../data/tourismData'
 import { useSavedPlaces } from '../context/useSavedPlaces'
 import { useAuth } from '../context/useAuth'
 import { formatPriceWithUnit } from '../utils/formatCurrency'
 
 export default function SavedPlacesPage({
-  allPlaces = [],
+  allPlaces = allDatasetPlaces,
   onSelectPlace,
   onGetDirections,
   onNavigate,

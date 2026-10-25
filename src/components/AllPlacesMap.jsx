@@ -11,7 +11,10 @@ import { isInsideIndia, validateAndFilterIndiaPlaces } from '../utils/geoUtils'
 import MarkerClusterGroup from './MarkerClusterGroup'
 import SafeImage from './SafeImage'
 import { DistanceBadgeErrorBoundary, MapErrorBoundary } from './ErrorBoundary'
-import 'leaflet/dist/leaflet.css'
+// Dynamically import leaflet stylesheet so it does not block initial page rendering
+if (typeof window !== 'undefined') {
+  import('leaflet/dist/leaflet.css')
+}
 
 // Custom Marker Icons for Categories
 const attractionIcon = L.divIcon({

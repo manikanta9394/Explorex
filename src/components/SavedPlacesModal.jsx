@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { ArrowRight, Heart, MapPin, Navigation, Star, Trash2, X } from 'lucide-react'
 import { useSavedPlaces } from '../context/useSavedPlaces'
 import { formatPriceWithUnit } from '../utils/formatCurrency'
@@ -13,15 +13,29 @@ export default function SavedPlacesModal({
   onGetDirections,
 }) {
   const { savedIds, toggleSave } = useSavedPlaces()
+  const [places, setPlaces] = useState(allPlaces)
+
+  useEffect(() => {
+    if (allPlaces && allPlaces.length > 0) {
+      setPlaces(allPlaces)
+    } else if (isOpen) {
+      import('../data/tourismData').then((mod) => {
+        if (mod && mod.allDatasetPlaces) {
+          setPlaces(mod.allDatasetPlaces)
+        }
+      }).catch(() => {})
+    }
+  }, [isOpen, allPlaces])
 
   // Look up place objects for all saved IDs
   const savedItems = useMemo(() => {
-    if (!Array.isArray(allPlaces) || !Array.isArray(savedIds)) return []
-    const placeMap = new Map(allPlaces.map((p) => [p.id, p]))
+    const activePlaces = places && places.length > 0 ? places : allPlaces
+    if (!Array.isArray(activePlaces) || !Array.isArray(savedIds)) return []
+    const placeMap = new Map(activePlaces.map((p) => [p.id, p]))
     return savedIds
       .map((id) => placeMap.get(id))
       .filter(Boolean)
-  }, [allPlaces, savedIds])
+  }, [places, allPlaces, savedIds])
 
   if (!isOpen) return null
 
