@@ -18,6 +18,7 @@ async function runE2E() {
   const browser = await chromium.launch({
     executablePath: CHROME_PATH,
     headless: true,
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
   })
 
   const context = await browser.newContext({
