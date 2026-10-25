@@ -19,6 +19,13 @@ self.addEventListener('install', (event) => {
   self.skipWaiting()
 })
 
+// Listen for explicit SKIP_WAITING from update prompt
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting()
+  }
+})
+
 // 2. Activate Event: Aggressively purge older caches to prevent stale chunks or outdated HTML
 self.addEventListener('activate', (event) => {
   event.waitUntil(

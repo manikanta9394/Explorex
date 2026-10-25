@@ -8,6 +8,7 @@ import { SavedPlacesProvider } from './context/SavedPlacesContext'
 import { TravelModeProvider } from './context/TravelModeContext'
 import { UserLocationProvider } from './context/UserLocationContext'
 import { ToastProvider } from './context/ToastContext'
+import UpdateNotification from './components/UpdateNotification'
 import { analytics } from './services/analytics'
 import './styles/welcomeCore.css'
 
@@ -265,6 +266,7 @@ export default function App() {
                 <UserLocationProvider>
                   <SavedPlacesProvider>
                     <AppContent />
+                    <UpdateNotification />
                   </SavedPlacesProvider>
                 </UserLocationProvider>
               </TravelModeProvider>

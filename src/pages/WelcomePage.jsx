@@ -13,6 +13,9 @@ import {
   EyeOff,
 } from 'lucide-react'
 import { useAuth } from '../context/useAuth'
+
+const APP_VERSION = typeof __APP_VERSION__ !== 'undefined' ? __APP_VERSION__ : '1.0.0'
+const COMMIT_HASH = typeof __COMMIT_HASH__ !== 'undefined' ? __COMMIT_HASH__ : 'dev'
 import IncredibleIndiaBackground, { getTimeTheme } from '../components/IncredibleIndiaBackground'
 import LanguageSelector from '../components/LanguageSelector'
 
@@ -481,6 +484,8 @@ export default function WelcomePage({ onNavigate }) {
             >
               Terms of Service
             </a>
+            <span className="footer-dot-divider" aria-hidden="true">·</span>
+            <span className="welcome-build-stamp" title={`Commit: ${COMMIT_HASH}`}>v{APP_VERSION} (#{COMMIT_HASH})</span>
           </footer>
         </main>
       </div>

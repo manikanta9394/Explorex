@@ -1,4 +1,7 @@
 import { useState, useEffect } from 'react'
+
+const APP_VERSION = typeof __APP_VERSION__ !== 'undefined' ? __APP_VERSION__ : '1.0.0'
+const COMMIT_HASH = typeof __COMMIT_HASH__ !== 'undefined' ? __COMMIT_HASH__ : 'dev'
 import {
   LayoutDashboard,
   MapPin,
@@ -160,17 +163,22 @@ export default function AdminLayout({ children, currentRoute, onNavigate }) {
 
         <div className="sidebar-footer">
           {!collapsed ? (
-            <div className="sidebar-admin-user">
-              <div className="admin-avatar-tiny">
-                {(user?.display_name || user?.email || 'A')[0].toUpperCase()}
+            <div>
+              <div className="sidebar-admin-user">
+                <div className="admin-avatar-tiny">
+                  {(user?.display_name || user?.email || 'A')[0].toUpperCase()}
+                </div>
+                <div className="admin-meta-mini">
+                  <span className="admin-name-mini" title={user?.email || 'Admin'}>
+                    {user?.display_name || user?.email?.split('@')[0] || 'Administrator'}
+                  </span>
+                  <span className="admin-role-tag" style={{ display: 'flex', alignItems: 'center', gap: '3px' }}>
+                    <ShieldCheck size={10} /> 2FA Active
+                  </span>
+                </div>
               </div>
-              <div className="admin-meta-mini">
-                <span className="admin-name-mini" title={user?.email || 'Admin'}>
-                  {user?.display_name || user?.email?.split('@')[0] || 'Administrator'}
-                </span>
-                <span className="admin-role-tag" style={{ display: 'flex', alignItems: 'center', gap: '3px' }}>
-                  <ShieldCheck size={10} /> 2FA Active
-                </span>
+              <div style={{ fontSize: '10px', color: 'var(--adm-text-dim)', marginTop: '8px', fontFamily: 'monospace', textAlign: 'center' }}>
+                Explorex v{APP_VERSION} ({COMMIT_HASH})
               </div>
             </div>
           ) : (

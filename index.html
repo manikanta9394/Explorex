@@ -39,12 +39,41 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <script>
-      if ('serviceWorker' in navigator && (window.location.protocol === 'https:' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker
-            .register('%BASE_URL%sw.js', { scope: '%BASE_URL%' })
-            .catch(() => {});
-        });
+      if ('serviceWorker' in navigator) {
+        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+          // In development: unregister service workers & purge caches so developers get immediate updates
+          navigator.serviceWorker.getRegistrations().then(function (registrations) {
+            for (var i = 0; i < registrations.length; i++) {
+              registrations[i].unregister();
+            }
+          });
+          if ('caches' in window) {
+            caches.keys().then(function (keys) {
+              for (var j = 0; j < keys.length; j++) {
+                caches.delete(keys[j]);
+              }
+            });
+          }
+        } else if (window.location.protocol === 'https:') {
+          // In production: register with immediate updates and event dispatch
+          window.addEventListener('load', function () {
+            navigator.serviceWorker
+              .register('%BASE_URL%sw.js', { scope: '%BASE_URL%' })
+              .then(function (registration) {
+                registration.addEventListener('updatefound', function () {
+                  var newWorker = registration.installing;
+                  if (newWorker) {
+                    newWorker.addEventListener('statechange', function () {
+                      if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                        window.dispatchEvent(new CustomEvent('explorex-update-available'));
+                      }
+                    });
+                  }
+                });
+              })
+              .catch(function () {});
+          });
+        }
       }
     </script>
   </body>

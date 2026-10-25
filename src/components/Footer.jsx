@@ -1,6 +1,28 @@
 import { ArrowUp, Heart, Sparkles, Globe, AlertCircle, Compass, ShieldCheck } from 'lucide-react'
 import { Logo } from './Navbar'
 
+const APP_VERSION = typeof __APP_VERSION__ !== 'undefined' ? __APP_VERSION__ : '1.0.0'
+const COMMIT_HASH = typeof __COMMIT_HASH__ !== 'undefined' ? __COMMIT_HASH__ : 'dev'
+const BUILD_TIME = typeof __BUILD_TIME__ !== 'undefined' ? __BUILD_TIME__ : ''
+
+let formattedBuildTime = ''
+if (BUILD_TIME) {
+  try {
+    const d = new Date(BUILD_TIME)
+    formattedBuildTime =
+      d.toLocaleString('en-IN', {
+        day: '2-digit',
+        month: 'short',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        timeZone: 'Asia/Kolkata',
+      }) + ' IST'
+  } catch {
+    formattedBuildTime = BUILD_TIME
+  }
+}
+
 export default function Footer({ onOpenSaved, onNavigate }) {
   const scrollToTop = (e) => {
     if (e) e.preventDefault()
@@ -203,6 +225,13 @@ export default function Footer({ onOpenSaved, onNavigate }) {
             <span className="footer-heart">
               Curated for meaningful journeys <Heart size={13} fill="#C9A227" color="#C9A227" />
             </span>
+          </div>
+
+          {/* Visible Build Stamp for Production Telemetry */}
+          <div className="footer-build-stamp" title={`Commit: ${COMMIT_HASH} | Build: ${BUILD_TIME}`}>
+            <span className="build-tag">v{APP_VERSION}</span>
+            <span className="build-hash">#{COMMIT_HASH}</span>
+            {formattedBuildTime && <span className="build-date">· {formattedBuildTime}</span>}
           </div>
 
           <button

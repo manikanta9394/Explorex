@@ -1060,6 +1060,17 @@ button:active:not(:disabled) {
   color: rgba(255, 255, 255, 0.25);
 }
 
+.welcome-build-stamp {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 11px;
+  color: rgba(201, 162, 39, 0.9);
+  background: rgba(201, 162, 39, 0.1);
+  border: 1px solid rgba(201, 162, 39, 0.3);
+  padding: 2px 8px;
+  border-radius: 9999px;
+  letter-spacing: 0.02em;
+}
+
 /* Reduced Motion Overrides */
 @media (prefers-reduced-motion: reduce) {
   .india-slide-layer.is-active .india-slide-img {

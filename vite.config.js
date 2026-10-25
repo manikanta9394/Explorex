@@ -4,8 +4,19 @@ import tailwindcss from '@tailwindcss/vite'
 import fs from 'node:fs'
 import path from 'node:path'
 import zlib from 'node:zlib'
+import { execSync } from 'node:child_process'
 
 const basePath = process.env.VITE_BASE_PATH || (process.env.VERCEL ? '/' : '/Explorex/')
+
+let commitHash = 'dev'
+try {
+  commitHash = execSync('git rev-parse --short HEAD').toString().trim()
+} catch {
+  commitHash = 'live'
+}
+const buildTime = new Date().toISOString()
+const packageJson = JSON.parse(fs.readFileSync(path.resolve(process.cwd(), 'package.json'), 'utf-8'))
+const appVersion = packageJson.version || '1.0.0'
 
 function nativeCompressionPlugin() {
   return {
@@ -21,7 +32,20 @@ function nativeCompressionPlugin() {
         fs.writeFileSync(`${fourOhFourPath}.gz`, gzipped404)
       }
 
-      // 2. Pre-gzip static assets
+      // 2. Inject dynamic Cache Version into dist/sw.js
+      const swDistPath = path.join(distRoot, 'sw.js')
+      if (fs.existsSync(swDistPath)) {
+        let swCode = fs.readFileSync(swDistPath, 'utf-8')
+        swCode = swCode.replace(
+          /const CACHE_VERSION = ['"][^'"]+['"]/,
+          `const CACHE_VERSION = 'explorex-pwa-${commitHash}-${Date.now()}'`
+        )
+        fs.writeFileSync(swDistPath, swCode)
+        const gzippedSW = zlib.gzipSync(Buffer.from(swCode), { level: 9 })
+        fs.writeFileSync(`${swDistPath}.gz`, gzippedSW)
+      }
+
+      // 3. Pre-gzip static assets
       const distDir = path.resolve(distRoot, 'assets')
       if (!fs.existsSync(distDir)) return
       const files = fs.readdirSync(distDir)
@@ -36,18 +60,27 @@ function nativeCompressionPlugin() {
     },
     configurePreviewServer(server) {
       server.middlewares.use((req, res, next) => {
+        const cleanUrl = (req.url || '').split('?')[0]
+        if (cleanUrl.endsWith('.html') || cleanUrl.endsWith('sw.js') || cleanUrl === '/' || cleanUrl === basePath) {
+          res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate')
+          res.setHeader('Pragma', 'no-cache')
+          res.setHeader('Expires', '0')
+        } else if (cleanUrl.includes('/assets/')) {
+          res.setHeader('Cache-Control', 'public, max-age=31536000, immutable')
+        }
+
         const accept = req.headers['accept-encoding'] || ''
         if (!accept.includes('gzip')) return next()
-        const cleanUrl = (req.url || '').split('?')[0].replace(basePath, '').replace(/^\//, '')
-        const filePath = path.resolve(process.cwd(), 'dist', cleanUrl)
+        const relativeUrl = cleanUrl.replace(basePath, '').replace(/^\//, '')
+        const filePath = path.resolve(process.cwd(), 'dist', relativeUrl)
         const gzPath = `${filePath}.gz`
         if (fs.existsSync(gzPath)) {
           res.setHeader('Content-Encoding', 'gzip')
           res.setHeader('Vary', 'Accept-Encoding')
-          if (cleanUrl.endsWith('.css')) res.setHeader('Content-Type', 'text/css')
-          if (cleanUrl.endsWith('.js')) res.setHeader('Content-Type', 'application/javascript')
-          if (cleanUrl.endsWith('.svg')) res.setHeader('Content-Type', 'image/svg+xml')
-          if (cleanUrl.endsWith('.html')) res.setHeader('Content-Type', 'text/html')
+          if (relativeUrl.endsWith('.css')) res.setHeader('Content-Type', 'text/css')
+          if (relativeUrl.endsWith('.js')) res.setHeader('Content-Type', 'application/javascript')
+          if (relativeUrl.endsWith('.svg')) res.setHeader('Content-Type', 'image/svg+xml')
+          if (relativeUrl.endsWith('.html')) res.setHeader('Content-Type', 'text/html')
           return fs.createReadStream(gzPath).pipe(res)
         }
         next()
@@ -58,6 +91,12 @@ function nativeCompressionPlugin() {
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: basePath,
+  define: {
+    __APP_VERSION__: JSON.stringify(appVersion),
+    __COMMIT_HASH__: JSON.stringify(commitHash),
+    __BUILD_TIME__: JSON.stringify(buildTime),
+  },
   base: basePath,
   plugins: [
     react(),
