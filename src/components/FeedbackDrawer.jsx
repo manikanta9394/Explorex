@@ -116,17 +116,21 @@ export default function FeedbackDrawer({ currentRoute, activePlace = null }) {
 
   return (
     <>
-      {/* Floating Trigger Button on Every Page */}
-      <button
-        type="button"
-        className="floating-feedback-btn"
-        onClick={() => setIsOpen(true)}
-        title="Share feedback or report an issue"
-        aria-label="Open Feedback Drawer"
-      >
-        <MessageSquarePlus size={18} />
-        <span className="feedback-btn-text">Feedback</span>
-      </button>
+      {/* Floating Trigger Button on Every Page (Bottom Right Circular with Tooltip) */}
+      <div className="floating-feedback-wrapper">
+        <button
+          type="button"
+          className="floating-feedback-btn-circle"
+          onClick={() => setIsOpen(true)}
+          title="Share feedback or report an issue"
+          aria-label="Feedback & Reports"
+        >
+          <MessageSquarePlus size={20} />
+          <span className="feedback-tooltip" role="tooltip">
+            Feedback &amp; Reports
+          </span>
+        </button>
+      </div>
 
       {/* Slide-over Backdrop & Drawer */}
       {isOpen && (

@@ -4,7 +4,7 @@ export const translations = {
     nav_home: 'Home',
     nav_explore: 'Explore',
     nav_map: 'Map',
-    nav_planner: 'Trip Planner',
+    nav_planner: 'Planner',
     nav_ai: 'AI Guide',
     nav_saved: 'Saved',
     nav_festivals: 'Festivals',

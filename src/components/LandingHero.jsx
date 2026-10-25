@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react'
-import { ArrowRight, ChevronLeft, ChevronRight, Compass, Sparkles } from 'lucide-react'
+import { ArrowRight, ChevronLeft, ChevronRight, Compass, MapPin, Sparkles } from 'lucide-react'
 import SafeImage from './SafeImage'
 
 const HERO_SLIDES = [
@@ -8,6 +8,7 @@ const HERO_SLIDES = [
     name: 'Charminar',
     tagline: 'Monument of Four Grand Arches',
     location: 'Old City, Hyderabad',
+    state: 'Telangana',
     rating: 4.7,
     image: '/images/charminar.jpg',
     category: 'Historical Monument',
@@ -18,6 +19,7 @@ const HERO_SLIDES = [
     name: 'Golconda Fort',
     tagline: 'Acoustic Marvel & Diamond Bastion',
     location: 'Golconda, Hyderabad',
+    state: 'Telangana',
     rating: 4.8,
     image: '/images/golconda-fort.jpg',
     category: 'Historical Fort',
@@ -28,6 +30,7 @@ const HERO_SLIDES = [
     name: 'Chowmahalla Palace',
     tagline: 'Seat of Nizami Grandeur',
     location: 'Khilwat, Hyderabad',
+    state: 'Telangana',
     rating: 4.6,
     image: '/images/chowmahalla-palace.jpg',
     category: 'Historical Palace',
@@ -38,6 +41,7 @@ const HERO_SLIDES = [
     name: 'Salar Jung Museum',
     tagline: 'Treasury of Global Civilization',
     location: 'Darulshifa, Hyderabad',
+    state: 'Telangana',
     rating: 4.9,
     image: '/images/salar-jung-museum.jpg',
     category: 'Museum',
@@ -48,6 +52,7 @@ const HERO_SLIDES = [
     name: 'Birla Mandir',
     tagline: 'Sanctuary of White Marble',
     location: 'Naubat Pahad, Hyderabad',
+    state: 'Telangana',
     rating: 4.7,
     image: '/images/birla-mandir.jpg',
     category: 'Religious Landmark',
@@ -123,6 +128,12 @@ export default function LandingHero({ onStartExploring, onAskAI, onSelectPlace, 
       className="landing-hero"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
+      onFocusCapture={() => setIsPaused(true)}
+      onBlurCapture={(e) => {
+        if (!e.currentTarget.contains(e.relatedTarget)) {
+          setIsPaused(false)
+        }
+      }}
       aria-label="Welcome Hero"
     >
       {/* Layer 1: Distant Background Slides (Moves at 0.38x parallax speed) */}
@@ -238,7 +249,7 @@ export default function LandingHero({ onStartExploring, onAskAI, onSelectPlace, 
 
         {/* Bottom Slide Info & Controls Bar */}
         <div className="hero-bottom-deck fade-in-up delay-4">
-          {/* Active destination card */}
+          {/* Active destination card: unclipped, visible name, state, and Explore button */}
           <div
             className="hero-place-card"
             onClick={handleOpenCurrentDetail}
@@ -249,41 +260,71 @@ export default function LandingHero({ onStartExploring, onAskAI, onSelectPlace, 
             }}
             aria-label={`View details for ${currentSlide.name}`}
           >
+            <div className="hero-place-thumb">
+              <SafeImage
+                src={currentSlide.image}
+                category={currentSlide.category}
+                alt={currentSlide.name}
+              />
+            </div>
             <div className="place-card-meta">
               <span className="place-cat">{currentSlide.category}</span>
               <h4 className="place-name">{currentSlide.name}</h4>
-              <p className="place-tagline">{currentSlide.tagline}</p>
+              <p className="place-location">
+                <MapPin size={13} aria-hidden="true" />
+                <span>{currentSlide.location} · {currentSlide.state || 'Telangana'}</span>
+              </p>
             </div>
-            <div className="place-card-action">
+            <button
+              type="button"
+              className="hero-card-explore-btn"
+              onClick={(e) => {
+                e.stopPropagation()
+                handleOpenCurrentDetail()
+              }}
+              aria-label={`Explore ${currentSlide.name}`}
+            >
               <span>Explore</span>
               <ArrowRight size={14} />
-            </div>
+            </button>
           </div>
 
-          {/* Carousel controls */}
-          <div className="hero-carousel-controls">
+          {/* Carousel controls with 44px arrows and thumbnail progress dots */}
+          <div
+            className="hero-carousel-controls"
+            role="region"
+            aria-label="Destination slideshow controls"
+            onKeyDown={(e) => {
+              if (e.key === 'ArrowLeft') handlePrev()
+              if (e.key === 'ArrowRight') handleNext()
+            }}
+          >
             <button
               type="button"
               className="hero-nav-arrow"
               onClick={handlePrev}
               aria-label="Previous destination"
+              tabIndex={0}
             >
-              <ChevronLeft size={18} />
+              <ChevronLeft size={20} />
             </button>
 
-            {/* Slide Indicators */}
+            {/* Thumbnail Strip / Progress Dots for slideshow */}
             <div className="hero-indicators" role="tablist" aria-label="Destination slides">
               {HERO_SLIDES.map((slide, idx) => (
                 <button
                   key={slide.id}
                   type="button"
                   role="tab"
-                  className={`hero-dot ${idx === currentIndex ? 'active' : ''}`}
+                  className={`hero-dot-btn ${idx === currentIndex ? 'active' : ''}`}
                   onClick={() => setCurrentIndex(idx)}
                   aria-label={`Slide ${idx + 1}: ${slide.name}`}
                   aria-selected={idx === currentIndex}
+                  tabIndex={0}
                 >
-                  <span className="dot-fill" />
+                  <span className="hero-dot-thumb">
+                    <SafeImage src={slide.image} category={slide.category} alt={slide.name} />
+                  </span>
                 </button>
               ))}
             </div>
@@ -293,8 +334,9 @@ export default function LandingHero({ onStartExploring, onAskAI, onSelectPlace, 
               className="hero-nav-arrow"
               onClick={handleNext}
               aria-label="Next destination"
+              tabIndex={0}
             >
-              <ChevronRight size={18} />
+              <ChevronRight size={20} />
             </button>
           </div>
         </div>

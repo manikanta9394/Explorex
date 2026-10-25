@@ -30,3 +30,8 @@ server/data/*.json
 *.njsproj
 *.sln
 *.sw?
+
+# Testing
+test-results/
+playwright-report/
+

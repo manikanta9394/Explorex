@@ -61,9 +61,9 @@ export function Logo({ onClick }) {
 
 const BASE_NAV_LINKS = [
   { id: 'home', translationKey: 'nav_home', defaultLabel: 'Home', path: '/', icon: Compass },
-  { id: 'explore', translationKey: 'nav_explore', defaultLabel: 'Destinations', path: '/explore', icon: MapPin },
+  { id: 'explore', translationKey: 'nav_explore', defaultLabel: 'Explore', path: '/explore', icon: MapPin },
   { id: 'map', translationKey: 'nav_map', defaultLabel: 'Map', path: '/map', icon: MapIcon },
-  { id: 'planner', translationKey: 'nav_planner', defaultLabel: 'Trip Planner', path: '/planner', icon: CalendarDays },
+  { id: 'planner', translationKey: 'nav_planner', defaultLabel: 'Planner', path: '/planner', icon: CalendarDays },
   { id: 'festivals', translationKey: 'nav_festivals', defaultLabel: 'Festivals', path: '/festivals', icon: Calendar },
   { id: 'ai', translationKey: 'nav_ai', defaultLabel: 'AI Guide', path: '/ai', icon: null, isNew: true },
 ]
@@ -137,19 +137,19 @@ export default function Navbar({
           const prevScrollY = lastScrollYRef.current
           const diff = scrollY - prevScrollY
 
-          setScrolled(scrollY > 25)
+          setScrolled(scrollY > 24)
 
           // On pages without a dark hero (any page other than '/'), it is ALWAYS solid glass.
-          // On the home page, it becomes solid glass after scrolling past the hero (> 480px).
+          // On the home page, it is transparent over the hero and becomes solid glass after scrolling about 24px.
           const isHomePage = currentRoute === '/' || currentRoute === '' || currentRoute === 'home'
-          const shouldBeSolid = !isHomePage || scrollY > 480
+          const shouldBeSolid = !isHomePage || scrollY > 24
           setIsSolidGlass(shouldBeSolid)
 
           // Hide on scroll down, return on scroll up
           if (!mobileDrawerOpen && !userDropdownOpen) {
-            if (diff > 8 && scrollY > 110) {
+            if (diff > 6 && scrollY > 60) {
               setIsNavHidden(true)
-            } else if (diff < -6 || scrollY <= 30) {
+            } else if (diff < -4 || scrollY <= 24) {
               setIsNavHidden(false)
             }
           } else {
