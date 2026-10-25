@@ -17,6 +17,7 @@ import {
 } from 'lucide-react'
 import { adminService } from '../../services/adminService'
 import { allDatasetPlaces } from '../../data/tourismData'
+import { resolveImageSrc } from '../../utils/imageUtils'
 
 export default function AdminPlacesPage() {
   const [places, setPlaces] = useState([])
@@ -463,7 +464,7 @@ export default function AdminPlacesPage() {
                           }}
                         >
                           <img
-                            src={p.image || p.imageUrl || 'https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?w=100'}
+                            src={resolveImageSrc(p.image || p.imageUrl) || 'https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?w=100'}
                             alt={p.name}
                             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                             onError={(e) => {

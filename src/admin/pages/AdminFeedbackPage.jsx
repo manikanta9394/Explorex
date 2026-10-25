@@ -15,6 +15,7 @@ import {
   Image as ImageIcon,
 } from 'lucide-react'
 import { adminService } from '../../services/adminService'
+import { resolveImageSrc } from '../../utils/imageUtils'
 
 export default function AdminFeedbackPage({ onNavigate }) {
   const [items, setItems] = useState([])
@@ -396,7 +397,7 @@ export default function AdminFeedbackPage({ onNavigate }) {
                     </label>
                     <div style={{ marginTop: '6px', maxHeight: '180px', overflow: 'hidden', borderRadius: '6px', border: '1px solid var(--adm-border)' }}>
                       <img
-                        src={selectedItem.screenshot_url}
+                        src={resolveImageSrc(selectedItem.screenshot_url)}
                         alt="Feedback screenshot"
                         style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
                       />

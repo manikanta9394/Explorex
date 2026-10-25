@@ -11,6 +11,7 @@ import {
   Upload,
 } from 'lucide-react'
 import { adminService } from '../../services/adminService'
+import { resolveImageSrc } from '../../utils/imageUtils'
 
 export default function AdminImagesPage() {
   const [candidates, setCandidates] = useState([])
@@ -149,7 +150,7 @@ export default function AdminImagesPage() {
               {/* Image Split / Display */}
               <div style={{ position: 'relative', height: '220px', background: 'var(--adm-bg)' }}>
                 <img
-                  src={cand.candidate_url}
+                  src={resolveImageSrc(cand.candidate_url)}
                   alt={cand.place_name}
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   onError={(e) => {

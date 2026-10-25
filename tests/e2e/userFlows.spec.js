@@ -1,5 +1,38 @@
 import { test, expect } from '@playwright/test'
 
+const ensureTravelerSession = async (page) => {
+  await page.addInitScript(() => {
+    if (!localStorage.getItem('sb_emu_session')) {
+      const mockSession = {
+        access_token: 'emu_token_traveler',
+        user: {
+          id: 'user_aarav_sharma',
+          email: 'aarav@explorex.in',
+          user_metadata: { name: 'Aarav Sharma', role: 'user', is_anonymous: false },
+          created_at: new Date().toISOString(),
+        },
+      }
+      localStorage.setItem('sb_emu_session', JSON.stringify(mockSession))
+    }
+  })
+}
+
+const ensureAdminSession = async (page) => {
+  await page.addInitScript(() => {
+    const adminSession = {
+      access_token: 'emu_admin_token',
+      user: {
+        id: 'admin_sys_01',
+        email: 'admin@explorex.in',
+        role: 'admin',
+        user_metadata: { name: 'Lead Curator', role: 'admin', totp_enabled: true },
+        created_at: new Date().toISOString(),
+      },
+    }
+    localStorage.setItem('sb_emu_session', JSON.stringify(adminSession))
+  })
+}
+
 test.describe('Explorex Core User Journeys & Governance', () => {
   const testEmail = `tester_${Date.now()}@explorex.in`
   const testPassword = 'ExplorexPass123!'
@@ -31,7 +64,22 @@ test.describe('Explorex Core User Journeys & Governance', () => {
   })
 
   test('3. Log in authenticates verified traveler', async ({ page }) => {
-    await page.evaluate(() => localStorage.removeItem('sb_emu_session'))
+    await page.addInitScript(
+      ({ email, password }) => {
+        const users = [
+          {
+            id: 'u_tester_01',
+            email,
+            password,
+            name: 'Aarav Sharma',
+            created_at: new Date().toISOString(),
+          },
+        ]
+        localStorage.setItem('sb_emu_registered_users', JSON.stringify(users))
+      },
+      { email: testEmail, password: testPassword }
+    )
+
     await page.goto('#/login')
     await page.waitForSelector('form', { timeout: 8000 })
 
@@ -44,6 +92,7 @@ test.describe('Explorex Core User Journeys & Governance', () => {
   })
 
   test('4. Save place persists destination in wishlist', async ({ page }) => {
+    await ensureTravelerSession(page)
     await page.goto('#/explore')
     await page.waitForSelector('.explore-place-card', { timeout: 10000 })
 
@@ -56,6 +105,7 @@ test.describe('Explorex Core User Journeys & Governance', () => {
   })
 
   test('5. Submit feedback records citizen curation report', async ({ page }) => {
+    await ensureTravelerSession(page)
     await page.goto('#/feedback')
     await page.waitForSelector('.feedback-page-shell, form', { timeout: 8000 })
 
@@ -69,6 +119,7 @@ test.describe('Explorex Core User Journeys & Governance', () => {
   })
 
   test('6. AI Guide provides cited grounded recommendation', async ({ page }) => {
+    await ensureTravelerSession(page)
     await page.goto('#/ai')
     await page.waitForSelector('.chat-main-textarea', { timeout: 10000 })
 
@@ -99,6 +150,7 @@ test.describe('Explorex Core User Journeys & Governance', () => {
   })
 
   test('8. Admin can edit place metadata in table', async ({ page }) => {
+    await ensureAdminSession(page)
     await page.goto('#/admin/places')
     await page.waitForSelector('.admin-data-table', { timeout: 10000 })
 
@@ -115,6 +167,7 @@ test.describe('Explorex Core User Journeys & Governance', () => {
   })
 
   test('9. Admin can reply to community feedback', async ({ page }) => {
+    await ensureAdminSession(page)
     await page.goto('#/admin/feedback')
     await page.waitForSelector('.admin-page-header, .feedback-list-col, .admin-data-table', { timeout: 10000 })
 
