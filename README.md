@@ -2,6 +2,11 @@
 
 > **Explore India the way locals do.** Explorex is a production-grade, nationwide heritage explorer, intelligent trip planner, and retrieval-augmented AI travel companion covering all 36 States and Union Territories of India. Built with authentic editorial aesthetics, trustworthy open-source data (Wikidata, Wikipedia, ASI), strict image integrity (SHA-256 zero-duplication guarantees), dual-app architecture (warm editorial user app vs dense slate admin app), and enterprise-grade security.
 
+### 🌐 Live Deployments & Repository
+- **GitHub Repository**: [https://github.com/manikanta9394/Explorex.git](https://github.com/manikanta9394/Explorex.git)
+- **GitHub Pages Live Demo**: [https://manikanta9394.github.io/Explorex/](https://manikanta9394.github.io/Explorex/)
+- **Deployment & Infrastructure Guide**: See [DEPLOY.md](file:///Users/manikanta/Documents/exploreAI/Explorex/DEPLOY.md) for full Vercel + Supabase deployment steps.
+
 ---
 
 ## 🏗️ Architecture Overview
