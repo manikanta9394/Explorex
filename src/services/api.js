@@ -263,7 +263,7 @@ export async function streamAIChatClient({
   onDone,
   onError,
 }) {
-  const url = `${API_BASE_URL || '/api'}/chat?stream=true`
+  const url = `${API_BASE_URL || '/api'}/chat/stream`
   const payload = {
     message,
     history,

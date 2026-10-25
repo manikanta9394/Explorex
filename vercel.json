@@ -3,6 +3,10 @@
   "outputDirectory": "dist",
   "rewrites": [
     {
+      "source": "/api/chat/stream",
+      "destination": "/api/chat"
+    },
+    {
       "source": "/api/chat(.*)",
       "destination": "/api/chat$1"
     },

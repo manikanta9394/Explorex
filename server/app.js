@@ -91,7 +91,12 @@ app.use('/api/places', placeRoutes)
 app.use('/api/hotels', hotelRoutes)
 app.use('/api/restaurants', restaurantRoutes)
 app.use('/api/ai', aiLimiter, aiRoutes)
-app.post('/api/chat', aiLimiter, askAI)
+app.post('/api/chat', aiLimiter, (req, res, next) => {
+  if (req.query?.stream === 'true' || req.headers.accept?.includes('text/event-stream')) {
+    return streamAIChat(req, res, next)
+  }
+  return askAI(req, res, next)
+})
 app.post('/api/chat/stream', aiLimiter, streamAIChat)
 app.use('/api/route', routeRoutes)
 app.use('/api/auth', authRoutes)
