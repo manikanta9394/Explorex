@@ -49,17 +49,13 @@ jobs:
       - name: Install Playwright Chromium Browser
         run: npx playwright install --with-deps chromium
 
-      - name: Start Backend API Server
-        run: |
-          npm run server &
-          npx wait-on http://localhost:5005/api/health --timeout 20000
-
-      - name: Start Frontend Preview Server
-        run: |
-          npm run preview -- --port 5180 --host &
-          npx wait-on http://localhost:5180/Explorex/ --timeout 20000
-
-      - name: Execute End-to-End Test Suite (9 Core User Flows)
+      - name: Start Servers and Run End-to-End Test Suite (9 Core User Flows)
         env:
           BASE_URL: http://localhost:5180/Explorex/
-        run: npm run test:e2e
+          VITE_BASE_PATH: /Explorex/
+        run: |
+          npm run server &
+          npx wait-on http://localhost:5005/api/health --timeout 30000
+          npm run preview -- --port 5180 --host &
+          npx wait-on http://localhost:5180/Explorex/ --timeout 30000
+          npm run test:e2e
